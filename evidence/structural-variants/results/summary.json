@@ -1,0 +1,80 @@
+{
+  "status": "PASS_8_FROZEN_STRUCTURAL_VARIANTS_RTL_INDUCTION_AND_NO_RESOURCE_INCREASE",
+  "candidate": "D:\\\u7ade\u8d5b\\FPGA\\FPGA\\\u538b\u529b\u6d4b\u8bd5\u52a0\u56fa\\20261027_structural_rules\\continuation-20261030\\next-plan-execution\\r50-regenerated-final\\program\\yosys.exe",
+  "candidate_sha256": "600cc3db8696d3bd7b2ce16c23abeed49e1bb9977a7c9392dc50c4207c2f7b25",
+  "plan_sha256": "e7e007bc9b528a32ade61bdd48280a8376df2bf5a0e8b124454f3d92d6f23aed",
+  "cases": {
+    "variant_0_hierarchy": {
+      "status": "PASS_RTL_TO_CHECKPOINT_INDUCTION",
+      "logic": [
+        15,
+        9
+      ],
+      "explicit_state": false,
+      "proof_sha256": "f2e918befd4d98f292b88cc4ddefb10d425ff92eed65e8916186ae492cec52ae"
+    },
+    "variant_0_demorgan": {
+      "status": "PASS_RTL_TO_CHECKPOINT_INDUCTION",
+      "logic": [
+        15,
+        9
+      ],
+      "explicit_state": false,
+      "proof_sha256": "4334402a26fd0275e2712e03381541b283181b910bafa986d819b3748a3c1159"
+    },
+    "variant_0_orderA": {
+      "status": "PASS_RTL_TO_CHECKPOINT_INDUCTION",
+      "logic": [
+        23,
+        20
+      ],
+      "explicit_state": false,
+      "proof_sha256": "8177bd0da71321efc90be3f750c6bf19ad6b6f46ae01e107adef1f76b777f636"
+    },
+    "variant_0_orderB": {
+      "status": "PASS_RTL_TO_CHECKPOINT_INDUCTION",
+      "logic": [
+        23,
+        20
+      ],
+      "explicit_state": false,
+      "proof_sha256": "b0c9150d8bed28d9acd75ee8808b90e3bb2fbb435bc65c5dd393af86c042f5f6"
+    },
+    "variant_1_hierarchy": {
+      "status": "PASS_RTL_TO_CHECKPOINT_INDUCTION",
+      "logic": [
+        41,
+        33
+      ],
+      "explicit_state": true,
+      "proof_sha256": "45d363d778a3f52ec91a5605eeef39e9a5aa3a0ce09d3143641c58038c543dc1"
+    },
+    "variant_1_demorgan": {
+      "status": "PASS_RTL_TO_CHECKPOINT_INDUCTION",
+      "logic": [
+        41,
+        33
+      ],
+      "explicit_state": true,
+      "proof_sha256": "c7d23ed98ac5e9ad09f45e87337171f95042783d34c434ef3c2f6e52a45180fa"
+    },
+    "variant_1_orderA": {
+      "status": "PASS_RTL_TO_CHECKPOINT_INDUCTION",
+      "logic": [
+        73,
+        61
+      ],
+      "explicit_state": true,
+      "proof_sha256": "7e3e751f4251508d804cfecadaef21ff60ee1695d83b1b40e57a6434b9a86416"
+    },
+    "variant_1_orderB": {
+      "status": "PASS_RTL_TO_CHECKPOINT_INDUCTION",
+      "logic": [
+        72,
+        61
+      ],
+      "explicit_state": true,
+      "proof_sha256": "8c50d9cd2bc88af55c1b0458901c826973dbf1e1b28b46e13752af2c1bb889db"
+    }
+  }
+}

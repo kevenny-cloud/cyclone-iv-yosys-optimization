@@ -1,0 +1,2058 @@
+
+-- Executing script file `run.ys' --
+
+1. Executing Verilog-2005 frontend: relation.v
+Parsing Verilog input from `relation.v' to AST representation.
+Generating RTLIL representation for module `\gold'.
+Generating RTLIL representation for module `\gate'.
+Successfully finished Verilog frontend.
+
+2. Executing MITER pass (creating miter circuit).
+Creating miter cell "miter" with gold cell "gold" and gate cell "gate".
+
+2.1. Executing FLATTEN pass (flatten design).
+<suppressed ~2 debug messages>
+
+2.2. Executing OPT_EXPR pass (perform const folding).
+Optimizing module miter.
+<suppressed ~120 debug messages>
+Removed 0 unused cells and 160 unused wires.
+
+3. Executing PREP pass.
+
+3.1. Executing HIERARCHY pass (managing design hierarchy).
+
+3.1.1. Analyzing design hierarchy..
+Top module:  \miter
+
+3.1.2. Analyzing design hierarchy..
+Top module:  \miter
+Removing unused module `\gate'.
+Removing unused module `\gold'.
+Removed 2 unused modules.
+
+3.2. Executing PROC pass (convert processes to netlists).
+
+3.2.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+3.2.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Removed a total of 0 dead cases.
+
+3.2.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 0 assignments to connections.
+
+3.2.4. Executing PROC_INIT pass (extract init attributes).
+
+3.2.5. Executing PROC_ARST pass (detect async resets in processes).
+
+3.2.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+
+3.2.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+
+3.2.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+3.2.9. Executing PROC_DFF pass (convert process syncs to FFs).
+
+3.2.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+3.2.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+3.2.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module miter.
+
+3.3. Executing FUTURE pass.
+
+3.4. Executing OPT_EXPR pass (perform const folding).
+Optimizing module miter.
+
+3.5. Executing CHECK pass (checking for obvious problems).
+Checking module miter...
+Found and reported 0 problems.
+
+3.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \miter..
+
+3.7. Executing OPT pass (performing simple optimizations).
+
+3.7.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module miter.
+
+3.7.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\miter'.
+Computing hashes of 1320 cells of `\miter'.
+Finding duplicate cells in `\miter'.
+Computing hashes of 1286 cells of `\miter'.
+Finding duplicate cells in `\miter'.
+Computing hashes of 1280 cells of `\miter'.
+Finding duplicate cells in `\miter'.
+Computing hashes of 1279 cells of `\miter'.
+Finding duplicate cells in `\miter'.
+<suppressed ~123 debug messages>
+Removed a total of 41 cells.
+
+3.7.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \miter..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~160 debug messages>
+
+3.7.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \miter.
+Performed a total of 0 changes.
+
+3.7.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\miter'.
+Computing hashes of 1279 cells of `\miter'.
+Finding duplicate cells in `\miter'.
+Removed a total of 0 cells.
+
+3.7.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \miter..
+Removed 0 unused cells and 41 unused wires.
+<suppressed ~1 debug messages>
+
+3.7.7. Executing OPT_EXPR pass (perform const folding).
+Optimizing module miter.
+
+3.7.8. Rerunning OPT passes. (Maybe there is more to do..)
+
+3.7.9. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \miter..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~160 debug messages>
+
+3.7.10. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \miter.
+Performed a total of 0 changes.
+
+3.7.11. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\miter'.
+Computing hashes of 1279 cells of `\miter'.
+Finding duplicate cells in `\miter'.
+Removed a total of 0 cells.
+
+3.7.12. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \miter..
+
+3.7.13. Executing OPT_EXPR pass (perform const folding).
+Optimizing module miter.
+
+3.7.14. Finished fast OPT passes. (There is nothing left to do.)
+
+3.8. Executing WREDUCE pass (reducing word size of cells).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1528$615 ($shr).
+Removed top 3 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1527$614 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1527$614 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1523$610 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1523$610 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1522$609 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1521$608 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1520$607 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1520$607 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1519$606 ($shr).
+Removed top 4 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1517$604 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1517$604 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1516$603 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1515$602 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1515$602 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1514$601 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1513$600 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1512$599 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1512$599 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1511$598 ($shr).
+Removed top 3 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1510$597 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1510$597 ($shr).
+Removed top 8 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1509$596 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1509$596 ($shr).
+Removed top 3 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1508$595 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1508$595 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1507$594 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1507$594 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1506$593 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1506$593 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1505$592 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1504$591 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1503$590 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1502$589 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1502$589 ($shr).
+Removed top 4 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1501$588 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1501$588 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1500$587 ($shr).
+Removed top 8 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1499$586 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1499$586 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1498$585 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1498$585 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1497$584 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1496$583 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1496$583 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1495$582 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1494$581 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1494$581 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1493$580 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1493$580 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1492$579 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1491$578 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1490$577 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1489$576 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1488$575 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1488$575 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1487$574 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1486$573 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1486$573 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1485$572 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1484$571 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1483$570 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1482$569 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1482$569 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1481$568 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1481$568 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1480$567 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1480$567 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1479$566 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1478$565 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1478$565 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1477$564 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1477$564 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1476$563 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1475$562 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1475$562 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1474$561 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1473$560 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1472$559 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1472$559 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1471$558 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1470$557 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1470$557 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1469$556 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1469$556 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1468$555 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1467$554 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1467$554 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1466$553 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1465$552 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1464$551 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1463$550 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1463$550 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1462$549 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1461$548 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1461$548 ($shr).
+Removed top 4 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1460$547 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1460$547 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1459$546 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1459$546 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1458$545 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1457$544 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1457$544 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1456$543 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1455$542 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1454$541 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1454$541 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1453$540 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1453$540 ($shr).
+Removed top 3 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1452$539 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1452$539 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1451$538 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1451$538 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1450$537 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1450$537 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1449$536 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1448$535 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1447$534 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1445$532 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1444$531 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1444$531 ($shr).
+Removed top 8 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1443$530 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1443$530 ($shr).
+Removed top 3 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1442$529 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1442$529 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1441$528 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1441$528 ($shr).
+Removed top 4 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1440$527 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1440$527 ($shr).
+Removed top 3 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1439$526 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1439$526 ($shr).
+Removed top 3 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1438$525 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1438$525 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1437$524 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1436$523 ($shr).
+Removed top 3 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1435$522 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1435$522 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1434$521 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1434$521 ($shr).
+Removed top 3 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1432$519 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1432$519 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1431$518 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1431$518 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1430$517 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1429$516 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1429$516 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1428$515 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1427$514 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1427$514 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1426$513 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1426$513 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1425$512 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1425$512 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1424$511 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1424$511 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1423$510 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1423$510 ($shr).
+Removed top 5 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1422$509 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1422$509 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1421$508 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1421$508 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1419$506 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1419$506 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1417$504 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1416$503 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1415$502 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1415$502 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1414$501 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1414$501 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1413$500 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1412$499 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1412$499 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1411$498 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1411$498 ($shr).
+Removed top 7 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1410$497 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1410$497 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1409$496 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1408$495 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1406$493 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1405$492 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1404$491 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1404$491 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1403$490 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1402$489 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1401$488 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1401$488 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1400$487 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1400$487 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1399$486 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1399$486 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1398$485 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1397$484 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1397$484 ($shr).
+Removed top 7 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1396$483 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1396$483 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1395$482 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1394$481 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1394$481 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1393$480 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1393$480 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1392$479 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1392$479 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1391$478 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1391$478 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1390$477 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1390$477 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1389$476 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1389$476 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1388$475 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1387$474 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1386$473 ($shr).
+Removed top 4 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1385$472 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1385$472 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1384$471 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1383$470 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1383$470 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1382$469 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1382$469 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1381$468 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1381$468 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1380$467 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1380$467 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1379$466 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1379$466 ($shr).
+Removed top 5 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1378$465 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1378$465 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1377$464 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1377$464 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1376$463 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1376$463 ($shr).
+Removed top 3 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1375$462 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1375$462 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1374$461 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1374$461 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1373$460 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1373$460 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1372$459 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1372$459 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1371$458 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1371$458 ($shr).
+Removed top 6 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1370$457 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1370$457 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1369$456 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1368$455 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1367$454 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1367$454 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1366$453 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1366$453 ($shr).
+Removed top 3 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1363$450 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1363$450 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1362$449 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1361$448 ($shr).
+Removed top 3 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1360$447 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1360$447 ($shr).
+Removed top 3 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1359$446 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1359$446 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1358$445 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1358$445 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1357$444 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1356$443 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1356$443 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1355$442 ($shr).
+Removed top 3 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1354$441 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1354$441 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1353$440 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1353$440 ($shr).
+Removed top 4 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1352$439 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1352$439 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1351$438 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1351$438 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1349$436 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1348$435 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1347$434 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1347$434 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1346$433 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1345$432 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1344$431 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1344$431 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1343$430 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1343$430 ($shr).
+Removed top 3 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1342$429 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1342$429 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1341$428 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1341$428 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1340$427 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1340$427 ($shr).
+Removed top 7 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1339$426 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1339$426 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1338$425 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1338$425 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1337$424 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1337$424 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1336$423 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1336$423 ($shr).
+Removed top 3 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1335$422 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1335$422 ($shr).
+Removed top 6 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1334$421 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1334$421 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1333$420 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1333$420 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1332$419 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1332$419 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1331$418 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1330$417 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1329$416 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1329$416 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1328$415 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1328$415 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1327$414 ($shr).
+Removed top 3 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1325$412 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1325$412 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1321$408 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1321$408 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1320$407 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1318$405 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1318$405 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1317$404 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1316$403 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1315$402 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1315$402 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1314$401 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1312$399 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1311$398 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1311$398 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1310$397 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1310$397 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1309$396 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1308$395 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1308$395 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1307$394 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1306$393 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1305$392 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1304$391 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1304$391 ($shr).
+Removed top 4 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1303$390 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1303$390 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1302$389 ($shr).
+Removed top 8 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1301$388 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1301$388 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1300$387 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1299$386 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1298$385 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1297$384 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1297$384 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1296$383 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1296$383 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1295$382 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1294$381 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1293$380 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1293$380 ($shr).
+Removed top 4 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1292$379 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1292$379 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1291$378 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1291$378 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1290$377 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1289$376 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1289$376 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1288$375 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1287$374 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1287$374 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1286$373 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1286$373 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1285$372 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1285$372 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1284$371 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1284$371 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1283$370 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1282$369 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1281$368 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1280$367 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1280$367 ($shr).
+Removed top 3 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1279$366 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1279$366 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1278$365 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1278$365 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1277$364 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1276$363 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1276$363 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1275$362 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1275$362 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1274$361 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1274$361 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1273$360 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1272$359 ($shr).
+Removed top 4 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1271$358 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1271$358 ($shr).
+Removed top 5 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1270$357 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1270$357 ($shr).
+Removed top 4 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1269$356 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1269$356 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1268$355 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1268$355 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1267$354 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1267$354 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1266$353 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1265$352 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1265$352 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1264$351 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1263$350 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1262$349 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1261$348 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1261$348 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1260$347 ($shr).
+Removed top 3 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1259$346 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1259$346 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1258$345 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1257$344 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1256$343 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1255$342 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1254$341 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1253$340 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1253$340 ($shr).
+Removed top 4 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1252$339 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1252$339 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1251$338 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1251$338 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1250$337 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1249$336 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1249$336 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1248$335 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1247$334 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1246$333 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1245$332 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1244$331 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1244$331 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1243$330 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1242$329 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1242$329 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1241$328 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1240$327 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1239$326 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1237$324 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1236$323 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1236$323 ($shr).
+Removed top 8 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1235$322 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1235$322 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1234$321 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1234$321 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1233$320 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1232$319 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1232$319 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1231$318 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1231$318 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1230$317 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1230$317 ($shr).
+Removed top 3 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1229$316 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1229$316 ($shr).
+Removed top 7 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1228$315 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1228$315 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1227$314 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1227$314 ($shr).
+Removed top 3 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1226$313 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1226$313 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1225$312 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1225$312 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1224$311 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1224$311 ($shr).
+Removed top 6 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1223$310 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1223$310 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1222$309 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1222$309 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1221$308 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1221$308 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1220$307 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1219$306 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1218$305 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1218$305 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1217$304 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1217$304 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1216$303 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1216$303 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1215$302 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1215$302 ($shr).
+Removed top 3 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1214$301 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1214$301 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1213$300 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1213$300 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1212$299 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1212$299 ($shr).
+Removed top 4 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1211$298 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1211$298 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1210$297 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1210$297 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1209$296 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1209$296 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1208$295 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1208$295 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1207$294 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1207$294 ($shr).
+Removed top 7 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1206$293 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1206$293 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1205$292 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1205$292 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1204$291 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1204$291 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1203$290 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1202$289 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1201$288 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1201$288 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1200$287 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1200$287 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1199$286 ($shr).
+Removed top 3 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1198$285 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1198$285 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1197$284 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1197$284 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1196$283 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1196$283 ($shr).
+Removed top 3 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1195$282 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1195$282 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1194$281 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1194$281 ($shr).
+Removed top 3 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1192$279 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1192$279 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1191$278 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1191$278 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1190$277 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1189$276 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1189$276 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1188$275 ($shr).
+Removed top 3 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1187$274 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1187$274 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1186$273 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1186$273 ($shr).
+Removed top 4 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1185$272 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1185$272 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1184$271 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1184$271 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1183$270 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1181$268 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1180$267 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1179$266 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1179$266 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1178$265 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1177$264 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1177$264 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1174$261 ($shr).
+Removed top 3 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1173$260 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1173$260 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1171$258 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1171$258 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1168$255 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1167$254 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1166$253 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1166$253 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1165$252 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1163$250 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1163$250 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1162$249 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1162$249 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1161$248 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1160$247 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1160$247 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1159$246 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1158$245 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1157$244 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1156$243 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1156$243 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1155$242 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1154$241 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1154$241 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1153$240 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1153$240 ($shr).
+Removed top 4 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1152$239 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1152$239 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1151$238 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1151$238 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1150$237 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1149$236 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1149$236 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1148$235 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1147$234 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1147$234 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1146$233 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1145$232 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1144$231 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1143$230 ($shr).
+Removed top 4 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1142$229 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1142$229 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1141$228 ($shr).
+Removed top 8 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1140$227 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1140$227 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1139$226 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1139$226 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1138$225 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1138$225 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1137$224 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1137$224 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1136$223 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1136$223 ($shr).
+Removed top 3 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1135$222 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1135$222 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1134$221 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1134$221 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1133$220 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1132$219 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1132$219 ($shr).
+Removed top 3 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1131$218 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1131$218 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1130$217 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1129$216 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1129$216 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1128$215 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1128$215 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1127$214 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1126$213 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1126$213 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1125$212 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1125$212 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1124$211 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1124$211 ($shr).
+Removed top 9 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1123$210 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1123$210 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1122$209 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1121$208 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1120$207 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1119$206 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1118$205 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1117$204 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1116$203 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1116$203 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1115$202 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1114$201 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1113$200 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1113$200 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1112$199 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1111$198 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1111$198 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1110$197 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1109$196 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1108$195 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1107$194 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1106$193 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1105$192 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1104$191 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1104$191 ($shr).
+Removed top 4 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1103$190 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1103$190 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1102$189 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1102$189 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1101$188 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1100$187 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1100$187 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1099$186 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1098$185 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1097$184 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1097$184 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1096$183 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1096$183 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1095$182 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1095$182 ($shr).
+Removed top 3 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1094$181 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1094$181 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1093$180 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1093$180 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1092$179 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1091$178 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1090$177 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1088$175 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1087$174 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1087$174 ($shr).
+Removed top 8 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1086$173 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1086$173 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1085$172 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1085$172 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1084$171 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1083$170 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1082$169 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1082$169 ($shr).
+Removed top 3 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1080$167 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1080$167 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1078$165 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1078$165 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1073$160 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1073$160 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1072$159 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1072$159 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1071$158 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1070$157 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1068$155 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1067$154 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1066$153 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1065$152 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1065$152 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1064$151 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1064$151 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1063$150 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1062$149 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1062$149 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1061$148 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1061$148 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1060$147 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1059$146 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1058$145 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1057$144 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1056$143 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1056$143 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1055$142 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1055$142 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1054$141 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1054$141 ($shr).
+Removed top 9 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1053$140 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1053$140 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1052$139 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1051$138 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1050$137 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1049$136 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1049$136 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1048$135 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1048$135 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1047$134 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1046$133 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1045$132 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1044$131 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1044$131 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1043$130 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1042$129 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1042$129 ($shr).
+Removed top 3 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1041$128 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1041$128 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1040$127 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1039$126 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1038$125 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1038$125 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1037$124 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1036$123 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1036$123 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1035$122 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1034$121 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1034$121 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1033$120 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1033$120 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1032$119 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1032$119 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1031$118 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1030$117 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1029$116 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1028$115 ($shr).
+Removed top 4 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1027$114 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1027$114 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1026$113 ($shr).
+Removed top 8 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1025$112 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1025$112 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1024$111 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1024$111 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1023$110 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1023$110 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1022$109 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1022$109 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1021$108 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1020$107 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1020$107 ($shr).
+Removed top 3 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1019$106 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1019$106 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1018$105 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1017$104 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1017$104 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1016$103 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1015$102 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1014$101 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1013$100 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1012$99 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1011$98 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1010$97 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1009$96 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1009$96 ($shr).
+Removed top 4 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1008$95 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1008$95 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1007$94 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1007$94 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1006$93 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1004$91 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1003$90 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1002$89 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:1001$88 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1001$88 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:1000$87 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:999$86 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:999$86 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:998$85 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:998$85 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:997$84 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:996$83 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:995$82 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:994$81 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:993$80 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:992$79 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:992$79 ($shr).
+Removed top 8 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:991$78 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:991$78 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:990$77 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:990$77 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:989$76 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:989$76 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:988$75 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:988$75 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:987$74 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:987$74 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:986$73 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:986$73 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:985$72 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:985$72 ($shr).
+Removed top 7 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:984$71 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:984$71 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:983$70 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:983$70 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:982$69 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:982$69 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:981$68 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:981$68 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:980$67 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:980$67 ($shr).
+Removed top 4 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:979$66 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:979$66 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:978$65 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:977$64 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:976$63 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:976$63 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:975$62 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:975$62 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:974$61 ($shr).
+Removed top 3 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:973$60 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:973$60 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:972$59 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:972$59 ($shr).
+Removed top 4 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:971$58 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:971$58 ($shr).
+Removed top 3 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:970$57 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:970$57 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:969$56 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:968$55 ($shr).
+Removed top 3 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:967$54 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:967$54 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:966$53 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:966$53 ($shr).
+Removed top 3 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:965$52 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:965$52 ($shr).
+Removed top 3 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:964$51 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:964$51 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:963$50 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:962$49 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:961$48 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:961$48 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:960$47 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:959$46 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:959$46 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:958$45 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:957$44 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:957$44 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:956$43 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:956$43 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:955$42 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:955$42 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:954$41 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:954$41 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:953$40 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:953$40 ($shr).
+Removed top 3 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:952$39 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:952$39 ($shr).
+Removed top 7 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:951$38 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:951$38 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:950$37 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:950$37 ($shr).
+Removed top 3 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:949$36 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:949$36 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:948$35 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:948$35 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:947$34 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:947$34 ($shr).
+Removed top 6 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:946$33 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:946$33 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:945$32 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:945$32 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:944$31 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:944$31 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:943$30 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:942$29 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:941$28 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:940$27 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:939$26 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:939$26 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:938$25 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:937$24 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:936$23 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:935$22 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:935$22 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:934$21 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:934$21 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:3064$1336 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:3063$1335 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:3063$1335 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:3062$1334 ($shr).
+Removed top 4 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:3061$1333 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:3061$1333 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:3060$1332 ($shr).
+Removed top 9 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:3059$1331 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:3059$1331 ($shr).
+Removed top 8 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:3058$1330 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:3058$1330 ($shr).
+Removed top 4 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:3057$1329 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:3057$1329 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:3056$1328 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:3055$1327 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:3055$1327 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:3054$1326 ($shr).
+Removed top 10 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:3053$1325 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:3053$1325 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:3052$1324 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:3051$1323 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:3051$1323 ($shr).
+Removed top 3 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:3050$1322 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:3050$1322 ($shr).
+Removed top 3 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:3049$1321 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:3049$1321 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:3048$1320 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:3047$1319 ($shr).
+Removed top 4 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:3046$1318 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:3046$1318 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:3045$1317 ($shr).
+Removed top 8 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:3044$1316 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:3044$1316 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:3043$1315 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:3042$1314 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:3041$1313 ($shr).
+Removed top 3 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:3040$1312 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:3040$1312 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:3039$1311 ($shr).
+Removed top 4 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:3038$1310 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:3038$1310 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:3037$1309 ($shr).
+Removed top 8 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:3036$1308 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:3036$1308 ($shr).
+Removed top 6 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:3035$1307 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:3035$1307 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:3034$1306 ($shr).
+Removed top 3 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:3033$1305 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:3033$1305 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:3032$1304 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:3031$1303 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:3031$1303 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:3030$1302 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:3029$1301 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:3028$1300 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:3027$1299 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:3027$1299 ($shr).
+Removed top 8 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:3026$1298 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:3026$1298 ($shr).
+Removed top 6 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:3025$1297 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:3025$1297 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:3024$1296 ($shr).
+Removed top 3 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:3023$1295 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:3023$1295 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:3022$1294 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:3021$1293 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:3020$1292 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:3019$1291 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:3019$1291 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:3018$1290 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:3018$1290 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:3017$1289 ($shr).
+Removed top 8 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:3016$1288 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:3016$1288 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:3015$1287 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:3014$1286 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:3013$1285 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:3013$1285 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:3012$1284 ($shr).
+Removed top 8 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:3011$1283 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:3011$1283 ($shr).
+Removed top 8 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:3010$1282 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:3010$1282 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:3009$1281 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:3008$1280 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:3008$1280 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:3007$1279 ($shr).
+Removed top 6 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:3006$1278 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:3006$1278 ($shr).
+Removed top 4 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:3005$1277 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:3005$1277 ($shr).
+Removed top 4 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:3004$1276 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:3004$1276 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:3003$1275 ($shr).
+Removed top 10 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:3002$1274 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:3002$1274 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:3001$1273 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:3001$1273 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:3000$1272 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2999$1271 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2998$1270 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2998$1270 ($shr).
+Removed top 3 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2997$1269 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2997$1269 ($shr).
+Removed top 4 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2996$1268 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2996$1268 ($shr).
+Removed top 6 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2995$1267 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2995$1267 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2994$1266 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2993$1265 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2992$1264 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2991$1263 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2990$1262 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2989$1261 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2989$1261 ($shr).
+Removed top 8 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2988$1260 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2988$1260 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2987$1259 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2986$1258 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2985$1257 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2984$1256 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2983$1255 ($shr).
+Removed top 5 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2982$1254 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2982$1254 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2981$1253 ($shr).
+Removed top 8 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2980$1252 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2980$1252 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2979$1251 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2978$1250 ($shr).
+Removed top 5 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2977$1249 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2977$1249 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2976$1248 ($shr).
+Removed top 5 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2975$1247 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2975$1247 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2974$1246 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2974$1246 ($shr).
+Removed top 4 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2973$1245 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2973$1245 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2972$1244 ($shr).
+Removed top 5 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2971$1243 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2971$1243 ($shr).
+Removed top 5 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2970$1242 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2970$1242 ($shr).
+Removed top 5 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2969$1241 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2969$1241 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2968$1240 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2967$1239 ($shr).
+Removed top 5 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2966$1238 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2966$1238 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2965$1237 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2965$1237 ($shr).
+Removed top 3 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2964$1236 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2964$1236 ($shr).
+Removed top 9 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2963$1235 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2963$1235 ($shr).
+Removed top 6 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2962$1234 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2962$1234 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2961$1233 ($shr).
+Removed top 3 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2960$1232 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2960$1232 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2959$1231 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2959$1231 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2958$1230 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2958$1230 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2957$1229 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2957$1229 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2956$1228 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2956$1228 ($shr).
+Removed top 11 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2955$1227 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2955$1227 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2954$1226 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2954$1226 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2953$1225 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2952$1224 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2952$1224 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2951$1223 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2950$1222 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2949$1221 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2948$1220 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2948$1220 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2947$1219 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2947$1219 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2946$1218 ($shr).
+Removed top 3 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2945$1217 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2945$1217 ($shr).
+Removed top 3 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2944$1216 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2944$1216 ($shr).
+Removed top 11 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2943$1215 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2943$1215 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2942$1214 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2941$1213 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2940$1212 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2939$1211 ($shr).
+Removed top 8 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2938$1210 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2938$1210 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2937$1209 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2936$1208 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2935$1207 ($shr).
+Removed top 3 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2934$1206 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2934$1206 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2933$1205 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2932$1204 ($shr).
+Removed top 8 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2931$1203 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2931$1203 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2930$1202 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2930$1202 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2929$1201 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2929$1201 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2928$1200 ($shr).
+Removed top 8 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2927$1199 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2927$1199 ($shr).
+Removed top 7 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2926$1198 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2926$1198 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2925$1197 ($shr).
+Removed top 8 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2924$1196 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2924$1196 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2923$1195 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2923$1195 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2922$1194 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2922$1194 ($shr).
+Removed top 8 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2921$1193 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2921$1193 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2920$1192 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2920$1192 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2919$1191 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2919$1191 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2918$1190 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2917$1189 ($shr).
+Removed top 3 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2916$1188 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2916$1188 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2915$1187 ($shr).
+Removed top 5 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2914$1186 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2914$1186 ($shr).
+Removed top 6 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2913$1185 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2913$1185 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2912$1184 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2912$1184 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2911$1183 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2911$1183 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2910$1182 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2910$1182 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2909$1181 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2909$1181 ($shr).
+Removed top 6 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2908$1180 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2908$1180 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2907$1179 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2907$1179 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2906$1178 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2906$1178 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2905$1177 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2905$1177 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2904$1176 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2904$1176 ($shr).
+Removed top 5 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2903$1175 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2903$1175 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2902$1174 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2902$1174 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2901$1173 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2901$1173 ($shr).
+Removed top 11 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2900$1172 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2900$1172 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2899$1171 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2898$1170 ($shr).
+Removed top 5 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2897$1169 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2897$1169 ($shr).
+Removed top 3 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2896$1168 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2896$1168 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2895$1167 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2895$1167 ($shr).
+Removed top 5 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2894$1166 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2894$1166 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2893$1165 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2892$1164 ($shr).
+Removed top 5 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2891$1163 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2891$1163 ($shr).
+Removed top 9 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2890$1162 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2890$1162 ($shr).
+Removed top 6 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2889$1161 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2889$1161 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2888$1160 ($shr).
+Removed top 5 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2887$1159 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2887$1159 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2886$1158 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2886$1158 ($shr).
+Removed top 4 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2885$1157 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2885$1157 ($shr).
+Removed top 3 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2884$1156 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2884$1156 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2883$1155 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2882$1154 ($shr).
+Removed top 8 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2881$1153 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2881$1153 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2880$1152 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2879$1151 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2878$1150 ($shr).
+Removed top 3 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2877$1149 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2877$1149 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2876$1148 ($shr).
+Removed top 5 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2875$1147 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2875$1147 ($shr).
+Removed top 6 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2874$1146 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2874$1146 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2873$1145 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2873$1145 ($shr).
+Removed top 9 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2872$1144 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2872$1144 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2871$1143 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2871$1143 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2870$1142 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2870$1142 ($shr).
+Removed top 7 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2869$1141 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2869$1141 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2868$1140 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2868$1140 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2867$1139 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2867$1139 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2866$1138 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2866$1138 ($shr).
+Removed top 9 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2865$1137 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2865$1137 ($shr).
+Removed top 6 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2864$1136 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2864$1136 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2863$1135 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2863$1135 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2862$1134 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2862$1134 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2861$1133 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2860$1132 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2859$1131 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2859$1131 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2858$1130 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2857$1129 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2857$1129 ($shr).
+Removed top 8 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2856$1128 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2856$1128 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2855$1127 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2854$1126 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2854$1126 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2853$1125 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2852$1124 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2851$1123 ($shr).
+Removed top 6 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2850$1122 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2850$1122 ($shr).
+Removed top 4 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2849$1121 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2849$1121 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2848$1120 ($shr).
+Removed top 8 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2847$1119 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2847$1119 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2846$1118 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2845$1117 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2844$1116 ($shr).
+Removed top 8 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2843$1115 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2843$1115 ($shr).
+Removed top 4 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2842$1114 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2842$1114 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2841$1113 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2840$1112 ($shr).
+Removed top 4 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2839$1111 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2839$1111 ($shr).
+Removed top 4 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2838$1110 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2838$1110 ($shr).
+Removed top 3 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2837$1109 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2837$1109 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2836$1108 ($shr).
+Removed top 6 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2835$1107 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2835$1107 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2834$1106 ($shr).
+Removed top 3 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2833$1105 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2833$1105 ($shr).
+Removed top 3 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2832$1104 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2832$1104 ($shr).
+Removed top 3 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2831$1103 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2831$1103 ($shr).
+Removed top 8 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2830$1102 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2830$1102 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2829$1101 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2828$1100 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2827$1099 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2826$1098 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2825$1097 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2824$1096 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2824$1096 ($shr).
+Removed top 9 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2823$1095 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2823$1095 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2822$1094 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2822$1094 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2821$1093 ($shr).
+Removed top 8 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2820$1092 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2820$1092 ($shr).
+Removed top 8 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2819$1091 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2819$1091 ($shr).
+Removed top 6 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2818$1090 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2818$1090 ($shr).
+Removed top 8 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2817$1089 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2817$1089 ($shr).
+Removed top 9 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2816$1088 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2816$1088 ($shr).
+Removed top 4 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2815$1087 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2815$1087 ($shr).
+Removed top 3 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2814$1086 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2814$1086 ($shr).
+Removed top 3 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2813$1085 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2813$1085 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2812$1084 ($shr).
+Removed top 3 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2811$1083 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2811$1083 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2810$1082 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2810$1082 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2809$1081 ($shr).
+Removed top 9 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2808$1080 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2808$1080 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2807$1079 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2806$1078 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2805$1077 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2804$1076 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2803$1075 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2802$1074 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2801$1073 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2800$1072 ($shr).
+Removed top 3 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2799$1071 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2799$1071 ($shr).
+Removed top 4 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2798$1070 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2798$1070 ($shr).
+Removed top 4 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2797$1069 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2797$1069 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2796$1068 ($shr).
+Removed top 8 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2795$1067 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2795$1067 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2794$1066 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2793$1065 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2793$1065 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2792$1064 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2791$1063 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2790$1062 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2789$1061 ($shr).
+Removed top 6 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2788$1060 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2788$1060 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2787$1059 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2786$1058 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2785$1057 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2784$1056 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2783$1055 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2782$1054 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2782$1054 ($shr).
+Removed top 8 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2781$1053 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2781$1053 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2780$1052 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2780$1052 ($shr).
+Removed top 9 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2779$1051 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2779$1051 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2778$1050 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2778$1050 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2777$1049 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2776$1048 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2776$1048 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2775$1047 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2775$1047 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2774$1046 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2773$1045 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2773$1045 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2772$1044 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2772$1044 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2771$1043 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2770$1042 ($shr).
+Removed top 5 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2769$1041 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2769$1041 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2768$1040 ($shr).
+Removed top 3 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2767$1039 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2767$1039 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2766$1038 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2765$1037 ($shr).
+Removed top 5 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2764$1036 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2764$1036 ($shr).
+Removed top 6 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2763$1035 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2763$1035 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2762$1034 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2762$1034 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2761$1033 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2761$1033 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2760$1032 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2760$1032 ($shr).
+Removed top 9 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2759$1031 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2759$1031 ($shr).
+Removed top 7 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2758$1030 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2758$1030 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2757$1029 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2757$1029 ($shr).
+Removed top 9 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2756$1028 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2756$1028 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2755$1027 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2755$1027 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2754$1026 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2754$1026 ($shr).
+Removed top 6 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2753$1025 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2753$1025 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2752$1024 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2752$1024 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2751$1023 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2751$1023 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2750$1022 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2749$1021 ($shr).
+Removed top 5 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2748$1020 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2748$1020 ($shr).
+Removed top 6 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2747$1019 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2747$1019 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2746$1018 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2746$1018 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2745$1017 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2745$1017 ($shr).
+Removed top 5 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2744$1016 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2744$1016 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2743$1015 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2743$1015 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2742$1014 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2742$1014 ($shr).
+Removed top 6 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2741$1013 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2741$1013 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2740$1012 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2740$1012 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2739$1011 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2739$1011 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2738$1010 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2738$1010 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2737$1009 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2737$1009 ($shr).
+Removed top 11 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2736$1008 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2736$1008 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2735$1007 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2735$1007 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2734$1006 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2734$1006 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2733$1005 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2732$1004 ($shr).
+Removed top 5 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2731$1003 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2731$1003 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2730$1002 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2730$1002 ($shr).
+Removed top 5 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2729$1001 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2729$1001 ($shr).
+Removed top 3 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2728$1000 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2728$1000 ($shr).
+Removed top 3 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2727$999 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2727$999 ($shr).
+Removed top 3 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2726$998 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2726$998 ($shr).
+Removed top 9 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2725$997 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2725$997 ($shr).
+Removed top 6 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2724$996 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2724$996 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2723$995 ($shr).
+Removed top 5 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2722$994 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2722$994 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2721$993 ($shr).
+Removed top 5 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2720$992 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2720$992 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2719$991 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2719$991 ($shr).
+Removed top 4 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2718$990 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2718$990 ($shr).
+Removed top 3 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2717$989 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2717$989 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2716$988 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2715$987 ($shr).
+Removed top 8 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2714$986 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2714$986 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2713$985 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2712$984 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2711$983 ($shr).
+Removed top 3 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2710$982 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2710$982 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2709$981 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2709$981 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2708$980 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2707$979 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2707$979 ($shr).
+Removed top 8 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2706$978 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2706$978 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2705$977 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2704$976 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2704$976 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2703$975 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2702$974 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2701$973 ($shr).
+Removed top 6 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2700$972 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2700$972 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2699$971 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2698$970 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2697$969 ($shr).
+Removed top 8 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2696$968 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2696$968 ($shr).
+Removed top 4 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2695$967 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2695$967 ($shr).
+Removed top 4 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2694$966 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2694$966 ($shr).
+Removed top 3 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2693$965 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2693$965 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2692$964 ($shr).
+Removed top 4 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2691$963 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2691$963 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2690$962 ($shr).
+Removed top 6 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2689$961 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2689$961 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2688$960 ($shr).
+Removed top 4 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2687$959 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2687$959 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2686$958 ($shr).
+Removed top 8 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2685$957 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2685$957 ($shr).
+Removed top 3 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2684$956 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2684$956 ($shr).
+Removed top 3 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2683$955 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2683$955 ($shr).
+Removed top 3 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2682$954 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2682$954 ($shr).
+Removed top 8 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2681$953 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2681$953 ($shr).
+Removed top 9 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2680$952 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2680$952 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2679$951 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2679$951 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2678$950 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2678$950 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2677$949 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2677$949 ($shr).
+Removed top 9 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2676$948 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2676$948 ($shr).
+Removed top 8 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2675$947 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2675$947 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2674$946 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2673$945 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2673$945 ($shr).
+Removed top 9 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2672$944 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2672$944 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2671$943 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2670$942 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2670$942 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2669$941 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2669$941 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2668$940 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2667$939 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2666$938 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2665$937 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2664$936 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2663$935 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2662$934 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2661$933 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2661$933 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2660$932 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2659$931 ($shr).
+Removed top 8 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2658$930 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2658$930 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2657$929 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2656$928 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2656$928 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2655$927 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2654$926 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2653$925 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2652$924 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2651$923 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2650$922 ($shr).
+Removed top 3 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2649$921 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2649$921 ($shr).
+Removed top 4 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2648$920 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2648$920 ($shr).
+Removed top 4 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2647$919 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2647$919 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2646$918 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2645$917 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2645$917 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2644$916 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2643$915 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2642$914 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2642$914 ($shr).
+Removed top 3 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2641$913 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2641$913 ($shr).
+Removed top 4 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2640$912 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2640$912 ($shr).
+Removed top 10 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2639$911 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2639$911 ($shr).
+Removed top 6 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2638$910 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2638$910 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2637$909 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2636$908 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2635$907 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2634$906 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2633$905 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2632$904 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2632$904 ($shr).
+Removed top 8 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2631$903 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2631$903 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2630$902 ($shr).
+Removed top 8 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2629$901 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2629$901 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2628$900 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2627$899 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2626$898 ($shr).
+Removed top 5 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2625$897 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2625$897 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2624$896 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2623$895 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2622$894 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2621$893 ($shr).
+Removed top 5 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2620$892 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2620$892 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2619$891 ($shr).
+Removed top 3 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2618$890 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2618$890 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2617$889 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2616$888 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2616$888 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2615$887 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2614$886 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2613$885 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2612$884 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2612$884 ($shr).
+Removed top 8 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2611$883 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2611$883 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2610$882 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2609$881 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2609$881 ($shr).
+Removed top 6 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2608$880 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2608$880 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2607$879 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2606$878 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2605$877 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2604$876 ($shr).
+Removed top 3 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2603$875 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2603$875 ($shr).
+Removed top 3 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2602$874 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2602$874 ($shr).
+Removed top 8 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2601$873 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2601$873 ($shr).
+Removed top 9 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2600$872 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2600$872 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2599$871 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2598$870 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2597$869 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2596$868 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2595$867 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2594$866 ($shr).
+Removed top 8 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2593$865 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2593$865 ($shr).
+Removed top 8 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2592$864 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2592$864 ($shr).
+Removed top 4 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2591$863 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2591$863 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2590$862 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2589$861 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2589$861 ($shr).
+Removed top 9 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2588$860 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2588$860 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2587$859 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2586$858 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2585$857 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2584$856 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2583$855 ($shr).
+Removed top 4 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2582$854 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2582$854 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2581$853 ($shr).
+Removed top 3 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2580$852 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2580$852 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2579$851 ($shr).
+Removed top 4 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2578$850 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2578$850 ($shr).
+Removed top 8 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2577$849 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2577$849 ($shr).
+Removed top 6 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2576$848 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2576$848 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2575$847 ($shr).
+Removed top 4 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2574$846 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2574$846 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2573$845 ($shr).
+Removed top 8 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2572$844 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2572$844 ($shr).
+Removed top 3 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2571$843 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2571$843 ($shr).
+Removed top 3 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2570$842 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2570$842 ($shr).
+Removed top 3 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2569$841 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2569$841 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2568$840 ($shr).
+Removed top 3 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2567$839 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2567$839 ($shr).
+Removed top 9 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2566$838 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2566$838 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2565$837 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2564$836 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2564$836 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2563$835 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2562$834 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2561$833 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2560$832 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2559$831 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2558$830 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2557$829 ($shr).
+Removed top 3 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2556$828 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2556$828 ($shr).
+Removed top 4 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2555$827 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2555$827 ($shr).
+Removed top 4 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2554$826 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2554$826 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2553$825 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2552$824 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2552$824 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2551$823 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2550$822 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2549$821 ($shr).
+Removed top 4 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2548$820 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2548$820 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2547$819 ($shr).
+Removed top 8 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2546$818 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2546$818 ($shr).
+Removed top 6 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2545$817 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2545$817 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2544$816 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2543$815 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2542$814 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2540$812 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2539$811 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2539$811 ($shr).
+Removed top 8 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2538$810 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2538$810 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2537$809 ($shr).
+Removed top 5 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2536$808 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2536$808 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2535$807 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2535$807 ($shr).
+Removed top 9 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2534$806 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2534$806 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2533$805 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2533$805 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2532$804 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2532$804 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2531$803 ($shr).
+Removed top 3 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2530$802 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2530$802 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2529$801 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2529$801 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2528$800 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2528$800 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2527$799 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2527$799 ($shr).
+Removed top 4 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2526$798 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2526$798 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2525$797 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2524$796 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2523$795 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2523$795 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2522$794 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2522$794 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2521$793 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2521$793 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2520$792 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2520$792 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2519$791 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2519$791 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2518$790 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2518$790 ($shr).
+Removed top 11 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2517$789 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2517$789 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2516$788 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2516$788 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2515$787 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2515$787 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2514$786 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2514$786 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2513$785 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2513$785 ($shr).
+Removed top 6 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2512$784 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2512$784 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2511$783 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2510$782 ($shr).
+Removed top 5 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2509$781 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2509$781 ($shr).
+Removed top 6 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2508$780 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2508$780 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2507$779 ($shr).
+Removed top 5 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2506$778 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2506$778 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2505$777 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2505$777 ($shr).
+Removed top 4 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2504$776 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2504$776 ($shr).
+Removed top 5 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2503$775 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2503$775 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2502$774 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2502$774 ($shr).
+Removed top 5 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2501$773 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2501$773 ($shr).
+Removed top 9 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2500$772 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2500$772 ($shr).
+Removed top 5 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2499$771 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2499$771 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2498$770 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2497$769 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2496$768 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2495$767 ($shr).
+Removed top 5 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2494$766 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2494$766 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2493$765 ($shr).
+Removed top 3 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2492$764 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2492$764 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2491$763 ($shr).
+Removed top 5 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2490$762 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2490$762 ($shr).
+Removed top 6 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2489$761 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2489$761 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2488$760 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2488$760 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2487$759 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2487$759 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2486$758 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2486$758 ($shr).
+Removed top 9 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2485$757 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2485$757 ($shr).
+Removed top 7 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2484$756 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2484$756 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2483$755 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2483$755 ($shr).
+Removed top 9 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2482$754 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2482$754 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2481$753 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2481$753 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2480$752 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2480$752 ($shr).
+Removed top 6 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2479$751 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2479$751 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2478$750 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2478$750 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2477$749 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2477$749 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2476$748 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2475$747 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2473$745 ($shr).
+Removed top 8 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2472$744 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2472$744 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2471$743 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2470$742 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2469$741 ($shr).
+Removed top 3 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2468$740 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2468$740 ($shr).
+Removed top 3 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:2467$739 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:2467$739 ($shr).
+
+3.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \miter..
+Removed 0 unused cells and 1155 unused wires.
+<suppressed ~1 debug messages>
+
+3.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+3.11. Executing OPT pass (performing simple optimizations).
+
+3.11.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module miter.
+
+3.11.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\miter'.
+Computing hashes of 1279 cells of `\miter'.
+Finding duplicate cells in `\miter'.
+Removed a total of 0 cells.
+
+3.11.3. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \miter..
+
+3.11.4. Finished fast OPT passes.
+
+3.12. Executing SORT pass.
+
+3.13. Printing statistics.
+
+=== miter ===
+
+        +----------Local Count, excluding submodules.
+        | 
+     1622 wires
+     2433 wire bits
+     1541 public wires
+     2352 public wire bits
+        3 ports
+      168 port bits
+     1279 cells
+        1   $eqx
+      120   $mux
+        1   $not
+        2   $scopeinfo
+     1155   $shr
+
+3.14. Executing CHECK pass (checking for obvious problems).
+Checking module miter...
+Found and reported 0 problems.
+
+4. Executing SAT pass (solving SAT problems in the circuit).
+Using SAT solver `minisat`.
+
+Setting up SAT problem:
+Final constraint equation: { } = { }
+Import def constraint for this timestep: \in_st
+Import def constraint for this timestep: \in_pi
+Imported 1279 cells to SAT database.
+Import proof-constraint: \trigger = 1'0
+Final proof equation: \trigger = 1'0
+Import show expression: \in_pi
+Import show expression: \in_st
+Import show expression: \trigger
+
+Solving problem with 303972 variables and 814021 clauses..
+SAT proof finished - no model found: SUCCESS!
+
+                  /$$$$$$      /$$$$$$$$     /$$$$$$$    
+                 /$$__  $$    | $$_____/    | $$__  $$   
+                | $$  \ $$    | $$          | $$  \ $$   
+                | $$  | $$    | $$$$$       | $$  | $$   
+                | $$  | $$    | $$__/       | $$  | $$   
+                | $$/$$ $$    | $$          | $$  | $$   
+                |  $$$$$$/ /$$| $$$$$$$$ /$$| $$$$$$$//$$
+                 \____ $$$|__/|________/|__/|_______/|__/
+                       \__/                              
+

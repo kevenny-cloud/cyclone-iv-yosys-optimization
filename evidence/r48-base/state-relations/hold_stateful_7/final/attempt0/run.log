@@ -1,0 +1,362 @@
+
+-- Executing script file `run.ys' --
+
+1. Executing Verilog-2005 frontend: relation.v
+Parsing Verilog input from `relation.v' to AST representation.
+Generating RTLIL representation for module `\gold'.
+Generating RTLIL representation for module `\gate'.
+Successfully finished Verilog frontend.
+
+2. Executing MITER pass (creating miter circuit).
+Creating miter cell "miter" with gold cell "gold" and gate cell "gate".
+
+2.1. Executing FLATTEN pass (flatten design).
+<suppressed ~2 debug messages>
+
+2.2. Executing OPT_EXPR pass (perform const folding).
+Optimizing module miter.
+<suppressed ~126 debug messages>
+Removed 0 unused cells and 175 unused wires.
+
+3. Executing PREP pass.
+
+3.1. Executing HIERARCHY pass (managing design hierarchy).
+
+3.1.1. Analyzing design hierarchy..
+Top module:  \miter
+
+3.1.2. Analyzing design hierarchy..
+Top module:  \miter
+Removing unused module `\gate'.
+Removing unused module `\gold'.
+Removed 2 unused modules.
+
+3.2. Executing PROC pass (convert processes to netlists).
+
+3.2.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+3.2.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Removed a total of 0 dead cases.
+
+3.2.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 0 assignments to connections.
+
+3.2.4. Executing PROC_INIT pass (extract init attributes).
+
+3.2.5. Executing PROC_ARST pass (detect async resets in processes).
+
+3.2.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+
+3.2.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+
+3.2.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+3.2.9. Executing PROC_DFF pass (convert process syncs to FFs).
+
+3.2.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+3.2.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+3.2.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module miter.
+
+3.3. Executing FUTURE pass.
+
+3.4. Executing OPT_EXPR pass (perform const folding).
+Optimizing module miter.
+
+3.5. Executing CHECK pass (checking for obvious problems).
+Checking module miter...
+Found and reported 0 problems.
+
+3.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \miter..
+
+3.7. Executing OPT pass (performing simple optimizations).
+
+3.7.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module miter.
+
+3.7.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\miter'.
+Computing hashes of 135 cells of `\miter'.
+Finding duplicate cells in `\miter'.
+Computing hashes of 122 cells of `\miter'.
+Finding duplicate cells in `\miter'.
+Computing hashes of 115 cells of `\miter'.
+Finding duplicate cells in `\miter'.
+Computing hashes of 108 cells of `\miter'.
+Finding duplicate cells in `\miter'.
+<suppressed ~81 debug messages>
+Removed a total of 27 cells.
+
+3.7.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \miter..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~112 debug messages>
+
+3.7.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \miter.
+Performed a total of 0 changes.
+
+3.7.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\miter'.
+Computing hashes of 108 cells of `\miter'.
+Finding duplicate cells in `\miter'.
+Computing hashes of 87 cells of `\miter'.
+Finding duplicate cells in `\miter'.
+Computing hashes of 80 cells of `\miter'.
+Finding duplicate cells in `\miter'.
+<suppressed ~84 debug messages>
+Removed a total of 28 cells.
+
+3.7.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \miter..
+Removed 0 unused cells and 34 unused wires.
+<suppressed ~1 debug messages>
+
+3.7.7. Executing OPT_EXPR pass (perform const folding).
+Optimizing module miter.
+
+3.7.8. Rerunning OPT passes. (Maybe there is more to do..)
+
+3.7.9. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \miter..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+    dead port 1/2 on $mux $flatten\gold.$ternary$relation.v:136$56.
+    dead port 2/2 on $mux $flatten\gold.$ternary$relation.v:136$56.
+    dead port 1/2 on $mux $flatten\gate.$ternary$relation.v:273$188.
+    dead port 2/2 on $mux $flatten\gate.$ternary$relation.v:273$188.
+    dead port 1/2 on $mux $flatten\gold.$ternary$relation.v:136$58.
+    dead port 2/2 on $mux $flatten\gold.$ternary$relation.v:136$58.
+    dead port 1/2 on $mux $flatten\gold.$ternary$relation.v:136$59.
+    dead port 2/2 on $mux $flatten\gold.$ternary$relation.v:136$59.
+    dead port 1/2 on $mux $flatten\gate.$ternary$relation.v:273$203.
+    dead port 2/2 on $mux $flatten\gate.$ternary$relation.v:273$203.
+    dead port 1/2 on $mux $flatten\gold.$ternary$relation.v:136$61.
+    dead port 2/2 on $mux $flatten\gold.$ternary$relation.v:136$61.
+    dead port 1/2 on $mux $flatten\gate.$ternary$relation.v:273$198.
+    dead port 2/2 on $mux $flatten\gate.$ternary$relation.v:273$198.
+    dead port 1/2 on $mux $flatten\gold.$ternary$relation.v:136$64.
+    dead port 2/2 on $mux $flatten\gold.$ternary$relation.v:136$64.
+    dead port 1/2 on $mux $flatten\gate.$ternary$relation.v:273$250.
+    dead port 2/2 on $mux $flatten\gate.$ternary$relation.v:273$250.
+    dead port 1/2 on $mux $flatten\gold.$ternary$relation.v:136$66.
+    dead port 2/2 on $mux $flatten\gold.$ternary$relation.v:136$66.
+    dead port 1/2 on $mux $flatten\gold.$ternary$relation.v:136$68.
+    dead port 2/2 on $mux $flatten\gold.$ternary$relation.v:136$68.
+    dead port 1/2 on $mux $flatten\gold.$ternary$relation.v:136$69.
+    dead port 2/2 on $mux $flatten\gold.$ternary$relation.v:136$69.
+    dead port 1/2 on $mux $flatten\gold.$ternary$relation.v:136$71.
+    dead port 2/2 on $mux $flatten\gold.$ternary$relation.v:136$71.
+    dead port 1/2 on $mux $flatten\gate.$ternary$relation.v:273$213.
+    dead port 2/2 on $mux $flatten\gate.$ternary$relation.v:273$213.
+    dead port 1/2 on $mux $flatten\gold.$ternary$relation.v:136$74.
+    dead port 2/2 on $mux $flatten\gold.$ternary$relation.v:136$74.
+    dead port 1/2 on $mux $flatten\gold.$ternary$relation.v:136$76.
+    dead port 2/2 on $mux $flatten\gold.$ternary$relation.v:136$76.
+    dead port 1/2 on $mux $flatten\gold.$ternary$relation.v:136$79.
+    dead port 2/2 on $mux $flatten\gold.$ternary$relation.v:136$79.
+    dead port 1/2 on $mux $flatten\gold.$ternary$relation.v:136$81.
+    dead port 2/2 on $mux $flatten\gold.$ternary$relation.v:136$81.
+    dead port 1/2 on $mux $flatten\gold.$ternary$relation.v:136$83.
+    dead port 2/2 on $mux $flatten\gold.$ternary$relation.v:136$83.
+    dead port 1/2 on $mux $flatten\gold.$ternary$relation.v:136$84.
+    dead port 2/2 on $mux $flatten\gold.$ternary$relation.v:136$84.
+    dead port 1/2 on $mux $flatten\gate.$ternary$relation.v:273$214.
+    dead port 2/2 on $mux $flatten\gate.$ternary$relation.v:273$214.
+    dead port 1/2 on $mux $flatten\gold.$ternary$relation.v:136$86.
+    dead port 2/2 on $mux $flatten\gold.$ternary$relation.v:136$86.
+    dead port 1/2 on $mux $flatten\gate.$ternary$relation.v:273$253.
+    dead port 2/2 on $mux $flatten\gate.$ternary$relation.v:273$253.
+    dead port 1/2 on $mux $flatten\gate.$ternary$relation.v:273$256.
+    dead port 2/2 on $mux $flatten\gate.$ternary$relation.v:273$256.
+    dead port 1/2 on $mux $flatten\gate.$ternary$relation.v:273$247.
+    dead port 2/2 on $mux $flatten\gate.$ternary$relation.v:273$247.
+    dead port 1/2 on $mux $flatten\gate.$ternary$relation.v:273$244.
+    dead port 2/2 on $mux $flatten\gate.$ternary$relation.v:273$244.
+    dead port 1/2 on $mux $flatten\gold.$ternary$relation.v:136$106.
+    dead port 2/2 on $mux $flatten\gold.$ternary$relation.v:136$106.
+    dead port 1/2 on $mux $flatten\gold.$ternary$relation.v:136$109.
+    dead port 2/2 on $mux $flatten\gold.$ternary$relation.v:136$109.
+Removed 56 multiplexer ports.
+<suppressed ~14 debug messages>
+
+3.7.10. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \miter.
+Performed a total of 0 changes.
+
+3.7.11. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\miter'.
+Computing hashes of 52 cells of `\miter'.
+Finding duplicate cells in `\miter'.
+Removed a total of 0 cells.
+
+3.7.12. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \miter..
+Removed 8 unused cells and 31 unused wires.
+<suppressed ~25 debug messages>
+
+3.7.13. Executing OPT_EXPR pass (perform const folding).
+Optimizing module miter.
+
+3.7.14. Rerunning OPT passes. (Maybe there is more to do..)
+
+3.7.15. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \miter..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~14 debug messages>
+
+3.7.16. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \miter.
+Performed a total of 0 changes.
+
+3.7.17. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\miter'.
+Computing hashes of 44 cells of `\miter'.
+Finding duplicate cells in `\miter'.
+Removed a total of 0 cells.
+
+3.7.18. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \miter..
+
+3.7.19. Executing OPT_EXPR pass (perform const folding).
+Optimizing module miter.
+
+3.7.20. Finished fast OPT passes. (There is nothing left to do.)
+
+3.8. Executing WREDUCE pass (reducing word size of cells).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:135$55 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:127$47 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:126$46 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:125$45 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:124$44 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:123$43 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:122$42 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:121$41 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:119$39 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:118$38 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:117$37 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:116$36 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:115$35 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:114$34 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:113$33 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:112$32 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:111$31 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:110$30 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:110$30 ($shr).
+Removed top 5 bits (of 16) from port A of cell miter.$flatten\gold.$shr$relation.v:109$29 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:109$29 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:106$26 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:105$25 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gold.$shr$relation.v:104$24 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:265$173 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:265$173 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:264$172 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:264$172 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:263$171 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:263$171 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:262$170 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:262$170 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:261$169 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:261$169 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:260$168 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:260$168 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:259$167 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:259$167 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:249$157 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:248$156 ($shr).
+Removed top 1 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:244$152 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:244$152 ($shr).
+Removed top 2 bits (of 16) from port A of cell miter.$flatten\gate.$shr$relation.v:243$151 ($shr).
+Removed top 15 bits (of 16) from port Y of cell miter.$flatten\gate.$shr$relation.v:243$151 ($shr).
+Removed top 1 bits (of 84) from wire miter.gate_po.
+Removed top 1 bits (of 84) from wire miter.gold_po.
+
+3.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \miter..
+Removed 0 unused cells and 35 unused wires.
+<suppressed ~1 debug messages>
+
+3.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+3.11. Executing OPT pass (performing simple optimizations).
+
+3.11.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module miter.
+
+3.11.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\miter'.
+Computing hashes of 44 cells of `\miter'.
+Finding duplicate cells in `\miter'.
+Removed a total of 0 cells.
+
+3.11.3. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \miter..
+
+3.11.4. Finished fast OPT passes.
+
+3.12. Executing SORT pass.
+
+3.13. Printing statistics.
+
+=== miter ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      130 wires
+      553 wire bits
+      129 public wires
+      552 public wire bits
+        3 ports
+       34 port bits
+       44 cells
+        1   $eqx
+        7   $mux
+        1   $not
+        2   $scopeinfo
+       33   $shr
+
+3.14. Executing CHECK pass (checking for obvious problems).
+Checking module miter...
+Found and reported 0 problems.
+
+4. Executing SAT pass (solving SAT problems in the circuit).
+Using SAT solver `minisat`.
+
+Setting up SAT problem:
+Final constraint equation: { } = { }
+Import def constraint for this timestep: \in_pi
+Import def constraint for this timestep: \in_st
+Imported 44 cells to SAT database.
+Import proof-constraint: \trigger = 1'0
+Final proof equation: \trigger = 1'0
+Import show expression: \in_pi
+Import show expression: \in_st
+Import show expression: \trigger
+
+Solving problem with 9230 variables and 24443 clauses..
+SAT proof finished - no model found: SUCCESS!
+
+                  /$$$$$$      /$$$$$$$$     /$$$$$$$    
+                 /$$__  $$    | $$_____/    | $$__  $$   
+                | $$  \ $$    | $$          | $$  \ $$   
+                | $$  | $$    | $$$$$       | $$  | $$   
+                | $$  | $$    | $$__/       | $$  | $$   
+                | $$/$$ $$    | $$          | $$  | $$   
+                |  $$$$$$/ /$$| $$$$$$$$ /$$| $$$$$$$//$$
+                 \____ $$$|__/|________/|__/|_______/|__/
+                       \__/                              
+

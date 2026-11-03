@@ -1,0 +1,8 @@
+read_rtlil gold.il
+rename t gold
+read_rtlil gate.il
+rename t gate
+equiv_make gold gate equiv
+hierarchy -top equiv
+equiv_simple
+equiv_status -assert

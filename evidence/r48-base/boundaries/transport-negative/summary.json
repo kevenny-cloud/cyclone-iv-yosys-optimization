@@ -1,0 +1,30 @@
+{
+  "valid": {
+    "returncode": 0,
+    "pass": true
+  },
+  "disabled_verify": {
+    "returncode": 2,
+    "pass": true
+  },
+  "interface_mismatch": {
+    "returncode": 2,
+    "pass": true
+  },
+  "bad_version": {
+    "returncode": 2,
+    "pass": true
+  },
+  "truncated_record": {
+    "returncode": 2,
+    "pass": true
+  },
+  "bad_box_count": {
+    "returncode": 2,
+    "pass": true
+  },
+  "truncated_varint": {
+    "returncode": 2,
+    "pass": true
+  }
+}

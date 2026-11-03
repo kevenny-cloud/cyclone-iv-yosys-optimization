@@ -1,0 +1,6 @@
+# [*] gold-match *
+top addr addr
+top clk clk
+top din din
+top we we
+top y y

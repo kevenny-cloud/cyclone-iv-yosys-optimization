@@ -1,0 +1,378 @@
+{
+  "creator": "Yosys 0.69 (git sha1 9f75ca1f9-dirty, Release, LLVM-MinGW 20261020 Clang 23.1.4; isolated Windows build)",
+  "modules": {
+    "startup_policy": {
+      "attributes": {
+        "top": "00000000000000000000000000000001",
+        "src": "input.v:1.1-5.10"
+      },
+      "ports": {
+        "clk": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "rst": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "en": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "sel": {
+          "direction": "input",
+          "bits": [ 5, 6 ]
+        },
+        "a": {
+          "direction": "input",
+          "bits": [ 7 ]
+        },
+        "b": {
+          "direction": "input",
+          "bits": [ 8 ]
+        },
+        "c": {
+          "direction": "input",
+          "bits": [ 9 ]
+        },
+        "d": {
+          "direction": "input",
+          "bits": [ 10 ]
+        },
+        "y": {
+          "direction": "output",
+          "bits": [ 11, 12 ]
+        },
+        "q": {
+          "direction": "output",
+          "bits": [ 13 ]
+        },
+        "sampled": {
+          "direction": "output",
+          "bits": [ 14 ]
+        }
+      },
+      "cells": {
+        "$techmap\\clk_$lut_A.$not$D:\\$e7$ab$9e$e8$b5$9b\\FPGA\\FPGA\\$e5$8e$8b$e5$8a$9b$e6$b5$8b$e8$af$95$e5$8a$a0$e5$9b$ba\\20261027_structural_rules\\continuation-20261030\\r48-one-snapshot-clean\\program\\share/intel/cycloneiv/cells_map.v:64$239": {
+          "hide_name": 1,
+          "type": "$not",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "D:\\\uFFFFFFE7\uFFFFFFAB\uFFFFFF9E\uFFFFFFE8\uFFFFFFB5\uFFFFFF9B\\FPGA\\FPGA\\\uFFFFFFE5\uFFFFFF8E\uFFFFFF8B\uFFFFFFE5\uFFFFFF8A\uFFFFFF9B\uFFFFFFE6\uFFFFFFB5\uFFFFFF8B\uFFFFFFE8\uFFFFFFAF\uFFFFFF95\uFFFFFFE5\uFFFFFF8A\uFFFFFFA0\uFFFFFFE5\uFFFFFF9B\uFFFFFFBA\\20261027_structural_rules\\continuation-20261030\\r48-one-snapshot-clean\\program\\share/intel/cycloneiv/cells_map.v:44.50-44.84|D:\\\uFFFFFFE7\uFFFFFFAB\uFFFFFF9E\uFFFFFFE8\uFFFFFFB5\uFFFFFF9B\\FPGA\\FPGA\\\uFFFFFFE5\uFFFFFF8E\uFFFFFF8B\uFFFFFFE5\uFFFFFF8A\uFFFFFF9B\uFFFFFFE6\uFFFFFFB5\uFFFFFF8B\uFFFFFFE8\uFFFFFFAF\uFFFFFF95\uFFFFFFE5\uFFFFFF8A\uFFFFFFA0\uFFFFFFE5\uFFFFFF9B\uFFFFFFBA\\20261027_structural_rules\\continuation-20261030\\r48-one-snapshot-clean\\program\\share/intel/cycloneiv/cells_map.v:64.47-64.49"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2 ],
+            "Y": [ 15 ]
+          }
+        },
+        "$techmap\\rst_$lut_A.$not$D:\\$e7$ab$9e$e8$b5$9b\\FPGA\\FPGA\\$e5$8e$8b$e5$8a$9b$e6$b5$8b$e8$af$95$e5$8a$a0$e5$9b$ba\\20261027_structural_rules\\continuation-20261030\\r48-one-snapshot-clean\\program\\share/intel/cycloneiv/cells_map.v:64$239": {
+          "hide_name": 1,
+          "type": "$not",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "D:\\\uFFFFFFE7\uFFFFFFAB\uFFFFFF9E\uFFFFFFE8\uFFFFFFB5\uFFFFFF9B\\FPGA\\FPGA\\\uFFFFFFE5\uFFFFFF8E\uFFFFFF8B\uFFFFFFE5\uFFFFFF8A\uFFFFFF9B\uFFFFFFE6\uFFFFFFB5\uFFFFFF8B\uFFFFFFE8\uFFFFFFAF\uFFFFFF95\uFFFFFFE5\uFFFFFF8A\uFFFFFFA0\uFFFFFFE5\uFFFFFF9B\uFFFFFFBA\\20261027_structural_rules\\continuation-20261030\\r48-one-snapshot-clean\\program\\share/intel/cycloneiv/cells_map.v:44.50-44.84|D:\\\uFFFFFFE7\uFFFFFFAB\uFFFFFF9E\uFFFFFFE8\uFFFFFFB5\uFFFFFF9B\\FPGA\\FPGA\\\uFFFFFFE5\uFFFFFF8E\uFFFFFF8B\uFFFFFFE5\uFFFFFF8A\uFFFFFF9B\uFFFFFFE6\uFFFFFFB5\uFFFFFF8B\uFFFFFFE8\uFFFFFFAF\uFFFFFF95\uFFFFFFE5\uFFFFFF8A\uFFFFFFA0\uFFFFFFE5\uFFFFFF9B\uFFFFFFBA\\20261027_structural_rules\\continuation-20261030\\r48-one-snapshot-clean\\program\\share/intel/cycloneiv/cells_map.v:64.47-64.49"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 3 ],
+            "Y": [ 16 ]
+          }
+        },
+        "b_$lut_A": {
+          "hide_name": 0,
+          "type": "cycloneiv_lcell_comb",
+          "parameters": {
+            "lut_mask": "0110011001100110",
+            "sum_lutc_input": "datac"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "D:\\\uFFFFFFE7\uFFFFFFAB\uFFFFFF9E\uFFFFFFE8\uFFFFFFB5\uFFFFFF9B\\FPGA\\FPGA\\\uFFFFFFE5\uFFFFFF8E\uFFFFFF8B\uFFFFFFE5\uFFFFFF8A\uFFFFFF9B\uFFFFFFE6\uFFFFFFB5\uFFFFFF8B\uFFFFFFE8\uFFFFFFAF\uFFFFFF95\uFFFFFFE5\uFFFFFF8A\uFFFFFFA0\uFFFFFFE5\uFFFFFF9B\uFFFFFFBA\\20261027_structural_rules\\continuation-20261030\\r48-one-snapshot-clean\\program\\share/intel/cycloneiv/cells_map.v:47.82-47.168"
+          },
+          "port_directions": {
+            "combout": "output",
+            "dataa": "input",
+            "datab": "input",
+            "datac": "input",
+            "datad": "input"
+          },
+          "connections": {
+            "combout": [ 17 ],
+            "dataa": [ 8 ],
+            "datab": [ 7 ],
+            "datac": [ "1" ],
+            "datad": [ "1" ]
+          }
+        },
+        "b_$lut_A_1": {
+          "hide_name": 0,
+          "type": "cycloneiv_lcell_comb",
+          "parameters": {
+            "lut_mask": "0101001101010011",
+            "sum_lutc_input": "datac"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "D:\\\uFFFFFFE7\uFFFFFFAB\uFFFFFF9E\uFFFFFFE8\uFFFFFFB5\uFFFFFF9B\\FPGA\\FPGA\\\uFFFFFFE5\uFFFFFF8E\uFFFFFF8B\uFFFFFFE5\uFFFFFF8A\uFFFFFF9B\uFFFFFFE6\uFFFFFFB5\uFFFFFF8B\uFFFFFFE8\uFFFFFFAF\uFFFFFF95\uFFFFFFE5\uFFFFFF8A\uFFFFFFA0\uFFFFFFE5\uFFFFFF9B\uFFFFFFBA\\20261027_structural_rules\\continuation-20261030\\r48-one-snapshot-clean\\program\\share/intel/cycloneiv/cells_map.v:50.75-50.161"
+          },
+          "port_directions": {
+            "combout": "output",
+            "dataa": "input",
+            "datab": "input",
+            "datac": "input",
+            "datad": "input"
+          },
+          "connections": {
+            "combout": [ 18 ],
+            "dataa": [ 8 ],
+            "datab": [ 7 ],
+            "datac": [ 5 ],
+            "datad": [ "1" ]
+          }
+        },
+        "q_dffeas_q": {
+          "hide_name": 0,
+          "type": "dffeas",
+          "parameters": {
+            "is_wysiwyg": "TRUE",
+            "power_up": "high"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "input.v:3.1-3.74|D:\\\uFFFFFFE7\uFFFFFFAB\uFFFFFF9E\uFFFFFFE8\uFFFFFFB5\uFFFFFF9B\\FPGA\\FPGA\\\uFFFFFFE5\uFFFFFF8E\uFFFFFF8B\uFFFFFFE5\uFFFFFF8A\uFFFFFF9B\uFFFFFFE6\uFFFFFFB5\uFFFFFF8B\uFFFFFFE8\uFFFFFFAF\uFFFFFF95\uFFFFFFE5\uFFFFFF8A\uFFFFFFA0\uFFFFFFE5\uFFFFFF9B\uFFFFFFBA\\20261027_structural_rules\\continuation-20261030\\r48-one-snapshot-clean\\program\\share/intel/common/ff_map.v:5.55-5.183"
+          },
+          "port_directions": {
+            "aload": "input",
+            "asdata": "input",
+            "clk": "input",
+            "clrn": "input",
+            "d": "input",
+            "ena": "input",
+            "prn": "input",
+            "q": "output",
+            "sclr": "input",
+            "sload": "input"
+          },
+          "connections": {
+            "aload": [ "0" ],
+            "asdata": [ "0" ],
+            "clk": [ 15 ],
+            "clrn": [ 16 ],
+            "d": [ 17 ],
+            "ena": [ 4 ],
+            "prn": [ "1" ],
+            "q": [ 13 ],
+            "sclr": [ "0" ],
+            "sload": [ "0" ]
+          }
+        },
+        "sampled_dffeas_q": {
+          "hide_name": 0,
+          "type": "dffeas",
+          "parameters": {
+            "is_wysiwyg": "TRUE",
+            "power_up": "low"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "input.v:4.1-4.41|D:\\\uFFFFFFE7\uFFFFFFAB\uFFFFFF9E\uFFFFFFE8\uFFFFFFB5\uFFFFFF9B\\FPGA\\FPGA\\\uFFFFFFE5\uFFFFFF8E\uFFFFFF8B\uFFFFFFE5\uFFFFFF8A\uFFFFFF9B\uFFFFFFE6\uFFFFFFB5\uFFFFFF8B\uFFFFFFE8\uFFFFFFAF\uFFFFFF95\uFFFFFFE5\uFFFFFF8A\uFFFFFFA0\uFFFFFFE5\uFFFFFF9B\uFFFFFFBA\\20261027_structural_rules\\continuation-20261030\\r48-one-snapshot-clean\\program\\share/intel/common/ff_map.v:7.54-7.182"
+          },
+          "port_directions": {
+            "aload": "input",
+            "asdata": "input",
+            "clk": "input",
+            "clrn": "input",
+            "d": "input",
+            "ena": "input",
+            "prn": "input",
+            "q": "output",
+            "sclr": "input",
+            "sload": "input"
+          },
+          "connections": {
+            "aload": [ "0" ],
+            "asdata": [ "0" ],
+            "clk": [ 2 ],
+            "clrn": [ "1" ],
+            "d": [ 13 ],
+            "ena": [ 4 ],
+            "prn": [ "1" ],
+            "q": [ 14 ],
+            "sclr": [ "0" ],
+            "sload": [ "0" ]
+          }
+        },
+        "y_$lut_Y": {
+          "hide_name": 0,
+          "type": "cycloneiv_lcell_comb",
+          "parameters": {
+            "lut_mask": "1000101110001011",
+            "sum_lutc_input": "datac"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "D:\\\uFFFFFFE7\uFFFFFFAB\uFFFFFF9E\uFFFFFFE8\uFFFFFFB5\uFFFFFF9B\\FPGA\\FPGA\\\uFFFFFFE5\uFFFFFF8E\uFFFFFF8B\uFFFFFFE5\uFFFFFF8A\uFFFFFF9B\uFFFFFFE6\uFFFFFFB5\uFFFFFF8B\uFFFFFFE8\uFFFFFFAF\uFFFFFF95\uFFFFFFE5\uFFFFFF8A\uFFFFFFA0\uFFFFFFE5\uFFFFFF9B\uFFFFFFBA\\20261027_structural_rules\\continuation-20261030\\r48-one-snapshot-clean\\program\\share/intel/cycloneiv/cells_map.v:50.75-50.161"
+          },
+          "port_directions": {
+            "combout": "output",
+            "dataa": "input",
+            "datab": "input",
+            "datac": "input",
+            "datad": "input"
+          },
+          "connections": {
+            "combout": [ 12 ],
+            "dataa": [ 9 ],
+            "datab": [ 6 ],
+            "datac": [ 18 ],
+            "datad": [ "1" ]
+          }
+        },
+        "y_$lut_Y_1": {
+          "hide_name": 0,
+          "type": "cycloneiv_lcell_comb",
+          "parameters": {
+            "lut_mask": "1000100010001000",
+            "sum_lutc_input": "datac"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "D:\\\uFFFFFFE7\uFFFFFFAB\uFFFFFF9E\uFFFFFFE8\uFFFFFFB5\uFFFFFF9B\\FPGA\\FPGA\\\uFFFFFFE5\uFFFFFF8E\uFFFFFF8B\uFFFFFFE5\uFFFFFF8A\uFFFFFF9B\uFFFFFFE6\uFFFFFFB5\uFFFFFF8B\uFFFFFFE8\uFFFFFFAF\uFFFFFF95\uFFFFFFE5\uFFFFFF8A\uFFFFFFA0\uFFFFFFE5\uFFFFFF9B\uFFFFFFBA\\20261027_structural_rules\\continuation-20261030\\r48-one-snapshot-clean\\program\\share/intel/cycloneiv/cells_map.v:47.82-47.168"
+          },
+          "port_directions": {
+            "combout": "output",
+            "dataa": "input",
+            "datab": "input",
+            "datac": "input",
+            "datad": "input"
+          },
+          "connections": {
+            "combout": [ 11 ],
+            "dataa": [ 10 ],
+            "datab": [ 6 ],
+            "datac": [ "1" ],
+            "datad": [ "1" ]
+          }
+        }
+      },
+      "netnames": {
+        "a": {
+          "hide_name": 0,
+          "bits": [ 7 ],
+          "attributes": {
+            "src": "input.v:1.62-1.63"
+          }
+        },
+        "b": {
+          "hide_name": 0,
+          "bits": [ 8 ],
+          "attributes": {
+            "src": "input.v:1.64-1.65"
+          }
+        },
+        "b_$lut_A_1_Y": {
+          "hide_name": 0,
+          "bits": [ 18 ],
+          "attributes": {
+          }
+        },
+        "b_$lut_A_Y": {
+          "hide_name": 0,
+          "bits": [ 17 ],
+          "attributes": {
+          }
+        },
+        "c": {
+          "hide_name": 0,
+          "bits": [ 9 ],
+          "attributes": {
+            "src": "input.v:1.66-1.67"
+          }
+        },
+        "clk": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "input.v:1.29-1.32"
+          }
+        },
+        "clk_$lut_A_Y": {
+          "hide_name": 0,
+          "bits": [ 15 ],
+          "attributes": {
+          }
+        },
+        "d": {
+          "hide_name": 0,
+          "bits": [ 10 ],
+          "attributes": {
+            "src": "input.v:1.68-1.69"
+          }
+        },
+        "en": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "input.v:1.37-1.39"
+          }
+        },
+        "q": {
+          "hide_name": 0,
+          "bits": [ 13 ],
+          "attributes": {
+            "src": "input.v:1.100-1.101"
+          }
+        },
+        "rst": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "input.v:1.33-1.36"
+          }
+        },
+        "rst_$lut_A_Y": {
+          "hide_name": 0,
+          "bits": [ 16 ],
+          "attributes": {
+          }
+        },
+        "sampled": {
+          "hide_name": 0,
+          "bits": [ 14 ],
+          "attributes": {
+            "src": "input.v:1.118-1.125"
+          }
+        },
+        "sel": {
+          "hide_name": 0,
+          "bits": [ 5, 6 ],
+          "attributes": {
+            "src": "input.v:1.52-1.55"
+          }
+        },
+        "y": {
+          "hide_name": 0,
+          "bits": [ 11, 12 ],
+          "attributes": {
+            "src": "input.v:1.87-1.88"
+          }
+        }
+      }
+    }
+  }
+}

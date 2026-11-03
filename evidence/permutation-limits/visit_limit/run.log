@@ -1,0 +1,28 @@
+
+-- Executing script file `run.ys' --
+
+1. Executing Verilog-2005 frontend: input.v
+Parsing Verilog input from `input.v' to AST representation.
+Generating RTLIL representation for module `\t'.
+Successfully finished Verilog frontend.
+
+2. Executing HIERARCHY pass (managing design hierarchy).
+
+2.1. Analyzing design hierarchy..
+Top module:  \t
+
+2.2. Analyzing design hierarchy..
+Top module:  \t
+Removed 0 unused modules.
+
+3. Executing JSON backend.
+
+4. Executing LUT_WINDOW exact cut pass.
+  LUT_WINDOW pin permutations: normalized=463 functions=512 visited=16385
+  LUT_WINDOW: roots=0 cuts=0 edits=0 saved=0 two_lut=0 work=1 exhausted=1
+
+5. Executing JSON backend.
+
+End of script. Logfile hash: d5aa7c7927
+Yosys 0.69+post (git sha1 UNKNOWN, Release, Clang C:/Users/REDACTED/AppData/Local/Temp/fpga-regen50-q31xuiid/llvm/bin/clang++.exe 23.1.4)
+Time spent: 16% 4x write_json (0 sec), 16% 2x read_verilog (0 sec), ...

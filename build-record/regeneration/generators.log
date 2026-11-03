@@ -1,0 +1,58 @@
+ninja: Entering directory `C:\Users\REDACTED\AppData\Local\Temp\fpga-regen50-q31xuiid\fresh-forced-build'
+[1/57] Copying share/include/kernel/binding.h
+[2/57] Copying share/include/kernel/bitpattern.h
+[3/57] Copying share/include/kernel/cellaigs.h
+[4/57] Copying share/include/kernel/celledges.h
+[5/57] Copying share/include/kernel/celltypes.h
+[6/57] Copying share/include/kernel/consteval.h
+[7/57] Copying share/include/kernel/constids.inc
+[8/57] Copying share/include/kernel/cost.h
+[9/57] Copying share/include/kernel/drivertools.h
+[10/57] Copying share/include/kernel/ff.h
+[11/57] Copying share/include/kernel/ffinit.h
+[12/57] Copying share/include/kernel/ffmerge.h
+[13/57] Copying share/include/kernel/fmt.h
+[14/57] Copying share/include/kernel/gzip.h
+[15/57] Copying share/include/kernel/hashlib.h
+[16/57] Copying share/include/kernel/io.h
+[17/57] Copying share/include/kernel/json.h
+[18/57] Copying share/include/kernel/log.h
+[19/57] Copying share/include/kernel/macc.h
+[20/57] Copying share/include/kernel/mem.h
+[21/57] Copying share/include/kernel/modtools.h
+[22/57] Copying share/include/kernel/newcelltypes.h
+[23/57] Copying share/include/kernel/qcsat.h
+[24/57] Copying share/include/kernel/register.h
+[25/57] Copying share/include/kernel/rtlil.h
+[26/57] Copying share/include/kernel/satgen.h
+[27/57] Copying share/include/kernel/scopeinfo.h
+[28/57] Copying share/include/kernel/sexpr.h
+[29/57] Copying share/include/kernel/sigtools.h
+[30/57] Copying share/include/kernel/threading.h
+[31/57] Copying share/include/kernel/timinginfo.h
+[32/57] Copying share/include/kernel/unused_bits.h
+[33/57] Copying share/include/kernel/utils.h
+[34/57] Copying share/include/kernel/yosys.h
+[35/57] Copying share/include/kernel/yosys_common.h
+[36/57] Copying share/include/kernel/yosys_config.h
+[37/57] Copying share/include/kernel/yw.h
+[38/57] Compiling pattern matcher passes/opt/peepopt_pm.h
+[39/57] Generating simlib_help.inc
+[40/57] Generating simcells_help.inc
+[41/57] [FLEX][verilog_lexer] Building scanner with win_flex 2.6.4
+[42/57] Compiling pattern matcher techlibs/ice40/ice40_dsp_pm.h
+[43/57] [BISON][verilog_parser] Building parser with bison 3.8.2
+[44/57] Compiling pattern matcher techlibs/ice40/ice40_wrapcarry_pm.h
+[45/57] Compiling pattern matcher techlibs/lattice/lattice_dsp_nexus_pm.h
+[46/57] Compiling pattern matcher techlibs/microchip/microchip_dsp_pm.h
+[47/57] Compiling pattern matcher techlibs/microchip/microchip_dsp_cascade_pm.h
+[48/57] Compiling pattern matcher techlibs/microchip/microchip_dsp_CREG_pm.h
+[49/57] Compiling pattern matcher techlibs/quicklogic/ql_dsp_macc_pm.h
+[50/57] Compiling pattern matcher techlibs/xilinx/xilinx_dsp_pm.h
+[51/57] Compiling pattern matcher techlibs/xilinx/xilinx_dsp48a_pm.h
+[52/57] Compiling pattern matcher techlibs/xilinx/xilinx_dsp_CREG_pm.h
+[53/57] Compiling pattern matcher techlibs/xilinx/xilinx_dsp_cascade_pm.h
+[54/57] Compiling pattern matcher techlibs/xilinx/xilinx_srl_pm.h
+[55/57] Building CXX object techlibs/ice40/CMakeFiles/yosys_ice40_dsp.dir/ice40_dsp.cc.obj
+[56/57] Building CXX object techlibs/xilinx/CMakeFiles/yosys_xilinx_srl.dir/xilinx_srl.cc.obj
+[57/57] Compiling pattern matcher passes/pmgen/test_pmgen_pm.h

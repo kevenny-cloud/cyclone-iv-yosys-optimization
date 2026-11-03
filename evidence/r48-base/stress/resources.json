@@ -1,0 +1,16 @@
+{
+  "current": {
+    "baseline": 1016,
+    "candidate": 754,
+    "reduction_percent": 25.787401574803148,
+    "strict20_pass": true,
+    "dff_nonincrease": true
+  },
+  "historical": {
+    "baseline": 999,
+    "candidate": 754,
+    "reduction_percent": 24.524524524524523,
+    "strict20_pass": true,
+    "dff_nonincrease": true
+  }
+}

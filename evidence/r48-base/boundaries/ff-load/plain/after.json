@@ -1,0 +1,878 @@
+{
+  "creator": "Yosys 0.69 (git sha1 9f75ca1f9-dirty, Release, LLVM-MinGW 20261020 Clang 23.1.4; isolated Windows build)",
+  "modules": {
+    "GND": {
+      "attributes": {
+        "blackbox": "00000000000000000000000000000001",
+        "cells_not_processed": "00000000000000000000000000000001",
+        "src": "D:\\\uFFFFFFE7\uFFFFFFAB\uFFFFFF9E\uFFFFFFE8\uFFFFFFB5\uFFFFFF9B\\FPGA\\FPGA\\\uFFFFFFE5\uFFFFFF8E\uFFFFFF8B\uFFFFFFE5\uFFFFFF8A\uFFFFFF9B\uFFFFFFE6\uFFFFFFB5\uFFFFFF8B\uFFFFFFE8\uFFFFFFAF\uFFFFFF95\uFFFFFFE5\uFFFFFF8A\uFFFFFFA0\uFFFFFFE5\uFFFFFF9B\uFFFFFFBA\\20261027_structural_rules\\continuation-20261030\\r48-one-snapshot-clean\\program\\share/intel/cycloneiv/cells_sim.v:24.1-26.10"
+      },
+      "ports": {
+        "G": {
+          "direction": "output",
+          "bits": [ 2 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "G": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "D:\\\uFFFFFFE7\uFFFFFFAB\uFFFFFF9E\uFFFFFFE8\uFFFFFFB5\uFFFFFF9B\\FPGA\\FPGA\\\uFFFFFFE5\uFFFFFF8E\uFFFFFF8B\uFFFFFFE5\uFFFFFF8A\uFFFFFF9B\uFFFFFFE6\uFFFFFFB5\uFFFFFF8B\uFFFFFFE8\uFFFFFFAF\uFFFFFF95\uFFFFFFE5\uFFFFFF8A\uFFFFFFA0\uFFFFFFE5\uFFFFFF9B\uFFFFFFBA\\20261027_structural_rules\\continuation-20261030\\r48-one-snapshot-clean\\program\\share/intel/cycloneiv/cells_sim.v:24.20-24.21"
+          }
+        }
+      }
+    },
+    "VCC": {
+      "attributes": {
+        "blackbox": "00000000000000000000000000000001",
+        "cells_not_processed": "00000000000000000000000000000001",
+        "src": "D:\\\uFFFFFFE7\uFFFFFFAB\uFFFFFF9E\uFFFFFFE8\uFFFFFFB5\uFFFFFF9B\\FPGA\\FPGA\\\uFFFFFFE5\uFFFFFF8E\uFFFFFF8B\uFFFFFFE5\uFFFFFF8A\uFFFFFF9B\uFFFFFFE6\uFFFFFFB5\uFFFFFF8B\uFFFFFFE8\uFFFFFFAF\uFFFFFF95\uFFFFFFE5\uFFFFFF8A\uFFFFFFA0\uFFFFFFE5\uFFFFFF9B\uFFFFFFBA\\20261027_structural_rules\\continuation-20261030\\r48-one-snapshot-clean\\program\\share/intel/cycloneiv/cells_sim.v:20.1-22.10"
+      },
+      "ports": {
+        "V": {
+          "direction": "output",
+          "bits": [ 2 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "V": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "D:\\\uFFFFFFE7\uFFFFFFAB\uFFFFFF9E\uFFFFFFE8\uFFFFFFB5\uFFFFFF9B\\FPGA\\FPGA\\\uFFFFFFE5\uFFFFFF8E\uFFFFFF8B\uFFFFFFE5\uFFFFFF8A\uFFFFFF9B\uFFFFFFE6\uFFFFFFB5\uFFFFFF8B\uFFFFFFE8\uFFFFFFAF\uFFFFFF95\uFFFFFFE5\uFFFFFF8A\uFFFFFFA0\uFFFFFFE5\uFFFFFF9B\uFFFFFFBA\\20261027_structural_rules\\continuation-20261030\\r48-one-snapshot-clean\\program\\share/intel/cycloneiv/cells_sim.v:20.20-20.21"
+          }
+        }
+      }
+    },
+    "cycloneiv_io_ibuf": {
+      "attributes": {
+        "blackbox": "00000000000000000000000000000001",
+        "cells_not_processed": "00000000000000000000000000000001",
+        "src": "D:\\\uFFFFFFE7\uFFFFFFAB\uFFFFFF9E\uFFFFFFE8\uFFFFFFB5\uFFFFFF9B\\FPGA\\FPGA\\\uFFFFFFE5\uFFFFFF8E\uFFFFFF8B\uFFFFFFE5\uFFFFFF8A\uFFFFFF9B\uFFFFFFE6\uFFFFFFB5\uFFFFFF8B\uFFFFFFE8\uFFFFFFAF\uFFFFFF95\uFFFFFFE5\uFFFFFF8A\uFFFFFFA0\uFFFFFFE5\uFFFFFF9B\uFFFFFFBA\\20261027_structural_rules\\continuation-20261030\\r48-one-snapshot-clean\\program\\share/intel/cycloneiv/cells_sim.v:29.1-33.10"
+      },
+      "ports": {
+        "o": {
+          "direction": "output",
+          "bits": [ 2 ]
+        },
+        "i": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "ibar": {
+          "direction": "input",
+          "bits": [ 4 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "i": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "D:\\\uFFFFFFE7\uFFFFFFAB\uFFFFFF9E\uFFFFFFE8\uFFFFFFB5\uFFFFFF9B\\FPGA\\FPGA\\\uFFFFFFE5\uFFFFFF8E\uFFFFFF8B\uFFFFFFE5\uFFFFFF8A\uFFFFFF9B\uFFFFFFE6\uFFFFFFB5\uFFFFFF8B\uFFFFFFE8\uFFFFFFAF\uFFFFFF95\uFFFFFFE5\uFFFFFF8A\uFFFFFFA0\uFFFFFFE5\uFFFFFF9B\uFFFFFFBA\\20261027_structural_rules\\continuation-20261030\\r48-one-snapshot-clean\\program\\share/intel/cycloneiv/cells_sim.v:30.20-30.21"
+          }
+        },
+        "ibar": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "D:\\\uFFFFFFE7\uFFFFFFAB\uFFFFFF9E\uFFFFFFE8\uFFFFFFB5\uFFFFFF9B\\FPGA\\FPGA\\\uFFFFFFE5\uFFFFFF8E\uFFFFFF8B\uFFFFFFE5\uFFFFFF8A\uFFFFFF9B\uFFFFFFE6\uFFFFFFB5\uFFFFFF8B\uFFFFFFE8\uFFFFFFAF\uFFFFFF95\uFFFFFFE5\uFFFFFF8A\uFFFFFFA0\uFFFFFFE5\uFFFFFF9B\uFFFFFFBA\\20261027_structural_rules\\continuation-20261030\\r48-one-snapshot-clean\\program\\share/intel/cycloneiv/cells_sim.v:30.29-30.33"
+          }
+        },
+        "o": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "D:\\\uFFFFFFE7\uFFFFFFAB\uFFFFFF9E\uFFFFFFE8\uFFFFFFB5\uFFFFFF9B\\FPGA\\FPGA\\\uFFFFFFE5\uFFFFFF8E\uFFFFFF8B\uFFFFFFE5\uFFFFFF8A\uFFFFFF9B\uFFFFFFE6\uFFFFFFB5\uFFFFFF8B\uFFFFFFE8\uFFFFFFAF\uFFFFFF95\uFFFFFFE5\uFFFFFF8A\uFFFFFFA0\uFFFFFFE5\uFFFFFF9B\uFFFFFFBA\\20261027_structural_rules\\continuation-20261030\\r48-one-snapshot-clean\\program\\share/intel/cycloneiv/cells_sim.v:30.11-30.12"
+          }
+        }
+      }
+    },
+    "cycloneiv_io_obuf": {
+      "attributes": {
+        "blackbox": "00000000000000000000000000000001",
+        "cells_not_processed": "00000000000000000000000000000001",
+        "src": "D:\\\uFFFFFFE7\uFFFFFFAB\uFFFFFF9E\uFFFFFFE8\uFFFFFFB5\uFFFFFF9B\\FPGA\\FPGA\\\uFFFFFFE5\uFFFFFF8E\uFFFFFF8B\uFFFFFFE5\uFFFFFF8A\uFFFFFF9B\uFFFFFFE6\uFFFFFFB5\uFFFFFF8B\uFFFFFFE8\uFFFFFFAF\uFFFFFF95\uFFFFFFE5\uFFFFFF8A\uFFFFFFA0\uFFFFFFE5\uFFFFFF9B\uFFFFFFBA\\20261027_structural_rules\\continuation-20261030\\r48-one-snapshot-clean\\program\\share/intel/cycloneiv/cells_sim.v:36.1-40.10"
+      },
+      "ports": {
+        "o": {
+          "direction": "output",
+          "bits": [ 2 ]
+        },
+        "i": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "oe": {
+          "direction": "input",
+          "bits": [ 4 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "i": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "D:\\\uFFFFFFE7\uFFFFFFAB\uFFFFFF9E\uFFFFFFE8\uFFFFFFB5\uFFFFFF9B\\FPGA\\FPGA\\\uFFFFFFE5\uFFFFFF8E\uFFFFFF8B\uFFFFFFE5\uFFFFFF8A\uFFFFFF9B\uFFFFFFE6\uFFFFFFB5\uFFFFFF8B\uFFFFFFE8\uFFFFFFAF\uFFFFFF95\uFFFFFFE5\uFFFFFF8A\uFFFFFFA0\uFFFFFFE5\uFFFFFF9B\uFFFFFFBA\\20261027_structural_rules\\continuation-20261030\\r48-one-snapshot-clean\\program\\share/intel/cycloneiv/cells_sim.v:37.20-37.21"
+          }
+        },
+        "o": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "D:\\\uFFFFFFE7\uFFFFFFAB\uFFFFFF9E\uFFFFFFE8\uFFFFFFB5\uFFFFFF9B\\FPGA\\FPGA\\\uFFFFFFE5\uFFFFFF8E\uFFFFFF8B\uFFFFFFE5\uFFFFFF8A\uFFFFFF9B\uFFFFFFE6\uFFFFFFB5\uFFFFFF8B\uFFFFFFE8\uFFFFFFAF\uFFFFFF95\uFFFFFFE5\uFFFFFF8A\uFFFFFFA0\uFFFFFFE5\uFFFFFF9B\uFFFFFFBA\\20261027_structural_rules\\continuation-20261030\\r48-one-snapshot-clean\\program\\share/intel/cycloneiv/cells_sim.v:37.11-37.12"
+          }
+        },
+        "oe": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "D:\\\uFFFFFFE7\uFFFFFFAB\uFFFFFF9E\uFFFFFFE8\uFFFFFFB5\uFFFFFF9B\\FPGA\\FPGA\\\uFFFFFFE5\uFFFFFF8E\uFFFFFF8B\uFFFFFFE5\uFFFFFF8A\uFFFFFF9B\uFFFFFFE6\uFFFFFFB5\uFFFFFF8B\uFFFFFFE8\uFFFFFFAF\uFFFFFF95\uFFFFFFE5\uFFFFFF8A\uFFFFFFA0\uFFFFFFE5\uFFFFFF9B\uFFFFFFBA\\20261027_structural_rules\\continuation-20261030\\r48-one-snapshot-clean\\program\\share/intel/cycloneiv/cells_sim.v:37.29-37.31"
+          }
+        }
+      }
+    },
+    "cycloneiv_lcell_comb": {
+      "attributes": {
+        "blackbox": "00000000000000000000000000000001",
+        "cells_not_processed": "00000000000000000000000000000001",
+        "src": "D:\\\uFFFFFFE7\uFFFFFFAB\uFFFFFF9E\uFFFFFFE8\uFFFFFFB5\uFFFFFF9B\\FPGA\\FPGA\\\uFFFFFFE5\uFFFFFF8E\uFFFFFF8B\uFFFFFFE5\uFFFFFF8A\uFFFFFF9B\uFFFFFFE6\uFFFFFFB5\uFFFFFF8B\uFFFFFFE8\uFFFFFFAF\uFFFFFF95\uFFFFFFE5\uFFFFFF8A\uFFFFFFA0\uFFFFFFE5\uFFFFFF9B\uFFFFFFBA\\20261027_structural_rules\\continuation-20261030\\r48-one-snapshot-clean\\program\\share/intel/cycloneiv/cells_sim.v:43.1-113.10"
+      },
+      "parameter_default_values": {
+        "dont_touch": "off",
+        "lpm_type": "cycloneiv_lcell_comb",
+        "lut_mask": "1111111111111111",
+        "sum_lutc_input": "datac"
+      },
+      "ports": {
+        "combout": {
+          "direction": "output",
+          "bits": [ 2 ]
+        },
+        "cout": {
+          "direction": "output",
+          "bits": [ 3 ]
+        },
+        "dataa": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "datab": {
+          "direction": "input",
+          "bits": [ 5 ]
+        },
+        "datac": {
+          "direction": "input",
+          "bits": [ 6 ]
+        },
+        "datad": {
+          "direction": "input",
+          "bits": [ 7 ]
+        },
+        "cin": {
+          "direction": "input",
+          "bits": [ 8 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "cin": {
+          "hide_name": 0,
+          "bits": [ 8 ],
+          "attributes": {
+            "src": "D:\\\uFFFFFFE7\uFFFFFFAB\uFFFFFF9E\uFFFFFFE8\uFFFFFFB5\uFFFFFF9B\\FPGA\\FPGA\\\uFFFFFFE5\uFFFFFF8E\uFFFFFF8B\uFFFFFFE5\uFFFFFF8A\uFFFFFF9B\uFFFFFFE6\uFFFFFFB5\uFFFFFF8B\uFFFFFFE8\uFFFFFFAF\uFFFFFF95\uFFFFFFE5\uFFFFFF8A\uFFFFFFA0\uFFFFFFE5\uFFFFFF9B\uFFFFFFBA\\20261027_structural_rules\\continuation-20261030\\r48-one-snapshot-clean\\program\\share/intel/cycloneiv/cells_sim.v:45.38-45.41"
+          }
+        },
+        "combout": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "D:\\\uFFFFFFE7\uFFFFFFAB\uFFFFFF9E\uFFFFFFE8\uFFFFFFB5\uFFFFFF9B\\FPGA\\FPGA\\\uFFFFFFE5\uFFFFFF8E\uFFFFFF8B\uFFFFFFE5\uFFFFFF8A\uFFFFFF9B\uFFFFFFE6\uFFFFFFB5\uFFFFFF8B\uFFFFFFE8\uFFFFFFAF\uFFFFFF95\uFFFFFFE5\uFFFFFF8A\uFFFFFFA0\uFFFFFFE5\uFFFFFF9B\uFFFFFFBA\\20261027_structural_rules\\continuation-20261030\\r48-one-snapshot-clean\\program\\share/intel/cycloneiv/cells_sim.v:44.11-44.18"
+          }
+        },
+        "cout": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "D:\\\uFFFFFFE7\uFFFFFFAB\uFFFFFF9E\uFFFFFFE8\uFFFFFFB5\uFFFFFF9B\\FPGA\\FPGA\\\uFFFFFFE5\uFFFFFF8E\uFFFFFF8B\uFFFFFFE5\uFFFFFF8A\uFFFFFF9B\uFFFFFFE6\uFFFFFFB5\uFFFFFF8B\uFFFFFFE8\uFFFFFFAF\uFFFFFF95\uFFFFFFE5\uFFFFFF8A\uFFFFFFA0\uFFFFFFE5\uFFFFFF9B\uFFFFFFBA\\20261027_structural_rules\\continuation-20261030\\r48-one-snapshot-clean\\program\\share/intel/cycloneiv/cells_sim.v:44.20-44.24"
+          }
+        },
+        "dataa": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "D:\\\uFFFFFFE7\uFFFFFFAB\uFFFFFF9E\uFFFFFFE8\uFFFFFFB5\uFFFFFF9B\\FPGA\\FPGA\\\uFFFFFFE5\uFFFFFF8E\uFFFFFF8B\uFFFFFFE5\uFFFFFF8A\uFFFFFF9B\uFFFFFFE6\uFFFFFFB5\uFFFFFF8B\uFFFFFFE8\uFFFFFFAF\uFFFFFF95\uFFFFFFE5\uFFFFFF8A\uFFFFFFA0\uFFFFFFE5\uFFFFFF9B\uFFFFFFBA\\20261027_structural_rules\\continuation-20261030\\r48-one-snapshot-clean\\program\\share/intel/cycloneiv/cells_sim.v:45.10-45.15"
+          }
+        },
+        "datab": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "D:\\\uFFFFFFE7\uFFFFFFAB\uFFFFFF9E\uFFFFFFE8\uFFFFFFB5\uFFFFFF9B\\FPGA\\FPGA\\\uFFFFFFE5\uFFFFFF8E\uFFFFFF8B\uFFFFFFE5\uFFFFFF8A\uFFFFFF9B\uFFFFFFE6\uFFFFFFB5\uFFFFFF8B\uFFFFFFE8\uFFFFFFAF\uFFFFFF95\uFFFFFFE5\uFFFFFF8A\uFFFFFFA0\uFFFFFFE5\uFFFFFF9B\uFFFFFFBA\\20261027_structural_rules\\continuation-20261030\\r48-one-snapshot-clean\\program\\share/intel/cycloneiv/cells_sim.v:45.17-45.22"
+          }
+        },
+        "datac": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+            "src": "D:\\\uFFFFFFE7\uFFFFFFAB\uFFFFFF9E\uFFFFFFE8\uFFFFFFB5\uFFFFFF9B\\FPGA\\FPGA\\\uFFFFFFE5\uFFFFFF8E\uFFFFFF8B\uFFFFFFE5\uFFFFFF8A\uFFFFFF9B\uFFFFFFE6\uFFFFFFB5\uFFFFFF8B\uFFFFFFE8\uFFFFFFAF\uFFFFFF95\uFFFFFFE5\uFFFFFF8A\uFFFFFFA0\uFFFFFFE5\uFFFFFF9B\uFFFFFFBA\\20261027_structural_rules\\continuation-20261030\\r48-one-snapshot-clean\\program\\share/intel/cycloneiv/cells_sim.v:45.24-45.29"
+          }
+        },
+        "datad": {
+          "hide_name": 0,
+          "bits": [ 7 ],
+          "attributes": {
+            "src": "D:\\\uFFFFFFE7\uFFFFFFAB\uFFFFFF9E\uFFFFFFE8\uFFFFFFB5\uFFFFFF9B\\FPGA\\FPGA\\\uFFFFFFE5\uFFFFFF8E\uFFFFFF8B\uFFFFFFE5\uFFFFFF8A\uFFFFFF9B\uFFFFFFE6\uFFFFFFB5\uFFFFFF8B\uFFFFFFE8\uFFFFFFAF\uFFFFFF95\uFFFFFFE5\uFFFFFF8A\uFFFFFFA0\uFFFFFFE5\uFFFFFF9B\uFFFFFFBA\\20261027_structural_rules\\continuation-20261030\\r48-one-snapshot-clean\\program\\share/intel/cycloneiv/cells_sim.v:45.31-45.36"
+          }
+        }
+      }
+    },
+    "cycloneiv_pll": {
+      "attributes": {
+        "dynports": "00000000000000000000000000000001",
+        "blackbox": "00000000000000000000000000000001",
+        "cells_not_processed": "00000000000000000000000000000001",
+        "src": "D:\\\uFFFFFFE7\uFFFFFFAB\uFFFFFF9E\uFFFFFFE8\uFFFFFFB5\uFFFFFF9B\\FPGA\\FPGA\\\uFFFFFFE5\uFFFFFF8E\uFFFFFF8B\uFFFFFFE5\uFFFFFF8A\uFFFFFF9B\uFFFFFFE6\uFFFFFFB5\uFFFFFF8B\uFFFFFFE8\uFFFFFFAF\uFFFFFF95\uFFFFFFE5\uFFFFFF8A\uFFFFFFA0\uFFFFFFE5\uFFFFFF9B\uFFFFFFBA\\20261027_structural_rules\\continuation-20261030\\r48-one-snapshot-clean\\program\\share/intel/cycloneiv/cells_sim.v:142.1-297.10"
+      },
+      "parameter_default_values": {
+        "bandwidth": "00000000000000000000000000000000",
+        "bandwidth_type": "auto",
+        "c0_high": "00000000000000000000000000000001",
+        "c0_initial": "00000000000000000000000000000001",
+        "c0_low": "00000000000000000000000000000001",
+        "c0_mode": "bypass",
+        "c0_ph": "00000000000000000000000000000000",
+        "c0_test_source": "11111111111111111111111111111111",
+        "c1_high": "00000000000000000000000000000001",
+        "c1_initial": "00000000000000000000000000000001",
+        "c1_low": "00000000000000000000000000000001",
+        "c1_mode": "bypass",
+        "c1_ph": "00000000000000000000000000000000",
+        "c1_test_source": "11111111111111111111111111111111",
+        "c1_use_casc_in": "off",
+        "c2_high": "00000000000000000000000000000001",
+        "c2_initial": "00000000000000000000000000000001",
+        "c2_low": "00000000000000000000000000000001",
+        "c2_mode": "bypass",
+        "c2_ph": "00000000000000000000000000000000",
+        "c2_test_source": "11111111111111111111111111111111",
+        "c2_use_casc_in": "off",
+        "c3_high": "00000000000000000000000000000001",
+        "c3_initial": "00000000000000000000000000000001",
+        "c3_low": "00000000000000000000000000000001",
+        "c3_mode": "bypass",
+        "c3_ph": "00000000000000000000000000000000",
+        "c3_test_source": "11111111111111111111111111111111",
+        "c3_use_casc_in": "off",
+        "c4_high": "00000000000000000000000000000001",
+        "c4_initial": "00000000000000000000000000000001",
+        "c4_low": "00000000000000000000000000000001",
+        "c4_mode": "bypass",
+        "c4_ph": "00000000000000000000000000000000",
+        "c4_test_source": "11111111111111111111111111111111",
+        "c4_use_casc_in": "off",
+        "charge_pump_current": "00000000000000000000000000001010",
+        "clk0_counter": "unused",
+        "clk0_divide_by": "00000000000000000000000000000000",
+        "clk0_duty_cycle": "00000000000000000000000000110010",
+        "clk0_multiply_by": "00000000000000000000000000000000",
+        "clk0_output_frequency": "00000000000000000000000000000000",
+        "clk0_phase_shift": "0 ",
+        "clk1_counter": "unused",
+        "clk1_divide_by": "00000000000000000000000000000000",
+        "clk1_duty_cycle": "00000000000000000000000000110010",
+        "clk1_multiply_by": "00000000000000000000000000000000",
+        "clk1_output_frequency": "00000000000000000000000000000000",
+        "clk1_phase_shift": "0 ",
+        "clk2_counter": "unused",
+        "clk2_divide_by": "00000000000000000000000000000000",
+        "clk2_duty_cycle": "00000000000000000000000000110010",
+        "clk2_multiply_by": "00000000000000000000000000000000",
+        "clk2_output_frequency": "00000000000000000000000000000000",
+        "clk2_phase_shift": "0 ",
+        "clk3_counter": "unused",
+        "clk3_divide_by": "00000000000000000000000000000000",
+        "clk3_duty_cycle": "00000000000000000000000000110010",
+        "clk3_multiply_by": "00000000000000000000000000000000",
+        "clk3_output_frequency": "00000000000000000000000000000000",
+        "clk3_phase_shift": "0 ",
+        "clk4_counter": "unused",
+        "clk4_divide_by": "00000000000000000000000000000000",
+        "clk4_duty_cycle": "00000000000000000000000000110010",
+        "clk4_multiply_by": "00000000000000000000000000000000",
+        "clk4_output_frequency": "00000000000000000000000000000000",
+        "clk4_phase_shift": "0 ",
+        "compensate_clock": "clock0",
+        "enable_switch_over_counter": "off",
+        "inclk0_input_frequency": "00000000000000000000000000000000",
+        "inclk1_input_frequency": "00000000000000000000000000000000",
+        "lock_high": "00000000000000000000000000000000",
+        "lock_low": "00000000000000000000000000000000",
+        "lock_window_ui": "0.05",
+        "loop_filter_c": "00000000000000000000000000000000",
+        "loop_filter_r": "1.0",
+        "lpm_type": "cycloneiv_pll",
+        "m": "00000000000000000000000000000000",
+        "m_initial": "00000000000000000000000000000001",
+        "m_ph": "00000000000000000000000000000000",
+        "m_test_source": "11111111111111111111111111111111",
+        "n": "00000000000000000000000000000001",
+        "operation_mode": "normal",
+        "pfd_max": "00000000000000000000000000000000",
+        "pfd_min": "00000000000000000000000000000000",
+        "phase_counter_select_width": "00000000000000000000000000000011",
+        "pll_compensation_delay": "00000000000000000000000000000000",
+        "pll_type": "auto",
+        "self_reset_on_loss_lock": "off",
+        "switch_over_counter": "00000000000000000000000000000001",
+        "switch_over_type": "auto",
+        "test_bypass_lock_detect": "off",
+        "use_dc_coupling": "false",
+        "vco_center": "00000000000000000000000000000000",
+        "vco_divide_by": "00000000000000000000000000000000",
+        "vco_frequency_control": "auto",
+        "vco_max": "00000000000000000000000000000000",
+        "vco_min": "00000000000000000000000000000000",
+        "vco_multiply_by": "00000000000000000000000000000000",
+        "vco_phase_shift_step": "00000000000000000000000000000000",
+        "vco_post_scale": "00000000000000000000000000000001"
+      },
+      "ports": {
+        "inclk": {
+          "direction": "input",
+          "bits": [ 2, 3 ]
+        },
+        "fbin": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "fbout": {
+          "direction": "output",
+          "bits": [ 5 ]
+        },
+        "clkswitch": {
+          "direction": "input",
+          "bits": [ 6 ]
+        },
+        "areset": {
+          "direction": "input",
+          "bits": [ 7 ]
+        },
+        "pfdena": {
+          "direction": "input",
+          "bits": [ 8 ]
+        },
+        "scanclk": {
+          "direction": "input",
+          "bits": [ 9 ]
+        },
+        "scandata": {
+          "direction": "input",
+          "bits": [ 10 ]
+        },
+        "scanclkena": {
+          "direction": "input",
+          "bits": [ 11 ]
+        },
+        "configupdate": {
+          "direction": "input",
+          "bits": [ 12 ]
+        },
+        "clk": {
+          "direction": "output",
+          "bits": [ 13, 14, 15, 16, 17 ]
+        },
+        "phasecounterselect": {
+          "direction": "input",
+          "bits": [ 18, 19, 20 ]
+        },
+        "phaseupdown": {
+          "direction": "input",
+          "bits": [ 21 ]
+        },
+        "phasestep": {
+          "direction": "input",
+          "bits": [ 22 ]
+        },
+        "clkbad": {
+          "direction": "output",
+          "bits": [ 23, 24 ]
+        },
+        "activeclock": {
+          "direction": "output",
+          "bits": [ 25 ]
+        },
+        "locked": {
+          "direction": "output",
+          "bits": [ 26 ]
+        },
+        "scandataout": {
+          "direction": "output",
+          "bits": [ 27 ]
+        },
+        "scandone": {
+          "direction": "output",
+          "bits": [ 28 ]
+        },
+        "phasedone": {
+          "direction": "output",
+          "bits": [ 29 ]
+        },
+        "vcooverrange": {
+          "direction": "output",
+          "bits": [ 30 ]
+        },
+        "vcounderrange": {
+          "direction": "output",
+          "bits": [ 31 ]
+        },
+        "fref": {
+          "direction": "output",
+          "bits": [ 32 ]
+        },
+        "icdrclk": {
+          "direction": "output",
+          "bits": [ 33 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "activeclock": {
+          "hide_name": 0,
+          "bits": [ 25 ],
+          "attributes": {
+            "src": "D:\\\uFFFFFFE7\uFFFFFFAB\uFFFFFF9E\uFFFFFFE8\uFFFFFFB5\uFFFFFF9B\\FPGA\\FPGA\\\uFFFFFFE5\uFFFFFF8E\uFFFFFF8B\uFFFFFFE5\uFFFFFF8A\uFFFFFF9B\uFFFFFFE6\uFFFFFFB5\uFFFFFF8B\uFFFFFFE8\uFFFFFFAF\uFFFFFF95\uFFFFFFE5\uFFFFFF8A\uFFFFFFA0\uFFFFFFE5\uFFFFFF9B\uFFFFFFBA\\20261027_structural_rules\\continuation-20261030\\r48-one-snapshot-clean\\program\\share/intel/cycloneiv/cells_sim.v:286.45-286.56"
+          }
+        },
+        "areset": {
+          "hide_name": 0,
+          "bits": [ 7 ],
+          "attributes": {
+            "src": "D:\\\uFFFFFFE7\uFFFFFFAB\uFFFFFF9E\uFFFFFFE8\uFFFFFFB5\uFFFFFF9B\\FPGA\\FPGA\\\uFFFFFFE5\uFFFFFF8E\uFFFFFF8B\uFFFFFFE5\uFFFFFF8A\uFFFFFF9B\uFFFFFFE6\uFFFFFFB5\uFFFFFF8B\uFFFFFFE8\uFFFFFFAF\uFFFFFF95\uFFFFFFE5\uFFFFFF8A\uFFFFFFA0\uFFFFFFE5\uFFFFFF9B\uFFFFFFBA\\20261027_structural_rules\\continuation-20261030\\r48-one-snapshot-clean\\program\\share/intel/cycloneiv/cells_sim.v:274.16-274.22"
+          }
+        },
+        "clk": {
+          "hide_name": 0,
+          "bits": [ 13, 14, 15, 16, 17 ],
+          "attributes": {
+            "src": "D:\\\uFFFFFFE7\uFFFFFFAB\uFFFFFF9E\uFFFFFFE8\uFFFFFFB5\uFFFFFF9B\\FPGA\\FPGA\\\uFFFFFFE5\uFFFFFF8E\uFFFFFF8B\uFFFFFFE5\uFFFFFF8A\uFFFFFF9B\uFFFFFFE6\uFFFFFFB5\uFFFFFF8B\uFFFFFFE8\uFFFFFFAF\uFFFFFF95\uFFFFFFE5\uFFFFFF8A\uFFFFFFA0\uFFFFFFE5\uFFFFFF9B\uFFFFFFBA\\20261027_structural_rules\\continuation-20261030\\r48-one-snapshot-clean\\program\\share/intel/cycloneiv/cells_sim.v:284.45-284.48"
+          }
+        },
+        "clkbad": {
+          "hide_name": 0,
+          "bits": [ 23, 24 ],
+          "attributes": {
+            "src": "D:\\\uFFFFFFE7\uFFFFFFAB\uFFFFFF9E\uFFFFFFE8\uFFFFFFB5\uFFFFFF9B\\FPGA\\FPGA\\\uFFFFFFE5\uFFFFFF8E\uFFFFFF8B\uFFFFFFE5\uFFFFFF8A\uFFFFFF9B\uFFFFFFE6\uFFFFFFB5\uFFFFFF8B\uFFFFFFE8\uFFFFFFAF\uFFFFFF95\uFFFFFFE5\uFFFFFF8A\uFFFFFFA0\uFFFFFFE5\uFFFFFF9B\uFFFFFFBA\\20261027_structural_rules\\continuation-20261030\\r48-one-snapshot-clean\\program\\share/intel/cycloneiv/cells_sim.v:285.45-285.51"
+          }
+        },
+        "clkswitch": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+            "src": "D:\\\uFFFFFFE7\uFFFFFFAB\uFFFFFF9E\uFFFFFFE8\uFFFFFFB5\uFFFFFF9B\\FPGA\\FPGA\\\uFFFFFFE5\uFFFFFF8E\uFFFFFF8B\uFFFFFFE5\uFFFFFF8A\uFFFFFF9B\uFFFFFFE6\uFFFFFFB5\uFFFFFF8B\uFFFFFFE8\uFFFFFFAF\uFFFFFF95\uFFFFFFE5\uFFFFFF8A\uFFFFFFA0\uFFFFFFE5\uFFFFFF9B\uFFFFFFBA\\20261027_structural_rules\\continuation-20261030\\r48-one-snapshot-clean\\program\\share/intel/cycloneiv/cells_sim.v:273.16-273.25"
+          }
+        },
+        "configupdate": {
+          "hide_name": 0,
+          "bits": [ 12 ],
+          "attributes": {
+            "src": "D:\\\uFFFFFFE7\uFFFFFFAB\uFFFFFF9E\uFFFFFFE8\uFFFFFFB5\uFFFFFF9B\\FPGA\\FPGA\\\uFFFFFFE5\uFFFFFF8E\uFFFFFF8B\uFFFFFFE5\uFFFFFF8A\uFFFFFF9B\uFFFFFFE6\uFFFFFFB5\uFFFFFF8B\uFFFFFFE8\uFFFFFFAF\uFFFFFF95\uFFFFFFE5\uFFFFFF8A\uFFFFFFA0\uFFFFFFE5\uFFFFFF9B\uFFFFFFBA\\20261027_structural_rules\\continuation-20261030\\r48-one-snapshot-clean\\program\\share/intel/cycloneiv/cells_sim.v:282.45-282.57"
+          }
+        },
+        "fbin": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "D:\\\uFFFFFFE7\uFFFFFFAB\uFFFFFF9E\uFFFFFFE8\uFFFFFFB5\uFFFFFF9B\\FPGA\\FPGA\\\uFFFFFFE5\uFFFFFF8E\uFFFFFF8B\uFFFFFFE5\uFFFFFF8A\uFFFFFF9B\uFFFFFFE6\uFFFFFFB5\uFFFFFF8B\uFFFFFFE8\uFFFFFFAF\uFFFFFF95\uFFFFFFE5\uFFFFFF8A\uFFFFFFA0\uFFFFFFE5\uFFFFFF9B\uFFFFFFBA\\20261027_structural_rules\\continuation-20261030\\r48-one-snapshot-clean\\program\\share/intel/cycloneiv/cells_sim.v:272.16-272.20"
+          }
+        },
+        "fbout": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "D:\\\uFFFFFFE7\uFFFFFFAB\uFFFFFF9E\uFFFFFFE8\uFFFFFFB5\uFFFFFF9B\\FPGA\\FPGA\\\uFFFFFFE5\uFFFFFF8E\uFFFFFF8B\uFFFFFFE5\uFFFFFF8A\uFFFFFF9B\uFFFFFFE6\uFFFFFFB5\uFFFFFF8B\uFFFFFFE8\uFFFFFFAF\uFFFFFF95\uFFFFFFE5\uFFFFFF8A\uFFFFFFA0\uFFFFFFE5\uFFFFFF9B\uFFFFFFBA\\20261027_structural_rules\\continuation-20261030\\r48-one-snapshot-clean\\program\\share/intel/cycloneiv/cells_sim.v:290.45-290.50"
+          }
+        },
+        "fref": {
+          "hide_name": 0,
+          "bits": [ 32 ],
+          "attributes": {
+            "src": "D:\\\uFFFFFFE7\uFFFFFFAB\uFFFFFF9E\uFFFFFFE8\uFFFFFFB5\uFFFFFF9B\\FPGA\\FPGA\\\uFFFFFFE5\uFFFFFF8E\uFFFFFF8B\uFFFFFFE5\uFFFFFF8A\uFFFFFF9B\uFFFFFFE6\uFFFFFFB5\uFFFFFF8B\uFFFFFFE8\uFFFFFFAF\uFFFFFF95\uFFFFFFE5\uFFFFFF8A\uFFFFFFA0\uFFFFFFE5\uFFFFFF9B\uFFFFFFBA\\20261027_structural_rules\\continuation-20261030\\r48-one-snapshot-clean\\program\\share/intel/cycloneiv/cells_sim.v:294.45-294.49"
+          }
+        },
+        "icdrclk": {
+          "hide_name": 0,
+          "bits": [ 33 ],
+          "attributes": {
+            "src": "D:\\\uFFFFFFE7\uFFFFFFAB\uFFFFFF9E\uFFFFFFE8\uFFFFFFB5\uFFFFFF9B\\FPGA\\FPGA\\\uFFFFFFE5\uFFFFFF8E\uFFFFFF8B\uFFFFFFE5\uFFFFFF8A\uFFFFFF9B\uFFFFFFE6\uFFFFFFB5\uFFFFFF8B\uFFFFFFE8\uFFFFFFAF\uFFFFFF95\uFFFFFFE5\uFFFFFF8A\uFFFFFFA0\uFFFFFFE5\uFFFFFF9B\uFFFFFFBA\\20261027_structural_rules\\continuation-20261030\\r48-one-snapshot-clean\\program\\share/intel/cycloneiv/cells_sim.v:295.45-295.52"
+          }
+        },
+        "inclk": {
+          "hide_name": 0,
+          "bits": [ 2, 3 ],
+          "attributes": {
+            "src": "D:\\\uFFFFFFE7\uFFFFFFAB\uFFFFFF9E\uFFFFFFE8\uFFFFFFB5\uFFFFFF9B\\FPGA\\FPGA\\\uFFFFFFE5\uFFFFFF8E\uFFFFFF8B\uFFFFFFE5\uFFFFFF8A\uFFFFFF9B\uFFFFFFE6\uFFFFFFB5\uFFFFFF8B\uFFFFFFE8\uFFFFFFAF\uFFFFFF95\uFFFFFFE5\uFFFFFF8A\uFFFFFFA0\uFFFFFFE5\uFFFFFF9B\uFFFFFFBA\\20261027_structural_rules\\continuation-20261030\\r48-one-snapshot-clean\\program\\share/intel/cycloneiv/cells_sim.v:271.16-271.21"
+          }
+        },
+        "locked": {
+          "hide_name": 0,
+          "bits": [ 26 ],
+          "attributes": {
+            "src": "D:\\\uFFFFFFE7\uFFFFFFAB\uFFFFFF9E\uFFFFFFE8\uFFFFFFB5\uFFFFFF9B\\FPGA\\FPGA\\\uFFFFFFE5\uFFFFFF8E\uFFFFFF8B\uFFFFFFE5\uFFFFFF8A\uFFFFFF9B\uFFFFFFE6\uFFFFFFB5\uFFFFFF8B\uFFFFFFE8\uFFFFFFAF\uFFFFFF95\uFFFFFFE5\uFFFFFF8A\uFFFFFFA0\uFFFFFFE5\uFFFFFF9B\uFFFFFFBA\\20261027_structural_rules\\continuation-20261030\\r48-one-snapshot-clean\\program\\share/intel/cycloneiv/cells_sim.v:287.45-287.51"
+          }
+        },
+        "pfdena": {
+          "hide_name": 0,
+          "bits": [ 8 ],
+          "attributes": {
+            "src": "D:\\\uFFFFFFE7\uFFFFFFAB\uFFFFFF9E\uFFFFFFE8\uFFFFFFB5\uFFFFFF9B\\FPGA\\FPGA\\\uFFFFFFE5\uFFFFFF8E\uFFFFFF8B\uFFFFFFE5\uFFFFFF8A\uFFFFFF9B\uFFFFFFE6\uFFFFFFB5\uFFFFFF8B\uFFFFFFE8\uFFFFFFAF\uFFFFFF95\uFFFFFFE5\uFFFFFF8A\uFFFFFFA0\uFFFFFFE5\uFFFFFF9B\uFFFFFFBA\\20261027_structural_rules\\continuation-20261030\\r48-one-snapshot-clean\\program\\share/intel/cycloneiv/cells_sim.v:275.16-275.22"
+          }
+        },
+        "phasecounterselect": {
+          "hide_name": 0,
+          "bits": [ 18, 19, 20 ],
+          "attributes": {
+            "src": "D:\\\uFFFFFFE7\uFFFFFFAB\uFFFFFF9E\uFFFFFFE8\uFFFFFFB5\uFFFFFF9B\\FPGA\\FPGA\\\uFFFFFFE5\uFFFFFF8E\uFFFFFF8B\uFFFFFFE5\uFFFFFF8A\uFFFFFF9B\uFFFFFFE6\uFFFFFFB5\uFFFFFF8B\uFFFFFFE8\uFFFFFFAF\uFFFFFF95\uFFFFFFE5\uFFFFFF8A\uFFFFFFA0\uFFFFFFE5\uFFFFFF9B\uFFFFFFBA\\20261027_structural_rules\\continuation-20261030\\r48-one-snapshot-clean\\program\\share/intel/cycloneiv/cells_sim.v:276.45-276.63"
+          }
+        },
+        "phasedone": {
+          "hide_name": 0,
+          "bits": [ 29 ],
+          "attributes": {
+            "src": "D:\\\uFFFFFFE7\uFFFFFFAB\uFFFFFF9E\uFFFFFFE8\uFFFFFFB5\uFFFFFF9B\\FPGA\\FPGA\\\uFFFFFFE5\uFFFFFF8E\uFFFFFF8B\uFFFFFFE5\uFFFFFF8A\uFFFFFF9B\uFFFFFFE6\uFFFFFFB5\uFFFFFF8B\uFFFFFFE8\uFFFFFFAF\uFFFFFF95\uFFFFFFE5\uFFFFFF8A\uFFFFFFA0\uFFFFFFE5\uFFFFFF9B\uFFFFFFBA\\20261027_structural_rules\\continuation-20261030\\r48-one-snapshot-clean\\program\\share/intel/cycloneiv/cells_sim.v:291.45-291.54"
+          }
+        },
+        "phasestep": {
+          "hide_name": 0,
+          "bits": [ 22 ],
+          "attributes": {
+            "src": "D:\\\uFFFFFFE7\uFFFFFFAB\uFFFFFF9E\uFFFFFFE8\uFFFFFFB5\uFFFFFF9B\\FPGA\\FPGA\\\uFFFFFFE5\uFFFFFF8E\uFFFFFF8B\uFFFFFFE5\uFFFFFF8A\uFFFFFF9B\uFFFFFFE6\uFFFFFFB5\uFFFFFF8B\uFFFFFFE8\uFFFFFFAF\uFFFFFF95\uFFFFFFE5\uFFFFFF8A\uFFFFFFA0\uFFFFFFE5\uFFFFFF9B\uFFFFFFBA\\20261027_structural_rules\\continuation-20261030\\r48-one-snapshot-clean\\program\\share/intel/cycloneiv/cells_sim.v:278.45-278.54"
+          }
+        },
+        "phaseupdown": {
+          "hide_name": 0,
+          "bits": [ 21 ],
+          "attributes": {
+            "src": "D:\\\uFFFFFFE7\uFFFFFFAB\uFFFFFF9E\uFFFFFFE8\uFFFFFFB5\uFFFFFF9B\\FPGA\\FPGA\\\uFFFFFFE5\uFFFFFF8E\uFFFFFF8B\uFFFFFFE5\uFFFFFF8A\uFFFFFF9B\uFFFFFFE6\uFFFFFFB5\uFFFFFF8B\uFFFFFFE8\uFFFFFFAF\uFFFFFF95\uFFFFFFE5\uFFFFFF8A\uFFFFFFA0\uFFFFFFE5\uFFFFFF9B\uFFFFFFBA\\20261027_structural_rules\\continuation-20261030\\r48-one-snapshot-clean\\program\\share/intel/cycloneiv/cells_sim.v:277.45-277.56"
+          }
+        },
+        "scanclk": {
+          "hide_name": 0,
+          "bits": [ 9 ],
+          "attributes": {
+            "src": "D:\\\uFFFFFFE7\uFFFFFFAB\uFFFFFF9E\uFFFFFFE8\uFFFFFFB5\uFFFFFF9B\\FPGA\\FPGA\\\uFFFFFFE5\uFFFFFF8E\uFFFFFF8B\uFFFFFFE5\uFFFFFF8A\uFFFFFF9B\uFFFFFFE6\uFFFFFFB5\uFFFFFF8B\uFFFFFFE8\uFFFFFFAF\uFFFFFF95\uFFFFFFE5\uFFFFFF8A\uFFFFFFA0\uFFFFFFE5\uFFFFFF9B\uFFFFFFBA\\20261027_structural_rules\\continuation-20261030\\r48-one-snapshot-clean\\program\\share/intel/cycloneiv/cells_sim.v:279.45-279.52"
+          }
+        },
+        "scanclkena": {
+          "hide_name": 0,
+          "bits": [ 11 ],
+          "attributes": {
+            "src": "D:\\\uFFFFFFE7\uFFFFFFAB\uFFFFFF9E\uFFFFFFE8\uFFFFFFB5\uFFFFFF9B\\FPGA\\FPGA\\\uFFFFFFE5\uFFFFFF8E\uFFFFFF8B\uFFFFFFE5\uFFFFFF8A\uFFFFFF9B\uFFFFFFE6\uFFFFFFB5\uFFFFFF8B\uFFFFFFE8\uFFFFFFAF\uFFFFFF95\uFFFFFFE5\uFFFFFF8A\uFFFFFFA0\uFFFFFFE5\uFFFFFF9B\uFFFFFFBA\\20261027_structural_rules\\continuation-20261030\\r48-one-snapshot-clean\\program\\share/intel/cycloneiv/cells_sim.v:280.45-280.55"
+          }
+        },
+        "scandata": {
+          "hide_name": 0,
+          "bits": [ 10 ],
+          "attributes": {
+            "src": "D:\\\uFFFFFFE7\uFFFFFFAB\uFFFFFF9E\uFFFFFFE8\uFFFFFFB5\uFFFFFF9B\\FPGA\\FPGA\\\uFFFFFFE5\uFFFFFF8E\uFFFFFF8B\uFFFFFFE5\uFFFFFF8A\uFFFFFF9B\uFFFFFFE6\uFFFFFFB5\uFFFFFF8B\uFFFFFFE8\uFFFFFFAF\uFFFFFF95\uFFFFFFE5\uFFFFFF8A\uFFFFFFA0\uFFFFFFE5\uFFFFFF9B\uFFFFFFBA\\20261027_structural_rules\\continuation-20261030\\r48-one-snapshot-clean\\program\\share/intel/cycloneiv/cells_sim.v:281.45-281.53"
+          }
+        },
+        "scandataout": {
+          "hide_name": 0,
+          "bits": [ 27 ],
+          "attributes": {
+            "src": "D:\\\uFFFFFFE7\uFFFFFFAB\uFFFFFF9E\uFFFFFFE8\uFFFFFFB5\uFFFFFF9B\\FPGA\\FPGA\\\uFFFFFFE5\uFFFFFF8E\uFFFFFF8B\uFFFFFFE5\uFFFFFF8A\uFFFFFF9B\uFFFFFFE6\uFFFFFFB5\uFFFFFF8B\uFFFFFFE8\uFFFFFFAF\uFFFFFF95\uFFFFFFE5\uFFFFFF8A\uFFFFFFA0\uFFFFFFE5\uFFFFFF9B\uFFFFFFBA\\20261027_structural_rules\\continuation-20261030\\r48-one-snapshot-clean\\program\\share/intel/cycloneiv/cells_sim.v:288.45-288.56"
+          }
+        },
+        "scandone": {
+          "hide_name": 0,
+          "bits": [ 28 ],
+          "attributes": {
+            "src": "D:\\\uFFFFFFE7\uFFFFFFAB\uFFFFFF9E\uFFFFFFE8\uFFFFFFB5\uFFFFFF9B\\FPGA\\FPGA\\\uFFFFFFE5\uFFFFFF8E\uFFFFFF8B\uFFFFFFE5\uFFFFFF8A\uFFFFFF9B\uFFFFFFE6\uFFFFFFB5\uFFFFFF8B\uFFFFFFE8\uFFFFFFAF\uFFFFFF95\uFFFFFFE5\uFFFFFF8A\uFFFFFFA0\uFFFFFFE5\uFFFFFF9B\uFFFFFFBA\\20261027_structural_rules\\continuation-20261030\\r48-one-snapshot-clean\\program\\share/intel/cycloneiv/cells_sim.v:289.45-289.53"
+          }
+        },
+        "vcooverrange": {
+          "hide_name": 0,
+          "bits": [ 30 ],
+          "attributes": {
+            "src": "D:\\\uFFFFFFE7\uFFFFFFAB\uFFFFFF9E\uFFFFFFE8\uFFFFFFB5\uFFFFFF9B\\FPGA\\FPGA\\\uFFFFFFE5\uFFFFFF8E\uFFFFFF8B\uFFFFFFE5\uFFFFFF8A\uFFFFFF9B\uFFFFFFE6\uFFFFFFB5\uFFFFFF8B\uFFFFFFE8\uFFFFFFAF\uFFFFFF95\uFFFFFFE5\uFFFFFF8A\uFFFFFFA0\uFFFFFFE5\uFFFFFF9B\uFFFFFFBA\\20261027_structural_rules\\continuation-20261030\\r48-one-snapshot-clean\\program\\share/intel/cycloneiv/cells_sim.v:292.45-292.57"
+          }
+        },
+        "vcounderrange": {
+          "hide_name": 0,
+          "bits": [ 31 ],
+          "attributes": {
+            "src": "D:\\\uFFFFFFE7\uFFFFFFAB\uFFFFFF9E\uFFFFFFE8\uFFFFFFB5\uFFFFFF9B\\FPGA\\FPGA\\\uFFFFFFE5\uFFFFFF8E\uFFFFFF8B\uFFFFFFE5\uFFFFFF8A\uFFFFFF9B\uFFFFFFE6\uFFFFFFB5\uFFFFFF8B\uFFFFFFE8\uFFFFFFAF\uFFFFFF95\uFFFFFFE5\uFFFFFF8A\uFFFFFFA0\uFFFFFFE5\uFFFFFF9B\uFFFFFFBA\\20261027_structural_rules\\continuation-20261030\\r48-one-snapshot-clean\\program\\share/intel/cycloneiv/cells_sim.v:293.45-293.58"
+          }
+        }
+      }
+    },
+    "dffeas": {
+      "attributes": {
+        "blackbox": "00000000000000000000000000000001",
+        "src": "D:\\\uFFFFFFE7\uFFFFFFAB\uFFFFFF9E\uFFFFFFE8\uFFFFFFB5\uFFFFFF9B\\FPGA\\FPGA\\\uFFFFFFE5\uFFFFFF8E\uFFFFFF8B\uFFFFFFE5\uFFFFFF8A\uFFFFFF9B\uFFFFFFE6\uFFFFFFB5\uFFFFFF8B\uFFFFFFE8\uFFFFFFAF\uFFFFFF95\uFFFFFFE5\uFFFFFF8A\uFFFFFFA0\uFFFFFFE5\uFFFFFF9B\uFFFFFFBA\\20261027_structural_rules\\continuation-20261030\\r48-one-snapshot-clean\\program\\share/intel/cycloneiv/cells_sim.v:116.1-138.10"
+      },
+      "parameter_default_values": {
+        "is_wysiwyg": "false",
+        "power_up": "dontcare"
+      },
+      "ports": {
+        "q": {
+          "direction": "output",
+          "bits": [ 2 ]
+        },
+        "d": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "clk": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "clrn": {
+          "direction": "input",
+          "bits": [ 5 ]
+        },
+        "prn": {
+          "direction": "input",
+          "bits": [ 6 ]
+        },
+        "ena": {
+          "direction": "input",
+          "bits": [ 7 ]
+        },
+        "asdata": {
+          "direction": "input",
+          "bits": [ 8 ]
+        },
+        "aload": {
+          "direction": "input",
+          "bits": [ 9 ]
+        },
+        "sclr": {
+          "direction": "input",
+          "bits": [ 10 ]
+        },
+        "sload": {
+          "direction": "input",
+          "bits": [ 11 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "aload": {
+          "hide_name": 0,
+          "bits": [ 9 ],
+          "attributes": {
+            "src": "D:\\\uFFFFFFE7\uFFFFFFAB\uFFFFFF9E\uFFFFFFE8\uFFFFFFB5\uFFFFFF9B\\FPGA\\FPGA\\\uFFFFFFE5\uFFFFFF8E\uFFFFFF8B\uFFFFFFE5\uFFFFFF8A\uFFFFFF9B\uFFFFFFE6\uFFFFFFB5\uFFFFFF8B\uFFFFFFE8\uFFFFFFAF\uFFFFFF95\uFFFFFFE5\uFFFFFF8A\uFFFFFFA0\uFFFFFFE5\uFFFFFF9B\uFFFFFFBA\\20261027_structural_rules\\continuation-20261030\\r48-one-snapshot-clean\\program\\share/intel/cycloneiv/cells_sim.v:119.18-119.23"
+          }
+        },
+        "asdata": {
+          "hide_name": 0,
+          "bits": [ 8 ],
+          "attributes": {
+            "src": "D:\\\uFFFFFFE7\uFFFFFFAB\uFFFFFF9E\uFFFFFFE8\uFFFFFFB5\uFFFFFF9B\\FPGA\\FPGA\\\uFFFFFFE5\uFFFFFF8E\uFFFFFF8B\uFFFFFFE5\uFFFFFF8A\uFFFFFF9B\uFFFFFFE6\uFFFFFFB5\uFFFFFF8B\uFFFFFFE8\uFFFFFFAF\uFFFFFF95\uFFFFFFE5\uFFFFFF8A\uFFFFFFA0\uFFFFFFE5\uFFFFFF9B\uFFFFFFBA\\20261027_structural_rules\\continuation-20261030\\r48-one-snapshot-clean\\program\\share/intel/cycloneiv/cells_sim.v:119.10-119.16"
+          }
+        },
+        "clk": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "D:\\\uFFFFFFE7\uFFFFFFAB\uFFFFFF9E\uFFFFFFE8\uFFFFFFB5\uFFFFFF9B\\FPGA\\FPGA\\\uFFFFFFE5\uFFFFFF8E\uFFFFFF8B\uFFFFFFE5\uFFFFFF8A\uFFFFFF9B\uFFFFFFE6\uFFFFFFB5\uFFFFFF8B\uFFFFFFE8\uFFFFFFAF\uFFFFFF95\uFFFFFFE5\uFFFFFF8A\uFFFFFFA0\uFFFFFFE5\uFFFFFF9B\uFFFFFFBA\\20261027_structural_rules\\continuation-20261030\\r48-one-snapshot-clean\\program\\share/intel/cycloneiv/cells_sim.v:118.13-118.16"
+          }
+        },
+        "clrn": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "D:\\\uFFFFFFE7\uFFFFFFAB\uFFFFFF9E\uFFFFFFE8\uFFFFFFB5\uFFFFFF9B\\FPGA\\FPGA\\\uFFFFFFE5\uFFFFFF8E\uFFFFFF8B\uFFFFFFE5\uFFFFFF8A\uFFFFFF9B\uFFFFFFE6\uFFFFFFB5\uFFFFFF8B\uFFFFFFE8\uFFFFFFAF\uFFFFFF95\uFFFFFFE5\uFFFFFF8A\uFFFFFFA0\uFFFFFFE5\uFFFFFF9B\uFFFFFFBA\\20261027_structural_rules\\continuation-20261030\\r48-one-snapshot-clean\\program\\share/intel/cycloneiv/cells_sim.v:118.18-118.22"
+          }
+        },
+        "d": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "D:\\\uFFFFFFE7\uFFFFFFAB\uFFFFFF9E\uFFFFFFE8\uFFFFFFB5\uFFFFFF9B\\FPGA\\FPGA\\\uFFFFFFE5\uFFFFFF8E\uFFFFFF8B\uFFFFFFE5\uFFFFFF8A\uFFFFFF9B\uFFFFFFE6\uFFFFFFB5\uFFFFFF8B\uFFFFFFE8\uFFFFFFAF\uFFFFFF95\uFFFFFFE5\uFFFFFF8A\uFFFFFFA0\uFFFFFFE5\uFFFFFF9B\uFFFFFFBA\\20261027_structural_rules\\continuation-20261030\\r48-one-snapshot-clean\\program\\share/intel/cycloneiv/cells_sim.v:118.10-118.11"
+          }
+        },
+        "ena": {
+          "hide_name": 0,
+          "bits": [ 7 ],
+          "attributes": {
+            "src": "D:\\\uFFFFFFE7\uFFFFFFAB\uFFFFFF9E\uFFFFFFE8\uFFFFFFB5\uFFFFFF9B\\FPGA\\FPGA\\\uFFFFFFE5\uFFFFFF8E\uFFFFFF8B\uFFFFFFE5\uFFFFFF8A\uFFFFFF9B\uFFFFFFE6\uFFFFFFB5\uFFFFFF8B\uFFFFFFE8\uFFFFFFAF\uFFFFFF95\uFFFFFFE5\uFFFFFF8A\uFFFFFFA0\uFFFFFFE5\uFFFFFF9B\uFFFFFFBA\\20261027_structural_rules\\continuation-20261030\\r48-one-snapshot-clean\\program\\share/intel/cycloneiv/cells_sim.v:118.29-118.32"
+          }
+        },
+        "prn": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+            "src": "D:\\\uFFFFFFE7\uFFFFFFAB\uFFFFFF9E\uFFFFFFE8\uFFFFFFB5\uFFFFFF9B\\FPGA\\FPGA\\\uFFFFFFE5\uFFFFFF8E\uFFFFFF8B\uFFFFFFE5\uFFFFFF8A\uFFFFFF9B\uFFFFFFE6\uFFFFFFB5\uFFFFFF8B\uFFFFFFE8\uFFFFFFAF\uFFFFFF95\uFFFFFFE5\uFFFFFF8A\uFFFFFFA0\uFFFFFFE5\uFFFFFF9B\uFFFFFFBA\\20261027_structural_rules\\continuation-20261030\\r48-one-snapshot-clean\\program\\share/intel/cycloneiv/cells_sim.v:118.24-118.27"
+          }
+        },
+        "q": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "D:\\\uFFFFFFE7\uFFFFFFAB\uFFFFFF9E\uFFFFFFE8\uFFFFFFB5\uFFFFFF9B\\FPGA\\FPGA\\\uFFFFFFE5\uFFFFFF8E\uFFFFFF8B\uFFFFFFE5\uFFFFFF8A\uFFFFFF9B\uFFFFFFE6\uFFFFFFB5\uFFFFFF8B\uFFFFFFE8\uFFFFFFAF\uFFFFFF95\uFFFFFFE5\uFFFFFF8A\uFFFFFFA0\uFFFFFFE5\uFFFFFF9B\uFFFFFFBA\\20261027_structural_rules\\continuation-20261030\\r48-one-snapshot-clean\\program\\share/intel/cycloneiv/cells_sim.v:117.11-117.12"
+          }
+        },
+        "sclr": {
+          "hide_name": 0,
+          "bits": [ 10 ],
+          "attributes": {
+            "src": "D:\\\uFFFFFFE7\uFFFFFFAB\uFFFFFF9E\uFFFFFFE8\uFFFFFFB5\uFFFFFF9B\\FPGA\\FPGA\\\uFFFFFFE5\uFFFFFF8E\uFFFFFF8B\uFFFFFFE5\uFFFFFF8A\uFFFFFF9B\uFFFFFFE6\uFFFFFFB5\uFFFFFF8B\uFFFFFFE8\uFFFFFFAF\uFFFFFF95\uFFFFFFE5\uFFFFFF8A\uFFFFFFA0\uFFFFFFE5\uFFFFFF9B\uFFFFFFBA\\20261027_structural_rules\\continuation-20261030\\r48-one-snapshot-clean\\program\\share/intel/cycloneiv/cells_sim.v:119.25-119.29"
+          }
+        },
+        "sload": {
+          "hide_name": 0,
+          "bits": [ 11 ],
+          "attributes": {
+            "src": "D:\\\uFFFFFFE7\uFFFFFFAB\uFFFFFF9E\uFFFFFFE8\uFFFFFFB5\uFFFFFF9B\\FPGA\\FPGA\\\uFFFFFFE5\uFFFFFF8E\uFFFFFF8B\uFFFFFFE5\uFFFFFF8A\uFFFFFF9B\uFFFFFFE6\uFFFFFFB5\uFFFFFF8B\uFFFFFFE8\uFFFFFFAF\uFFFFFF95\uFFFFFFE5\uFFFFFF8A\uFFFFFFA0\uFFFFFFE5\uFFFFFF9B\uFFFFFFBA\\20261027_structural_rules\\continuation-20261030\\r48-one-snapshot-clean\\program\\share/intel/cycloneiv/cells_sim.v:119.31-119.36"
+          }
+        }
+      }
+    },
+    "t": {
+      "attributes": {
+        "top": "00000000000000000000000000000001",
+        "src": "fixture.v:1.1-6.10"
+      },
+      "ports": {
+        "clk": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "a": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "b": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "s": {
+          "direction": "input",
+          "bits": [ 5 ]
+        },
+        "ena": {
+          "direction": "input",
+          "bits": [ 6 ]
+        },
+        "clrn": {
+          "direction": "input",
+          "bits": [ 7 ]
+        },
+        "q": {
+          "direction": "output",
+          "bits": [ 8 ]
+        }
+      },
+      "cells": {
+        "ff": {
+          "hide_name": 0,
+          "type": "dffeas",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "fixture.v:4.8-4.119"
+          },
+          "port_directions": {
+            "aload": "input",
+            "asdata": "input",
+            "clk": "input",
+            "clrn": "input",
+            "d": "input",
+            "ena": "input",
+            "prn": "input",
+            "q": "output",
+            "sclr": "input",
+            "sload": "input"
+          },
+          "connections": {
+            "aload": [ "0" ],
+            "asdata": [ 4 ],
+            "clk": [ 2 ],
+            "clrn": [ 7 ],
+            "d": [ 3 ],
+            "ena": [ 6 ],
+            "prn": [ "1" ],
+            "q": [ 8 ],
+            "sclr": [ "0" ],
+            "sload": [ 5 ]
+          }
+        }
+      },
+      "netnames": {
+        "a": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "fixture.v:1.25-1.26"
+          }
+        },
+        "b": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "fixture.v:1.27-1.28"
+          }
+        },
+        "clk": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "fixture.v:1.21-1.24"
+          }
+        },
+        "clrn": {
+          "hide_name": 0,
+          "bits": [ 7 ],
+          "attributes": {
+            "src": "fixture.v:1.35-1.39"
+          }
+        },
+        "d": {
+          "hide_name": 0,
+          "bits": [ 9 ],
+          "attributes": {
+            "src": "fixture.v:2.6-2.7"
+          }
+        },
+        "ena": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+            "src": "fixture.v:1.31-1.34"
+          }
+        },
+        "q": {
+          "hide_name": 0,
+          "bits": [ 8 ],
+          "attributes": {
+            "src": "fixture.v:1.54-1.55"
+          }
+        },
+        "s": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "fixture.v:1.29-1.30"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,259 @@
+
+-- Executing script file `candidate-decode.ys' --
+
+1. Executing RTLIL frontend.
+Input filename: candidate.il
+
+2. Executing TECHMAP pass (map to technology primitives).
+
+2.1. Executing Verilog-2005 frontend: primitive_decode.v
+Parsing Verilog input from `primitive_decode.v' to AST representation.
+Generating RTLIL representation for module `\cycloneiv_lcell_comb'.
+Generating RTLIL representation for module `\dffeas'.
+Successfully finished Verilog frontend.
+
+2.2. Continuing TECHMAP pass.
+Using template $paramod$650108b51605e6a14905dd298ebe46eb7ee30477\cycloneiv_lcell_comb for cells of type cycloneiv_lcell_comb.
+Using template $paramod$d5babc3012ac2859310f13e6e70f078f5ea72610\cycloneiv_lcell_comb for cells of type cycloneiv_lcell_comb.
+Using template $paramod$2d2c58b807ca46a91775cd28c2609c37890dafac\cycloneiv_lcell_comb for cells of type cycloneiv_lcell_comb.
+Using template $paramod$d37cad5cba0d6a6ea1b95599c7e0b8fff184da7a\cycloneiv_lcell_comb for cells of type cycloneiv_lcell_comb.
+Using template $paramod$ae2d2367753a0ba5a80c88222dde0357913490e3\cycloneiv_lcell_comb for cells of type cycloneiv_lcell_comb.
+Using template $paramod$42813525d40ffaf456bfd4110c4d7fe1167b0a0c\cycloneiv_lcell_comb for cells of type cycloneiv_lcell_comb.
+Using template $paramod$81b4b1787c4a5ca51f8f36ef4b94d2c156fb9360\cycloneiv_lcell_comb for cells of type cycloneiv_lcell_comb.
+Using template $paramod$a7b74c7a45100a61ed8b27aa520f69371af8290e\cycloneiv_lcell_comb for cells of type cycloneiv_lcell_comb.
+Using template $paramod$395806bfca5813f5244a8607c7a609eb9aea9d3a\cycloneiv_lcell_comb for cells of type cycloneiv_lcell_comb.
+Using template $paramod$635f04d0799738fc9f55507f39965bd5c142e69d\cycloneiv_lcell_comb for cells of type cycloneiv_lcell_comb.
+Using template $paramod$c70d709958122122ff6d88a62301f6a6fc73fb62\cycloneiv_lcell_comb for cells of type cycloneiv_lcell_comb.
+Using template $paramod$78e78e99151799dc45d62f35d5eb8dc6889e47c7\cycloneiv_lcell_comb for cells of type cycloneiv_lcell_comb.
+Using template $paramod$0e79c8a397eda70c3a37f84e372a6a4e1aa42211\cycloneiv_lcell_comb for cells of type cycloneiv_lcell_comb.
+Using template $paramod$2c27a822d28d3224df6acd134049113924c6effe\cycloneiv_lcell_comb for cells of type cycloneiv_lcell_comb.
+Using template $paramod$710dfabac5f5fdf192e9943743fc8fe88e3e1d59\cycloneiv_lcell_comb for cells of type cycloneiv_lcell_comb.
+Using template $paramod$8f4b404d0d67b742633bb4656ce3ab068b4fc20e\cycloneiv_lcell_comb for cells of type cycloneiv_lcell_comb.
+Using template $paramod$c830eda277ed0730ff931bb4ee1b26400b55e310\cycloneiv_lcell_comb for cells of type cycloneiv_lcell_comb.
+Using template $paramod$8008b88ed2cbff6daa639cceec0b09ff8718de17\cycloneiv_lcell_comb for cells of type cycloneiv_lcell_comb.
+Using template $paramod$065af1b1c5daea771fbedbcba042924f7d20c720\cycloneiv_lcell_comb for cells of type cycloneiv_lcell_comb.
+Using template $paramod$df0382d22e6d8c1d86c9d5fe0a015f89afce6220\cycloneiv_lcell_comb for cells of type cycloneiv_lcell_comb.
+Using template $paramod$adaeb0066f2eb45f222e5638944b4048efc23fb8\cycloneiv_lcell_comb for cells of type cycloneiv_lcell_comb.
+Using template $paramod$98f7a07e108bb36e11e869a12c577c1e576fcd7c\cycloneiv_lcell_comb for cells of type cycloneiv_lcell_comb.
+Using template $paramod$b4da3b25bd285cda4ed3d9cd4811623b30d6eb6b\cycloneiv_lcell_comb for cells of type cycloneiv_lcell_comb.
+Using template $paramod$8fa86852166db0ce941ca3f6c122ef0be69ee3f1\cycloneiv_lcell_comb for cells of type cycloneiv_lcell_comb.
+Using template $paramod$ee1f550af898103b1ffc873df7619375a85c5de1\cycloneiv_lcell_comb for cells of type cycloneiv_lcell_comb.
+Using template $paramod$6a1d7699d78e811a14b4d794b42fe338a9d3bced\cycloneiv_lcell_comb for cells of type cycloneiv_lcell_comb.
+Using template $paramod$acd1c25629036e8102aac176d724a0615a1943d8\cycloneiv_lcell_comb for cells of type cycloneiv_lcell_comb.
+Using template $paramod$eccd1de472cd6ee75fc3dfda61c3b38506db1989\cycloneiv_lcell_comb for cells of type cycloneiv_lcell_comb.
+Using template $paramod$0b81f04ee80bbf240e5c4bdd84706525275f6299\cycloneiv_lcell_comb for cells of type cycloneiv_lcell_comb.
+Using template $paramod$faf9da3b7431d26b883ca907545a2d1700264a3a\cycloneiv_lcell_comb for cells of type cycloneiv_lcell_comb.
+Using template $paramod$9b8dc5b42e3811cf92a3be9f52f4eede127b0805\cycloneiv_lcell_comb for cells of type cycloneiv_lcell_comb.
+Using template $paramod$f18877c02a59b79cb452801cfd8fc77f68fd1722\cycloneiv_lcell_comb for cells of type cycloneiv_lcell_comb.
+Using template $paramod$aea54a823457c7c35304e660d21c7c230c234feb\cycloneiv_lcell_comb for cells of type cycloneiv_lcell_comb.
+Using template $paramod$a27854021562f82b3767a0ddea4d2feec4b80650\cycloneiv_lcell_comb for cells of type cycloneiv_lcell_comb.
+Using template $paramod$01c28ea1123fa2bb545f079f498cbf29f92672de\cycloneiv_lcell_comb for cells of type cycloneiv_lcell_comb.
+Using template $paramod$defd8f046ea8b6aab6cf9cebfc349576611a3e14\cycloneiv_lcell_comb for cells of type cycloneiv_lcell_comb.
+Using template $paramod$06fa06595252f7566e7a2edf43c24dfd8aff68ff\cycloneiv_lcell_comb for cells of type cycloneiv_lcell_comb.
+Using template $paramod$a4dc0cc25b67a3e43e37cb117aeb679a49791df7\cycloneiv_lcell_comb for cells of type cycloneiv_lcell_comb.
+Using template $paramod$324d899ded7484def630bd73a8678ab72538ee26\cycloneiv_lcell_comb for cells of type cycloneiv_lcell_comb.
+No more expansions possible.
+<suppressed ~482 debug messages>
+
+3. Executing OPT pass (performing simple optimizations).
+
+3.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module top.
+
+3.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\top'.
+Computing hashes of 98 cells of `\top'.
+Finding duplicate cells in `\top'.
+Removed a total of 0 cells.
+
+3.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \top..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+3.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \top.
+Performed a total of 0 changes.
+
+3.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\top'.
+Computing hashes of 98 cells of `\top'.
+Finding duplicate cells in `\top'.
+Removed a total of 0 cells.
+
+3.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+3.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \top..
+Removed 49 unused cells and 343 unused wires.
+<suppressed ~392 debug messages>
+
+3.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module top.
+
+3.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+3.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \top..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+3.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \top.
+Performed a total of 0 changes.
+
+3.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\top'.
+Computing hashes of 49 cells of `\top'.
+Finding duplicate cells in `\top'.
+Removed a total of 0 cells.
+
+3.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+3.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \top..
+
+3.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module top.
+
+3.16. Finished fast OPT passes. (There is nothing left to do.)
+
+4. Executing PREP pass.
+
+4.1. Executing HIERARCHY pass (managing design hierarchy).
+
+4.1.1. Analyzing design hierarchy..
+Top module:  \top
+
+4.1.2. Analyzing design hierarchy..
+Top module:  \top
+Removed 0 unused modules.
+
+4.2. Executing PROC pass (convert processes to netlists).
+
+4.2.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+4.2.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Removed a total of 0 dead cases.
+
+4.2.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 0 assignments to connections.
+
+4.2.4. Executing PROC_INIT pass (extract init attributes).
+
+4.2.5. Executing PROC_ARST pass (detect async resets in processes).
+
+4.2.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+
+4.2.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+
+4.2.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+4.2.9. Executing PROC_DFF pass (convert process syncs to FFs).
+
+4.2.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+4.2.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+4.2.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module top.
+
+4.3. Executing FUTURE pass.
+
+4.4. Executing OPT_EXPR pass (perform const folding).
+Optimizing module top.
+
+4.5. Executing CHECK pass (checking for obvious problems).
+Checking module top...
+Found and reported 0 problems.
+
+4.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \top..
+
+4.7. Executing OPT pass (performing simple optimizations).
+
+4.7.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module top.
+
+4.7.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\top'.
+Computing hashes of 49 cells of `\top'.
+Finding duplicate cells in `\top'.
+Removed a total of 0 cells.
+
+4.7.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \top..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+4.7.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \top.
+Performed a total of 0 changes.
+
+4.7.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\top'.
+Computing hashes of 49 cells of `\top'.
+Finding duplicate cells in `\top'.
+Removed a total of 0 cells.
+
+4.7.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \top..
+
+4.7.7. Executing OPT_EXPR pass (perform const folding).
+Optimizing module top.
+
+4.7.8. Finished fast OPT passes. (There is nothing left to do.)
+
+4.8. Executing WREDUCE pass (reducing word size of cells).
+
+4.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \top..
+
+4.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+4.11. Executing OPT pass (performing simple optimizations).
+
+4.11.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module top.
+
+4.11.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\top'.
+Computing hashes of 49 cells of `\top'.
+Finding duplicate cells in `\top'.
+Removed a total of 0 cells.
+
+4.11.3. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \top..
+
+4.11.4. Finished fast OPT passes.
+
+4.12. Executing SORT pass.
+
+4.13. Printing statistics.
+
+=== top ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      106 wires
+      106 wire bits
+      106 public wires
+      106 public wire bits
+       33 ports
+       33 port bits
+       49 cells
+       49   $lut
+
+4.14. Executing CHECK pass (checking for obvious problems).
+Checking module top...
+Found and reported 0 problems.
+
+5. Executing RTLIL backend.
+Output filename: candidate-generic.il

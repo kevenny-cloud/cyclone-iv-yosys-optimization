@@ -1,0 +1,1737 @@
+
+-- Executing script file `run.ys' --
+
+1. Executing Verilog-2005 frontend: ../../../partitions/top.outport.0.sv
+Parsing SystemVerilog input from `../../../partitions/top.outport.0.sv' to AST representation.
+Generating RTLIL representation for module `\miter'.
+Generating RTLIL representation for module `\miter_cmp_prop'.
+Generating RTLIL representation for module `\miter_def_prop'.
+Generating RTLIL representation for module `\gold.top.outport.0'.
+Generating RTLIL representation for module `\gate.top.outport.0'.
+Successfully finished Verilog frontend.
+
+2. Executing RTLIL frontend.
+Input filename: ../../../partitions/top.outport.0.il
+Replacing existing blackbox module \gold.top.outport.0.
+Replacing existing blackbox module \gate.top.outport.0.
+
+3. Executing HIERARCHY pass (managing design hierarchy).
+
+3.1. Analyzing design hierarchy..
+Top module:  \miter
+Used module:     \miter_cmp_prop
+Used module:     \gate.top.outport.0
+Used module:     \gold.top.outport.0
+Parameter 1 (\WIDTH) = 1
+Parameter 2 (\TYPE) = 48'011000010111001101110011011001010111001001110100
+
+3.2. Executing AST frontend in derive mode using pre-parsed AST for module `\miter_cmp_prop'.
+Parameter 1 (\WIDTH) = 1
+Parameter 2 (\TYPE) = 48'011000010111001101110011011001010111001001110100
+Generating RTLIL representation for module `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop'.
+Parameter 1 (\WIDTH) = 1
+Parameter 2 (\TYPE) = 48'011000010111001101110011011001010111001001110100
+Found cached RTLIL representation for module `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop'.
+Parameter 1 (\WIDTH) = 1
+Parameter 2 (\TYPE) = 48'011000010111001101110011011001010111001001110100
+Found cached RTLIL representation for module `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop'.
+Parameter 1 (\WIDTH) = 1
+Parameter 2 (\TYPE) = 48'011000010111001101110011011001010111001001110100
+Found cached RTLIL representation for module `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop'.
+Parameter 1 (\WIDTH) = 1
+Parameter 2 (\TYPE) = 48'011000010111001101110011011001010111001001110100
+Found cached RTLIL representation for module `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop'.
+Parameter 1 (\WIDTH) = 1
+Parameter 2 (\TYPE) = 48'011000010111001101110011011001010111001001110100
+Found cached RTLIL representation for module `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop'.
+Parameter 1 (\WIDTH) = 1
+Parameter 2 (\TYPE) = 48'011000010111001101110011011001010111001001110100
+Found cached RTLIL representation for module `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop'.
+Parameter 1 (\WIDTH) = 1
+Parameter 2 (\TYPE) = 48'011000010111001101110011011001010111001001110100
+Found cached RTLIL representation for module `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop'.
+Parameter 1 (\WIDTH) = 1
+Parameter 2 (\TYPE) = 48'011000010111001101110011011001010111001001110100
+Found cached RTLIL representation for module `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop'.
+Parameter 1 (\WIDTH) = 1
+Parameter 2 (\TYPE) = 48'011000010111001101110011011001010111001001110100
+Found cached RTLIL representation for module `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop'.
+Parameter 1 (\WIDTH) = 1
+Parameter 2 (\TYPE) = 48'011000010111001101110011011001010111001001110100
+Found cached RTLIL representation for module `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop'.
+Parameter 1 (\WIDTH) = 1
+Parameter 2 (\TYPE) = 48'011000010111001101110011011001010111001001110100
+Found cached RTLIL representation for module `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop'.
+Parameter 1 (\WIDTH) = 1
+Parameter 2 (\TYPE) = 48'011000010111001101110011011001010111001001110100
+Found cached RTLIL representation for module `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop'.
+Parameter 1 (\WIDTH) = 1
+Parameter 2 (\TYPE) = 48'011000010111001101110011011001010111001001110100
+Found cached RTLIL representation for module `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop'.
+Parameter 1 (\WIDTH) = 1
+Parameter 2 (\TYPE) = 48'011000010111001101110011011001010111001001110100
+Found cached RTLIL representation for module `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop'.
+Parameter 1 (\WIDTH) = 1
+Parameter 2 (\TYPE) = 48'011000010111001101110011011001010111001001110100
+Found cached RTLIL representation for module `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop'.
+Parameter 1 (\WIDTH) = 1
+Parameter 2 (\TYPE) = 48'011000010111001101110011011001010111001001110100
+Found cached RTLIL representation for module `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop'.
+Parameter 1 (\WIDTH) = 1
+Parameter 2 (\TYPE) = 48'011000010111001101110011011001010111001001110100
+Found cached RTLIL representation for module `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop'.
+Parameter 1 (\WIDTH) = 1
+Parameter 2 (\TYPE) = 48'011000010111001101110011011001010111001001110100
+Found cached RTLIL representation for module `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop'.
+Parameter 1 (\WIDTH) = 1
+Parameter 2 (\TYPE) = 48'011000010111001101110011011001010111001001110100
+Found cached RTLIL representation for module `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop'.
+Parameter 1 (\WIDTH) = 1
+Parameter 2 (\TYPE) = 48'011000010111001101110011011001010111001001110100
+Found cached RTLIL representation for module `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop'.
+Parameter 1 (\WIDTH) = 1
+Parameter 2 (\TYPE) = 48'011000010111001101110011011001010111001001110100
+Found cached RTLIL representation for module `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop'.
+Parameter 1 (\WIDTH) = 1
+Parameter 2 (\TYPE) = 48'011000010111001101110011011001010111001001110100
+Found cached RTLIL representation for module `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop'.
+Parameter 1 (\WIDTH) = 1
+Parameter 2 (\TYPE) = 48'011000010111001101110011011001010111001001110100
+Found cached RTLIL representation for module `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop'.
+Parameter 1 (\WIDTH) = 1
+Parameter 2 (\TYPE) = 48'011000010111001101110011011001010111001001110100
+Found cached RTLIL representation for module `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop'.
+Parameter 1 (\WIDTH) = 1
+Parameter 2 (\TYPE) = 48'011000010111001101110011011001010111001001110100
+Found cached RTLIL representation for module `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop'.
+Parameter 1 (\WIDTH) = 1
+Parameter 2 (\TYPE) = 48'011000010111001101110011011001010111001001110100
+Found cached RTLIL representation for module `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop'.
+Parameter 1 (\WIDTH) = 1
+Parameter 2 (\TYPE) = 48'011000010111001101110011011001010111001001110100
+Found cached RTLIL representation for module `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop'.
+Parameter 1 (\WIDTH) = 1
+Parameter 2 (\TYPE) = 48'011000010111001101110011011001010111001001110100
+Found cached RTLIL representation for module `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop'.
+Parameter 1 (\WIDTH) = 1
+Parameter 2 (\TYPE) = 48'011000010111001101110011011001010111001001110100
+Found cached RTLIL representation for module `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop'.
+
+3.3. Analyzing design hierarchy..
+Top module:  \miter
+Used module:     $paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop
+Used module:     \gate.top.outport.0
+Used module:     \gold.top.outport.0
+
+3.4. Analyzing design hierarchy..
+Top module:  \miter
+Used module:     $paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop
+Used module:     \gate.top.outport.0
+Used module:     \gold.top.outport.0
+Removing unused module `\miter_def_prop'.
+Removing unused module `\miter_cmp_prop'.
+Removed 2 unused modules.
+Module $paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop directly or indirectly contains formal properties -> setting "keep" attribute.
+Module miter directly or indirectly contains formal properties -> setting "keep" attribute.
+Mapping positional arguments of cell miter.__po_outport[9]__assert ($paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop).
+Mapping positional arguments of cell miter.__po_outport[8]__assert ($paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop).
+Mapping positional arguments of cell miter.__po_outport[7]__assert ($paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop).
+Mapping positional arguments of cell miter.__po_outport[6]__assert ($paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop).
+Mapping positional arguments of cell miter.__po_outport[5]__assert ($paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop).
+Mapping positional arguments of cell miter.__po_outport[4]__assert ($paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop).
+Mapping positional arguments of cell miter.__po_outport[3]__assert ($paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop).
+Mapping positional arguments of cell miter.__po_outport[2]__assert ($paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop).
+Mapping positional arguments of cell miter.__po_outport[29]__assert ($paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop).
+Mapping positional arguments of cell miter.__po_outport[28]__assert ($paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop).
+Mapping positional arguments of cell miter.__po_outport[27]__assert ($paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop).
+Mapping positional arguments of cell miter.__po_outport[26]__assert ($paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop).
+Mapping positional arguments of cell miter.__po_outport[25]__assert ($paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop).
+Mapping positional arguments of cell miter.__po_outport[24]__assert ($paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop).
+Mapping positional arguments of cell miter.__po_outport[23]__assert ($paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop).
+Mapping positional arguments of cell miter.__po_outport[22]__assert ($paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop).
+Mapping positional arguments of cell miter.__po_outport[21]__assert ($paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop).
+Mapping positional arguments of cell miter.__po_outport[20]__assert ($paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop).
+Mapping positional arguments of cell miter.__po_outport[1]__assert ($paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop).
+Mapping positional arguments of cell miter.__po_outport[19]__assert ($paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop).
+Mapping positional arguments of cell miter.__po_outport[18]__assert ($paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop).
+Mapping positional arguments of cell miter.__po_outport[17]__assert ($paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop).
+Mapping positional arguments of cell miter.__po_outport[16]__assert ($paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop).
+Mapping positional arguments of cell miter.__po_outport[15]__assert ($paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop).
+Mapping positional arguments of cell miter.__po_outport[14]__assert ($paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop).
+Mapping positional arguments of cell miter.__po_outport[13]__assert ($paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop).
+Mapping positional arguments of cell miter.__po_outport[12]__assert ($paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop).
+Mapping positional arguments of cell miter.__po_outport[11]__assert ($paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop).
+Mapping positional arguments of cell miter.__po_outport[10]__assert ($paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop).
+Mapping positional arguments of cell miter.__po_outport[0]__assert ($paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop).
+
+4. Executing PROC pass (convert processes to netlists).
+
+4.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+4.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Removed a total of 0 dead cases.
+
+4.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 1 redundant assignment.
+Promoted 3 assignments to connections.
+
+4.4. Executing PROC_INIT pass (extract init attributes).
+
+4.5. Executing PROC_ARST pass (detect async resets in processes).
+
+4.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+
+4.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop.$proc$../../../partitions/top.outport.0.sv:497$1560'.
+Creating decoders for process `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop.$proc$../../../partitions/top.outport.0.sv:491$1555'.
+
+4.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop.\i' from process `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop.$proc$../../../partitions/top.outport.0.sv:491$1555'.
+No latch inferred for signal `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop.\okay' from process `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop.$proc$../../../partitions/top.outport.0.sv:491$1555'.
+
+4.9. Executing PROC_DFF pass (convert process syncs to FFs).
+
+4.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+4.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Removing empty process `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop.$proc$../../../partitions/top.outport.0.sv:497$1560'.
+Removing empty process `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop.$proc$../../../partitions/top.outport.0.sv:491$1555'.
+Cleaned up 0 empty switches.
+
+4.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module gold.top.outport.0.
+Optimizing module $paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop.
+<suppressed ~1 debug messages>
+Optimizing module gate.top.outport.0.
+Optimizing module miter.
+
+5. Executing ASYNC2SYNC pass.
+
+6. Executing FORMALFF pass.
+
+7. Executing SETUNDEF pass (replace undef values with defined constants).
+
+8. Executing FLATTEN pass (flatten design).
+Deleting now unused module gold.top.outport.0.
+Deleting now unused module $paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop.
+Deleting now unused module gate.top.outport.0.
+<suppressed ~32 debug messages>
+
+9. Executing DFFUNMAP pass (unmap clock enable and synchronous reset from FFs).
+
+10. Executing OPT_EXPR pass (perform const folding).
+Optimizing module miter.
+<suppressed ~30 debug messages>
+
+11. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \miter..
+Removed 30 unused cells and 210 unused wires.
+<suppressed ~85 debug messages>
+
+12. Executing SAT pass (solving SAT problems in the circuit).
+Using SAT solver `minisat`.
+
+Setting up time step 1:
+Final constraint equation: { } = { }
+Import def constraint for this timestep: \__pi_dest_x[0]
+Import def constraint for this timestep: \__pi_dest_x[10]
+Import def constraint for this timestep: \__pi_dest_x[11]
+Import def constraint for this timestep: \__pi_dest_x[12]
+Import def constraint for this timestep: \__pi_dest_x[13]
+Import def constraint for this timestep: \__pi_dest_x[14]
+Import def constraint for this timestep: \__pi_dest_x[15]
+Import def constraint for this timestep: \__pi_dest_x[16]
+Import def constraint for this timestep: \__pi_dest_x[17]
+Import def constraint for this timestep: \__pi_dest_x[18]
+Import def constraint for this timestep: \__pi_dest_x[19]
+Import def constraint for this timestep: \__pi_dest_x[1]
+Import def constraint for this timestep: \__pi_dest_x[20]
+Import def constraint for this timestep: \__pi_dest_x[21]
+Import def constraint for this timestep: \__pi_dest_x[22]
+Import def constraint for this timestep: \__pi_dest_x[23]
+Import def constraint for this timestep: \__pi_dest_x[24]
+Import def constraint for this timestep: \__pi_dest_x[25]
+Import def constraint for this timestep: \__pi_dest_x[26]
+Import def constraint for this timestep: \__pi_dest_x[27]
+Import def constraint for this timestep: \__pi_dest_x[28]
+Import def constraint for this timestep: \__pi_dest_x[29]
+Import def constraint for this timestep: \__pi_dest_x[2]
+Import def constraint for this timestep: \__pi_dest_x[3]
+Import def constraint for this timestep: \__pi_dest_x[4]
+Import def constraint for this timestep: \__pi_dest_x[5]
+Import def constraint for this timestep: \__pi_dest_x[6]
+Import def constraint for this timestep: \__pi_dest_x[7]
+Import def constraint for this timestep: \__pi_dest_x[8]
+Import def constraint for this timestep: \__pi_dest_x[9]
+Import def constraint for this timestep: \__pi_dest_y[0]
+Import def constraint for this timestep: \__pi_dest_y[10]
+Import def constraint for this timestep: \__pi_dest_y[11]
+Import def constraint for this timestep: \__pi_dest_y[12]
+Import def constraint for this timestep: \__pi_dest_y[13]
+Import def constraint for this timestep: \__pi_dest_y[14]
+Import def constraint for this timestep: \__pi_dest_y[15]
+Import def constraint for this timestep: \__pi_dest_y[16]
+Import def constraint for this timestep: \__pi_dest_y[17]
+Import def constraint for this timestep: \__pi_dest_y[18]
+Import def constraint for this timestep: \__pi_dest_y[19]
+Import def constraint for this timestep: \__pi_dest_y[1]
+Import def constraint for this timestep: \__pi_dest_y[20]
+Import def constraint for this timestep: \__pi_dest_y[21]
+Import def constraint for this timestep: \__pi_dest_y[22]
+Import def constraint for this timestep: \__pi_dest_y[23]
+Import def constraint for this timestep: \__pi_dest_y[24]
+Import def constraint for this timestep: \__pi_dest_y[25]
+Import def constraint for this timestep: \__pi_dest_y[26]
+Import def constraint for this timestep: \__pi_dest_y[27]
+Import def constraint for this timestep: \__pi_dest_y[28]
+Import def constraint for this timestep: \__pi_dest_y[29]
+Import def constraint for this timestep: \__pi_dest_y[2]
+Import def constraint for this timestep: \__pi_dest_y[3]
+Import def constraint for this timestep: \__pi_dest_y[4]
+Import def constraint for this timestep: \__pi_dest_y[5]
+Import def constraint for this timestep: \__pi_dest_y[6]
+Import def constraint for this timestep: \__pi_dest_y[7]
+Import def constraint for this timestep: \__pi_dest_y[8]
+Import def constraint for this timestep: \__pi_dest_y[9]
+Imported 289 cells to SAT database.
+Import proof for assert: \__po_outport[22]__assert.okay when 1'1.
+Import proof for assert: \__po_outport[19]__assert.okay when 1'1.
+Import proof for assert: \__po_outport[18]__assert.okay when 1'1.
+Import proof for assert: \__po_outport[17]__assert.okay when 1'1.
+Import proof for assert: \__po_outport[16]__assert.okay when 1'1.
+Import proof for assert: \__po_outport[15]__assert.okay when 1'1.
+Import proof for assert: \__po_outport[9]__assert.okay when 1'1.
+Import proof for assert: \__po_outport[23]__assert.okay when 1'1.
+Import proof for assert: \__po_outport[14]__assert.okay when 1'1.
+Import proof for assert: \__po_outport[1]__assert.okay when 1'1.
+Import proof for assert: \__po_outport[13]__assert.okay when 1'1.
+Import proof for assert: \__po_outport[5]__assert.okay when 1'1.
+Import proof for assert: \__po_outport[12]__assert.okay when 1'1.
+Import proof for assert: \__po_outport[11]__assert.okay when 1'1.
+Import proof for assert: \__po_outport[10]__assert.okay when 1'1.
+Import proof for assert: \__po_outport[0]__assert.okay when 1'1.
+Import proof for assert: \__po_outport[4]__assert.okay when 1'1.
+Import proof for assert: \__po_outport[6]__assert.okay when 1'1.
+Import proof for assert: \__po_outport[20]__assert.okay when 1'1.
+Import proof for assert: \__po_outport[3]__assert.okay when 1'1.
+Import proof for assert: \__po_outport[2]__assert.okay when 1'1.
+Import proof for assert: \__po_outport[29]__assert.okay when 1'1.
+Import proof for assert: \__po_outport[28]__assert.okay when 1'1.
+Import proof for assert: \__po_outport[27]__assert.okay when 1'1.
+Import proof for assert: \__po_outport[26]__assert.okay when 1'1.
+Import proof for assert: \__po_outport[7]__assert.okay when 1'1.
+Import proof for assert: \__po_outport[21]__assert.okay when 1'1.
+Import proof for assert: \__po_outport[25]__assert.okay when 1'1.
+Import proof for assert: \__po_outport[8]__assert.okay when 1'1.
+Import proof for assert: \__po_outport[24]__assert.okay when 1'1.
+
+** Trying induction with length 1 **
+
+Setting up time step 1:
+Final constraint equation: { } = { }
+Import def constraint for this timestep: \__pi_dest_x[0]
+Import def constraint for this timestep: \__pi_dest_x[10]
+Import def constraint for this timestep: \__pi_dest_x[11]
+Import def constraint for this timestep: \__pi_dest_x[12]
+Import def constraint for this timestep: \__pi_dest_x[13]
+Import def constraint for this timestep: \__pi_dest_x[14]
+Import def constraint for this timestep: \__pi_dest_x[15]
+Import def constraint for this timestep: \__pi_dest_x[16]
+Import def constraint for this timestep: \__pi_dest_x[17]
+Import def constraint for this timestep: \__pi_dest_x[18]
+Import def constraint for this timestep: \__pi_dest_x[19]
+Import def constraint for this timestep: \__pi_dest_x[1]
+Import def constraint for this timestep: \__pi_dest_x[20]
+Import def constraint for this timestep: \__pi_dest_x[21]
+Import def constraint for this timestep: \__pi_dest_x[22]
+Import def constraint for this timestep: \__pi_dest_x[23]
+Import def constraint for this timestep: \__pi_dest_x[24]
+Import def constraint for this timestep: \__pi_dest_x[25]
+Import def constraint for this timestep: \__pi_dest_x[26]
+Import def constraint for this timestep: \__pi_dest_x[27]
+Import def constraint for this timestep: \__pi_dest_x[28]
+Import def constraint for this timestep: \__pi_dest_x[29]
+Import def constraint for this timestep: \__pi_dest_x[2]
+Import def constraint for this timestep: \__pi_dest_x[3]
+Import def constraint for this timestep: \__pi_dest_x[4]
+Import def constraint for this timestep: \__pi_dest_x[5]
+Import def constraint for this timestep: \__pi_dest_x[6]
+Import def constraint for this timestep: \__pi_dest_x[7]
+Import def constraint for this timestep: \__pi_dest_x[8]
+Import def constraint for this timestep: \__pi_dest_x[9]
+Import def constraint for this timestep: \__pi_dest_y[0]
+Import def constraint for this timestep: \__pi_dest_y[10]
+Import def constraint for this timestep: \__pi_dest_y[11]
+Import def constraint for this timestep: \__pi_dest_y[12]
+Import def constraint for this timestep: \__pi_dest_y[13]
+Import def constraint for this timestep: \__pi_dest_y[14]
+Import def constraint for this timestep: \__pi_dest_y[15]
+Import def constraint for this timestep: \__pi_dest_y[16]
+Import def constraint for this timestep: \__pi_dest_y[17]
+Import def constraint for this timestep: \__pi_dest_y[18]
+Import def constraint for this timestep: \__pi_dest_y[19]
+Import def constraint for this timestep: \__pi_dest_y[1]
+Import def constraint for this timestep: \__pi_dest_y[20]
+Import def constraint for this timestep: \__pi_dest_y[21]
+Import def constraint for this timestep: \__pi_dest_y[22]
+Import def constraint for this timestep: \__pi_dest_y[23]
+Import def constraint for this timestep: \__pi_dest_y[24]
+Import def constraint for this timestep: \__pi_dest_y[25]
+Import def constraint for this timestep: \__pi_dest_y[26]
+Import def constraint for this timestep: \__pi_dest_y[27]
+Import def constraint for this timestep: \__pi_dest_y[28]
+Import def constraint for this timestep: \__pi_dest_y[29]
+Import def constraint for this timestep: \__pi_dest_y[2]
+Import def constraint for this timestep: \__pi_dest_y[3]
+Import def constraint for this timestep: \__pi_dest_y[4]
+Import def constraint for this timestep: \__pi_dest_y[5]
+Import def constraint for this timestep: \__pi_dest_y[6]
+Import def constraint for this timestep: \__pi_dest_y[7]
+Import def constraint for this timestep: \__pi_dest_y[8]
+Import def constraint for this timestep: \__pi_dest_y[9]
+Imported 289 cells to SAT database.
+No constraints for initial state found.
+
+Import proof for assert: \__po_outport[22]__assert.okay when 1'1.
+Import proof for assert: \__po_outport[19]__assert.okay when 1'1.
+Import proof for assert: \__po_outport[18]__assert.okay when 1'1.
+Import proof for assert: \__po_outport[17]__assert.okay when 1'1.
+Import proof for assert: \__po_outport[16]__assert.okay when 1'1.
+Import proof for assert: \__po_outport[15]__assert.okay when 1'1.
+Import proof for assert: \__po_outport[9]__assert.okay when 1'1.
+Import proof for assert: \__po_outport[23]__assert.okay when 1'1.
+Import proof for assert: \__po_outport[14]__assert.okay when 1'1.
+Import proof for assert: \__po_outport[1]__assert.okay when 1'1.
+Import proof for assert: \__po_outport[13]__assert.okay when 1'1.
+Import proof for assert: \__po_outport[5]__assert.okay when 1'1.
+Import proof for assert: \__po_outport[12]__assert.okay when 1'1.
+Import proof for assert: \__po_outport[11]__assert.okay when 1'1.
+Import proof for assert: \__po_outport[10]__assert.okay when 1'1.
+Import proof for assert: \__po_outport[0]__assert.okay when 1'1.
+Import proof for assert: \__po_outport[4]__assert.okay when 1'1.
+Import proof for assert: \__po_outport[6]__assert.okay when 1'1.
+Import proof for assert: \__po_outport[20]__assert.okay when 1'1.
+Import proof for assert: \__po_outport[3]__assert.okay when 1'1.
+Import proof for assert: \__po_outport[2]__assert.okay when 1'1.
+Import proof for assert: \__po_outport[29]__assert.okay when 1'1.
+Import proof for assert: \__po_outport[28]__assert.okay when 1'1.
+Import proof for assert: \__po_outport[27]__assert.okay when 1'1.
+Import proof for assert: \__po_outport[26]__assert.okay when 1'1.
+Import proof for assert: \__po_outport[7]__assert.okay when 1'1.
+Import proof for assert: \__po_outport[21]__assert.okay when 1'1.
+Import proof for assert: \__po_outport[25]__assert.okay when 1'1.
+Import proof for assert: \__po_outport[8]__assert.okay when 1'1.
+Import proof for assert: \__po_outport[24]__assert.okay when 1'1.
+Import show expression: \__po_outport[21]__assert.okay
+Import show expression: \__po_outport[21]__assert.i
+Import show expression: \__po_outport[25]__assert.i
+Import show expression: \__po_outport[26]__assert.in_gate
+Import show expression: \__po_outport[2]__assert.i
+Import show expression: \__po_outport[2]__assert.okay
+Import show expression: \__po_outport[2]__assert.in_gate
+Import show expression: \__po_outport[2]__assert.in_gold
+Import show expression: \__po_outport[20]__assert.in_gold
+Import show expression: \__po_outport[20]__assert.in_gate
+Import show expression: \__po_outport[20]__assert.okay
+Import show expression: \__po_outport[20]__assert.i
+Import show expression: \__po_outport[26]__assert.okay
+Import show expression: \__po_outport[1]__assert.in_gold
+Import show expression: \__po_outport[1]__assert.in_gate
+Import show expression: \__po_outport[1]__assert.okay
+Import show expression: \__po_outport[1]__assert.i
+Import show expression: \__po_outport[26]__assert.i
+Import show expression: \__po_outport[28]__assert.i
+Import show expression: \__po_outport[3]__assert.i
+Import show expression: \__po_outport[3]__assert.okay
+Import show expression: \__po_outport[3]__assert.in_gate
+Import show expression: \__po_outport[3]__assert.in_gold
+Import show expression: \__po_outport[28]__assert.okay
+Import show expression: \__po_outport[19]__assert.in_gold
+Import show expression: \__po_outport[19]__assert.in_gate
+Import show expression: \__po_outport[19]__assert.okay
+Import show expression: \__po_outport[19]__assert.i
+Import show expression: \__po_outport[24]__assert.in_gold
+Import show expression: \__po_outport[24]__assert.in_gate
+Import show expression: \__po_outport[24]__assert.okay
+Import show expression: \__po_outport[24]__assert.i
+Import show expression: \__po_outport[28]__assert.in_gate
+Import show expression: \__po_outport[18]__assert.in_gold
+Import show expression: \__po_outport[18]__assert.in_gate
+Import show expression: \__po_outport[18]__assert.okay
+Import show expression: \__po_outport[18]__assert.i
+Import show expression: \__po_outport[28]__assert.in_gold
+Import show expression: \__po_outport[4]__assert.i
+Import show expression: \__po_outport[4]__assert.okay
+Import show expression: \__po_outport[4]__assert.in_gate
+Import show expression: \__po_outport[4]__assert.in_gold
+Import show expression: \__po_outport[17]__assert.in_gold
+Import show expression: \__po_outport[17]__assert.in_gate
+Import show expression: \__po_outport[17]__assert.okay
+Import show expression: \__po_outport[17]__assert.i
+Import show expression: \__po_outport[27]__assert.okay
+Import show expression: \__po_outport[27]__assert.in_gate
+Import show expression: \__po_outport[27]__assert.in_gold
+Import show expression: \__po_outport[16]__assert.in_gold
+Import show expression: \__po_outport[16]__assert.in_gate
+Import show expression: \__po_outport[16]__assert.okay
+Import show expression: \__po_outport[16]__assert.i
+Import show expression: \__po_outport[5]__assert.i
+Import show expression: \__po_outport[5]__assert.okay
+Import show expression: \__po_outport[5]__assert.in_gate
+Import show expression: \__po_outport[5]__assert.in_gold
+Import show expression: \__po_outport[23]__assert.in_gold
+Import show expression: \__po_outport[23]__assert.in_gate
+Import show expression: \__po_outport[23]__assert.okay
+Import show expression: \__po_outport[15]__assert.in_gold
+Import show expression: \__po_outport[15]__assert.in_gate
+Import show expression: \__po_outport[15]__assert.okay
+Import show expression: \__po_outport[15]__assert.i
+Import show expression: \__po_outport[23]__assert.i
+Import show expression: \__po_outport[6]__assert.i
+Import show expression: \__po_outport[14]__assert.in_gold
+Import show expression: \__po_outport[14]__assert.in_gate
+Import show expression: \__po_outport[14]__assert.okay
+Import show expression: \__po_outport[14]__assert.i
+Import show expression: \__po_outport[6]__assert.okay
+Import show expression: \__po_outport[6]__assert.in_gate
+Import show expression: \__po_outport[6]__assert.in_gold
+Import show expression: \__po_outport[29]__assert.i
+Import show expression: \__po_outport[13]__assert.in_gold
+Import show expression: \__po_outport[13]__assert.in_gate
+Import show expression: \__po_outport[13]__assert.okay
+Import show expression: \__po_outport[13]__assert.i
+Import show expression: \__po_outport[29]__assert.okay
+Import show expression: \__po_outport[29]__assert.in_gate
+Import show expression: \__po_outport[22]__assert.in_gold
+Import show expression: \__po_outport[7]__assert.i
+Import show expression: \__po_outport[7]__assert.okay
+Import show expression: \__po_outport[12]__assert.in_gold
+Import show expression: \__po_outport[12]__assert.in_gate
+Import show expression: \__po_outport[12]__assert.okay
+Import show expression: \__po_outport[12]__assert.i
+Import show expression: \__po_outport[7]__assert.in_gate
+Import show expression: \__po_outport[7]__assert.in_gold
+Import show expression: \__po_outport[22]__assert.in_gate
+Import show expression: \__po_outport[22]__assert.okay
+Import show expression: \__po_outport[22]__assert.i
+Import show expression: \__po_outport[29]__assert.in_gold
+Import show expression: \__po_outport[27]__assert.i
+Import show expression: \__po_outport[11]__assert.in_gold
+Import show expression: \__po_outport[11]__assert.in_gate
+Import show expression: \__po_outport[11]__assert.okay
+Import show expression: \__po_outport[11]__assert.i
+Import show expression: \__po_outport[8]__assert.i
+Import show expression: \__po_outport[8]__assert.okay
+Import show expression: \__po_outport[8]__assert.in_gate
+Import show expression: \__po_outport[10]__assert.in_gold
+Import show expression: \__po_outport[10]__assert.in_gate
+Import show expression: \__po_outport[10]__assert.okay
+Import show expression: \__po_outport[10]__assert.i
+Import show expression: \__po_outport[8]__assert.in_gold
+Import show expression: \__po_outport[26]__assert.in_gold
+Import show expression: \__po_outport[25]__assert.in_gold
+Import show expression: \__po_outport[25]__assert.in_gate
+Import show expression: \__po_outport[25]__assert.okay
+Import show expression: \__po_outport[0]__assert.in_gold
+Import show expression: \__po_outport[0]__assert.in_gate
+Import show expression: \__po_outport[0]__assert.okay
+Import show expression: \__po_outport[0]__assert.i
+Import show expression: \__po_outport[21]__assert.in_gold
+Import show expression: \__po_outport[21]__assert.in_gate
+Import show expression: \__po_outport[9]__assert.i
+Import show expression: \__po_outport[9]__assert.okay
+Import show expression: \__po_outport[9]__assert.in_gate
+Import show expression: \__po_outport[9]__assert.in_gold
+Import show expression: \gate.outport[8]
+Import show expression: \gate.outport[7]
+Import show expression: \gate.outport[6]
+Import show expression: \gate.outport[5]
+Import show expression: \gate.outport[4]
+Import show expression: \gate.outport[3]
+Import show expression: \gate.outport[2]
+Import show expression: \gate.outport[29]
+Import show expression: \gate.outport[28]
+Import show expression: \gate.outport[27]
+Import show expression: \gate.outport[26]
+Import show expression: \gate.outport[25]
+Import show expression: \gate.outport[24]
+Import show expression: \gate.outport[23]
+Import show expression: \gate.outport[22]
+Import show expression: \gate.outport[21]
+Import show expression: \gate.outport[20]
+Import show expression: \gate.dest_y[25]
+Import show expression: \gate.dest_y[7]
+Import show expression: \gate.dest_y[8]
+Import show expression: \gate.dest_y[24]
+Import show expression: \gate.dest_y[26]
+Import show expression: \gate.dest_y[3]
+Import show expression: \gate.dest_y[4]
+Import show expression: \gate.dest_y[5]
+Import show expression: \gate.dest_y[6]
+Import show expression: \gate.dest_y[0]
+Import show expression: \gate.dest_y[1]
+Import show expression: \gate.dest_y[2]
+Import show expression: \gate.dest_y[21]
+Import show expression: \gate.dest_y[22]
+Import show expression: \gate.dest_y[23]
+Import show expression: \gate.dest_y[20]
+Import show expression: \gate.dest_y[28]
+Import show expression: \gate.dest_y[29]
+Import show expression: \gate.dest_y[9]
+Import show expression: \gate.dest_y[10]
+Import show expression: \gate.dest_y[11]
+Import show expression: \gate.dest_y[12]
+Import show expression: \gate.dest_y[13]
+Import show expression: \gate.dest_y[14]
+Import show expression: \gate.dest_y[15]
+Import show expression: \gate.dest_y[16]
+Import show expression: \gate.dest_y[17]
+Import show expression: \gate.dest_y[18]
+Import show expression: \gate.dest_y[19]
+Import show expression: \gate.dest_y[27]
+Import show expression: \gate.outport[1]
+Import show expression: \gate.outport[19]
+Import show expression: \gate.outport[18]
+Import show expression: \gate.outport[17]
+Import show expression: \gate.outport[16]
+Import show expression: \gate.outport[15]
+Import show expression: \gate.outport[14]
+Import show expression: \gate.outport[13]
+Import show expression: \gate.outport[12]
+Import show expression: \gate.outport[11]
+Import show expression: \gate.outport[10]
+Import show expression: \gate.dest_x[0]
+Import show expression: \gate.dest_x[28]
+Import show expression: \gate.dest_x[29]
+Import show expression: \gate.dest_x[27]
+Import show expression: \gate.dest_x[19]
+Import show expression: \gate.dest_x[20]
+Import show expression: \gate.dest_x[21]
+Import show expression: \gate.dest_x[17]
+Import show expression: \gate.dest_x[18]
+Import show expression: \gate.dest_x[22]
+Import show expression: \gate.dest_x[26]
+Import show expression: \gate.dest_x[9]
+Import show expression: \gate.dest_x[10]
+Import show expression: \gate.dest_x[11]
+Import show expression: \gate.dest_x[16]
+Import show expression: \gate.dest_x[12]
+Import show expression: \gate.dest_x[13]
+Import show expression: \gate.dest_x[14]
+Import show expression: \gate.dest_x[15]
+Import show expression: \gate.dest_x[23]
+Import show expression: \gate.dest_x[24]
+Import show expression: \gate.dest_x[25]
+Import show expression: \gate.dest_x[5]
+Import show expression: \gate.dest_x[6]
+Import show expression: \gate.dest_x[7]
+Import show expression: \gate.dest_x[8]
+Import show expression: \gate.dest_x[1]
+Import show expression: \gate.dest_x[2]
+Import show expression: \gate.dest_x[3]
+Import show expression: \gate.dest_x[4]
+Import show expression: \gate.outport[0]
+Import show expression: \gate.outport[9]
+Import show expression: \gate.__pi_dest_x[0]
+Import show expression: \gate.__pi_dest_x[10]
+Import show expression: \gate.__pi_dest_x[11]
+Import show expression: \gate.__pi_dest_x[12]
+Import show expression: \gate.__pi_dest_x[13]
+Import show expression: \gate.__pi_dest_x[14]
+Import show expression: \gate.__pi_dest_x[15]
+Import show expression: \gate.__pi_dest_x[16]
+Import show expression: \gate.__pi_dest_x[17]
+Import show expression: \gate.__pi_dest_x[18]
+Import show expression: \gate.__pi_dest_x[19]
+Import show expression: \gate.__pi_dest_x[1]
+Import show expression: \gate.__pi_dest_x[20]
+Import show expression: \gate.__pi_dest_x[21]
+Import show expression: \gate.__pi_dest_x[22]
+Import show expression: \gate.__pi_dest_x[23]
+Import show expression: \gate.__pi_dest_x[24]
+Import show expression: \gate.__pi_dest_x[25]
+Import show expression: \gate.__pi_dest_x[26]
+Import show expression: \gate.__pi_dest_x[27]
+Import show expression: \gate.__pi_dest_x[28]
+Import show expression: \gate.__pi_dest_x[29]
+Import show expression: \gate.__pi_dest_x[2]
+Import show expression: \gate.__pi_dest_x[3]
+Import show expression: \gate.__pi_dest_x[4]
+Import show expression: \gate.__pi_dest_x[5]
+Import show expression: \gate.__pi_dest_x[6]
+Import show expression: \gate.__pi_dest_x[7]
+Import show expression: \gate.__pi_dest_x[8]
+Import show expression: \gate.__pi_dest_x[9]
+Import show expression: \gate.__pi_dest_y[0]
+Import show expression: \gate.__pi_dest_y[10]
+Import show expression: \gate.__pi_dest_y[11]
+Import show expression: \gate.__pi_dest_y[12]
+Import show expression: \gate.__pi_dest_y[13]
+Import show expression: \gate.__pi_dest_y[14]
+Import show expression: \gate.__pi_dest_y[15]
+Import show expression: \gate.__pi_dest_y[16]
+Import show expression: \gate.__pi_dest_y[17]
+Import show expression: \gate.__pi_dest_y[18]
+Import show expression: \gate.__pi_dest_y[19]
+Import show expression: \gate.__pi_dest_y[1]
+Import show expression: \gate.__pi_dest_y[20]
+Import show expression: \gate.__pi_dest_y[21]
+Import show expression: \gate.__pi_dest_y[22]
+Import show expression: \gate.__pi_dest_y[23]
+Import show expression: \gate.__pi_dest_y[24]
+Import show expression: \gate.__pi_dest_y[25]
+Import show expression: \gate.__pi_dest_y[26]
+Import show expression: \gate.__pi_dest_y[27]
+Import show expression: \gate.__pi_dest_y[28]
+Import show expression: \gate.__pi_dest_y[29]
+Import show expression: \gate.__pi_dest_y[2]
+Import show expression: \gate.__pi_dest_y[3]
+Import show expression: \gate.__pi_dest_y[4]
+Import show expression: \gate.__pi_dest_y[5]
+Import show expression: \gate.__pi_dest_y[6]
+Import show expression: \gate.__pi_dest_y[7]
+Import show expression: \gate.__pi_dest_y[8]
+Import show expression: \gate.__pi_dest_y[9]
+Import show expression: \gate.__po_outport[0]
+Import show expression: \gate.__po_outport[10]
+Import show expression: \gate.__po_outport[11]
+Import show expression: \gate.__po_outport[12]
+Import show expression: \gate.__po_outport[13]
+Import show expression: \gate.__po_outport[14]
+Import show expression: \gate.__po_outport[15]
+Import show expression: \gate.__po_outport[16]
+Import show expression: \gate.__po_outport[17]
+Import show expression: \gate.__po_outport[18]
+Import show expression: \gate.__po_outport[19]
+Import show expression: \gate.__po_outport[1]
+Import show expression: \gate.__po_outport[20]
+Import show expression: \gate.__po_outport[21]
+Import show expression: \gate.__po_outport[22]
+Import show expression: \gate.__po_outport[23]
+Import show expression: \gate.__po_outport[24]
+Import show expression: \gate.__po_outport[25]
+Import show expression: \gate.__po_outport[26]
+Import show expression: \gate.__po_outport[27]
+Import show expression: \gate.__po_outport[28]
+Import show expression: \gate.__po_outport[29]
+Import show expression: \gate.__po_outport[2]
+Import show expression: \gate.__po_outport[3]
+Import show expression: \gate.__po_outport[4]
+Import show expression: \gate.__po_outport[5]
+Import show expression: \gate.__po_outport[6]
+Import show expression: \gate.__po_outport[7]
+Import show expression: \gate.__po_outport[8]
+Import show expression: \gate.__po_outport[9]
+Import show expression: \gold.outport[8]
+Import show expression: \gold.outport[7]
+Import show expression: \gold.outport[6]
+Import show expression: \gold.outport[5]
+Import show expression: \gold.outport[4]
+Import show expression: \gold.outport[3]
+Import show expression: \gold.outport[2]
+Import show expression: \gold.outport[29]
+Import show expression: \gold.outport[28]
+Import show expression: \gold.outport[27]
+Import show expression: \gold.outport[26]
+Import show expression: \gold.outport[25]
+Import show expression: \gold.outport[24]
+Import show expression: \gold.outport[23]
+Import show expression: \gold.outport[22]
+Import show expression: \gold.outport[21]
+Import show expression: \gold.outport[20]
+Import show expression: \gold.dest_y[25]
+Import show expression: \gold.dest_y[7]
+Import show expression: \gold.dest_y[8]
+Import show expression: \gold.dest_y[24]
+Import show expression: \gold.dest_y[26]
+Import show expression: \gold.dest_y[3]
+Import show expression: \gold.dest_y[4]
+Import show expression: \gold.dest_y[5]
+Import show expression: \gold.dest_y[6]
+Import show expression: \gold.dest_y[0]
+Import show expression: \gold.dest_y[1]
+Import show expression: \gold.dest_y[2]
+Import show expression: \gold.dest_y[21]
+Import show expression: \gold.dest_y[22]
+Import show expression: \gold.dest_y[23]
+Import show expression: \gold.dest_y[20]
+Import show expression: \gold.dest_y[28]
+Import show expression: \gold.dest_y[29]
+Import show expression: \gold.dest_y[9]
+Import show expression: \gold.dest_y[10]
+Import show expression: \gold.dest_y[11]
+Import show expression: \gold.dest_y[12]
+Import show expression: \gold.dest_y[13]
+Import show expression: \gold.dest_y[14]
+Import show expression: \gold.dest_y[15]
+Import show expression: \gold.dest_y[16]
+Import show expression: \gold.dest_y[17]
+Import show expression: \gold.dest_y[18]
+Import show expression: \gold.dest_y[19]
+Import show expression: \gold.dest_y[27]
+Import show expression: \gold.outport[1]
+Import show expression: \gold.outport[19]
+Import show expression: \gold.outport[18]
+Import show expression: \gold.outport[17]
+Import show expression: \gold.outport[16]
+Import show expression: \gold.outport[15]
+Import show expression: \gold.outport[14]
+Import show expression: \gold.outport[13]
+Import show expression: \gold.outport[12]
+Import show expression: \gold.outport[11]
+Import show expression: \gold.outport[10]
+Import show expression: \gold.dest_x[0]
+Import show expression: \gold.dest_x[28]
+Import show expression: \gold.dest_x[29]
+Import show expression: \gold.dest_x[27]
+Import show expression: \gold.dest_x[19]
+Import show expression: \gold.dest_x[20]
+Import show expression: \gold.dest_x[21]
+Import show expression: \gold.dest_x[17]
+Import show expression: \gold.dest_x[18]
+Import show expression: \gold.dest_x[22]
+Import show expression: \gold.dest_x[26]
+Import show expression: \gold.dest_x[9]
+Import show expression: \gold.dest_x[10]
+Import show expression: \gold.dest_x[11]
+Import show expression: \gold.dest_x[16]
+Import show expression: \gold.dest_x[12]
+Import show expression: \gold.dest_x[13]
+Import show expression: \gold.dest_x[14]
+Import show expression: \gold.dest_x[15]
+Import show expression: \gold.dest_x[23]
+Import show expression: \gold.dest_x[24]
+Import show expression: \gold.dest_x[25]
+Import show expression: \gold.dest_x[5]
+Import show expression: \gold.dest_x[6]
+Import show expression: \gold.dest_x[7]
+Import show expression: \gold.dest_x[8]
+Import show expression: \gold.dest_x[1]
+Import show expression: \gold.dest_x[2]
+Import show expression: \gold.dest_x[3]
+Import show expression: \gold.dest_x[4]
+Import show expression: \gold.outport[0]
+Import show expression: \gold.outport[9]
+Import show expression: \gold.__pi_dest_x[0]
+Import show expression: \gold.__pi_dest_x[10]
+Import show expression: \gold.__pi_dest_x[11]
+Import show expression: \gold.__pi_dest_x[12]
+Import show expression: \gold.__pi_dest_x[13]
+Import show expression: \gold.__pi_dest_x[14]
+Import show expression: \gold.__pi_dest_x[15]
+Import show expression: \gold.__pi_dest_x[16]
+Import show expression: \gold.__pi_dest_x[17]
+Import show expression: \gold.__pi_dest_x[18]
+Import show expression: \gold.__pi_dest_x[19]
+Import show expression: \gold.__pi_dest_x[1]
+Import show expression: \gold.__pi_dest_x[20]
+Import show expression: \gold.__pi_dest_x[21]
+Import show expression: \gold.__pi_dest_x[22]
+Import show expression: \gold.__pi_dest_x[23]
+Import show expression: \gold.__pi_dest_x[24]
+Import show expression: \gold.__pi_dest_x[25]
+Import show expression: \gold.__pi_dest_x[26]
+Import show expression: \gold.__pi_dest_x[27]
+Import show expression: \gold.__pi_dest_x[28]
+Import show expression: \gold.__pi_dest_x[29]
+Import show expression: \gold.__pi_dest_x[2]
+Import show expression: \gold.__pi_dest_x[3]
+Import show expression: \gold.__pi_dest_x[4]
+Import show expression: \gold.__pi_dest_x[5]
+Import show expression: \gold.__pi_dest_x[6]
+Import show expression: \gold.__pi_dest_x[7]
+Import show expression: \gold.__pi_dest_x[8]
+Import show expression: \gold.__pi_dest_x[9]
+Import show expression: \gold.__pi_dest_y[0]
+Import show expression: \gold.__pi_dest_y[10]
+Import show expression: \gold.__pi_dest_y[11]
+Import show expression: \gold.__pi_dest_y[12]
+Import show expression: \gold.__pi_dest_y[13]
+Import show expression: \gold.__pi_dest_y[14]
+Import show expression: \gold.__pi_dest_y[15]
+Import show expression: \gold.__pi_dest_y[16]
+Import show expression: \gold.__pi_dest_y[17]
+Import show expression: \gold.__pi_dest_y[18]
+Import show expression: \gold.__pi_dest_y[19]
+Import show expression: \gold.__pi_dest_y[1]
+Import show expression: \gold.__pi_dest_y[20]
+Import show expression: \gold.__pi_dest_y[21]
+Import show expression: \gold.__pi_dest_y[22]
+Import show expression: \gold.__pi_dest_y[23]
+Import show expression: \gold.__pi_dest_y[24]
+Import show expression: \gold.__pi_dest_y[25]
+Import show expression: \gold.__pi_dest_y[26]
+Import show expression: \gold.__pi_dest_y[27]
+Import show expression: \gold.__pi_dest_y[28]
+Import show expression: \gold.__pi_dest_y[29]
+Import show expression: \gold.__pi_dest_y[2]
+Import show expression: \gold.__pi_dest_y[3]
+Import show expression: \gold.__pi_dest_y[4]
+Import show expression: \gold.__pi_dest_y[5]
+Import show expression: \gold.__pi_dest_y[6]
+Import show expression: \gold.__pi_dest_y[7]
+Import show expression: \gold.__pi_dest_y[8]
+Import show expression: \gold.__pi_dest_y[9]
+Import show expression: \gold.__po_outport[0]
+Import show expression: \gold.__po_outport[10]
+Import show expression: \gold.__po_outport[11]
+Import show expression: \gold.__po_outport[12]
+Import show expression: \gold.__po_outport[13]
+Import show expression: \gold.__po_outport[14]
+Import show expression: \gold.__po_outport[15]
+Import show expression: \gold.__po_outport[16]
+Import show expression: \gold.__po_outport[17]
+Import show expression: \gold.__po_outport[18]
+Import show expression: \gold.__po_outport[19]
+Import show expression: \gold.__po_outport[1]
+Import show expression: \gold.__po_outport[20]
+Import show expression: \gold.__po_outport[21]
+Import show expression: \gold.__po_outport[22]
+Import show expression: \gold.__po_outport[23]
+Import show expression: \gold.__po_outport[24]
+Import show expression: \gold.__po_outport[25]
+Import show expression: \gold.__po_outport[26]
+Import show expression: \gold.__po_outport[27]
+Import show expression: \gold.__po_outport[28]
+Import show expression: \gold.__po_outport[29]
+Import show expression: \gold.__po_outport[2]
+Import show expression: \gold.__po_outport[3]
+Import show expression: \gold.__po_outport[4]
+Import show expression: \gold.__po_outport[5]
+Import show expression: \gold.__po_outport[6]
+Import show expression: \gold.__po_outport[7]
+Import show expression: \gold.__po_outport[8]
+Import show expression: \gold.__po_outport[9]
+Import show expression: \__po_outport[9]__gate
+Import show expression: \__po_outport[8]__gate
+Import show expression: \__po_outport[7]__gate
+Import show expression: \__po_outport[6]__gate
+Import show expression: \__po_outport[5]__gate
+Import show expression: \__po_outport[4]__gate
+Import show expression: \__po_outport[3]__gate
+Import show expression: \__po_outport[2]__gate
+Import show expression: \__po_outport[29]__gate
+Import show expression: \__po_outport[28]__gate
+Import show expression: \__po_outport[27]__gate
+Import show expression: \__po_outport[26]__gate
+Import show expression: \__po_outport[25]__gate
+Import show expression: \__po_outport[24]__gate
+Import show expression: \__po_outport[23]__gate
+Import show expression: \__po_outport[22]__gate
+Import show expression: \__po_outport[21]__gate
+Import show expression: \__po_outport[20]__gate
+Import show expression: \__po_outport[1]__gate
+Import show expression: \__po_outport[19]__gate
+Import show expression: \__po_outport[18]__gate
+Import show expression: \__po_outport[17]__gate
+Import show expression: \__po_outport[16]__gate
+Import show expression: \__po_outport[15]__gate
+Import show expression: \__po_outport[14]__gate
+Import show expression: \__po_outport[13]__gate
+Import show expression: \__po_outport[12]__gate
+Import show expression: \__po_outport[11]__gate
+Import show expression: \__po_outport[10]__gate
+Import show expression: \__po_outport[0]__gate
+Import show expression: \__po_outport[9]__gold
+Import show expression: \__po_outport[8]__gold
+Import show expression: \__po_outport[7]__gold
+Import show expression: \__po_outport[6]__gold
+Import show expression: \__po_outport[5]__gold
+Import show expression: \__po_outport[4]__gold
+Import show expression: \__po_outport[3]__gold
+Import show expression: \__po_outport[2]__gold
+Import show expression: \__po_outport[29]__gold
+Import show expression: \__po_outport[28]__gold
+Import show expression: \__po_outport[27]__gold
+Import show expression: \__po_outport[26]__gold
+Import show expression: \__po_outport[25]__gold
+Import show expression: \__po_outport[24]__gold
+Import show expression: \__po_outport[23]__gold
+Import show expression: \__po_outport[22]__gold
+Import show expression: \__po_outport[21]__gold
+Import show expression: \__po_outport[20]__gold
+Import show expression: \__po_outport[1]__gold
+Import show expression: \__po_outport[19]__gold
+Import show expression: \__po_outport[18]__gold
+Import show expression: \__po_outport[17]__gold
+Import show expression: \__po_outport[16]__gold
+Import show expression: \__po_outport[15]__gold
+Import show expression: \__po_outport[14]__gold
+Import show expression: \__po_outport[13]__gold
+Import show expression: \__po_outport[12]__gold
+Import show expression: \__po_outport[11]__gold
+Import show expression: \__po_outport[10]__gold
+Import show expression: \__po_outport[0]__gold
+Import show expression: \__pi_dest_y[9]
+Import show expression: \__pi_dest_y[8]
+Import show expression: \__pi_dest_y[7]
+Import show expression: \__pi_dest_y[6]
+Import show expression: \__pi_dest_y[5]
+Import show expression: \__pi_dest_y[4]
+Import show expression: \__pi_dest_y[3]
+Import show expression: \__pi_dest_y[2]
+Import show expression: \__pi_dest_y[29]
+Import show expression: \__pi_dest_y[28]
+Import show expression: \__pi_dest_y[27]
+Import show expression: \__pi_dest_y[26]
+Import show expression: \__pi_dest_y[25]
+Import show expression: \__pi_dest_y[24]
+Import show expression: \__pi_dest_y[23]
+Import show expression: \__pi_dest_y[22]
+Import show expression: \__pi_dest_y[21]
+Import show expression: \__pi_dest_y[20]
+Import show expression: \__pi_dest_y[1]
+Import show expression: \__pi_dest_y[19]
+Import show expression: \__pi_dest_y[18]
+Import show expression: \__pi_dest_y[17]
+Import show expression: \__pi_dest_y[16]
+Import show expression: \__pi_dest_y[15]
+Import show expression: \__pi_dest_y[14]
+Import show expression: \__pi_dest_y[13]
+Import show expression: \__pi_dest_y[12]
+Import show expression: \__pi_dest_y[11]
+Import show expression: \__pi_dest_y[10]
+Import show expression: \__pi_dest_y[0]
+Import show expression: \__pi_dest_x[9]
+Import show expression: \__pi_dest_x[8]
+Import show expression: \__pi_dest_x[7]
+Import show expression: \__pi_dest_x[6]
+Import show expression: \__pi_dest_x[5]
+Import show expression: \__pi_dest_x[4]
+Import show expression: \__pi_dest_x[3]
+Import show expression: \__pi_dest_x[2]
+Import show expression: \__pi_dest_x[29]
+Import show expression: \__pi_dest_x[28]
+Import show expression: \__pi_dest_x[27]
+Import show expression: \__pi_dest_x[26]
+Import show expression: \__pi_dest_x[25]
+Import show expression: \__pi_dest_x[24]
+Import show expression: \__pi_dest_x[23]
+Import show expression: \__pi_dest_x[22]
+Import show expression: \__pi_dest_x[21]
+Import show expression: \__pi_dest_x[20]
+Import show expression: \__pi_dest_x[1]
+Import show expression: \__pi_dest_x[19]
+Import show expression: \__pi_dest_x[18]
+Import show expression: \__pi_dest_x[17]
+Import show expression: \__pi_dest_x[16]
+Import show expression: \__pi_dest_x[15]
+Import show expression: \__pi_dest_x[14]
+Import show expression: \__pi_dest_x[13]
+Import show expression: \__pi_dest_x[12]
+Import show expression: \__pi_dest_x[11]
+Import show expression: \__pi_dest_x[10]
+Import show expression: \__pi_dest_x[0]
+
+[base case 1] Solving problem with 8793 variables and 24959 clauses..
+Base case for induction length 1 proven.
+
+Setting up time step 2:
+Final constraint equation: { } = { }
+Import def constraint for this timestep: \__pi_dest_x[0]
+Import def constraint for this timestep: \__pi_dest_x[10]
+Import def constraint for this timestep: \__pi_dest_x[11]
+Import def constraint for this timestep: \__pi_dest_x[12]
+Import def constraint for this timestep: \__pi_dest_x[13]
+Import def constraint for this timestep: \__pi_dest_x[14]
+Import def constraint for this timestep: \__pi_dest_x[15]
+Import def constraint for this timestep: \__pi_dest_x[16]
+Import def constraint for this timestep: \__pi_dest_x[17]
+Import def constraint for this timestep: \__pi_dest_x[18]
+Import def constraint for this timestep: \__pi_dest_x[19]
+Import def constraint for this timestep: \__pi_dest_x[1]
+Import def constraint for this timestep: \__pi_dest_x[20]
+Import def constraint for this timestep: \__pi_dest_x[21]
+Import def constraint for this timestep: \__pi_dest_x[22]
+Import def constraint for this timestep: \__pi_dest_x[23]
+Import def constraint for this timestep: \__pi_dest_x[24]
+Import def constraint for this timestep: \__pi_dest_x[25]
+Import def constraint for this timestep: \__pi_dest_x[26]
+Import def constraint for this timestep: \__pi_dest_x[27]
+Import def constraint for this timestep: \__pi_dest_x[28]
+Import def constraint for this timestep: \__pi_dest_x[29]
+Import def constraint for this timestep: \__pi_dest_x[2]
+Import def constraint for this timestep: \__pi_dest_x[3]
+Import def constraint for this timestep: \__pi_dest_x[4]
+Import def constraint for this timestep: \__pi_dest_x[5]
+Import def constraint for this timestep: \__pi_dest_x[6]
+Import def constraint for this timestep: \__pi_dest_x[7]
+Import def constraint for this timestep: \__pi_dest_x[8]
+Import def constraint for this timestep: \__pi_dest_x[9]
+Import def constraint for this timestep: \__pi_dest_y[0]
+Import def constraint for this timestep: \__pi_dest_y[10]
+Import def constraint for this timestep: \__pi_dest_y[11]
+Import def constraint for this timestep: \__pi_dest_y[12]
+Import def constraint for this timestep: \__pi_dest_y[13]
+Import def constraint for this timestep: \__pi_dest_y[14]
+Import def constraint for this timestep: \__pi_dest_y[15]
+Import def constraint for this timestep: \__pi_dest_y[16]
+Import def constraint for this timestep: \__pi_dest_y[17]
+Import def constraint for this timestep: \__pi_dest_y[18]
+Import def constraint for this timestep: \__pi_dest_y[19]
+Import def constraint for this timestep: \__pi_dest_y[1]
+Import def constraint for this timestep: \__pi_dest_y[20]
+Import def constraint for this timestep: \__pi_dest_y[21]
+Import def constraint for this timestep: \__pi_dest_y[22]
+Import def constraint for this timestep: \__pi_dest_y[23]
+Import def constraint for this timestep: \__pi_dest_y[24]
+Import def constraint for this timestep: \__pi_dest_y[25]
+Import def constraint for this timestep: \__pi_dest_y[26]
+Import def constraint for this timestep: \__pi_dest_y[27]
+Import def constraint for this timestep: \__pi_dest_y[28]
+Import def constraint for this timestep: \__pi_dest_y[29]
+Import def constraint for this timestep: \__pi_dest_y[2]
+Import def constraint for this timestep: \__pi_dest_y[3]
+Import def constraint for this timestep: \__pi_dest_y[4]
+Import def constraint for this timestep: \__pi_dest_y[5]
+Import def constraint for this timestep: \__pi_dest_y[6]
+Import def constraint for this timestep: \__pi_dest_y[7]
+Import def constraint for this timestep: \__pi_dest_y[8]
+Import def constraint for this timestep: \__pi_dest_y[9]
+Imported 289 cells to SAT database.
+Import proof for assert: \__po_outport[22]__assert.okay when 1'1.
+Import proof for assert: \__po_outport[19]__assert.okay when 1'1.
+Import proof for assert: \__po_outport[18]__assert.okay when 1'1.
+Import proof for assert: \__po_outport[17]__assert.okay when 1'1.
+Import proof for assert: \__po_outport[16]__assert.okay when 1'1.
+Import proof for assert: \__po_outport[15]__assert.okay when 1'1.
+Import proof for assert: \__po_outport[9]__assert.okay when 1'1.
+Import proof for assert: \__po_outport[23]__assert.okay when 1'1.
+Import proof for assert: \__po_outport[14]__assert.okay when 1'1.
+Import proof for assert: \__po_outport[1]__assert.okay when 1'1.
+Import proof for assert: \__po_outport[13]__assert.okay when 1'1.
+Import proof for assert: \__po_outport[5]__assert.okay when 1'1.
+Import proof for assert: \__po_outport[12]__assert.okay when 1'1.
+Import proof for assert: \__po_outport[11]__assert.okay when 1'1.
+Import proof for assert: \__po_outport[10]__assert.okay when 1'1.
+Import proof for assert: \__po_outport[0]__assert.okay when 1'1.
+Import proof for assert: \__po_outport[4]__assert.okay when 1'1.
+Import proof for assert: \__po_outport[6]__assert.okay when 1'1.
+Import proof for assert: \__po_outport[20]__assert.okay when 1'1.
+Import proof for assert: \__po_outport[3]__assert.okay when 1'1.
+Import proof for assert: \__po_outport[2]__assert.okay when 1'1.
+Import proof for assert: \__po_outport[29]__assert.okay when 1'1.
+Import proof for assert: \__po_outport[28]__assert.okay when 1'1.
+Import proof for assert: \__po_outport[27]__assert.okay when 1'1.
+Import proof for assert: \__po_outport[26]__assert.okay when 1'1.
+Import proof for assert: \__po_outport[7]__assert.okay when 1'1.
+Import proof for assert: \__po_outport[21]__assert.okay when 1'1.
+Import proof for assert: \__po_outport[25]__assert.okay when 1'1.
+Import proof for assert: \__po_outport[8]__assert.okay when 1'1.
+Import proof for assert: \__po_outport[24]__assert.okay when 1'1.
+Import show expression: \__po_outport[21]__assert.okay
+Import show expression: \__po_outport[21]__assert.i
+Import show expression: \__po_outport[25]__assert.i
+Import show expression: \__po_outport[26]__assert.in_gate
+Import show expression: \__po_outport[2]__assert.i
+Import show expression: \__po_outport[2]__assert.okay
+Import show expression: \__po_outport[2]__assert.in_gate
+Import show expression: \__po_outport[2]__assert.in_gold
+Import show expression: \__po_outport[20]__assert.in_gold
+Import show expression: \__po_outport[20]__assert.in_gate
+Import show expression: \__po_outport[20]__assert.okay
+Import show expression: \__po_outport[20]__assert.i
+Import show expression: \__po_outport[26]__assert.okay
+Import show expression: \__po_outport[1]__assert.in_gold
+Import show expression: \__po_outport[1]__assert.in_gate
+Import show expression: \__po_outport[1]__assert.okay
+Import show expression: \__po_outport[1]__assert.i
+Import show expression: \__po_outport[26]__assert.i
+Import show expression: \__po_outport[28]__assert.i
+Import show expression: \__po_outport[3]__assert.i
+Import show expression: \__po_outport[3]__assert.okay
+Import show expression: \__po_outport[3]__assert.in_gate
+Import show expression: \__po_outport[3]__assert.in_gold
+Import show expression: \__po_outport[28]__assert.okay
+Import show expression: \__po_outport[19]__assert.in_gold
+Import show expression: \__po_outport[19]__assert.in_gate
+Import show expression: \__po_outport[19]__assert.okay
+Import show expression: \__po_outport[19]__assert.i
+Import show expression: \__po_outport[24]__assert.in_gold
+Import show expression: \__po_outport[24]__assert.in_gate
+Import show expression: \__po_outport[24]__assert.okay
+Import show expression: \__po_outport[24]__assert.i
+Import show expression: \__po_outport[28]__assert.in_gate
+Import show expression: \__po_outport[18]__assert.in_gold
+Import show expression: \__po_outport[18]__assert.in_gate
+Import show expression: \__po_outport[18]__assert.okay
+Import show expression: \__po_outport[18]__assert.i
+Import show expression: \__po_outport[28]__assert.in_gold
+Import show expression: \__po_outport[4]__assert.i
+Import show expression: \__po_outport[4]__assert.okay
+Import show expression: \__po_outport[4]__assert.in_gate
+Import show expression: \__po_outport[4]__assert.in_gold
+Import show expression: \__po_outport[17]__assert.in_gold
+Import show expression: \__po_outport[17]__assert.in_gate
+Import show expression: \__po_outport[17]__assert.okay
+Import show expression: \__po_outport[17]__assert.i
+Import show expression: \__po_outport[27]__assert.okay
+Import show expression: \__po_outport[27]__assert.in_gate
+Import show expression: \__po_outport[27]__assert.in_gold
+Import show expression: \__po_outport[16]__assert.in_gold
+Import show expression: \__po_outport[16]__assert.in_gate
+Import show expression: \__po_outport[16]__assert.okay
+Import show expression: \__po_outport[16]__assert.i
+Import show expression: \__po_outport[5]__assert.i
+Import show expression: \__po_outport[5]__assert.okay
+Import show expression: \__po_outport[5]__assert.in_gate
+Import show expression: \__po_outport[5]__assert.in_gold
+Import show expression: \__po_outport[23]__assert.in_gold
+Import show expression: \__po_outport[23]__assert.in_gate
+Import show expression: \__po_outport[23]__assert.okay
+Import show expression: \__po_outport[15]__assert.in_gold
+Import show expression: \__po_outport[15]__assert.in_gate
+Import show expression: \__po_outport[15]__assert.okay
+Import show expression: \__po_outport[15]__assert.i
+Import show expression: \__po_outport[23]__assert.i
+Import show expression: \__po_outport[6]__assert.i
+Import show expression: \__po_outport[14]__assert.in_gold
+Import show expression: \__po_outport[14]__assert.in_gate
+Import show expression: \__po_outport[14]__assert.okay
+Import show expression: \__po_outport[14]__assert.i
+Import show expression: \__po_outport[6]__assert.okay
+Import show expression: \__po_outport[6]__assert.in_gate
+Import show expression: \__po_outport[6]__assert.in_gold
+Import show expression: \__po_outport[29]__assert.i
+Import show expression: \__po_outport[13]__assert.in_gold
+Import show expression: \__po_outport[13]__assert.in_gate
+Import show expression: \__po_outport[13]__assert.okay
+Import show expression: \__po_outport[13]__assert.i
+Import show expression: \__po_outport[29]__assert.okay
+Import show expression: \__po_outport[29]__assert.in_gate
+Import show expression: \__po_outport[22]__assert.in_gold
+Import show expression: \__po_outport[7]__assert.i
+Import show expression: \__po_outport[7]__assert.okay
+Import show expression: \__po_outport[12]__assert.in_gold
+Import show expression: \__po_outport[12]__assert.in_gate
+Import show expression: \__po_outport[12]__assert.okay
+Import show expression: \__po_outport[12]__assert.i
+Import show expression: \__po_outport[7]__assert.in_gate
+Import show expression: \__po_outport[7]__assert.in_gold
+Import show expression: \__po_outport[22]__assert.in_gate
+Import show expression: \__po_outport[22]__assert.okay
+Import show expression: \__po_outport[22]__assert.i
+Import show expression: \__po_outport[29]__assert.in_gold
+Import show expression: \__po_outport[27]__assert.i
+Import show expression: \__po_outport[11]__assert.in_gold
+Import show expression: \__po_outport[11]__assert.in_gate
+Import show expression: \__po_outport[11]__assert.okay
+Import show expression: \__po_outport[11]__assert.i
+Import show expression: \__po_outport[8]__assert.i
+Import show expression: \__po_outport[8]__assert.okay
+Import show expression: \__po_outport[8]__assert.in_gate
+Import show expression: \__po_outport[10]__assert.in_gold
+Import show expression: \__po_outport[10]__assert.in_gate
+Import show expression: \__po_outport[10]__assert.okay
+Import show expression: \__po_outport[10]__assert.i
+Import show expression: \__po_outport[8]__assert.in_gold
+Import show expression: \__po_outport[26]__assert.in_gold
+Import show expression: \__po_outport[25]__assert.in_gold
+Import show expression: \__po_outport[25]__assert.in_gate
+Import show expression: \__po_outport[25]__assert.okay
+Import show expression: \__po_outport[0]__assert.in_gold
+Import show expression: \__po_outport[0]__assert.in_gate
+Import show expression: \__po_outport[0]__assert.okay
+Import show expression: \__po_outport[0]__assert.i
+Import show expression: \__po_outport[21]__assert.in_gold
+Import show expression: \__po_outport[21]__assert.in_gate
+Import show expression: \__po_outport[9]__assert.i
+Import show expression: \__po_outport[9]__assert.okay
+Import show expression: \__po_outport[9]__assert.in_gate
+Import show expression: \__po_outport[9]__assert.in_gold
+Import show expression: \gate.outport[8]
+Import show expression: \gate.outport[7]
+Import show expression: \gate.outport[6]
+Import show expression: \gate.outport[5]
+Import show expression: \gate.outport[4]
+Import show expression: \gate.outport[3]
+Import show expression: \gate.outport[2]
+Import show expression: \gate.outport[29]
+Import show expression: \gate.outport[28]
+Import show expression: \gate.outport[27]
+Import show expression: \gate.outport[26]
+Import show expression: \gate.outport[25]
+Import show expression: \gate.outport[24]
+Import show expression: \gate.outport[23]
+Import show expression: \gate.outport[22]
+Import show expression: \gate.outport[21]
+Import show expression: \gate.outport[20]
+Import show expression: \gate.dest_y[25]
+Import show expression: \gate.dest_y[7]
+Import show expression: \gate.dest_y[8]
+Import show expression: \gate.dest_y[24]
+Import show expression: \gate.dest_y[26]
+Import show expression: \gate.dest_y[3]
+Import show expression: \gate.dest_y[4]
+Import show expression: \gate.dest_y[5]
+Import show expression: \gate.dest_y[6]
+Import show expression: \gate.dest_y[0]
+Import show expression: \gate.dest_y[1]
+Import show expression: \gate.dest_y[2]
+Import show expression: \gate.dest_y[21]
+Import show expression: \gate.dest_y[22]
+Import show expression: \gate.dest_y[23]
+Import show expression: \gate.dest_y[20]
+Import show expression: \gate.dest_y[28]
+Import show expression: \gate.dest_y[29]
+Import show expression: \gate.dest_y[9]
+Import show expression: \gate.dest_y[10]
+Import show expression: \gate.dest_y[11]
+Import show expression: \gate.dest_y[12]
+Import show expression: \gate.dest_y[13]
+Import show expression: \gate.dest_y[14]
+Import show expression: \gate.dest_y[15]
+Import show expression: \gate.dest_y[16]
+Import show expression: \gate.dest_y[17]
+Import show expression: \gate.dest_y[18]
+Import show expression: \gate.dest_y[19]
+Import show expression: \gate.dest_y[27]
+Import show expression: \gate.outport[1]
+Import show expression: \gate.outport[19]
+Import show expression: \gate.outport[18]
+Import show expression: \gate.outport[17]
+Import show expression: \gate.outport[16]
+Import show expression: \gate.outport[15]
+Import show expression: \gate.outport[14]
+Import show expression: \gate.outport[13]
+Import show expression: \gate.outport[12]
+Import show expression: \gate.outport[11]
+Import show expression: \gate.outport[10]
+Import show expression: \gate.dest_x[0]
+Import show expression: \gate.dest_x[28]
+Import show expression: \gate.dest_x[29]
+Import show expression: \gate.dest_x[27]
+Import show expression: \gate.dest_x[19]
+Import show expression: \gate.dest_x[20]
+Import show expression: \gate.dest_x[21]
+Import show expression: \gate.dest_x[17]
+Import show expression: \gate.dest_x[18]
+Import show expression: \gate.dest_x[22]
+Import show expression: \gate.dest_x[26]
+Import show expression: \gate.dest_x[9]
+Import show expression: \gate.dest_x[10]
+Import show expression: \gate.dest_x[11]
+Import show expression: \gate.dest_x[16]
+Import show expression: \gate.dest_x[12]
+Import show expression: \gate.dest_x[13]
+Import show expression: \gate.dest_x[14]
+Import show expression: \gate.dest_x[15]
+Import show expression: \gate.dest_x[23]
+Import show expression: \gate.dest_x[24]
+Import show expression: \gate.dest_x[25]
+Import show expression: \gate.dest_x[5]
+Import show expression: \gate.dest_x[6]
+Import show expression: \gate.dest_x[7]
+Import show expression: \gate.dest_x[8]
+Import show expression: \gate.dest_x[1]
+Import show expression: \gate.dest_x[2]
+Import show expression: \gate.dest_x[3]
+Import show expression: \gate.dest_x[4]
+Import show expression: \gate.outport[0]
+Import show expression: \gate.outport[9]
+Import show expression: \gate.__pi_dest_x[0]
+Import show expression: \gate.__pi_dest_x[10]
+Import show expression: \gate.__pi_dest_x[11]
+Import show expression: \gate.__pi_dest_x[12]
+Import show expression: \gate.__pi_dest_x[13]
+Import show expression: \gate.__pi_dest_x[14]
+Import show expression: \gate.__pi_dest_x[15]
+Import show expression: \gate.__pi_dest_x[16]
+Import show expression: \gate.__pi_dest_x[17]
+Import show expression: \gate.__pi_dest_x[18]
+Import show expression: \gate.__pi_dest_x[19]
+Import show expression: \gate.__pi_dest_x[1]
+Import show expression: \gate.__pi_dest_x[20]
+Import show expression: \gate.__pi_dest_x[21]
+Import show expression: \gate.__pi_dest_x[22]
+Import show expression: \gate.__pi_dest_x[23]
+Import show expression: \gate.__pi_dest_x[24]
+Import show expression: \gate.__pi_dest_x[25]
+Import show expression: \gate.__pi_dest_x[26]
+Import show expression: \gate.__pi_dest_x[27]
+Import show expression: \gate.__pi_dest_x[28]
+Import show expression: \gate.__pi_dest_x[29]
+Import show expression: \gate.__pi_dest_x[2]
+Import show expression: \gate.__pi_dest_x[3]
+Import show expression: \gate.__pi_dest_x[4]
+Import show expression: \gate.__pi_dest_x[5]
+Import show expression: \gate.__pi_dest_x[6]
+Import show expression: \gate.__pi_dest_x[7]
+Import show expression: \gate.__pi_dest_x[8]
+Import show expression: \gate.__pi_dest_x[9]
+Import show expression: \gate.__pi_dest_y[0]
+Import show expression: \gate.__pi_dest_y[10]
+Import show expression: \gate.__pi_dest_y[11]
+Import show expression: \gate.__pi_dest_y[12]
+Import show expression: \gate.__pi_dest_y[13]
+Import show expression: \gate.__pi_dest_y[14]
+Import show expression: \gate.__pi_dest_y[15]
+Import show expression: \gate.__pi_dest_y[16]
+Import show expression: \gate.__pi_dest_y[17]
+Import show expression: \gate.__pi_dest_y[18]
+Import show expression: \gate.__pi_dest_y[19]
+Import show expression: \gate.__pi_dest_y[1]
+Import show expression: \gate.__pi_dest_y[20]
+Import show expression: \gate.__pi_dest_y[21]
+Import show expression: \gate.__pi_dest_y[22]
+Import show expression: \gate.__pi_dest_y[23]
+Import show expression: \gate.__pi_dest_y[24]
+Import show expression: \gate.__pi_dest_y[25]
+Import show expression: \gate.__pi_dest_y[26]
+Import show expression: \gate.__pi_dest_y[27]
+Import show expression: \gate.__pi_dest_y[28]
+Import show expression: \gate.__pi_dest_y[29]
+Import show expression: \gate.__pi_dest_y[2]
+Import show expression: \gate.__pi_dest_y[3]
+Import show expression: \gate.__pi_dest_y[4]
+Import show expression: \gate.__pi_dest_y[5]
+Import show expression: \gate.__pi_dest_y[6]
+Import show expression: \gate.__pi_dest_y[7]
+Import show expression: \gate.__pi_dest_y[8]
+Import show expression: \gate.__pi_dest_y[9]
+Import show expression: \gate.__po_outport[0]
+Import show expression: \gate.__po_outport[10]
+Import show expression: \gate.__po_outport[11]
+Import show expression: \gate.__po_outport[12]
+Import show expression: \gate.__po_outport[13]
+Import show expression: \gate.__po_outport[14]
+Import show expression: \gate.__po_outport[15]
+Import show expression: \gate.__po_outport[16]
+Import show expression: \gate.__po_outport[17]
+Import show expression: \gate.__po_outport[18]
+Import show expression: \gate.__po_outport[19]
+Import show expression: \gate.__po_outport[1]
+Import show expression: \gate.__po_outport[20]
+Import show expression: \gate.__po_outport[21]
+Import show expression: \gate.__po_outport[22]
+Import show expression: \gate.__po_outport[23]
+Import show expression: \gate.__po_outport[24]
+Import show expression: \gate.__po_outport[25]
+Import show expression: \gate.__po_outport[26]
+Import show expression: \gate.__po_outport[27]
+Import show expression: \gate.__po_outport[28]
+Import show expression: \gate.__po_outport[29]
+Import show expression: \gate.__po_outport[2]
+Import show expression: \gate.__po_outport[3]
+Import show expression: \gate.__po_outport[4]
+Import show expression: \gate.__po_outport[5]
+Import show expression: \gate.__po_outport[6]
+Import show expression: \gate.__po_outport[7]
+Import show expression: \gate.__po_outport[8]
+Import show expression: \gate.__po_outport[9]
+Import show expression: \gold.outport[8]
+Import show expression: \gold.outport[7]
+Import show expression: \gold.outport[6]
+Import show expression: \gold.outport[5]
+Import show expression: \gold.outport[4]
+Import show expression: \gold.outport[3]
+Import show expression: \gold.outport[2]
+Import show expression: \gold.outport[29]
+Import show expression: \gold.outport[28]
+Import show expression: \gold.outport[27]
+Import show expression: \gold.outport[26]
+Import show expression: \gold.outport[25]
+Import show expression: \gold.outport[24]
+Import show expression: \gold.outport[23]
+Import show expression: \gold.outport[22]
+Import show expression: \gold.outport[21]
+Import show expression: \gold.outport[20]
+Import show expression: \gold.dest_y[25]
+Import show expression: \gold.dest_y[7]
+Import show expression: \gold.dest_y[8]
+Import show expression: \gold.dest_y[24]
+Import show expression: \gold.dest_y[26]
+Import show expression: \gold.dest_y[3]
+Import show expression: \gold.dest_y[4]
+Import show expression: \gold.dest_y[5]
+Import show expression: \gold.dest_y[6]
+Import show expression: \gold.dest_y[0]
+Import show expression: \gold.dest_y[1]
+Import show expression: \gold.dest_y[2]
+Import show expression: \gold.dest_y[21]
+Import show expression: \gold.dest_y[22]
+Import show expression: \gold.dest_y[23]
+Import show expression: \gold.dest_y[20]
+Import show expression: \gold.dest_y[28]
+Import show expression: \gold.dest_y[29]
+Import show expression: \gold.dest_y[9]
+Import show expression: \gold.dest_y[10]
+Import show expression: \gold.dest_y[11]
+Import show expression: \gold.dest_y[12]
+Import show expression: \gold.dest_y[13]
+Import show expression: \gold.dest_y[14]
+Import show expression: \gold.dest_y[15]
+Import show expression: \gold.dest_y[16]
+Import show expression: \gold.dest_y[17]
+Import show expression: \gold.dest_y[18]
+Import show expression: \gold.dest_y[19]
+Import show expression: \gold.dest_y[27]
+Import show expression: \gold.outport[1]
+Import show expression: \gold.outport[19]
+Import show expression: \gold.outport[18]
+Import show expression: \gold.outport[17]
+Import show expression: \gold.outport[16]
+Import show expression: \gold.outport[15]
+Import show expression: \gold.outport[14]
+Import show expression: \gold.outport[13]
+Import show expression: \gold.outport[12]
+Import show expression: \gold.outport[11]
+Import show expression: \gold.outport[10]
+Import show expression: \gold.dest_x[0]
+Import show expression: \gold.dest_x[28]
+Import show expression: \gold.dest_x[29]
+Import show expression: \gold.dest_x[27]
+Import show expression: \gold.dest_x[19]
+Import show expression: \gold.dest_x[20]
+Import show expression: \gold.dest_x[21]
+Import show expression: \gold.dest_x[17]
+Import show expression: \gold.dest_x[18]
+Import show expression: \gold.dest_x[22]
+Import show expression: \gold.dest_x[26]
+Import show expression: \gold.dest_x[9]
+Import show expression: \gold.dest_x[10]
+Import show expression: \gold.dest_x[11]
+Import show expression: \gold.dest_x[16]
+Import show expression: \gold.dest_x[12]
+Import show expression: \gold.dest_x[13]
+Import show expression: \gold.dest_x[14]
+Import show expression: \gold.dest_x[15]
+Import show expression: \gold.dest_x[23]
+Import show expression: \gold.dest_x[24]
+Import show expression: \gold.dest_x[25]
+Import show expression: \gold.dest_x[5]
+Import show expression: \gold.dest_x[6]
+Import show expression: \gold.dest_x[7]
+Import show expression: \gold.dest_x[8]
+Import show expression: \gold.dest_x[1]
+Import show expression: \gold.dest_x[2]
+Import show expression: \gold.dest_x[3]
+Import show expression: \gold.dest_x[4]
+Import show expression: \gold.outport[0]
+Import show expression: \gold.outport[9]
+Import show expression: \gold.__pi_dest_x[0]
+Import show expression: \gold.__pi_dest_x[10]
+Import show expression: \gold.__pi_dest_x[11]
+Import show expression: \gold.__pi_dest_x[12]
+Import show expression: \gold.__pi_dest_x[13]
+Import show expression: \gold.__pi_dest_x[14]
+Import show expression: \gold.__pi_dest_x[15]
+Import show expression: \gold.__pi_dest_x[16]
+Import show expression: \gold.__pi_dest_x[17]
+Import show expression: \gold.__pi_dest_x[18]
+Import show expression: \gold.__pi_dest_x[19]
+Import show expression: \gold.__pi_dest_x[1]
+Import show expression: \gold.__pi_dest_x[20]
+Import show expression: \gold.__pi_dest_x[21]
+Import show expression: \gold.__pi_dest_x[22]
+Import show expression: \gold.__pi_dest_x[23]
+Import show expression: \gold.__pi_dest_x[24]
+Import show expression: \gold.__pi_dest_x[25]
+Import show expression: \gold.__pi_dest_x[26]
+Import show expression: \gold.__pi_dest_x[27]
+Import show expression: \gold.__pi_dest_x[28]
+Import show expression: \gold.__pi_dest_x[29]
+Import show expression: \gold.__pi_dest_x[2]
+Import show expression: \gold.__pi_dest_x[3]
+Import show expression: \gold.__pi_dest_x[4]
+Import show expression: \gold.__pi_dest_x[5]
+Import show expression: \gold.__pi_dest_x[6]
+Import show expression: \gold.__pi_dest_x[7]
+Import show expression: \gold.__pi_dest_x[8]
+Import show expression: \gold.__pi_dest_x[9]
+Import show expression: \gold.__pi_dest_y[0]
+Import show expression: \gold.__pi_dest_y[10]
+Import show expression: \gold.__pi_dest_y[11]
+Import show expression: \gold.__pi_dest_y[12]
+Import show expression: \gold.__pi_dest_y[13]
+Import show expression: \gold.__pi_dest_y[14]
+Import show expression: \gold.__pi_dest_y[15]
+Import show expression: \gold.__pi_dest_y[16]
+Import show expression: \gold.__pi_dest_y[17]
+Import show expression: \gold.__pi_dest_y[18]
+Import show expression: \gold.__pi_dest_y[19]
+Import show expression: \gold.__pi_dest_y[1]
+Import show expression: \gold.__pi_dest_y[20]
+Import show expression: \gold.__pi_dest_y[21]
+Import show expression: \gold.__pi_dest_y[22]
+Import show expression: \gold.__pi_dest_y[23]
+Import show expression: \gold.__pi_dest_y[24]
+Import show expression: \gold.__pi_dest_y[25]
+Import show expression: \gold.__pi_dest_y[26]
+Import show expression: \gold.__pi_dest_y[27]
+Import show expression: \gold.__pi_dest_y[28]
+Import show expression: \gold.__pi_dest_y[29]
+Import show expression: \gold.__pi_dest_y[2]
+Import show expression: \gold.__pi_dest_y[3]
+Import show expression: \gold.__pi_dest_y[4]
+Import show expression: \gold.__pi_dest_y[5]
+Import show expression: \gold.__pi_dest_y[6]
+Import show expression: \gold.__pi_dest_y[7]
+Import show expression: \gold.__pi_dest_y[8]
+Import show expression: \gold.__pi_dest_y[9]
+Import show expression: \gold.__po_outport[0]
+Import show expression: \gold.__po_outport[10]
+Import show expression: \gold.__po_outport[11]
+Import show expression: \gold.__po_outport[12]
+Import show expression: \gold.__po_outport[13]
+Import show expression: \gold.__po_outport[14]
+Import show expression: \gold.__po_outport[15]
+Import show expression: \gold.__po_outport[16]
+Import show expression: \gold.__po_outport[17]
+Import show expression: \gold.__po_outport[18]
+Import show expression: \gold.__po_outport[19]
+Import show expression: \gold.__po_outport[1]
+Import show expression: \gold.__po_outport[20]
+Import show expression: \gold.__po_outport[21]
+Import show expression: \gold.__po_outport[22]
+Import show expression: \gold.__po_outport[23]
+Import show expression: \gold.__po_outport[24]
+Import show expression: \gold.__po_outport[25]
+Import show expression: \gold.__po_outport[26]
+Import show expression: \gold.__po_outport[27]
+Import show expression: \gold.__po_outport[28]
+Import show expression: \gold.__po_outport[29]
+Import show expression: \gold.__po_outport[2]
+Import show expression: \gold.__po_outport[3]
+Import show expression: \gold.__po_outport[4]
+Import show expression: \gold.__po_outport[5]
+Import show expression: \gold.__po_outport[6]
+Import show expression: \gold.__po_outport[7]
+Import show expression: \gold.__po_outport[8]
+Import show expression: \gold.__po_outport[9]
+Import show expression: \__po_outport[9]__gate
+Import show expression: \__po_outport[8]__gate
+Import show expression: \__po_outport[7]__gate
+Import show expression: \__po_outport[6]__gate
+Import show expression: \__po_outport[5]__gate
+Import show expression: \__po_outport[4]__gate
+Import show expression: \__po_outport[3]__gate
+Import show expression: \__po_outport[2]__gate
+Import show expression: \__po_outport[29]__gate
+Import show expression: \__po_outport[28]__gate
+Import show expression: \__po_outport[27]__gate
+Import show expression: \__po_outport[26]__gate
+Import show expression: \__po_outport[25]__gate
+Import show expression: \__po_outport[24]__gate
+Import show expression: \__po_outport[23]__gate
+Import show expression: \__po_outport[22]__gate
+Import show expression: \__po_outport[21]__gate
+Import show expression: \__po_outport[20]__gate
+Import show expression: \__po_outport[1]__gate
+Import show expression: \__po_outport[19]__gate
+Import show expression: \__po_outport[18]__gate
+Import show expression: \__po_outport[17]__gate
+Import show expression: \__po_outport[16]__gate
+Import show expression: \__po_outport[15]__gate
+Import show expression: \__po_outport[14]__gate
+Import show expression: \__po_outport[13]__gate
+Import show expression: \__po_outport[12]__gate
+Import show expression: \__po_outport[11]__gate
+Import show expression: \__po_outport[10]__gate
+Import show expression: \__po_outport[0]__gate
+Import show expression: \__po_outport[9]__gold
+Import show expression: \__po_outport[8]__gold
+Import show expression: \__po_outport[7]__gold
+Import show expression: \__po_outport[6]__gold
+Import show expression: \__po_outport[5]__gold
+Import show expression: \__po_outport[4]__gold
+Import show expression: \__po_outport[3]__gold
+Import show expression: \__po_outport[2]__gold
+Import show expression: \__po_outport[29]__gold
+Import show expression: \__po_outport[28]__gold
+Import show expression: \__po_outport[27]__gold
+Import show expression: \__po_outport[26]__gold
+Import show expression: \__po_outport[25]__gold
+Import show expression: \__po_outport[24]__gold
+Import show expression: \__po_outport[23]__gold
+Import show expression: \__po_outport[22]__gold
+Import show expression: \__po_outport[21]__gold
+Import show expression: \__po_outport[20]__gold
+Import show expression: \__po_outport[1]__gold
+Import show expression: \__po_outport[19]__gold
+Import show expression: \__po_outport[18]__gold
+Import show expression: \__po_outport[17]__gold
+Import show expression: \__po_outport[16]__gold
+Import show expression: \__po_outport[15]__gold
+Import show expression: \__po_outport[14]__gold
+Import show expression: \__po_outport[13]__gold
+Import show expression: \__po_outport[12]__gold
+Import show expression: \__po_outport[11]__gold
+Import show expression: \__po_outport[10]__gold
+Import show expression: \__po_outport[0]__gold
+Import show expression: \__pi_dest_y[9]
+Import show expression: \__pi_dest_y[8]
+Import show expression: \__pi_dest_y[7]
+Import show expression: \__pi_dest_y[6]
+Import show expression: \__pi_dest_y[5]
+Import show expression: \__pi_dest_y[4]
+Import show expression: \__pi_dest_y[3]
+Import show expression: \__pi_dest_y[2]
+Import show expression: \__pi_dest_y[29]
+Import show expression: \__pi_dest_y[28]
+Import show expression: \__pi_dest_y[27]
+Import show expression: \__pi_dest_y[26]
+Import show expression: \__pi_dest_y[25]
+Import show expression: \__pi_dest_y[24]
+Import show expression: \__pi_dest_y[23]
+Import show expression: \__pi_dest_y[22]
+Import show expression: \__pi_dest_y[21]
+Import show expression: \__pi_dest_y[20]
+Import show expression: \__pi_dest_y[1]
+Import show expression: \__pi_dest_y[19]
+Import show expression: \__pi_dest_y[18]
+Import show expression: \__pi_dest_y[17]
+Import show expression: \__pi_dest_y[16]
+Import show expression: \__pi_dest_y[15]
+Import show expression: \__pi_dest_y[14]
+Import show expression: \__pi_dest_y[13]
+Import show expression: \__pi_dest_y[12]
+Import show expression: \__pi_dest_y[11]
+Import show expression: \__pi_dest_y[10]
+Import show expression: \__pi_dest_y[0]
+Import show expression: \__pi_dest_x[9]
+Import show expression: \__pi_dest_x[8]
+Import show expression: \__pi_dest_x[7]
+Import show expression: \__pi_dest_x[6]
+Import show expression: \__pi_dest_x[5]
+Import show expression: \__pi_dest_x[4]
+Import show expression: \__pi_dest_x[3]
+Import show expression: \__pi_dest_x[2]
+Import show expression: \__pi_dest_x[29]
+Import show expression: \__pi_dest_x[28]
+Import show expression: \__pi_dest_x[27]
+Import show expression: \__pi_dest_x[26]
+Import show expression: \__pi_dest_x[25]
+Import show expression: \__pi_dest_x[24]
+Import show expression: \__pi_dest_x[23]
+Import show expression: \__pi_dest_x[22]
+Import show expression: \__pi_dest_x[21]
+Import show expression: \__pi_dest_x[20]
+Import show expression: \__pi_dest_x[1]
+Import show expression: \__pi_dest_x[19]
+Import show expression: \__pi_dest_x[18]
+Import show expression: \__pi_dest_x[17]
+Import show expression: \__pi_dest_x[16]
+Import show expression: \__pi_dest_x[15]
+Import show expression: \__pi_dest_x[14]
+Import show expression: \__pi_dest_x[13]
+Import show expression: \__pi_dest_x[12]
+Import show expression: \__pi_dest_x[11]
+Import show expression: \__pi_dest_x[10]
+Import show expression: \__pi_dest_x[0]
+
+[induction step 1] Solving problem with 17614 variables and 50036 clauses..
+Induction step proven: SUCCESS!
+
+                  /$$$$$$      /$$$$$$$$     /$$$$$$$    
+                 /$$__  $$    | $$_____/    | $$__  $$   
+                | $$  \ $$    | $$          | $$  \ $$   
+                | $$  | $$    | $$$$$       | $$  | $$   
+                | $$  | $$    | $$__/       | $$  | $$   
+                | $$/$$ $$    | $$          | $$  | $$   
+                |  $$$$$$/ /$$| $$$$$$$$ /$$| $$$$$$$//$$
+                 \____ $$$|__/|________/|__/|_______/|__/
+                       \__/                              
+

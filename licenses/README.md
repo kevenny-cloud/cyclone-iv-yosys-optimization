@@ -1,0 +1,1 @@
+本目录保留Yosys、ABC、实际Windows工具链及相关已链接小库的许可通知。未携带旧Linux运行程序或glibc/readline/Tcl动态库。部分小库通知位于保留的源码头部。

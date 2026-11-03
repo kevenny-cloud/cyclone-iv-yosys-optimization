@@ -1,0 +1,91 @@
+{
+  "creator": "Yosys 0.69 (git sha1 9f75ca1f9-dirty, Release, LLVM-MinGW 20261020 Clang 23.1.4; isolated Windows build)",
+  "modules": {
+    "t": {
+      "attributes": {
+        "top": "00000000000000000000000000000001",
+        "src": "input.v:1.1-4.78"
+      },
+      "ports": {
+        "a": {
+          "direction": "input",
+          "bits": [ 2, 3, 4, 5, 6, 7, 8 ]
+        },
+        "y": {
+          "direction": "output",
+          "bits": [ 9 ]
+        }
+      },
+      "cells": {
+        "h": {
+          "hide_name": 0,
+          "type": "$lut",
+          "parameters": {
+            "LUT": "1010011100001100",
+            "WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+            "src": "input.v:4.37-4.68"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 6, 7, 8, 10 ],
+            "Y": [ 9 ]
+          }
+        },
+        "l": {
+          "hide_name": 0,
+          "type": "$lut",
+          "parameters": {
+            "LUT": "1110110100001001",
+            "WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+            "src": "input.v:2.37-2.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2, 3, 4, 5 ],
+            "Y": [ 10 ]
+          }
+        }
+      },
+      "netnames": {
+        "a": {
+          "hide_name": 0,
+          "bits": [ 2, 3, 4, 5, 6, 7, 8 ],
+          "attributes": {
+            "src": "input.v:1.21-1.22"
+          }
+        },
+        "u": {
+          "hide_name": 0,
+          "bits": [ 10 ],
+          "attributes": {
+            "src": "input.v:1.38-1.39"
+          }
+        },
+        "v": {
+          "hide_name": 0,
+          "bits": [ 11 ],
+          "attributes": {
+            "src": "input.v:1.40-1.41"
+          }
+        },
+        "y": {
+          "hide_name": 0,
+          "bits": [ 9 ],
+          "attributes": {
+            "src": "input.v:1.30-1.31"
+          }
+        }
+      }
+    }
+  }
+}

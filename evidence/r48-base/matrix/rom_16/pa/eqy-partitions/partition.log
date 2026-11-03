@@ -1,0 +1,2224 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.69+274 (git sha1 7513f8df8, Release, GNU /usr/bin/x86_64-w64-mingw32-g++ 15.2.1)
+
+-- Executing script file `partition.ys' --
+
+1. Executing RTLIL frontend.
+Input filename: combined.il
+
+2. Executing INSBUF pass (insert buffer cells for connected wires).
+Add gate.top/$auto$insbuf.cc:97:execute$18888: \y [1] -> \y [16]
+Add gate.top/$auto$insbuf.cc:97:execute$18889: \y [2] -> \y [17]
+Add gate.top/$auto$insbuf.cc:97:execute$18890: \y [3] -> \y [18]
+Add gate.top/$auto$insbuf.cc:97:execute$18891: \y [4] -> \y [19]
+Add gate.top/$auto$insbuf.cc:97:execute$18892: \y [5] -> \y [20]
+Add gate.top/$auto$insbuf.cc:97:execute$18893: \y [6] -> \y [21]
+Add gate.top/$auto$insbuf.cc:97:execute$18894: \y [7] -> \y [22]
+Add gate.top/$auto$insbuf.cc:97:execute$18895: \y [0] -> \y [23]
+Add gate.top/$auto$insbuf.cc:97:execute$18896: \y [25] -> \y [40]
+Add gate.top/$auto$insbuf.cc:97:execute$18897: \y [26] -> \y [41]
+Add gate.top/$auto$insbuf.cc:97:execute$18898: \y [27] -> \y [42]
+Add gate.top/$auto$insbuf.cc:97:execute$18899: \y [28] -> \y [43]
+Add gate.top/$auto$insbuf.cc:97:execute$18900: \y [29] -> \y [44]
+Add gate.top/$auto$insbuf.cc:97:execute$18901: \y [30] -> \y [45]
+Add gate.top/$auto$insbuf.cc:97:execute$18902: \y [31] -> \y [46]
+Add gate.top/$auto$insbuf.cc:97:execute$18903: \y [24] -> \y [47]
+Add gate.top/$auto$insbuf.cc:97:execute$18904: \y [49] -> \y [64]
+Add gate.top/$auto$insbuf.cc:97:execute$18905: \y [50] -> \y [65]
+Add gate.top/$auto$insbuf.cc:97:execute$18906: \y [51] -> \y [66]
+Add gate.top/$auto$insbuf.cc:97:execute$18907: \y [52] -> \y [67]
+Add gate.top/$auto$insbuf.cc:97:execute$18908: \y [53] -> \y [68]
+Add gate.top/$auto$insbuf.cc:97:execute$18909: \y [54] -> \y [69]
+Add gate.top/$auto$insbuf.cc:97:execute$18910: \y [55] -> \y [70]
+Add gate.top/$auto$insbuf.cc:97:execute$18911: \y [48] -> \y [71]
+Add gate.top/$auto$insbuf.cc:97:execute$18912: \y [73] -> \y [88]
+Add gate.top/$auto$insbuf.cc:97:execute$18913: \y [74] -> \y [89]
+Add gate.top/$auto$insbuf.cc:97:execute$18914: \y [75] -> \y [90]
+Add gate.top/$auto$insbuf.cc:97:execute$18915: \y [76] -> \y [91]
+Add gate.top/$auto$insbuf.cc:97:execute$18916: \y [77] -> \y [92]
+Add gate.top/$auto$insbuf.cc:97:execute$18917: \y [78] -> \y [93]
+Add gate.top/$auto$insbuf.cc:97:execute$18918: \y [79] -> \y [94]
+Add gate.top/$auto$insbuf.cc:97:execute$18919: \y [72] -> \y [95]
+Add gate.top/$auto$insbuf.cc:97:execute$18920: \y [97] -> \y [112]
+Add gate.top/$auto$insbuf.cc:97:execute$18921: \y [98] -> \y [113]
+Add gate.top/$auto$insbuf.cc:97:execute$18922: \y [99] -> \y [114]
+Add gate.top/$auto$insbuf.cc:97:execute$18923: \y [100] -> \y [115]
+Add gate.top/$auto$insbuf.cc:97:execute$18924: \y [101] -> \y [116]
+Add gate.top/$auto$insbuf.cc:97:execute$18925: \y [102] -> \y [117]
+Add gate.top/$auto$insbuf.cc:97:execute$18926: \y [103] -> \y [118]
+Add gate.top/$auto$insbuf.cc:97:execute$18927: \y [96] -> \y [119]
+Add gate.top/$auto$insbuf.cc:97:execute$18928: \y [121] -> \y [136]
+Add gate.top/$auto$insbuf.cc:97:execute$18929: \y [122] -> \y [137]
+Add gate.top/$auto$insbuf.cc:97:execute$18930: \y [123] -> \y [138]
+Add gate.top/$auto$insbuf.cc:97:execute$18931: \y [124] -> \y [139]
+Add gate.top/$auto$insbuf.cc:97:execute$18932: \y [125] -> \y [140]
+Add gate.top/$auto$insbuf.cc:97:execute$18933: \y [126] -> \y [141]
+Add gate.top/$auto$insbuf.cc:97:execute$18934: \y [127] -> \y [142]
+Add gate.top/$auto$insbuf.cc:97:execute$18935: \y [120] -> \y [143]
+Add gate.top/$auto$insbuf.cc:97:execute$18936: \y [145] -> \y [160]
+Add gate.top/$auto$insbuf.cc:97:execute$18937: \y [146] -> \y [161]
+Add gate.top/$auto$insbuf.cc:97:execute$18938: \y [147] -> \y [162]
+Add gate.top/$auto$insbuf.cc:97:execute$18939: \y [148] -> \y [163]
+Add gate.top/$auto$insbuf.cc:97:execute$18940: \y [149] -> \y [164]
+Add gate.top/$auto$insbuf.cc:97:execute$18941: \y [150] -> \y [165]
+Add gate.top/$auto$insbuf.cc:97:execute$18942: \y [151] -> \y [166]
+Add gate.top/$auto$insbuf.cc:97:execute$18943: \y [144] -> \y [167]
+Add gate.top/$auto$insbuf.cc:97:execute$18944: \y [169] -> \y [184]
+Add gate.top/$auto$insbuf.cc:97:execute$18945: \y [170] -> \y [185]
+Add gate.top/$auto$insbuf.cc:97:execute$18946: \y [171] -> \y [186]
+Add gate.top/$auto$insbuf.cc:97:execute$18947: \y [172] -> \y [187]
+Add gate.top/$auto$insbuf.cc:97:execute$18948: \y [173] -> \y [188]
+Add gate.top/$auto$insbuf.cc:97:execute$18949: \y [174] -> \y [189]
+Add gate.top/$auto$insbuf.cc:97:execute$18950: \y [175] -> \y [190]
+Add gate.top/$auto$insbuf.cc:97:execute$18951: \y [168] -> \y [191]
+Add gate.top/$auto$insbuf.cc:97:execute$18952: \y [193] -> \y [208]
+Add gate.top/$auto$insbuf.cc:97:execute$18953: \y [194] -> \y [209]
+Add gate.top/$auto$insbuf.cc:97:execute$18954: \y [195] -> \y [210]
+Add gate.top/$auto$insbuf.cc:97:execute$18955: \y [196] -> \y [211]
+Add gate.top/$auto$insbuf.cc:97:execute$18956: \y [197] -> \y [212]
+Add gate.top/$auto$insbuf.cc:97:execute$18957: \y [198] -> \y [213]
+Add gate.top/$auto$insbuf.cc:97:execute$18958: \y [199] -> \y [214]
+Add gate.top/$auto$insbuf.cc:97:execute$18959: \y [192] -> \y [215]
+Add gate.top/$auto$insbuf.cc:97:execute$18960: \y [217] -> \y [232]
+Add gate.top/$auto$insbuf.cc:97:execute$18961: \y [218] -> \y [233]
+Add gate.top/$auto$insbuf.cc:97:execute$18962: \y [219] -> \y [234]
+Add gate.top/$auto$insbuf.cc:97:execute$18963: \y [220] -> \y [235]
+Add gate.top/$auto$insbuf.cc:97:execute$18964: \y [221] -> \y [236]
+Add gate.top/$auto$insbuf.cc:97:execute$18965: \y [222] -> \y [237]
+Add gate.top/$auto$insbuf.cc:97:execute$18966: \y [223] -> \y [238]
+Add gate.top/$auto$insbuf.cc:97:execute$18967: \y [216] -> \y [239]
+Add gate.top/$auto$insbuf.cc:97:execute$18968: \y [241] -> \y [256]
+Add gate.top/$auto$insbuf.cc:97:execute$18969: \y [242] -> \y [257]
+Add gate.top/$auto$insbuf.cc:97:execute$18970: \y [243] -> \y [258]
+Add gate.top/$auto$insbuf.cc:97:execute$18971: \y [244] -> \y [259]
+Add gate.top/$auto$insbuf.cc:97:execute$18972: \y [245] -> \y [260]
+Add gate.top/$auto$insbuf.cc:97:execute$18973: \y [246] -> \y [261]
+Add gate.top/$auto$insbuf.cc:97:execute$18974: \y [247] -> \y [262]
+Add gate.top/$auto$insbuf.cc:97:execute$18975: \y [240] -> \y [263]
+Add gate.top/$auto$insbuf.cc:97:execute$18976: \y [265] -> \y [280]
+Add gate.top/$auto$insbuf.cc:97:execute$18977: \y [266] -> \y [281]
+Add gate.top/$auto$insbuf.cc:97:execute$18978: \y [267] -> \y [282]
+Add gate.top/$auto$insbuf.cc:97:execute$18979: \y [268] -> \y [283]
+Add gate.top/$auto$insbuf.cc:97:execute$18980: \y [269] -> \y [284]
+Add gate.top/$auto$insbuf.cc:97:execute$18981: \y [270] -> \y [285]
+Add gate.top/$auto$insbuf.cc:97:execute$18982: \y [271] -> \y [286]
+Add gate.top/$auto$insbuf.cc:97:execute$18983: \y [264] -> \y [287]
+Add gate.top/$auto$insbuf.cc:97:execute$18984: \y [289] -> \y [304]
+Add gate.top/$auto$insbuf.cc:97:execute$18985: \y [290] -> \y [305]
+Add gate.top/$auto$insbuf.cc:97:execute$18986: \y [291] -> \y [306]
+Add gate.top/$auto$insbuf.cc:97:execute$18987: \y [292] -> \y [307]
+Add gate.top/$auto$insbuf.cc:97:execute$18988: \y [293] -> \y [308]
+Add gate.top/$auto$insbuf.cc:97:execute$18989: \y [294] -> \y [309]
+Add gate.top/$auto$insbuf.cc:97:execute$18990: \y [295] -> \y [310]
+Add gate.top/$auto$insbuf.cc:97:execute$18991: \y [288] -> \y [311]
+Add gate.top/$auto$insbuf.cc:97:execute$18992: \y [313] -> \y [328]
+Add gate.top/$auto$insbuf.cc:97:execute$18993: \y [314] -> \y [329]
+Add gate.top/$auto$insbuf.cc:97:execute$18994: \y [315] -> \y [330]
+Add gate.top/$auto$insbuf.cc:97:execute$18995: \y [316] -> \y [331]
+Add gate.top/$auto$insbuf.cc:97:execute$18996: \y [317] -> \y [332]
+Add gate.top/$auto$insbuf.cc:97:execute$18997: \y [318] -> \y [333]
+Add gate.top/$auto$insbuf.cc:97:execute$18998: \y [319] -> \y [334]
+Add gate.top/$auto$insbuf.cc:97:execute$18999: \y [312] -> \y [335]
+Add gate.top/$auto$insbuf.cc:97:execute$19000: \y [337] -> \y [352]
+Add gate.top/$auto$insbuf.cc:97:execute$19001: \y [338] -> \y [353]
+Add gate.top/$auto$insbuf.cc:97:execute$19002: \y [339] -> \y [354]
+Add gate.top/$auto$insbuf.cc:97:execute$19003: \y [340] -> \y [355]
+Add gate.top/$auto$insbuf.cc:97:execute$19004: \y [341] -> \y [356]
+Add gate.top/$auto$insbuf.cc:97:execute$19005: \y [342] -> \y [357]
+Add gate.top/$auto$insbuf.cc:97:execute$19006: \y [343] -> \y [358]
+Add gate.top/$auto$insbuf.cc:97:execute$19007: \y [336] -> \y [359]
+Add gate.top/$auto$insbuf.cc:97:execute$19008: \y [361] -> \y [376]
+Add gate.top/$auto$insbuf.cc:97:execute$19009: \y [362] -> \y [377]
+Add gate.top/$auto$insbuf.cc:97:execute$19010: \y [363] -> \y [378]
+Add gate.top/$auto$insbuf.cc:97:execute$19011: \y [364] -> \y [379]
+Add gate.top/$auto$insbuf.cc:97:execute$19012: \y [365] -> \y [380]
+Add gate.top/$auto$insbuf.cc:97:execute$19013: \y [366] -> \y [381]
+Add gate.top/$auto$insbuf.cc:97:execute$19014: \y [367] -> \y [382]
+Add gate.top/$auto$insbuf.cc:97:execute$19015: \y [360] -> \y [383]
+Rewrite gate.top/$auto$rename.cc:500:execute$18146/A: \y [53] -> \y [68]
+Rewrite gate.top/$auto$rename.cc:500:execute$18163/A: \y [73] -> \y [88]
+Rewrite gate.top/$auto$rename.cc:500:execute$18206/A: \y [5] -> \y [20]
+Rewrite gate.top/$auto$rename.cc:500:execute$18227/A: \y [336] -> \y [359]
+Rewrite gate.top/$auto$rename.cc:500:execute$18230/A: \y [343] -> \y [358]
+Rewrite gate.top/$auto$rename.cc:500:execute$18231/A: \y [341] -> \y [356]
+Rewrite gate.top/$auto$rename.cc:500:execute$18232/A: \y [340] -> \y [355]
+Rewrite gate.top/$auto$rename.cc:500:execute$18237/A: \y [312] -> \y [335]
+Rewrite gate.top/$auto$rename.cc:500:execute$18238/A: \y [317] -> \y [332]
+Rewrite gate.top/$auto$rename.cc:500:execute$18248/A: \y [288] -> \y [311]
+Rewrite gate.top/$auto$rename.cc:500:execute$18249/A: \y [295] -> \y [310]
+Rewrite gate.top/$auto$rename.cc:500:execute$18250/A: \y [292] -> \y [307]
+Rewrite gate.top/$auto$rename.cc:500:execute$18254/A: \y [72] -> \y [95]
+Rewrite gate.top/$auto$rename.cc:500:execute$18258/A: \y [271] -> \y [286]
+Rewrite gate.top/$auto$rename.cc:500:execute$18259/A: \y [270] -> \y [285]
+Rewrite gate.top/$auto$rename.cc:500:execute$18260/A: \y [269] -> \y [284]
+Rewrite gate.top/$auto$rename.cc:500:execute$18261/A: \y [265] -> \y [280]
+Rewrite gate.top/$auto$rename.cc:500:execute$18266/A: \y [29] -> \y [44]
+Rewrite gate.top/$auto$rename.cc:500:execute$18268/A: \y [240] -> \y [263]
+Rewrite gate.top/$auto$rename.cc:500:execute$18276/A: \y [216] -> \y [239]
+Rewrite gate.top/$auto$rename.cc:500:execute$18278/A: \y [222] -> \y [237]
+Rewrite gate.top/$auto$rename.cc:500:execute$18279/A: \y [221] -> \y [236]
+Rewrite gate.top/$auto$rename.cc:500:execute$18285/A: \y [192] -> \y [215]
+Rewrite gate.top/$auto$rename.cc:500:execute$18294/A: \y [174] -> \y [189]
+Rewrite gate.top/$auto$rename.cc:500:execute$18305/A: \y [147] -> \y [162]
+Rewrite gate.top/$auto$rename.cc:500:execute$18316/A: \y [126] -> \y [141]
+Rewrite gate.top/$auto$rename.cc:500:execute$18324/A: \y [102] -> \y [117]
+Rewrite gate.top/$auto$rename.cc:500:execute$18326/A: \y [100] -> \y [115]
+Rewrite gate.top/$auto$rename.cc:500:execute$18339/A: \y [78] -> \y [93]
+Rewrite gate.top/$auto$rename.cc:500:execute$18418/A: \y [75] -> \y [90]
+Rewrite gate.top/$auto$rename.cc:500:execute$18441/A: \y [7] -> \y [22]
+Rewrite gate.top/$auto$rename.cc:500:execute$18464/A: \y [26] -> \y [41]
+Add gold.top/$auto$insbuf.cc:97:execute$19016: \y [1] -> \y [16]
+Add gold.top/$auto$insbuf.cc:97:execute$19017: \y [2] -> \y [17]
+Add gold.top/$auto$insbuf.cc:97:execute$19018: \y [3] -> \y [18]
+Add gold.top/$auto$insbuf.cc:97:execute$19019: \y [4] -> \y [19]
+Add gold.top/$auto$insbuf.cc:97:execute$19020: \y [5] -> \y [20]
+Add gold.top/$auto$insbuf.cc:97:execute$19021: \y [6] -> \y [21]
+Add gold.top/$auto$insbuf.cc:97:execute$19022: \y [7] -> \y [22]
+Add gold.top/$auto$insbuf.cc:97:execute$19023: \y [0] -> \y [23]
+Add gold.top/$auto$insbuf.cc:97:execute$19024: \y [25] -> \y [40]
+Add gold.top/$auto$insbuf.cc:97:execute$19025: \y [26] -> \y [41]
+Add gold.top/$auto$insbuf.cc:97:execute$19026: \y [27] -> \y [42]
+Add gold.top/$auto$insbuf.cc:97:execute$19027: \y [28] -> \y [43]
+Add gold.top/$auto$insbuf.cc:97:execute$19028: \y [29] -> \y [44]
+Add gold.top/$auto$insbuf.cc:97:execute$19029: \y [30] -> \y [45]
+Add gold.top/$auto$insbuf.cc:97:execute$19030: \y [31] -> \y [46]
+Add gold.top/$auto$insbuf.cc:97:execute$19031: \y [24] -> \y [47]
+Add gold.top/$auto$insbuf.cc:97:execute$19032: \y [49] -> \y [64]
+Add gold.top/$auto$insbuf.cc:97:execute$19033: \y [50] -> \y [65]
+Add gold.top/$auto$insbuf.cc:97:execute$19034: \y [51] -> \y [66]
+Add gold.top/$auto$insbuf.cc:97:execute$19035: \y [52] -> \y [67]
+Add gold.top/$auto$insbuf.cc:97:execute$19036: \y [53] -> \y [68]
+Add gold.top/$auto$insbuf.cc:97:execute$19037: \y [54] -> \y [69]
+Add gold.top/$auto$insbuf.cc:97:execute$19038: \y [55] -> \y [70]
+Add gold.top/$auto$insbuf.cc:97:execute$19039: \y [48] -> \y [71]
+Add gold.top/$auto$insbuf.cc:97:execute$19040: \y [73] -> \y [88]
+Add gold.top/$auto$insbuf.cc:97:execute$19041: \y [74] -> \y [89]
+Add gold.top/$auto$insbuf.cc:97:execute$19042: \y [75] -> \y [90]
+Add gold.top/$auto$insbuf.cc:97:execute$19043: \y [76] -> \y [91]
+Add gold.top/$auto$insbuf.cc:97:execute$19044: \y [77] -> \y [92]
+Add gold.top/$auto$insbuf.cc:97:execute$19045: \y [78] -> \y [93]
+Add gold.top/$auto$insbuf.cc:97:execute$19046: \y [79] -> \y [94]
+Add gold.top/$auto$insbuf.cc:97:execute$19047: \y [72] -> \y [95]
+Add gold.top/$auto$insbuf.cc:97:execute$19048: \y [97] -> \y [112]
+Add gold.top/$auto$insbuf.cc:97:execute$19049: \y [98] -> \y [113]
+Add gold.top/$auto$insbuf.cc:97:execute$19050: \y [99] -> \y [114]
+Add gold.top/$auto$insbuf.cc:97:execute$19051: \y [100] -> \y [115]
+Add gold.top/$auto$insbuf.cc:97:execute$19052: \y [101] -> \y [116]
+Add gold.top/$auto$insbuf.cc:97:execute$19053: \y [102] -> \y [117]
+Add gold.top/$auto$insbuf.cc:97:execute$19054: \y [103] -> \y [118]
+Add gold.top/$auto$insbuf.cc:97:execute$19055: \y [96] -> \y [119]
+Add gold.top/$auto$insbuf.cc:97:execute$19056: \y [121] -> \y [136]
+Add gold.top/$auto$insbuf.cc:97:execute$19057: \y [122] -> \y [137]
+Add gold.top/$auto$insbuf.cc:97:execute$19058: \y [123] -> \y [138]
+Add gold.top/$auto$insbuf.cc:97:execute$19059: \y [124] -> \y [139]
+Add gold.top/$auto$insbuf.cc:97:execute$19060: \y [125] -> \y [140]
+Add gold.top/$auto$insbuf.cc:97:execute$19061: \y [126] -> \y [141]
+Add gold.top/$auto$insbuf.cc:97:execute$19062: \y [127] -> \y [142]
+Add gold.top/$auto$insbuf.cc:97:execute$19063: \y [120] -> \y [143]
+Add gold.top/$auto$insbuf.cc:97:execute$19064: \y [145] -> \y [160]
+Add gold.top/$auto$insbuf.cc:97:execute$19065: \y [146] -> \y [161]
+Add gold.top/$auto$insbuf.cc:97:execute$19066: \y [147] -> \y [162]
+Add gold.top/$auto$insbuf.cc:97:execute$19067: \y [148] -> \y [163]
+Add gold.top/$auto$insbuf.cc:97:execute$19068: \y [149] -> \y [164]
+Add gold.top/$auto$insbuf.cc:97:execute$19069: \y [150] -> \y [165]
+Add gold.top/$auto$insbuf.cc:97:execute$19070: \y [151] -> \y [166]
+Add gold.top/$auto$insbuf.cc:97:execute$19071: \y [144] -> \y [167]
+Add gold.top/$auto$insbuf.cc:97:execute$19072: \y [169] -> \y [184]
+Add gold.top/$auto$insbuf.cc:97:execute$19073: \y [170] -> \y [185]
+Add gold.top/$auto$insbuf.cc:97:execute$19074: \y [171] -> \y [186]
+Add gold.top/$auto$insbuf.cc:97:execute$19075: \y [172] -> \y [187]
+Add gold.top/$auto$insbuf.cc:97:execute$19076: \y [173] -> \y [188]
+Add gold.top/$auto$insbuf.cc:97:execute$19077: \y [174] -> \y [189]
+Add gold.top/$auto$insbuf.cc:97:execute$19078: \y [175] -> \y [190]
+Add gold.top/$auto$insbuf.cc:97:execute$19079: \y [168] -> \y [191]
+Add gold.top/$auto$insbuf.cc:97:execute$19080: \y [193] -> \y [208]
+Add gold.top/$auto$insbuf.cc:97:execute$19081: \y [194] -> \y [209]
+Add gold.top/$auto$insbuf.cc:97:execute$19082: \y [195] -> \y [210]
+Add gold.top/$auto$insbuf.cc:97:execute$19083: \y [196] -> \y [211]
+Add gold.top/$auto$insbuf.cc:97:execute$19084: \y [197] -> \y [212]
+Add gold.top/$auto$insbuf.cc:97:execute$19085: \y [198] -> \y [213]
+Add gold.top/$auto$insbuf.cc:97:execute$19086: \y [199] -> \y [214]
+Add gold.top/$auto$insbuf.cc:97:execute$19087: \y [192] -> \y [215]
+Add gold.top/$auto$insbuf.cc:97:execute$19088: \y [217] -> \y [232]
+Add gold.top/$auto$insbuf.cc:97:execute$19089: \y [218] -> \y [233]
+Add gold.top/$auto$insbuf.cc:97:execute$19090: \y [219] -> \y [234]
+Add gold.top/$auto$insbuf.cc:97:execute$19091: \y [220] -> \y [235]
+Add gold.top/$auto$insbuf.cc:97:execute$19092: \y [221] -> \y [236]
+Add gold.top/$auto$insbuf.cc:97:execute$19093: \y [222] -> \y [237]
+Add gold.top/$auto$insbuf.cc:97:execute$19094: \y [223] -> \y [238]
+Add gold.top/$auto$insbuf.cc:97:execute$19095: \y [216] -> \y [239]
+Add gold.top/$auto$insbuf.cc:97:execute$19096: \y [241] -> \y [256]
+Add gold.top/$auto$insbuf.cc:97:execute$19097: \y [242] -> \y [257]
+Add gold.top/$auto$insbuf.cc:97:execute$19098: \y [243] -> \y [258]
+Add gold.top/$auto$insbuf.cc:97:execute$19099: \y [244] -> \y [259]
+Add gold.top/$auto$insbuf.cc:97:execute$19100: \y [245] -> \y [260]
+Add gold.top/$auto$insbuf.cc:97:execute$19101: \y [246] -> \y [261]
+Add gold.top/$auto$insbuf.cc:97:execute$19102: \y [247] -> \y [262]
+Add gold.top/$auto$insbuf.cc:97:execute$19103: \y [240] -> \y [263]
+Add gold.top/$auto$insbuf.cc:97:execute$19104: \y [265] -> \y [280]
+Add gold.top/$auto$insbuf.cc:97:execute$19105: \y [266] -> \y [281]
+Add gold.top/$auto$insbuf.cc:97:execute$19106: \y [267] -> \y [282]
+Add gold.top/$auto$insbuf.cc:97:execute$19107: \y [268] -> \y [283]
+Add gold.top/$auto$insbuf.cc:97:execute$19108: \y [269] -> \y [284]
+Add gold.top/$auto$insbuf.cc:97:execute$19109: \y [270] -> \y [285]
+Add gold.top/$auto$insbuf.cc:97:execute$19110: \y [271] -> \y [286]
+Add gold.top/$auto$insbuf.cc:97:execute$19111: \y [264] -> \y [287]
+Add gold.top/$auto$insbuf.cc:97:execute$19112: \y [289] -> \y [304]
+Add gold.top/$auto$insbuf.cc:97:execute$19113: \y [290] -> \y [305]
+Add gold.top/$auto$insbuf.cc:97:execute$19114: \y [291] -> \y [306]
+Add gold.top/$auto$insbuf.cc:97:execute$19115: \y [292] -> \y [307]
+Add gold.top/$auto$insbuf.cc:97:execute$19116: \y [293] -> \y [308]
+Add gold.top/$auto$insbuf.cc:97:execute$19117: \y [294] -> \y [309]
+Add gold.top/$auto$insbuf.cc:97:execute$19118: \y [295] -> \y [310]
+Add gold.top/$auto$insbuf.cc:97:execute$19119: \y [288] -> \y [311]
+Add gold.top/$auto$insbuf.cc:97:execute$19120: \y [313] -> \y [328]
+Add gold.top/$auto$insbuf.cc:97:execute$19121: \y [314] -> \y [329]
+Add gold.top/$auto$insbuf.cc:97:execute$19122: \y [315] -> \y [330]
+Add gold.top/$auto$insbuf.cc:97:execute$19123: \y [316] -> \y [331]
+Add gold.top/$auto$insbuf.cc:97:execute$19124: \y [317] -> \y [332]
+Add gold.top/$auto$insbuf.cc:97:execute$19125: \y [318] -> \y [333]
+Add gold.top/$auto$insbuf.cc:97:execute$19126: \y [319] -> \y [334]
+Add gold.top/$auto$insbuf.cc:97:execute$19127: \y [312] -> \y [335]
+Add gold.top/$auto$insbuf.cc:97:execute$19128: \y [337] -> \y [352]
+Add gold.top/$auto$insbuf.cc:97:execute$19129: \y [338] -> \y [353]
+Add gold.top/$auto$insbuf.cc:97:execute$19130: \y [339] -> \y [354]
+Add gold.top/$auto$insbuf.cc:97:execute$19131: \y [340] -> \y [355]
+Add gold.top/$auto$insbuf.cc:97:execute$19132: \y [341] -> \y [356]
+Add gold.top/$auto$insbuf.cc:97:execute$19133: \y [342] -> \y [357]
+Add gold.top/$auto$insbuf.cc:97:execute$19134: \y [343] -> \y [358]
+Add gold.top/$auto$insbuf.cc:97:execute$19135: \y [336] -> \y [359]
+Add gold.top/$auto$insbuf.cc:97:execute$19136: \y [361] -> \y [376]
+Add gold.top/$auto$insbuf.cc:97:execute$19137: \y [362] -> \y [377]
+Add gold.top/$auto$insbuf.cc:97:execute$19138: \y [363] -> \y [378]
+Add gold.top/$auto$insbuf.cc:97:execute$19139: \y [364] -> \y [379]
+Add gold.top/$auto$insbuf.cc:97:execute$19140: \y [365] -> \y [380]
+Add gold.top/$auto$insbuf.cc:97:execute$19141: \y [366] -> \y [381]
+Add gold.top/$auto$insbuf.cc:97:execute$19142: \y [367] -> \y [382]
+Add gold.top/$auto$insbuf.cc:97:execute$19143: \y [360] -> \y [383]
+Rewrite gold.top/$auto$rename.cc:500:execute$18175/A: \y [336] -> \y [359]
+Rewrite gold.top/$auto$rename.cc:500:execute$18176/A: \y [343] -> \y [358]
+Rewrite gold.top/$auto$rename.cc:500:execute$18177/A: \y [341] -> \y [356]
+Rewrite gold.top/$auto$rename.cc:500:execute$18178/A: \y [340] -> \y [355]
+Rewrite gold.top/$auto$rename.cc:500:execute$18184/A: \y [312] -> \y [335]
+Rewrite gold.top/$auto$rename.cc:500:execute$18185/A: \y [317] -> \y [332]
+Rewrite gold.top/$auto$rename.cc:500:execute$18195/A: \y [288] -> \y [311]
+Rewrite gold.top/$auto$rename.cc:500:execute$18196/A: \y [295] -> \y [310]
+Rewrite gold.top/$auto$rename.cc:500:execute$18197/A: \y [292] -> \y [307]
+Rewrite gold.top/$auto$rename.cc:500:execute$18206/A: \y [271] -> \y [286]
+Rewrite gold.top/$auto$rename.cc:500:execute$18207/A: \y [270] -> \y [285]
+Rewrite gold.top/$auto$rename.cc:500:execute$18208/A: \y [269] -> \y [284]
+Rewrite gold.top/$auto$rename.cc:500:execute$18209/A: \y [265] -> \y [280]
+Rewrite gold.top/$auto$rename.cc:500:execute$18214/A: \y [240] -> \y [263]
+Rewrite gold.top/$auto$rename.cc:500:execute$18223/A: \y [216] -> \y [239]
+Rewrite gold.top/$auto$rename.cc:500:execute$18224/A: \y [222] -> \y [237]
+Rewrite gold.top/$auto$rename.cc:500:execute$18225/A: \y [221] -> \y [236]
+Rewrite gold.top/$auto$rename.cc:500:execute$18233/A: \y [192] -> \y [215]
+Rewrite gold.top/$auto$rename.cc:500:execute$18244/A: \y [174] -> \y [189]
+Rewrite gold.top/$auto$rename.cc:500:execute$18254/A: \y [147] -> \y [162]
+Rewrite gold.top/$auto$rename.cc:500:execute$18262/A: \y [126] -> \y [141]
+Rewrite gold.top/$auto$rename.cc:500:execute$18271/A: \y [102] -> \y [117]
+Rewrite gold.top/$auto$rename.cc:500:execute$18272/A: \y [100] -> \y [115]
+Rewrite gold.top/$auto$rename.cc:500:execute$18282/A: \y [72] -> \y [95]
+Rewrite gold.top/$auto$rename.cc:500:execute$18283/A: \y [78] -> \y [93]
+Rewrite gold.top/$auto$rename.cc:500:execute$18284/A: \y [75] -> \y [90]
+Rewrite gold.top/$auto$rename.cc:500:execute$18285/A: \y [73] -> \y [88]
+Rewrite gold.top/$auto$rename.cc:500:execute$18292/A: \y [53] -> \y [68]
+Rewrite gold.top/$auto$rename.cc:500:execute$18304/A: \y [29] -> \y [44]
+Rewrite gold.top/$auto$rename.cc:500:execute$18305/A: \y [26] -> \y [41]
+Rewrite gold.top/$auto$rename.cc:500:execute$18312/A: \y [7] -> \y [22]
+Rewrite gold.top/$auto$rename.cc:500:execute$18313/A: \y [5] -> \y [20]
+
+3. Executing EQY PARTITION task.
+
+3.1. Processing module pair gold.top / gate.top.
+
+3.1.1. Processing matched IDs for module top.
+
+3.1.2. Create fragment partitions for module top.
+Adding output bit \y [383] to partition 0.
+Adding output bit \y [0] to partition 0.
+Adding output bit \y [1] to partition 0.
+Adding output bit \y [8] to partition 0.
+Adding output bit \y [2] to partition 0.
+Adding output bit \y [9] to partition 0.
+Adding output bit \y [3] to partition 0.
+Adding output bit \y [10] to partition 0.
+Adding output bit \y [4] to partition 0.
+Adding output bit \y [11] to partition 0.
+Adding output bit \y [5] to partition 0.
+Adding output bit \y [6] to partition 0.
+Adding output bit \y [13] to partition 0.
+Adding output bit \y [7] to partition 0.
+Adding output bit \y [12] to partition 0.
+Adding output bit \y [20] to partition 0.
+Adding output bit \y [14] to partition 0.
+Adding output bit \y [22] to partition 0.
+Adding output bit \y [16] to partition 0.
+Adding output bit \y [17] to partition 0.
+Adding output bit \y [18] to partition 0.
+Adding output bit \y [19] to partition 0.
+Adding output bit \y [21] to partition 0.
+Adding output bit \y [23] to partition 0.
+Adding output bit \y [24] to partition 0.
+Adding output bit \y [39] to partition 0.
+Adding output bit \y [25] to partition 0.
+Adding output bit \y [32] to partition 0.
+Adding output bit \y [26] to partition 0.
+Adding output bit \y [27] to partition 0.
+Adding output bit \y [34] to partition 0.
+Adding output bit \y [28] to partition 0.
+Adding output bit \y [35] to partition 0.
+Adding output bit \y [29] to partition 0.
+Adding output bit \y [30] to partition 0.
+Adding output bit \y [37] to partition 0.
+Adding output bit \y [31] to partition 0.
+Adding output bit \y [38] to partition 0.
+Adding output bit \y [33] to partition 0.
+Adding output bit \y [41] to partition 0.
+Adding output bit \y [36] to partition 0.
+Adding output bit \y [44] to partition 0.
+Adding output bit \y [40] to partition 0.
+Adding output bit \y [42] to partition 0.
+Adding output bit \y [43] to partition 0.
+Adding output bit \y [45] to partition 0.
+Adding output bit \y [46] to partition 0.
+Adding output bit \y [47] to partition 0.
+Adding output bit \y [48] to partition 0.
+Adding output bit \y [63] to partition 0.
+Adding output bit \y [49] to partition 0.
+Adding output bit \y [56] to partition 0.
+Adding output bit \y [50] to partition 0.
+Adding output bit \y [57] to partition 0.
+Adding output bit \y [51] to partition 0.
+Adding output bit \y [58] to partition 0.
+Adding output bit \y [52] to partition 0.
+Adding output bit \y [59] to partition 0.
+Adding output bit \y [53] to partition 0.
+Adding output bit \y [54] to partition 0.
+Adding output bit \y [61] to partition 0.
+Adding output bit \y [55] to partition 0.
+Adding output bit \y [62] to partition 0.
+Adding output bit \y [60] to partition 0.
+Adding output bit \y [68] to partition 0.
+Adding output bit \y [64] to partition 0.
+Adding output bit \y [65] to partition 0.
+Adding output bit \y [66] to partition 0.
+Adding output bit \y [67] to partition 0.
+Adding output bit \y [69] to partition 0.
+Adding output bit \y [70] to partition 0.
+Adding output bit \y [71] to partition 0.
+Adding output bit \y [72] to partition 0.
+Adding output bit \y [73] to partition 0.
+Adding output bit \y [74] to partition 0.
+Adding output bit \y [81] to partition 0.
+Adding output bit \y [75] to partition 0.
+Adding output bit \y [76] to partition 0.
+Adding output bit \y [83] to partition 0.
+Adding output bit \y [77] to partition 0.
+Adding output bit \y [84] to partition 0.
+Adding output bit \y [78] to partition 0.
+Adding output bit \y [79] to partition 0.
+Adding output bit \y [86] to partition 0.
+Adding output bit \y [80] to partition 0.
+Adding output bit \y [88] to partition 0.
+Adding output bit \y [82] to partition 0.
+Adding output bit \y [90] to partition 0.
+Adding output bit \y [85] to partition 0.
+Adding output bit \y [93] to partition 0.
+Adding output bit \y [87] to partition 0.
+Adding output bit \y [95] to partition 0.
+Adding output bit \y [89] to partition 0.
+Adding output bit \y [91] to partition 0.
+Adding output bit \y [92] to partition 0.
+Adding output bit \y [94] to partition 0.
+Adding output bit \y [96] to partition 0.
+Adding output bit \y [111] to partition 0.
+Adding output bit \y [97] to partition 0.
+Adding output bit \y [104] to partition 0.
+Adding output bit \y [98] to partition 0.
+Adding output bit \y [105] to partition 0.
+Adding output bit \y [99] to partition 0.
+Adding output bit \y [106] to partition 0.
+Adding output bit \y [100] to partition 0.
+Adding output bit \y [101] to partition 0.
+Adding output bit \y [108] to partition 0.
+Adding output bit \y [102] to partition 0.
+Adding output bit \y [103] to partition 0.
+Adding output bit \y [110] to partition 0.
+Adding output bit \y [107] to partition 0.
+Adding output bit \y [115] to partition 0.
+Adding output bit \y [109] to partition 0.
+Adding output bit \y [117] to partition 0.
+Adding output bit \y [112] to partition 0.
+Adding output bit \y [113] to partition 0.
+Adding output bit \y [114] to partition 0.
+Adding output bit \y [116] to partition 0.
+Adding output bit \y [118] to partition 0.
+Adding output bit \y [119] to partition 0.
+Adding output bit \y [120] to partition 0.
+Adding output bit \y [135] to partition 0.
+Adding output bit \y [121] to partition 0.
+Adding output bit \y [128] to partition 0.
+Adding output bit \y [122] to partition 0.
+Adding output bit \y [129] to partition 0.
+Adding output bit \y [123] to partition 0.
+Adding output bit \y [130] to partition 0.
+Adding output bit \y [124] to partition 0.
+Adding output bit \y [131] to partition 0.
+Adding output bit \y [125] to partition 0.
+Adding output bit \y [132] to partition 0.
+Adding output bit \y [126] to partition 0.
+Adding output bit \y [127] to partition 0.
+Adding output bit \y [134] to partition 0.
+Adding output bit \y [133] to partition 0.
+Adding output bit \y [141] to partition 0.
+Adding output bit \y [136] to partition 0.
+Adding output bit \y [137] to partition 0.
+Adding output bit \y [138] to partition 0.
+Adding output bit \y [139] to partition 0.
+Adding output bit \y [140] to partition 0.
+Adding output bit \y [142] to partition 0.
+Adding output bit \y [143] to partition 0.
+Adding output bit \y [144] to partition 0.
+Adding output bit \y [159] to partition 0.
+Adding output bit \y [145] to partition 0.
+Adding output bit \y [152] to partition 0.
+Adding output bit \y [146] to partition 0.
+Adding output bit \y [153] to partition 0.
+Adding output bit \y [147] to partition 0.
+Adding output bit \y [148] to partition 0.
+Adding output bit \y [155] to partition 0.
+Adding output bit \y [149] to partition 0.
+Adding output bit \y [156] to partition 0.
+Adding output bit \y [150] to partition 0.
+Adding output bit \y [157] to partition 0.
+Adding output bit \y [151] to partition 0.
+Adding output bit \y [158] to partition 0.
+Adding output bit \y [154] to partition 0.
+Adding output bit \y [162] to partition 0.
+Adding output bit \y [160] to partition 0.
+Adding output bit \y [161] to partition 0.
+Adding output bit \y [163] to partition 0.
+Adding output bit \y [164] to partition 0.
+Adding output bit \y [165] to partition 0.
+Adding output bit \y [166] to partition 0.
+Adding output bit \y [167] to partition 0.
+Adding output bit \y [168] to partition 0.
+Adding output bit \y [183] to partition 0.
+Adding output bit \y [169] to partition 0.
+Adding output bit \y [176] to partition 0.
+Adding output bit \y [170] to partition 0.
+Adding output bit \y [177] to partition 0.
+Adding output bit \y [171] to partition 0.
+Adding output bit \y [178] to partition 0.
+Adding output bit \y [172] to partition 0.
+Adding output bit \y [179] to partition 0.
+Adding output bit \y [173] to partition 0.
+Adding output bit \y [180] to partition 0.
+Adding output bit \y [174] to partition 0.
+Adding output bit \y [175] to partition 0.
+Adding output bit \y [182] to partition 0.
+Adding output bit \y [181] to partition 0.
+Adding output bit \y [189] to partition 0.
+Adding output bit \y [184] to partition 0.
+Adding output bit \y [185] to partition 0.
+Adding output bit \y [186] to partition 0.
+Adding output bit \y [187] to partition 0.
+Adding output bit \y [188] to partition 0.
+Adding output bit \y [190] to partition 0.
+Adding output bit \y [191] to partition 0.
+Adding output bit \y [192] to partition 0.
+Adding output bit \y [193] to partition 0.
+Adding output bit \y [200] to partition 0.
+Adding output bit \y [194] to partition 0.
+Adding output bit \y [201] to partition 0.
+Adding output bit \y [195] to partition 0.
+Adding output bit \y [202] to partition 0.
+Adding output bit \y [196] to partition 0.
+Adding output bit \y [203] to partition 0.
+Adding output bit \y [197] to partition 0.
+Adding output bit \y [204] to partition 0.
+Adding output bit \y [198] to partition 0.
+Adding output bit \y [205] to partition 0.
+Adding output bit \y [199] to partition 0.
+Adding output bit \y [206] to partition 0.
+Adding output bit \y [207] to partition 0.
+Adding output bit \y [215] to partition 0.
+Adding output bit \y [208] to partition 0.
+Adding output bit \y [209] to partition 0.
+Adding output bit \y [210] to partition 0.
+Adding output bit \y [211] to partition 0.
+Adding output bit \y [212] to partition 0.
+Adding output bit \y [213] to partition 0.
+Adding output bit \y [214] to partition 0.
+Adding output bit \y [216] to partition 0.
+Adding output bit \y [217] to partition 0.
+Adding output bit \y [224] to partition 0.
+Adding output bit \y [218] to partition 0.
+Adding output bit \y [225] to partition 0.
+Adding output bit \y [219] to partition 0.
+Adding output bit \y [226] to partition 0.
+Adding output bit \y [220] to partition 0.
+Adding output bit \y [227] to partition 0.
+Adding output bit \y [221] to partition 0.
+Adding output bit \y [222] to partition 0.
+Adding output bit \y [223] to partition 0.
+Adding output bit \y [230] to partition 0.
+Adding output bit \y [228] to partition 0.
+Adding output bit \y [236] to partition 0.
+Adding output bit \y [229] to partition 0.
+Adding output bit \y [237] to partition 0.
+Adding output bit \y [231] to partition 0.
+Adding output bit \y [239] to partition 0.
+Adding output bit \y [232] to partition 0.
+Adding output bit \y [233] to partition 0.
+Adding output bit \y [234] to partition 0.
+Adding output bit \y [235] to partition 0.
+Adding output bit \y [238] to partition 0.
+Adding output bit \y [240] to partition 0.
+Adding output bit \y [241] to partition 0.
+Adding output bit \y [248] to partition 0.
+Adding output bit \y [242] to partition 0.
+Adding output bit \y [249] to partition 0.
+Adding output bit \y [243] to partition 0.
+Adding output bit \y [250] to partition 0.
+Adding output bit \y [244] to partition 0.
+Adding output bit \y [251] to partition 0.
+Adding output bit \y [245] to partition 0.
+Adding output bit \y [252] to partition 0.
+Adding output bit \y [246] to partition 0.
+Adding output bit \y [253] to partition 0.
+Adding output bit \y [247] to partition 0.
+Adding output bit \y [254] to partition 0.
+Adding output bit \y [255] to partition 0.
+Adding output bit \y [263] to partition 0.
+Adding output bit \y [256] to partition 0.
+Adding output bit \y [257] to partition 0.
+Adding output bit \y [258] to partition 0.
+Adding output bit \y [259] to partition 0.
+Adding output bit \y [260] to partition 0.
+Adding output bit \y [261] to partition 0.
+Adding output bit \y [262] to partition 0.
+Adding output bit \y [264] to partition 0.
+Adding output bit \y [279] to partition 0.
+Adding output bit \y [265] to partition 0.
+Adding output bit \y [266] to partition 0.
+Adding output bit \y [273] to partition 0.
+Adding output bit \y [267] to partition 0.
+Adding output bit \y [274] to partition 0.
+Adding output bit \y [268] to partition 0.
+Adding output bit \y [275] to partition 0.
+Adding output bit \y [269] to partition 0.
+Adding output bit \y [270] to partition 0.
+Adding output bit \y [271] to partition 0.
+Adding output bit \y [272] to partition 0.
+Adding output bit \y [280] to partition 0.
+Adding output bit \y [276] to partition 0.
+Adding output bit \y [284] to partition 0.
+Adding output bit \y [277] to partition 0.
+Adding output bit \y [285] to partition 0.
+Adding output bit \y [278] to partition 0.
+Adding output bit \y [286] to partition 0.
+Adding output bit \y [281] to partition 0.
+Adding output bit \y [282] to partition 0.
+Adding output bit \y [283] to partition 0.
+Adding output bit \y [287] to partition 0.
+Adding output bit \y [288] to partition 0.
+Adding output bit \y [289] to partition 0.
+Adding output bit \y [296] to partition 0.
+Adding output bit \y [290] to partition 0.
+Adding output bit \y [297] to partition 0.
+Adding output bit \y [291] to partition 0.
+Adding output bit \y [298] to partition 0.
+Adding output bit \y [292] to partition 0.
+Adding output bit \y [293] to partition 0.
+Adding output bit \y [300] to partition 0.
+Adding output bit \y [294] to partition 0.
+Adding output bit \y [301] to partition 0.
+Adding output bit \y [295] to partition 0.
+Adding output bit \y [299] to partition 0.
+Adding output bit \y [307] to partition 0.
+Adding output bit \y [302] to partition 0.
+Adding output bit \y [310] to partition 0.
+Adding output bit \y [303] to partition 0.
+Adding output bit \y [311] to partition 0.
+Adding output bit \y [304] to partition 0.
+Adding output bit \y [305] to partition 0.
+Adding output bit \y [306] to partition 0.
+Adding output bit \y [308] to partition 0.
+Adding output bit \y [309] to partition 0.
+Adding output bit \y [312] to partition 0.
+Adding output bit \y [313] to partition 0.
+Adding output bit \y [320] to partition 0.
+Adding output bit \y [314] to partition 0.
+Adding output bit \y [321] to partition 0.
+Adding output bit \y [315] to partition 0.
+Adding output bit \y [322] to partition 0.
+Adding output bit \y [316] to partition 0.
+Adding output bit \y [323] to partition 0.
+Adding output bit \y [317] to partition 0.
+Adding output bit \y [318] to partition 0.
+Adding output bit \y [325] to partition 0.
+Adding output bit \y [319] to partition 0.
+Adding output bit \y [326] to partition 0.
+Adding output bit \y [324] to partition 0.
+Adding output bit \y [332] to partition 0.
+Adding output bit \y [327] to partition 0.
+Adding output bit \y [335] to partition 0.
+Adding output bit \y [328] to partition 0.
+Adding output bit \y [329] to partition 0.
+Adding output bit \y [330] to partition 0.
+Adding output bit \y [331] to partition 0.
+Adding output bit \y [333] to partition 0.
+Adding output bit \y [334] to partition 0.
+Adding output bit \y [336] to partition 0.
+Adding output bit \y [337] to partition 0.
+Adding output bit \y [344] to partition 0.
+Adding output bit \y [338] to partition 0.
+Adding output bit \y [345] to partition 0.
+Adding output bit \y [339] to partition 0.
+Adding output bit \y [346] to partition 0.
+Adding output bit \y [340] to partition 0.
+Adding output bit \y [341] to partition 0.
+Adding output bit \y [342] to partition 0.
+Adding output bit \y [349] to partition 0.
+Adding output bit \y [343] to partition 0.
+Adding output bit \y [347] to partition 0.
+Adding output bit \y [355] to partition 0.
+Adding output bit \y [348] to partition 0.
+Adding output bit \y [356] to partition 0.
+Adding output bit \y [350] to partition 0.
+Adding output bit \y [358] to partition 0.
+Adding output bit \y [351] to partition 0.
+Adding output bit \y [359] to partition 0.
+Adding output bit \y [352] to partition 0.
+Adding output bit \y [353] to partition 0.
+Adding output bit \y [354] to partition 0.
+Adding output bit \y [357] to partition 0.
+Adding output bit \y [360] to partition 0.
+Adding output bit \y [361] to partition 0.
+Adding output bit \y [368] to partition 0.
+Adding output bit \y [362] to partition 0.
+Adding output bit \y [369] to partition 0.
+Adding output bit \y [363] to partition 0.
+Adding output bit \y [370] to partition 0.
+Adding output bit \y [364] to partition 0.
+Adding output bit \y [371] to partition 0.
+Adding output bit \y [365] to partition 0.
+Adding output bit \y [372] to partition 0.
+Adding output bit \y [366] to partition 0.
+Adding output bit \y [373] to partition 0.
+Adding output bit \y [367] to partition 0.
+Adding output bit \y [374] to partition 0.
+Adding output bit \y [375] to partition 0.
+Adding output bit \y [376] to partition 0.
+Adding output bit \y [377] to partition 0.
+Adding output bit \y [378] to partition 0.
+Adding output bit \y [379] to partition 0.
+Adding output bit \y [380] to partition 0.
+Adding output bit \y [381] to partition 0.
+Adding output bit \y [382] to partition 0.
+Adding output bit \y [15] to partition 0.
+
+Final list of fragment partitions:
+  0 \y [15] \y [382] \y [381] \y [380] \y [379] \y [378] \y [377] \y [376] \y [375] \y [374] \y [367] \y [373] \y [366] \y [372] \y [365] \y [371] \y [364] \y [370] \y [363] \y [369] \y [362] \y [368] \y [361] \y [360] \y [357] \y [354] \y [353] \y [352] \y [359] \y [351] \y [358] \y [350] \y [356] \y [348] \y [355] \y [347] \y [343] \y [349] \y [342] \y [341] \y [340] \y [346] \y [339] \y [345] \y [338] \y [344] \y [337] \y [336] \y [334] \y [333] \y [331] \y [330] \y [329] \y [328] \y [335] \y [327] \y [332] \y [324] \y [326] \y [319] \y [325] \y [318] \y [317] \y [323] \y [316] \y [322] \y [315] \y [321] \y [314] \y [320] \y [313] \y [312] \y [309] \y [308] \y [306] \y [305] \y [304] \y [311] \y [303] \y [310] \y [302] \y [307] \y [299] \y [295] \y [301] \y [294] \y [300] \y [293] \y [292] \y [298] \y [291] \y [297] \y [290] \y [296] \y [289] \y [288] \y [287] \y [283] \y [282] \y [281] \y [286] \y [278] \y [285] \y [277] \y [284] \y [276] \y [280] \y [272] \y [271] \y [270] \y [269] \y [275] \y [268] \y [274] \y [267] \y [273] \y [266] \y [265] \y [279] \y [264] \y [262] \y [261] \y [260] \y [259] \y [258] \y [257] \y [256] \y [263] \y [255] \y [254] \y [247] \y [253] \y [246] \y [252] \y [245] \y [251] \y [244] \y [250] \y [243] \y [249] \y [242] \y [248] \y [241] \y [240] \y [238] \y [235] \y [234] \y [233] \y [232] \y [239] \y [231] \y [237] \y [229] \y [236] \y [228] \y [230] \y [223] \y [222] \y [221] \y [227] \y [220] \y [226] \y [219] \y [225] \y [218] \y [224] \y [217] \y [216] \y [214] \y [213] \y [212] \y [211] \y [210] \y [209] \y [208] \y [215] \y [207] \y [206] \y [199] \y [205] \y [198] \y [204] \y [197] \y [203] \y [196] \y [202] \y [195] \y [201] \y [194] \y [200] \y [193] \y [192] \y [191] \y [190] \y [188] \y [187] \y [186] \y [185] \y [184] \y [189] \y [181] \y [182] \y [175] \y [174] \y [180] \y [173] \y [179] \y [172] \y [178] \y [171] \y [177] \y [170] \y [176] \y [169] \y [183] \y [168] \y [167] \y [166] \y [165] \y [164] \y [163] \y [161] \y [160] \y [162] \y [154] \y [158] \y [151] \y [157] \y [150] \y [156] \y [149] \y [155] \y [148] \y [147] \y [153] \y [146] \y [152] \y [145] \y [159] \y [144] \y [143] \y [142] \y [140] \y [139] \y [138] \y [137] \y [136] \y [141] \y [133] \y [134] \y [127] \y [126] \y [132] \y [125] \y [131] \y [124] \y [130] \y [123] \y [129] \y [122] \y [128] \y [121] \y [135] \y [120] \y [119] \y [118] \y [116] \y [114] \y [113] \y [112] \y [117] \y [109] \y [115] \y [107] \y [110] \y [103] \y [102] \y [108] \y [101] \y [100] \y [106] \y [99] \y [105] \y [98] \y [104] \y [97] \y [111] \y [96] \y [94] \y [92] \y [91] \y [89] \y [95] \y [87] \y [93] \y [85] \y [90] \y [82] \y [88] \y [80] \y [86] \y [79] \y [78] \y [84] \y [77] \y [83] \y [76] \y [75] \y [81] \y [74] \y [73] \y [72] \y [71] \y [70] \y [69] \y [67] \y [66] \y [65] \y [64] \y [68] \y [60] \y [62] \y [55] \y [61] \y [54] \y [53] \y [59] \y [52] \y [58] \y [51] \y [57] \y [50] \y [56] \y [49] \y [63] \y [48] \y [47] \y [46] \y [45] \y [43] \y [42] \y [40] \y [44] \y [36] \y [41] \y [33] \y [38] \y [31] \y [37] \y [30] \y [29] \y [35] \y [28] \y [34] \y [27] \y [26] \y [32] \y [25] \y [39] \y [24] \y [23] \y [21] \y [19] \y [18] \y [17] \y [16] \y [22] \y [14] \y [20] \y [12] \y [7] \y [13] \y [6] \y [5] \y [11] \y [4] \y [10] \y [3] \y [9] \y [2] \y [8] \y [1] \y [0] \y [383] <= \addr [73] \addr [70] \addr [72] \addr [74] \addr [71] \addr [68] \addr [65] \addr [67] \addr [69] \addr [66] \addr [63] \addr [60] \addr [62] \addr [64] \addr [61] \addr [58] \addr [55] \addr [57] \addr [59] \addr [56] \addr [53] \addr [50] \addr [52] \addr [54] \addr [51] \addr [48] \addr [45] \addr [47] \addr [49] \addr [46] \addr [43] \addr [40] \addr [42] \addr [44] \addr [41] \addr [38] \addr [35] \addr [37] \addr [39] \addr [36] \addr [33] \addr [30] \addr [32] \addr [34] \addr [31] \addr [28] \addr [25] \addr [27] \addr [29] \addr [26] \addr [23] \addr [20] \addr [22] \addr [24] \addr [21] \addr [18] \addr [15] \addr [17] \addr [19] \addr [16] \addr [13] \addr [10] \addr [12] \addr [14] \addr [11] \addr [8] \addr [5] \addr [7] \addr [9] \addr [6] \addr [3] \addr [0] \addr [2] \addr [4] \addr [1] \addr [78] \addr [75] \addr [77] \addr [79] \addr [76]
+
+3.1.3. Execute partitioning commands for module top.
+
+Amending partitions:
+Execute queued amend rules.
+Find automatic amend rules.
+  Checking partition 0:
+    Found 0 po matches and 0 auto/pi matches.
+
+Assigning partition names:
+Automatically naming partition 0 'y' using a PO name: y
+
+Partition Summary:
+  Fragments:
+       0: \y
+  Partitions:
+       0: y
+  Fragment-Partition-Matrix:
+           0          
+           0
+       0   #  y
+  Legend for Fragment-Partition-Matrix:
+      #  .... partition is this single fragment
+      *  .... fragments merged into single partition
+      +  .... fragments amended to the partition
+      =  .... fragment is driving a partition input
+      -  .... fragment is driving an amended fragment
+      .  .... no relationship between fragment and partition
+      ,  .... unused fragment index (as result of grouping)
+
+3.1.4. Write partitions for module top.
+Adding output bit \y [383] to partition 1.
+Adding output bit \y [382] to partition 1.
+Adding output bit \y [381] to partition 1.
+Adding output bit \y [380] to partition 1.
+Adding output bit \y [379] to partition 1.
+Adding output bit \y [378] to partition 1.
+Adding output bit \y [377] to partition 1.
+Adding output bit \y [376] to partition 1.
+Adding output bit \y [375] to partition 1.
+Adding output bit \y [374] to partition 1.
+Adding output bit \y [373] to partition 1.
+Adding output bit \y [372] to partition 1.
+Adding output bit \y [371] to partition 1.
+Adding output bit \y [370] to partition 1.
+Adding output bit \y [369] to partition 1.
+Adding output bit \y [368] to partition 1.
+Adding output bit \y [367] to partition 1.
+Adding output bit \y [366] to partition 1.
+Adding output bit \y [365] to partition 1.
+Adding output bit \y [364] to partition 1.
+Adding output bit \y [363] to partition 1.
+Adding output bit \y [362] to partition 1.
+Adding output bit \y [361] to partition 1.
+Adding output bit \y [360] to partition 1.
+Adding output bit \y [359] to partition 1.
+Adding output bit \y [358] to partition 1.
+Adding output bit \y [357] to partition 1.
+Adding output bit \y [356] to partition 1.
+Adding output bit \y [355] to partition 1.
+Adding output bit \y [354] to partition 1.
+Adding output bit \y [353] to partition 1.
+Adding output bit \y [352] to partition 1.
+Adding output bit \y [351] to partition 1.
+Adding output bit \y [350] to partition 1.
+Adding output bit \y [349] to partition 1.
+Adding output bit \y [348] to partition 1.
+Adding output bit \y [347] to partition 1.
+Adding output bit \y [346] to partition 1.
+Adding output bit \y [345] to partition 1.
+Adding output bit \y [344] to partition 1.
+Adding output bit \y [343] to partition 1.
+Adding output bit \y [342] to partition 1.
+Adding output bit \y [341] to partition 1.
+Adding output bit \y [340] to partition 1.
+Adding output bit \y [339] to partition 1.
+Adding output bit \y [338] to partition 1.
+Adding output bit \y [337] to partition 1.
+Adding output bit \y [336] to partition 1.
+Adding output bit \y [335] to partition 1.
+Adding output bit \y [334] to partition 1.
+Adding output bit \y [333] to partition 1.
+Adding output bit \y [332] to partition 1.
+Adding output bit \y [331] to partition 1.
+Adding output bit \y [330] to partition 1.
+Adding output bit \y [329] to partition 1.
+Adding output bit \y [328] to partition 1.
+Adding output bit \y [327] to partition 1.
+Adding output bit \y [326] to partition 1.
+Adding output bit \y [325] to partition 1.
+Adding output bit \y [324] to partition 1.
+Adding output bit \y [323] to partition 1.
+Adding output bit \y [322] to partition 1.
+Adding output bit \y [321] to partition 1.
+Adding output bit \y [320] to partition 1.
+Adding output bit \y [319] to partition 1.
+Adding output bit \y [318] to partition 1.
+Adding output bit \y [317] to partition 1.
+Adding output bit \y [316] to partition 1.
+Adding output bit \y [315] to partition 1.
+Adding output bit \y [314] to partition 1.
+Adding output bit \y [313] to partition 1.
+Adding output bit \y [312] to partition 1.
+Adding output bit \y [311] to partition 1.
+Adding output bit \y [310] to partition 1.
+Adding output bit \y [309] to partition 1.
+Adding output bit \y [308] to partition 1.
+Adding output bit \y [307] to partition 1.
+Adding output bit \y [306] to partition 1.
+Adding output bit \y [305] to partition 1.
+Adding output bit \y [304] to partition 1.
+Adding output bit \y [303] to partition 1.
+Adding output bit \y [302] to partition 1.
+Adding output bit \y [301] to partition 1.
+Adding output bit \y [300] to partition 1.
+Adding output bit \y [299] to partition 1.
+Adding output bit \y [298] to partition 1.
+Adding output bit \y [297] to partition 1.
+Adding output bit \y [296] to partition 1.
+Adding output bit \y [295] to partition 1.
+Adding output bit \y [294] to partition 1.
+Adding output bit \y [293] to partition 1.
+Adding output bit \y [292] to partition 1.
+Adding output bit \y [291] to partition 1.
+Adding output bit \y [290] to partition 1.
+Adding output bit \y [289] to partition 1.
+Adding output bit \y [288] to partition 1.
+Adding output bit \y [287] to partition 1.
+Adding output bit \y [286] to partition 1.
+Adding output bit \y [285] to partition 1.
+Adding output bit \y [284] to partition 1.
+Adding output bit \y [283] to partition 1.
+Adding output bit \y [282] to partition 1.
+Adding output bit \y [281] to partition 1.
+Adding output bit \y [280] to partition 1.
+Adding output bit \y [279] to partition 1.
+Adding output bit \y [278] to partition 1.
+Adding output bit \y [277] to partition 1.
+Adding output bit \y [276] to partition 1.
+Adding output bit \y [275] to partition 1.
+Adding output bit \y [274] to partition 1.
+Adding output bit \y [273] to partition 1.
+Adding output bit \y [272] to partition 1.
+Adding output bit \y [271] to partition 1.
+Adding output bit \y [270] to partition 1.
+Adding output bit \y [269] to partition 1.
+Adding output bit \y [268] to partition 1.
+Adding output bit \y [267] to partition 1.
+Adding output bit \y [266] to partition 1.
+Adding output bit \y [265] to partition 1.
+Adding output bit \y [264] to partition 1.
+Adding output bit \y [263] to partition 1.
+Adding output bit \y [262] to partition 1.
+Adding output bit \y [261] to partition 1.
+Adding output bit \y [260] to partition 1.
+Adding output bit \y [259] to partition 1.
+Adding output bit \y [258] to partition 1.
+Adding output bit \y [257] to partition 1.
+Adding output bit \y [256] to partition 1.
+Adding output bit \y [255] to partition 1.
+Adding output bit \y [254] to partition 1.
+Adding output bit \y [253] to partition 1.
+Adding output bit \y [252] to partition 1.
+Adding output bit \y [251] to partition 1.
+Adding output bit \y [250] to partition 1.
+Adding output bit \y [249] to partition 1.
+Adding output bit \y [248] to partition 1.
+Adding output bit \y [247] to partition 1.
+Adding output bit \y [246] to partition 1.
+Adding output bit \y [245] to partition 1.
+Adding output bit \y [244] to partition 1.
+Adding output bit \y [243] to partition 1.
+Adding output bit \y [242] to partition 1.
+Adding output bit \y [241] to partition 1.
+Adding output bit \y [240] to partition 1.
+Adding output bit \y [239] to partition 1.
+Adding output bit \y [238] to partition 1.
+Adding output bit \y [237] to partition 1.
+Adding output bit \y [236] to partition 1.
+Adding output bit \y [235] to partition 1.
+Adding output bit \y [234] to partition 1.
+Adding output bit \y [233] to partition 1.
+Adding output bit \y [232] to partition 1.
+Adding output bit \y [231] to partition 1.
+Adding output bit \y [230] to partition 1.
+Adding output bit \y [229] to partition 1.
+Adding output bit \y [228] to partition 1.
+Adding output bit \y [227] to partition 1.
+Adding output bit \y [226] to partition 1.
+Adding output bit \y [225] to partition 1.
+Adding output bit \y [224] to partition 1.
+Adding output bit \y [223] to partition 1.
+Adding output bit \y [222] to partition 1.
+Adding output bit \y [221] to partition 1.
+Adding output bit \y [220] to partition 1.
+Adding output bit \y [219] to partition 1.
+Adding output bit \y [218] to partition 1.
+Adding output bit \y [217] to partition 1.
+Adding output bit \y [216] to partition 1.
+Adding output bit \y [215] to partition 1.
+Adding output bit \y [214] to partition 1.
+Adding output bit \y [213] to partition 1.
+Adding output bit \y [212] to partition 1.
+Adding output bit \y [211] to partition 1.
+Adding output bit \y [210] to partition 1.
+Adding output bit \y [209] to partition 1.
+Adding output bit \y [208] to partition 1.
+Adding output bit \y [207] to partition 1.
+Adding output bit \y [206] to partition 1.
+Adding output bit \y [205] to partition 1.
+Adding output bit \y [204] to partition 1.
+Adding output bit \y [203] to partition 1.
+Adding output bit \y [202] to partition 1.
+Adding output bit \y [201] to partition 1.
+Adding output bit \y [200] to partition 1.
+Adding output bit \y [199] to partition 1.
+Adding output bit \y [198] to partition 1.
+Adding output bit \y [197] to partition 1.
+Adding output bit \y [196] to partition 1.
+Adding output bit \y [195] to partition 1.
+Adding output bit \y [194] to partition 1.
+Adding output bit \y [193] to partition 1.
+Adding output bit \y [192] to partition 1.
+Adding output bit \y [191] to partition 1.
+Adding output bit \y [190] to partition 1.
+Adding output bit \y [189] to partition 1.
+Adding output bit \y [188] to partition 1.
+Adding output bit \y [187] to partition 1.
+Adding output bit \y [186] to partition 1.
+Adding output bit \y [185] to partition 1.
+Adding output bit \y [184] to partition 1.
+Adding output bit \y [183] to partition 1.
+Adding output bit \y [182] to partition 1.
+Adding output bit \y [181] to partition 1.
+Adding output bit \y [180] to partition 1.
+Adding output bit \y [179] to partition 1.
+Adding output bit \y [178] to partition 1.
+Adding output bit \y [177] to partition 1.
+Adding output bit \y [176] to partition 1.
+Adding output bit \y [175] to partition 1.
+Adding output bit \y [174] to partition 1.
+Adding output bit \y [173] to partition 1.
+Adding output bit \y [172] to partition 1.
+Adding output bit \y [171] to partition 1.
+Adding output bit \y [170] to partition 1.
+Adding output bit \y [169] to partition 1.
+Adding output bit \y [168] to partition 1.
+Adding output bit \y [167] to partition 1.
+Adding output bit \y [166] to partition 1.
+Adding output bit \y [165] to partition 1.
+Adding output bit \y [164] to partition 1.
+Adding output bit \y [163] to partition 1.
+Adding output bit \y [162] to partition 1.
+Adding output bit \y [161] to partition 1.
+Adding output bit \y [160] to partition 1.
+Adding output bit \y [159] to partition 1.
+Adding output bit \y [158] to partition 1.
+Adding output bit \y [157] to partition 1.
+Adding output bit \y [156] to partition 1.
+Adding output bit \y [155] to partition 1.
+Adding output bit \y [154] to partition 1.
+Adding output bit \y [153] to partition 1.
+Adding output bit \y [152] to partition 1.
+Adding output bit \y [151] to partition 1.
+Adding output bit \y [150] to partition 1.
+Adding output bit \y [149] to partition 1.
+Adding output bit \y [148] to partition 1.
+Adding output bit \y [147] to partition 1.
+Adding output bit \y [146] to partition 1.
+Adding output bit \y [145] to partition 1.
+Adding output bit \y [144] to partition 1.
+Adding output bit \y [143] to partition 1.
+Adding output bit \y [142] to partition 1.
+Adding output bit \y [141] to partition 1.
+Adding output bit \y [140] to partition 1.
+Adding output bit \y [139] to partition 1.
+Adding output bit \y [138] to partition 1.
+Adding output bit \y [137] to partition 1.
+Adding output bit \y [136] to partition 1.
+Adding output bit \y [135] to partition 1.
+Adding output bit \y [134] to partition 1.
+Adding output bit \y [133] to partition 1.
+Adding output bit \y [132] to partition 1.
+Adding output bit \y [131] to partition 1.
+Adding output bit \y [130] to partition 1.
+Adding output bit \y [129] to partition 1.
+Adding output bit \y [128] to partition 1.
+Adding output bit \y [127] to partition 1.
+Adding output bit \y [126] to partition 1.
+Adding output bit \y [125] to partition 1.
+Adding output bit \y [124] to partition 1.
+Adding output bit \y [123] to partition 1.
+Adding output bit \y [122] to partition 1.
+Adding output bit \y [121] to partition 1.
+Adding output bit \y [120] to partition 1.
+Adding output bit \y [119] to partition 1.
+Adding output bit \y [118] to partition 1.
+Adding output bit \y [117] to partition 1.
+Adding output bit \y [116] to partition 1.
+Adding output bit \y [115] to partition 1.
+Adding output bit \y [114] to partition 1.
+Adding output bit \y [113] to partition 1.
+Adding output bit \y [112] to partition 1.
+Adding output bit \y [111] to partition 1.
+Adding output bit \y [110] to partition 1.
+Adding output bit \y [109] to partition 1.
+Adding output bit \y [108] to partition 1.
+Adding output bit \y [107] to partition 1.
+Adding output bit \y [106] to partition 1.
+Adding output bit \y [105] to partition 1.
+Adding output bit \y [104] to partition 1.
+Adding output bit \y [103] to partition 1.
+Adding output bit \y [102] to partition 1.
+Adding output bit \y [101] to partition 1.
+Adding output bit \y [100] to partition 1.
+Adding output bit \y [99] to partition 1.
+Adding output bit \y [98] to partition 1.
+Adding output bit \y [97] to partition 1.
+Adding output bit \y [96] to partition 1.
+Adding output bit \y [95] to partition 1.
+Adding output bit \y [94] to partition 1.
+Adding output bit \y [93] to partition 1.
+Adding output bit \y [92] to partition 1.
+Adding output bit \y [91] to partition 1.
+Adding output bit \y [90] to partition 1.
+Adding output bit \y [89] to partition 1.
+Adding output bit \y [88] to partition 1.
+Adding output bit \y [87] to partition 1.
+Adding output bit \y [86] to partition 1.
+Adding output bit \y [85] to partition 1.
+Adding output bit \y [84] to partition 1.
+Adding output bit \y [83] to partition 1.
+Adding output bit \y [82] to partition 1.
+Adding output bit \y [81] to partition 1.
+Adding output bit \y [80] to partition 1.
+Adding output bit \y [79] to partition 1.
+Adding output bit \y [78] to partition 1.
+Adding output bit \y [77] to partition 1.
+Adding output bit \y [76] to partition 1.
+Adding output bit \y [75] to partition 1.
+Adding output bit \y [74] to partition 1.
+Adding output bit \y [73] to partition 1.
+Adding output bit \y [72] to partition 1.
+Adding output bit \y [71] to partition 1.
+Adding output bit \y [70] to partition 1.
+Adding output bit \y [69] to partition 1.
+Adding output bit \y [68] to partition 1.
+Adding output bit \y [67] to partition 1.
+Adding output bit \y [66] to partition 1.
+Adding output bit \y [65] to partition 1.
+Adding output bit \y [64] to partition 1.
+Adding output bit \y [63] to partition 1.
+Adding output bit \y [62] to partition 1.
+Adding output bit \y [61] to partition 1.
+Adding output bit \y [60] to partition 1.
+Adding output bit \y [59] to partition 1.
+Adding output bit \y [58] to partition 1.
+Adding output bit \y [57] to partition 1.
+Adding output bit \y [56] to partition 1.
+Adding output bit \y [55] to partition 1.
+Adding output bit \y [54] to partition 1.
+Adding output bit \y [53] to partition 1.
+Adding output bit \y [52] to partition 1.
+Adding output bit \y [51] to partition 1.
+Adding output bit \y [50] to partition 1.
+Adding output bit \y [49] to partition 1.
+Adding output bit \y [48] to partition 1.
+Adding output bit \y [47] to partition 1.
+Adding output bit \y [46] to partition 1.
+Adding output bit \y [45] to partition 1.
+Adding output bit \y [44] to partition 1.
+Adding output bit \y [43] to partition 1.
+Adding output bit \y [42] to partition 1.
+Adding output bit \y [41] to partition 1.
+Adding output bit \y [40] to partition 1.
+Adding output bit \y [39] to partition 1.
+Adding output bit \y [38] to partition 1.
+Adding output bit \y [37] to partition 1.
+Adding output bit \y [36] to partition 1.
+Adding output bit \y [35] to partition 1.
+Adding output bit \y [34] to partition 1.
+Adding output bit \y [33] to partition 1.
+Adding output bit \y [32] to partition 1.
+Adding output bit \y [31] to partition 1.
+Adding output bit \y [30] to partition 1.
+Adding output bit \y [29] to partition 1.
+Adding output bit \y [28] to partition 1.
+Adding output bit \y [27] to partition 1.
+Adding output bit \y [26] to partition 1.
+Adding output bit \y [25] to partition 1.
+Adding output bit \y [24] to partition 1.
+Adding output bit \y [23] to partition 1.
+Adding output bit \y [22] to partition 1.
+Adding output bit \y [21] to partition 1.
+Adding output bit \y [20] to partition 1.
+Adding output bit \y [19] to partition 1.
+Adding output bit \y [18] to partition 1.
+Adding output bit \y [17] to partition 1.
+Adding output bit \y [16] to partition 1.
+Adding output bit \y [15] to partition 1.
+Adding output bit \y [14] to partition 1.
+Adding output bit \y [13] to partition 1.
+Adding output bit \y [12] to partition 1.
+Adding output bit \y [11] to partition 1.
+Adding output bit \y [10] to partition 1.
+Adding output bit \y [9] to partition 1.
+Adding output bit \y [8] to partition 1.
+Adding output bit \y [7] to partition 1.
+Adding output bit \y [6] to partition 1.
+Adding output bit \y [5] to partition 1.
+Adding output bit \y [4] to partition 1.
+Adding output bit \y [3] to partition 1.
+Adding output bit \y [2] to partition 1.
+Adding output bit \y [1] to partition 1.
+Adding output bit \y [0] to partition 1.
+Adding non-output bit \we to partition 1.
+Adding non-output bit \din [23] to partition 1.
+Adding non-output bit \din [22] to partition 1.
+Adding non-output bit \din [21] to partition 1.
+Adding non-output bit \din [20] to partition 1.
+Adding non-output bit \din [19] to partition 1.
+Adding non-output bit \din [18] to partition 1.
+Adding non-output bit \din [17] to partition 1.
+Adding non-output bit \din [16] to partition 1.
+Adding non-output bit \din [15] to partition 1.
+Adding non-output bit \din [14] to partition 1.
+Adding non-output bit \din [13] to partition 1.
+Adding non-output bit \din [12] to partition 1.
+Adding non-output bit \din [11] to partition 1.
+Adding non-output bit \din [10] to partition 1.
+Adding non-output bit \din [9] to partition 1.
+Adding non-output bit \din [8] to partition 1.
+Adding non-output bit \din [7] to partition 1.
+Adding non-output bit \din [6] to partition 1.
+Adding non-output bit \din [5] to partition 1.
+Adding non-output bit \din [4] to partition 1.
+Adding non-output bit \din [3] to partition 1.
+Adding non-output bit \din [2] to partition 1.
+Adding non-output bit \din [1] to partition 1.
+Adding non-output bit \din [0] to partition 1.
+Adding non-output bit \clk to partition 1.
+Adding non-output bit \addr [79] to partition 1.
+Adding non-output bit \addr [78] to partition 1.
+Adding non-output bit \addr [77] to partition 1.
+Adding non-output bit \addr [76] to partition 1.
+Adding non-output bit \addr [75] to partition 1.
+Adding non-output bit \addr [74] to partition 1.
+Adding non-output bit \addr [73] to partition 1.
+Adding non-output bit \addr [72] to partition 1.
+Adding non-output bit \addr [71] to partition 1.
+Adding non-output bit \addr [70] to partition 1.
+Adding non-output bit \addr [69] to partition 1.
+Adding non-output bit \addr [68] to partition 1.
+Adding non-output bit \addr [67] to partition 1.
+Adding non-output bit \addr [66] to partition 1.
+Adding non-output bit \addr [65] to partition 1.
+Adding non-output bit \addr [64] to partition 1.
+Adding non-output bit \addr [63] to partition 1.
+Adding non-output bit \addr [62] to partition 1.
+Adding non-output bit \addr [61] to partition 1.
+Adding non-output bit \addr [60] to partition 1.
+Adding non-output bit \addr [59] to partition 1.
+Adding non-output bit \addr [58] to partition 1.
+Adding non-output bit \addr [57] to partition 1.
+Adding non-output bit \addr [56] to partition 1.
+Adding non-output bit \addr [55] to partition 1.
+Adding non-output bit \addr [54] to partition 1.
+Adding non-output bit \addr [53] to partition 1.
+Adding non-output bit \addr [52] to partition 1.
+Adding non-output bit \addr [51] to partition 1.
+Adding non-output bit \addr [50] to partition 1.
+Adding non-output bit \addr [49] to partition 1.
+Adding non-output bit \addr [48] to partition 1.
+Adding non-output bit \addr [47] to partition 1.
+Adding non-output bit \addr [46] to partition 1.
+Adding non-output bit \addr [45] to partition 1.
+Adding non-output bit \addr [44] to partition 1.
+Adding non-output bit \addr [43] to partition 1.
+Adding non-output bit \addr [42] to partition 1.
+Adding non-output bit \addr [41] to partition 1.
+Adding non-output bit \addr [40] to partition 1.
+Adding non-output bit \addr [39] to partition 1.
+Adding non-output bit \addr [38] to partition 1.
+Adding non-output bit \addr [37] to partition 1.
+Adding non-output bit \addr [36] to partition 1.
+Adding non-output bit \addr [35] to partition 1.
+Adding non-output bit \addr [34] to partition 1.
+Adding non-output bit \addr [33] to partition 1.
+Adding non-output bit \addr [32] to partition 1.
+Adding non-output bit \addr [31] to partition 1.
+Adding non-output bit \addr [30] to partition 1.
+Adding non-output bit \addr [29] to partition 1.
+Adding non-output bit \addr [28] to partition 1.
+Adding non-output bit \addr [27] to partition 1.
+Adding non-output bit \addr [26] to partition 1.
+Adding non-output bit \addr [25] to partition 1.
+Adding non-output bit \addr [24] to partition 1.
+Adding non-output bit \addr [23] to partition 1.
+Adding non-output bit \addr [22] to partition 1.
+Adding non-output bit \addr [21] to partition 1.
+Adding non-output bit \addr [20] to partition 1.
+Adding non-output bit \addr [19] to partition 1.
+Adding non-output bit \addr [18] to partition 1.
+Adding non-output bit \addr [17] to partition 1.
+Adding non-output bit \addr [16] to partition 1.
+Adding non-output bit \addr [15] to partition 1.
+Adding non-output bit \addr [14] to partition 1.
+Adding non-output bit \addr [13] to partition 1.
+Adding non-output bit \addr [12] to partition 1.
+Adding non-output bit \addr [11] to partition 1.
+Adding non-output bit \addr [10] to partition 1.
+Adding non-output bit \addr [9] to partition 1.
+Adding non-output bit \addr [8] to partition 1.
+Adding non-output bit \addr [7] to partition 1.
+Adding non-output bit \addr [6] to partition 1.
+Adding non-output bit \addr [5] to partition 1.
+Adding non-output bit \addr [4] to partition 1.
+Adding non-output bit \addr [3] to partition 1.
+Adding non-output bit \addr [2] to partition 1.
+Adding non-output bit \addr [1] to partition 1.
+Adding non-output bit \addr [0] to partition 1.
+Writing partition 0 as top.y.
+  partition pi bit 0: \addr [73] <-> \addr [73]
+  partition pi bit 1: \addr [70] <-> \addr [70]
+  partition pi bit 2: \addr [72] <-> \addr [72]
+  partition pi bit 3: \addr [74] <-> \addr [74]
+  partition pi bit 4: \addr [71] <-> \addr [71]
+  partition pi bit 5: \addr [68] <-> \addr [68]
+  partition pi bit 6: \addr [65] <-> \addr [65]
+  partition pi bit 7: \addr [67] <-> \addr [67]
+  partition pi bit 8: \addr [69] <-> \addr [69]
+  partition pi bit 9: \addr [66] <-> \addr [66]
+  partition pi bit 10: \addr [63] <-> \addr [63]
+  partition pi bit 11: \addr [60] <-> \addr [60]
+  partition pi bit 12: \addr [62] <-> \addr [62]
+  partition pi bit 13: \addr [64] <-> \addr [64]
+  partition pi bit 14: \addr [61] <-> \addr [61]
+  partition pi bit 15: \addr [58] <-> \addr [58]
+  partition pi bit 16: \addr [55] <-> \addr [55]
+  partition pi bit 17: \addr [57] <-> \addr [57]
+  partition pi bit 18: \addr [59] <-> \addr [59]
+  partition pi bit 19: \addr [56] <-> \addr [56]
+  partition pi bit 20: \addr [53] <-> \addr [53]
+  partition pi bit 21: \addr [50] <-> \addr [50]
+  partition pi bit 22: \addr [52] <-> \addr [52]
+  partition pi bit 23: \addr [54] <-> \addr [54]
+  partition pi bit 24: \addr [51] <-> \addr [51]
+  partition pi bit 25: \addr [48] <-> \addr [48]
+  partition pi bit 26: \addr [45] <-> \addr [45]
+  partition pi bit 27: \addr [47] <-> \addr [47]
+  partition pi bit 28: \addr [49] <-> \addr [49]
+  partition pi bit 29: \addr [46] <-> \addr [46]
+  partition pi bit 30: \addr [43] <-> \addr [43]
+  partition pi bit 31: \addr [40] <-> \addr [40]
+  partition pi bit 32: \addr [42] <-> \addr [42]
+  partition pi bit 33: \addr [44] <-> \addr [44]
+  partition pi bit 34: \addr [41] <-> \addr [41]
+  partition pi bit 35: \addr [38] <-> \addr [38]
+  partition pi bit 36: \addr [35] <-> \addr [35]
+  partition pi bit 37: \addr [37] <-> \addr [37]
+  partition pi bit 38: \addr [39] <-> \addr [39]
+  partition pi bit 39: \addr [36] <-> \addr [36]
+  partition pi bit 40: \addr [33] <-> \addr [33]
+  partition pi bit 41: \addr [30] <-> \addr [30]
+  partition pi bit 42: \addr [32] <-> \addr [32]
+  partition pi bit 43: \addr [34] <-> \addr [34]
+  partition pi bit 44: \addr [31] <-> \addr [31]
+  partition pi bit 45: \addr [28] <-> \addr [28]
+  partition pi bit 46: \addr [25] <-> \addr [25]
+  partition pi bit 47: \addr [27] <-> \addr [27]
+  partition pi bit 48: \addr [29] <-> \addr [29]
+  partition pi bit 49: \addr [26] <-> \addr [26]
+  partition pi bit 50: \addr [23] <-> \addr [23]
+  partition pi bit 51: \addr [20] <-> \addr [20]
+  partition pi bit 52: \addr [22] <-> \addr [22]
+  partition pi bit 53: \addr [24] <-> \addr [24]
+  partition pi bit 54: \addr [21] <-> \addr [21]
+  partition pi bit 55: \addr [18] <-> \addr [18]
+  partition pi bit 56: \addr [15] <-> \addr [15]
+  partition pi bit 57: \addr [17] <-> \addr [17]
+  partition pi bit 58: \addr [19] <-> \addr [19]
+  partition pi bit 59: \addr [16] <-> \addr [16]
+  partition pi bit 60: \addr [13] <-> \addr [13]
+  partition pi bit 61: \addr [10] <-> \addr [10]
+  partition pi bit 62: \addr [12] <-> \addr [12]
+  partition pi bit 63: \addr [14] <-> \addr [14]
+  partition pi bit 64: \addr [11] <-> \addr [11]
+  partition pi bit 65: \addr [8] <-> \addr [8]
+  partition pi bit 66: \addr [5] <-> \addr [5]
+  partition pi bit 67: \addr [7] <-> \addr [7]
+  partition pi bit 68: \addr [9] <-> \addr [9]
+  partition pi bit 69: \addr [6] <-> \addr [6]
+  partition pi bit 70: \addr [3] <-> \addr [3]
+  partition pi bit 71: \addr [0] <-> \addr [0]
+  partition pi bit 72: \addr [2] <-> \addr [2]
+  partition pi bit 73: \addr [4] <-> \addr [4]
+  partition pi bit 74: \addr [1] <-> \addr [1]
+  partition pi bit 75: \addr [78] <-> \addr [78]
+  partition pi bit 76: \addr [75] <-> \addr [75]
+  partition pi bit 77: \addr [77] <-> \addr [77]
+  partition pi bit 78: \addr [79] <-> \addr [79]
+  partition pi bit 79: \addr [76] <-> \addr [76]
+  partition po bit 0: \y [15] <-> \y [15]
+  partition po bit 1: \y [382] <-> \y [382]
+  partition po bit 2: \y [381] <-> \y [381]
+  partition po bit 3: \y [380] <-> \y [380]
+  partition po bit 4: \y [379] <-> \y [379]
+  partition po bit 5: \y [378] <-> \y [378]
+  partition po bit 6: \y [377] <-> \y [377]
+  partition po bit 7: \y [376] <-> \y [376]
+  partition po bit 8: \y [375] <-> \y [375]
+  partition po bit 9: \y [374] <-> \y [374]
+  partition po bit 10: \y [367] <-> \y [367]
+  partition po bit 11: \y [373] <-> \y [373]
+  partition po bit 12: \y [366] <-> \y [366]
+  partition po bit 13: \y [372] <-> \y [372]
+  partition po bit 14: \y [365] <-> \y [365]
+  partition po bit 15: \y [371] <-> \y [371]
+  partition po bit 16: \y [364] <-> \y [364]
+  partition po bit 17: \y [370] <-> \y [370]
+  partition po bit 18: \y [363] <-> \y [363]
+  partition po bit 19: \y [369] <-> \y [369]
+  partition po bit 20: \y [362] <-> \y [362]
+  partition po bit 21: \y [368] <-> \y [368]
+  partition po bit 22: \y [361] <-> \y [361]
+  partition po bit 23: \y [360] <-> \y [360]
+  partition po bit 24: \y [357] <-> \y [357]
+  partition po bit 25: \y [354] <-> \y [354]
+  partition po bit 26: \y [353] <-> \y [353]
+  partition po bit 27: \y [352] <-> \y [352]
+  partition po bit 28: \y [359] <-> \y [359]
+  partition po bit 29: \y [351] <-> \y [351]
+  partition po bit 30: \y [358] <-> \y [358]
+  partition po bit 31: \y [350] <-> \y [350]
+  partition po bit 32: \y [356] <-> \y [356]
+  partition po bit 33: \y [348] <-> \y [348]
+  partition po bit 34: \y [355] <-> \y [355]
+  partition po bit 35: \y [347] <-> \y [347]
+  partition po bit 36: \y [343] <-> \y [343]
+  partition po bit 37: \y [349] <-> \y [349]
+  partition po bit 38: \y [342] <-> \y [342]
+  partition po bit 39: \y [341] <-> \y [341]
+  partition po bit 40: \y [340] <-> \y [340]
+  partition po bit 41: \y [346] <-> \y [346]
+  partition po bit 42: \y [339] <-> \y [339]
+  partition po bit 43: \y [345] <-> \y [345]
+  partition po bit 44: \y [338] <-> \y [338]
+  partition po bit 45: \y [344] <-> \y [344]
+  partition po bit 46: \y [337] <-> \y [337]
+  partition po bit 47: \y [336] <-> \y [336]
+  partition po bit 48: \y [334] <-> \y [334]
+  partition po bit 49: \y [333] <-> \y [333]
+  partition po bit 50: \y [331] <-> \y [331]
+  partition po bit 51: \y [330] <-> \y [330]
+  partition po bit 52: \y [329] <-> \y [329]
+  partition po bit 53: \y [328] <-> \y [328]
+  partition po bit 54: \y [335] <-> \y [335]
+  partition po bit 55: \y [327] <-> \y [327]
+  partition po bit 56: \y [332] <-> \y [332]
+  partition po bit 57: \y [324] <-> \y [324]
+  partition po bit 58: \y [326] <-> \y [326]
+  partition po bit 59: \y [319] <-> \y [319]
+  partition po bit 60: \y [325] <-> \y [325]
+  partition po bit 61: \y [318] <-> \y [318]
+  partition po bit 62: \y [317] <-> \y [317]
+  partition po bit 63: \y [323] <-> \y [323]
+  partition po bit 64: \y [316] <-> \y [316]
+  partition po bit 65: \y [322] <-> \y [322]
+  partition po bit 66: \y [315] <-> \y [315]
+  partition po bit 67: \y [321] <-> \y [321]
+  partition po bit 68: \y [314] <-> \y [314]
+  partition po bit 69: \y [320] <-> \y [320]
+  partition po bit 70: \y [313] <-> \y [313]
+  partition po bit 71: \y [312] <-> \y [312]
+  partition po bit 72: \y [309] <-> \y [309]
+  partition po bit 73: \y [308] <-> \y [308]
+  partition po bit 74: \y [306] <-> \y [306]
+  partition po bit 75: \y [305] <-> \y [305]
+  partition po bit 76: \y [304] <-> \y [304]
+  partition po bit 77: \y [311] <-> \y [311]
+  partition po bit 78: \y [303] <-> \y [303]
+  partition po bit 79: \y [310] <-> \y [310]
+  partition po bit 80: \y [302] <-> \y [302]
+  partition po bit 81: \y [307] <-> \y [307]
+  partition po bit 82: \y [299] <-> \y [299]
+  partition po bit 83: \y [295] <-> \y [295]
+  partition po bit 84: \y [301] <-> \y [301]
+  partition po bit 85: \y [294] <-> \y [294]
+  partition po bit 86: \y [300] <-> \y [300]
+  partition po bit 87: \y [293] <-> \y [293]
+  partition po bit 88: \y [292] <-> \y [292]
+  partition po bit 89: \y [298] <-> \y [298]
+  partition po bit 90: \y [291] <-> \y [291]
+  partition po bit 91: \y [297] <-> \y [297]
+  partition po bit 92: \y [290] <-> \y [290]
+  partition po bit 93: \y [296] <-> \y [296]
+  partition po bit 94: \y [289] <-> \y [289]
+  partition po bit 95: \y [288] <-> \y [288]
+  partition po bit 96: \y [287] <-> \y [287]
+  partition po bit 97: \y [283] <-> \y [283]
+  partition po bit 98: \y [282] <-> \y [282]
+  partition po bit 99: \y [281] <-> \y [281]
+  partition po bit 100: \y [286] <-> \y [286]
+  partition po bit 101: \y [278] <-> \y [278]
+  partition po bit 102: \y [285] <-> \y [285]
+  partition po bit 103: \y [277] <-> \y [277]
+  partition po bit 104: \y [284] <-> \y [284]
+  partition po bit 105: \y [276] <-> \y [276]
+  partition po bit 106: \y [280] <-> \y [280]
+  partition po bit 107: \y [272] <-> \y [272]
+  partition po bit 108: \y [271] <-> \y [271]
+  partition po bit 109: \y [270] <-> \y [270]
+  partition po bit 110: \y [269] <-> \y [269]
+  partition po bit 111: \y [275] <-> \y [275]
+  partition po bit 112: \y [268] <-> \y [268]
+  partition po bit 113: \y [274] <-> \y [274]
+  partition po bit 114: \y [267] <-> \y [267]
+  partition po bit 115: \y [273] <-> \y [273]
+  partition po bit 116: \y [266] <-> \y [266]
+  partition po bit 117: \y [265] <-> \y [265]
+  partition po bit 118: \y [279] <-> \y [279]
+  partition po bit 119: \y [264] <-> \y [264]
+  partition po bit 120: \y [262] <-> \y [262]
+  partition po bit 121: \y [261] <-> \y [261]
+  partition po bit 122: \y [260] <-> \y [260]
+  partition po bit 123: \y [259] <-> \y [259]
+  partition po bit 124: \y [258] <-> \y [258]
+  partition po bit 125: \y [257] <-> \y [257]
+  partition po bit 126: \y [256] <-> \y [256]
+  partition po bit 127: \y [263] <-> \y [263]
+  partition po bit 128: \y [255] <-> \y [255]
+  partition po bit 129: \y [254] <-> \y [254]
+  partition po bit 130: \y [247] <-> \y [247]
+  partition po bit 131: \y [253] <-> \y [253]
+  partition po bit 132: \y [246] <-> \y [246]
+  partition po bit 133: \y [252] <-> \y [252]
+  partition po bit 134: \y [245] <-> \y [245]
+  partition po bit 135: \y [251] <-> \y [251]
+  partition po bit 136: \y [244] <-> \y [244]
+  partition po bit 137: \y [250] <-> \y [250]
+  partition po bit 138: \y [243] <-> \y [243]
+  partition po bit 139: \y [249] <-> \y [249]
+  partition po bit 140: \y [242] <-> \y [242]
+  partition po bit 141: \y [248] <-> \y [248]
+  partition po bit 142: \y [241] <-> \y [241]
+  partition po bit 143: \y [240] <-> \y [240]
+  partition po bit 144: \y [238] <-> \y [238]
+  partition po bit 145: \y [235] <-> \y [235]
+  partition po bit 146: \y [234] <-> \y [234]
+  partition po bit 147: \y [233] <-> \y [233]
+  partition po bit 148: \y [232] <-> \y [232]
+  partition po bit 149: \y [239] <-> \y [239]
+  partition po bit 150: \y [231] <-> \y [231]
+  partition po bit 151: \y [237] <-> \y [237]
+  partition po bit 152: \y [229] <-> \y [229]
+  partition po bit 153: \y [236] <-> \y [236]
+  partition po bit 154: \y [228] <-> \y [228]
+  partition po bit 155: \y [230] <-> \y [230]
+  partition po bit 156: \y [223] <-> \y [223]
+  partition po bit 157: \y [222] <-> \y [222]
+  partition po bit 158: \y [221] <-> \y [221]
+  partition po bit 159: \y [227] <-> \y [227]
+  partition po bit 160: \y [220] <-> \y [220]
+  partition po bit 161: \y [226] <-> \y [226]
+  partition po bit 162: \y [219] <-> \y [219]
+  partition po bit 163: \y [225] <-> \y [225]
+  partition po bit 164: \y [218] <-> \y [218]
+  partition po bit 165: \y [224] <-> \y [224]
+  partition po bit 166: \y [217] <-> \y [217]
+  partition po bit 167: \y [216] <-> \y [216]
+  partition po bit 168: \y [214] <-> \y [214]
+  partition po bit 169: \y [213] <-> \y [213]
+  partition po bit 170: \y [212] <-> \y [212]
+  partition po bit 171: \y [211] <-> \y [211]
+  partition po bit 172: \y [210] <-> \y [210]
+  partition po bit 173: \y [209] <-> \y [209]
+  partition po bit 174: \y [208] <-> \y [208]
+  partition po bit 175: \y [215] <-> \y [215]
+  partition po bit 176: \y [207] <-> \y [207]
+  partition po bit 177: \y [206] <-> \y [206]
+  partition po bit 178: \y [199] <-> \y [199]
+  partition po bit 179: \y [205] <-> \y [205]
+  partition po bit 180: \y [198] <-> \y [198]
+  partition po bit 181: \y [204] <-> \y [204]
+  partition po bit 182: \y [197] <-> \y [197]
+  partition po bit 183: \y [203] <-> \y [203]
+  partition po bit 184: \y [196] <-> \y [196]
+  partition po bit 185: \y [202] <-> \y [202]
+  partition po bit 186: \y [195] <-> \y [195]
+  partition po bit 187: \y [201] <-> \y [201]
+  partition po bit 188: \y [194] <-> \y [194]
+  partition po bit 189: \y [200] <-> \y [200]
+  partition po bit 190: \y [193] <-> \y [193]
+  partition po bit 191: \y [192] <-> \y [192]
+  partition po bit 192: \y [191] <-> \y [191]
+  partition po bit 193: \y [190] <-> \y [190]
+  partition po bit 194: \y [188] <-> \y [188]
+  partition po bit 195: \y [187] <-> \y [187]
+  partition po bit 196: \y [186] <-> \y [186]
+  partition po bit 197: \y [185] <-> \y [185]
+  partition po bit 198: \y [184] <-> \y [184]
+  partition po bit 199: \y [189] <-> \y [189]
+  partition po bit 200: \y [181] <-> \y [181]
+  partition po bit 201: \y [182] <-> \y [182]
+  partition po bit 202: \y [175] <-> \y [175]
+  partition po bit 203: \y [174] <-> \y [174]
+  partition po bit 204: \y [180] <-> \y [180]
+  partition po bit 205: \y [173] <-> \y [173]
+  partition po bit 206: \y [179] <-> \y [179]
+  partition po bit 207: \y [172] <-> \y [172]
+  partition po bit 208: \y [178] <-> \y [178]
+  partition po bit 209: \y [171] <-> \y [171]
+  partition po bit 210: \y [177] <-> \y [177]
+  partition po bit 211: \y [170] <-> \y [170]
+  partition po bit 212: \y [176] <-> \y [176]
+  partition po bit 213: \y [169] <-> \y [169]
+  partition po bit 214: \y [183] <-> \y [183]
+  partition po bit 215: \y [168] <-> \y [168]
+  partition po bit 216: \y [167] <-> \y [167]
+  partition po bit 217: \y [166] <-> \y [166]
+  partition po bit 218: \y [165] <-> \y [165]
+  partition po bit 219: \y [164] <-> \y [164]
+  partition po bit 220: \y [163] <-> \y [163]
+  partition po bit 221: \y [161] <-> \y [161]
+  partition po bit 222: \y [160] <-> \y [160]
+  partition po bit 223: \y [162] <-> \y [162]
+  partition po bit 224: \y [154] <-> \y [154]
+  partition po bit 225: \y [158] <-> \y [158]
+  partition po bit 226: \y [151] <-> \y [151]
+  partition po bit 227: \y [157] <-> \y [157]
+  partition po bit 228: \y [150] <-> \y [150]
+  partition po bit 229: \y [156] <-> \y [156]
+  partition po bit 230: \y [149] <-> \y [149]
+  partition po bit 231: \y [155] <-> \y [155]
+  partition po bit 232: \y [148] <-> \y [148]
+  partition po bit 233: \y [147] <-> \y [147]
+  partition po bit 234: \y [153] <-> \y [153]
+  partition po bit 235: \y [146] <-> \y [146]
+  partition po bit 236: \y [152] <-> \y [152]
+  partition po bit 237: \y [145] <-> \y [145]
+  partition po bit 238: \y [159] <-> \y [159]
+  partition po bit 239: \y [144] <-> \y [144]
+  partition po bit 240: \y [143] <-> \y [143]
+  partition po bit 241: \y [142] <-> \y [142]
+  partition po bit 242: \y [140] <-> \y [140]
+  partition po bit 243: \y [139] <-> \y [139]
+  partition po bit 244: \y [138] <-> \y [138]
+  partition po bit 245: \y [137] <-> \y [137]
+  partition po bit 246: \y [136] <-> \y [136]
+  partition po bit 247: \y [141] <-> \y [141]
+  partition po bit 248: \y [133] <-> \y [133]
+  partition po bit 249: \y [134] <-> \y [134]
+  partition po bit 250: \y [127] <-> \y [127]
+  partition po bit 251: \y [126] <-> \y [126]
+  partition po bit 252: \y [132] <-> \y [132]
+  partition po bit 253: \y [125] <-> \y [125]
+  partition po bit 254: \y [131] <-> \y [131]
+  partition po bit 255: \y [124] <-> \y [124]
+  partition po bit 256: \y [130] <-> \y [130]
+  partition po bit 257: \y [123] <-> \y [123]
+  partition po bit 258: \y [129] <-> \y [129]
+  partition po bit 259: \y [122] <-> \y [122]
+  partition po bit 260: \y [128] <-> \y [128]
+  partition po bit 261: \y [121] <-> \y [121]
+  partition po bit 262: \y [135] <-> \y [135]
+  partition po bit 263: \y [120] <-> \y [120]
+  partition po bit 264: \y [119] <-> \y [119]
+  partition po bit 265: \y [118] <-> \y [118]
+  partition po bit 266: \y [116] <-> \y [116]
+  partition po bit 267: \y [114] <-> \y [114]
+  partition po bit 268: \y [113] <-> \y [113]
+  partition po bit 269: \y [112] <-> \y [112]
+  partition po bit 270: \y [117] <-> \y [117]
+  partition po bit 271: \y [109] <-> \y [109]
+  partition po bit 272: \y [115] <-> \y [115]
+  partition po bit 273: \y [107] <-> \y [107]
+  partition po bit 274: \y [110] <-> \y [110]
+  partition po bit 275: \y [103] <-> \y [103]
+  partition po bit 276: \y [102] <-> \y [102]
+  partition po bit 277: \y [108] <-> \y [108]
+  partition po bit 278: \y [101] <-> \y [101]
+  partition po bit 279: \y [100] <-> \y [100]
+  partition po bit 280: \y [106] <-> \y [106]
+  partition po bit 281: \y [99] <-> \y [99]
+  partition po bit 282: \y [105] <-> \y [105]
+  partition po bit 283: \y [98] <-> \y [98]
+  partition po bit 284: \y [104] <-> \y [104]
+  partition po bit 285: \y [97] <-> \y [97]
+  partition po bit 286: \y [111] <-> \y [111]
+  partition po bit 287: \y [96] <-> \y [96]
+  partition po bit 288: \y [94] <-> \y [94]
+  partition po bit 289: \y [92] <-> \y [92]
+  partition po bit 290: \y [91] <-> \y [91]
+  partition po bit 291: \y [89] <-> \y [89]
+  partition po bit 292: \y [95] <-> \y [95]
+  partition po bit 293: \y [87] <-> \y [87]
+  partition po bit 294: \y [93] <-> \y [93]
+  partition po bit 295: \y [85] <-> \y [85]
+  partition po bit 296: \y [90] <-> \y [90]
+  partition po bit 297: \y [82] <-> \y [82]
+  partition po bit 298: \y [88] <-> \y [88]
+  partition po bit 299: \y [80] <-> \y [80]
+  partition po bit 300: \y [86] <-> \y [86]
+  partition po bit 301: \y [79] <-> \y [79]
+  partition po bit 302: \y [78] <-> \y [78]
+  partition po bit 303: \y [84] <-> \y [84]
+  partition po bit 304: \y [77] <-> \y [77]
+  partition po bit 305: \y [83] <-> \y [83]
+  partition po bit 306: \y [76] <-> \y [76]
+  partition po bit 307: \y [75] <-> \y [75]
+  partition po bit 308: \y [81] <-> \y [81]
+  partition po bit 309: \y [74] <-> \y [74]
+  partition po bit 310: \y [73] <-> \y [73]
+  partition po bit 311: \y [72] <-> \y [72]
+  partition po bit 312: \y [71] <-> \y [71]
+  partition po bit 313: \y [70] <-> \y [70]
+  partition po bit 314: \y [69] <-> \y [69]
+  partition po bit 315: \y [67] <-> \y [67]
+  partition po bit 316: \y [66] <-> \y [66]
+  partition po bit 317: \y [65] <-> \y [65]
+  partition po bit 318: \y [64] <-> \y [64]
+  partition po bit 319: \y [68] <-> \y [68]
+  partition po bit 320: \y [60] <-> \y [60]
+  partition po bit 321: \y [62] <-> \y [62]
+  partition po bit 322: \y [55] <-> \y [55]
+  partition po bit 323: \y [61] <-> \y [61]
+  partition po bit 324: \y [54] <-> \y [54]
+  partition po bit 325: \y [53] <-> \y [53]
+  partition po bit 326: \y [59] <-> \y [59]
+  partition po bit 327: \y [52] <-> \y [52]
+  partition po bit 328: \y [58] <-> \y [58]
+  partition po bit 329: \y [51] <-> \y [51]
+  partition po bit 330: \y [57] <-> \y [57]
+  partition po bit 331: \y [50] <-> \y [50]
+  partition po bit 332: \y [56] <-> \y [56]
+  partition po bit 333: \y [49] <-> \y [49]
+  partition po bit 334: \y [63] <-> \y [63]
+  partition po bit 335: \y [48] <-> \y [48]
+  partition po bit 336: \y [47] <-> \y [47]
+  partition po bit 337: \y [46] <-> \y [46]
+  partition po bit 338: \y [45] <-> \y [45]
+  partition po bit 339: \y [43] <-> \y [43]
+  partition po bit 340: \y [42] <-> \y [42]
+  partition po bit 341: \y [40] <-> \y [40]
+  partition po bit 342: \y [44] <-> \y [44]
+  partition po bit 343: \y [36] <-> \y [36]
+  partition po bit 344: \y [41] <-> \y [41]
+  partition po bit 345: \y [33] <-> \y [33]
+  partition po bit 346: \y [38] <-> \y [38]
+  partition po bit 347: \y [31] <-> \y [31]
+  partition po bit 348: \y [37] <-> \y [37]
+  partition po bit 349: \y [30] <-> \y [30]
+  partition po bit 350: \y [29] <-> \y [29]
+  partition po bit 351: \y [35] <-> \y [35]
+  partition po bit 352: \y [28] <-> \y [28]
+  partition po bit 353: \y [34] <-> \y [34]
+  partition po bit 354: \y [27] <-> \y [27]
+  partition po bit 355: \y [26] <-> \y [26]
+  partition po bit 356: \y [32] <-> \y [32]
+  partition po bit 357: \y [25] <-> \y [25]
+  partition po bit 358: \y [39] <-> \y [39]
+  partition po bit 359: \y [24] <-> \y [24]
+  partition po bit 360: \y [23] <-> \y [23]
+  partition po bit 361: \y [21] <-> \y [21]
+  partition po bit 362: \y [19] <-> \y [19]
+  partition po bit 363: \y [18] <-> \y [18]
+  partition po bit 364: \y [17] <-> \y [17]
+  partition po bit 365: \y [16] <-> \y [16]
+  partition po bit 366: \y [22] <-> \y [22]
+  partition po bit 367: \y [14] <-> \y [14]
+  partition po bit 368: \y [20] <-> \y [20]
+  partition po bit 369: \y [12] <-> \y [12]
+  partition po bit 370: \y [7] <-> \y [7]
+  partition po bit 371: \y [13] <-> \y [13]
+  partition po bit 372: \y [6] <-> \y [6]
+  partition po bit 373: \y [5] <-> \y [5]
+  partition po bit 374: \y [11] <-> \y [11]
+  partition po bit 375: \y [4] <-> \y [4]
+  partition po bit 376: \y [10] <-> \y [10]
+  partition po bit 377: \y [3] <-> \y [3]
+  partition po bit 378: \y [9] <-> \y [9]
+  partition po bit 379: \y [2] <-> \y [2]
+  partition po bit 380: \y [8] <-> \y [8]
+  partition po bit 381: \y [1] <-> \y [1]
+  partition po bit 382: \y [0] <-> \y [0]
+  partition po bit 383: \y [383] <-> \y [383]
+
+3.1.5. Executing RTLIL backend.
+Output filename: partitions/top.y.il
+<suppressed ~14483 debug messages>
+
+3.1.6. Executing CHECK pass (checking for obvious problems).
+Checking module gate.top.y...
+Checking module gold.top.y...
+Found and reported 0 problems.
+
+Writing partition 1 as top.
+  partition pi bit 0: \clk <-> \clk
+  partition pi bit 1: \din [0] <-> \din [0]
+  partition pi bit 2: \din [1] <-> \din [1]
+  partition pi bit 3: \din [2] <-> \din [2]
+  partition pi bit 4: \din [3] <-> \din [3]
+  partition pi bit 5: \din [4] <-> \din [4]
+  partition pi bit 6: \din [5] <-> \din [5]
+  partition pi bit 7: \din [6] <-> \din [6]
+  partition pi bit 8: \din [7] <-> \din [7]
+  partition pi bit 9: \din [8] <-> \din [8]
+  partition pi bit 10: \din [9] <-> \din [9]
+  partition pi bit 11: \din [10] <-> \din [10]
+  partition pi bit 12: \din [11] <-> \din [11]
+  partition pi bit 13: \din [12] <-> \din [12]
+  partition pi bit 14: \din [13] <-> \din [13]
+  partition pi bit 15: \din [14] <-> \din [14]
+  partition pi bit 16: \din [15] <-> \din [15]
+  partition pi bit 17: \din [16] <-> \din [16]
+  partition pi bit 18: \din [17] <-> \din [17]
+  partition pi bit 19: \din [18] <-> \din [18]
+  partition pi bit 20: \din [19] <-> \din [19]
+  partition pi bit 21: \din [20] <-> \din [20]
+  partition pi bit 22: \din [21] <-> \din [21]
+  partition pi bit 23: \din [22] <-> \din [22]
+  partition pi bit 24: \din [23] <-> \din [23]
+  partition pi bit 25: \we <-> \we
+  partition pi bit 26: \addr [3] <-> \addr [3]
+  partition pi bit 27: \addr [0] <-> \addr [0]
+  partition pi bit 28: \addr [2] <-> \addr [2]
+  partition pi bit 29: \addr [4] <-> \addr [4]
+  partition pi bit 30: \addr [1] <-> \addr [1]
+  partition pi bit 31: \addr [8] <-> \addr [8]
+  partition pi bit 32: \addr [5] <-> \addr [5]
+  partition pi bit 33: \addr [7] <-> \addr [7]
+  partition pi bit 34: \addr [9] <-> \addr [9]
+  partition pi bit 35: \addr [6] <-> \addr [6]
+  partition pi bit 36: \addr [13] <-> \addr [13]
+  partition pi bit 37: \addr [10] <-> \addr [10]
+  partition pi bit 38: \addr [12] <-> \addr [12]
+  partition pi bit 39: \addr [14] <-> \addr [14]
+  partition pi bit 40: \addr [11] <-> \addr [11]
+  partition pi bit 41: \addr [18] <-> \addr [18]
+  partition pi bit 42: \addr [15] <-> \addr [15]
+  partition pi bit 43: \addr [17] <-> \addr [17]
+  partition pi bit 44: \addr [19] <-> \addr [19]
+  partition pi bit 45: \addr [16] <-> \addr [16]
+  partition pi bit 46: \addr [23] <-> \addr [23]
+  partition pi bit 47: \addr [20] <-> \addr [20]
+  partition pi bit 48: \addr [22] <-> \addr [22]
+  partition pi bit 49: \addr [24] <-> \addr [24]
+  partition pi bit 50: \addr [21] <-> \addr [21]
+  partition pi bit 51: \addr [28] <-> \addr [28]
+  partition pi bit 52: \addr [25] <-> \addr [25]
+  partition pi bit 53: \addr [27] <-> \addr [27]
+  partition pi bit 54: \addr [29] <-> \addr [29]
+  partition pi bit 55: \addr [26] <-> \addr [26]
+  partition pi bit 56: \addr [33] <-> \addr [33]
+  partition pi bit 57: \addr [30] <-> \addr [30]
+  partition pi bit 58: \addr [32] <-> \addr [32]
+  partition pi bit 59: \addr [34] <-> \addr [34]
+  partition pi bit 60: \addr [31] <-> \addr [31]
+  partition pi bit 61: \addr [38] <-> \addr [38]
+  partition pi bit 62: \addr [35] <-> \addr [35]
+  partition pi bit 63: \addr [37] <-> \addr [37]
+  partition pi bit 64: \addr [39] <-> \addr [39]
+  partition pi bit 65: \addr [36] <-> \addr [36]
+  partition pi bit 66: \addr [43] <-> \addr [43]
+  partition pi bit 67: \addr [40] <-> \addr [40]
+  partition pi bit 68: \addr [42] <-> \addr [42]
+  partition pi bit 69: \addr [44] <-> \addr [44]
+  partition pi bit 70: \addr [41] <-> \addr [41]
+  partition pi bit 71: \addr [48] <-> \addr [48]
+  partition pi bit 72: \addr [45] <-> \addr [45]
+  partition pi bit 73: \addr [47] <-> \addr [47]
+  partition pi bit 74: \addr [49] <-> \addr [49]
+  partition pi bit 75: \addr [46] <-> \addr [46]
+  partition pi bit 76: \addr [53] <-> \addr [53]
+  partition pi bit 77: \addr [50] <-> \addr [50]
+  partition pi bit 78: \addr [52] <-> \addr [52]
+  partition pi bit 79: \addr [54] <-> \addr [54]
+  partition pi bit 80: \addr [51] <-> \addr [51]
+  partition pi bit 81: \addr [58] <-> \addr [58]
+  partition pi bit 82: \addr [55] <-> \addr [55]
+  partition pi bit 83: \addr [57] <-> \addr [57]
+  partition pi bit 84: \addr [59] <-> \addr [59]
+  partition pi bit 85: \addr [56] <-> \addr [56]
+  partition pi bit 86: \addr [63] <-> \addr [63]
+  partition pi bit 87: \addr [60] <-> \addr [60]
+  partition pi bit 88: \addr [62] <-> \addr [62]
+  partition pi bit 89: \addr [64] <-> \addr [64]
+  partition pi bit 90: \addr [61] <-> \addr [61]
+  partition pi bit 91: \addr [68] <-> \addr [68]
+  partition pi bit 92: \addr [65] <-> \addr [65]
+  partition pi bit 93: \addr [67] <-> \addr [67]
+  partition pi bit 94: \addr [69] <-> \addr [69]
+  partition pi bit 95: \addr [66] <-> \addr [66]
+  partition pi bit 96: \addr [73] <-> \addr [73]
+  partition pi bit 97: \addr [70] <-> \addr [70]
+  partition pi bit 98: \addr [72] <-> \addr [72]
+  partition pi bit 99: \addr [74] <-> \addr [74]
+  partition pi bit 100: \addr [71] <-> \addr [71]
+  partition pi bit 101: \addr [78] <-> \addr [78]
+  partition pi bit 102: \addr [75] <-> \addr [75]
+  partition pi bit 103: \addr [77] <-> \addr [77]
+  partition pi bit 104: \addr [79] <-> \addr [79]
+  partition pi bit 105: \addr [76] <-> \addr [76]
+  partition po bit 0: \y [0] <-> \y [0]
+  partition po bit 1: \y [1] <-> \y [1]
+  partition po bit 2: \y [2] <-> \y [2]
+  partition po bit 3: \y [3] <-> \y [3]
+  partition po bit 4: \y [4] <-> \y [4]
+  partition po bit 5: \y [5] <-> \y [5]
+  partition po bit 6: \y [6] <-> \y [6]
+  partition po bit 7: \y [7] <-> \y [7]
+  partition po bit 8: \y [8] <-> \y [8]
+  partition po bit 9: \y [9] <-> \y [9]
+  partition po bit 10: \y [10] <-> \y [10]
+  partition po bit 11: \y [11] <-> \y [11]
+  partition po bit 12: \y [12] <-> \y [12]
+  partition po bit 13: \y [13] <-> \y [13]
+  partition po bit 14: \y [14] <-> \y [14]
+  partition po bit 15: \y [15] <-> \y [15]
+  partition po bit 16: \y [16] <-> \y [16]
+  partition po bit 17: \y [17] <-> \y [17]
+  partition po bit 18: \y [18] <-> \y [18]
+  partition po bit 19: \y [19] <-> \y [19]
+  partition po bit 20: \y [20] <-> \y [20]
+  partition po bit 21: \y [21] <-> \y [21]
+  partition po bit 22: \y [22] <-> \y [22]
+  partition po bit 23: \y [23] <-> \y [23]
+  partition po bit 24: \y [24] <-> \y [24]
+  partition po bit 25: \y [25] <-> \y [25]
+  partition po bit 26: \y [26] <-> \y [26]
+  partition po bit 27: \y [27] <-> \y [27]
+  partition po bit 28: \y [28] <-> \y [28]
+  partition po bit 29: \y [29] <-> \y [29]
+  partition po bit 30: \y [30] <-> \y [30]
+  partition po bit 31: \y [31] <-> \y [31]
+  partition po bit 32: \y [32] <-> \y [32]
+  partition po bit 33: \y [33] <-> \y [33]
+  partition po bit 34: \y [34] <-> \y [34]
+  partition po bit 35: \y [35] <-> \y [35]
+  partition po bit 36: \y [36] <-> \y [36]
+  partition po bit 37: \y [37] <-> \y [37]
+  partition po bit 38: \y [38] <-> \y [38]
+  partition po bit 39: \y [39] <-> \y [39]
+  partition po bit 40: \y [40] <-> \y [40]
+  partition po bit 41: \y [41] <-> \y [41]
+  partition po bit 42: \y [42] <-> \y [42]
+  partition po bit 43: \y [43] <-> \y [43]
+  partition po bit 44: \y [44] <-> \y [44]
+  partition po bit 45: \y [45] <-> \y [45]
+  partition po bit 46: \y [46] <-> \y [46]
+  partition po bit 47: \y [47] <-> \y [47]
+  partition po bit 48: \y [48] <-> \y [48]
+  partition po bit 49: \y [49] <-> \y [49]
+  partition po bit 50: \y [50] <-> \y [50]
+  partition po bit 51: \y [51] <-> \y [51]
+  partition po bit 52: \y [52] <-> \y [52]
+  partition po bit 53: \y [53] <-> \y [53]
+  partition po bit 54: \y [54] <-> \y [54]
+  partition po bit 55: \y [55] <-> \y [55]
+  partition po bit 56: \y [56] <-> \y [56]
+  partition po bit 57: \y [57] <-> \y [57]
+  partition po bit 58: \y [58] <-> \y [58]
+  partition po bit 59: \y [59] <-> \y [59]
+  partition po bit 60: \y [60] <-> \y [60]
+  partition po bit 61: \y [61] <-> \y [61]
+  partition po bit 62: \y [62] <-> \y [62]
+  partition po bit 63: \y [63] <-> \y [63]
+  partition po bit 64: \y [64] <-> \y [64]
+  partition po bit 65: \y [65] <-> \y [65]
+  partition po bit 66: \y [66] <-> \y [66]
+  partition po bit 67: \y [67] <-> \y [67]
+  partition po bit 68: \y [68] <-> \y [68]
+  partition po bit 69: \y [69] <-> \y [69]
+  partition po bit 70: \y [70] <-> \y [70]
+  partition po bit 71: \y [71] <-> \y [71]
+  partition po bit 72: \y [72] <-> \y [72]
+  partition po bit 73: \y [73] <-> \y [73]
+  partition po bit 74: \y [74] <-> \y [74]
+  partition po bit 75: \y [75] <-> \y [75]
+  partition po bit 76: \y [76] <-> \y [76]
+  partition po bit 77: \y [77] <-> \y [77]
+  partition po bit 78: \y [78] <-> \y [78]
+  partition po bit 79: \y [79] <-> \y [79]
+  partition po bit 80: \y [80] <-> \y [80]
+  partition po bit 81: \y [81] <-> \y [81]
+  partition po bit 82: \y [82] <-> \y [82]
+  partition po bit 83: \y [83] <-> \y [83]
+  partition po bit 84: \y [84] <-> \y [84]
+  partition po bit 85: \y [85] <-> \y [85]
+  partition po bit 86: \y [86] <-> \y [86]
+  partition po bit 87: \y [87] <-> \y [87]
+  partition po bit 88: \y [88] <-> \y [88]
+  partition po bit 89: \y [89] <-> \y [89]
+  partition po bit 90: \y [90] <-> \y [90]
+  partition po bit 91: \y [91] <-> \y [91]
+  partition po bit 92: \y [92] <-> \y [92]
+  partition po bit 93: \y [93] <-> \y [93]
+  partition po bit 94: \y [94] <-> \y [94]
+  partition po bit 95: \y [95] <-> \y [95]
+  partition po bit 96: \y [96] <-> \y [96]
+  partition po bit 97: \y [97] <-> \y [97]
+  partition po bit 98: \y [98] <-> \y [98]
+  partition po bit 99: \y [99] <-> \y [99]
+  partition po bit 100: \y [100] <-> \y [100]
+  partition po bit 101: \y [101] <-> \y [101]
+  partition po bit 102: \y [102] <-> \y [102]
+  partition po bit 103: \y [103] <-> \y [103]
+  partition po bit 104: \y [104] <-> \y [104]
+  partition po bit 105: \y [105] <-> \y [105]
+  partition po bit 106: \y [106] <-> \y [106]
+  partition po bit 107: \y [107] <-> \y [107]
+  partition po bit 108: \y [108] <-> \y [108]
+  partition po bit 109: \y [109] <-> \y [109]
+  partition po bit 110: \y [110] <-> \y [110]
+  partition po bit 111: \y [111] <-> \y [111]
+  partition po bit 112: \y [112] <-> \y [112]
+  partition po bit 113: \y [113] <-> \y [113]
+  partition po bit 114: \y [114] <-> \y [114]
+  partition po bit 115: \y [115] <-> \y [115]
+  partition po bit 116: \y [116] <-> \y [116]
+  partition po bit 117: \y [117] <-> \y [117]
+  partition po bit 118: \y [118] <-> \y [118]
+  partition po bit 119: \y [119] <-> \y [119]
+  partition po bit 120: \y [120] <-> \y [120]
+  partition po bit 121: \y [121] <-> \y [121]
+  partition po bit 122: \y [122] <-> \y [122]
+  partition po bit 123: \y [123] <-> \y [123]
+  partition po bit 124: \y [124] <-> \y [124]
+  partition po bit 125: \y [125] <-> \y [125]
+  partition po bit 126: \y [126] <-> \y [126]
+  partition po bit 127: \y [127] <-> \y [127]
+  partition po bit 128: \y [128] <-> \y [128]
+  partition po bit 129: \y [129] <-> \y [129]
+  partition po bit 130: \y [130] <-> \y [130]
+  partition po bit 131: \y [131] <-> \y [131]
+  partition po bit 132: \y [132] <-> \y [132]
+  partition po bit 133: \y [133] <-> \y [133]
+  partition po bit 134: \y [134] <-> \y [134]
+  partition po bit 135: \y [135] <-> \y [135]
+  partition po bit 136: \y [136] <-> \y [136]
+  partition po bit 137: \y [137] <-> \y [137]
+  partition po bit 138: \y [138] <-> \y [138]
+  partition po bit 139: \y [139] <-> \y [139]
+  partition po bit 140: \y [140] <-> \y [140]
+  partition po bit 141: \y [141] <-> \y [141]
+  partition po bit 142: \y [142] <-> \y [142]
+  partition po bit 143: \y [143] <-> \y [143]
+  partition po bit 144: \y [144] <-> \y [144]
+  partition po bit 145: \y [145] <-> \y [145]
+  partition po bit 146: \y [146] <-> \y [146]
+  partition po bit 147: \y [147] <-> \y [147]
+  partition po bit 148: \y [148] <-> \y [148]
+  partition po bit 149: \y [149] <-> \y [149]
+  partition po bit 150: \y [150] <-> \y [150]
+  partition po bit 151: \y [151] <-> \y [151]
+  partition po bit 152: \y [152] <-> \y [152]
+  partition po bit 153: \y [153] <-> \y [153]
+  partition po bit 154: \y [154] <-> \y [154]
+  partition po bit 155: \y [155] <-> \y [155]
+  partition po bit 156: \y [156] <-> \y [156]
+  partition po bit 157: \y [157] <-> \y [157]
+  partition po bit 158: \y [158] <-> \y [158]
+  partition po bit 159: \y [159] <-> \y [159]
+  partition po bit 160: \y [160] <-> \y [160]
+  partition po bit 161: \y [161] <-> \y [161]
+  partition po bit 162: \y [162] <-> \y [162]
+  partition po bit 163: \y [163] <-> \y [163]
+  partition po bit 164: \y [164] <-> \y [164]
+  partition po bit 165: \y [165] <-> \y [165]
+  partition po bit 166: \y [166] <-> \y [166]
+  partition po bit 167: \y [167] <-> \y [167]
+  partition po bit 168: \y [168] <-> \y [168]
+  partition po bit 169: \y [169] <-> \y [169]
+  partition po bit 170: \y [170] <-> \y [170]
+  partition po bit 171: \y [171] <-> \y [171]
+  partition po bit 172: \y [172] <-> \y [172]
+  partition po bit 173: \y [173] <-> \y [173]
+  partition po bit 174: \y [174] <-> \y [174]
+  partition po bit 175: \y [175] <-> \y [175]
+  partition po bit 176: \y [176] <-> \y [176]
+  partition po bit 177: \y [177] <-> \y [177]
+  partition po bit 178: \y [178] <-> \y [178]
+  partition po bit 179: \y [179] <-> \y [179]
+  partition po bit 180: \y [180] <-> \y [180]
+  partition po bit 181: \y [181] <-> \y [181]
+  partition po bit 182: \y [182] <-> \y [182]
+  partition po bit 183: \y [183] <-> \y [183]
+  partition po bit 184: \y [184] <-> \y [184]
+  partition po bit 185: \y [185] <-> \y [185]
+  partition po bit 186: \y [186] <-> \y [186]
+  partition po bit 187: \y [187] <-> \y [187]
+  partition po bit 188: \y [188] <-> \y [188]
+  partition po bit 189: \y [189] <-> \y [189]
+  partition po bit 190: \y [190] <-> \y [190]
+  partition po bit 191: \y [191] <-> \y [191]
+  partition po bit 192: \y [192] <-> \y [192]
+  partition po bit 193: \y [193] <-> \y [193]
+  partition po bit 194: \y [194] <-> \y [194]
+  partition po bit 195: \y [195] <-> \y [195]
+  partition po bit 196: \y [196] <-> \y [196]
+  partition po bit 197: \y [197] <-> \y [197]
+  partition po bit 198: \y [198] <-> \y [198]
+  partition po bit 199: \y [199] <-> \y [199]
+  partition po bit 200: \y [200] <-> \y [200]
+  partition po bit 201: \y [201] <-> \y [201]
+  partition po bit 202: \y [202] <-> \y [202]
+  partition po bit 203: \y [203] <-> \y [203]
+  partition po bit 204: \y [204] <-> \y [204]
+  partition po bit 205: \y [205] <-> \y [205]
+  partition po bit 206: \y [206] <-> \y [206]
+  partition po bit 207: \y [207] <-> \y [207]
+  partition po bit 208: \y [208] <-> \y [208]
+  partition po bit 209: \y [209] <-> \y [209]
+  partition po bit 210: \y [210] <-> \y [210]
+  partition po bit 211: \y [211] <-> \y [211]
+  partition po bit 212: \y [212] <-> \y [212]
+  partition po bit 213: \y [213] <-> \y [213]
+  partition po bit 214: \y [214] <-> \y [214]
+  partition po bit 215: \y [215] <-> \y [215]
+  partition po bit 216: \y [216] <-> \y [216]
+  partition po bit 217: \y [217] <-> \y [217]
+  partition po bit 218: \y [218] <-> \y [218]
+  partition po bit 219: \y [219] <-> \y [219]
+  partition po bit 220: \y [220] <-> \y [220]
+  partition po bit 221: \y [221] <-> \y [221]
+  partition po bit 222: \y [222] <-> \y [222]
+  partition po bit 223: \y [223] <-> \y [223]
+  partition po bit 224: \y [224] <-> \y [224]
+  partition po bit 225: \y [225] <-> \y [225]
+  partition po bit 226: \y [226] <-> \y [226]
+  partition po bit 227: \y [227] <-> \y [227]
+  partition po bit 228: \y [228] <-> \y [228]
+  partition po bit 229: \y [229] <-> \y [229]
+  partition po bit 230: \y [230] <-> \y [230]
+  partition po bit 231: \y [231] <-> \y [231]
+  partition po bit 232: \y [232] <-> \y [232]
+  partition po bit 233: \y [233] <-> \y [233]
+  partition po bit 234: \y [234] <-> \y [234]
+  partition po bit 235: \y [235] <-> \y [235]
+  partition po bit 236: \y [236] <-> \y [236]
+  partition po bit 237: \y [237] <-> \y [237]
+  partition po bit 238: \y [238] <-> \y [238]
+  partition po bit 239: \y [239] <-> \y [239]
+  partition po bit 240: \y [240] <-> \y [240]
+  partition po bit 241: \y [241] <-> \y [241]
+  partition po bit 242: \y [242] <-> \y [242]
+  partition po bit 243: \y [243] <-> \y [243]
+  partition po bit 244: \y [244] <-> \y [244]
+  partition po bit 245: \y [245] <-> \y [245]
+  partition po bit 246: \y [246] <-> \y [246]
+  partition po bit 247: \y [247] <-> \y [247]
+  partition po bit 248: \y [248] <-> \y [248]
+  partition po bit 249: \y [249] <-> \y [249]
+  partition po bit 250: \y [250] <-> \y [250]
+  partition po bit 251: \y [251] <-> \y [251]
+  partition po bit 252: \y [252] <-> \y [252]
+  partition po bit 253: \y [253] <-> \y [253]
+  partition po bit 254: \y [254] <-> \y [254]
+  partition po bit 255: \y [255] <-> \y [255]
+  partition po bit 256: \y [256] <-> \y [256]
+  partition po bit 257: \y [257] <-> \y [257]
+  partition po bit 258: \y [258] <-> \y [258]
+  partition po bit 259: \y [259] <-> \y [259]
+  partition po bit 260: \y [260] <-> \y [260]
+  partition po bit 261: \y [261] <-> \y [261]
+  partition po bit 262: \y [262] <-> \y [262]
+  partition po bit 263: \y [263] <-> \y [263]
+  partition po bit 264: \y [264] <-> \y [264]
+  partition po bit 265: \y [265] <-> \y [265]
+  partition po bit 266: \y [266] <-> \y [266]
+  partition po bit 267: \y [267] <-> \y [267]
+  partition po bit 268: \y [268] <-> \y [268]
+  partition po bit 269: \y [269] <-> \y [269]
+  partition po bit 270: \y [270] <-> \y [270]
+  partition po bit 271: \y [271] <-> \y [271]
+  partition po bit 272: \y [272] <-> \y [272]
+  partition po bit 273: \y [273] <-> \y [273]
+  partition po bit 274: \y [274] <-> \y [274]
+  partition po bit 275: \y [275] <-> \y [275]
+  partition po bit 276: \y [276] <-> \y [276]
+  partition po bit 277: \y [277] <-> \y [277]
+  partition po bit 278: \y [278] <-> \y [278]
+  partition po bit 279: \y [279] <-> \y [279]
+  partition po bit 280: \y [280] <-> \y [280]
+  partition po bit 281: \y [281] <-> \y [281]
+  partition po bit 282: \y [282] <-> \y [282]
+  partition po bit 283: \y [283] <-> \y [283]
+  partition po bit 284: \y [284] <-> \y [284]
+  partition po bit 285: \y [285] <-> \y [285]
+  partition po bit 286: \y [286] <-> \y [286]
+  partition po bit 287: \y [287] <-> \y [287]
+  partition po bit 288: \y [288] <-> \y [288]
+  partition po bit 289: \y [289] <-> \y [289]
+  partition po bit 290: \y [290] <-> \y [290]
+  partition po bit 291: \y [291] <-> \y [291]
+  partition po bit 292: \y [292] <-> \y [292]
+  partition po bit 293: \y [293] <-> \y [293]
+  partition po bit 294: \y [294] <-> \y [294]
+  partition po bit 295: \y [295] <-> \y [295]
+  partition po bit 296: \y [296] <-> \y [296]
+  partition po bit 297: \y [297] <-> \y [297]
+  partition po bit 298: \y [298] <-> \y [298]
+  partition po bit 299: \y [299] <-> \y [299]
+  partition po bit 300: \y [300] <-> \y [300]
+  partition po bit 301: \y [301] <-> \y [301]
+  partition po bit 302: \y [302] <-> \y [302]
+  partition po bit 303: \y [303] <-> \y [303]
+  partition po bit 304: \y [304] <-> \y [304]
+  partition po bit 305: \y [305] <-> \y [305]
+  partition po bit 306: \y [306] <-> \y [306]
+  partition po bit 307: \y [307] <-> \y [307]
+  partition po bit 308: \y [308] <-> \y [308]
+  partition po bit 309: \y [309] <-> \y [309]
+  partition po bit 310: \y [310] <-> \y [310]
+  partition po bit 311: \y [311] <-> \y [311]
+  partition po bit 312: \y [312] <-> \y [312]
+  partition po bit 313: \y [313] <-> \y [313]
+  partition po bit 314: \y [314] <-> \y [314]
+  partition po bit 315: \y [315] <-> \y [315]
+  partition po bit 316: \y [316] <-> \y [316]
+  partition po bit 317: \y [317] <-> \y [317]
+  partition po bit 318: \y [318] <-> \y [318]
+  partition po bit 319: \y [319] <-> \y [319]
+  partition po bit 320: \y [320] <-> \y [320]
+  partition po bit 321: \y [321] <-> \y [321]
+  partition po bit 322: \y [322] <-> \y [322]
+  partition po bit 323: \y [323] <-> \y [323]
+  partition po bit 324: \y [324] <-> \y [324]
+  partition po bit 325: \y [325] <-> \y [325]
+  partition po bit 326: \y [326] <-> \y [326]
+  partition po bit 327: \y [327] <-> \y [327]
+  partition po bit 328: \y [328] <-> \y [328]
+  partition po bit 329: \y [329] <-> \y [329]
+  partition po bit 330: \y [330] <-> \y [330]
+  partition po bit 331: \y [331] <-> \y [331]
+  partition po bit 332: \y [332] <-> \y [332]
+  partition po bit 333: \y [333] <-> \y [333]
+  partition po bit 334: \y [334] <-> \y [334]
+  partition po bit 335: \y [335] <-> \y [335]
+  partition po bit 336: \y [336] <-> \y [336]
+  partition po bit 337: \y [337] <-> \y [337]
+  partition po bit 338: \y [338] <-> \y [338]
+  partition po bit 339: \y [339] <-> \y [339]
+  partition po bit 340: \y [340] <-> \y [340]
+  partition po bit 341: \y [341] <-> \y [341]
+  partition po bit 342: \y [342] <-> \y [342]
+  partition po bit 343: \y [343] <-> \y [343]
+  partition po bit 344: \y [344] <-> \y [344]
+  partition po bit 345: \y [345] <-> \y [345]
+  partition po bit 346: \y [346] <-> \y [346]
+  partition po bit 347: \y [347] <-> \y [347]
+  partition po bit 348: \y [348] <-> \y [348]
+  partition po bit 349: \y [349] <-> \y [349]
+  partition po bit 350: \y [350] <-> \y [350]
+  partition po bit 351: \y [351] <-> \y [351]
+  partition po bit 352: \y [352] <-> \y [352]
+  partition po bit 353: \y [353] <-> \y [353]
+  partition po bit 354: \y [354] <-> \y [354]
+  partition po bit 355: \y [355] <-> \y [355]
+  partition po bit 356: \y [356] <-> \y [356]
+  partition po bit 357: \y [357] <-> \y [357]
+  partition po bit 358: \y [358] <-> \y [358]
+  partition po bit 359: \y [359] <-> \y [359]
+  partition po bit 360: \y [360] <-> \y [360]
+  partition po bit 361: \y [361] <-> \y [361]
+  partition po bit 362: \y [362] <-> \y [362]
+  partition po bit 363: \y [363] <-> \y [363]
+  partition po bit 364: \y [364] <-> \y [364]
+  partition po bit 365: \y [365] <-> \y [365]
+  partition po bit 366: \y [366] <-> \y [366]
+  partition po bit 367: \y [367] <-> \y [367]
+  partition po bit 368: \y [368] <-> \y [368]
+  partition po bit 369: \y [369] <-> \y [369]
+  partition po bit 370: \y [370] <-> \y [370]
+  partition po bit 371: \y [371] <-> \y [371]
+  partition po bit 372: \y [372] <-> \y [372]
+  partition po bit 373: \y [373] <-> \y [373]
+  partition po bit 374: \y [374] <-> \y [374]
+  partition po bit 375: \y [375] <-> \y [375]
+  partition po bit 376: \y [376] <-> \y [376]
+  partition po bit 377: \y [377] <-> \y [377]
+  partition po bit 378: \y [378] <-> \y [378]
+  partition po bit 379: \y [379] <-> \y [379]
+  partition po bit 380: \y [380] <-> \y [380]
+  partition po bit 381: \y [381] <-> \y [381]
+  partition po bit 382: \y [382] <-> \y [382]
+  partition po bit 383: \y [383] <-> \y [383]
+
+3.1.7. Executing RTLIL backend.
+Output filename: modules/top.il
+<suppressed ~4584 debug messages>
+
+End of script. Logfile hash: 6db343fbac
+Yosys 0.69+274 (git sha1 7513f8df8, Release, GNU /usr/bin/x86_64-w64-mingw32-g++ 15.2.1)
+Time spent: 14% 2x write_rtlil (0 sec), 14% 2x read_rtlil (0 sec), ...

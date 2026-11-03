@@ -1,0 +1,5 @@
+{
+  "independent_yosys_sha256": "bafe6f5c0493c29126222a7b5b7818d93c92ef40938c7cfcdb1e36bb67587024",
+  "independent_tool": "OSS-CAD-Suite native Yosys; matching bin and lib required",
+  "scope": "fresh equations from R48 and actual candidate exports, both original pressure references, explicit-init RTL induction"
+}

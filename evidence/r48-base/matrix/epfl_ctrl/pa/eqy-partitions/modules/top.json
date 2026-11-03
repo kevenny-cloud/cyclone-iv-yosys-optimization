@@ -1,0 +1,124 @@
+{
+  "partition": {
+    "index": 1,
+    "name": "top",
+    "inbits": {
+      "op_ext[0]": [
+        0
+      ],
+      "op_ext[1]": [
+        0
+      ],
+      "opcode[0]": [
+        0
+      ],
+      "opcode[1]": [
+        0
+      ],
+      "opcode[2]": [
+        0
+      ],
+      "opcode[3]": [
+        0
+      ],
+      "opcode[4]": [
+        0
+      ]
+    },
+    "outbits": {
+      "Cin": [
+        0
+      ],
+      "alu_op[0]": [
+        0
+      ],
+      "alu_op[1]": [
+        0
+      ],
+      "alu_op[2]": [
+        0
+      ],
+      "alu_op_ext[0]": [
+        0
+      ],
+      "alu_op_ext[1]": [
+        0
+      ],
+      "alu_op_ext[2]": [
+        0
+      ],
+      "alu_op_ext[3]": [
+        0
+      ],
+      "beqz": [
+        0
+      ],
+      "bgez": [
+        0
+      ],
+      "bltz": [
+        0
+      ],
+      "bnez": [
+        0
+      ],
+      "halt": [
+        0
+      ],
+      "invA": [
+        0
+      ],
+      "invB": [
+        0
+      ],
+      "jump": [
+        0
+      ],
+      "mem_write": [
+        0
+      ],
+      "reg_write": [
+        0
+      ],
+      "sel_alu_opB[0]": [
+        0
+      ],
+      "sel_alu_opB[1]": [
+        0
+      ],
+      "sel_pc_opA": [
+        0
+      ],
+      "sel_pc_opB": [
+        0
+      ],
+      "sel_reg_dst[0]": [
+        0
+      ],
+      "sel_reg_dst[1]": [
+        0
+      ],
+      "sel_wb": [
+        0
+      ],
+      "sign": [
+        0
+      ]
+    },
+    "crossbits": {}
+  },
+  "gold_module": {
+    "name": "gold.top",
+    "internal": {},
+    "unused": {},
+    "cellcount": 56,
+    "bitcount": 63
+  },
+  "gate_module": {
+    "name": "gold.top",
+    "internal": {},
+    "unused": {},
+    "cellcount": 50,
+    "bitcount": 57
+  }
+}

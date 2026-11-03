@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "cases": {
+    "public_output": "DELIBERATE_FAULT_REJECTED",
+    "explicit_initial": "DELIBERATE_FAULT_REJECTED"
+  }
+}

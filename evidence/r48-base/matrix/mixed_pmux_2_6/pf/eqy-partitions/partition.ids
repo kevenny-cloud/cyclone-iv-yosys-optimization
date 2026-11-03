@@ -1,0 +1,5 @@
+bind top data
+bind top mixed
+bind top sel
+bind top y
+group top data mixed sel y

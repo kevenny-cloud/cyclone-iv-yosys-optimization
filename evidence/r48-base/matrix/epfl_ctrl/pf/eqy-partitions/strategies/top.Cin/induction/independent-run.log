@@ -1,0 +1,940 @@
+
+-- Executing script file `run.ys' --
+
+1. Executing Verilog-2005 frontend: ../../../partitions/top.Cin.sv
+Parsing SystemVerilog input from `../../../partitions/top.Cin.sv' to AST representation.
+Generating RTLIL representation for module `\miter'.
+Generating RTLIL representation for module `\miter_cmp_prop'.
+Generating RTLIL representation for module `\miter_def_prop'.
+Generating RTLIL representation for module `\gold.top.Cin'.
+Generating RTLIL representation for module `\gate.top.Cin'.
+Successfully finished Verilog frontend.
+
+2. Executing RTLIL frontend.
+Input filename: ../../../partitions/top.Cin.il
+Replacing existing blackbox module \gold.top.Cin.
+Replacing existing blackbox module \gate.top.Cin.
+
+3. Executing HIERARCHY pass (managing design hierarchy).
+
+3.1. Analyzing design hierarchy..
+Top module:  \miter
+Used module:     \miter_cmp_prop
+Used module:     \gate.top.Cin
+Used module:     \gold.top.Cin
+Parameter 1 (\WIDTH) = 1
+Parameter 2 (\TYPE) = 48'011000010111001101110011011001010111001001110100
+
+3.2. Executing AST frontend in derive mode using pre-parsed AST for module `\miter_cmp_prop'.
+Parameter 1 (\WIDTH) = 1
+Parameter 2 (\TYPE) = 48'011000010111001101110011011001010111001001110100
+Generating RTLIL representation for module `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop'.
+Parameter 1 (\WIDTH) = 1
+Parameter 2 (\TYPE) = 48'011000010111001101110011011001010111001001110100
+Found cached RTLIL representation for module `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop'.
+Parameter 1 (\WIDTH) = 1
+Parameter 2 (\TYPE) = 48'011000010111001101110011011001010111001001110100
+Found cached RTLIL representation for module `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop'.
+Parameter 1 (\WIDTH) = 1
+Parameter 2 (\TYPE) = 48'011000010111001101110011011001010111001001110100
+Found cached RTLIL representation for module `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop'.
+Parameter 1 (\WIDTH) = 1
+Parameter 2 (\TYPE) = 48'011000010111001101110011011001010111001001110100
+Found cached RTLIL representation for module `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop'.
+Parameter 1 (\WIDTH) = 1
+Parameter 2 (\TYPE) = 48'011000010111001101110011011001010111001001110100
+Found cached RTLIL representation for module `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop'.
+Parameter 1 (\WIDTH) = 1
+Parameter 2 (\TYPE) = 48'011000010111001101110011011001010111001001110100
+Found cached RTLIL representation for module `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop'.
+Parameter 1 (\WIDTH) = 1
+Parameter 2 (\TYPE) = 48'011000010111001101110011011001010111001001110100
+Found cached RTLIL representation for module `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop'.
+Parameter 1 (\WIDTH) = 1
+Parameter 2 (\TYPE) = 48'011000010111001101110011011001010111001001110100
+Found cached RTLIL representation for module `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop'.
+Parameter 1 (\WIDTH) = 1
+Parameter 2 (\TYPE) = 48'011000010111001101110011011001010111001001110100
+Found cached RTLIL representation for module `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop'.
+Parameter 1 (\WIDTH) = 1
+Parameter 2 (\TYPE) = 48'011000010111001101110011011001010111001001110100
+Found cached RTLIL representation for module `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop'.
+Parameter 1 (\WIDTH) = 1
+Parameter 2 (\TYPE) = 48'011000010111001101110011011001010111001001110100
+Found cached RTLIL representation for module `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop'.
+Parameter 1 (\WIDTH) = 1
+Parameter 2 (\TYPE) = 48'011000010111001101110011011001010111001001110100
+Found cached RTLIL representation for module `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop'.
+Parameter 1 (\WIDTH) = 1
+Parameter 2 (\TYPE) = 48'011000010111001101110011011001010111001001110100
+Found cached RTLIL representation for module `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop'.
+Parameter 1 (\WIDTH) = 1
+Parameter 2 (\TYPE) = 48'011000010111001101110011011001010111001001110100
+Found cached RTLIL representation for module `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop'.
+Parameter 1 (\WIDTH) = 1
+Parameter 2 (\TYPE) = 48'011000010111001101110011011001010111001001110100
+Found cached RTLIL representation for module `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop'.
+Parameter 1 (\WIDTH) = 1
+Parameter 2 (\TYPE) = 48'011000010111001101110011011001010111001001110100
+Found cached RTLIL representation for module `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop'.
+Parameter 1 (\WIDTH) = 1
+Parameter 2 (\TYPE) = 48'011000010111001101110011011001010111001001110100
+Found cached RTLIL representation for module `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop'.
+Parameter 1 (\WIDTH) = 1
+Parameter 2 (\TYPE) = 48'011000010111001101110011011001010111001001110100
+Found cached RTLIL representation for module `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop'.
+Parameter 1 (\WIDTH) = 1
+Parameter 2 (\TYPE) = 48'011000010111001101110011011001010111001001110100
+Found cached RTLIL representation for module `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop'.
+Parameter 1 (\WIDTH) = 1
+Parameter 2 (\TYPE) = 48'011000010111001101110011011001010111001001110100
+Found cached RTLIL representation for module `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop'.
+Parameter 1 (\WIDTH) = 1
+Parameter 2 (\TYPE) = 48'011000010111001101110011011001010111001001110100
+Found cached RTLIL representation for module `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop'.
+Parameter 1 (\WIDTH) = 1
+Parameter 2 (\TYPE) = 48'011000010111001101110011011001010111001001110100
+Found cached RTLIL representation for module `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop'.
+Parameter 1 (\WIDTH) = 1
+Parameter 2 (\TYPE) = 48'011000010111001101110011011001010111001001110100
+Found cached RTLIL representation for module `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop'.
+Parameter 1 (\WIDTH) = 1
+Parameter 2 (\TYPE) = 48'011000010111001101110011011001010111001001110100
+Found cached RTLIL representation for module `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop'.
+Parameter 1 (\WIDTH) = 1
+Parameter 2 (\TYPE) = 48'011000010111001101110011011001010111001001110100
+Found cached RTLIL representation for module `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop'.
+
+3.3. Analyzing design hierarchy..
+Top module:  \miter
+Used module:     $paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop
+Used module:     \gate.top.Cin
+Used module:     \gold.top.Cin
+
+3.4. Analyzing design hierarchy..
+Top module:  \miter
+Used module:     $paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop
+Used module:     \gate.top.Cin
+Used module:     \gold.top.Cin
+Removing unused module `\miter_def_prop'.
+Removing unused module `\miter_cmp_prop'.
+Removed 2 unused modules.
+Module $paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop directly or indirectly contains formal properties -> setting "keep" attribute.
+Module miter directly or indirectly contains formal properties -> setting "keep" attribute.
+Mapping positional arguments of cell miter.__po_sign__assert ($paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop).
+Mapping positional arguments of cell miter.__po_sel_wb__assert ($paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop).
+Mapping positional arguments of cell miter.__po_sel_reg_dst[1]__assert ($paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop).
+Mapping positional arguments of cell miter.__po_sel_reg_dst[0]__assert ($paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop).
+Mapping positional arguments of cell miter.__po_sel_pc_opB__assert ($paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop).
+Mapping positional arguments of cell miter.__po_sel_pc_opA__assert ($paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop).
+Mapping positional arguments of cell miter.__po_sel_alu_opB[1]__assert ($paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop).
+Mapping positional arguments of cell miter.__po_sel_alu_opB[0]__assert ($paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop).
+Mapping positional arguments of cell miter.__po_reg_write__assert ($paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop).
+Mapping positional arguments of cell miter.__po_mem_write__assert ($paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop).
+Mapping positional arguments of cell miter.__po_jump__assert ($paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop).
+Mapping positional arguments of cell miter.__po_invB__assert ($paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop).
+Mapping positional arguments of cell miter.__po_invA__assert ($paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop).
+Mapping positional arguments of cell miter.__po_halt__assert ($paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop).
+Mapping positional arguments of cell miter.__po_bnez__assert ($paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop).
+Mapping positional arguments of cell miter.__po_bltz__assert ($paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop).
+Mapping positional arguments of cell miter.__po_bgez__assert ($paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop).
+Mapping positional arguments of cell miter.__po_beqz__assert ($paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop).
+Mapping positional arguments of cell miter.__po_alu_op_ext[3]__assert ($paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop).
+Mapping positional arguments of cell miter.__po_alu_op_ext[2]__assert ($paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop).
+Mapping positional arguments of cell miter.__po_alu_op_ext[1]__assert ($paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop).
+Mapping positional arguments of cell miter.__po_alu_op_ext[0]__assert ($paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop).
+Mapping positional arguments of cell miter.__po_alu_op[2]__assert ($paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop).
+Mapping positional arguments of cell miter.__po_alu_op[1]__assert ($paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop).
+Mapping positional arguments of cell miter.__po_alu_op[0]__assert ($paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop).
+Mapping positional arguments of cell miter.__po_Cin__assert ($paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop).
+
+4. Executing PROC pass (convert processes to netlists).
+
+4.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+4.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Removed a total of 0 dead cases.
+
+4.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 1 redundant assignment.
+Promoted 3 assignments to connections.
+
+4.4. Executing PROC_INIT pass (extract init attributes).
+
+4.5. Executing PROC_ARST pass (detect async resets in processes).
+
+4.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+
+4.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop.$proc$../../../partitions/top.Cin.sv:257$1336'.
+Creating decoders for process `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop.$proc$../../../partitions/top.Cin.sv:251$1331'.
+
+4.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop.\i' from process `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop.$proc$../../../partitions/top.Cin.sv:251$1331'.
+No latch inferred for signal `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop.\okay' from process `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop.$proc$../../../partitions/top.Cin.sv:251$1331'.
+
+4.9. Executing PROC_DFF pass (convert process syncs to FFs).
+
+4.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+4.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Removing empty process `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop.$proc$../../../partitions/top.Cin.sv:257$1336'.
+Removing empty process `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop.$proc$../../../partitions/top.Cin.sv:251$1331'.
+Cleaned up 0 empty switches.
+
+4.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module gold.top.Cin.
+Optimizing module $paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop.
+<suppressed ~1 debug messages>
+Optimizing module gate.top.Cin.
+Optimizing module miter.
+
+5. Executing ASYNC2SYNC pass.
+
+6. Executing FORMALFF pass.
+
+7. Executing SETUNDEF pass (replace undef values with defined constants).
+
+8. Executing FLATTEN pass (flatten design).
+Deleting now unused module gold.top.Cin.
+Deleting now unused module $paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop.
+Deleting now unused module gate.top.Cin.
+<suppressed ~28 debug messages>
+
+9. Executing DFFUNMAP pass (unmap clock enable and synchronous reset from FFs).
+
+10. Executing OPT_EXPR pass (perform const folding).
+Optimizing module miter.
+<suppressed ~26 debug messages>
+
+11. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \miter..
+Removed 26 unused cells and 182 unused wires.
+<suppressed ~29 debug messages>
+
+12. Executing SAT pass (solving SAT problems in the circuit).
+Using SAT solver `minisat`.
+
+Setting up time step 1:
+Final constraint equation: { } = { }
+Import def constraint for this timestep: \__pi_op_ext[0]
+Import def constraint for this timestep: \__pi_op_ext[1]
+Import def constraint for this timestep: \__pi_opcode[0]
+Import def constraint for this timestep: \__pi_opcode[1]
+Import def constraint for this timestep: \__pi_opcode[2]
+Import def constraint for this timestep: \__pi_opcode[3]
+Import def constraint for this timestep: \__pi_opcode[4]
+Imported 236 cells to SAT database.
+Import proof for assert: \__po_sel_reg_dst[1]__assert.okay when 1'1.
+Import proof for assert: \__po_mem_write__assert.okay when 1'1.
+Import proof for assert: \__po_sel_reg_dst[0]__assert.okay when 1'1.
+Import proof for assert: \__po_jump__assert.okay when 1'1.
+Import proof for assert: \__po_invB__assert.okay when 1'1.
+Import proof for assert: \__po_sel_alu_opB[1]__assert.okay when 1'1.
+Import proof for assert: \__po_invA__assert.okay when 1'1.
+Import proof for assert: \__po_sel_alu_opB[0]__assert.okay when 1'1.
+Import proof for assert: \__po_halt__assert.okay when 1'1.
+Import proof for assert: \__po_sel_wb__assert.okay when 1'1.
+Import proof for assert: \__po_bnez__assert.okay when 1'1.
+Import proof for assert: \__po_bltz__assert.okay when 1'1.
+Import proof for assert: \__po_bgez__assert.okay when 1'1.
+Import proof for assert: \__po_beqz__assert.okay when 1'1.
+Import proof for assert: \__po_sel_pc_opA__assert.okay when 1'1.
+Import proof for assert: \__po_alu_op_ext[3]__assert.okay when 1'1.
+Import proof for assert: \__po_alu_op_ext[2]__assert.okay when 1'1.
+Import proof for assert: \__po_sign__assert.okay when 1'1.
+Import proof for assert: \__po_alu_op_ext[1]__assert.okay when 1'1.
+Import proof for assert: \__po_reg_write__assert.okay when 1'1.
+Import proof for assert: \__po_alu_op_ext[0]__assert.okay when 1'1.
+Import proof for assert: \__po_alu_op[2]__assert.okay when 1'1.
+Import proof for assert: \__po_alu_op[1]__assert.okay when 1'1.
+Import proof for assert: \__po_sel_pc_opB__assert.okay when 1'1.
+Import proof for assert: \__po_alu_op[0]__assert.okay when 1'1.
+Import proof for assert: \__po_Cin__assert.okay when 1'1.
+
+** Trying induction with length 1 **
+
+Setting up time step 1:
+Final constraint equation: { } = { }
+Import def constraint for this timestep: \__pi_op_ext[0]
+Import def constraint for this timestep: \__pi_op_ext[1]
+Import def constraint for this timestep: \__pi_opcode[0]
+Import def constraint for this timestep: \__pi_opcode[1]
+Import def constraint for this timestep: \__pi_opcode[2]
+Import def constraint for this timestep: \__pi_opcode[3]
+Import def constraint for this timestep: \__pi_opcode[4]
+Imported 236 cells to SAT database.
+No constraints for initial state found.
+
+Import proof for assert: \__po_sel_reg_dst[1]__assert.okay when 1'1.
+Import proof for assert: \__po_mem_write__assert.okay when 1'1.
+Import proof for assert: \__po_sel_reg_dst[0]__assert.okay when 1'1.
+Import proof for assert: \__po_jump__assert.okay when 1'1.
+Import proof for assert: \__po_invB__assert.okay when 1'1.
+Import proof for assert: \__po_sel_alu_opB[1]__assert.okay when 1'1.
+Import proof for assert: \__po_invA__assert.okay when 1'1.
+Import proof for assert: \__po_sel_alu_opB[0]__assert.okay when 1'1.
+Import proof for assert: \__po_halt__assert.okay when 1'1.
+Import proof for assert: \__po_sel_wb__assert.okay when 1'1.
+Import proof for assert: \__po_bnez__assert.okay when 1'1.
+Import proof for assert: \__po_bltz__assert.okay when 1'1.
+Import proof for assert: \__po_bgez__assert.okay when 1'1.
+Import proof for assert: \__po_beqz__assert.okay when 1'1.
+Import proof for assert: \__po_sel_pc_opA__assert.okay when 1'1.
+Import proof for assert: \__po_alu_op_ext[3]__assert.okay when 1'1.
+Import proof for assert: \__po_alu_op_ext[2]__assert.okay when 1'1.
+Import proof for assert: \__po_sign__assert.okay when 1'1.
+Import proof for assert: \__po_alu_op_ext[1]__assert.okay when 1'1.
+Import proof for assert: \__po_reg_write__assert.okay when 1'1.
+Import proof for assert: \__po_alu_op_ext[0]__assert.okay when 1'1.
+Import proof for assert: \__po_alu_op[2]__assert.okay when 1'1.
+Import proof for assert: \__po_alu_op[1]__assert.okay when 1'1.
+Import proof for assert: \__po_sel_pc_opB__assert.okay when 1'1.
+Import proof for assert: \__po_alu_op[0]__assert.okay when 1'1.
+Import proof for assert: \__po_Cin__assert.okay when 1'1.
+Import show expression: \__po_bnez__assert.in_gold
+Import show expression: \__po_bnez__assert.in_gate
+Import show expression: \__po_bnez__assert.okay
+Import show expression: \__po_bnez__assert.i
+Import show expression: \__po_mem_write__assert.okay
+Import show expression: \__po_sel_alu_opB[1]__assert.i
+Import show expression: \__po_sel_alu_opB[1]__assert.okay
+Import show expression: \__po_sel_alu_opB[1]__assert.in_gate
+Import show expression: \__po_sel_alu_opB[1]__assert.in_gold
+Import show expression: \__po_reg_write__assert.i
+Import show expression: \__po_bltz__assert.in_gold
+Import show expression: \__po_bltz__assert.in_gate
+Import show expression: \__po_bltz__assert.okay
+Import show expression: \__po_bltz__assert.i
+Import show expression: \__po_reg_write__assert.okay
+Import show expression: \__po_reg_write__assert.in_gate
+Import show expression: \__po_invB__assert.in_gold
+Import show expression: \__po_invB__assert.in_gate
+Import show expression: \__po_invB__assert.okay
+Import show expression: \__po_bgez__assert.in_gold
+Import show expression: \__po_bgez__assert.in_gate
+Import show expression: \__po_bgez__assert.okay
+Import show expression: \__po_bgez__assert.i
+Import show expression: \__po_invB__assert.i
+Import show expression: \__po_sel_pc_opA__assert.i
+Import show expression: \__po_sel_pc_opA__assert.okay
+Import show expression: \__po_sel_pc_opA__assert.in_gate
+Import show expression: \__po_sel_pc_opA__assert.in_gold
+Import show expression: \__po_reg_write__assert.in_gold
+Import show expression: \__po_mem_write__assert.i
+Import show expression: \__po_beqz__assert.in_gold
+Import show expression: \__po_beqz__assert.in_gate
+Import show expression: \__po_beqz__assert.okay
+Import show expression: \__po_beqz__assert.i
+Import show expression: \__po_mem_write__assert.in_gate
+Import show expression: \__po_mem_write__assert.in_gold
+Import show expression: \__po_alu_op_ext[3]__assert.in_gold
+Import show expression: \__po_alu_op_ext[3]__assert.in_gate
+Import show expression: \__po_alu_op_ext[3]__assert.okay
+Import show expression: \__po_alu_op_ext[3]__assert.i
+Import show expression: \__po_sel_pc_opB__assert.i
+Import show expression: \__po_sel_pc_opB__assert.okay
+Import show expression: \__po_sel_pc_opB__assert.in_gate
+Import show expression: \__po_sel_pc_opB__assert.in_gold
+Import show expression: \__po_jump__assert.in_gold
+Import show expression: \__po_invA__assert.in_gold
+Import show expression: \__po_alu_op_ext[2]__assert.in_gold
+Import show expression: \__po_alu_op_ext[2]__assert.in_gate
+Import show expression: \__po_alu_op_ext[2]__assert.okay
+Import show expression: \__po_alu_op_ext[2]__assert.i
+Import show expression: \__po_invA__assert.in_gate
+Import show expression: \__po_invA__assert.okay
+Import show expression: \__po_invA__assert.i
+Import show expression: \__po_sel_reg_dst[0]__assert.i
+Import show expression: \__po_alu_op_ext[1]__assert.in_gold
+Import show expression: \__po_alu_op_ext[1]__assert.in_gate
+Import show expression: \__po_alu_op_ext[1]__assert.okay
+Import show expression: \__po_alu_op_ext[1]__assert.i
+Import show expression: \__po_sel_reg_dst[0]__assert.okay
+Import show expression: \__po_sel_reg_dst[0]__assert.in_gate
+Import show expression: \__po_sel_reg_dst[0]__assert.in_gold
+Import show expression: \__po_jump__assert.in_gate
+Import show expression: \__po_jump__assert.okay
+Import show expression: \__po_alu_op_ext[0]__assert.in_gold
+Import show expression: \__po_alu_op_ext[0]__assert.in_gate
+Import show expression: \__po_alu_op_ext[0]__assert.okay
+Import show expression: \__po_alu_op_ext[0]__assert.i
+Import show expression: \__po_sel_alu_opB[0]__assert.i
+Import show expression: \__po_sel_alu_opB[0]__assert.okay
+Import show expression: \__po_sel_alu_opB[0]__assert.in_gate
+Import show expression: \__po_sel_reg_dst[1]__assert.i
+Import show expression: \__po_sel_reg_dst[1]__assert.okay
+Import show expression: \__po_alu_op[2]__assert.in_gold
+Import show expression: \__po_alu_op[2]__assert.in_gate
+Import show expression: \__po_alu_op[2]__assert.okay
+Import show expression: \__po_alu_op[2]__assert.i
+Import show expression: \__po_sel_reg_dst[1]__assert.in_gate
+Import show expression: \__po_sel_reg_dst[1]__assert.in_gold
+Import show expression: \__po_sel_alu_opB[0]__assert.in_gold
+Import show expression: \__po_halt__assert.in_gold
+Import show expression: \__po_halt__assert.in_gate
+Import show expression: \__po_halt__assert.okay
+Import show expression: \__po_halt__assert.i
+Import show expression: \__po_alu_op[1]__assert.in_gold
+Import show expression: \__po_alu_op[1]__assert.in_gate
+Import show expression: \__po_alu_op[1]__assert.okay
+Import show expression: \__po_alu_op[1]__assert.i
+Import show expression: \__po_jump__assert.i
+Import show expression: \__po_sel_wb__assert.i
+Import show expression: \__po_sel_wb__assert.okay
+Import show expression: \__po_sel_wb__assert.in_gate
+Import show expression: \__po_alu_op[0]__assert.in_gold
+Import show expression: \__po_alu_op[0]__assert.in_gate
+Import show expression: \__po_alu_op[0]__assert.okay
+Import show expression: \__po_alu_op[0]__assert.i
+Import show expression: \__po_sel_wb__assert.in_gold
+Import show expression: \__po_Cin__assert.in_gold
+Import show expression: \__po_Cin__assert.in_gate
+Import show expression: \__po_Cin__assert.okay
+Import show expression: \__po_Cin__assert.i
+Import show expression: \__po_sign__assert.i
+Import show expression: \__po_sign__assert.okay
+Import show expression: \__po_sign__assert.in_gate
+Import show expression: \__po_sign__assert.in_gold
+Import show expression: \gate.sel_wb
+Import show expression: \gate.sel_reg_dst[1]
+Import show expression: \gate.sel_reg_dst[0]
+Import show expression: \gate.sel_pc_opB
+Import show expression: \gate.sel_pc_opA
+Import show expression: \gate.sel_alu_opB[1]
+Import show expression: \gate.sel_alu_opB[0]
+Import show expression: \gate.reg_write
+Import show expression: \gate.mem_write
+Import show expression: \gate.jump
+Import show expression: \gate.invB
+Import show expression: \gate.invA
+Import show expression: \gate.halt
+Import show expression: \gate.bnez
+Import show expression: \gate.bltz
+Import show expression: \gate.bgez
+Import show expression: \gate.beqz
+Import show expression: \gate.alu_op_ext[3]
+Import show expression: \gate.alu_op_ext[2]
+Import show expression: \gate.alu_op_ext[1]
+Import show expression: \gate.alu_op_ext[0]
+Import show expression: \gate.alu_op[2]
+Import show expression: \gate.alu_op[1]
+Import show expression: \gate.op_ext[1]
+Import show expression: \gate.alu_op[0]
+Import show expression: \gate.op_ext[0]
+Import show expression: \gate.opcode[3]
+Import show expression: \gate.opcode[4]
+Import show expression: \gate.opcode[0]
+Import show expression: \gate.opcode[1]
+Import show expression: \gate.opcode[2]
+Import show expression: \gate.Cin
+Import show expression: \gate.sign
+Import show expression: \gate.__pi_op_ext[0]
+Import show expression: \gate.__pi_op_ext[1]
+Import show expression: \gate.__pi_opcode[0]
+Import show expression: \gate.__pi_opcode[1]
+Import show expression: \gate.__pi_opcode[2]
+Import show expression: \gate.__pi_opcode[3]
+Import show expression: \gate.__pi_opcode[4]
+Import show expression: \gate.__po_Cin
+Import show expression: \gate.__po_alu_op[0]
+Import show expression: \gate.__po_alu_op[1]
+Import show expression: \gate.__po_alu_op[2]
+Import show expression: \gate.__po_alu_op_ext[0]
+Import show expression: \gate.__po_alu_op_ext[1]
+Import show expression: \gate.__po_alu_op_ext[2]
+Import show expression: \gate.__po_alu_op_ext[3]
+Import show expression: \gate.__po_beqz
+Import show expression: \gate.__po_bgez
+Import show expression: \gate.__po_bltz
+Import show expression: \gate.__po_bnez
+Import show expression: \gate.__po_halt
+Import show expression: \gate.__po_invA
+Import show expression: \gate.__po_invB
+Import show expression: \gate.__po_jump
+Import show expression: \gate.__po_mem_write
+Import show expression: \gate.__po_reg_write
+Import show expression: \gate.__po_sel_alu_opB[0]
+Import show expression: \gate.__po_sel_alu_opB[1]
+Import show expression: \gate.__po_sel_pc_opA
+Import show expression: \gate.__po_sel_pc_opB
+Import show expression: \gate.__po_sel_reg_dst[0]
+Import show expression: \gate.__po_sel_reg_dst[1]
+Import show expression: \gate.__po_sel_wb
+Import show expression: \gate.__po_sign
+Import show expression: \gold.sel_wb
+Import show expression: \gold.sel_reg_dst[1]
+Import show expression: \gold.sel_reg_dst[0]
+Import show expression: \gold.sel_pc_opB
+Import show expression: \gold.sel_pc_opA
+Import show expression: \gold.sel_alu_opB[1]
+Import show expression: \gold.sel_alu_opB[0]
+Import show expression: \gold.reg_write
+Import show expression: \gold.mem_write
+Import show expression: \gold.jump
+Import show expression: \gold.invB
+Import show expression: \gold.invA
+Import show expression: \gold.halt
+Import show expression: \gold.bnez
+Import show expression: \gold.bltz
+Import show expression: \gold.bgez
+Import show expression: \gold.beqz
+Import show expression: \gold.alu_op_ext[3]
+Import show expression: \gold.alu_op_ext[2]
+Import show expression: \gold.alu_op_ext[1]
+Import show expression: \gold.alu_op_ext[0]
+Import show expression: \gold.alu_op[2]
+Import show expression: \gold.alu_op[1]
+Import show expression: \gold.op_ext[1]
+Import show expression: \gold.alu_op[0]
+Import show expression: \gold.op_ext[0]
+Import show expression: \gold.opcode[3]
+Import show expression: \gold.opcode[4]
+Import show expression: \gold.opcode[0]
+Import show expression: \gold.opcode[1]
+Import show expression: \gold.opcode[2]
+Import show expression: \gold.Cin
+Import show expression: \gold.sign
+Import show expression: \gold.__pi_op_ext[0]
+Import show expression: \gold.__pi_op_ext[1]
+Import show expression: \gold.__pi_opcode[0]
+Import show expression: \gold.__pi_opcode[1]
+Import show expression: \gold.__pi_opcode[2]
+Import show expression: \gold.__pi_opcode[3]
+Import show expression: \gold.__pi_opcode[4]
+Import show expression: \gold.__po_Cin
+Import show expression: \gold.__po_alu_op[0]
+Import show expression: \gold.__po_alu_op[1]
+Import show expression: \gold.__po_alu_op[2]
+Import show expression: \gold.__po_alu_op_ext[0]
+Import show expression: \gold.__po_alu_op_ext[1]
+Import show expression: \gold.__po_alu_op_ext[2]
+Import show expression: \gold.__po_alu_op_ext[3]
+Import show expression: \gold.__po_beqz
+Import show expression: \gold.__po_bgez
+Import show expression: \gold.__po_bltz
+Import show expression: \gold.__po_bnez
+Import show expression: \gold.__po_halt
+Import show expression: \gold.__po_invA
+Import show expression: \gold.__po_invB
+Import show expression: \gold.__po_jump
+Import show expression: \gold.__po_mem_write
+Import show expression: \gold.__po_reg_write
+Import show expression: \gold.__po_sel_alu_opB[0]
+Import show expression: \gold.__po_sel_alu_opB[1]
+Import show expression: \gold.__po_sel_pc_opA
+Import show expression: \gold.__po_sel_pc_opB
+Import show expression: \gold.__po_sel_reg_dst[0]
+Import show expression: \gold.__po_sel_reg_dst[1]
+Import show expression: \gold.__po_sel_wb
+Import show expression: \gold.__po_sign
+Import show expression: \__po_sign__gate
+Import show expression: \__po_sel_wb__gate
+Import show expression: \__po_sel_reg_dst[1]__gate
+Import show expression: \__po_sel_reg_dst[0]__gate
+Import show expression: \__po_sel_pc_opB__gate
+Import show expression: \__po_sel_pc_opA__gate
+Import show expression: \__po_sel_alu_opB[1]__gate
+Import show expression: \__po_sel_alu_opB[0]__gate
+Import show expression: \__po_reg_write__gate
+Import show expression: \__po_mem_write__gate
+Import show expression: \__po_jump__gate
+Import show expression: \__po_invB__gate
+Import show expression: \__po_invA__gate
+Import show expression: \__po_halt__gate
+Import show expression: \__po_bnez__gate
+Import show expression: \__po_bltz__gate
+Import show expression: \__po_bgez__gate
+Import show expression: \__po_beqz__gate
+Import show expression: \__po_alu_op_ext[3]__gate
+Import show expression: \__po_alu_op_ext[2]__gate
+Import show expression: \__po_alu_op_ext[1]__gate
+Import show expression: \__po_alu_op_ext[0]__gate
+Import show expression: \__po_alu_op[2]__gate
+Import show expression: \__po_alu_op[1]__gate
+Import show expression: \__po_alu_op[0]__gate
+Import show expression: \__po_Cin__gate
+Import show expression: \__po_sign__gold
+Import show expression: \__po_sel_wb__gold
+Import show expression: \__po_sel_reg_dst[1]__gold
+Import show expression: \__po_sel_reg_dst[0]__gold
+Import show expression: \__po_sel_pc_opB__gold
+Import show expression: \__po_sel_pc_opA__gold
+Import show expression: \__po_sel_alu_opB[1]__gold
+Import show expression: \__po_sel_alu_opB[0]__gold
+Import show expression: \__po_reg_write__gold
+Import show expression: \__po_mem_write__gold
+Import show expression: \__po_jump__gold
+Import show expression: \__po_invB__gold
+Import show expression: \__po_invA__gold
+Import show expression: \__po_halt__gold
+Import show expression: \__po_bnez__gold
+Import show expression: \__po_bltz__gold
+Import show expression: \__po_bgez__gold
+Import show expression: \__po_beqz__gold
+Import show expression: \__po_alu_op_ext[3]__gold
+Import show expression: \__po_alu_op_ext[2]__gold
+Import show expression: \__po_alu_op_ext[1]__gold
+Import show expression: \__po_alu_op_ext[0]__gold
+Import show expression: \__po_alu_op[2]__gold
+Import show expression: \__po_alu_op[1]__gold
+Import show expression: \__po_alu_op[0]__gold
+Import show expression: \__po_Cin__gold
+Import show expression: \__pi_opcode[4]
+Import show expression: \__pi_opcode[3]
+Import show expression: \__pi_opcode[2]
+Import show expression: \__pi_opcode[1]
+Import show expression: \__pi_opcode[0]
+Import show expression: \__pi_op_ext[1]
+Import show expression: \__pi_op_ext[0]
+
+[base case 1] Solving problem with 6453 variables and 18412 clauses..
+Base case for induction length 1 proven.
+
+Setting up time step 2:
+Final constraint equation: { } = { }
+Import def constraint for this timestep: \__pi_op_ext[0]
+Import def constraint for this timestep: \__pi_op_ext[1]
+Import def constraint for this timestep: \__pi_opcode[0]
+Import def constraint for this timestep: \__pi_opcode[1]
+Import def constraint for this timestep: \__pi_opcode[2]
+Import def constraint for this timestep: \__pi_opcode[3]
+Import def constraint for this timestep: \__pi_opcode[4]
+Imported 236 cells to SAT database.
+Import proof for assert: \__po_sel_reg_dst[1]__assert.okay when 1'1.
+Import proof for assert: \__po_mem_write__assert.okay when 1'1.
+Import proof for assert: \__po_sel_reg_dst[0]__assert.okay when 1'1.
+Import proof for assert: \__po_jump__assert.okay when 1'1.
+Import proof for assert: \__po_invB__assert.okay when 1'1.
+Import proof for assert: \__po_sel_alu_opB[1]__assert.okay when 1'1.
+Import proof for assert: \__po_invA__assert.okay when 1'1.
+Import proof for assert: \__po_sel_alu_opB[0]__assert.okay when 1'1.
+Import proof for assert: \__po_halt__assert.okay when 1'1.
+Import proof for assert: \__po_sel_wb__assert.okay when 1'1.
+Import proof for assert: \__po_bnez__assert.okay when 1'1.
+Import proof for assert: \__po_bltz__assert.okay when 1'1.
+Import proof for assert: \__po_bgez__assert.okay when 1'1.
+Import proof for assert: \__po_beqz__assert.okay when 1'1.
+Import proof for assert: \__po_sel_pc_opA__assert.okay when 1'1.
+Import proof for assert: \__po_alu_op_ext[3]__assert.okay when 1'1.
+Import proof for assert: \__po_alu_op_ext[2]__assert.okay when 1'1.
+Import proof for assert: \__po_sign__assert.okay when 1'1.
+Import proof for assert: \__po_alu_op_ext[1]__assert.okay when 1'1.
+Import proof for assert: \__po_reg_write__assert.okay when 1'1.
+Import proof for assert: \__po_alu_op_ext[0]__assert.okay when 1'1.
+Import proof for assert: \__po_alu_op[2]__assert.okay when 1'1.
+Import proof for assert: \__po_alu_op[1]__assert.okay when 1'1.
+Import proof for assert: \__po_sel_pc_opB__assert.okay when 1'1.
+Import proof for assert: \__po_alu_op[0]__assert.okay when 1'1.
+Import proof for assert: \__po_Cin__assert.okay when 1'1.
+Import show expression: \__po_bnez__assert.in_gold
+Import show expression: \__po_bnez__assert.in_gate
+Import show expression: \__po_bnez__assert.okay
+Import show expression: \__po_bnez__assert.i
+Import show expression: \__po_mem_write__assert.okay
+Import show expression: \__po_sel_alu_opB[1]__assert.i
+Import show expression: \__po_sel_alu_opB[1]__assert.okay
+Import show expression: \__po_sel_alu_opB[1]__assert.in_gate
+Import show expression: \__po_sel_alu_opB[1]__assert.in_gold
+Import show expression: \__po_reg_write__assert.i
+Import show expression: \__po_bltz__assert.in_gold
+Import show expression: \__po_bltz__assert.in_gate
+Import show expression: \__po_bltz__assert.okay
+Import show expression: \__po_bltz__assert.i
+Import show expression: \__po_reg_write__assert.okay
+Import show expression: \__po_reg_write__assert.in_gate
+Import show expression: \__po_invB__assert.in_gold
+Import show expression: \__po_invB__assert.in_gate
+Import show expression: \__po_invB__assert.okay
+Import show expression: \__po_bgez__assert.in_gold
+Import show expression: \__po_bgez__assert.in_gate
+Import show expression: \__po_bgez__assert.okay
+Import show expression: \__po_bgez__assert.i
+Import show expression: \__po_invB__assert.i
+Import show expression: \__po_sel_pc_opA__assert.i
+Import show expression: \__po_sel_pc_opA__assert.okay
+Import show expression: \__po_sel_pc_opA__assert.in_gate
+Import show expression: \__po_sel_pc_opA__assert.in_gold
+Import show expression: \__po_reg_write__assert.in_gold
+Import show expression: \__po_mem_write__assert.i
+Import show expression: \__po_beqz__assert.in_gold
+Import show expression: \__po_beqz__assert.in_gate
+Import show expression: \__po_beqz__assert.okay
+Import show expression: \__po_beqz__assert.i
+Import show expression: \__po_mem_write__assert.in_gate
+Import show expression: \__po_mem_write__assert.in_gold
+Import show expression: \__po_alu_op_ext[3]__assert.in_gold
+Import show expression: \__po_alu_op_ext[3]__assert.in_gate
+Import show expression: \__po_alu_op_ext[3]__assert.okay
+Import show expression: \__po_alu_op_ext[3]__assert.i
+Import show expression: \__po_sel_pc_opB__assert.i
+Import show expression: \__po_sel_pc_opB__assert.okay
+Import show expression: \__po_sel_pc_opB__assert.in_gate
+Import show expression: \__po_sel_pc_opB__assert.in_gold
+Import show expression: \__po_jump__assert.in_gold
+Import show expression: \__po_invA__assert.in_gold
+Import show expression: \__po_alu_op_ext[2]__assert.in_gold
+Import show expression: \__po_alu_op_ext[2]__assert.in_gate
+Import show expression: \__po_alu_op_ext[2]__assert.okay
+Import show expression: \__po_alu_op_ext[2]__assert.i
+Import show expression: \__po_invA__assert.in_gate
+Import show expression: \__po_invA__assert.okay
+Import show expression: \__po_invA__assert.i
+Import show expression: \__po_sel_reg_dst[0]__assert.i
+Import show expression: \__po_alu_op_ext[1]__assert.in_gold
+Import show expression: \__po_alu_op_ext[1]__assert.in_gate
+Import show expression: \__po_alu_op_ext[1]__assert.okay
+Import show expression: \__po_alu_op_ext[1]__assert.i
+Import show expression: \__po_sel_reg_dst[0]__assert.okay
+Import show expression: \__po_sel_reg_dst[0]__assert.in_gate
+Import show expression: \__po_sel_reg_dst[0]__assert.in_gold
+Import show expression: \__po_jump__assert.in_gate
+Import show expression: \__po_jump__assert.okay
+Import show expression: \__po_alu_op_ext[0]__assert.in_gold
+Import show expression: \__po_alu_op_ext[0]__assert.in_gate
+Import show expression: \__po_alu_op_ext[0]__assert.okay
+Import show expression: \__po_alu_op_ext[0]__assert.i
+Import show expression: \__po_sel_alu_opB[0]__assert.i
+Import show expression: \__po_sel_alu_opB[0]__assert.okay
+Import show expression: \__po_sel_alu_opB[0]__assert.in_gate
+Import show expression: \__po_sel_reg_dst[1]__assert.i
+Import show expression: \__po_sel_reg_dst[1]__assert.okay
+Import show expression: \__po_alu_op[2]__assert.in_gold
+Import show expression: \__po_alu_op[2]__assert.in_gate
+Import show expression: \__po_alu_op[2]__assert.okay
+Import show expression: \__po_alu_op[2]__assert.i
+Import show expression: \__po_sel_reg_dst[1]__assert.in_gate
+Import show expression: \__po_sel_reg_dst[1]__assert.in_gold
+Import show expression: \__po_sel_alu_opB[0]__assert.in_gold
+Import show expression: \__po_halt__assert.in_gold
+Import show expression: \__po_halt__assert.in_gate
+Import show expression: \__po_halt__assert.okay
+Import show expression: \__po_halt__assert.i
+Import show expression: \__po_alu_op[1]__assert.in_gold
+Import show expression: \__po_alu_op[1]__assert.in_gate
+Import show expression: \__po_alu_op[1]__assert.okay
+Import show expression: \__po_alu_op[1]__assert.i
+Import show expression: \__po_jump__assert.i
+Import show expression: \__po_sel_wb__assert.i
+Import show expression: \__po_sel_wb__assert.okay
+Import show expression: \__po_sel_wb__assert.in_gate
+Import show expression: \__po_alu_op[0]__assert.in_gold
+Import show expression: \__po_alu_op[0]__assert.in_gate
+Import show expression: \__po_alu_op[0]__assert.okay
+Import show expression: \__po_alu_op[0]__assert.i
+Import show expression: \__po_sel_wb__assert.in_gold
+Import show expression: \__po_Cin__assert.in_gold
+Import show expression: \__po_Cin__assert.in_gate
+Import show expression: \__po_Cin__assert.okay
+Import show expression: \__po_Cin__assert.i
+Import show expression: \__po_sign__assert.i
+Import show expression: \__po_sign__assert.okay
+Import show expression: \__po_sign__assert.in_gate
+Import show expression: \__po_sign__assert.in_gold
+Import show expression: \gate.sel_wb
+Import show expression: \gate.sel_reg_dst[1]
+Import show expression: \gate.sel_reg_dst[0]
+Import show expression: \gate.sel_pc_opB
+Import show expression: \gate.sel_pc_opA
+Import show expression: \gate.sel_alu_opB[1]
+Import show expression: \gate.sel_alu_opB[0]
+Import show expression: \gate.reg_write
+Import show expression: \gate.mem_write
+Import show expression: \gate.jump
+Import show expression: \gate.invB
+Import show expression: \gate.invA
+Import show expression: \gate.halt
+Import show expression: \gate.bnez
+Import show expression: \gate.bltz
+Import show expression: \gate.bgez
+Import show expression: \gate.beqz
+Import show expression: \gate.alu_op_ext[3]
+Import show expression: \gate.alu_op_ext[2]
+Import show expression: \gate.alu_op_ext[1]
+Import show expression: \gate.alu_op_ext[0]
+Import show expression: \gate.alu_op[2]
+Import show expression: \gate.alu_op[1]
+Import show expression: \gate.op_ext[1]
+Import show expression: \gate.alu_op[0]
+Import show expression: \gate.op_ext[0]
+Import show expression: \gate.opcode[3]
+Import show expression: \gate.opcode[4]
+Import show expression: \gate.opcode[0]
+Import show expression: \gate.opcode[1]
+Import show expression: \gate.opcode[2]
+Import show expression: \gate.Cin
+Import show expression: \gate.sign
+Import show expression: \gate.__pi_op_ext[0]
+Import show expression: \gate.__pi_op_ext[1]
+Import show expression: \gate.__pi_opcode[0]
+Import show expression: \gate.__pi_opcode[1]
+Import show expression: \gate.__pi_opcode[2]
+Import show expression: \gate.__pi_opcode[3]
+Import show expression: \gate.__pi_opcode[4]
+Import show expression: \gate.__po_Cin
+Import show expression: \gate.__po_alu_op[0]
+Import show expression: \gate.__po_alu_op[1]
+Import show expression: \gate.__po_alu_op[2]
+Import show expression: \gate.__po_alu_op_ext[0]
+Import show expression: \gate.__po_alu_op_ext[1]
+Import show expression: \gate.__po_alu_op_ext[2]
+Import show expression: \gate.__po_alu_op_ext[3]
+Import show expression: \gate.__po_beqz
+Import show expression: \gate.__po_bgez
+Import show expression: \gate.__po_bltz
+Import show expression: \gate.__po_bnez
+Import show expression: \gate.__po_halt
+Import show expression: \gate.__po_invA
+Import show expression: \gate.__po_invB
+Import show expression: \gate.__po_jump
+Import show expression: \gate.__po_mem_write
+Import show expression: \gate.__po_reg_write
+Import show expression: \gate.__po_sel_alu_opB[0]
+Import show expression: \gate.__po_sel_alu_opB[1]
+Import show expression: \gate.__po_sel_pc_opA
+Import show expression: \gate.__po_sel_pc_opB
+Import show expression: \gate.__po_sel_reg_dst[0]
+Import show expression: \gate.__po_sel_reg_dst[1]
+Import show expression: \gate.__po_sel_wb
+Import show expression: \gate.__po_sign
+Import show expression: \gold.sel_wb
+Import show expression: \gold.sel_reg_dst[1]
+Import show expression: \gold.sel_reg_dst[0]
+Import show expression: \gold.sel_pc_opB
+Import show expression: \gold.sel_pc_opA
+Import show expression: \gold.sel_alu_opB[1]
+Import show expression: \gold.sel_alu_opB[0]
+Import show expression: \gold.reg_write
+Import show expression: \gold.mem_write
+Import show expression: \gold.jump
+Import show expression: \gold.invB
+Import show expression: \gold.invA
+Import show expression: \gold.halt
+Import show expression: \gold.bnez
+Import show expression: \gold.bltz
+Import show expression: \gold.bgez
+Import show expression: \gold.beqz
+Import show expression: \gold.alu_op_ext[3]
+Import show expression: \gold.alu_op_ext[2]
+Import show expression: \gold.alu_op_ext[1]
+Import show expression: \gold.alu_op_ext[0]
+Import show expression: \gold.alu_op[2]
+Import show expression: \gold.alu_op[1]
+Import show expression: \gold.op_ext[1]
+Import show expression: \gold.alu_op[0]
+Import show expression: \gold.op_ext[0]
+Import show expression: \gold.opcode[3]
+Import show expression: \gold.opcode[4]
+Import show expression: \gold.opcode[0]
+Import show expression: \gold.opcode[1]
+Import show expression: \gold.opcode[2]
+Import show expression: \gold.Cin
+Import show expression: \gold.sign
+Import show expression: \gold.__pi_op_ext[0]
+Import show expression: \gold.__pi_op_ext[1]
+Import show expression: \gold.__pi_opcode[0]
+Import show expression: \gold.__pi_opcode[1]
+Import show expression: \gold.__pi_opcode[2]
+Import show expression: \gold.__pi_opcode[3]
+Import show expression: \gold.__pi_opcode[4]
+Import show expression: \gold.__po_Cin
+Import show expression: \gold.__po_alu_op[0]
+Import show expression: \gold.__po_alu_op[1]
+Import show expression: \gold.__po_alu_op[2]
+Import show expression: \gold.__po_alu_op_ext[0]
+Import show expression: \gold.__po_alu_op_ext[1]
+Import show expression: \gold.__po_alu_op_ext[2]
+Import show expression: \gold.__po_alu_op_ext[3]
+Import show expression: \gold.__po_beqz
+Import show expression: \gold.__po_bgez
+Import show expression: \gold.__po_bltz
+Import show expression: \gold.__po_bnez
+Import show expression: \gold.__po_halt
+Import show expression: \gold.__po_invA
+Import show expression: \gold.__po_invB
+Import show expression: \gold.__po_jump
+Import show expression: \gold.__po_mem_write
+Import show expression: \gold.__po_reg_write
+Import show expression: \gold.__po_sel_alu_opB[0]
+Import show expression: \gold.__po_sel_alu_opB[1]
+Import show expression: \gold.__po_sel_pc_opA
+Import show expression: \gold.__po_sel_pc_opB
+Import show expression: \gold.__po_sel_reg_dst[0]
+Import show expression: \gold.__po_sel_reg_dst[1]
+Import show expression: \gold.__po_sel_wb
+Import show expression: \gold.__po_sign
+Import show expression: \__po_sign__gate
+Import show expression: \__po_sel_wb__gate
+Import show expression: \__po_sel_reg_dst[1]__gate
+Import show expression: \__po_sel_reg_dst[0]__gate
+Import show expression: \__po_sel_pc_opB__gate
+Import show expression: \__po_sel_pc_opA__gate
+Import show expression: \__po_sel_alu_opB[1]__gate
+Import show expression: \__po_sel_alu_opB[0]__gate
+Import show expression: \__po_reg_write__gate
+Import show expression: \__po_mem_write__gate
+Import show expression: \__po_jump__gate
+Import show expression: \__po_invB__gate
+Import show expression: \__po_invA__gate
+Import show expression: \__po_halt__gate
+Import show expression: \__po_bnez__gate
+Import show expression: \__po_bltz__gate
+Import show expression: \__po_bgez__gate
+Import show expression: \__po_beqz__gate
+Import show expression: \__po_alu_op_ext[3]__gate
+Import show expression: \__po_alu_op_ext[2]__gate
+Import show expression: \__po_alu_op_ext[1]__gate
+Import show expression: \__po_alu_op_ext[0]__gate
+Import show expression: \__po_alu_op[2]__gate
+Import show expression: \__po_alu_op[1]__gate
+Import show expression: \__po_alu_op[0]__gate
+Import show expression: \__po_Cin__gate
+Import show expression: \__po_sign__gold
+Import show expression: \__po_sel_wb__gold
+Import show expression: \__po_sel_reg_dst[1]__gold
+Import show expression: \__po_sel_reg_dst[0]__gold
+Import show expression: \__po_sel_pc_opB__gold
+Import show expression: \__po_sel_pc_opA__gold
+Import show expression: \__po_sel_alu_opB[1]__gold
+Import show expression: \__po_sel_alu_opB[0]__gold
+Import show expression: \__po_reg_write__gold
+Import show expression: \__po_mem_write__gold
+Import show expression: \__po_jump__gold
+Import show expression: \__po_invB__gold
+Import show expression: \__po_invA__gold
+Import show expression: \__po_halt__gold
+Import show expression: \__po_bnez__gold
+Import show expression: \__po_bltz__gold
+Import show expression: \__po_bgez__gold
+Import show expression: \__po_beqz__gold
+Import show expression: \__po_alu_op_ext[3]__gold
+Import show expression: \__po_alu_op_ext[2]__gold
+Import show expression: \__po_alu_op_ext[1]__gold
+Import show expression: \__po_alu_op_ext[0]__gold
+Import show expression: \__po_alu_op[2]__gold
+Import show expression: \__po_alu_op[1]__gold
+Import show expression: \__po_alu_op[0]__gold
+Import show expression: \__po_Cin__gold
+Import show expression: \__pi_opcode[4]
+Import show expression: \__pi_opcode[3]
+Import show expression: \__pi_opcode[2]
+Import show expression: \__pi_opcode[1]
+Import show expression: \__pi_opcode[0]
+Import show expression: \__pi_op_ext[1]
+Import show expression: \__pi_op_ext[0]
+
+[induction step 1] Solving problem with 12930 variables and 36926 clauses..
+Induction step proven: SUCCESS!
+
+                  /$$$$$$      /$$$$$$$$     /$$$$$$$    
+                 /$$__  $$    | $$_____/    | $$__  $$   
+                | $$  \ $$    | $$          | $$  \ $$   
+                | $$  | $$    | $$$$$       | $$  | $$   
+                | $$  | $$    | $$__/       | $$  | $$   
+                | $$/$$ $$    | $$          | $$  | $$   
+                |  $$$$$$/ /$$| $$$$$$$$ /$$| $$$$$$$//$$
+                 \____ $$$|__/|________/|__/|_______/|__/
+                       \__/                              
+

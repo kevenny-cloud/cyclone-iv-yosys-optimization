@@ -1,0 +1,137 @@
+{
+  "status": "PASS_EFFICIENCY_ONLY",
+  "schema": "RULE132_V1",
+  "cases": [
+    {
+      "id": "test1",
+      "initial_overhead_percent": {
+        "elapsed_seconds": 1.578724756436145,
+        "main_peak_working_set_bytes": -4.320451584889273
+      },
+      "review_triggered": false,
+      "decision_overhead_percent": {
+        "elapsed_seconds": 1.578724756436145,
+        "main_peak_working_set_bytes": -4.320451584889273
+      },
+      "pass": true
+    },
+    {
+      "id": "test2",
+      "initial_overhead_percent": {
+        "elapsed_seconds": -1.4095928593133134,
+        "main_peak_working_set_bytes": 1.7682349226397331
+      },
+      "review_triggered": false,
+      "decision_overhead_percent": {
+        "elapsed_seconds": -1.4095928593133134,
+        "main_peak_working_set_bytes": 1.7682349226397331
+      },
+      "pass": true
+    },
+    {
+      "id": "test3",
+      "initial_overhead_percent": {
+        "elapsed_seconds": -2.398092128135365,
+        "main_peak_working_set_bytes": 1.5076923076922988
+      },
+      "review_triggered": false,
+      "decision_overhead_percent": {
+        "elapsed_seconds": -2.398092128135365,
+        "main_peak_working_set_bytes": 1.5076923076922988
+      },
+      "pass": true
+    },
+    {
+      "id": "test4",
+      "initial_overhead_percent": {
+        "elapsed_seconds": -3.408894097158377,
+        "main_peak_working_set_bytes": 2.165642376353527
+      },
+      "review_triggered": false,
+      "decision_overhead_percent": {
+        "elapsed_seconds": -3.408894097158377,
+        "main_peak_working_set_bytes": 2.165642376353527
+      },
+      "pass": true
+    },
+    {
+      "id": "pmux_case01_balanced",
+      "initial_overhead_percent": {
+        "elapsed_seconds": -0.9661068840785103,
+        "main_peak_working_set_bytes": -3.5914927768860405
+      },
+      "review_triggered": false,
+      "decision_overhead_percent": {
+        "elapsed_seconds": -0.9661068840785103,
+        "main_peak_working_set_bytes": -3.5914927768860405
+      },
+      "pass": true
+    },
+    {
+      "id": "pmux_case02_pipeline",
+      "initial_overhead_percent": {
+        "elapsed_seconds": -10.110043137834001,
+        "main_peak_working_set_bytes": -3.6756347101174702
+      },
+      "review_triggered": false,
+      "decision_overhead_percent": {
+        "elapsed_seconds": -10.110043137834001,
+        "main_peak_working_set_bytes": -3.6756347101174702
+      },
+      "pass": true
+    },
+    {
+      "id": "pmux_case03_crossbar",
+      "initial_overhead_percent": {
+        "elapsed_seconds": -1.542709052993163,
+        "main_peak_working_set_bytes": -2.3414048429057477
+      },
+      "review_triggered": false,
+      "decision_overhead_percent": {
+        "elapsed_seconds": -1.542709052993163,
+        "main_peak_working_set_bytes": -2.3414048429057477
+      },
+      "pass": true
+    },
+    {
+      "id": "pmux_case04_feedback",
+      "initial_overhead_percent": {
+        "elapsed_seconds": -19.310479105751277,
+        "main_peak_working_set_bytes": 1.3450042698548215
+      },
+      "review_triggered": false,
+      "decision_overhead_percent": {
+        "elapsed_seconds": -19.310479105751277,
+        "main_peak_working_set_bytes": 1.3450042698548215
+      },
+      "pass": true
+    },
+    {
+      "id": "pmux_case05_nested",
+      "initial_overhead_percent": {
+        "elapsed_seconds": -0.7205816083433292,
+        "main_peak_working_set_bytes": -5.118577075098818
+      },
+      "review_triggered": false,
+      "decision_overhead_percent": {
+        "elapsed_seconds": -0.7205816083433292,
+        "main_peak_working_set_bytes": -5.118577075098818
+      },
+      "pass": true
+    },
+    {
+      "id": "baseline_logic_unit_999",
+      "initial_overhead_percent": {
+        "elapsed_seconds": 0.09065343769407708,
+        "main_peak_working_set_bytes": -5.932038834951459
+      },
+      "review_triggered": false,
+      "decision_overhead_percent": {
+        "elapsed_seconds": 0.09065343769407708,
+        "main_peak_working_set_bytes": -5.932038834951459
+      },
+      "pass": true
+    }
+  ],
+  "errors": []
+}

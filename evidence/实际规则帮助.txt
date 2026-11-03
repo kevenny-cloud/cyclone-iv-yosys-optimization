@@ -1,0 +1,117 @@
+
+-- Running command `help pmux_opt; help pmux_branch_const; help pmux_decode_tree; help rom_share; help cycloneiv_powerup; help map_sync_controls; help pmux_xor_factor; help lut_window; help lut_ff_load; help ff_enable_fold' --
+
+    pmux_opt [-prepare|-apply|-cycloneiv-powerup] [selection]
+
+-prepare only records validated matches; -apply reruns the accepted rules.
+synth_intel invokes cycloneiv_powerup between those phases when required.
+R1/R2 rewrite PMUX structures; ROMs use post-ABC LUT resubstitution.
+R3b recognizes a pure 2..16-level, 1..4096-bit priority mux chain
+with independent input controls/data and zero default, and requests
+direct ABC9 cut mapping in synth_intel. The chain itself is unchanged.
+Kept objects, shared internals, aliases and mixed logic are skipped.
+
+
+    pmux_branch_const [-dry-run] [-verbose] [selection]
+
+For each selected $pmux, inspect equality-driven select bits. If a lane
+is selected by X == CONST, replace occurrences of X bits in that lane's
+B data with the corresponding constant bits. The A default is preserved.
+
+Run after proc (normally proc; opt_clean). Only equal-width $eq with a
+fully defined binary constant and uniquely driven select is supported.
+Aliases are canonicalized. keep modules/cells/connected wires, modules
+with remaining processes, X/Z constants and ambiguous drivers are skipped.
+
+  -dry-run    Report opportunities without changing the netlist.
+  -verbose    Report each changed PMUX and its replaced bit count.
+
+Safety budgets include candidate collection, graph bits and fact caches:
+8,000,000 work units/4,096 candidates per module; 32,000,000/16,384
+per pass invocation. On exhaustion, the current candidate is unchanged.
+
+No branch exclusivity is invented: existing $pmux semantics apply.
+No timing, target-area, or arbitrary four-state equivalence is promised.
+
+
+    pmux_decode_tree [-dry-run] [-verbose] [-vector] [-leaf 0|2|3]
+                     [-lut4] [-near] [-keep-decode] [-rank 0..7]
+                     [-order DIGITS] [-partial [-force]] [selection]
+
+-partial also accepts incomplete equality domains, filling every missing
+Partial tables reject X/Z row bits. Binary leaf0 normalization retains
+whole shared PMUX regions and may accept equal symbolic mux cost.
+binary address with the original default A input. No initial-state
+normalization is performed by this pass. Keep and init wire attributes
+are boundaries in partial mode. Full four-state X/Z equivalence is not
+claimed: equalities and a binary mux tree can propagate unknown control
+bits differently. Prove in the declared defined-input formal model.
+-force requires -partial and disables structural-cost/support acceptance
+guards for OFFLINE MEASUREMENTS ONLY. Mapped area can increase.
+
+Recognize complete 1..5-bit equality decode domains and share mux subtrees.
+The default uses scalar sharing; -vector retains whole data buses.
+-leaf keeps 2/3-bit subfunctions as PMUX leaves. Orders are searched with
+-lut4 emits shared decoded AND/OR leaves as explicit <=4-input LUTs.
+-near shares leaf tables differing in one row, with an exact override.
+-keep-decode preserves only newly added shared decoder outputs for mapping.
+-order fixes a root-to-leaf permutation (e.g. 0123) for exploration.
+-rank chooses one of the top 8 structural orders for measured evaluation.
+Search retains a 2,000,000 row-visit budget per module.
+Collection, graph bits, bus comparisons and emission also have safety
+budgets: 8,000,000 work units/4,096 candidates per module and
+32,000,000/16,384 per pass invocation. Exhausted groups stay unchanged.
+Without -partial, default/partial tables; and always ambiguous
+drivers and keep objects are skipped. Run after proc; opt_clean.
+Structural cost is a heuristic: measure mapped area and prove equivalence
+before accepting a candidate. No arbitrary four-state equivalence claim.
+
+
+    rom_share [-leaf 2|3|4] [-rank 0..7] [-order DIGITS]
+              [-dry-run] [-verbose] [selection]
+
+Reconstruct complete 2..32-row, 1..256-bit constant ROMs after proc.
+Only one async $memrd_v2 and one complete $meminit are accepted.
+No writes, unknown table bits, resets/enables, ambiguous drivers or keep
+objects are changed. Select the memory, read and init cells together.
+Default leaf=3 rank=0; max 120 orders and 2,000,000 row visits/module.
+Resource caps: candidates 4096/module, 16384/pass; signal units
+2,000,000/module, 8,000,000/pass; search 8,000,000 row visits/pass.
+Limits skip unprocessed ROMs; plans are emitted only after full search.
+Measure mapped area and run EQY before using a generated candidate.
+
+
+    cycloneiv_powerup [selection]
+
+Resolve unspecified clocked FF initial states using canonical async-reset
+polarity. Preserve explicit initial states and kept objects.
+Only a full design selection is supported; other selections are skipped.
+synth_intel invokes this policy only for its accepted R1/R2 rewrite path.
+    map_sync_controls [-min-group N] [selection]
+Map fully selected groups of binary fine SDFF/SDFFE/SDFFCE cells to
+dedicated SCLR/SLOAD controls, preserving both priorities and all
+clock/reset/enable polarities. Default minimum group size is two.
+Keep objects, ambiguous Q drivers and unknown controls are skipped.
+Wire initialization is transferred to the physical power_up parameter.
+A one-million bit-work budget bounds preflight and grouping.
+Direct primitive construction avoids reparsing templates. LAB fitting is a
+physical constraint, not proved by the primitive resource counter.
+
+No help message for command `pmux_xor_factor'.
+
+    lut_window [-work-limit N] [selection]
+Known Boolean LUT4s; <=7 cut leaves, <=48 internal LUTs, <=64 cuts/root.
+Exact one/two-LUT replacements; strict savings and unchanged global LUT level bound.
+State, memory, unknown cells, keep/init and ambiguous drivers are boundaries.
+Search budgets retain earlier proved edits and leave remaining roots unchanged.
+    lut_ff_load [-premap] [-min-group N] [selection]
+Binary LUT1--4 or scalar MUX driving only one dffeas D input. Uses free
+SLOAD/ASDATA and optionally SCLR, preserving ENA/reset priority and
+power-up state. Each edit removes a physical LUT/NOT and adds none.
+Default minimum identical control group is one. Keep/init, unknown,
+ambiguous drivers and partial module selections are boundaries.
+Logical resource count only; physical LAB packing/timing is separate.
+    ff_enable_fold [selection]
+Remove a one/two-input binary enable LUT used exclusively by compatible
+dffeas ENA ports. Requires idle SCLR/SLOAD/ALOAD and inactive PRN.
+Preserves clocks, async clear, data, state and power-up values.

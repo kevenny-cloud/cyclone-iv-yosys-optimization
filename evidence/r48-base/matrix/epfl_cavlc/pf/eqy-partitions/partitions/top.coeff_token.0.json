@@ -1,0 +1,88 @@
+{
+  "partition": {
+    "index": 0,
+    "name": "top.coeff_token.0",
+    "inbits": {
+      "ctable[0]": [
+        0
+      ],
+      "ctable[1]": [
+        0
+      ],
+      "ctable[2]": [
+        0
+      ],
+      "totalcoeffs[0]": [
+        0
+      ],
+      "totalcoeffs[1]": [
+        0
+      ],
+      "totalcoeffs[2]": [
+        0
+      ],
+      "totalcoeffs[3]": [
+        0
+      ],
+      "totalcoeffs[4]": [
+        0
+      ],
+      "trailingones[0]": [
+        0
+      ],
+      "trailingones[1]": [
+        0
+      ]
+    },
+    "outbits": {
+      "coeff_token[0]": [
+        0
+      ],
+      "coeff_token[1]": [
+        0
+      ],
+      "coeff_token[2]": [
+        0
+      ],
+      "coeff_token[3]": [
+        0
+      ],
+      "coeff_token[4]": [
+        0
+      ],
+      "coeff_token[5]": [
+        0
+      ],
+      "ctoken_len[0]": [
+        0
+      ],
+      "ctoken_len[1]": [
+        0
+      ],
+      "ctoken_len[2]": [
+        0
+      ],
+      "ctoken_len[3]": [
+        0
+      ],
+      "ctoken_len[4]": [
+        0
+      ]
+    },
+    "crossbits": {}
+  },
+  "gold_module": {
+    "name": "gold.top.coeff_token.0",
+    "internal": {},
+    "unused": {},
+    "cellcount": 289,
+    "bitcount": 299
+  },
+  "gate_module": {
+    "name": "gold.top.coeff_token.0",
+    "internal": {},
+    "unused": {},
+    "cellcount": 273,
+    "bitcount": 283
+  }
+}

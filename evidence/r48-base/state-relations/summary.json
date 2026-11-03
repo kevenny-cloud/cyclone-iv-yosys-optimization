@@ -1,0 +1,799 @@
+{
+  "status": "PASS",
+  "candidate_sha256": "2c214fbe02ae67d918eec8f91c1709a856dba0985dd507f600f5b4e467e309e5",
+  "cases": {
+    "test1": {
+      "checkpoint": {
+        "status": "STATE_TRANSITION_SAT_PASS",
+        "registers": 222,
+        "attempts": 1,
+        "summary_sha256": "79758e30ea89b9624d5d3e5568a525edc408f00821babf02148b9f806bc6f70f"
+      },
+      "final": {
+        "status": "STATE_TRANSITION_SAT_PASS",
+        "registers": 222,
+        "attempts": 1,
+        "summary_sha256": "e8171a7d98ff390d69c67a9ac7b49f6c3a6ced067508aa445cf5dd8f214fbe0c"
+      }
+    },
+    "test4": {
+      "checkpoint": {
+        "status": "STATE_TRANSITION_SAT_PASS",
+        "registers": 10,
+        "attempts": 1,
+        "summary_sha256": "6e9c891faaa10f3e559c81616b62c6ec2b8d804eda430249adb5cecabe33f7d8"
+      },
+      "final": {
+        "status": "STATE_TRANSITION_SAT_PASS",
+        "registers": 10,
+        "attempts": 1,
+        "summary_sha256": "518543f66b5d38e3ee83a2590c8c43788a78ee82d88b4d927cbd1c3f9ad5b9c4"
+      }
+    },
+    "stateful_4": {
+      "checkpoint": {
+        "status": "STATE_TRANSITION_SAT_PASS",
+        "registers": 12,
+        "attempts": 1,
+        "summary_sha256": "8055ad587534db9e211febb57bc0dfa7493d95dfd43799eb6ce58073f4bc29d8"
+      },
+      "final": {
+        "status": "STATE_TRANSITION_SAT_PASS",
+        "registers": 12,
+        "attempts": 1,
+        "summary_sha256": "f82dafb9397114c16a1d2f81535bf23f4e3493a195ced720a32f453e962f7063"
+      }
+    },
+    "stateful_8": {
+      "checkpoint": {
+        "status": "STATE_TRANSITION_SAT_PASS",
+        "registers": 24,
+        "attempts": 1,
+        "summary_sha256": "b1a3f607d7eb06e162fa87a0dac4620f7423254d1c3d904702e1300d392a003c"
+      },
+      "final": {
+        "status": "STATE_TRANSITION_SAT_PASS",
+        "registers": 24,
+        "attempts": 1,
+        "summary_sha256": "ad90dd2dc82e6e1a978531557a7df1f266e1c302d07bd1374dd9bfdb8bb9e02a"
+      }
+    },
+    "hierarchical_sequential": {
+      "checkpoint": {
+        "status": "STATE_TRANSITION_SAT_PASS",
+        "registers": 8,
+        "attempts": 1,
+        "summary_sha256": "9c52f452ac468d211d38249566e6dcaf9c98f0ef5486152490967280c05116c6"
+      },
+      "final": {
+        "status": "STATE_TRANSITION_SAT_PASS",
+        "registers": 8,
+        "attempts": 1,
+        "summary_sha256": "8ef3bc9100bd1bbc3ac8a70e92ce05b6bc79bdf1f75fa39bba9a5ffb169d9198"
+      }
+    },
+    "feedback_width_3": {
+      "checkpoint": {
+        "status": "STATE_TRANSITION_SAT_PASS",
+        "registers": 9,
+        "attempts": 1,
+        "summary_sha256": "1fe04bb423139f0e2c7cab206d6b63828fdd24b7cca6aef2c8a3a70e6ba1262b"
+      },
+      "final": {
+        "status": "STATE_TRANSITION_SAT_PASS",
+        "registers": 9,
+        "attempts": 1,
+        "summary_sha256": "7349558f7bebe51037017c3e2016709291302107cbb4e2cd318499057fe815ea"
+      }
+    },
+    "feedback_width_5": {
+      "checkpoint": {
+        "status": "STATE_TRANSITION_SAT_PASS",
+        "registers": 15,
+        "attempts": 1,
+        "summary_sha256": "434ff09e2a46dd8175754ff91249bab71f15d0c64842f71649ebf7910d13e9b9"
+      },
+      "final": {
+        "status": "STATE_TRANSITION_SAT_PASS",
+        "registers": 15,
+        "attempts": 1,
+        "summary_sha256": "968d3b7b21af3adce22eb77c11de3723ac16ab2b961c8b8eeb53298ae4368348"
+      }
+    },
+    "feedback_width_12": {
+      "checkpoint": {
+        "status": "STATE_TRANSITION_SAT_PASS",
+        "registers": 36,
+        "attempts": 1,
+        "summary_sha256": "ff585606454242284b71786eced0eecfc0200eb94d174b676d13756df1a4c550"
+      },
+      "final": {
+        "status": "STATE_TRANSITION_SAT_PASS",
+        "registers": 36,
+        "attempts": 1,
+        "summary_sha256": "133f131fef55aa258f5ea7b81965beb9a989f913fa6ebea58beed166106666e7"
+      }
+    },
+    "feedback_width_16": {
+      "checkpoint": {
+        "status": "STATE_TRANSITION_SAT_PASS",
+        "registers": 48,
+        "attempts": 1,
+        "summary_sha256": "6b2acffe8d0a6b26acbdfa900b5821eee20480c97db50974d32029ff2f4296d3"
+      },
+      "final": {
+        "status": "STATE_TRANSITION_SAT_PASS",
+        "registers": 48,
+        "attempts": 1,
+        "summary_sha256": "de25e1ab92373b26710f7b70fd1d7166640f4ab96b504a9ba1965fe1f535f4c4"
+      }
+    },
+    "scalar_one_feedback": {
+      "checkpoint": {
+        "status": "STATE_TRANSITION_SAT_PASS",
+        "registers": 2,
+        "attempts": 1,
+        "summary_sha256": "4158968d9944f4185e8a54ce39f6c7150563cf02c4bb4e41a357d51cafc029eb"
+      },
+      "final": {
+        "status": "STATE_TRANSITION_SAT_PASS",
+        "registers": 2,
+        "attempts": 1,
+        "summary_sha256": "4203dbee492f648d185dce2ba422d508f92e0d033655750185ba981331008c3d"
+      }
+    },
+    "mixed_initial_feedback": {
+      "checkpoint": {
+        "status": "STATE_TRANSITION_SAT_PASS",
+        "registers": 24,
+        "attempts": 1,
+        "summary_sha256": "f129a532edce39e25eb2626274f33ef6dab5c1d72d6fb15fc5798a43f3b0ab14"
+      },
+      "final": {
+        "status": "STATE_TRANSITION_SAT_PASS",
+        "registers": 24,
+        "attempts": 1,
+        "summary_sha256": "20543b5c1bbd3f639bbd8cd171849ecd1d3c91dd17ff9ab0b7d2235280c0d8f4"
+      }
+    },
+    "hold_stateful_7": {
+      "checkpoint": {
+        "status": "STATE_TRANSITION_SAT_PASS",
+        "registers": 21,
+        "attempts": 1,
+        "summary_sha256": "c91900ade1edf0d74c31fc3c214eb323a687c2059001a027b824d9c862766718"
+      },
+      "final": {
+        "status": "STATE_TRANSITION_SAT_PASS",
+        "registers": 21,
+        "attempts": 1,
+        "summary_sha256": "3c796d18176785d054d60967489aac4d4c0d71123290029639a750f7cac73e37"
+      }
+    },
+    "hold_stateful_9": {
+      "checkpoint": {
+        "status": "STATE_TRANSITION_SAT_PASS",
+        "registers": 27,
+        "attempts": 1,
+        "summary_sha256": "10e12d4db4e95c02775747be5455bf269a24cb52284128c4dcf234b71f6fa86c"
+      },
+      "final": {
+        "status": "STATE_TRANSITION_SAT_PASS",
+        "registers": 27,
+        "attempts": 1,
+        "summary_sha256": "0a46f6ceb5e3fb71045c2aece393b83690a83f86f1d365add2eaade25242f8f8"
+      }
+    },
+    "fresh_stateful_11": {
+      "checkpoint": {
+        "status": "STATE_TRANSITION_SAT_PASS",
+        "registers": 33,
+        "attempts": 1,
+        "summary_sha256": "39758cfcfec6cfe16fd5f03b9767edf8090e8764c396d99dbe1b7bd7355d1a42"
+      },
+      "final": {
+        "status": "STATE_TRANSITION_SAT_PASS",
+        "registers": 33,
+        "attempts": 1,
+        "summary_sha256": "647d0c55822ee828b7e50d621d3c6da64f7a773f3549bb9f0b346ef374707ab9"
+      }
+    },
+    "pmux_case01_balanced": {
+      "checkpoint": {
+        "status": "STATE_TRANSITION_SAT_PASS",
+        "registers": 12,
+        "attempts": 1,
+        "summary_sha256": "14db428c192b8cdb533966064baa17895e3a8ad8a2f964898510bd4e6defb304"
+      },
+      "final": {
+        "status": "STATE_TRANSITION_SAT_PASS",
+        "registers": 12,
+        "attempts": 1,
+        "summary_sha256": "00477693f4e86accd5179dcea8921fe402426d141caa3444881045e274cce291"
+      }
+    },
+    "pmux_case01_balanced_double_lanes": {
+      "checkpoint": {
+        "status": "STATE_TRANSITION_SAT_PASS",
+        "registers": 24,
+        "attempts": 1,
+        "summary_sha256": "46cd960b5ad85fbe1ac255f4cb10618018e87f1367834cf8824dc5881d33bb88"
+      },
+      "final": {
+        "status": "STATE_TRANSITION_SAT_PASS",
+        "registers": 24,
+        "attempts": 1,
+        "summary_sha256": "155df89c2d7b8a42472b27726feb889fc6d9cf2ed55c45fe653ee3b4571913be"
+      }
+    },
+    "pmux_case02_pipeline": {
+      "checkpoint": {
+        "status": "STATE_TRANSITION_SAT_PASS",
+        "registers": 24,
+        "attempts": 1,
+        "summary_sha256": "69f17cd7ad79382ee14f88deda38a780ea697f5457da1add6285b30d58bbdece"
+      },
+      "final": {
+        "status": "STATE_TRANSITION_SAT_PASS",
+        "registers": 24,
+        "attempts": 1,
+        "summary_sha256": "f042d768eb88cdbf2b018ba7312b88a1de18ad0854f09649a0e2af2d2631e510"
+      }
+    },
+    "pmux_case02_pipeline_double_lanes": {
+      "checkpoint": {
+        "status": "STATE_TRANSITION_SAT_PASS",
+        "registers": 48,
+        "attempts": 1,
+        "summary_sha256": "738c7f34a3abe307e54dd650d3b720e00037cb356511c0a2948c097c422cd693"
+      },
+      "final": {
+        "status": "STATE_TRANSITION_SAT_PASS",
+        "registers": 48,
+        "attempts": 1,
+        "summary_sha256": "c70fad244c871a9ec966ff4e1858ade6e7f10ce36d1b478b8d9d973e4687bfed"
+      }
+    },
+    "pmux_case03_crossbar": {
+      "checkpoint": {
+        "status": "STATE_TRANSITION_SAT_PASS",
+        "registers": 10,
+        "attempts": 1,
+        "summary_sha256": "960a7a3b961b70a214ea739b7ed3965b476d9719dab6630a9767e3f2794d5a10"
+      },
+      "final": {
+        "status": "STATE_TRANSITION_SAT_PASS",
+        "registers": 10,
+        "attempts": 1,
+        "summary_sha256": "1fcebfb3d03241eae92970163cc379be77776c6352a631c36d6e2b80f777f39a"
+      }
+    },
+    "pmux_case03_crossbar_double_lanes": {
+      "checkpoint": {
+        "status": "STATE_TRANSITION_SAT_PASS",
+        "registers": 20,
+        "attempts": 1,
+        "summary_sha256": "34cd08757f7a0e3e8d5d3bf8e1ba2c265209fb5fd976de3d33c32bbbe19023be"
+      },
+      "final": {
+        "status": "STATE_TRANSITION_SAT_PASS",
+        "registers": 20,
+        "attempts": 1,
+        "summary_sha256": "5b3cd25101fafee9ab088f5e7cd86ed66443f0929c24a410eb91936ead4dc9ce"
+      }
+    },
+    "pmux_case04_feedback": {
+      "checkpoint": {
+        "status": "STATE_TRANSITION_SAT_PASS",
+        "registers": 16,
+        "attempts": 1,
+        "summary_sha256": "d2cbaee36c16935da0e80cec2e71584ff2643abc9e891fbcbdb4768129cc1f2e"
+      },
+      "final": {
+        "status": "STATE_TRANSITION_SAT_PASS",
+        "registers": 16,
+        "attempts": 1,
+        "summary_sha256": "849ee7f82ccd8ab594d75794fd6e80854da74fb6c3da78b11733d0c6cf304bf2"
+      }
+    },
+    "pmux_case04_feedback_double_lanes": {
+      "checkpoint": {
+        "status": "STATE_TRANSITION_SAT_PASS",
+        "registers": 32,
+        "attempts": 1,
+        "summary_sha256": "3af1baf6a9ed9421bd0070a71f54ca3edbe45ada4e2203d4ee4c75282c63dedc"
+      },
+      "final": {
+        "status": "STATE_TRANSITION_SAT_PASS",
+        "registers": 32,
+        "attempts": 1,
+        "summary_sha256": "65ec500f89b607686a302ad58b6ab803da7a26e7c24df2714f0aa8f29cfb16a8"
+      }
+    },
+    "pmux_case05_nested": {
+      "checkpoint": {
+        "status": "STATE_TRANSITION_SAT_PASS",
+        "registers": 12,
+        "attempts": 1,
+        "summary_sha256": "36d796359318377bdb9414b62f7dfd6007b741cfe0c4101b6a1f9ee20fd4dd31"
+      },
+      "final": {
+        "status": "STATE_TRANSITION_SAT_PASS",
+        "registers": 12,
+        "attempts": 1,
+        "summary_sha256": "04e2b65755bdfd30465a6694065125e4abc67be205f5daa91cb2a89c00d72876"
+      }
+    },
+    "pmux_case05_nested_double_lanes": {
+      "checkpoint": {
+        "status": "STATE_TRANSITION_SAT_PASS",
+        "registers": 24,
+        "attempts": 1,
+        "summary_sha256": "378a51198a2a077acac3b4262942f284e1845cb23b3d0da13f4e32370628e8eb"
+      },
+      "final": {
+        "status": "STATE_TRANSITION_SAT_PASS",
+        "registers": 24,
+        "attempts": 1,
+        "summary_sha256": "9eb69f76971a61012ba3a93cf5acf15013b72f7d226bc6e8e76d29444fcb0fd7"
+      }
+    },
+    "fresh_00": {
+      "checkpoint": {
+        "status": "STATE_TRANSITION_SAT_PASS",
+        "registers": 1,
+        "attempts": 1,
+        "summary_sha256": "c9aef375667c018b46c5b2253323fb9417e3d6ae69a454db93ac4ad017da2e50"
+      },
+      "final": {
+        "status": "STATE_TRANSITION_SAT_PASS",
+        "registers": 1,
+        "attempts": 1,
+        "summary_sha256": "1d38e714ce485c479540ed03b85ea3e6e7f1c0be0c6f08c8af4b0e8c581fa3a4"
+      }
+    },
+    "fresh_01": {
+      "checkpoint": {
+        "status": "STATE_TRANSITION_SAT_PASS",
+        "registers": 3,
+        "attempts": 1,
+        "summary_sha256": "45b988ad8f6b8aa71374258d5c85887cd43a5137d455de2ef55bb30463df45dc"
+      },
+      "final": {
+        "status": "STATE_TRANSITION_SAT_PASS",
+        "registers": 3,
+        "attempts": 1,
+        "summary_sha256": "bde123b812b2903066d867aef3c8bf7f3013379c1aa88f71e62ccc0c5ca1e246"
+      }
+    },
+    "fresh_02": {
+      "checkpoint": {
+        "status": "STATE_TRANSITION_SAT_PASS",
+        "registers": 7,
+        "attempts": 1,
+        "summary_sha256": "5666a624d46bc68e9150972483c1e68b63371f2a045000dacc00a3b6b80074ec"
+      },
+      "final": {
+        "status": "STATE_TRANSITION_SAT_PASS",
+        "registers": 7,
+        "attempts": 1,
+        "summary_sha256": "79281f5cf67b32097c1b6a6d2f61fdf7479ee7f344a0126cc76a4c0460a380db"
+      }
+    },
+    "fresh_04": {
+      "checkpoint": {
+        "status": "STATE_TRANSITION_SAT_PASS",
+        "registers": 1,
+        "attempts": 1,
+        "summary_sha256": "b6682891d193f6c7870db115fe97e8c58836b4b66205234fecc4ad52b93a3519"
+      },
+      "final": {
+        "status": "STATE_TRANSITION_SAT_PASS",
+        "registers": 1,
+        "attempts": 1,
+        "summary_sha256": "842708183fa2d4c0f43004f28c5d56000b11b06d80f9fb7590567bea3f764da7"
+      }
+    },
+    "fresh_05": {
+      "checkpoint": {
+        "status": "STATE_TRANSITION_SAT_PASS",
+        "registers": 3,
+        "attempts": 1,
+        "summary_sha256": "efcdee50149f816b5b1cb9892849052ab1fd506f7ddffad38a350de1873dbfc0"
+      },
+      "final": {
+        "status": "STATE_TRANSITION_SAT_PASS",
+        "registers": 3,
+        "attempts": 1,
+        "summary_sha256": "8ee8f266ff33aa8ef80e36f40410095a591e559354e8fabdb5451e05ecb432e3"
+      }
+    },
+    "fresh_06": {
+      "checkpoint": {
+        "status": "STATE_TRANSITION_SAT_PASS",
+        "registers": 3,
+        "attempts": 1,
+        "summary_sha256": "02ecf2f054caf8f4530f6b815b022d3c193906378cb11db4b281a7f6e2a9860d"
+      },
+      "final": {
+        "status": "STATE_TRANSITION_SAT_PASS",
+        "registers": 3,
+        "attempts": 1,
+        "summary_sha256": "09bbc521061b48e914c2ffeba17e0362092c3d5a543af24481579f281ebb8570"
+      }
+    },
+    "fresh_07": {
+      "checkpoint": {
+        "status": "STATE_TRANSITION_SAT_PASS",
+        "registers": 5,
+        "attempts": 1,
+        "summary_sha256": "f57070c2957b8f33dcf7c972aefa970e7fdef2d8ccdf9f7527b79485334c1766"
+      },
+      "final": {
+        "status": "STATE_TRANSITION_SAT_PASS",
+        "registers": 5,
+        "attempts": 1,
+        "summary_sha256": "43f5d130ba39a2ba25058d6dce96a6a4eff2d816e1e000751fde9d21ea558f4a"
+      }
+    },
+    "fresh_08": {
+      "checkpoint": {
+        "status": "STATE_TRANSITION_SAT_PASS",
+        "registers": 7,
+        "attempts": 1,
+        "summary_sha256": "a268c04a644a6e29efeec6450fed887f1d792603adca9d10e739ff4a96fea35f"
+      },
+      "final": {
+        "status": "STATE_TRANSITION_SAT_PASS",
+        "registers": 7,
+        "attempts": 1,
+        "summary_sha256": "55697d7ca9871f12c8073caede289f730a756553b049ca1b3c4587e8557dca34"
+      }
+    },
+    "fresh_09": {
+      "checkpoint": {
+        "status": "STATE_TRANSITION_SAT_PASS",
+        "registers": 10,
+        "attempts": 1,
+        "summary_sha256": "fd282f8716954e7e8b8e3ec085d7d9a04b07de24ba346bbcd03e058f67a580b3"
+      },
+      "final": {
+        "status": "STATE_TRANSITION_SAT_PASS",
+        "registers": 10,
+        "attempts": 1,
+        "summary_sha256": "33d52424024ac8e27c73b93a9bd52f57391609d290e1d8cd4949c9601904669d"
+      }
+    },
+    "fresh_10": {
+      "checkpoint": {
+        "status": "STATE_TRANSITION_SAT_PASS",
+        "registers": 7,
+        "attempts": 1,
+        "summary_sha256": "dd84d3e08329b1d749e0f9fad1cf7eca55a1789b8f0a554cd241374f8a09688e"
+      },
+      "final": {
+        "status": "STATE_TRANSITION_SAT_PASS",
+        "registers": 7,
+        "attempts": 1,
+        "summary_sha256": "c19659f848ddd51ac876bfdc2230c06d263a0b2b78667ad15d19af9d66aa4e60"
+      }
+    },
+    "fresh_11": {
+      "checkpoint": {
+        "status": "STATE_TRANSITION_SAT_PASS",
+        "registers": 32,
+        "attempts": 1,
+        "summary_sha256": "d56516176e47304477c6911d490b75d70f790a83334c1b72f9f371415656b29c"
+      },
+      "final": {
+        "status": "STATE_TRANSITION_SAT_PASS",
+        "registers": 32,
+        "attempts": 1,
+        "summary_sha256": "65b87ce59b8e9a5cc78092ab110be51fd0eeb661d638a1fdcfd08c8f686b3264"
+      }
+    }
+  },
+  "skipped": {
+    "test2": {
+      "counts": [
+        0,
+        0
+      ],
+      "reason": "combinational or changed state dimension; handled by independent temporal proof"
+    },
+    "test3": {
+      "counts": [
+        17,
+        14
+      ],
+      "reason": "combinational or changed state dimension; handled by independent temporal proof"
+    },
+    "pmux_complete_1": {
+      "counts": [
+        0,
+        0
+      ],
+      "reason": "combinational or changed state dimension; handled by independent temporal proof"
+    },
+    "pmux_complete_3": {
+      "counts": [
+        0,
+        0
+      ],
+      "reason": "combinational or changed state dimension; handled by independent temporal proof"
+    },
+    "pmux_complete_5": {
+      "counts": [
+        0,
+        0
+      ],
+      "reason": "combinational or changed state dimension; handled by independent temporal proof"
+    },
+    "pmux_partial": {
+      "counts": [
+        0,
+        0
+      ],
+      "reason": "combinational or changed state dimension; handled by independent temporal proof"
+    },
+    "priority_2": {
+      "counts": [
+        0,
+        0
+      ],
+      "reason": "combinational or changed state dimension; handled by independent temporal proof"
+    },
+    "priority_16": {
+      "counts": [
+        0,
+        0
+      ],
+      "reason": "combinational or changed state dimension; handled by independent temporal proof"
+    },
+    "priority_17": {
+      "counts": [
+        0,
+        0
+      ],
+      "reason": "combinational or changed state dimension; handled by independent temporal proof"
+    },
+    "priority_mixed": {
+      "counts": [
+        0,
+        0
+      ],
+      "reason": "combinational or changed state dimension; handled by independent temporal proof"
+    },
+    "high_fanout": {
+      "counts": [
+        0,
+        0
+      ],
+      "reason": "combinational or changed state dimension; handled by independent temporal proof"
+    },
+    "rom_1": {
+      "counts": [
+        0,
+        0
+      ],
+      "reason": "combinational or changed state dimension; handled by independent temporal proof"
+    },
+    "rom_16": {
+      "counts": [
+        0,
+        0
+      ],
+      "reason": "combinational or changed state dimension; handled by independent temporal proof"
+    },
+    "cells_99": {
+      "counts": [
+        0,
+        0
+      ],
+      "reason": "combinational or changed state dimension; handled by independent temporal proof"
+    },
+    "cells_498": {
+      "counts": [
+        0,
+        0
+      ],
+      "reason": "combinational or changed state dimension; handled by independent temporal proof"
+    },
+    "cells_999": {
+      "counts": [
+        0,
+        0
+      ],
+      "reason": "combinational or changed state dimension; handled by independent temporal proof"
+    },
+    "decoder_complete_2": {
+      "counts": [
+        0,
+        0
+      ],
+      "reason": "combinational or changed state dimension; handled by independent temporal proof"
+    },
+    "decoder_partial_2": {
+      "counts": [
+        0,
+        0
+      ],
+      "reason": "combinational or changed state dimension; handled by independent temporal proof"
+    },
+    "decoder_complete_4": {
+      "counts": [
+        0,
+        0
+      ],
+      "reason": "combinational or changed state dimension; handled by independent temporal proof"
+    },
+    "decoder_partial_4": {
+      "counts": [
+        0,
+        0
+      ],
+      "reason": "combinational or changed state dimension; handled by independent temporal proof"
+    },
+    "mixed_pmux_2_6": {
+      "counts": [
+        0,
+        0
+      ],
+      "reason": "combinational or changed state dimension; handled by independent temporal proof"
+    },
+    "mixed_pmux_4_6": {
+      "counts": [
+        0,
+        0
+      ],
+      "reason": "combinational or changed state dimension; handled by independent temporal proof"
+    },
+    "mixed_pmux_5_4": {
+      "counts": [
+        0,
+        0
+      ],
+      "reason": "combinational or changed state dimension; handled by independent temporal proof"
+    },
+    "mixed_pmux_5_29": {
+      "counts": [
+        0,
+        0
+      ],
+      "reason": "combinational or changed state dimension; handled by independent temporal proof"
+    },
+    "decoder_986_cells": {
+      "counts": [
+        0,
+        0
+      ],
+      "reason": "combinational or changed state dimension; handled by independent temporal proof"
+    },
+    "hold_priority7_w9": {
+      "counts": [
+        0,
+        0
+      ],
+      "reason": "combinational or changed state dimension; handled by independent temporal proof"
+    },
+    "hold_priority18_w7": {
+      "counts": [
+        0,
+        0
+      ],
+      "reason": "combinational or changed state dimension; handled by independent temporal proof"
+    },
+    "hold_decode3_w24_g6": {
+      "counts": [
+        0,
+        0
+      ],
+      "reason": "combinational or changed state dimension; handled by independent temporal proof"
+    },
+    "hold_partial5_w8_g3": {
+      "counts": [
+        0,
+        0
+      ],
+      "reason": "combinational or changed state dimension; handled by independent temporal proof"
+    },
+    "hold_rom_variant_1": {
+      "counts": [
+        0,
+        0
+      ],
+      "reason": "combinational or changed state dimension; handled by independent temporal proof"
+    },
+    "hold_rom_variant_3": {
+      "counts": [
+        0,
+        0
+      ],
+      "reason": "combinational or changed state dimension; handled by independent temporal proof"
+    },
+    "hold_lut_alias": {
+      "counts": [
+        0,
+        0
+      ],
+      "reason": "combinational or changed state dimension; handled by independent temporal proof"
+    },
+    "hold_parallel_luts": {
+      "counts": [
+        0,
+        0
+      ],
+      "reason": "combinational or changed state dimension; handled by independent temporal proof"
+    },
+    "fresh_rom_2_s47": {
+      "counts": [
+        0,
+        0
+      ],
+      "reason": "combinational or changed state dimension; handled by independent temporal proof"
+    },
+    "fresh_rom_4_s61": {
+      "counts": [
+        0,
+        0
+      ],
+      "reason": "combinational or changed state dimension; handled by independent temporal proof"
+    },
+    "fresh_priority12_w6": {
+      "counts": [
+        0,
+        0
+      ],
+      "reason": "combinational or changed state dimension; handled by independent temporal proof"
+    },
+    "epfl_ctrl": {
+      "counts": [
+        0,
+        0
+      ],
+      "reason": "combinational or changed state dimension; handled by independent temporal proof"
+    },
+    "epfl_cavlc": {
+      "counts": [
+        0,
+        0
+      ],
+      "reason": "combinational or changed state dimension; handled by independent temporal proof"
+    },
+    "epfl_int2float": {
+      "counts": [
+        0,
+        0
+      ],
+      "reason": "combinational or changed state dimension; handled by independent temporal proof"
+    },
+    "epfl_router": {
+      "counts": [
+        0,
+        0
+      ],
+      "reason": "combinational or changed state dimension; handled by independent temporal proof"
+    },
+    "epfl_adder": {
+      "counts": [
+        0,
+        0
+      ],
+      "reason": "combinational or changed state dimension; handled by independent temporal proof"
+    },
+    "epfl_bar": {
+      "counts": [
+        0,
+        0
+      ],
+      "reason": "combinational or changed state dimension; handled by independent temporal proof"
+    },
+    "fresh_03": {
+      "counts": [
+        0,
+        0
+      ],
+      "reason": "combinational or changed state dimension; handled by independent temporal proof"
+    }
+  }
+}

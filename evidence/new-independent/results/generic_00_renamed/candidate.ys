@@ -1,0 +1,7 @@
+read_verilog -icells input.v
+synth_intel -family cycloneiv -top renamed_unit -run begin:map_cells
+write_rtlil candidate-checkpoint.il
+write_json candidate-checkpoint.json
+techmap -map +/intel/cycloneiv/cells_map.v
+clean -purge
+write_json candidate-final.json

@@ -1,0 +1,10 @@
+read_verilog -icells input.v
+synth_intel -family cycloneiv -top startup_policy -run begin:map_cells
+select -module startup_policy
+write_rtlil -selected checkpoint.il
+write_json -selected checkpoint.json
+techmap -map +/intel/cycloneiv/cells_map.v
+clean -purge
+check -noinit -assert
+write_rtlil -selected final.il
+write_json -selected final.json

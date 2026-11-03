@@ -1,0 +1,6 @@
+bind top addr
+bind top clk
+bind top din
+bind top we
+bind top y
+group top addr clk din we y

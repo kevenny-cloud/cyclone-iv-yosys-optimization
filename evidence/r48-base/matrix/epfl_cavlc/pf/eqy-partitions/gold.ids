@@ -1,0 +1,22 @@
+top . A:src="input.v:1.1-763.10" A:top=1
+top trailingones[1] w=0:0 A:src="input.v:10.37-10.53" P=I
+top trailingones[0] w=0:0 A:src="input.v:10.18-10.34" P=I
+top totalcoeffs[4] w=0:0 A:src="input.v:9.23-9.38" P=I
+top totalcoeffs[3] w=0:0 A:src="input.v:9.5-9.20" P=I
+top totalcoeffs[2] w=0:0 A:src="input.v:8.46-8.61" P=I
+top totalcoeffs[1] w=0:0 A:src="input.v:8.28-8.43" P=I
+top totalcoeffs[0] w=0:0 A:src="input.v:8.10-8.25" P=I
+top ctoken_len[4] w=0:0 A:src="input.v:13.56-13.70" P=O
+top ctoken_len[3] w=0:0 A:src="input.v:13.39-13.53" P=O
+top ctoken_len[2] w=0:0 A:src="input.v:13.22-13.36" P=O
+top ctoken_len[1] w=0:0 A:src="input.v:13.5-13.19" P=O
+top ctoken_len[0] w=0:0 A:src="input.v:12.59-12.73" P=O
+top ctable[2] w=0:0 A:src="input.v:10.5-10.15" P=I
+top ctable[1] w=0:0 A:src="input.v:9.54-9.64" P=I
+top ctable[0] w=0:0 A:src="input.v:9.41-9.51" P=I
+top coeff_token[5] w=0:0 A:src="input.v:12.41-12.56" P=O
+top coeff_token[4] w=0:0 A:src="input.v:12.23-12.38" P=O
+top coeff_token[3] w=0:0 A:src="input.v:12.5-12.20" P=O
+top coeff_token[2] w=0:0 A:src="input.v:11.46-11.61" P=O
+top coeff_token[1] w=0:0 A:src="input.v:11.28-11.43" P=O
+top coeff_token[0] w=0:0 A:src="input.v:11.10-11.25" P=O

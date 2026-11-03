@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "changed_existing_source": [
+    "techlibs/intel/lut_window.h"
+  ],
+  "added_source_files": [
+    "passes/tests/CMakeLists.txt",
+    "passes/tests/raise_error.cc",
+    "passes/tests/test_abcloop.cc",
+    "passes/tests/test_autotb.cc",
+    "passes/tests/test_cell.cc",
+    "passes/tests/test_kogge_stone.cc",
+    "passes/tests/flowmap/flow.v",
+    "passes/tests/flowmap/flowp.v",
+    "passes/tests/flowmap/pack1.v",
+    "passes/tests/flowmap/pack1p.v",
+    "passes/tests/flowmap/pack2.v",
+    "passes/tests/flowmap/pack2p.v",
+    "passes/tests/flowmap/pack3.v",
+    "passes/tests/flowmap/pack3p.v"
+  ],
+  "uniform_abc9_unchanged_from_R48": true,
+  "abc_dependency_byte_identical_to_reference": true,
+  "case_identifiers_not_found_in_rule_sources": true,
+  "note": "Added files are restored passes/tests build sources; not part of the frozen 160-object recipe"
+}

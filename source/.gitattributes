@@ -1,0 +1,5 @@
+*.v linguist-language=Verilog
+/.gitcommit export-subst
+
+# Preserve bytes required by SHA256.json
+* -text

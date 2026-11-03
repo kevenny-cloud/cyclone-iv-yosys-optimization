@@ -1,0 +1,203 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.69+274 (git sha1 7513f8df8, Release, GNU /usr/bin/x86_64-w64-mingw32-g++ 15.2.1)
+
+-- Executing script file `partition.ys' --
+
+1. Executing RTLIL frontend.
+Input filename: combined.il
+
+2. Executing INSBUF pass (insert buffer cells for connected wires).
+Add gate.top/$auto$insbuf.cc:97:execute$1219: 1'1 -> \sign
+Add gold.top/$auto$insbuf.cc:97:execute$1220: 1'1 -> \sign
+
+3. Executing EQY PARTITION task.
+
+3.1. Processing module pair gold.top / gate.top.
+
+3.1.1. Processing matched IDs for module top.
+
+3.1.2. Create fragment partitions for module top.
+Adding output bit \sign to partition 0.
+Adding output bit \Cin to partition 0.
+Adding output bit \alu_op[0] to partition 0.
+Adding output bit \alu_op[1] to partition 0.
+Adding output bit \alu_op[2] to partition 0.
+Adding output bit \alu_op_ext[0] to partition 0.
+Adding output bit \alu_op_ext[1] to partition 0.
+Adding output bit \alu_op_ext[2] to partition 0.
+Adding output bit \alu_op_ext[3] to partition 0.
+Adding output bit \beqz to partition 0.
+Adding output bit \bgez to partition 0.
+Adding output bit \bltz to partition 0.
+Adding output bit \bnez to partition 0.
+Adding output bit \halt to partition 0.
+Adding output bit \invA to partition 0.
+Adding output bit \invB to partition 0.
+Adding output bit \jump to partition 0.
+Adding output bit \mem_write to partition 0.
+Adding output bit \reg_write to partition 0.
+Adding output bit \sel_alu_opB[0] to partition 0.
+Adding output bit \sel_alu_opB[1] to partition 0.
+Adding output bit \sel_pc_opA to partition 0.
+Adding output bit \sel_pc_opB to partition 0.
+Adding output bit \sel_reg_dst[0] to partition 0.
+Adding output bit \sel_reg_dst[1] to partition 0.
+Adding output bit \sel_wb to partition 0.
+
+Final list of fragment partitions:
+  0 \sel_wb \sel_reg_dst[1] \sel_reg_dst[0] \sel_pc_opB \sel_pc_opA \sel_alu_opB[1] \sel_alu_opB[0] \reg_write \mem_write \jump \invB \invA \halt \bnez \bltz \bgez \beqz \alu_op_ext[3] \alu_op_ext[2] \alu_op_ext[1] \alu_op_ext[0] \alu_op[2] \alu_op[1] \alu_op[0] \Cin \sign <= \op_ext[1] \op_ext[0] \opcode[3] \opcode[4] \opcode[0] \opcode[1] \opcode[2]
+
+3.1.3. Execute partitioning commands for module top.
+
+Amending partitions:
+Execute queued amend rules.
+Find automatic amend rules.
+  Checking partition 0:
+    Found 0 po matches and 0 auto/pi matches.
+
+Assigning partition names:
+Automatically naming partition 0 'Cin' using a PO name: Cin
+
+Partition Summary:
+  Fragments:
+       0: \Cin, \beqz, \bgez, \bltz, \bnez, \halt, \invA, \invB, \jump, \sign, \sel_wb, \alu_op[0], \alu_op[1], \alu_op[2], \mem_write, \reg_write, \sel_pc_opA, and 9 more bits
+  Partitions:
+       0: Cin
+  Fragment-Partition-Matrix:
+           0          
+           0
+       0   #  Cin
+  Legend for Fragment-Partition-Matrix:
+      #  .... partition is this single fragment
+      *  .... fragments merged into single partition
+      +  .... fragments amended to the partition
+      =  .... fragment is driving a partition input
+      -  .... fragment is driving an amended fragment
+      .  .... no relationship between fragment and partition
+      ,  .... unused fragment index (as result of grouping)
+
+3.1.4. Write partitions for module top.
+Adding output bit \sign to partition 1.
+Adding output bit \sel_wb to partition 1.
+Adding output bit \sel_reg_dst[1] to partition 1.
+Adding output bit \sel_reg_dst[0] to partition 1.
+Adding output bit \sel_pc_opB to partition 1.
+Adding output bit \sel_pc_opA to partition 1.
+Adding output bit \sel_alu_opB[1] to partition 1.
+Adding output bit \sel_alu_opB[0] to partition 1.
+Adding output bit \reg_write to partition 1.
+Adding non-output bit \opcode[4] to partition 1.
+Adding non-output bit \opcode[3] to partition 1.
+Adding non-output bit \opcode[2] to partition 1.
+Adding non-output bit \opcode[1] to partition 1.
+Adding non-output bit \opcode[0] to partition 1.
+Adding non-output bit \op_ext[1] to partition 1.
+Adding non-output bit \op_ext[0] to partition 1.
+Adding output bit \mem_write to partition 1.
+Adding output bit \jump to partition 1.
+Adding output bit \invB to partition 1.
+Adding output bit \invA to partition 1.
+Adding output bit \halt to partition 1.
+Adding output bit \bnez to partition 1.
+Adding output bit \bltz to partition 1.
+Adding output bit \bgez to partition 1.
+Adding output bit \beqz to partition 1.
+Adding output bit \alu_op_ext[3] to partition 1.
+Adding output bit \alu_op_ext[2] to partition 1.
+Adding output bit \alu_op_ext[1] to partition 1.
+Adding output bit \alu_op_ext[0] to partition 1.
+Adding output bit \alu_op[2] to partition 1.
+Adding output bit \alu_op[1] to partition 1.
+Adding output bit \alu_op[0] to partition 1.
+Adding output bit \Cin to partition 1.
+Writing partition 0 as top.Cin.
+  partition pi bit 0: \op_ext[1] <-> \op_ext[1]
+  partition pi bit 1: \op_ext[0] <-> \op_ext[0]
+  partition pi bit 2: \opcode[3] <-> \opcode[3]
+  partition pi bit 3: \opcode[4] <-> \opcode[4]
+  partition pi bit 4: \opcode[0] <-> \opcode[0]
+  partition pi bit 5: \opcode[1] <-> \opcode[1]
+  partition pi bit 6: \opcode[2] <-> \opcode[2]
+  partition po bit 0: \sel_wb <-> \sel_wb
+  partition po bit 1: \sel_reg_dst[1] <-> \sel_reg_dst[1]
+  partition po bit 2: \sel_reg_dst[0] <-> \sel_reg_dst[0]
+  partition po bit 3: \sel_pc_opB <-> \sel_pc_opB
+  partition po bit 4: \sel_pc_opA <-> \sel_pc_opA
+  partition po bit 5: \sel_alu_opB[1] <-> \sel_alu_opB[1]
+  partition po bit 6: \sel_alu_opB[0] <-> \sel_alu_opB[0]
+  partition po bit 7: \reg_write <-> \reg_write
+  partition po bit 8: \mem_write <-> \mem_write
+  partition po bit 9: \jump <-> \jump
+  partition po bit 10: \invB <-> \invB
+  partition po bit 11: \invA <-> \invA
+  partition po bit 12: \halt <-> \halt
+  partition po bit 13: \bnez <-> \bnez
+  partition po bit 14: \bltz <-> \bltz
+  partition po bit 15: \bgez <-> \bgez
+  partition po bit 16: \beqz <-> \beqz
+  partition po bit 17: \alu_op_ext[3] <-> \alu_op_ext[3]
+  partition po bit 18: \alu_op_ext[2] <-> \alu_op_ext[2]
+  partition po bit 19: \alu_op_ext[1] <-> \alu_op_ext[1]
+  partition po bit 20: \alu_op_ext[0] <-> \alu_op_ext[0]
+  partition po bit 21: \alu_op[2] <-> \alu_op[2]
+  partition po bit 22: \alu_op[1] <-> \alu_op[1]
+  partition po bit 23: \alu_op[0] <-> \alu_op[0]
+  partition po bit 24: \Cin <-> \Cin
+  partition po bit 25: \sign <-> \sign
+
+3.1.5. Executing RTLIL backend.
+Output filename: partitions/top.Cin.il
+<suppressed ~1704 debug messages>
+
+3.1.6. Executing CHECK pass (checking for obvious problems).
+Checking module gate.top.Cin...
+Checking module gold.top.Cin...
+Found and reported 0 problems.
+
+Writing partition 1 as top.
+  partition pi bit 0: \op_ext[0] <-> \op_ext[0]
+  partition pi bit 1: \op_ext[1] <-> \op_ext[1]
+  partition pi bit 2: \opcode[3] <-> \opcode[3]
+  partition pi bit 3: \opcode[4] <-> \opcode[4]
+  partition pi bit 4: \opcode[0] <-> \opcode[0]
+  partition pi bit 5: \opcode[1] <-> \opcode[1]
+  partition pi bit 6: \opcode[2] <-> \opcode[2]
+  partition po bit 0: \Cin <-> \Cin
+  partition po bit 1: \alu_op[0] <-> \alu_op[0]
+  partition po bit 2: \alu_op[1] <-> \alu_op[1]
+  partition po bit 3: \alu_op[2] <-> \alu_op[2]
+  partition po bit 4: \alu_op_ext[0] <-> \alu_op_ext[0]
+  partition po bit 5: \alu_op_ext[1] <-> \alu_op_ext[1]
+  partition po bit 6: \alu_op_ext[2] <-> \alu_op_ext[2]
+  partition po bit 7: \alu_op_ext[3] <-> \alu_op_ext[3]
+  partition po bit 8: \beqz <-> \beqz
+  partition po bit 9: \bgez <-> \bgez
+  partition po bit 10: \bltz <-> \bltz
+  partition po bit 11: \bnez <-> \bnez
+  partition po bit 12: \halt <-> \halt
+  partition po bit 13: \invA <-> \invA
+  partition po bit 14: \invB <-> \invB
+  partition po bit 15: \jump <-> \jump
+  partition po bit 16: \mem_write <-> \mem_write
+  partition po bit 17: \reg_write <-> \reg_write
+  partition po bit 18: \sel_alu_opB[0] <-> \sel_alu_opB[0]
+  partition po bit 19: \sel_alu_opB[1] <-> \sel_alu_opB[1]
+  partition po bit 20: \sel_pc_opA <-> \sel_pc_opA
+  partition po bit 21: \sel_pc_opB <-> \sel_pc_opB
+  partition po bit 22: \sel_reg_dst[0] <-> \sel_reg_dst[0]
+  partition po bit 23: \sel_reg_dst[1] <-> \sel_reg_dst[1]
+  partition po bit 24: \sel_wb <-> \sel_wb
+  partition po bit 25: \sign <-> \sign
+
+3.1.7. Executing RTLIL backend.
+Output filename: modules/top.il
+<suppressed ~558 debug messages>
+
+End of script. Logfile hash: 14e0d02608
+Yosys 0.69+274 (git sha1 7513f8df8, Release, GNU /usr/bin/x86_64-w64-mingw32-g++ 15.2.1)
+Time spent: 14% 2x write_rtlil (0 sec), 14% 2x read_rtlil (0 sec), ...

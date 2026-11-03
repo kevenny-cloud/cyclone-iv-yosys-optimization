@@ -1,0 +1,73 @@
+-- The C compiler identification is Clang 23.1.4
+-- The CXX compiler identification is Clang 23.1.4
+-- Found FLEX: D:/PROJECT/FPGA/压力测试加固/20261027_structural_rules/候选交付/R50-20261030/source/platform/build-tools/winflexbison/win_flex.exe (found suitable version "2.6.4", minimum required is "2.6")
+-- Found BISON: D:/PROJECT/FPGA/压力测试加固/20261027_structural_rules/候选交付/R50-20261030/source/platform/build-tools/winflexbison/win_bison.exe (found suitable version "3.8.2", minimum required is "3.6")
+-- Found Python3: C:\Users\REDACTED\AppData\Local\Programs\Python\Python314\python.exe (found suitable version "3.14.4", minimum required is "3.7") found components: Interpreter
+-- Looking for glob
+-- Looking for glob - not found
+-- Looking for system
+-- Looking for system - found
+-- Looking for popen
+-- Looking for popen - found
+-- Performing Test HAVE_PTHREAD_CREATE
+-- Performing Test HAVE_PTHREAD_CREATE - Success
+-- Could NOT find PkgConfig (missing: PKG_CONFIG_EXECUTABLE) 
+-- Could NOT find GTest (missing: GTEST_LIBRARY GTEST_INCLUDE_DIR GTEST_MAIN_LIBRARY) 
+-- 
+-- The following packages have been found:
+
+ * FLEX (required version >= 2.6), The Fast Lexical Analyzer, <https://github.com/westes/flex>
+   Compiling the Verilog lexer
+ * BISON (required version >= 3.6), The Yacc-compatible Parser Generator, <https://www.gnu.org/software/bison/>
+   Compiling the Verilog parser
+ * Python3 (required version >= 3.7), Dynamic programming language (Interpreter), <https://www.python.org/>
+   Generating data files
+   Running external SMT2 solvers
+
+-- The following packages have not been found:
+
+ * PkgConfig, Library metadata manager, <https://www.freedesktop.org/wiki/Software/pkg-config/>
+   Discovering dependencies
+ * zlib, A massively spiffy yet delicately unobtrusive compression library, <https://github.com/madler/zlib>
+   Handling Gzip and FST file formats
+ * libffi, A Portable Foreign Function Interface Library, <https://sourceware.org/libffi/>
+   Implementing Verilog DPI-C
+ * editline, Line editing and history library (BSD), <https://www.thrysoee.dk/editline/>
+   Enhancing the command prompt
+ * readline, Line editing and history library (GPL), <https://tiswww.case.edu/php/chet/readline/rltop.html>
+   Enhancing the command prompt
+ * tcl, Dynamic programming language, <https://www.tcl-lang.org/>
+   Parsing SDC constraint files
+   Binding Yosys API
+ * GTest, C++ testing and mocking framework by Google, <https://google.github.io/googletest/>
+   Running unit tests
+
+-- The following features have been enabled:
+
+ * have_spawn, Passes that invoke external tools
+ * have_threads, Multithreaded netlist operations
+ * with_abc, Production-quality logic synthesis flow
+
+-- The following features have been disabled:
+
+ * have_glob, Glob expansion in filenames
+ * have_plugins, Dynamically loadable binary plugins
+ * with_zlib, Transparent Gzip decompression and FST file format support
+ * with_libffi, Verilog DPI-C foreign function interface
+ * with_readline, Using readline for prompt editing and history
+ * with_editline, Using editline for prompt editing and history
+ * with_tcl, Tcl scripting and SDC parsing
+ * with_python, Python scripting and embedding
+ * with_verific, Verific frontend integration
+
+-- Configuring Yosys 0.69+post
+-- Git commit UNKNOWN
+-- External ABC: D:/PROJECT/FPGA/压力测试加固/20261027_structural_rules/候选交付/R50-20261030/yosys-abc.exe
+-- {fmt} version: 12.2.1
+-- Build type: Release
+-- Performing Test HAS_NULLPTR_WARNING
+-- Performing Test HAS_NULLPTR_WARNING - Success
+-- C++ modules support is disabled. Enable with -DTOMLPLUSPLUS_BUILD_MODULES=ON
+-- Configuring done (6.3s)
+-- Generating done (1.2s)
+-- Build files have been written to: C:/Users/REDACTED/AppData/Local/Temp/fpga-r50-build-9c4irlv2/cmake-build

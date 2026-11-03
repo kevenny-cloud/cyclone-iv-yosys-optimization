@@ -1,0 +1,5 @@
+top . A:src="input.v:1.1-39.10" A:top=1
+top y w=95:0 A:src="input.v:1.63-1.64" P=O
+top sel w=5:0 A:src="input.v:1.24-1.27" P=I
+top mixed w=15:0 A:src="input.v:1.80-1.85" P=O
+top data w=191:0 A:src="input.v:1.43-1.47" P=I

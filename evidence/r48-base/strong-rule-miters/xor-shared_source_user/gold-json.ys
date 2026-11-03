@@ -1,0 +1,2 @@
+read_rtlil gold.il
+write_json gold.json

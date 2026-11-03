@@ -1,0 +1,22 @@
+read_verilog fault.v
+hierarchy -top unit
+proc
+flatten
+memory_map
+opt
+clk2fflogic
+rename unit gold
+write_rtlil gold.il
+design -reset
+read_rtlil candidate-checkpoint.il
+techmap -map primitive_decode.v
+hierarchy -top unit
+flatten
+opt
+clk2fflogic
+rename unit gate
+write_rtlil gate.il
+read_rtlil gold.il
+miter -equiv -flatten gold gate miter
+prep -top miter
+sat -verify -tempinduct -seq 1 -maxsteps 24 -prove trigger 0 -set-def-inputs miter

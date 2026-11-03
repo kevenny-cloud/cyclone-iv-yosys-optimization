@@ -1,0 +1,1352 @@
+{
+  "status": "COMPLETE",
+  "schema": "RULE132_V1",
+  "label": "r50-regenerated-primary",
+  "config": {
+    "baseline": {
+      "yosys": "D:\\PROJECT\\FPGA\\压力测试加固\\20261027_structural_rules\\native\\windows-reference\\yosys.exe",
+      "yosys_sha256": "5878533b186324470103a34bb792294607b38e4e31be6c529b6b37b3c3f0c105",
+      "abc": "D:\\PROJECT\\FPGA\\压力测试加固\\20261027_structural_rules\\native\\windows-reference\\yosys-abc.exe",
+      "abc_sha256": "1842fb358da1efb7f61ab3698b6fb0c9b35d3bd8e517e04abbc1ae1711038089",
+      "data": "D:\\PROJECT\\FPGA\\压力测试加固\\20261027_structural_rules\\native\\windows-reference\\share",
+      "runtime_sha256": {
+        "abc9_map.v": "f611eeeaedaf4f80fa05c244906b56cfac4fcb6960aaefa9e5569850d5ab193a",
+        "abc9_model.v": "38fedb5415db4102058e11d029b93343393df8f64d86d1ed40fc4685ecc60d26",
+        "abc9_unmap.v": "346b6d45d416d1631bb44385930b5271b84cb9626d09d140dddf7472a68d99e3",
+        "adff2dff.v": "b71f5443956a75ce32bdb0abddb025073978d08b40569f4ae8e63a177466659b",
+        "choices\\han-carlson.v": "c9442e2e8a77f5dee8e3645ce6be2613eee9df4431eea32ebc9cdd5b0a143b42",
+        "choices\\kogge-stone.v": "f2601d85ad37cfa8fc1eb6940c58c7256031b97677a7c091bc3e12f82e53adcd",
+        "choices\\sklansky.v": "17539d9725ace7a9862cc5adda794b684d1a59dcf877fcd80be1dfc592d229a2",
+        "cmp2lcu.v": "a573c2ea4536815454b1d84397b030230ffba80087bac65f1f50e2f0a473bab9",
+        "cmp2lut.v": "b20be58ce24372269227c2d71418dd81106ba8b7bca192a05b60e50926565c7a",
+        "cmp2softlogic.v": "4bdd76ad92417cbf37718c0599967a338b833958785f662dab6a554f444176f0",
+        "dff2ff.v": "fe6b781b109ebf56d89b02f315dca5226cb04706f811a9112618cd9d6d68d767",
+        "gate2lut.v": "35089c62c6734851473c1c0055d260719330aaec02a1b7deb712c0616c172ad2",
+        "intel\\common\\altpll_bb.v": "2a2aebbc0467d2f7b06fc868b48c865b375e91f9e6221e69d28c4a875624e577",
+        "intel\\common\\brams_map_m9k.v": "179719c46ce1cbed3791257d2455a9dd6154f9d855833f7533259d271b460e45",
+        "intel\\common\\ff_map.v": "b1d533e121c100cf833b24fcb9550b4b6309c0805f48e6985db44d49b6ce22ec",
+        "intel\\common\\m9k_bb.v": "a3eb44b87064de45d64b44bc99582e39b8b4a6cc574a93b058bacd9bacef5f5d",
+        "intel\\cyclone10lp\\cells_map.v": "fc1b4bafa8f89bf07b14a873c14f9f048dc11426a7627a62f7cc4b13a18bee42",
+        "intel\\cyclone10lp\\cells_sim.v": "b24b2e88b9a6ad0afcc49639cf950ab5a5ce78ce7b17ae3fe6ed7259a3ab3ed0",
+        "intel\\cycloneiv\\cells_map.v": "b8f2da90b1f7035893ae9c5489ac04da0385e8a47cbf116a85281686f97db805",
+        "intel\\cycloneiv\\cells_sim.v": "a6014340ce18a73a234e0b39f6d5478cd74487903735f720ed0c21dff2f1cdfc",
+        "intel\\cycloneive\\cells_map.v": "083c7d82ff2ce8ff00531951baa265886a735d9b241b6490b1c2b447268ba512",
+        "intel\\cycloneive\\cells_sim.v": "cf07682b8ad9503517628dd6c2b7c602d14c86d06d24f001088904f25d3fdc5b",
+        "intel\\max10\\cells_map.v": "8584f96f3e29d4c1c6b9c1a53e2a180fca62f43793cbbc1836854908990ab94d",
+        "intel\\max10\\cells_sim.v": "22e536173eb8dd041b6d3703e5f8e7055a833cb3462df1544f507a066e3ed22c",
+        "intel\\max10\\dsp_map.v": "66c3cfce44fef0d154612580660f202cf768149044f9385f62585233e3da4308",
+        "mul2dsp.v": "9a9941e96f956fba0e63b93a1d708f44e6c8d1a344ef2c00f253a67cc4fd98b9",
+        "pmux2mux.v": "c0d310564fe91bebe94303fde2c78c610ee77aa2d54602ebc2c0488d9afd7a8b",
+        "simcells.v": "0156162837d52b32bea761b03195aa8786dca602d75e09d7bb1bdb0c7f4183da",
+        "simlib.v": "243315bbec98becca5f42a713764e7274f226cc8dbdb82cc1ff08a5ceeb00f36",
+        "smtmap.v": "020f02b09e2c2cfb005e45ab09c9f24d362d21771bb5af9b5470b688e651c992",
+        "techmap.v": "8af1bc8ac65660634d39928fae779358f7fd009d9efb705ee28efb6dd3c37117"
+      }
+    },
+    "candidate": {
+      "yosys": "D:\\PROJECT\\FPGA\\压力测试加固\\20261027_structural_rules\\continuation-20261030\\next-plan-execution\\r50-regenerated-final\\program\\yosys.exe",
+      "yosys_sha256": "600cc3db8696d3bd7b2ce16c23abeed49e1bb9977a7c9392dc50c4207c2f7b25",
+      "abc": "D:\\PROJECT\\FPGA\\压力测试加固\\20261027_structural_rules\\continuation-20261030\\next-plan-execution\\r50-regenerated-final\\program\\yosys-abc.exe",
+      "abc_sha256": "1842fb358da1efb7f61ab3698b6fb0c9b35d3bd8e517e04abbc1ae1711038089",
+      "data": "D:\\PROJECT\\FPGA\\压力测试加固\\20261027_structural_rules\\continuation-20261030\\next-plan-execution\\r50-regenerated-final\\program\\share",
+      "runtime_sha256": {
+        "abc9_map.v": "f611eeeaedaf4f80fa05c244906b56cfac4fcb6960aaefa9e5569850d5ab193a",
+        "abc9_model.v": "38fedb5415db4102058e11d029b93343393df8f64d86d1ed40fc4685ecc60d26",
+        "abc9_unmap.v": "346b6d45d416d1631bb44385930b5271b84cb9626d09d140dddf7472a68d99e3",
+        "adff2dff.v": "b71f5443956a75ce32bdb0abddb025073978d08b40569f4ae8e63a177466659b",
+        "choices\\han-carlson.v": "c9442e2e8a77f5dee8e3645ce6be2613eee9df4431eea32ebc9cdd5b0a143b42",
+        "choices\\kogge-stone.v": "f2601d85ad37cfa8fc1eb6940c58c7256031b97677a7c091bc3e12f82e53adcd",
+        "choices\\sklansky.v": "17539d9725ace7a9862cc5adda794b684d1a59dcf877fcd80be1dfc592d229a2",
+        "cmp2lcu.v": "a573c2ea4536815454b1d84397b030230ffba80087bac65f1f50e2f0a473bab9",
+        "cmp2lut.v": "b20be58ce24372269227c2d71418dd81106ba8b7bca192a05b60e50926565c7a",
+        "cmp2softlogic.v": "4bdd76ad92417cbf37718c0599967a338b833958785f662dab6a554f444176f0",
+        "dff2ff.v": "fe6b781b109ebf56d89b02f315dca5226cb04706f811a9112618cd9d6d68d767",
+        "gate2lut.v": "35089c62c6734851473c1c0055d260719330aaec02a1b7deb712c0616c172ad2",
+        "intel\\common\\altpll_bb.v": "2a2aebbc0467d2f7b06fc868b48c865b375e91f9e6221e69d28c4a875624e577",
+        "intel\\common\\brams_map_m9k.v": "179719c46ce1cbed3791257d2455a9dd6154f9d855833f7533259d271b460e45",
+        "intel\\common\\ff_map.v": "b1d533e121c100cf833b24fcb9550b4b6309c0805f48e6985db44d49b6ce22ec",
+        "intel\\common\\ff_map_sync.v": "a2a8e7d4873028580eaa710fdac40f1449607bb4b134ba455a8f08f8fed13eea",
+        "intel\\common\\m9k_bb.v": "a3eb44b87064de45d64b44bc99582e39b8b4a6cc574a93b058bacd9bacef5f5d",
+        "intel\\cyclone10lp\\cells_map.v": "fc1b4bafa8f89bf07b14a873c14f9f048dc11426a7627a62f7cc4b13a18bee42",
+        "intel\\cyclone10lp\\cells_sim.v": "b24b2e88b9a6ad0afcc49639cf950ab5a5ce78ce7b17ae3fe6ed7259a3ab3ed0",
+        "intel\\cycloneiv\\cells_map.v": "a8b2180f8eaa8cd44efea67483cdb3a6b1eb7a79aa33f034ce13c57c014ab5bb",
+        "intel\\cycloneiv\\cells_sim.v": "a6014340ce18a73a234e0b39f6d5478cd74487903735f720ed0c21dff2f1cdfc",
+        "intel\\cycloneive\\cells_map.v": "083c7d82ff2ce8ff00531951baa265886a735d9b241b6490b1c2b447268ba512",
+        "intel\\cycloneive\\cells_sim.v": "cf07682b8ad9503517628dd6c2b7c602d14c86d06d24f001088904f25d3fdc5b",
+        "intel\\max10\\cells_map.v": "8584f96f3e29d4c1c6b9c1a53e2a180fca62f43793cbbc1836854908990ab94d",
+        "intel\\max10\\cells_sim.v": "22e536173eb8dd041b6d3703e5f8e7055a833cb3462df1544f507a066e3ed22c",
+        "intel\\max10\\dsp_map.v": "66c3cfce44fef0d154612580660f202cf768149044f9385f62585233e3da4308",
+        "mul2dsp.v": "9a9941e96f956fba0e63b93a1d708f44e6c8d1a344ef2c00f253a67cc4fd98b9",
+        "pmux2mux.v": "c0d310564fe91bebe94303fde2c78c610ee77aa2d54602ebc2c0488d9afd7a8b",
+        "simcells.v": "0156162837d52b32bea761b03195aa8786dca602d75e09d7bb1bdb0c7f4183da",
+        "simlib.v": "243315bbec98becca5f42a713764e7274f226cc8dbdb82cc1ff08a5ceeb00f36",
+        "smtmap.v": "020f02b09e2c2cfb005e45ab09c9f24d362d21771bb5af9b5470b688e651c992",
+        "techmap.v": "8af1bc8ac65660634d39928fae779358f7fd009d9efb705ee28efb6dd3c37117"
+      }
+    }
+  },
+  "cases": [
+    "test1",
+    "test2",
+    "test3",
+    "test4",
+    "pmux_case01_balanced",
+    "pmux_case02_pipeline",
+    "pmux_case03_crossbar",
+    "pmux_case04_feedback",
+    "pmux_case05_nested",
+    "baseline_logic_unit_999"
+  ],
+  "rule_contract_sha256": "45c4317f7d17ebccfcdca074df0af618e7ab1ef499dd5faf1ec7deb10360533d",
+  "observer_sha256": "7d3a3f233f6d451ebab0408af8cca38cfe487754953e9c35a938672cdb7c3e3c",
+  "native_peak_sha256": "c6b3e2473e7b84582a8db10df48bf261efcae80ae8565a5eea7b3044cc94b057",
+  "config_sha256": "e5c47bc2b7bf0565d85d9431c0055992e3ca8dded7a01bc5264cb00c72491b6e",
+  "fixture_summary_sha256": "91afe92af680b783ed80e3338ee3418dac8e7236427326f486d85e3ca76d4600",
+  "timing": "Measure-Command whole-process elapsed; no overhead subtraction",
+  "memory": "retained main-process peak working set from same run",
+  "warmup_baseline_per_case": 10,
+  "primary_order": [
+    "baseline",
+    "candidate"
+  ],
+  "review_count": 5,
+  "review_aggregation": "ratio of arithmetic means of five fresh pairs; primary excluded",
+  "environment_note": "Background and antivirus condition not independently certified",
+  "results": [
+    {
+      "id": "test1",
+      "source_order": [
+        "input.v"
+      ],
+      "input_sha256": {
+        "input.v": "2d2dba011b0e8799d0de3790b69b7f01c6eb6ac665c4321b57b0378a4972fd13"
+      },
+      "script_sha256": "03e7fd3f0c3ea4d48e79a7a18c34fa851ece5b95678111253560e1409df5aecf",
+      "warmup": [
+        {
+          "variant": "baseline",
+          "tag": "warmup-0-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.3247717,
+          "main_peak_working_set_bytes": 19304448,
+          "main_cpu_seconds_excluding_abc": 0.140625
+        },
+        {
+          "variant": "baseline",
+          "tag": "warmup-1-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.2946362,
+          "main_peak_working_set_bytes": 19308544,
+          "main_cpu_seconds_excluding_abc": 0.15625
+        },
+        {
+          "variant": "baseline",
+          "tag": "warmup-2-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.2939155,
+          "main_peak_working_set_bytes": 19304448,
+          "main_cpu_seconds_excluding_abc": 0.125
+        },
+        {
+          "variant": "baseline",
+          "tag": "warmup-3-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.2934615,
+          "main_peak_working_set_bytes": 19308544,
+          "main_cpu_seconds_excluding_abc": 0.15625
+        },
+        {
+          "variant": "baseline",
+          "tag": "warmup-4-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.2952015,
+          "main_peak_working_set_bytes": 19312640,
+          "main_cpu_seconds_excluding_abc": 0.140625
+        },
+        {
+          "variant": "baseline",
+          "tag": "warmup-5-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.294167,
+          "main_peak_working_set_bytes": 19259392,
+          "main_cpu_seconds_excluding_abc": 0.140625
+        },
+        {
+          "variant": "baseline",
+          "tag": "warmup-6-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.2769697,
+          "main_peak_working_set_bytes": 19308544,
+          "main_cpu_seconds_excluding_abc": 0.203125
+        },
+        {
+          "variant": "baseline",
+          "tag": "warmup-7-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.2889106,
+          "main_peak_working_set_bytes": 19304448,
+          "main_cpu_seconds_excluding_abc": 0.15625
+        },
+        {
+          "variant": "baseline",
+          "tag": "warmup-8-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.2836997,
+          "main_peak_working_set_bytes": 19308544,
+          "main_cpu_seconds_excluding_abc": 0.171875
+        },
+        {
+          "variant": "baseline",
+          "tag": "warmup-9-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.2822458,
+          "main_peak_working_set_bytes": 19304448,
+          "main_cpu_seconds_excluding_abc": 0.125
+        }
+      ],
+      "primary": {
+        "baseline": {
+          "variant": "baseline",
+          "tag": "primary-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.2825559,
+          "main_peak_working_set_bytes": 19304448,
+          "main_cpu_seconds_excluding_abc": 0.140625
+        },
+        "candidate": {
+          "variant": "candidate",
+          "tag": "primary-candidate",
+          "exit_code": 0,
+          "elapsed_seconds": 0.5045255,
+          "main_peak_working_set_bytes": 18104320,
+          "main_cpu_seconds_excluding_abc": 0.171875
+        }
+      },
+      "review": [
+        {
+          "index": 0,
+          "baseline": {
+            "variant": "baseline",
+            "tag": "review-0-baseline",
+            "exit_code": 0,
+            "elapsed_seconds": 0.2829604,
+            "main_peak_working_set_bytes": 19312640,
+            "main_cpu_seconds_excluding_abc": 0.171875
+          },
+          "candidate": {
+            "variant": "candidate",
+            "tag": "review-0-candidate",
+            "exit_code": 0,
+            "elapsed_seconds": 0.2933187,
+            "main_peak_working_set_bytes": 18087936,
+            "main_cpu_seconds_excluding_abc": 0.15625
+          }
+        },
+        {
+          "index": 1,
+          "baseline": {
+            "variant": "baseline",
+            "tag": "review-1-baseline",
+            "exit_code": 0,
+            "elapsed_seconds": 0.2782744,
+            "main_peak_working_set_bytes": 19308544,
+            "main_cpu_seconds_excluding_abc": 0.171875
+          },
+          "candidate": {
+            "variant": "candidate",
+            "tag": "review-1-candidate",
+            "exit_code": 0,
+            "elapsed_seconds": 0.2872305,
+            "main_peak_working_set_bytes": 18104320,
+            "main_cpu_seconds_excluding_abc": 0.1875
+          }
+        },
+        {
+          "index": 2,
+          "baseline": {
+            "variant": "baseline",
+            "tag": "review-2-baseline",
+            "exit_code": 0,
+            "elapsed_seconds": 0.2811856,
+            "main_peak_working_set_bytes": 19304448,
+            "main_cpu_seconds_excluding_abc": 0.140625
+          },
+          "candidate": {
+            "variant": "candidate",
+            "tag": "review-2-candidate",
+            "exit_code": 0,
+            "elapsed_seconds": 0.29255,
+            "main_peak_working_set_bytes": 18104320,
+            "main_cpu_seconds_excluding_abc": 0.140625
+          }
+        },
+        {
+          "index": 3,
+          "baseline": {
+            "variant": "baseline",
+            "tag": "review-3-baseline",
+            "exit_code": 0,
+            "elapsed_seconds": 0.2781065,
+            "main_peak_working_set_bytes": 19312640,
+            "main_cpu_seconds_excluding_abc": 0.171875
+          },
+          "candidate": {
+            "variant": "candidate",
+            "tag": "review-3-candidate",
+            "exit_code": 0,
+            "elapsed_seconds": 0.2920621,
+            "main_peak_working_set_bytes": 18100224,
+            "main_cpu_seconds_excluding_abc": 0.171875
+          }
+        },
+        {
+          "index": 4,
+          "baseline": {
+            "variant": "baseline",
+            "tag": "review-4-baseline",
+            "exit_code": 0,
+            "elapsed_seconds": 0.2793364,
+            "main_peak_working_set_bytes": 19308544,
+            "main_cpu_seconds_excluding_abc": 0.171875
+          },
+          "candidate": {
+            "variant": "candidate",
+            "tag": "review-4-candidate",
+            "exit_code": 0,
+            "elapsed_seconds": 0.2866022,
+            "main_peak_working_set_bytes": 18087936,
+            "main_cpu_seconds_excluding_abc": 0.140625
+          }
+        }
+      ],
+      "decision": null
+    },
+    {
+      "id": "test2",
+      "source_order": [
+        "input.v"
+      ],
+      "input_sha256": {
+        "input.v": "e43c9b437071488551caf3121e227e86f4fe3190751f245beac3b7ecc3fdb146"
+      },
+      "script_sha256": "98e676744bc2c7b01c9fa16e5072805f834cac3d38187562f5747c6fd3a5591b",
+      "warmup": [
+        {
+          "variant": "baseline",
+          "tag": "warmup-0-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.1616539,
+          "main_peak_working_set_bytes": 12922880,
+          "main_cpu_seconds_excluding_abc": 0.03125
+        },
+        {
+          "variant": "baseline",
+          "tag": "warmup-1-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.1566755,
+          "main_peak_working_set_bytes": 12922880,
+          "main_cpu_seconds_excluding_abc": 0.0625
+        },
+        {
+          "variant": "baseline",
+          "tag": "warmup-2-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.1582995,
+          "main_peak_working_set_bytes": 12918784,
+          "main_cpu_seconds_excluding_abc": 0.0625
+        },
+        {
+          "variant": "baseline",
+          "tag": "warmup-3-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.1652322,
+          "main_peak_working_set_bytes": 12918784,
+          "main_cpu_seconds_excluding_abc": 0.078125
+        },
+        {
+          "variant": "baseline",
+          "tag": "warmup-4-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.1612975,
+          "main_peak_working_set_bytes": 12910592,
+          "main_cpu_seconds_excluding_abc": 0.0625
+        },
+        {
+          "variant": "baseline",
+          "tag": "warmup-5-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.1632049,
+          "main_peak_working_set_bytes": 12922880,
+          "main_cpu_seconds_excluding_abc": 0.0625
+        },
+        {
+          "variant": "baseline",
+          "tag": "warmup-6-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.1659451,
+          "main_peak_working_set_bytes": 12918784,
+          "main_cpu_seconds_excluding_abc": 0.078125
+        },
+        {
+          "variant": "baseline",
+          "tag": "warmup-7-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.1621884,
+          "main_peak_working_set_bytes": 12918784,
+          "main_cpu_seconds_excluding_abc": 0.046875
+        },
+        {
+          "variant": "baseline",
+          "tag": "warmup-8-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.1595014,
+          "main_peak_working_set_bytes": 12910592,
+          "main_cpu_seconds_excluding_abc": 0.078125
+        },
+        {
+          "variant": "baseline",
+          "tag": "warmup-9-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.1582036,
+          "main_peak_working_set_bytes": 12918784,
+          "main_cpu_seconds_excluding_abc": 0.078125
+        }
+      ],
+      "primary": {
+        "baseline": {
+          "variant": "baseline",
+          "tag": "primary-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.1662655,
+          "main_peak_working_set_bytes": 12935168,
+          "main_cpu_seconds_excluding_abc": 0.0625
+        },
+        "candidate": {
+          "variant": "candidate",
+          "tag": "primary-candidate",
+          "exit_code": 0,
+          "elapsed_seconds": 0.1622125,
+          "main_peak_working_set_bytes": 12865536,
+          "main_cpu_seconds_excluding_abc": 0.0625
+        }
+      },
+      "review": [],
+      "decision": null
+    },
+    {
+      "id": "test3",
+      "source_order": [
+        "input.v"
+      ],
+      "input_sha256": {
+        "input.v": "1551b9212622ccef6019d6e77de2c43dc8c80d267957b55a42121f34a08780e9"
+      },
+      "script_sha256": "b80e463589ebf7e1b3e753d67e63b6060e44665b80f12c1757438a7cd52bad8d",
+      "warmup": [
+        {
+          "variant": "baseline",
+          "tag": "warmup-0-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.1718615,
+          "main_peak_working_set_bytes": 13299712,
+          "main_cpu_seconds_excluding_abc": 0.078125
+        },
+        {
+          "variant": "baseline",
+          "tag": "warmup-1-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.1657617,
+          "main_peak_working_set_bytes": 13312000,
+          "main_cpu_seconds_excluding_abc": 0.078125
+        },
+        {
+          "variant": "baseline",
+          "tag": "warmup-2-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.1689932,
+          "main_peak_working_set_bytes": 13312000,
+          "main_cpu_seconds_excluding_abc": 0.078125
+        },
+        {
+          "variant": "baseline",
+          "tag": "warmup-3-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.1802318,
+          "main_peak_working_set_bytes": 13312000,
+          "main_cpu_seconds_excluding_abc": 0.0625
+        },
+        {
+          "variant": "baseline",
+          "tag": "warmup-4-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.1829869,
+          "main_peak_working_set_bytes": 13312000,
+          "main_cpu_seconds_excluding_abc": 0.078125
+        },
+        {
+          "variant": "baseline",
+          "tag": "warmup-5-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.1695667,
+          "main_peak_working_set_bytes": 13312000,
+          "main_cpu_seconds_excluding_abc": 0.0625
+        },
+        {
+          "variant": "baseline",
+          "tag": "warmup-6-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.1727001,
+          "main_peak_working_set_bytes": 13316096,
+          "main_cpu_seconds_excluding_abc": 0.078125
+        },
+        {
+          "variant": "baseline",
+          "tag": "warmup-7-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.1664546,
+          "main_peak_working_set_bytes": 13307904,
+          "main_cpu_seconds_excluding_abc": 0.0625
+        },
+        {
+          "variant": "baseline",
+          "tag": "warmup-8-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.1669212,
+          "main_peak_working_set_bytes": 13312000,
+          "main_cpu_seconds_excluding_abc": 0.078125
+        },
+        {
+          "variant": "baseline",
+          "tag": "warmup-9-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.1821519,
+          "main_peak_working_set_bytes": 13312000,
+          "main_cpu_seconds_excluding_abc": 0.0625
+        }
+      ],
+      "primary": {
+        "baseline": {
+          "variant": "baseline",
+          "tag": "primary-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.1763816,
+          "main_peak_working_set_bytes": 13312000,
+          "main_cpu_seconds_excluding_abc": 0.09375
+        },
+        "candidate": {
+          "variant": "candidate",
+          "tag": "primary-candidate",
+          "exit_code": 0,
+          "elapsed_seconds": 0.1719043,
+          "main_peak_working_set_bytes": 13447168,
+          "main_cpu_seconds_excluding_abc": 0.0625
+        }
+      },
+      "review": [],
+      "decision": null
+    },
+    {
+      "id": "test4",
+      "source_order": [
+        "input.v"
+      ],
+      "input_sha256": {
+        "input.v": "c0c5042928bd6bf568e2b7fb2193f2b6db9c4193ba3a5378fc50a331d43422d7"
+      },
+      "script_sha256": "1c23ea35a8a2acbcabb60304244e6025d861d2e17005224f4e3aa8d29633caed",
+      "warmup": [
+        {
+          "variant": "baseline",
+          "tag": "warmup-0-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.1819741,
+          "main_peak_working_set_bytes": 14016512,
+          "main_cpu_seconds_excluding_abc": 0.09375
+        },
+        {
+          "variant": "baseline",
+          "tag": "warmup-1-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.185053,
+          "main_peak_working_set_bytes": 14012416,
+          "main_cpu_seconds_excluding_abc": 0.0625
+        },
+        {
+          "variant": "baseline",
+          "tag": "warmup-2-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.1968837,
+          "main_peak_working_set_bytes": 14016512,
+          "main_cpu_seconds_excluding_abc": 0.109375
+        },
+        {
+          "variant": "baseline",
+          "tag": "warmup-3-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.1987251,
+          "main_peak_working_set_bytes": 14016512,
+          "main_cpu_seconds_excluding_abc": 0.09375
+        },
+        {
+          "variant": "baseline",
+          "tag": "warmup-4-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.1899418,
+          "main_peak_working_set_bytes": 14016512,
+          "main_cpu_seconds_excluding_abc": 0.09375
+        },
+        {
+          "variant": "baseline",
+          "tag": "warmup-5-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.1831312,
+          "main_peak_working_set_bytes": 14016512,
+          "main_cpu_seconds_excluding_abc": 0.0625
+        },
+        {
+          "variant": "baseline",
+          "tag": "warmup-6-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.1929399,
+          "main_peak_working_set_bytes": 14008320,
+          "main_cpu_seconds_excluding_abc": 0.09375
+        },
+        {
+          "variant": "baseline",
+          "tag": "warmup-7-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.1927628,
+          "main_peak_working_set_bytes": 14016512,
+          "main_cpu_seconds_excluding_abc": 0.078125
+        },
+        {
+          "variant": "baseline",
+          "tag": "warmup-8-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.1907735,
+          "main_peak_working_set_bytes": 14012416,
+          "main_cpu_seconds_excluding_abc": 0.09375
+        },
+        {
+          "variant": "baseline",
+          "tag": "warmup-9-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.1887947,
+          "main_peak_working_set_bytes": 14012416,
+          "main_cpu_seconds_excluding_abc": 0.09375
+        }
+      ],
+      "primary": {
+        "baseline": {
+          "variant": "baseline",
+          "tag": "primary-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.190847,
+          "main_peak_working_set_bytes": 14012416,
+          "main_cpu_seconds_excluding_abc": 0.0625
+        },
+        "candidate": {
+          "variant": "candidate",
+          "tag": "primary-candidate",
+          "exit_code": 0,
+          "elapsed_seconds": 0.1840703,
+          "main_peak_working_set_bytes": 14311424,
+          "main_cpu_seconds_excluding_abc": 0.078125
+        }
+      },
+      "review": [],
+      "decision": null
+    },
+    {
+      "id": "pmux_case01_balanced",
+      "source_order": [
+        "input.v"
+      ],
+      "input_sha256": {
+        "input.v": "463263f4b265cbad3b634d69d316cd29e7ea0a62f91ee396dbeeecf7df5c7343"
+      },
+      "script_sha256": "d07893aabcefa8707996be030883b72e37018d959a5c8d70077e63d1e3bfcf43",
+      "warmup": [
+        {
+          "variant": "baseline",
+          "tag": "warmup-0-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.3216877,
+          "main_peak_working_set_bytes": 20205568,
+          "main_cpu_seconds_excluding_abc": 0.15625
+        },
+        {
+          "variant": "baseline",
+          "tag": "warmup-1-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.3253547,
+          "main_peak_working_set_bytes": 20205568,
+          "main_cpu_seconds_excluding_abc": 0.171875
+        },
+        {
+          "variant": "baseline",
+          "tag": "warmup-2-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.3303255,
+          "main_peak_working_set_bytes": 20242432,
+          "main_cpu_seconds_excluding_abc": 0.171875
+        },
+        {
+          "variant": "baseline",
+          "tag": "warmup-3-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.3286272,
+          "main_peak_working_set_bytes": 20189184,
+          "main_cpu_seconds_excluding_abc": 0.15625
+        },
+        {
+          "variant": "baseline",
+          "tag": "warmup-4-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.3202478,
+          "main_peak_working_set_bytes": 20201472,
+          "main_cpu_seconds_excluding_abc": 0.15625
+        },
+        {
+          "variant": "baseline",
+          "tag": "warmup-5-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.3266915,
+          "main_peak_working_set_bytes": 20193280,
+          "main_cpu_seconds_excluding_abc": 0.15625
+        },
+        {
+          "variant": "baseline",
+          "tag": "warmup-6-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.3239797,
+          "main_peak_working_set_bytes": 20520960,
+          "main_cpu_seconds_excluding_abc": 0.171875
+        },
+        {
+          "variant": "baseline",
+          "tag": "warmup-7-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.3263138,
+          "main_peak_working_set_bytes": 20193280,
+          "main_cpu_seconds_excluding_abc": 0.1875
+        },
+        {
+          "variant": "baseline",
+          "tag": "warmup-8-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.3274079,
+          "main_peak_working_set_bytes": 20414464,
+          "main_cpu_seconds_excluding_abc": 0.171875
+        },
+        {
+          "variant": "baseline",
+          "tag": "warmup-9-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.3259666,
+          "main_peak_working_set_bytes": 20602880,
+          "main_cpu_seconds_excluding_abc": 0.15625
+        }
+      ],
+      "primary": {
+        "baseline": {
+          "variant": "baseline",
+          "tag": "primary-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.3299904,
+          "main_peak_working_set_bytes": 20201472,
+          "main_cpu_seconds_excluding_abc": 0.125
+        },
+        "candidate": {
+          "variant": "candidate",
+          "tag": "primary-candidate",
+          "exit_code": 0,
+          "elapsed_seconds": 0.3174553,
+          "main_peak_working_set_bytes": 20140032,
+          "main_cpu_seconds_excluding_abc": 0.171875
+        }
+      },
+      "review": [],
+      "decision": null
+    },
+    {
+      "id": "pmux_case02_pipeline",
+      "source_order": [
+        "input.v"
+      ],
+      "input_sha256": {
+        "input.v": "8639081b2fb7c446edef52a514d63b49333e444ce21638f03bdee97dc954e0ea"
+      },
+      "script_sha256": "ff9e9cc13f347c13fda21dbc981b6b278c122c1344f3211c6b3d0d36e1bbf73f",
+      "warmup": [
+        {
+          "variant": "baseline",
+          "tag": "warmup-0-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.3635249,
+          "main_peak_working_set_bytes": 21762048,
+          "main_cpu_seconds_excluding_abc": 0.1875
+        },
+        {
+          "variant": "baseline",
+          "tag": "warmup-1-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.3573872,
+          "main_peak_working_set_bytes": 21762048,
+          "main_cpu_seconds_excluding_abc": 0.21875
+        },
+        {
+          "variant": "baseline",
+          "tag": "warmup-2-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.3582096,
+          "main_peak_working_set_bytes": 21749760,
+          "main_cpu_seconds_excluding_abc": 0.203125
+        },
+        {
+          "variant": "baseline",
+          "tag": "warmup-3-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.3515267,
+          "main_peak_working_set_bytes": 21753856,
+          "main_cpu_seconds_excluding_abc": 0.203125
+        },
+        {
+          "variant": "baseline",
+          "tag": "warmup-4-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.3571355,
+          "main_peak_working_set_bytes": 21749760,
+          "main_cpu_seconds_excluding_abc": 0.1875
+        },
+        {
+          "variant": "baseline",
+          "tag": "warmup-5-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.3589785,
+          "main_peak_working_set_bytes": 21753856,
+          "main_cpu_seconds_excluding_abc": 0.15625
+        },
+        {
+          "variant": "baseline",
+          "tag": "warmup-6-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.3618014,
+          "main_peak_working_set_bytes": 21753856,
+          "main_cpu_seconds_excluding_abc": 0.21875
+        },
+        {
+          "variant": "baseline",
+          "tag": "warmup-7-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.3630282,
+          "main_peak_working_set_bytes": 21757952,
+          "main_cpu_seconds_excluding_abc": 0.171875
+        },
+        {
+          "variant": "baseline",
+          "tag": "warmup-8-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.3620554,
+          "main_peak_working_set_bytes": 21757952,
+          "main_cpu_seconds_excluding_abc": 0.203125
+        },
+        {
+          "variant": "baseline",
+          "tag": "warmup-9-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.3737523,
+          "main_peak_working_set_bytes": 21757952,
+          "main_cpu_seconds_excluding_abc": 0.21875
+        }
+      ],
+      "primary": {
+        "baseline": {
+          "variant": "baseline",
+          "tag": "primary-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.3554366,
+          "main_peak_working_set_bytes": 21757952,
+          "main_cpu_seconds_excluding_abc": 0.1875
+        },
+        "candidate": {
+          "variant": "candidate",
+          "tag": "primary-candidate",
+          "exit_code": 0,
+          "elapsed_seconds": 0.3174144,
+          "main_peak_working_set_bytes": 20795392,
+          "main_cpu_seconds_excluding_abc": 0.1875
+        }
+      },
+      "review": [],
+      "decision": null
+    },
+    {
+      "id": "pmux_case03_crossbar",
+      "source_order": [
+        "input.v"
+      ],
+      "input_sha256": {
+        "input.v": "bf1fc3bf6383beb007a69587d77a29ea74fb1fbdf7429fb401c0855a31c05932"
+      },
+      "script_sha256": "bfb078c753b60b4292d781a29a7d6739a682a201af7a1488f231ed505ea5e667",
+      "warmup": [
+        {
+          "variant": "baseline",
+          "tag": "warmup-0-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.3354855,
+          "main_peak_working_set_bytes": 20443136,
+          "main_cpu_seconds_excluding_abc": 0.171875
+        },
+        {
+          "variant": "baseline",
+          "tag": "warmup-1-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.3424426,
+          "main_peak_working_set_bytes": 20504576,
+          "main_cpu_seconds_excluding_abc": 0.21875
+        },
+        {
+          "variant": "baseline",
+          "tag": "warmup-2-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.3417955,
+          "main_peak_working_set_bytes": 20459520,
+          "main_cpu_seconds_excluding_abc": 0.1875
+        },
+        {
+          "variant": "baseline",
+          "tag": "warmup-3-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.345054,
+          "main_peak_working_set_bytes": 20434944,
+          "main_cpu_seconds_excluding_abc": 0.1875
+        },
+        {
+          "variant": "baseline",
+          "tag": "warmup-4-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.3450268,
+          "main_peak_working_set_bytes": 20492288,
+          "main_cpu_seconds_excluding_abc": 0.1875
+        },
+        {
+          "variant": "baseline",
+          "tag": "warmup-5-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.3455829,
+          "main_peak_working_set_bytes": 20443136,
+          "main_cpu_seconds_excluding_abc": 0.171875
+        },
+        {
+          "variant": "baseline",
+          "tag": "warmup-6-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.3498704,
+          "main_peak_working_set_bytes": 20500480,
+          "main_cpu_seconds_excluding_abc": 0.203125
+        },
+        {
+          "variant": "baseline",
+          "tag": "warmup-7-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.3462668,
+          "main_peak_working_set_bytes": 20443136,
+          "main_cpu_seconds_excluding_abc": 0.140625
+        },
+        {
+          "variant": "baseline",
+          "tag": "warmup-8-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.3465952,
+          "main_peak_working_set_bytes": 20434944,
+          "main_cpu_seconds_excluding_abc": 0.1875
+        },
+        {
+          "variant": "baseline",
+          "tag": "warmup-9-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.3438893,
+          "main_peak_working_set_bytes": 20451328,
+          "main_cpu_seconds_excluding_abc": 0.171875
+        }
+      ],
+      "primary": {
+        "baseline": {
+          "variant": "baseline",
+          "tag": "primary-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.3456163,
+          "main_peak_working_set_bytes": 20443136,
+          "main_cpu_seconds_excluding_abc": 0.1875
+        },
+        "candidate": {
+          "variant": "candidate",
+          "tag": "primary-candidate",
+          "exit_code": 0,
+          "elapsed_seconds": 0.3314467,
+          "main_peak_working_set_bytes": 20344832,
+          "main_cpu_seconds_excluding_abc": 0.171875
+        }
+      },
+      "review": [],
+      "decision": null
+    },
+    {
+      "id": "pmux_case04_feedback",
+      "source_order": [
+        "input.v"
+      ],
+      "input_sha256": {
+        "input.v": "d668d258d804674dd1412538e7bce04d4630d02928ffe113413b536e6b9ed70f"
+      },
+      "script_sha256": "f7d84c56be9174ae3c3a95804996e69173967820ecdfe5733b963eff7b6f4276",
+      "warmup": [
+        {
+          "variant": "baseline",
+          "tag": "warmup-0-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.305093,
+          "main_peak_working_set_bytes": 19058688,
+          "main_cpu_seconds_excluding_abc": 0.09375
+        },
+        {
+          "variant": "baseline",
+          "tag": "warmup-1-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.3050424,
+          "main_peak_working_set_bytes": 19144704,
+          "main_cpu_seconds_excluding_abc": 0.125
+        },
+        {
+          "variant": "baseline",
+          "tag": "warmup-2-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.3002317,
+          "main_peak_working_set_bytes": 19058688,
+          "main_cpu_seconds_excluding_abc": 0.125
+        },
+        {
+          "variant": "baseline",
+          "tag": "warmup-3-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.3117799,
+          "main_peak_working_set_bytes": 19050496,
+          "main_cpu_seconds_excluding_abc": 0.1875
+        },
+        {
+          "variant": "baseline",
+          "tag": "warmup-4-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.3171421,
+          "main_peak_working_set_bytes": 19496960,
+          "main_cpu_seconds_excluding_abc": 0.171875
+        },
+        {
+          "variant": "baseline",
+          "tag": "warmup-5-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.3100438,
+          "main_peak_working_set_bytes": 19505152,
+          "main_cpu_seconds_excluding_abc": 0.125
+        },
+        {
+          "variant": "baseline",
+          "tag": "warmup-6-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.3190954,
+          "main_peak_working_set_bytes": 19054592,
+          "main_cpu_seconds_excluding_abc": 0.140625
+        },
+        {
+          "variant": "baseline",
+          "tag": "warmup-7-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.3076208,
+          "main_peak_working_set_bytes": 19058688,
+          "main_cpu_seconds_excluding_abc": 0.15625
+        },
+        {
+          "variant": "baseline",
+          "tag": "warmup-8-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.3132829,
+          "main_peak_working_set_bytes": 19058688,
+          "main_cpu_seconds_excluding_abc": 0.140625
+        },
+        {
+          "variant": "baseline",
+          "tag": "warmup-9-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.3082087,
+          "main_peak_working_set_bytes": 19079168,
+          "main_cpu_seconds_excluding_abc": 0.125
+        }
+      ],
+      "primary": {
+        "baseline": {
+          "variant": "baseline",
+          "tag": "primary-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.3041665,
+          "main_peak_working_set_bytes": 19062784,
+          "main_cpu_seconds_excluding_abc": 0.140625
+        },
+        "candidate": {
+          "variant": "candidate",
+          "tag": "primary-candidate",
+          "exit_code": 0,
+          "elapsed_seconds": 0.3053874,
+          "main_peak_working_set_bytes": 19189760,
+          "main_cpu_seconds_excluding_abc": 0.1875
+        }
+      },
+      "review": [],
+      "decision": null
+    },
+    {
+      "id": "pmux_case05_nested",
+      "source_order": [
+        "input.v"
+      ],
+      "input_sha256": {
+        "input.v": "57d64edd3704d9d74407145080a63d06390e4a598c419a948fdea22fb1147f1d"
+      },
+      "script_sha256": "52de4ab4020728456f63177d542d09fb481bd9251254b331c67d653da59cd915",
+      "warmup": [
+        {
+          "variant": "baseline",
+          "tag": "warmup-0-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.3262746,
+          "main_peak_working_set_bytes": 20054016,
+          "main_cpu_seconds_excluding_abc": 0.1875
+        },
+        {
+          "variant": "baseline",
+          "tag": "warmup-1-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.3268613,
+          "main_peak_working_set_bytes": 20783104,
+          "main_cpu_seconds_excluding_abc": 0.171875
+        },
+        {
+          "variant": "baseline",
+          "tag": "warmup-2-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.3307782,
+          "main_peak_working_set_bytes": 20049920,
+          "main_cpu_seconds_excluding_abc": 0.15625
+        },
+        {
+          "variant": "baseline",
+          "tag": "warmup-3-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.3227117,
+          "main_peak_working_set_bytes": 20783104,
+          "main_cpu_seconds_excluding_abc": 0.15625
+        },
+        {
+          "variant": "baseline",
+          "tag": "warmup-4-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.326075,
+          "main_peak_working_set_bytes": 20242432,
+          "main_cpu_seconds_excluding_abc": 0.109375
+        },
+        {
+          "variant": "baseline",
+          "tag": "warmup-5-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.3315096,
+          "main_peak_working_set_bytes": 20783104,
+          "main_cpu_seconds_excluding_abc": 0.171875
+        },
+        {
+          "variant": "baseline",
+          "tag": "warmup-6-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.32656,
+          "main_peak_working_set_bytes": 20262912,
+          "main_cpu_seconds_excluding_abc": 0.171875
+        },
+        {
+          "variant": "baseline",
+          "tag": "warmup-7-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.3465056,
+          "main_peak_working_set_bytes": 20037632,
+          "main_cpu_seconds_excluding_abc": 0.1875
+        },
+        {
+          "variant": "baseline",
+          "tag": "warmup-8-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.3306536,
+          "main_peak_working_set_bytes": 20783104,
+          "main_cpu_seconds_excluding_abc": 0.171875
+        },
+        {
+          "variant": "baseline",
+          "tag": "warmup-9-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.3293061,
+          "main_peak_working_set_bytes": 20045824,
+          "main_cpu_seconds_excluding_abc": 0.15625
+        }
+      ],
+      "primary": {
+        "baseline": {
+          "variant": "baseline",
+          "tag": "primary-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.3339806,
+          "main_peak_working_set_bytes": 20783104,
+          "main_cpu_seconds_excluding_abc": 0.171875
+        },
+        "candidate": {
+          "variant": "candidate",
+          "tag": "primary-candidate",
+          "exit_code": 0,
+          "elapsed_seconds": 0.3083273,
+          "main_peak_working_set_bytes": 19578880,
+          "main_cpu_seconds_excluding_abc": 0.140625
+        }
+      },
+      "review": [],
+      "decision": null
+    },
+    {
+      "id": "baseline_logic_unit_999",
+      "source_order": [
+        "pmux_case01_balanced.v",
+        "pmux_case02_pipeline.v",
+        "pmux_case03_crossbar.v",
+        "pmux_case04_feedback.v",
+        "pmux_case05_nested.v",
+        "test1.v",
+        "test2.v",
+        "test3.v",
+        "test4.v",
+        "baseline_logic_unit_999.v"
+      ],
+      "input_sha256": {
+        "pmux_case01_balanced.v": "463263f4b265cbad3b634d69d316cd29e7ea0a62f91ee396dbeeecf7df5c7343",
+        "pmux_case02_pipeline.v": "8639081b2fb7c446edef52a514d63b49333e444ce21638f03bdee97dc954e0ea",
+        "pmux_case03_crossbar.v": "bf1fc3bf6383beb007a69587d77a29ea74fb1fbdf7429fb401c0855a31c05932",
+        "pmux_case04_feedback.v": "d668d258d804674dd1412538e7bce04d4630d02928ffe113413b536e6b9ed70f",
+        "pmux_case05_nested.v": "57d64edd3704d9d74407145080a63d06390e4a598c419a948fdea22fb1147f1d",
+        "test1.v": "2d2dba011b0e8799d0de3790b69b7f01c6eb6ac665c4321b57b0378a4972fd13",
+        "test2.v": "e43c9b437071488551caf3121e227e86f4fe3190751f245beac3b7ecc3fdb146",
+        "test3.v": "1551b9212622ccef6019d6e77de2c43dc8c80d267957b55a42121f34a08780e9",
+        "test4.v": "c0c5042928bd6bf568e2b7fb2193f2b6db9c4193ba3a5378fc50a331d43422d7",
+        "baseline_logic_unit_999.v": "1d84bdfbf5ca8a5ad1908911a8ba732439d3146061f3e59ea4eb76f18bfc4d20"
+      },
+      "script_sha256": "06a2905ede69c3839584953fa851c70fbd398a4602249e9d0b99d08852979efa",
+      "warmup": [
+        {
+          "variant": "baseline",
+          "tag": "warmup-0-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.9319694,
+          "main_peak_working_set_bytes": 40751104,
+          "main_cpu_seconds_excluding_abc": 0.609375
+        },
+        {
+          "variant": "baseline",
+          "tag": "warmup-1-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.9272807,
+          "main_peak_working_set_bytes": 41750528,
+          "main_cpu_seconds_excluding_abc": 0.59375
+        },
+        {
+          "variant": "baseline",
+          "tag": "warmup-2-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.9494693,
+          "main_peak_working_set_bytes": 41521152,
+          "main_cpu_seconds_excluding_abc": 0.6875
+        },
+        {
+          "variant": "baseline",
+          "tag": "warmup-3-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.9575314,
+          "main_peak_working_set_bytes": 41652224,
+          "main_cpu_seconds_excluding_abc": 0.65625
+        },
+        {
+          "variant": "baseline",
+          "tag": "warmup-4-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.9349045,
+          "main_peak_working_set_bytes": 41578496,
+          "main_cpu_seconds_excluding_abc": 0.625
+        },
+        {
+          "variant": "baseline",
+          "tag": "warmup-5-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.9274427,
+          "main_peak_working_set_bytes": 41689088,
+          "main_cpu_seconds_excluding_abc": 0.640625
+        },
+        {
+          "variant": "baseline",
+          "tag": "warmup-6-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.9746259,
+          "main_peak_working_set_bytes": 41033728,
+          "main_cpu_seconds_excluding_abc": 0.625
+        },
+        {
+          "variant": "baseline",
+          "tag": "warmup-7-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.9579296,
+          "main_peak_working_set_bytes": 42176512,
+          "main_cpu_seconds_excluding_abc": 0.609375
+        },
+        {
+          "variant": "baseline",
+          "tag": "warmup-8-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.941838,
+          "main_peak_working_set_bytes": 42274816,
+          "main_cpu_seconds_excluding_abc": 0.5625
+        },
+        {
+          "variant": "baseline",
+          "tag": "warmup-9-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.926845,
+          "main_peak_working_set_bytes": 40800256,
+          "main_cpu_seconds_excluding_abc": 0.640625
+        }
+      ],
+      "primary": {
+        "baseline": {
+          "variant": "baseline",
+          "tag": "primary-baseline",
+          "exit_code": 0,
+          "elapsed_seconds": 0.9540373,
+          "main_peak_working_set_bytes": 41807872,
+          "main_cpu_seconds_excluding_abc": 0.609375
+        },
+        "candidate": {
+          "variant": "candidate",
+          "tag": "primary-candidate",
+          "exit_code": 0,
+          "elapsed_seconds": 0.9261305,
+          "main_peak_working_set_bytes": 39862272,
+          "main_cpu_seconds_excluding_abc": 0.6875
+        }
+      },
+      "review": [],
+      "decision": null
+    }
+  ],
+  "error": null
+}

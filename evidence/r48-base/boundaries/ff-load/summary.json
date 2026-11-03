@@ -1,0 +1,85 @@
+{
+  "status": "PASS_LOCAL_TRANSITION_ONLY",
+  "candidate_sha256": "2c214fbe02ae67d918eec8f91c1709a856dba0985dd507f600f5b4e467e309e5",
+  "proof_tool_sha256": "bafe6f5c0493c29126222a7b5b7818d93c92ef40938c7cfcdb1e36bb67587024",
+  "tests": [
+    {
+      "fixture": "plain",
+      "emitted_mux_absorption": true,
+      "transition_sat": "PASS",
+      "original_wire_attributes_preserved": true,
+      "deliberate_fault_rejected": true
+    },
+    {
+      "fixture": "select_enable_alias",
+      "emitted_mux_absorption": true,
+      "transition_sat": "PASS",
+      "original_wire_attributes_preserved": true,
+      "deliberate_fault_rejected": true
+    },
+    {
+      "fixture": "select_clear_alias",
+      "emitted_mux_absorption": true,
+      "transition_sat": "PASS",
+      "original_wire_attributes_preserved": true,
+      "deliberate_fault_rejected": true
+    },
+    {
+      "fixture": "data_alias",
+      "emitted_mux_absorption": true,
+      "transition_sat": "PASS",
+      "original_wire_attributes_preserved": true,
+      "deliberate_fault_rejected": true
+    },
+    {
+      "fixture": "keep_mux",
+      "emitted_mux_absorption": false,
+      "transition_sat": "PASS",
+      "original_wire_attributes_preserved": true,
+      "deliberate_fault_rejected": "not applicable"
+    },
+    {
+      "fixture": "shared_output",
+      "emitted_mux_absorption": false,
+      "transition_sat": "PASS",
+      "original_wire_attributes_preserved": true,
+      "deliberate_fault_rejected": "not applicable"
+    },
+    {
+      "fixture": "initial_q",
+      "emitted_mux_absorption": false,
+      "transition_sat": "PASS",
+      "original_wire_attributes_preserved": true,
+      "deliberate_fault_rejected": "not applicable"
+    },
+    {
+      "fixture": "alias_wire",
+      "emitted_mux_absorption": true,
+      "transition_sat": "PASS",
+      "original_wire_attributes_preserved": true,
+      "deliberate_fault_rejected": true
+    },
+    {
+      "fixture": "and_gate",
+      "emitted_mux_absorption": true,
+      "transition_sat": "PASS",
+      "original_wire_attributes_preserved": true,
+      "deliberate_fault_rejected": true
+    },
+    {
+      "fixture": "or_gate",
+      "emitted_mux_absorption": true,
+      "transition_sat": "PASS",
+      "original_wire_attributes_preserved": true,
+      "deliberate_fault_rejected": true
+    },
+    {
+      "fixture": "not_gate",
+      "emitted_mux_absorption": true,
+      "transition_sat": "PASS",
+      "original_wire_attributes_preserved": true,
+      "deliberate_fault_rejected": true
+    }
+  ],
+  "boundary": "Local data/enable/reset transition checks; not complete designs, all events/initial state proof, or efficiency acceptance."
+}

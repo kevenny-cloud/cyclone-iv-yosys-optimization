@@ -1,0 +1,50 @@
+{
+  "decode_default": {
+    "matched": 1,
+    "gross_removed_xor_bits": 9,
+    "independent_sat_pass": true,
+    "state_and_init_unchanged": true
+  },
+  "alias": {
+    "matched": 1,
+    "gross_removed_xor_bits": 9,
+    "independent_sat_pass": true,
+    "state_and_init_unchanged": true
+  },
+  "output_keep": {
+    "matched": 0,
+    "gross_removed_xor_bits": 0,
+    "independent_sat_pass": true,
+    "state_and_init_unchanged": true
+  },
+  "output_init_alias": {
+    "matched": 0,
+    "gross_removed_xor_bits": 0,
+    "independent_sat_pass": true,
+    "state_and_init_unchanged": true
+  },
+  "explicit_ff_init": {
+    "matched": 1,
+    "gross_removed_xor_bits": 9,
+    "independent_sat_pass": true,
+    "state_and_init_unchanged": true
+  },
+  "shared_source_user": {
+    "matched": 0,
+    "gross_removed_xor_bits": 0,
+    "independent_sat_pass": true,
+    "state_and_init_unchanged": true
+  },
+  "default_mismatch": {
+    "matched": 0,
+    "gross_removed_xor_bits": 0,
+    "independent_sat_pass": true,
+    "state_and_init_unchanged": true
+  },
+  "free_multihot": {
+    "matched": 0,
+    "gross_removed_xor_bits": 0,
+    "independent_sat_pass": true,
+    "state_and_init_unchanged": true
+  }
+}

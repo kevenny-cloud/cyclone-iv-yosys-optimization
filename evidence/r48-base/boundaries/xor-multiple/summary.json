@@ -1,0 +1,15 @@
+{
+  "two_independent": {
+    "matches": 2,
+    "equivalence": "PASS",
+    "deliberate_fault_rejected": true
+  },
+  "kept_second": {
+    "matches": 1,
+    "equivalence": "PASS"
+  },
+  "default_mismatch": {
+    "matches": 1,
+    "equivalence": "PASS"
+  }
+}

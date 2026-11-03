@@ -1,0 +1,11 @@
+plugin -i ./eqy_combine.so
+read_rtlil eqy-partitions/gold.il
+uniquify
+hierarchy
+design -stash gold
+read_rtlil eqy-partitions/gate_recoded.il
+uniquify
+hierarchy
+design -stash gate
+eqy_combine -gold_ids eqy-partitions/gold.ids -gate_ids eqy-partitions/gate_recoded.ids
+write_rtlil eqy-partitions/combined.il

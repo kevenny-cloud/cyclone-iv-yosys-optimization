@@ -1,0 +1,12 @@
+{
+  "fresh_08": {
+    "synth_options": [
+      "-nobram"
+    ],
+    "reason": "Original same-toolchain baseline default BRAM map cannot resolve defparam INIT. Preserve failure; same supplementary -nobram in both arms. Not a default-BRAM PASS.",
+    "default_baseline_failure_sha256": "8980339661e7e840a78b83314c18d1e6624526a04dad73c1f1dee729eb151b90",
+    "default_candidate_returncode": 0,
+    "current_default_candidate_log_sha256": "7c50a5ffbe532898224130e86c96afa7f24810cef64200fb72c27bea7bb446c3",
+    "original_failure_record": "D:\\\u7ade\u8d5b\\FPGA\\FPGA\\\u538b\u529b\u6d4b\u8bd5\u52a0\u56fa\\20261027_structural_rules\\validation-r10-20261030\\matrix\\fresh_08\\default-flow-baseline-failed.log"
+  }
+}

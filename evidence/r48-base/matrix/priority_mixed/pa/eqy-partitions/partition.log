@@ -1,0 +1,1916 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.69+274 (git sha1 7513f8df8, Release, GNU /usr/bin/x86_64-w64-mingw32-g++ 15.2.1)
+
+-- Executing script file `partition.ys' --
+
+1. Executing RTLIL frontend.
+Input filename: combined.il
+
+2. Executing INSBUF pass (insert buffer cells for connected wires).
+
+3. Executing EQY PARTITION task.
+
+3.1. Processing module pair gold.top / gate.top.
+
+3.1.1. Processing matched IDs for module top.
+
+3.1.2. Create fragment partitions for module top.
+Adding output bit \y [31] to partition 0.
+Adding output bit \extra [0] to partition 0.
+Adding output bit \extra [1] to partition 0.
+Adding output bit \extra [2] to partition 0.
+Adding output bit \extra [3] to partition 0.
+Adding output bit \extra [4] to partition 0.
+Adding output bit \extra [5] to partition 0.
+Adding output bit \extra [6] to partition 0.
+Adding output bit \extra [7] to partition 0.
+Adding output bit \extra [8] to partition 0.
+Adding output bit \extra [9] to partition 0.
+Adding output bit \extra [10] to partition 0.
+Adding output bit \extra [11] to partition 0.
+Adding output bit \extra [12] to partition 0.
+Adding output bit \extra [13] to partition 0.
+Adding output bit \extra [14] to partition 0.
+Adding output bit \extra [15] to partition 0.
+Adding output bit \extra [16] to partition 0.
+Adding output bit \extra [17] to partition 0.
+Adding output bit \extra [18] to partition 0.
+Adding output bit \extra [19] to partition 0.
+Adding output bit \extra [20] to partition 0.
+Adding output bit \extra [21] to partition 0.
+Adding output bit \extra [22] to partition 0.
+Adding output bit \extra [23] to partition 0.
+Adding output bit \extra [24] to partition 0.
+Adding output bit \extra [25] to partition 0.
+Adding output bit \extra [26] to partition 0.
+Adding output bit \extra [27] to partition 0.
+Adding output bit \extra [28] to partition 0.
+Adding output bit \extra [29] to partition 0.
+Adding output bit \extra [30] to partition 0.
+Adding output bit \extra [31] to partition 0.
+Adding output bit \y [0] to partition 0.
+Adding output bit \y [1] to partition 0.
+Adding output bit \y [2] to partition 0.
+Adding output bit \y [3] to partition 0.
+Adding output bit \y [4] to partition 0.
+Adding output bit \y [5] to partition 0.
+Adding output bit \y [6] to partition 0.
+Adding output bit \y [7] to partition 0.
+Adding output bit \y [8] to partition 0.
+Adding output bit \y [9] to partition 0.
+Adding output bit \y [10] to partition 0.
+Adding output bit \y [11] to partition 0.
+Adding output bit \y [12] to partition 0.
+Adding output bit \y [13] to partition 0.
+Adding output bit \y [14] to partition 0.
+Adding output bit \y [15] to partition 0.
+Adding output bit \y [16] to partition 0.
+Adding output bit \y [17] to partition 0.
+Adding output bit \y [18] to partition 0.
+Adding output bit \y [19] to partition 0.
+Adding output bit \y [20] to partition 0.
+Adding output bit \y [21] to partition 0.
+Adding output bit \y [22] to partition 0.
+Adding output bit \y [23] to partition 0.
+Adding output bit \y [24] to partition 0.
+Adding output bit \y [25] to partition 0.
+Adding output bit \y [26] to partition 0.
+Adding output bit \y [27] to partition 0.
+Adding output bit \y [28] to partition 0.
+Adding output bit \y [29] to partition 0.
+Adding output bit \y [30] to partition 0.
+
+Final list of fragment partitions:
+  0 \y [30] \y [29] \y [28] \y [27] \y [26] \y [25] \y [24] \y [23] \y [22] \y [21] \y [20] \y [19] \y [18] \y [17] \y [16] \y [15] \y [14] \y [13] \y [12] \y [11] \y [10] \y [9] \y [8] \y [7] \y [6] \y [5] \y [4] \y [3] \y [2] \y [1] \y [0] \extra [31] \extra [30] \extra [29] \extra [28] \extra [27] \extra [26] \extra [25] \extra [24] \extra [23] \extra [22] \extra [21] \extra [20] \extra [19] \extra [18] \extra [17] \extra [16] \extra [15] \extra [14] \extra [13] \extra [12] \extra [11] \extra [10] \extra [9] \extra [8] \extra [7] \extra [6] \extra [5] \extra [4] \extra [3] \extra [2] \extra [1] \extra [0] \y [31] <= \d [94] \d [126] \d [158] \d [190] \d [222] \d [254] \d [286] \d [318] \d [350] \d [382] \d [414] \d [446] \d [478] \d [510] \d [93] \d [125] \d [157] \d [189] \d [221] \d [253] \d [285] \d [317] \d [349] \d [381] \d [413] \d [445] \d [477] \d [509] \d [92] \d [124] \d [156] \d [188] \d [220] \d [252] \d [284] \d [316] \d [348] \d [380] \d [412] \d [444] \d [476] \d [508] \d [91] \d [123] \d [155] \d [187] \d [219] \d [251] \d [283] \d [315] \d [347] \d [379] \d [411] \d [443] \d [475] \d [507] \d [90] \d [122] \d [154] \d [186] \d [218] \d [250] \d [282] \d [314] \d [346] \d [378] \d [410] \d [442] \d [474] \d [506] \d [89] \d [121] \d [153] \d [185] \d [217] \d [249] \d [281] \d [313] \d [345] \d [377] \d [409] \d [441] \d [473] \d [505] \d [88] \d [120] \d [152] \d [184] \d [216] \d [248] \d [280] \d [312] \d [344] \d [376] \d [408] \d [440] \d [472] \d [504] \d [87] \d [119] \d [151] \d [183] \d [215] \d [247] \d [279] \d [311] \d [343] \d [375] \d [407] \d [439] \d [471] \d [503] \d [86] \d [118] \d [150] \d [182] \d [214] \d [246] \d [278] \d [310] \d [342] \d [374] \d [406] \d [438] \d [470] \d [502] \d [85] \d [117] \d [149] \d [181] \d [213] \d [245] \d [277] \d [309] \d [341] \d [373] \d [405] \d [437] \d [469] \d [501] \d [84] \d [116] \d [148] \d [180] \d [212] \d [244] \d [276] \d [308] \d [340] \d [372] \d [404] \d [436] \d [468] \d [500] \d [83] \d [115] \d [147] \d [179] \d [211] \d [243] \d [275] \d [307] \d [339] \d [371] \d [403] \d [435] \d [467] \d [499] \d [82] \d [114] \d [146] \d [178] \d [210] \d [242] \d [274] \d [306] \d [338] \d [370] \d [402] \d [434] \d [466] \d [498] \d [81] \d [113] \d [145] \d [177] \d [209] \d [241] \d [273] \d [305] \d [337] \d [369] \d [401] \d [433] \d [465] \d [497] \d [80] \d [112] \d [144] \d [176] \d [208] \d [240] \d [272] \d [304] \d [336] \d [368] \d [400] \d [432] \d [464] \d [496] \d [79] \d [111] \d [143] \d [175] \d [207] \d [239] \d [271] \d [303] \d [335] \d [367] \d [399] \d [431] \d [463] \d [495] \d [78] \d [110] \d [142] \d [174] \d [206] \d [238] \d [270] \d [302] \d [334] \d [366] \d [398] \d [430] \d [462] \d [494] \d [77] \d [109] \d [141] \d [173] \d [205] \d [237] \d [269] \d [301] \d [333] \d [365] \d [397] \d [429] \d [461] \d [493] \d [76] \d [108] \d [140] \d [172] \d [204] \d [236] \d [268] \d [300] \d [332] \d [364] \d [396] \d [428] \d [460] \d [492] \d [75] \d [107] \d [139] \d [171] \d [203] \d [235] \d [267] \d [299] \d [331] \d [363] \d [395] \d [427] \d [459] \d [491] \d [74] \d [106] \d [138] \d [170] \d [202] \d [234] \d [266] \d [298] \d [330] \d [362] \d [394] \d [426] \d [458] \d [490] \d [73] \d [105] \d [137] \d [169] \d [201] \d [233] \d [265] \d [297] \d [329] \d [361] \d [393] \d [425] \d [457] \d [489] \d [72] \d [104] \d [136] \d [168] \d [200] \d [232] \d [264] \d [296] \d [328] \d [360] \d [392] \d [424] \d [456] \d [488] \d [71] \d [103] \d [135] \d [167] \d [199] \d [231] \d [263] \d [295] \d [327] \d [359] \d [391] \d [423] \d [455] \d [487] \d [70] \d [102] \d [134] \d [166] \d [198] \d [230] \d [262] \d [294] \d [326] \d [358] \d [390] \d [422] \d [454] \d [486] \d [69] \d [101] \d [133] \d [165] \d [197] \d [229] \d [261] \d [293] \d [325] \d [357] \d [389] \d [421] \d [453] \d [485] \d [68] \d [100] \d [132] \d [164] \d [196] \d [228] \d [260] \d [292] \d [324] \d [356] \d [388] \d [420] \d [452] \d [484] \d [67] \d [99] \d [131] \d [163] \d [195] \d [227] \d [259] \d [291] \d [323] \d [355] \d [387] \d [419] \d [451] \d [483] \d [66] \d [98] \d [130] \d [162] \d [194] \d [226] \d [258] \d [290] \d [322] \d [354] \d [386] \d [418] \d [450] \d [482] \d [65] \d [97] \d [129] \d [161] \d [193] \d [225] \d [257] \d [289] \d [321] \d [353] \d [385] \d [417] \d [449] \d [481] \d [64] \d [96] \d [128] \d [160] \d [192] \d [224] \d [256] \d [288] \d [320] \d [352] \d [384] \d [416] \d [448] \d [480] \d [30] \d [62] \d [29] \d [61] \d [28] \d [60] \d [27] \d [59] \d [26] \d [58] \d [25] \d [57] \d [24] \d [56] \d [23] \d [55] \d [22] \d [54] \d [21] \d [53] \d [52] \d [20] \d [19] \d [51] \d [18] \d [50] \d [17] \d [49] \d [16] \d [48] \d [15] \d [47] \d [14] \d [46] \d [13] \d [45] \d [44] \d [12] \d [11] \d [43] \d [10] \d [42] \d [9] \d [41] \d [8] \d [40] \d [7] \d [39] \d [6] \d [38] \d [5] \d [37] \d [4] \d [36] \d [3] \d [35] \d [2] \d [34] \d [1] \d [33] \d [0] \d [32] \s [0] \s [1] \d [31] \d [63] \s [2] \d [95] \s [3] \d [127] \s [4] \d [159] \s [5] \d [191] \s [6] \d [223] \s [7] \d [255] \s [8] \d [287] \s [9] \d [319] \s [10] \d [351] \s [11] \d [383] \s [12] \d [415] \s [13] \d [447] \s [14] \d [479] \s [15] \d [511]
+
+3.1.3. Execute partitioning commands for module top.
+
+Amending partitions:
+Execute queued amend rules.
+Find automatic amend rules.
+  Checking partition 0:
+    Found 0 po matches and 0 auto/pi matches.
+
+Assigning partition names:
+Automatically naming partition 0 'extra' using a PO name: extra
+
+Partition Summary:
+  Fragments:
+       0: \y, \extra
+  Partitions:
+       0: extra
+  Fragment-Partition-Matrix:
+           0          
+           0
+       0   #  extra
+  Legend for Fragment-Partition-Matrix:
+      #  .... partition is this single fragment
+      *  .... fragments merged into single partition
+      +  .... fragments amended to the partition
+      =  .... fragment is driving a partition input
+      -  .... fragment is driving an amended fragment
+      .  .... no relationship between fragment and partition
+      ,  .... unused fragment index (as result of grouping)
+
+3.1.4. Write partitions for module top.
+Adding output bit \y [31] to partition 1.
+Adding output bit \y [30] to partition 1.
+Adding output bit \y [29] to partition 1.
+Adding output bit \y [28] to partition 1.
+Adding output bit \y [27] to partition 1.
+Adding output bit \y [26] to partition 1.
+Adding output bit \y [25] to partition 1.
+Adding output bit \y [24] to partition 1.
+Adding output bit \y [23] to partition 1.
+Adding output bit \y [22] to partition 1.
+Adding output bit \y [21] to partition 1.
+Adding output bit \y [20] to partition 1.
+Adding output bit \y [19] to partition 1.
+Adding output bit \y [18] to partition 1.
+Adding output bit \y [17] to partition 1.
+Adding output bit \y [16] to partition 1.
+Adding output bit \y [15] to partition 1.
+Adding output bit \y [14] to partition 1.
+Adding output bit \y [13] to partition 1.
+Adding output bit \y [12] to partition 1.
+Adding output bit \y [11] to partition 1.
+Adding output bit \y [10] to partition 1.
+Adding output bit \y [9] to partition 1.
+Adding output bit \y [8] to partition 1.
+Adding output bit \y [7] to partition 1.
+Adding output bit \y [6] to partition 1.
+Adding output bit \y [5] to partition 1.
+Adding output bit \y [4] to partition 1.
+Adding output bit \y [3] to partition 1.
+Adding output bit \y [2] to partition 1.
+Adding output bit \y [1] to partition 1.
+Adding output bit \y [0] to partition 1.
+Adding non-output bit \s [15] to partition 1.
+Adding non-output bit \s [14] to partition 1.
+Adding non-output bit \s [13] to partition 1.
+Adding non-output bit \s [12] to partition 1.
+Adding non-output bit \s [11] to partition 1.
+Adding non-output bit \s [10] to partition 1.
+Adding non-output bit \s [9] to partition 1.
+Adding non-output bit \s [8] to partition 1.
+Adding non-output bit \s [7] to partition 1.
+Adding non-output bit \s [6] to partition 1.
+Adding non-output bit \s [5] to partition 1.
+Adding non-output bit \s [4] to partition 1.
+Adding non-output bit \s [3] to partition 1.
+Adding non-output bit \s [2] to partition 1.
+Adding non-output bit \s [1] to partition 1.
+Adding non-output bit \s [0] to partition 1.
+Adding output bit \extra [31] to partition 1.
+Adding output bit \extra [30] to partition 1.
+Adding output bit \extra [29] to partition 1.
+Adding output bit \extra [28] to partition 1.
+Adding output bit \extra [27] to partition 1.
+Adding output bit \extra [26] to partition 1.
+Adding output bit \extra [25] to partition 1.
+Adding output bit \extra [24] to partition 1.
+Adding output bit \extra [23] to partition 1.
+Adding output bit \extra [22] to partition 1.
+Adding output bit \extra [21] to partition 1.
+Adding output bit \extra [20] to partition 1.
+Adding output bit \extra [19] to partition 1.
+Adding output bit \extra [18] to partition 1.
+Adding output bit \extra [17] to partition 1.
+Adding output bit \extra [16] to partition 1.
+Adding output bit \extra [15] to partition 1.
+Adding output bit \extra [14] to partition 1.
+Adding output bit \extra [13] to partition 1.
+Adding output bit \extra [12] to partition 1.
+Adding output bit \extra [11] to partition 1.
+Adding output bit \extra [10] to partition 1.
+Adding output bit \extra [9] to partition 1.
+Adding output bit \extra [8] to partition 1.
+Adding output bit \extra [7] to partition 1.
+Adding output bit \extra [6] to partition 1.
+Adding output bit \extra [5] to partition 1.
+Adding output bit \extra [4] to partition 1.
+Adding output bit \extra [3] to partition 1.
+Adding output bit \extra [2] to partition 1.
+Adding output bit \extra [1] to partition 1.
+Adding output bit \extra [0] to partition 1.
+Adding non-output bit \d [511] to partition 1.
+Adding non-output bit \d [510] to partition 1.
+Adding non-output bit \d [509] to partition 1.
+Adding non-output bit \d [508] to partition 1.
+Adding non-output bit \d [507] to partition 1.
+Adding non-output bit \d [506] to partition 1.
+Adding non-output bit \d [505] to partition 1.
+Adding non-output bit \d [504] to partition 1.
+Adding non-output bit \d [503] to partition 1.
+Adding non-output bit \d [502] to partition 1.
+Adding non-output bit \d [501] to partition 1.
+Adding non-output bit \d [500] to partition 1.
+Adding non-output bit \d [499] to partition 1.
+Adding non-output bit \d [498] to partition 1.
+Adding non-output bit \d [497] to partition 1.
+Adding non-output bit \d [496] to partition 1.
+Adding non-output bit \d [495] to partition 1.
+Adding non-output bit \d [494] to partition 1.
+Adding non-output bit \d [493] to partition 1.
+Adding non-output bit \d [492] to partition 1.
+Adding non-output bit \d [491] to partition 1.
+Adding non-output bit \d [490] to partition 1.
+Adding non-output bit \d [489] to partition 1.
+Adding non-output bit \d [488] to partition 1.
+Adding non-output bit \d [487] to partition 1.
+Adding non-output bit \d [486] to partition 1.
+Adding non-output bit \d [485] to partition 1.
+Adding non-output bit \d [484] to partition 1.
+Adding non-output bit \d [483] to partition 1.
+Adding non-output bit \d [482] to partition 1.
+Adding non-output bit \d [481] to partition 1.
+Adding non-output bit \d [480] to partition 1.
+Adding non-output bit \d [479] to partition 1.
+Adding non-output bit \d [478] to partition 1.
+Adding non-output bit \d [477] to partition 1.
+Adding non-output bit \d [476] to partition 1.
+Adding non-output bit \d [475] to partition 1.
+Adding non-output bit \d [474] to partition 1.
+Adding non-output bit \d [473] to partition 1.
+Adding non-output bit \d [472] to partition 1.
+Adding non-output bit \d [471] to partition 1.
+Adding non-output bit \d [470] to partition 1.
+Adding non-output bit \d [469] to partition 1.
+Adding non-output bit \d [468] to partition 1.
+Adding non-output bit \d [467] to partition 1.
+Adding non-output bit \d [466] to partition 1.
+Adding non-output bit \d [465] to partition 1.
+Adding non-output bit \d [464] to partition 1.
+Adding non-output bit \d [463] to partition 1.
+Adding non-output bit \d [462] to partition 1.
+Adding non-output bit \d [461] to partition 1.
+Adding non-output bit \d [460] to partition 1.
+Adding non-output bit \d [459] to partition 1.
+Adding non-output bit \d [458] to partition 1.
+Adding non-output bit \d [457] to partition 1.
+Adding non-output bit \d [456] to partition 1.
+Adding non-output bit \d [455] to partition 1.
+Adding non-output bit \d [454] to partition 1.
+Adding non-output bit \d [453] to partition 1.
+Adding non-output bit \d [452] to partition 1.
+Adding non-output bit \d [451] to partition 1.
+Adding non-output bit \d [450] to partition 1.
+Adding non-output bit \d [449] to partition 1.
+Adding non-output bit \d [448] to partition 1.
+Adding non-output bit \d [447] to partition 1.
+Adding non-output bit \d [446] to partition 1.
+Adding non-output bit \d [445] to partition 1.
+Adding non-output bit \d [444] to partition 1.
+Adding non-output bit \d [443] to partition 1.
+Adding non-output bit \d [442] to partition 1.
+Adding non-output bit \d [441] to partition 1.
+Adding non-output bit \d [440] to partition 1.
+Adding non-output bit \d [439] to partition 1.
+Adding non-output bit \d [438] to partition 1.
+Adding non-output bit \d [437] to partition 1.
+Adding non-output bit \d [436] to partition 1.
+Adding non-output bit \d [435] to partition 1.
+Adding non-output bit \d [434] to partition 1.
+Adding non-output bit \d [433] to partition 1.
+Adding non-output bit \d [432] to partition 1.
+Adding non-output bit \d [431] to partition 1.
+Adding non-output bit \d [430] to partition 1.
+Adding non-output bit \d [429] to partition 1.
+Adding non-output bit \d [428] to partition 1.
+Adding non-output bit \d [427] to partition 1.
+Adding non-output bit \d [426] to partition 1.
+Adding non-output bit \d [425] to partition 1.
+Adding non-output bit \d [424] to partition 1.
+Adding non-output bit \d [423] to partition 1.
+Adding non-output bit \d [422] to partition 1.
+Adding non-output bit \d [421] to partition 1.
+Adding non-output bit \d [420] to partition 1.
+Adding non-output bit \d [419] to partition 1.
+Adding non-output bit \d [418] to partition 1.
+Adding non-output bit \d [417] to partition 1.
+Adding non-output bit \d [416] to partition 1.
+Adding non-output bit \d [415] to partition 1.
+Adding non-output bit \d [414] to partition 1.
+Adding non-output bit \d [413] to partition 1.
+Adding non-output bit \d [412] to partition 1.
+Adding non-output bit \d [411] to partition 1.
+Adding non-output bit \d [410] to partition 1.
+Adding non-output bit \d [409] to partition 1.
+Adding non-output bit \d [408] to partition 1.
+Adding non-output bit \d [407] to partition 1.
+Adding non-output bit \d [406] to partition 1.
+Adding non-output bit \d [405] to partition 1.
+Adding non-output bit \d [404] to partition 1.
+Adding non-output bit \d [403] to partition 1.
+Adding non-output bit \d [402] to partition 1.
+Adding non-output bit \d [401] to partition 1.
+Adding non-output bit \d [400] to partition 1.
+Adding non-output bit \d [399] to partition 1.
+Adding non-output bit \d [398] to partition 1.
+Adding non-output bit \d [397] to partition 1.
+Adding non-output bit \d [396] to partition 1.
+Adding non-output bit \d [395] to partition 1.
+Adding non-output bit \d [394] to partition 1.
+Adding non-output bit \d [393] to partition 1.
+Adding non-output bit \d [392] to partition 1.
+Adding non-output bit \d [391] to partition 1.
+Adding non-output bit \d [390] to partition 1.
+Adding non-output bit \d [389] to partition 1.
+Adding non-output bit \d [388] to partition 1.
+Adding non-output bit \d [387] to partition 1.
+Adding non-output bit \d [386] to partition 1.
+Adding non-output bit \d [385] to partition 1.
+Adding non-output bit \d [384] to partition 1.
+Adding non-output bit \d [383] to partition 1.
+Adding non-output bit \d [382] to partition 1.
+Adding non-output bit \d [381] to partition 1.
+Adding non-output bit \d [380] to partition 1.
+Adding non-output bit \d [379] to partition 1.
+Adding non-output bit \d [378] to partition 1.
+Adding non-output bit \d [377] to partition 1.
+Adding non-output bit \d [376] to partition 1.
+Adding non-output bit \d [375] to partition 1.
+Adding non-output bit \d [374] to partition 1.
+Adding non-output bit \d [373] to partition 1.
+Adding non-output bit \d [372] to partition 1.
+Adding non-output bit \d [371] to partition 1.
+Adding non-output bit \d [370] to partition 1.
+Adding non-output bit \d [369] to partition 1.
+Adding non-output bit \d [368] to partition 1.
+Adding non-output bit \d [367] to partition 1.
+Adding non-output bit \d [366] to partition 1.
+Adding non-output bit \d [365] to partition 1.
+Adding non-output bit \d [364] to partition 1.
+Adding non-output bit \d [363] to partition 1.
+Adding non-output bit \d [362] to partition 1.
+Adding non-output bit \d [361] to partition 1.
+Adding non-output bit \d [360] to partition 1.
+Adding non-output bit \d [359] to partition 1.
+Adding non-output bit \d [358] to partition 1.
+Adding non-output bit \d [357] to partition 1.
+Adding non-output bit \d [356] to partition 1.
+Adding non-output bit \d [355] to partition 1.
+Adding non-output bit \d [354] to partition 1.
+Adding non-output bit \d [353] to partition 1.
+Adding non-output bit \d [352] to partition 1.
+Adding non-output bit \d [351] to partition 1.
+Adding non-output bit \d [350] to partition 1.
+Adding non-output bit \d [349] to partition 1.
+Adding non-output bit \d [348] to partition 1.
+Adding non-output bit \d [347] to partition 1.
+Adding non-output bit \d [346] to partition 1.
+Adding non-output bit \d [345] to partition 1.
+Adding non-output bit \d [344] to partition 1.
+Adding non-output bit \d [343] to partition 1.
+Adding non-output bit \d [342] to partition 1.
+Adding non-output bit \d [341] to partition 1.
+Adding non-output bit \d [340] to partition 1.
+Adding non-output bit \d [339] to partition 1.
+Adding non-output bit \d [338] to partition 1.
+Adding non-output bit \d [337] to partition 1.
+Adding non-output bit \d [336] to partition 1.
+Adding non-output bit \d [335] to partition 1.
+Adding non-output bit \d [334] to partition 1.
+Adding non-output bit \d [333] to partition 1.
+Adding non-output bit \d [332] to partition 1.
+Adding non-output bit \d [331] to partition 1.
+Adding non-output bit \d [330] to partition 1.
+Adding non-output bit \d [329] to partition 1.
+Adding non-output bit \d [328] to partition 1.
+Adding non-output bit \d [327] to partition 1.
+Adding non-output bit \d [326] to partition 1.
+Adding non-output bit \d [325] to partition 1.
+Adding non-output bit \d [324] to partition 1.
+Adding non-output bit \d [323] to partition 1.
+Adding non-output bit \d [322] to partition 1.
+Adding non-output bit \d [321] to partition 1.
+Adding non-output bit \d [320] to partition 1.
+Adding non-output bit \d [319] to partition 1.
+Adding non-output bit \d [318] to partition 1.
+Adding non-output bit \d [317] to partition 1.
+Adding non-output bit \d [316] to partition 1.
+Adding non-output bit \d [315] to partition 1.
+Adding non-output bit \d [314] to partition 1.
+Adding non-output bit \d [313] to partition 1.
+Adding non-output bit \d [312] to partition 1.
+Adding non-output bit \d [311] to partition 1.
+Adding non-output bit \d [310] to partition 1.
+Adding non-output bit \d [309] to partition 1.
+Adding non-output bit \d [308] to partition 1.
+Adding non-output bit \d [307] to partition 1.
+Adding non-output bit \d [306] to partition 1.
+Adding non-output bit \d [305] to partition 1.
+Adding non-output bit \d [304] to partition 1.
+Adding non-output bit \d [303] to partition 1.
+Adding non-output bit \d [302] to partition 1.
+Adding non-output bit \d [301] to partition 1.
+Adding non-output bit \d [300] to partition 1.
+Adding non-output bit \d [299] to partition 1.
+Adding non-output bit \d [298] to partition 1.
+Adding non-output bit \d [297] to partition 1.
+Adding non-output bit \d [296] to partition 1.
+Adding non-output bit \d [295] to partition 1.
+Adding non-output bit \d [294] to partition 1.
+Adding non-output bit \d [293] to partition 1.
+Adding non-output bit \d [292] to partition 1.
+Adding non-output bit \d [291] to partition 1.
+Adding non-output bit \d [290] to partition 1.
+Adding non-output bit \d [289] to partition 1.
+Adding non-output bit \d [288] to partition 1.
+Adding non-output bit \d [287] to partition 1.
+Adding non-output bit \d [286] to partition 1.
+Adding non-output bit \d [285] to partition 1.
+Adding non-output bit \d [284] to partition 1.
+Adding non-output bit \d [283] to partition 1.
+Adding non-output bit \d [282] to partition 1.
+Adding non-output bit \d [281] to partition 1.
+Adding non-output bit \d [280] to partition 1.
+Adding non-output bit \d [279] to partition 1.
+Adding non-output bit \d [278] to partition 1.
+Adding non-output bit \d [277] to partition 1.
+Adding non-output bit \d [276] to partition 1.
+Adding non-output bit \d [275] to partition 1.
+Adding non-output bit \d [274] to partition 1.
+Adding non-output bit \d [273] to partition 1.
+Adding non-output bit \d [272] to partition 1.
+Adding non-output bit \d [271] to partition 1.
+Adding non-output bit \d [270] to partition 1.
+Adding non-output bit \d [269] to partition 1.
+Adding non-output bit \d [268] to partition 1.
+Adding non-output bit \d [267] to partition 1.
+Adding non-output bit \d [266] to partition 1.
+Adding non-output bit \d [265] to partition 1.
+Adding non-output bit \d [264] to partition 1.
+Adding non-output bit \d [263] to partition 1.
+Adding non-output bit \d [262] to partition 1.
+Adding non-output bit \d [261] to partition 1.
+Adding non-output bit \d [260] to partition 1.
+Adding non-output bit \d [259] to partition 1.
+Adding non-output bit \d [258] to partition 1.
+Adding non-output bit \d [257] to partition 1.
+Adding non-output bit \d [256] to partition 1.
+Adding non-output bit \d [255] to partition 1.
+Adding non-output bit \d [254] to partition 1.
+Adding non-output bit \d [253] to partition 1.
+Adding non-output bit \d [252] to partition 1.
+Adding non-output bit \d [251] to partition 1.
+Adding non-output bit \d [250] to partition 1.
+Adding non-output bit \d [249] to partition 1.
+Adding non-output bit \d [248] to partition 1.
+Adding non-output bit \d [247] to partition 1.
+Adding non-output bit \d [246] to partition 1.
+Adding non-output bit \d [245] to partition 1.
+Adding non-output bit \d [244] to partition 1.
+Adding non-output bit \d [243] to partition 1.
+Adding non-output bit \d [242] to partition 1.
+Adding non-output bit \d [241] to partition 1.
+Adding non-output bit \d [240] to partition 1.
+Adding non-output bit \d [239] to partition 1.
+Adding non-output bit \d [238] to partition 1.
+Adding non-output bit \d [237] to partition 1.
+Adding non-output bit \d [236] to partition 1.
+Adding non-output bit \d [235] to partition 1.
+Adding non-output bit \d [234] to partition 1.
+Adding non-output bit \d [233] to partition 1.
+Adding non-output bit \d [232] to partition 1.
+Adding non-output bit \d [231] to partition 1.
+Adding non-output bit \d [230] to partition 1.
+Adding non-output bit \d [229] to partition 1.
+Adding non-output bit \d [228] to partition 1.
+Adding non-output bit \d [227] to partition 1.
+Adding non-output bit \d [226] to partition 1.
+Adding non-output bit \d [225] to partition 1.
+Adding non-output bit \d [224] to partition 1.
+Adding non-output bit \d [223] to partition 1.
+Adding non-output bit \d [222] to partition 1.
+Adding non-output bit \d [221] to partition 1.
+Adding non-output bit \d [220] to partition 1.
+Adding non-output bit \d [219] to partition 1.
+Adding non-output bit \d [218] to partition 1.
+Adding non-output bit \d [217] to partition 1.
+Adding non-output bit \d [216] to partition 1.
+Adding non-output bit \d [215] to partition 1.
+Adding non-output bit \d [214] to partition 1.
+Adding non-output bit \d [213] to partition 1.
+Adding non-output bit \d [212] to partition 1.
+Adding non-output bit \d [211] to partition 1.
+Adding non-output bit \d [210] to partition 1.
+Adding non-output bit \d [209] to partition 1.
+Adding non-output bit \d [208] to partition 1.
+Adding non-output bit \d [207] to partition 1.
+Adding non-output bit \d [206] to partition 1.
+Adding non-output bit \d [205] to partition 1.
+Adding non-output bit \d [204] to partition 1.
+Adding non-output bit \d [203] to partition 1.
+Adding non-output bit \d [202] to partition 1.
+Adding non-output bit \d [201] to partition 1.
+Adding non-output bit \d [200] to partition 1.
+Adding non-output bit \d [199] to partition 1.
+Adding non-output bit \d [198] to partition 1.
+Adding non-output bit \d [197] to partition 1.
+Adding non-output bit \d [196] to partition 1.
+Adding non-output bit \d [195] to partition 1.
+Adding non-output bit \d [194] to partition 1.
+Adding non-output bit \d [193] to partition 1.
+Adding non-output bit \d [192] to partition 1.
+Adding non-output bit \d [191] to partition 1.
+Adding non-output bit \d [190] to partition 1.
+Adding non-output bit \d [189] to partition 1.
+Adding non-output bit \d [188] to partition 1.
+Adding non-output bit \d [187] to partition 1.
+Adding non-output bit \d [186] to partition 1.
+Adding non-output bit \d [185] to partition 1.
+Adding non-output bit \d [184] to partition 1.
+Adding non-output bit \d [183] to partition 1.
+Adding non-output bit \d [182] to partition 1.
+Adding non-output bit \d [181] to partition 1.
+Adding non-output bit \d [180] to partition 1.
+Adding non-output bit \d [179] to partition 1.
+Adding non-output bit \d [178] to partition 1.
+Adding non-output bit \d [177] to partition 1.
+Adding non-output bit \d [176] to partition 1.
+Adding non-output bit \d [175] to partition 1.
+Adding non-output bit \d [174] to partition 1.
+Adding non-output bit \d [173] to partition 1.
+Adding non-output bit \d [172] to partition 1.
+Adding non-output bit \d [171] to partition 1.
+Adding non-output bit \d [170] to partition 1.
+Adding non-output bit \d [169] to partition 1.
+Adding non-output bit \d [168] to partition 1.
+Adding non-output bit \d [167] to partition 1.
+Adding non-output bit \d [166] to partition 1.
+Adding non-output bit \d [165] to partition 1.
+Adding non-output bit \d [164] to partition 1.
+Adding non-output bit \d [163] to partition 1.
+Adding non-output bit \d [162] to partition 1.
+Adding non-output bit \d [161] to partition 1.
+Adding non-output bit \d [160] to partition 1.
+Adding non-output bit \d [159] to partition 1.
+Adding non-output bit \d [158] to partition 1.
+Adding non-output bit \d [157] to partition 1.
+Adding non-output bit \d [156] to partition 1.
+Adding non-output bit \d [155] to partition 1.
+Adding non-output bit \d [154] to partition 1.
+Adding non-output bit \d [153] to partition 1.
+Adding non-output bit \d [152] to partition 1.
+Adding non-output bit \d [151] to partition 1.
+Adding non-output bit \d [150] to partition 1.
+Adding non-output bit \d [149] to partition 1.
+Adding non-output bit \d [148] to partition 1.
+Adding non-output bit \d [147] to partition 1.
+Adding non-output bit \d [146] to partition 1.
+Adding non-output bit \d [145] to partition 1.
+Adding non-output bit \d [144] to partition 1.
+Adding non-output bit \d [143] to partition 1.
+Adding non-output bit \d [142] to partition 1.
+Adding non-output bit \d [141] to partition 1.
+Adding non-output bit \d [140] to partition 1.
+Adding non-output bit \d [139] to partition 1.
+Adding non-output bit \d [138] to partition 1.
+Adding non-output bit \d [137] to partition 1.
+Adding non-output bit \d [136] to partition 1.
+Adding non-output bit \d [135] to partition 1.
+Adding non-output bit \d [134] to partition 1.
+Adding non-output bit \d [133] to partition 1.
+Adding non-output bit \d [132] to partition 1.
+Adding non-output bit \d [131] to partition 1.
+Adding non-output bit \d [130] to partition 1.
+Adding non-output bit \d [129] to partition 1.
+Adding non-output bit \d [128] to partition 1.
+Adding non-output bit \d [127] to partition 1.
+Adding non-output bit \d [126] to partition 1.
+Adding non-output bit \d [125] to partition 1.
+Adding non-output bit \d [124] to partition 1.
+Adding non-output bit \d [123] to partition 1.
+Adding non-output bit \d [122] to partition 1.
+Adding non-output bit \d [121] to partition 1.
+Adding non-output bit \d [120] to partition 1.
+Adding non-output bit \d [119] to partition 1.
+Adding non-output bit \d [118] to partition 1.
+Adding non-output bit \d [117] to partition 1.
+Adding non-output bit \d [116] to partition 1.
+Adding non-output bit \d [115] to partition 1.
+Adding non-output bit \d [114] to partition 1.
+Adding non-output bit \d [113] to partition 1.
+Adding non-output bit \d [112] to partition 1.
+Adding non-output bit \d [111] to partition 1.
+Adding non-output bit \d [110] to partition 1.
+Adding non-output bit \d [109] to partition 1.
+Adding non-output bit \d [108] to partition 1.
+Adding non-output bit \d [107] to partition 1.
+Adding non-output bit \d [106] to partition 1.
+Adding non-output bit \d [105] to partition 1.
+Adding non-output bit \d [104] to partition 1.
+Adding non-output bit \d [103] to partition 1.
+Adding non-output bit \d [102] to partition 1.
+Adding non-output bit \d [101] to partition 1.
+Adding non-output bit \d [100] to partition 1.
+Adding non-output bit \d [99] to partition 1.
+Adding non-output bit \d [98] to partition 1.
+Adding non-output bit \d [97] to partition 1.
+Adding non-output bit \d [96] to partition 1.
+Adding non-output bit \d [95] to partition 1.
+Adding non-output bit \d [94] to partition 1.
+Adding non-output bit \d [93] to partition 1.
+Adding non-output bit \d [92] to partition 1.
+Adding non-output bit \d [91] to partition 1.
+Adding non-output bit \d [90] to partition 1.
+Adding non-output bit \d [89] to partition 1.
+Adding non-output bit \d [88] to partition 1.
+Adding non-output bit \d [87] to partition 1.
+Adding non-output bit \d [86] to partition 1.
+Adding non-output bit \d [85] to partition 1.
+Adding non-output bit \d [84] to partition 1.
+Adding non-output bit \d [83] to partition 1.
+Adding non-output bit \d [82] to partition 1.
+Adding non-output bit \d [81] to partition 1.
+Adding non-output bit \d [80] to partition 1.
+Adding non-output bit \d [79] to partition 1.
+Adding non-output bit \d [78] to partition 1.
+Adding non-output bit \d [77] to partition 1.
+Adding non-output bit \d [76] to partition 1.
+Adding non-output bit \d [75] to partition 1.
+Adding non-output bit \d [74] to partition 1.
+Adding non-output bit \d [73] to partition 1.
+Adding non-output bit \d [72] to partition 1.
+Adding non-output bit \d [71] to partition 1.
+Adding non-output bit \d [70] to partition 1.
+Adding non-output bit \d [69] to partition 1.
+Adding non-output bit \d [68] to partition 1.
+Adding non-output bit \d [67] to partition 1.
+Adding non-output bit \d [66] to partition 1.
+Adding non-output bit \d [65] to partition 1.
+Adding non-output bit \d [64] to partition 1.
+Adding non-output bit \d [63] to partition 1.
+Adding non-output bit \d [62] to partition 1.
+Adding non-output bit \d [61] to partition 1.
+Adding non-output bit \d [60] to partition 1.
+Adding non-output bit \d [59] to partition 1.
+Adding non-output bit \d [58] to partition 1.
+Adding non-output bit \d [57] to partition 1.
+Adding non-output bit \d [56] to partition 1.
+Adding non-output bit \d [55] to partition 1.
+Adding non-output bit \d [54] to partition 1.
+Adding non-output bit \d [53] to partition 1.
+Adding non-output bit \d [52] to partition 1.
+Adding non-output bit \d [51] to partition 1.
+Adding non-output bit \d [50] to partition 1.
+Adding non-output bit \d [49] to partition 1.
+Adding non-output bit \d [48] to partition 1.
+Adding non-output bit \d [47] to partition 1.
+Adding non-output bit \d [46] to partition 1.
+Adding non-output bit \d [45] to partition 1.
+Adding non-output bit \d [44] to partition 1.
+Adding non-output bit \d [43] to partition 1.
+Adding non-output bit \d [42] to partition 1.
+Adding non-output bit \d [41] to partition 1.
+Adding non-output bit \d [40] to partition 1.
+Adding non-output bit \d [39] to partition 1.
+Adding non-output bit \d [38] to partition 1.
+Adding non-output bit \d [37] to partition 1.
+Adding non-output bit \d [36] to partition 1.
+Adding non-output bit \d [35] to partition 1.
+Adding non-output bit \d [34] to partition 1.
+Adding non-output bit \d [33] to partition 1.
+Adding non-output bit \d [32] to partition 1.
+Adding non-output bit \d [31] to partition 1.
+Adding non-output bit \d [30] to partition 1.
+Adding non-output bit \d [29] to partition 1.
+Adding non-output bit \d [28] to partition 1.
+Adding non-output bit \d [27] to partition 1.
+Adding non-output bit \d [26] to partition 1.
+Adding non-output bit \d [25] to partition 1.
+Adding non-output bit \d [24] to partition 1.
+Adding non-output bit \d [23] to partition 1.
+Adding non-output bit \d [22] to partition 1.
+Adding non-output bit \d [21] to partition 1.
+Adding non-output bit \d [20] to partition 1.
+Adding non-output bit \d [19] to partition 1.
+Adding non-output bit \d [18] to partition 1.
+Adding non-output bit \d [17] to partition 1.
+Adding non-output bit \d [16] to partition 1.
+Adding non-output bit \d [15] to partition 1.
+Adding non-output bit \d [14] to partition 1.
+Adding non-output bit \d [13] to partition 1.
+Adding non-output bit \d [12] to partition 1.
+Adding non-output bit \d [11] to partition 1.
+Adding non-output bit \d [10] to partition 1.
+Adding non-output bit \d [9] to partition 1.
+Adding non-output bit \d [8] to partition 1.
+Adding non-output bit \d [7] to partition 1.
+Adding non-output bit \d [6] to partition 1.
+Adding non-output bit \d [5] to partition 1.
+Adding non-output bit \d [4] to partition 1.
+Adding non-output bit \d [3] to partition 1.
+Adding non-output bit \d [2] to partition 1.
+Adding non-output bit \d [1] to partition 1.
+Adding non-output bit \d [0] to partition 1.
+Writing partition 0 as top.extra.
+  partition pi bit 0: \d [94] <-> \d [94]
+  partition pi bit 1: \d [126] <-> \d [126]
+  partition pi bit 2: \d [158] <-> \d [158]
+  partition pi bit 3: \d [190] <-> \d [190]
+  partition pi bit 4: \d [222] <-> \d [222]
+  partition pi bit 5: \d [254] <-> \d [254]
+  partition pi bit 6: \d [286] <-> \d [286]
+  partition pi bit 7: \d [318] <-> \d [318]
+  partition pi bit 8: \d [350] <-> \d [350]
+  partition pi bit 9: \d [382] <-> \d [382]
+  partition pi bit 10: \d [414] <-> \d [414]
+  partition pi bit 11: \d [446] <-> \d [446]
+  partition pi bit 12: \d [478] <-> \d [478]
+  partition pi bit 13: \d [510] <-> \d [510]
+  partition pi bit 14: \d [93] <-> \d [93]
+  partition pi bit 15: \d [125] <-> \d [125]
+  partition pi bit 16: \d [157] <-> \d [157]
+  partition pi bit 17: \d [189] <-> \d [189]
+  partition pi bit 18: \d [221] <-> \d [221]
+  partition pi bit 19: \d [253] <-> \d [253]
+  partition pi bit 20: \d [285] <-> \d [285]
+  partition pi bit 21: \d [317] <-> \d [317]
+  partition pi bit 22: \d [349] <-> \d [349]
+  partition pi bit 23: \d [381] <-> \d [381]
+  partition pi bit 24: \d [413] <-> \d [413]
+  partition pi bit 25: \d [445] <-> \d [445]
+  partition pi bit 26: \d [477] <-> \d [477]
+  partition pi bit 27: \d [509] <-> \d [509]
+  partition pi bit 28: \d [92] <-> \d [92]
+  partition pi bit 29: \d [124] <-> \d [124]
+  partition pi bit 30: \d [156] <-> \d [156]
+  partition pi bit 31: \d [188] <-> \d [188]
+  partition pi bit 32: \d [220] <-> \d [220]
+  partition pi bit 33: \d [252] <-> \d [252]
+  partition pi bit 34: \d [284] <-> \d [284]
+  partition pi bit 35: \d [316] <-> \d [316]
+  partition pi bit 36: \d [348] <-> \d [348]
+  partition pi bit 37: \d [380] <-> \d [380]
+  partition pi bit 38: \d [412] <-> \d [412]
+  partition pi bit 39: \d [444] <-> \d [444]
+  partition pi bit 40: \d [476] <-> \d [476]
+  partition pi bit 41: \d [508] <-> \d [508]
+  partition pi bit 42: \d [91] <-> \d [91]
+  partition pi bit 43: \d [123] <-> \d [123]
+  partition pi bit 44: \d [155] <-> \d [155]
+  partition pi bit 45: \d [187] <-> \d [187]
+  partition pi bit 46: \d [219] <-> \d [219]
+  partition pi bit 47: \d [251] <-> \d [251]
+  partition pi bit 48: \d [283] <-> \d [283]
+  partition pi bit 49: \d [315] <-> \d [315]
+  partition pi bit 50: \d [347] <-> \d [347]
+  partition pi bit 51: \d [379] <-> \d [379]
+  partition pi bit 52: \d [411] <-> \d [411]
+  partition pi bit 53: \d [443] <-> \d [443]
+  partition pi bit 54: \d [475] <-> \d [475]
+  partition pi bit 55: \d [507] <-> \d [507]
+  partition pi bit 56: \d [90] <-> \d [90]
+  partition pi bit 57: \d [122] <-> \d [122]
+  partition pi bit 58: \d [154] <-> \d [154]
+  partition pi bit 59: \d [186] <-> \d [186]
+  partition pi bit 60: \d [218] <-> \d [218]
+  partition pi bit 61: \d [250] <-> \d [250]
+  partition pi bit 62: \d [282] <-> \d [282]
+  partition pi bit 63: \d [314] <-> \d [314]
+  partition pi bit 64: \d [346] <-> \d [346]
+  partition pi bit 65: \d [378] <-> \d [378]
+  partition pi bit 66: \d [410] <-> \d [410]
+  partition pi bit 67: \d [442] <-> \d [442]
+  partition pi bit 68: \d [474] <-> \d [474]
+  partition pi bit 69: \d [506] <-> \d [506]
+  partition pi bit 70: \d [89] <-> \d [89]
+  partition pi bit 71: \d [121] <-> \d [121]
+  partition pi bit 72: \d [153] <-> \d [153]
+  partition pi bit 73: \d [185] <-> \d [185]
+  partition pi bit 74: \d [217] <-> \d [217]
+  partition pi bit 75: \d [249] <-> \d [249]
+  partition pi bit 76: \d [281] <-> \d [281]
+  partition pi bit 77: \d [313] <-> \d [313]
+  partition pi bit 78: \d [345] <-> \d [345]
+  partition pi bit 79: \d [377] <-> \d [377]
+  partition pi bit 80: \d [409] <-> \d [409]
+  partition pi bit 81: \d [441] <-> \d [441]
+  partition pi bit 82: \d [473] <-> \d [473]
+  partition pi bit 83: \d [505] <-> \d [505]
+  partition pi bit 84: \d [88] <-> \d [88]
+  partition pi bit 85: \d [120] <-> \d [120]
+  partition pi bit 86: \d [152] <-> \d [152]
+  partition pi bit 87: \d [184] <-> \d [184]
+  partition pi bit 88: \d [216] <-> \d [216]
+  partition pi bit 89: \d [248] <-> \d [248]
+  partition pi bit 90: \d [280] <-> \d [280]
+  partition pi bit 91: \d [312] <-> \d [312]
+  partition pi bit 92: \d [344] <-> \d [344]
+  partition pi bit 93: \d [376] <-> \d [376]
+  partition pi bit 94: \d [408] <-> \d [408]
+  partition pi bit 95: \d [440] <-> \d [440]
+  partition pi bit 96: \d [472] <-> \d [472]
+  partition pi bit 97: \d [504] <-> \d [504]
+  partition pi bit 98: \d [87] <-> \d [87]
+  partition pi bit 99: \d [119] <-> \d [119]
+  partition pi bit 100: \d [151] <-> \d [151]
+  partition pi bit 101: \d [183] <-> \d [183]
+  partition pi bit 102: \d [215] <-> \d [215]
+  partition pi bit 103: \d [247] <-> \d [247]
+  partition pi bit 104: \d [279] <-> \d [279]
+  partition pi bit 105: \d [311] <-> \d [311]
+  partition pi bit 106: \d [343] <-> \d [343]
+  partition pi bit 107: \d [375] <-> \d [375]
+  partition pi bit 108: \d [407] <-> \d [407]
+  partition pi bit 109: \d [439] <-> \d [439]
+  partition pi bit 110: \d [471] <-> \d [471]
+  partition pi bit 111: \d [503] <-> \d [503]
+  partition pi bit 112: \d [86] <-> \d [86]
+  partition pi bit 113: \d [118] <-> \d [118]
+  partition pi bit 114: \d [150] <-> \d [150]
+  partition pi bit 115: \d [182] <-> \d [182]
+  partition pi bit 116: \d [214] <-> \d [214]
+  partition pi bit 117: \d [246] <-> \d [246]
+  partition pi bit 118: \d [278] <-> \d [278]
+  partition pi bit 119: \d [310] <-> \d [310]
+  partition pi bit 120: \d [342] <-> \d [342]
+  partition pi bit 121: \d [374] <-> \d [374]
+  partition pi bit 122: \d [406] <-> \d [406]
+  partition pi bit 123: \d [438] <-> \d [438]
+  partition pi bit 124: \d [470] <-> \d [470]
+  partition pi bit 125: \d [502] <-> \d [502]
+  partition pi bit 126: \d [85] <-> \d [85]
+  partition pi bit 127: \d [117] <-> \d [117]
+  partition pi bit 128: \d [149] <-> \d [149]
+  partition pi bit 129: \d [181] <-> \d [181]
+  partition pi bit 130: \d [213] <-> \d [213]
+  partition pi bit 131: \d [245] <-> \d [245]
+  partition pi bit 132: \d [277] <-> \d [277]
+  partition pi bit 133: \d [309] <-> \d [309]
+  partition pi bit 134: \d [341] <-> \d [341]
+  partition pi bit 135: \d [373] <-> \d [373]
+  partition pi bit 136: \d [405] <-> \d [405]
+  partition pi bit 137: \d [437] <-> \d [437]
+  partition pi bit 138: \d [469] <-> \d [469]
+  partition pi bit 139: \d [501] <-> \d [501]
+  partition pi bit 140: \d [84] <-> \d [84]
+  partition pi bit 141: \d [116] <-> \d [116]
+  partition pi bit 142: \d [148] <-> \d [148]
+  partition pi bit 143: \d [180] <-> \d [180]
+  partition pi bit 144: \d [212] <-> \d [212]
+  partition pi bit 145: \d [244] <-> \d [244]
+  partition pi bit 146: \d [276] <-> \d [276]
+  partition pi bit 147: \d [308] <-> \d [308]
+  partition pi bit 148: \d [340] <-> \d [340]
+  partition pi bit 149: \d [372] <-> \d [372]
+  partition pi bit 150: \d [404] <-> \d [404]
+  partition pi bit 151: \d [436] <-> \d [436]
+  partition pi bit 152: \d [468] <-> \d [468]
+  partition pi bit 153: \d [500] <-> \d [500]
+  partition pi bit 154: \d [83] <-> \d [83]
+  partition pi bit 155: \d [115] <-> \d [115]
+  partition pi bit 156: \d [147] <-> \d [147]
+  partition pi bit 157: \d [179] <-> \d [179]
+  partition pi bit 158: \d [211] <-> \d [211]
+  partition pi bit 159: \d [243] <-> \d [243]
+  partition pi bit 160: \d [275] <-> \d [275]
+  partition pi bit 161: \d [307] <-> \d [307]
+  partition pi bit 162: \d [339] <-> \d [339]
+  partition pi bit 163: \d [371] <-> \d [371]
+  partition pi bit 164: \d [403] <-> \d [403]
+  partition pi bit 165: \d [435] <-> \d [435]
+  partition pi bit 166: \d [467] <-> \d [467]
+  partition pi bit 167: \d [499] <-> \d [499]
+  partition pi bit 168: \d [82] <-> \d [82]
+  partition pi bit 169: \d [114] <-> \d [114]
+  partition pi bit 170: \d [146] <-> \d [146]
+  partition pi bit 171: \d [178] <-> \d [178]
+  partition pi bit 172: \d [210] <-> \d [210]
+  partition pi bit 173: \d [242] <-> \d [242]
+  partition pi bit 174: \d [274] <-> \d [274]
+  partition pi bit 175: \d [306] <-> \d [306]
+  partition pi bit 176: \d [338] <-> \d [338]
+  partition pi bit 177: \d [370] <-> \d [370]
+  partition pi bit 178: \d [402] <-> \d [402]
+  partition pi bit 179: \d [434] <-> \d [434]
+  partition pi bit 180: \d [466] <-> \d [466]
+  partition pi bit 181: \d [498] <-> \d [498]
+  partition pi bit 182: \d [81] <-> \d [81]
+  partition pi bit 183: \d [113] <-> \d [113]
+  partition pi bit 184: \d [145] <-> \d [145]
+  partition pi bit 185: \d [177] <-> \d [177]
+  partition pi bit 186: \d [209] <-> \d [209]
+  partition pi bit 187: \d [241] <-> \d [241]
+  partition pi bit 188: \d [273] <-> \d [273]
+  partition pi bit 189: \d [305] <-> \d [305]
+  partition pi bit 190: \d [337] <-> \d [337]
+  partition pi bit 191: \d [369] <-> \d [369]
+  partition pi bit 192: \d [401] <-> \d [401]
+  partition pi bit 193: \d [433] <-> \d [433]
+  partition pi bit 194: \d [465] <-> \d [465]
+  partition pi bit 195: \d [497] <-> \d [497]
+  partition pi bit 196: \d [80] <-> \d [80]
+  partition pi bit 197: \d [112] <-> \d [112]
+  partition pi bit 198: \d [144] <-> \d [144]
+  partition pi bit 199: \d [176] <-> \d [176]
+  partition pi bit 200: \d [208] <-> \d [208]
+  partition pi bit 201: \d [240] <-> \d [240]
+  partition pi bit 202: \d [272] <-> \d [272]
+  partition pi bit 203: \d [304] <-> \d [304]
+  partition pi bit 204: \d [336] <-> \d [336]
+  partition pi bit 205: \d [368] <-> \d [368]
+  partition pi bit 206: \d [400] <-> \d [400]
+  partition pi bit 207: \d [432] <-> \d [432]
+  partition pi bit 208: \d [464] <-> \d [464]
+  partition pi bit 209: \d [496] <-> \d [496]
+  partition pi bit 210: \d [79] <-> \d [79]
+  partition pi bit 211: \d [111] <-> \d [111]
+  partition pi bit 212: \d [143] <-> \d [143]
+  partition pi bit 213: \d [175] <-> \d [175]
+  partition pi bit 214: \d [207] <-> \d [207]
+  partition pi bit 215: \d [239] <-> \d [239]
+  partition pi bit 216: \d [271] <-> \d [271]
+  partition pi bit 217: \d [303] <-> \d [303]
+  partition pi bit 218: \d [335] <-> \d [335]
+  partition pi bit 219: \d [367] <-> \d [367]
+  partition pi bit 220: \d [399] <-> \d [399]
+  partition pi bit 221: \d [431] <-> \d [431]
+  partition pi bit 222: \d [463] <-> \d [463]
+  partition pi bit 223: \d [495] <-> \d [495]
+  partition pi bit 224: \d [78] <-> \d [78]
+  partition pi bit 225: \d [110] <-> \d [110]
+  partition pi bit 226: \d [142] <-> \d [142]
+  partition pi bit 227: \d [174] <-> \d [174]
+  partition pi bit 228: \d [206] <-> \d [206]
+  partition pi bit 229: \d [238] <-> \d [238]
+  partition pi bit 230: \d [270] <-> \d [270]
+  partition pi bit 231: \d [302] <-> \d [302]
+  partition pi bit 232: \d [334] <-> \d [334]
+  partition pi bit 233: \d [366] <-> \d [366]
+  partition pi bit 234: \d [398] <-> \d [398]
+  partition pi bit 235: \d [430] <-> \d [430]
+  partition pi bit 236: \d [462] <-> \d [462]
+  partition pi bit 237: \d [494] <-> \d [494]
+  partition pi bit 238: \d [77] <-> \d [77]
+  partition pi bit 239: \d [109] <-> \d [109]
+  partition pi bit 240: \d [141] <-> \d [141]
+  partition pi bit 241: \d [173] <-> \d [173]
+  partition pi bit 242: \d [205] <-> \d [205]
+  partition pi bit 243: \d [237] <-> \d [237]
+  partition pi bit 244: \d [269] <-> \d [269]
+  partition pi bit 245: \d [301] <-> \d [301]
+  partition pi bit 246: \d [333] <-> \d [333]
+  partition pi bit 247: \d [365] <-> \d [365]
+  partition pi bit 248: \d [397] <-> \d [397]
+  partition pi bit 249: \d [429] <-> \d [429]
+  partition pi bit 250: \d [461] <-> \d [461]
+  partition pi bit 251: \d [493] <-> \d [493]
+  partition pi bit 252: \d [76] <-> \d [76]
+  partition pi bit 253: \d [108] <-> \d [108]
+  partition pi bit 254: \d [140] <-> \d [140]
+  partition pi bit 255: \d [172] <-> \d [172]
+  partition pi bit 256: \d [204] <-> \d [204]
+  partition pi bit 257: \d [236] <-> \d [236]
+  partition pi bit 258: \d [268] <-> \d [268]
+  partition pi bit 259: \d [300] <-> \d [300]
+  partition pi bit 260: \d [332] <-> \d [332]
+  partition pi bit 261: \d [364] <-> \d [364]
+  partition pi bit 262: \d [396] <-> \d [396]
+  partition pi bit 263: \d [428] <-> \d [428]
+  partition pi bit 264: \d [460] <-> \d [460]
+  partition pi bit 265: \d [492] <-> \d [492]
+  partition pi bit 266: \d [75] <-> \d [75]
+  partition pi bit 267: \d [107] <-> \d [107]
+  partition pi bit 268: \d [139] <-> \d [139]
+  partition pi bit 269: \d [171] <-> \d [171]
+  partition pi bit 270: \d [203] <-> \d [203]
+  partition pi bit 271: \d [235] <-> \d [235]
+  partition pi bit 272: \d [267] <-> \d [267]
+  partition pi bit 273: \d [299] <-> \d [299]
+  partition pi bit 274: \d [331] <-> \d [331]
+  partition pi bit 275: \d [363] <-> \d [363]
+  partition pi bit 276: \d [395] <-> \d [395]
+  partition pi bit 277: \d [427] <-> \d [427]
+  partition pi bit 278: \d [459] <-> \d [459]
+  partition pi bit 279: \d [491] <-> \d [491]
+  partition pi bit 280: \d [74] <-> \d [74]
+  partition pi bit 281: \d [106] <-> \d [106]
+  partition pi bit 282: \d [138] <-> \d [138]
+  partition pi bit 283: \d [170] <-> \d [170]
+  partition pi bit 284: \d [202] <-> \d [202]
+  partition pi bit 285: \d [234] <-> \d [234]
+  partition pi bit 286: \d [266] <-> \d [266]
+  partition pi bit 287: \d [298] <-> \d [298]
+  partition pi bit 288: \d [330] <-> \d [330]
+  partition pi bit 289: \d [362] <-> \d [362]
+  partition pi bit 290: \d [394] <-> \d [394]
+  partition pi bit 291: \d [426] <-> \d [426]
+  partition pi bit 292: \d [458] <-> \d [458]
+  partition pi bit 293: \d [490] <-> \d [490]
+  partition pi bit 294: \d [73] <-> \d [73]
+  partition pi bit 295: \d [105] <-> \d [105]
+  partition pi bit 296: \d [137] <-> \d [137]
+  partition pi bit 297: \d [169] <-> \d [169]
+  partition pi bit 298: \d [201] <-> \d [201]
+  partition pi bit 299: \d [233] <-> \d [233]
+  partition pi bit 300: \d [265] <-> \d [265]
+  partition pi bit 301: \d [297] <-> \d [297]
+  partition pi bit 302: \d [329] <-> \d [329]
+  partition pi bit 303: \d [361] <-> \d [361]
+  partition pi bit 304: \d [393] <-> \d [393]
+  partition pi bit 305: \d [425] <-> \d [425]
+  partition pi bit 306: \d [457] <-> \d [457]
+  partition pi bit 307: \d [489] <-> \d [489]
+  partition pi bit 308: \d [72] <-> \d [72]
+  partition pi bit 309: \d [104] <-> \d [104]
+  partition pi bit 310: \d [136] <-> \d [136]
+  partition pi bit 311: \d [168] <-> \d [168]
+  partition pi bit 312: \d [200] <-> \d [200]
+  partition pi bit 313: \d [232] <-> \d [232]
+  partition pi bit 314: \d [264] <-> \d [264]
+  partition pi bit 315: \d [296] <-> \d [296]
+  partition pi bit 316: \d [328] <-> \d [328]
+  partition pi bit 317: \d [360] <-> \d [360]
+  partition pi bit 318: \d [392] <-> \d [392]
+  partition pi bit 319: \d [424] <-> \d [424]
+  partition pi bit 320: \d [456] <-> \d [456]
+  partition pi bit 321: \d [488] <-> \d [488]
+  partition pi bit 322: \d [71] <-> \d [71]
+  partition pi bit 323: \d [103] <-> \d [103]
+  partition pi bit 324: \d [135] <-> \d [135]
+  partition pi bit 325: \d [167] <-> \d [167]
+  partition pi bit 326: \d [199] <-> \d [199]
+  partition pi bit 327: \d [231] <-> \d [231]
+  partition pi bit 328: \d [263] <-> \d [263]
+  partition pi bit 329: \d [295] <-> \d [295]
+  partition pi bit 330: \d [327] <-> \d [327]
+  partition pi bit 331: \d [359] <-> \d [359]
+  partition pi bit 332: \d [391] <-> \d [391]
+  partition pi bit 333: \d [423] <-> \d [423]
+  partition pi bit 334: \d [455] <-> \d [455]
+  partition pi bit 335: \d [487] <-> \d [487]
+  partition pi bit 336: \d [70] <-> \d [70]
+  partition pi bit 337: \d [102] <-> \d [102]
+  partition pi bit 338: \d [134] <-> \d [134]
+  partition pi bit 339: \d [166] <-> \d [166]
+  partition pi bit 340: \d [198] <-> \d [198]
+  partition pi bit 341: \d [230] <-> \d [230]
+  partition pi bit 342: \d [262] <-> \d [262]
+  partition pi bit 343: \d [294] <-> \d [294]
+  partition pi bit 344: \d [326] <-> \d [326]
+  partition pi bit 345: \d [358] <-> \d [358]
+  partition pi bit 346: \d [390] <-> \d [390]
+  partition pi bit 347: \d [422] <-> \d [422]
+  partition pi bit 348: \d [454] <-> \d [454]
+  partition pi bit 349: \d [486] <-> \d [486]
+  partition pi bit 350: \d [69] <-> \d [69]
+  partition pi bit 351: \d [101] <-> \d [101]
+  partition pi bit 352: \d [133] <-> \d [133]
+  partition pi bit 353: \d [165] <-> \d [165]
+  partition pi bit 354: \d [197] <-> \d [197]
+  partition pi bit 355: \d [229] <-> \d [229]
+  partition pi bit 356: \d [261] <-> \d [261]
+  partition pi bit 357: \d [293] <-> \d [293]
+  partition pi bit 358: \d [325] <-> \d [325]
+  partition pi bit 359: \d [357] <-> \d [357]
+  partition pi bit 360: \d [389] <-> \d [389]
+  partition pi bit 361: \d [421] <-> \d [421]
+  partition pi bit 362: \d [453] <-> \d [453]
+  partition pi bit 363: \d [485] <-> \d [485]
+  partition pi bit 364: \d [68] <-> \d [68]
+  partition pi bit 365: \d [100] <-> \d [100]
+  partition pi bit 366: \d [132] <-> \d [132]
+  partition pi bit 367: \d [164] <-> \d [164]
+  partition pi bit 368: \d [196] <-> \d [196]
+  partition pi bit 369: \d [228] <-> \d [228]
+  partition pi bit 370: \d [260] <-> \d [260]
+  partition pi bit 371: \d [292] <-> \d [292]
+  partition pi bit 372: \d [324] <-> \d [324]
+  partition pi bit 373: \d [356] <-> \d [356]
+  partition pi bit 374: \d [388] <-> \d [388]
+  partition pi bit 375: \d [420] <-> \d [420]
+  partition pi bit 376: \d [452] <-> \d [452]
+  partition pi bit 377: \d [484] <-> \d [484]
+  partition pi bit 378: \d [67] <-> \d [67]
+  partition pi bit 379: \d [99] <-> \d [99]
+  partition pi bit 380: \d [131] <-> \d [131]
+  partition pi bit 381: \d [163] <-> \d [163]
+  partition pi bit 382: \d [195] <-> \d [195]
+  partition pi bit 383: \d [227] <-> \d [227]
+  partition pi bit 384: \d [259] <-> \d [259]
+  partition pi bit 385: \d [291] <-> \d [291]
+  partition pi bit 386: \d [323] <-> \d [323]
+  partition pi bit 387: \d [355] <-> \d [355]
+  partition pi bit 388: \d [387] <-> \d [387]
+  partition pi bit 389: \d [419] <-> \d [419]
+  partition pi bit 390: \d [451] <-> \d [451]
+  partition pi bit 391: \d [483] <-> \d [483]
+  partition pi bit 392: \d [66] <-> \d [66]
+  partition pi bit 393: \d [98] <-> \d [98]
+  partition pi bit 394: \d [130] <-> \d [130]
+  partition pi bit 395: \d [162] <-> \d [162]
+  partition pi bit 396: \d [194] <-> \d [194]
+  partition pi bit 397: \d [226] <-> \d [226]
+  partition pi bit 398: \d [258] <-> \d [258]
+  partition pi bit 399: \d [290] <-> \d [290]
+  partition pi bit 400: \d [322] <-> \d [322]
+  partition pi bit 401: \d [354] <-> \d [354]
+  partition pi bit 402: \d [386] <-> \d [386]
+  partition pi bit 403: \d [418] <-> \d [418]
+  partition pi bit 404: \d [450] <-> \d [450]
+  partition pi bit 405: \d [482] <-> \d [482]
+  partition pi bit 406: \d [65] <-> \d [65]
+  partition pi bit 407: \d [97] <-> \d [97]
+  partition pi bit 408: \d [129] <-> \d [129]
+  partition pi bit 409: \d [161] <-> \d [161]
+  partition pi bit 410: \d [193] <-> \d [193]
+  partition pi bit 411: \d [225] <-> \d [225]
+  partition pi bit 412: \d [257] <-> \d [257]
+  partition pi bit 413: \d [289] <-> \d [289]
+  partition pi bit 414: \d [321] <-> \d [321]
+  partition pi bit 415: \d [353] <-> \d [353]
+  partition pi bit 416: \d [385] <-> \d [385]
+  partition pi bit 417: \d [417] <-> \d [417]
+  partition pi bit 418: \d [449] <-> \d [449]
+  partition pi bit 419: \d [481] <-> \d [481]
+  partition pi bit 420: \d [64] <-> \d [64]
+  partition pi bit 421: \d [96] <-> \d [96]
+  partition pi bit 422: \d [128] <-> \d [128]
+  partition pi bit 423: \d [160] <-> \d [160]
+  partition pi bit 424: \d [192] <-> \d [192]
+  partition pi bit 425: \d [224] <-> \d [224]
+  partition pi bit 426: \d [256] <-> \d [256]
+  partition pi bit 427: \d [288] <-> \d [288]
+  partition pi bit 428: \d [320] <-> \d [320]
+  partition pi bit 429: \d [352] <-> \d [352]
+  partition pi bit 430: \d [384] <-> \d [384]
+  partition pi bit 431: \d [416] <-> \d [416]
+  partition pi bit 432: \d [448] <-> \d [448]
+  partition pi bit 433: \d [480] <-> \d [480]
+  partition pi bit 434: \d [30] <-> \d [30]
+  partition pi bit 435: \d [62] <-> \d [62]
+  partition pi bit 436: \d [29] <-> \d [29]
+  partition pi bit 437: \d [61] <-> \d [61]
+  partition pi bit 438: \d [28] <-> \d [28]
+  partition pi bit 439: \d [60] <-> \d [60]
+  partition pi bit 440: \d [27] <-> \d [27]
+  partition pi bit 441: \d [59] <-> \d [59]
+  partition pi bit 442: \d [26] <-> \d [26]
+  partition pi bit 443: \d [58] <-> \d [58]
+  partition pi bit 444: \d [25] <-> \d [25]
+  partition pi bit 445: \d [57] <-> \d [57]
+  partition pi bit 446: \d [24] <-> \d [24]
+  partition pi bit 447: \d [56] <-> \d [56]
+  partition pi bit 448: \d [23] <-> \d [23]
+  partition pi bit 449: \d [55] <-> \d [55]
+  partition pi bit 450: \d [22] <-> \d [22]
+  partition pi bit 451: \d [54] <-> \d [54]
+  partition pi bit 452: \d [21] <-> \d [21]
+  partition pi bit 453: \d [53] <-> \d [53]
+  partition pi bit 454: \d [52] <-> \d [52]
+  partition pi bit 455: \d [20] <-> \d [20]
+  partition pi bit 456: \d [19] <-> \d [19]
+  partition pi bit 457: \d [51] <-> \d [51]
+  partition pi bit 458: \d [18] <-> \d [18]
+  partition pi bit 459: \d [50] <-> \d [50]
+  partition pi bit 460: \d [17] <-> \d [17]
+  partition pi bit 461: \d [49] <-> \d [49]
+  partition pi bit 462: \d [16] <-> \d [16]
+  partition pi bit 463: \d [48] <-> \d [48]
+  partition pi bit 464: \d [15] <-> \d [15]
+  partition pi bit 465: \d [47] <-> \d [47]
+  partition pi bit 466: \d [14] <-> \d [14]
+  partition pi bit 467: \d [46] <-> \d [46]
+  partition pi bit 468: \d [13] <-> \d [13]
+  partition pi bit 469: \d [45] <-> \d [45]
+  partition pi bit 470: \d [44] <-> \d [44]
+  partition pi bit 471: \d [12] <-> \d [12]
+  partition pi bit 472: \d [11] <-> \d [11]
+  partition pi bit 473: \d [43] <-> \d [43]
+  partition pi bit 474: \d [10] <-> \d [10]
+  partition pi bit 475: \d [42] <-> \d [42]
+  partition pi bit 476: \d [9] <-> \d [9]
+  partition pi bit 477: \d [41] <-> \d [41]
+  partition pi bit 478: \d [8] <-> \d [8]
+  partition pi bit 479: \d [40] <-> \d [40]
+  partition pi bit 480: \d [7] <-> \d [7]
+  partition pi bit 481: \d [39] <-> \d [39]
+  partition pi bit 482: \d [6] <-> \d [6]
+  partition pi bit 483: \d [38] <-> \d [38]
+  partition pi bit 484: \d [5] <-> \d [5]
+  partition pi bit 485: \d [37] <-> \d [37]
+  partition pi bit 486: \d [4] <-> \d [4]
+  partition pi bit 487: \d [36] <-> \d [36]
+  partition pi bit 488: \d [3] <-> \d [3]
+  partition pi bit 489: \d [35] <-> \d [35]
+  partition pi bit 490: \d [2] <-> \d [2]
+  partition pi bit 491: \d [34] <-> \d [34]
+  partition pi bit 492: \d [1] <-> \d [1]
+  partition pi bit 493: \d [33] <-> \d [33]
+  partition pi bit 494: \d [0] <-> \d [0]
+  partition pi bit 495: \d [32] <-> \d [32]
+  partition pi bit 496: \s [0] <-> \s [0]
+  partition pi bit 497: \s [1] <-> \s [1]
+  partition pi bit 498: \d [31] <-> \d [31]
+  partition pi bit 499: \d [63] <-> \d [63]
+  partition pi bit 500: \s [2] <-> \s [2]
+  partition pi bit 501: \d [95] <-> \d [95]
+  partition pi bit 502: \s [3] <-> \s [3]
+  partition pi bit 503: \d [127] <-> \d [127]
+  partition pi bit 504: \s [4] <-> \s [4]
+  partition pi bit 505: \d [159] <-> \d [159]
+  partition pi bit 506: \s [5] <-> \s [5]
+  partition pi bit 507: \d [191] <-> \d [191]
+  partition pi bit 508: \s [6] <-> \s [6]
+  partition pi bit 509: \d [223] <-> \d [223]
+  partition pi bit 510: \s [7] <-> \s [7]
+  partition pi bit 511: \d [255] <-> \d [255]
+  partition pi bit 512: \s [8] <-> \s [8]
+  partition pi bit 513: \d [287] <-> \d [287]
+  partition pi bit 514: \s [9] <-> \s [9]
+  partition pi bit 515: \d [319] <-> \d [319]
+  partition pi bit 516: \s [10] <-> \s [10]
+  partition pi bit 517: \d [351] <-> \d [351]
+  partition pi bit 518: \s [11] <-> \s [11]
+  partition pi bit 519: \d [383] <-> \d [383]
+  partition pi bit 520: \s [12] <-> \s [12]
+  partition pi bit 521: \d [415] <-> \d [415]
+  partition pi bit 522: \s [13] <-> \s [13]
+  partition pi bit 523: \d [447] <-> \d [447]
+  partition pi bit 524: \s [14] <-> \s [14]
+  partition pi bit 525: \d [479] <-> \d [479]
+  partition pi bit 526: \s [15] <-> \s [15]
+  partition pi bit 527: \d [511] <-> \d [511]
+  partition po bit 0: \y [30] <-> \y [30]
+  partition po bit 1: \y [29] <-> \y [29]
+  partition po bit 2: \y [28] <-> \y [28]
+  partition po bit 3: \y [27] <-> \y [27]
+  partition po bit 4: \y [26] <-> \y [26]
+  partition po bit 5: \y [25] <-> \y [25]
+  partition po bit 6: \y [24] <-> \y [24]
+  partition po bit 7: \y [23] <-> \y [23]
+  partition po bit 8: \y [22] <-> \y [22]
+  partition po bit 9: \y [21] <-> \y [21]
+  partition po bit 10: \y [20] <-> \y [20]
+  partition po bit 11: \y [19] <-> \y [19]
+  partition po bit 12: \y [18] <-> \y [18]
+  partition po bit 13: \y [17] <-> \y [17]
+  partition po bit 14: \y [16] <-> \y [16]
+  partition po bit 15: \y [15] <-> \y [15]
+  partition po bit 16: \y [14] <-> \y [14]
+  partition po bit 17: \y [13] <-> \y [13]
+  partition po bit 18: \y [12] <-> \y [12]
+  partition po bit 19: \y [11] <-> \y [11]
+  partition po bit 20: \y [10] <-> \y [10]
+  partition po bit 21: \y [9] <-> \y [9]
+  partition po bit 22: \y [8] <-> \y [8]
+  partition po bit 23: \y [7] <-> \y [7]
+  partition po bit 24: \y [6] <-> \y [6]
+  partition po bit 25: \y [5] <-> \y [5]
+  partition po bit 26: \y [4] <-> \y [4]
+  partition po bit 27: \y [3] <-> \y [3]
+  partition po bit 28: \y [2] <-> \y [2]
+  partition po bit 29: \y [1] <-> \y [1]
+  partition po bit 30: \y [0] <-> \y [0]
+  partition po bit 31: \extra [31] <-> \extra [31]
+  partition po bit 32: \extra [30] <-> \extra [30]
+  partition po bit 33: \extra [29] <-> \extra [29]
+  partition po bit 34: \extra [28] <-> \extra [28]
+  partition po bit 35: \extra [27] <-> \extra [27]
+  partition po bit 36: \extra [26] <-> \extra [26]
+  partition po bit 37: \extra [25] <-> \extra [25]
+  partition po bit 38: \extra [24] <-> \extra [24]
+  partition po bit 39: \extra [23] <-> \extra [23]
+  partition po bit 40: \extra [22] <-> \extra [22]
+  partition po bit 41: \extra [21] <-> \extra [21]
+  partition po bit 42: \extra [20] <-> \extra [20]
+  partition po bit 43: \extra [19] <-> \extra [19]
+  partition po bit 44: \extra [18] <-> \extra [18]
+  partition po bit 45: \extra [17] <-> \extra [17]
+  partition po bit 46: \extra [16] <-> \extra [16]
+  partition po bit 47: \extra [15] <-> \extra [15]
+  partition po bit 48: \extra [14] <-> \extra [14]
+  partition po bit 49: \extra [13] <-> \extra [13]
+  partition po bit 50: \extra [12] <-> \extra [12]
+  partition po bit 51: \extra [11] <-> \extra [11]
+  partition po bit 52: \extra [10] <-> \extra [10]
+  partition po bit 53: \extra [9] <-> \extra [9]
+  partition po bit 54: \extra [8] <-> \extra [8]
+  partition po bit 55: \extra [7] <-> \extra [7]
+  partition po bit 56: \extra [6] <-> \extra [6]
+  partition po bit 57: \extra [5] <-> \extra [5]
+  partition po bit 58: \extra [4] <-> \extra [4]
+  partition po bit 59: \extra [3] <-> \extra [3]
+  partition po bit 60: \extra [2] <-> \extra [2]
+  partition po bit 61: \extra [1] <-> \extra [1]
+  partition po bit 62: \extra [0] <-> \extra [0]
+  partition po bit 63: \y [31] <-> \y [31]
+
+3.1.5. Executing RTLIL backend.
+Output filename: partitions/top.extra.il
+<suppressed ~20410 debug messages>
+
+3.1.6. Executing CHECK pass (checking for obvious problems).
+Checking module gate.top.extra...
+Checking module gold.top.extra...
+Found and reported 0 problems.
+
+Writing partition 1 as top.
+  partition pi bit 0: \d [0] <-> \d [0]
+  partition pi bit 1: \d [32] <-> \d [32]
+  partition pi bit 2: \d [64] <-> \d [64]
+  partition pi bit 3: \d [96] <-> \d [96]
+  partition pi bit 4: \d [128] <-> \d [128]
+  partition pi bit 5: \d [160] <-> \d [160]
+  partition pi bit 6: \d [192] <-> \d [192]
+  partition pi bit 7: \d [224] <-> \d [224]
+  partition pi bit 8: \d [256] <-> \d [256]
+  partition pi bit 9: \d [288] <-> \d [288]
+  partition pi bit 10: \d [320] <-> \d [320]
+  partition pi bit 11: \d [352] <-> \d [352]
+  partition pi bit 12: \d [384] <-> \d [384]
+  partition pi bit 13: \d [416] <-> \d [416]
+  partition pi bit 14: \d [448] <-> \d [448]
+  partition pi bit 15: \d [480] <-> \d [480]
+  partition pi bit 16: \d [1] <-> \d [1]
+  partition pi bit 17: \d [33] <-> \d [33]
+  partition pi bit 18: \d [65] <-> \d [65]
+  partition pi bit 19: \d [97] <-> \d [97]
+  partition pi bit 20: \d [129] <-> \d [129]
+  partition pi bit 21: \d [161] <-> \d [161]
+  partition pi bit 22: \d [193] <-> \d [193]
+  partition pi bit 23: \d [225] <-> \d [225]
+  partition pi bit 24: \d [257] <-> \d [257]
+  partition pi bit 25: \d [289] <-> \d [289]
+  partition pi bit 26: \d [321] <-> \d [321]
+  partition pi bit 27: \d [353] <-> \d [353]
+  partition pi bit 28: \d [385] <-> \d [385]
+  partition pi bit 29: \d [417] <-> \d [417]
+  partition pi bit 30: \d [449] <-> \d [449]
+  partition pi bit 31: \d [481] <-> \d [481]
+  partition pi bit 32: \d [2] <-> \d [2]
+  partition pi bit 33: \d [34] <-> \d [34]
+  partition pi bit 34: \d [66] <-> \d [66]
+  partition pi bit 35: \d [98] <-> \d [98]
+  partition pi bit 36: \d [130] <-> \d [130]
+  partition pi bit 37: \d [162] <-> \d [162]
+  partition pi bit 38: \d [194] <-> \d [194]
+  partition pi bit 39: \d [226] <-> \d [226]
+  partition pi bit 40: \d [258] <-> \d [258]
+  partition pi bit 41: \d [290] <-> \d [290]
+  partition pi bit 42: \d [322] <-> \d [322]
+  partition pi bit 43: \d [354] <-> \d [354]
+  partition pi bit 44: \d [386] <-> \d [386]
+  partition pi bit 45: \d [418] <-> \d [418]
+  partition pi bit 46: \d [450] <-> \d [450]
+  partition pi bit 47: \d [482] <-> \d [482]
+  partition pi bit 48: \d [3] <-> \d [3]
+  partition pi bit 49: \d [35] <-> \d [35]
+  partition pi bit 50: \d [67] <-> \d [67]
+  partition pi bit 51: \d [99] <-> \d [99]
+  partition pi bit 52: \d [131] <-> \d [131]
+  partition pi bit 53: \d [163] <-> \d [163]
+  partition pi bit 54: \d [195] <-> \d [195]
+  partition pi bit 55: \d [227] <-> \d [227]
+  partition pi bit 56: \d [259] <-> \d [259]
+  partition pi bit 57: \d [291] <-> \d [291]
+  partition pi bit 58: \d [323] <-> \d [323]
+  partition pi bit 59: \d [355] <-> \d [355]
+  partition pi bit 60: \d [387] <-> \d [387]
+  partition pi bit 61: \d [419] <-> \d [419]
+  partition pi bit 62: \d [451] <-> \d [451]
+  partition pi bit 63: \d [483] <-> \d [483]
+  partition pi bit 64: \d [4] <-> \d [4]
+  partition pi bit 65: \d [36] <-> \d [36]
+  partition pi bit 66: \d [68] <-> \d [68]
+  partition pi bit 67: \d [100] <-> \d [100]
+  partition pi bit 68: \d [132] <-> \d [132]
+  partition pi bit 69: \d [164] <-> \d [164]
+  partition pi bit 70: \d [196] <-> \d [196]
+  partition pi bit 71: \d [228] <-> \d [228]
+  partition pi bit 72: \d [260] <-> \d [260]
+  partition pi bit 73: \d [292] <-> \d [292]
+  partition pi bit 74: \d [324] <-> \d [324]
+  partition pi bit 75: \d [356] <-> \d [356]
+  partition pi bit 76: \d [388] <-> \d [388]
+  partition pi bit 77: \d [420] <-> \d [420]
+  partition pi bit 78: \d [452] <-> \d [452]
+  partition pi bit 79: \d [484] <-> \d [484]
+  partition pi bit 80: \d [5] <-> \d [5]
+  partition pi bit 81: \d [37] <-> \d [37]
+  partition pi bit 82: \d [69] <-> \d [69]
+  partition pi bit 83: \d [101] <-> \d [101]
+  partition pi bit 84: \d [133] <-> \d [133]
+  partition pi bit 85: \d [165] <-> \d [165]
+  partition pi bit 86: \d [197] <-> \d [197]
+  partition pi bit 87: \d [229] <-> \d [229]
+  partition pi bit 88: \d [261] <-> \d [261]
+  partition pi bit 89: \d [293] <-> \d [293]
+  partition pi bit 90: \d [325] <-> \d [325]
+  partition pi bit 91: \d [357] <-> \d [357]
+  partition pi bit 92: \d [389] <-> \d [389]
+  partition pi bit 93: \d [421] <-> \d [421]
+  partition pi bit 94: \d [453] <-> \d [453]
+  partition pi bit 95: \d [485] <-> \d [485]
+  partition pi bit 96: \d [6] <-> \d [6]
+  partition pi bit 97: \d [38] <-> \d [38]
+  partition pi bit 98: \d [70] <-> \d [70]
+  partition pi bit 99: \d [102] <-> \d [102]
+  partition pi bit 100: \d [134] <-> \d [134]
+  partition pi bit 101: \d [166] <-> \d [166]
+  partition pi bit 102: \d [198] <-> \d [198]
+  partition pi bit 103: \d [230] <-> \d [230]
+  partition pi bit 104: \d [262] <-> \d [262]
+  partition pi bit 105: \d [294] <-> \d [294]
+  partition pi bit 106: \d [326] <-> \d [326]
+  partition pi bit 107: \d [358] <-> \d [358]
+  partition pi bit 108: \d [390] <-> \d [390]
+  partition pi bit 109: \d [422] <-> \d [422]
+  partition pi bit 110: \d [454] <-> \d [454]
+  partition pi bit 111: \d [486] <-> \d [486]
+  partition pi bit 112: \d [7] <-> \d [7]
+  partition pi bit 113: \d [39] <-> \d [39]
+  partition pi bit 114: \d [71] <-> \d [71]
+  partition pi bit 115: \d [103] <-> \d [103]
+  partition pi bit 116: \d [135] <-> \d [135]
+  partition pi bit 117: \d [167] <-> \d [167]
+  partition pi bit 118: \d [199] <-> \d [199]
+  partition pi bit 119: \d [231] <-> \d [231]
+  partition pi bit 120: \d [263] <-> \d [263]
+  partition pi bit 121: \d [295] <-> \d [295]
+  partition pi bit 122: \d [327] <-> \d [327]
+  partition pi bit 123: \d [359] <-> \d [359]
+  partition pi bit 124: \d [391] <-> \d [391]
+  partition pi bit 125: \d [423] <-> \d [423]
+  partition pi bit 126: \d [455] <-> \d [455]
+  partition pi bit 127: \d [487] <-> \d [487]
+  partition pi bit 128: \d [8] <-> \d [8]
+  partition pi bit 129: \d [40] <-> \d [40]
+  partition pi bit 130: \d [72] <-> \d [72]
+  partition pi bit 131: \d [104] <-> \d [104]
+  partition pi bit 132: \d [136] <-> \d [136]
+  partition pi bit 133: \d [168] <-> \d [168]
+  partition pi bit 134: \d [200] <-> \d [200]
+  partition pi bit 135: \d [232] <-> \d [232]
+  partition pi bit 136: \d [264] <-> \d [264]
+  partition pi bit 137: \d [296] <-> \d [296]
+  partition pi bit 138: \d [328] <-> \d [328]
+  partition pi bit 139: \d [360] <-> \d [360]
+  partition pi bit 140: \d [392] <-> \d [392]
+  partition pi bit 141: \d [424] <-> \d [424]
+  partition pi bit 142: \d [456] <-> \d [456]
+  partition pi bit 143: \d [488] <-> \d [488]
+  partition pi bit 144: \d [9] <-> \d [9]
+  partition pi bit 145: \d [41] <-> \d [41]
+  partition pi bit 146: \d [73] <-> \d [73]
+  partition pi bit 147: \d [105] <-> \d [105]
+  partition pi bit 148: \d [137] <-> \d [137]
+  partition pi bit 149: \d [169] <-> \d [169]
+  partition pi bit 150: \d [201] <-> \d [201]
+  partition pi bit 151: \d [233] <-> \d [233]
+  partition pi bit 152: \d [265] <-> \d [265]
+  partition pi bit 153: \d [297] <-> \d [297]
+  partition pi bit 154: \d [329] <-> \d [329]
+  partition pi bit 155: \d [361] <-> \d [361]
+  partition pi bit 156: \d [393] <-> \d [393]
+  partition pi bit 157: \d [425] <-> \d [425]
+  partition pi bit 158: \d [457] <-> \d [457]
+  partition pi bit 159: \d [489] <-> \d [489]
+  partition pi bit 160: \d [10] <-> \d [10]
+  partition pi bit 161: \d [42] <-> \d [42]
+  partition pi bit 162: \d [74] <-> \d [74]
+  partition pi bit 163: \d [106] <-> \d [106]
+  partition pi bit 164: \d [138] <-> \d [138]
+  partition pi bit 165: \d [170] <-> \d [170]
+  partition pi bit 166: \d [202] <-> \d [202]
+  partition pi bit 167: \d [234] <-> \d [234]
+  partition pi bit 168: \d [266] <-> \d [266]
+  partition pi bit 169: \d [298] <-> \d [298]
+  partition pi bit 170: \d [330] <-> \d [330]
+  partition pi bit 171: \d [362] <-> \d [362]
+  partition pi bit 172: \d [394] <-> \d [394]
+  partition pi bit 173: \d [426] <-> \d [426]
+  partition pi bit 174: \d [458] <-> \d [458]
+  partition pi bit 175: \d [490] <-> \d [490]
+  partition pi bit 176: \d [11] <-> \d [11]
+  partition pi bit 177: \d [43] <-> \d [43]
+  partition pi bit 178: \d [75] <-> \d [75]
+  partition pi bit 179: \d [107] <-> \d [107]
+  partition pi bit 180: \d [139] <-> \d [139]
+  partition pi bit 181: \d [171] <-> \d [171]
+  partition pi bit 182: \d [203] <-> \d [203]
+  partition pi bit 183: \d [235] <-> \d [235]
+  partition pi bit 184: \d [267] <-> \d [267]
+  partition pi bit 185: \d [299] <-> \d [299]
+  partition pi bit 186: \d [331] <-> \d [331]
+  partition pi bit 187: \d [363] <-> \d [363]
+  partition pi bit 188: \d [395] <-> \d [395]
+  partition pi bit 189: \d [427] <-> \d [427]
+  partition pi bit 190: \d [459] <-> \d [459]
+  partition pi bit 191: \d [491] <-> \d [491]
+  partition pi bit 192: \d [12] <-> \d [12]
+  partition pi bit 193: \d [44] <-> \d [44]
+  partition pi bit 194: \d [76] <-> \d [76]
+  partition pi bit 195: \d [108] <-> \d [108]
+  partition pi bit 196: \d [140] <-> \d [140]
+  partition pi bit 197: \d [172] <-> \d [172]
+  partition pi bit 198: \d [204] <-> \d [204]
+  partition pi bit 199: \d [236] <-> \d [236]
+  partition pi bit 200: \d [268] <-> \d [268]
+  partition pi bit 201: \d [300] <-> \d [300]
+  partition pi bit 202: \d [332] <-> \d [332]
+  partition pi bit 203: \d [364] <-> \d [364]
+  partition pi bit 204: \d [396] <-> \d [396]
+  partition pi bit 205: \d [428] <-> \d [428]
+  partition pi bit 206: \d [460] <-> \d [460]
+  partition pi bit 207: \d [492] <-> \d [492]
+  partition pi bit 208: \d [13] <-> \d [13]
+  partition pi bit 209: \d [45] <-> \d [45]
+  partition pi bit 210: \d [77] <-> \d [77]
+  partition pi bit 211: \d [109] <-> \d [109]
+  partition pi bit 212: \d [141] <-> \d [141]
+  partition pi bit 213: \d [173] <-> \d [173]
+  partition pi bit 214: \d [205] <-> \d [205]
+  partition pi bit 215: \d [237] <-> \d [237]
+  partition pi bit 216: \d [269] <-> \d [269]
+  partition pi bit 217: \d [301] <-> \d [301]
+  partition pi bit 218: \d [333] <-> \d [333]
+  partition pi bit 219: \d [365] <-> \d [365]
+  partition pi bit 220: \d [397] <-> \d [397]
+  partition pi bit 221: \d [429] <-> \d [429]
+  partition pi bit 222: \d [461] <-> \d [461]
+  partition pi bit 223: \d [493] <-> \d [493]
+  partition pi bit 224: \d [14] <-> \d [14]
+  partition pi bit 225: \d [46] <-> \d [46]
+  partition pi bit 226: \d [78] <-> \d [78]
+  partition pi bit 227: \d [110] <-> \d [110]
+  partition pi bit 228: \d [142] <-> \d [142]
+  partition pi bit 229: \d [174] <-> \d [174]
+  partition pi bit 230: \d [206] <-> \d [206]
+  partition pi bit 231: \d [238] <-> \d [238]
+  partition pi bit 232: \d [270] <-> \d [270]
+  partition pi bit 233: \d [302] <-> \d [302]
+  partition pi bit 234: \d [334] <-> \d [334]
+  partition pi bit 235: \d [366] <-> \d [366]
+  partition pi bit 236: \d [398] <-> \d [398]
+  partition pi bit 237: \d [430] <-> \d [430]
+  partition pi bit 238: \d [462] <-> \d [462]
+  partition pi bit 239: \d [494] <-> \d [494]
+  partition pi bit 240: \d [15] <-> \d [15]
+  partition pi bit 241: \d [47] <-> \d [47]
+  partition pi bit 242: \d [79] <-> \d [79]
+  partition pi bit 243: \d [111] <-> \d [111]
+  partition pi bit 244: \d [143] <-> \d [143]
+  partition pi bit 245: \d [175] <-> \d [175]
+  partition pi bit 246: \d [207] <-> \d [207]
+  partition pi bit 247: \d [239] <-> \d [239]
+  partition pi bit 248: \d [271] <-> \d [271]
+  partition pi bit 249: \d [303] <-> \d [303]
+  partition pi bit 250: \d [335] <-> \d [335]
+  partition pi bit 251: \d [367] <-> \d [367]
+  partition pi bit 252: \d [399] <-> \d [399]
+  partition pi bit 253: \d [431] <-> \d [431]
+  partition pi bit 254: \d [463] <-> \d [463]
+  partition pi bit 255: \d [495] <-> \d [495]
+  partition pi bit 256: \d [16] <-> \d [16]
+  partition pi bit 257: \d [48] <-> \d [48]
+  partition pi bit 258: \d [80] <-> \d [80]
+  partition pi bit 259: \d [112] <-> \d [112]
+  partition pi bit 260: \d [144] <-> \d [144]
+  partition pi bit 261: \d [176] <-> \d [176]
+  partition pi bit 262: \d [208] <-> \d [208]
+  partition pi bit 263: \d [240] <-> \d [240]
+  partition pi bit 264: \d [272] <-> \d [272]
+  partition pi bit 265: \d [304] <-> \d [304]
+  partition pi bit 266: \d [336] <-> \d [336]
+  partition pi bit 267: \d [368] <-> \d [368]
+  partition pi bit 268: \d [400] <-> \d [400]
+  partition pi bit 269: \d [432] <-> \d [432]
+  partition pi bit 270: \d [464] <-> \d [464]
+  partition pi bit 271: \d [496] <-> \d [496]
+  partition pi bit 272: \d [17] <-> \d [17]
+  partition pi bit 273: \d [49] <-> \d [49]
+  partition pi bit 274: \d [81] <-> \d [81]
+  partition pi bit 275: \d [113] <-> \d [113]
+  partition pi bit 276: \d [145] <-> \d [145]
+  partition pi bit 277: \d [177] <-> \d [177]
+  partition pi bit 278: \d [209] <-> \d [209]
+  partition pi bit 279: \d [241] <-> \d [241]
+  partition pi bit 280: \d [273] <-> \d [273]
+  partition pi bit 281: \d [305] <-> \d [305]
+  partition pi bit 282: \d [337] <-> \d [337]
+  partition pi bit 283: \d [369] <-> \d [369]
+  partition pi bit 284: \d [401] <-> \d [401]
+  partition pi bit 285: \d [433] <-> \d [433]
+  partition pi bit 286: \d [465] <-> \d [465]
+  partition pi bit 287: \d [497] <-> \d [497]
+  partition pi bit 288: \d [18] <-> \d [18]
+  partition pi bit 289: \d [50] <-> \d [50]
+  partition pi bit 290: \d [82] <-> \d [82]
+  partition pi bit 291: \d [114] <-> \d [114]
+  partition pi bit 292: \d [146] <-> \d [146]
+  partition pi bit 293: \d [178] <-> \d [178]
+  partition pi bit 294: \d [210] <-> \d [210]
+  partition pi bit 295: \d [242] <-> \d [242]
+  partition pi bit 296: \d [274] <-> \d [274]
+  partition pi bit 297: \d [306] <-> \d [306]
+  partition pi bit 298: \d [338] <-> \d [338]
+  partition pi bit 299: \d [370] <-> \d [370]
+  partition pi bit 300: \d [402] <-> \d [402]
+  partition pi bit 301: \d [434] <-> \d [434]
+  partition pi bit 302: \d [466] <-> \d [466]
+  partition pi bit 303: \d [498] <-> \d [498]
+  partition pi bit 304: \d [19] <-> \d [19]
+  partition pi bit 305: \d [51] <-> \d [51]
+  partition pi bit 306: \d [83] <-> \d [83]
+  partition pi bit 307: \d [115] <-> \d [115]
+  partition pi bit 308: \d [147] <-> \d [147]
+  partition pi bit 309: \d [179] <-> \d [179]
+  partition pi bit 310: \d [211] <-> \d [211]
+  partition pi bit 311: \d [243] <-> \d [243]
+  partition pi bit 312: \d [275] <-> \d [275]
+  partition pi bit 313: \d [307] <-> \d [307]
+  partition pi bit 314: \d [339] <-> \d [339]
+  partition pi bit 315: \d [371] <-> \d [371]
+  partition pi bit 316: \d [403] <-> \d [403]
+  partition pi bit 317: \d [435] <-> \d [435]
+  partition pi bit 318: \d [467] <-> \d [467]
+  partition pi bit 319: \d [499] <-> \d [499]
+  partition pi bit 320: \d [20] <-> \d [20]
+  partition pi bit 321: \d [52] <-> \d [52]
+  partition pi bit 322: \d [84] <-> \d [84]
+  partition pi bit 323: \d [116] <-> \d [116]
+  partition pi bit 324: \d [148] <-> \d [148]
+  partition pi bit 325: \d [180] <-> \d [180]
+  partition pi bit 326: \d [212] <-> \d [212]
+  partition pi bit 327: \d [244] <-> \d [244]
+  partition pi bit 328: \d [276] <-> \d [276]
+  partition pi bit 329: \d [308] <-> \d [308]
+  partition pi bit 330: \d [340] <-> \d [340]
+  partition pi bit 331: \d [372] <-> \d [372]
+  partition pi bit 332: \d [404] <-> \d [404]
+  partition pi bit 333: \d [436] <-> \d [436]
+  partition pi bit 334: \d [468] <-> \d [468]
+  partition pi bit 335: \d [500] <-> \d [500]
+  partition pi bit 336: \d [21] <-> \d [21]
+  partition pi bit 337: \d [53] <-> \d [53]
+  partition pi bit 338: \d [85] <-> \d [85]
+  partition pi bit 339: \d [117] <-> \d [117]
+  partition pi bit 340: \d [149] <-> \d [149]
+  partition pi bit 341: \d [181] <-> \d [181]
+  partition pi bit 342: \d [213] <-> \d [213]
+  partition pi bit 343: \d [245] <-> \d [245]
+  partition pi bit 344: \d [277] <-> \d [277]
+  partition pi bit 345: \d [309] <-> \d [309]
+  partition pi bit 346: \d [341] <-> \d [341]
+  partition pi bit 347: \d [373] <-> \d [373]
+  partition pi bit 348: \d [405] <-> \d [405]
+  partition pi bit 349: \d [437] <-> \d [437]
+  partition pi bit 350: \d [469] <-> \d [469]
+  partition pi bit 351: \d [501] <-> \d [501]
+  partition pi bit 352: \d [22] <-> \d [22]
+  partition pi bit 353: \d [54] <-> \d [54]
+  partition pi bit 354: \d [86] <-> \d [86]
+  partition pi bit 355: \d [118] <-> \d [118]
+  partition pi bit 356: \d [150] <-> \d [150]
+  partition pi bit 357: \d [182] <-> \d [182]
+  partition pi bit 358: \d [214] <-> \d [214]
+  partition pi bit 359: \d [246] <-> \d [246]
+  partition pi bit 360: \d [278] <-> \d [278]
+  partition pi bit 361: \d [310] <-> \d [310]
+  partition pi bit 362: \d [342] <-> \d [342]
+  partition pi bit 363: \d [374] <-> \d [374]
+  partition pi bit 364: \d [406] <-> \d [406]
+  partition pi bit 365: \d [438] <-> \d [438]
+  partition pi bit 366: \d [470] <-> \d [470]
+  partition pi bit 367: \d [502] <-> \d [502]
+  partition pi bit 368: \d [23] <-> \d [23]
+  partition pi bit 369: \d [55] <-> \d [55]
+  partition pi bit 370: \d [87] <-> \d [87]
+  partition pi bit 371: \d [119] <-> \d [119]
+  partition pi bit 372: \d [151] <-> \d [151]
+  partition pi bit 373: \d [183] <-> \d [183]
+  partition pi bit 374: \d [215] <-> \d [215]
+  partition pi bit 375: \d [247] <-> \d [247]
+  partition pi bit 376: \d [279] <-> \d [279]
+  partition pi bit 377: \d [311] <-> \d [311]
+  partition pi bit 378: \d [343] <-> \d [343]
+  partition pi bit 379: \d [375] <-> \d [375]
+  partition pi bit 380: \d [407] <-> \d [407]
+  partition pi bit 381: \d [439] <-> \d [439]
+  partition pi bit 382: \d [471] <-> \d [471]
+  partition pi bit 383: \d [503] <-> \d [503]
+  partition pi bit 384: \d [24] <-> \d [24]
+  partition pi bit 385: \d [56] <-> \d [56]
+  partition pi bit 386: \d [88] <-> \d [88]
+  partition pi bit 387: \d [120] <-> \d [120]
+  partition pi bit 388: \d [152] <-> \d [152]
+  partition pi bit 389: \d [184] <-> \d [184]
+  partition pi bit 390: \d [216] <-> \d [216]
+  partition pi bit 391: \d [248] <-> \d [248]
+  partition pi bit 392: \d [280] <-> \d [280]
+  partition pi bit 393: \d [312] <-> \d [312]
+  partition pi bit 394: \d [344] <-> \d [344]
+  partition pi bit 395: \d [376] <-> \d [376]
+  partition pi bit 396: \d [408] <-> \d [408]
+  partition pi bit 397: \d [440] <-> \d [440]
+  partition pi bit 398: \d [472] <-> \d [472]
+  partition pi bit 399: \d [504] <-> \d [504]
+  partition pi bit 400: \d [25] <-> \d [25]
+  partition pi bit 401: \d [57] <-> \d [57]
+  partition pi bit 402: \d [89] <-> \d [89]
+  partition pi bit 403: \d [121] <-> \d [121]
+  partition pi bit 404: \d [153] <-> \d [153]
+  partition pi bit 405: \d [185] <-> \d [185]
+  partition pi bit 406: \d [217] <-> \d [217]
+  partition pi bit 407: \d [249] <-> \d [249]
+  partition pi bit 408: \d [281] <-> \d [281]
+  partition pi bit 409: \d [313] <-> \d [313]
+  partition pi bit 410: \d [345] <-> \d [345]
+  partition pi bit 411: \d [377] <-> \d [377]
+  partition pi bit 412: \d [409] <-> \d [409]
+  partition pi bit 413: \d [441] <-> \d [441]
+  partition pi bit 414: \d [473] <-> \d [473]
+  partition pi bit 415: \d [505] <-> \d [505]
+  partition pi bit 416: \d [26] <-> \d [26]
+  partition pi bit 417: \d [58] <-> \d [58]
+  partition pi bit 418: \d [90] <-> \d [90]
+  partition pi bit 419: \d [122] <-> \d [122]
+  partition pi bit 420: \d [154] <-> \d [154]
+  partition pi bit 421: \d [186] <-> \d [186]
+  partition pi bit 422: \d [218] <-> \d [218]
+  partition pi bit 423: \d [250] <-> \d [250]
+  partition pi bit 424: \d [282] <-> \d [282]
+  partition pi bit 425: \d [314] <-> \d [314]
+  partition pi bit 426: \d [346] <-> \d [346]
+  partition pi bit 427: \d [378] <-> \d [378]
+  partition pi bit 428: \d [410] <-> \d [410]
+  partition pi bit 429: \d [442] <-> \d [442]
+  partition pi bit 430: \d [474] <-> \d [474]
+  partition pi bit 431: \d [506] <-> \d [506]
+  partition pi bit 432: \d [27] <-> \d [27]
+  partition pi bit 433: \d [59] <-> \d [59]
+  partition pi bit 434: \d [91] <-> \d [91]
+  partition pi bit 435: \d [123] <-> \d [123]
+  partition pi bit 436: \d [155] <-> \d [155]
+  partition pi bit 437: \d [187] <-> \d [187]
+  partition pi bit 438: \d [219] <-> \d [219]
+  partition pi bit 439: \d [251] <-> \d [251]
+  partition pi bit 440: \d [283] <-> \d [283]
+  partition pi bit 441: \d [315] <-> \d [315]
+  partition pi bit 442: \d [347] <-> \d [347]
+  partition pi bit 443: \d [379] <-> \d [379]
+  partition pi bit 444: \d [411] <-> \d [411]
+  partition pi bit 445: \d [443] <-> \d [443]
+  partition pi bit 446: \d [475] <-> \d [475]
+  partition pi bit 447: \d [507] <-> \d [507]
+  partition pi bit 448: \d [28] <-> \d [28]
+  partition pi bit 449: \d [60] <-> \d [60]
+  partition pi bit 450: \d [92] <-> \d [92]
+  partition pi bit 451: \d [124] <-> \d [124]
+  partition pi bit 452: \d [156] <-> \d [156]
+  partition pi bit 453: \d [188] <-> \d [188]
+  partition pi bit 454: \d [220] <-> \d [220]
+  partition pi bit 455: \d [252] <-> \d [252]
+  partition pi bit 456: \d [284] <-> \d [284]
+  partition pi bit 457: \d [316] <-> \d [316]
+  partition pi bit 458: \d [348] <-> \d [348]
+  partition pi bit 459: \d [380] <-> \d [380]
+  partition pi bit 460: \d [412] <-> \d [412]
+  partition pi bit 461: \d [444] <-> \d [444]
+  partition pi bit 462: \d [476] <-> \d [476]
+  partition pi bit 463: \d [508] <-> \d [508]
+  partition pi bit 464: \d [29] <-> \d [29]
+  partition pi bit 465: \d [61] <-> \d [61]
+  partition pi bit 466: \d [93] <-> \d [93]
+  partition pi bit 467: \d [125] <-> \d [125]
+  partition pi bit 468: \d [157] <-> \d [157]
+  partition pi bit 469: \d [189] <-> \d [189]
+  partition pi bit 470: \d [221] <-> \d [221]
+  partition pi bit 471: \d [253] <-> \d [253]
+  partition pi bit 472: \d [285] <-> \d [285]
+  partition pi bit 473: \d [317] <-> \d [317]
+  partition pi bit 474: \d [349] <-> \d [349]
+  partition pi bit 475: \d [381] <-> \d [381]
+  partition pi bit 476: \d [413] <-> \d [413]
+  partition pi bit 477: \d [445] <-> \d [445]
+  partition pi bit 478: \d [477] <-> \d [477]
+  partition pi bit 479: \d [509] <-> \d [509]
+  partition pi bit 480: \d [30] <-> \d [30]
+  partition pi bit 481: \d [62] <-> \d [62]
+  partition pi bit 482: \d [94] <-> \d [94]
+  partition pi bit 483: \d [126] <-> \d [126]
+  partition pi bit 484: \d [158] <-> \d [158]
+  partition pi bit 485: \d [190] <-> \d [190]
+  partition pi bit 486: \d [222] <-> \d [222]
+  partition pi bit 487: \d [254] <-> \d [254]
+  partition pi bit 488: \d [286] <-> \d [286]
+  partition pi bit 489: \d [318] <-> \d [318]
+  partition pi bit 490: \d [350] <-> \d [350]
+  partition pi bit 491: \d [382] <-> \d [382]
+  partition pi bit 492: \d [414] <-> \d [414]
+  partition pi bit 493: \d [446] <-> \d [446]
+  partition pi bit 494: \d [478] <-> \d [478]
+  partition pi bit 495: \d [510] <-> \d [510]
+  partition pi bit 496: \s [0] <-> \s [0]
+  partition pi bit 497: \s [1] <-> \s [1]
+  partition pi bit 498: \d [31] <-> \d [31]
+  partition pi bit 499: \d [63] <-> \d [63]
+  partition pi bit 500: \s [2] <-> \s [2]
+  partition pi bit 501: \d [95] <-> \d [95]
+  partition pi bit 502: \s [3] <-> \s [3]
+  partition pi bit 503: \d [127] <-> \d [127]
+  partition pi bit 504: \s [4] <-> \s [4]
+  partition pi bit 505: \d [159] <-> \d [159]
+  partition pi bit 506: \s [5] <-> \s [5]
+  partition pi bit 507: \d [191] <-> \d [191]
+  partition pi bit 508: \s [6] <-> \s [6]
+  partition pi bit 509: \d [223] <-> \d [223]
+  partition pi bit 510: \s [7] <-> \s [7]
+  partition pi bit 511: \d [255] <-> \d [255]
+  partition pi bit 512: \s [8] <-> \s [8]
+  partition pi bit 513: \d [287] <-> \d [287]
+  partition pi bit 514: \s [9] <-> \s [9]
+  partition pi bit 515: \d [319] <-> \d [319]
+  partition pi bit 516: \s [10] <-> \s [10]
+  partition pi bit 517: \d [351] <-> \d [351]
+  partition pi bit 518: \s [11] <-> \s [11]
+  partition pi bit 519: \d [383] <-> \d [383]
+  partition pi bit 520: \s [12] <-> \s [12]
+  partition pi bit 521: \d [415] <-> \d [415]
+  partition pi bit 522: \s [13] <-> \s [13]
+  partition pi bit 523: \d [447] <-> \d [447]
+  partition pi bit 524: \s [14] <-> \s [14]
+  partition pi bit 525: \d [479] <-> \d [479]
+  partition pi bit 526: \s [15] <-> \s [15]
+  partition pi bit 527: \d [511] <-> \d [511]
+  partition po bit 0: \extra [0] <-> \extra [0]
+  partition po bit 1: \extra [1] <-> \extra [1]
+  partition po bit 2: \extra [2] <-> \extra [2]
+  partition po bit 3: \extra [3] <-> \extra [3]
+  partition po bit 4: \extra [4] <-> \extra [4]
+  partition po bit 5: \extra [5] <-> \extra [5]
+  partition po bit 6: \extra [6] <-> \extra [6]
+  partition po bit 7: \extra [7] <-> \extra [7]
+  partition po bit 8: \extra [8] <-> \extra [8]
+  partition po bit 9: \extra [9] <-> \extra [9]
+  partition po bit 10: \extra [10] <-> \extra [10]
+  partition po bit 11: \extra [11] <-> \extra [11]
+  partition po bit 12: \extra [12] <-> \extra [12]
+  partition po bit 13: \extra [13] <-> \extra [13]
+  partition po bit 14: \extra [14] <-> \extra [14]
+  partition po bit 15: \extra [15] <-> \extra [15]
+  partition po bit 16: \extra [16] <-> \extra [16]
+  partition po bit 17: \extra [17] <-> \extra [17]
+  partition po bit 18: \extra [18] <-> \extra [18]
+  partition po bit 19: \extra [19] <-> \extra [19]
+  partition po bit 20: \extra [20] <-> \extra [20]
+  partition po bit 21: \extra [21] <-> \extra [21]
+  partition po bit 22: \extra [22] <-> \extra [22]
+  partition po bit 23: \extra [23] <-> \extra [23]
+  partition po bit 24: \extra [24] <-> \extra [24]
+  partition po bit 25: \extra [25] <-> \extra [25]
+  partition po bit 26: \extra [26] <-> \extra [26]
+  partition po bit 27: \extra [27] <-> \extra [27]
+  partition po bit 28: \extra [28] <-> \extra [28]
+  partition po bit 29: \extra [29] <-> \extra [29]
+  partition po bit 30: \extra [30] <-> \extra [30]
+  partition po bit 31: \extra [31] <-> \extra [31]
+  partition po bit 32: \y [0] <-> \y [0]
+  partition po bit 33: \y [1] <-> \y [1]
+  partition po bit 34: \y [2] <-> \y [2]
+  partition po bit 35: \y [3] <-> \y [3]
+  partition po bit 36: \y [4] <-> \y [4]
+  partition po bit 37: \y [5] <-> \y [5]
+  partition po bit 38: \y [6] <-> \y [6]
+  partition po bit 39: \y [7] <-> \y [7]
+  partition po bit 40: \y [8] <-> \y [8]
+  partition po bit 41: \y [9] <-> \y [9]
+  partition po bit 42: \y [10] <-> \y [10]
+  partition po bit 43: \y [11] <-> \y [11]
+  partition po bit 44: \y [12] <-> \y [12]
+  partition po bit 45: \y [13] <-> \y [13]
+  partition po bit 46: \y [14] <-> \y [14]
+  partition po bit 47: \y [15] <-> \y [15]
+  partition po bit 48: \y [16] <-> \y [16]
+  partition po bit 49: \y [17] <-> \y [17]
+  partition po bit 50: \y [18] <-> \y [18]
+  partition po bit 51: \y [19] <-> \y [19]
+  partition po bit 52: \y [20] <-> \y [20]
+  partition po bit 53: \y [21] <-> \y [21]
+  partition po bit 54: \y [22] <-> \y [22]
+  partition po bit 55: \y [23] <-> \y [23]
+  partition po bit 56: \y [24] <-> \y [24]
+  partition po bit 57: \y [25] <-> \y [25]
+  partition po bit 58: \y [26] <-> \y [26]
+  partition po bit 59: \y [27] <-> \y [27]
+  partition po bit 60: \y [28] <-> \y [28]
+  partition po bit 61: \y [29] <-> \y [29]
+  partition po bit 62: \y [30] <-> \y [30]
+  partition po bit 63: \y [31] <-> \y [31]
+
+3.1.7. Executing RTLIL backend.
+Output filename: modules/top.il
+<suppressed ~7051 debug messages>
+
+End of script. Logfile hash: bc837a2d90
+Yosys 0.69+274 (git sha1 7513f8df8, Release, GNU /usr/bin/x86_64-w64-mingw32-g++ 15.2.1)
+Time spent: 14% 2x write_rtlil (0 sec), 14% 2x read_rtlil (0 sec), ...

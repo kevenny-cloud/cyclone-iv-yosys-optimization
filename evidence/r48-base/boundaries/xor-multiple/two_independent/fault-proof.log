@@ -1,0 +1,85 @@
+
+-- Executing script file `fault-proof.ys' --
+
+1. Executing RTLIL frontend.
+Input filename: gold.il
+Renaming module \t to \gold.
+
+2. Executing RTLIL frontend.
+Input filename: fault.il
+Renaming module \t to \gate.
+
+3. Executing EQUIV_MAKE pass (creating equiv checking module).
+Presumably equivalent wires: y1_gold (\y1_gold), y1_gate (\y1_gate) -> y1
+Presumably equivalent wires: y0_gold (\y0_gold), y0_gate (\y0_gate) -> y0
+Presumably equivalent wires: j_gold (\j_gold), j_gate (\j_gate) -> j
+Presumably equivalent wires: h_gold (\h_gold), h_gate (\h_gate) -> h
+Presumably equivalent wires: g_gold (\g_gold), g_gate (\g_gate) -> g
+Presumably equivalent wires: f_gold (\f_gold), f_gate (\f_gate) -> f
+Presumably equivalent wires: e_gold (\e_gold), e_gate (\e_gate) -> e
+Presumably equivalent wires: k_gold (\k_gold), k_gate (\k_gate) -> k
+Presumably equivalent wires: d_gold (\d_gold), d_gate (\d_gate) -> d
+Presumably equivalent wires: c_gold (\c_gold), c_gate (\c_gate) -> c
+Presumably equivalent wires: b_gold (\b_gold), b_gate (\b_gate) -> b
+Presumably equivalent wires: a_gold (\a_gold), a_gate (\a_gate) -> a
+Presumably equivalent wires: s1_gold (\s1_gold), s1_gate (\s1_gate) -> s1
+Presumably equivalent wires: s0_gold (\s0_gold), s0_gate (\s0_gate) -> s0
+Setting undriven nets to undef: $xor$input.v:3$9_Y_gate
+Setting undriven nets to undef: $xor$input.v:3$8_Y_gate
+Setting undriven nets to undef: $xor$input.v:3$7_Y_gate
+Setting undriven nets to undef: $xor$input.v:3$10_Y_gate
+Setting undriven nets to undef: $xor$input.v:2$5_Y_gate
+Setting undriven nets to undef: $xor$input.v:2$4_Y_gate
+Setting undriven nets to undef: $xor$input.v:2$3_Y_gate
+Setting undriven nets to undef: $xor$input.v:2$2_Y_gate
+
+4. Executing HIERARCHY pass (managing design hierarchy).
+
+4.1. Analyzing design hierarchy..
+Top module:  \equiv
+
+4.2. Analyzing design hierarchy..
+Top module:  \equiv
+Removing unused module `\gate'.
+Removing unused module `\gold'.
+Removed 2 unused modules.
+
+5. Executing EQUIV_SIMPLE pass.
+Found 8 unproven $equiv cells (2 groups) in equiv:
+ Grouping SAT models for \y0:
+  Trying to prove $equiv for \y0 [0]:
+ezsat
+ failed.
+  Trying to prove $equiv for \y0 [1]:
+ezsat
+ failed.
+  Trying to prove $equiv for \y0 [2]:
+ezsat
+ failed.
+  Trying to prove $equiv for \y0 [3]:
+ezsat
+ failed.
+ Grouping SAT models for \y1:
+  Trying to prove $equiv for \y1 [0]:
+ezsat
+ success!
+  Trying to prove $equiv for \y1 [1]:
+ezsat
+ success!
+  Trying to prove $equiv for \y1 [2]:
+ezsat
+ success!
+  Trying to prove $equiv for \y1 [3]:
+ezsat
+ success!
+Proved 4 previously unproven $equiv cells.
+
+6. Executing EQUIV_STATUS pass.
+Found 8 $equiv cells in equiv:
+  Of those cells 4 are proven and 4 are unproven.
+  Unproven $equiv $auto$equiv_make.cc:258:find_same_wires$32: \y0_gold [3] \y0_gate [3]
+  Unproven $equiv $auto$equiv_make.cc:258:find_same_wires$31: \y0_gold [2] \y0_gate [2]
+  Unproven $equiv $auto$equiv_make.cc:258:find_same_wires$30: \y0_gold [1] \y0_gate [1]
+  Unproven $equiv $auto$equiv_make.cc:258:find_same_wires$29: \y0_gold [0] \y0_gate [0]
+Found a total of 4 unproven $equiv cells.
+ERROR: Found 4 unproven $equiv cells in 'equiv_status -assert'.

@@ -1,0 +1,7 @@
+read_rtlil baseline.il
+techmap -map primitive_decode.v
+opt
+prep -top test2
+select -module test2
+rename -hide
+write_rtlil -selected baseline-generic.il

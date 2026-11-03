@@ -1,0 +1,13 @@
+[gold]
+read_rtlil baseline-generic.il
+prep -top top
+[gate]
+read_rtlil candidate-generic.il
+prep -top top
+[collect *]
+bind *
+group *
+[strategy induction]
+use sat
+depth 30
+timeout 90

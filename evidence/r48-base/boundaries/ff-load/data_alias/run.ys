@@ -1,0 +1,3 @@
+read_verilog wrong.v
+prep -top m
+sat -verify -prove bad 0 -set-def-inputs

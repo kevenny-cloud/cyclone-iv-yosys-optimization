@@ -1,0 +1,574 @@
+
+-- Executing script file `run.ys' --
+
+1. Executing Verilog-2005 frontend: ../../../partitions/top.coeff_token.0.sv
+Parsing SystemVerilog input from `../../../partitions/top.coeff_token.0.sv' to AST representation.
+Generating RTLIL representation for module `\miter'.
+Generating RTLIL representation for module `\miter_cmp_prop'.
+Generating RTLIL representation for module `\miter_def_prop'.
+Generating RTLIL representation for module `\gold.top.coeff_token.0'.
+Generating RTLIL representation for module `\gate.top.coeff_token.0'.
+Successfully finished Verilog frontend.
+
+2. Executing RTLIL frontend.
+Input filename: ../../../partitions/top.coeff_token.0.il
+Replacing existing blackbox module \gold.top.coeff_token.0.
+Replacing existing blackbox module \gate.top.coeff_token.0.
+
+3. Executing HIERARCHY pass (managing design hierarchy).
+
+3.1. Analyzing design hierarchy..
+Top module:  \miter
+Used module:     \miter_cmp_prop
+Used module:     \gate.top.coeff_token.0
+Used module:     \gold.top.coeff_token.0
+Parameter 1 (\WIDTH) = 1
+Parameter 2 (\TYPE) = 48'011000010111001101110011011001010111001001110100
+
+3.2. Executing AST frontend in derive mode using pre-parsed AST for module `\miter_cmp_prop'.
+Parameter 1 (\WIDTH) = 1
+Parameter 2 (\TYPE) = 48'011000010111001101110011011001010111001001110100
+Generating RTLIL representation for module `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop'.
+Parameter 1 (\WIDTH) = 1
+Parameter 2 (\TYPE) = 48'011000010111001101110011011001010111001001110100
+Found cached RTLIL representation for module `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop'.
+Parameter 1 (\WIDTH) = 1
+Parameter 2 (\TYPE) = 48'011000010111001101110011011001010111001001110100
+Found cached RTLIL representation for module `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop'.
+Parameter 1 (\WIDTH) = 1
+Parameter 2 (\TYPE) = 48'011000010111001101110011011001010111001001110100
+Found cached RTLIL representation for module `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop'.
+Parameter 1 (\WIDTH) = 1
+Parameter 2 (\TYPE) = 48'011000010111001101110011011001010111001001110100
+Found cached RTLIL representation for module `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop'.
+Parameter 1 (\WIDTH) = 1
+Parameter 2 (\TYPE) = 48'011000010111001101110011011001010111001001110100
+Found cached RTLIL representation for module `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop'.
+Parameter 1 (\WIDTH) = 1
+Parameter 2 (\TYPE) = 48'011000010111001101110011011001010111001001110100
+Found cached RTLIL representation for module `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop'.
+Parameter 1 (\WIDTH) = 1
+Parameter 2 (\TYPE) = 48'011000010111001101110011011001010111001001110100
+Found cached RTLIL representation for module `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop'.
+Parameter 1 (\WIDTH) = 1
+Parameter 2 (\TYPE) = 48'011000010111001101110011011001010111001001110100
+Found cached RTLIL representation for module `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop'.
+Parameter 1 (\WIDTH) = 1
+Parameter 2 (\TYPE) = 48'011000010111001101110011011001010111001001110100
+Found cached RTLIL representation for module `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop'.
+Parameter 1 (\WIDTH) = 1
+Parameter 2 (\TYPE) = 48'011000010111001101110011011001010111001001110100
+Found cached RTLIL representation for module `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop'.
+
+3.3. Analyzing design hierarchy..
+Top module:  \miter
+Used module:     $paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop
+Used module:     \gate.top.coeff_token.0
+Used module:     \gold.top.coeff_token.0
+
+3.4. Analyzing design hierarchy..
+Top module:  \miter
+Used module:     $paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop
+Used module:     \gate.top.coeff_token.0
+Used module:     \gold.top.coeff_token.0
+Removing unused module `\miter_def_prop'.
+Removing unused module `\miter_cmp_prop'.
+Removed 2 unused modules.
+Module $paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop directly or indirectly contains formal properties -> setting "keep" attribute.
+Module miter directly or indirectly contains formal properties -> setting "keep" attribute.
+Mapping positional arguments of cell miter.__po_ctoken_len[4]__assert ($paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop).
+Mapping positional arguments of cell miter.__po_ctoken_len[3]__assert ($paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop).
+Mapping positional arguments of cell miter.__po_ctoken_len[2]__assert ($paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop).
+Mapping positional arguments of cell miter.__po_ctoken_len[1]__assert ($paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop).
+Mapping positional arguments of cell miter.__po_ctoken_len[0]__assert ($paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop).
+Mapping positional arguments of cell miter.__po_coeff_token[5]__assert ($paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop).
+Mapping positional arguments of cell miter.__po_coeff_token[4]__assert ($paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop).
+Mapping positional arguments of cell miter.__po_coeff_token[3]__assert ($paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop).
+Mapping positional arguments of cell miter.__po_coeff_token[2]__assert ($paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop).
+Mapping positional arguments of cell miter.__po_coeff_token[1]__assert ($paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop).
+Mapping positional arguments of cell miter.__po_coeff_token[0]__assert ($paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop).
+
+4. Executing PROC pass (convert processes to netlists).
+
+4.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+4.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Removed a total of 0 dead cases.
+
+4.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 1 redundant assignment.
+Promoted 3 assignments to connections.
+
+4.4. Executing PROC_INIT pass (extract init attributes).
+
+4.5. Executing PROC_ARST pass (detect async resets in processes).
+
+4.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+
+4.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop.$proc$../../../partitions/top.coeff_token.0.sv:164$3727'.
+Creating decoders for process `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop.$proc$../../../partitions/top.coeff_token.0.sv:158$3722'.
+
+4.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop.\i' from process `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop.$proc$../../../partitions/top.coeff_token.0.sv:158$3722'.
+No latch inferred for signal `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop.\okay' from process `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop.$proc$../../../partitions/top.coeff_token.0.sv:158$3722'.
+
+4.9. Executing PROC_DFF pass (convert process syncs to FFs).
+
+4.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+4.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Removing empty process `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop.$proc$../../../partitions/top.coeff_token.0.sv:164$3727'.
+Removing empty process `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop.$proc$../../../partitions/top.coeff_token.0.sv:158$3722'.
+Cleaned up 0 empty switches.
+
+4.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module gold.top.coeff_token.0.
+Optimizing module $paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop.
+<suppressed ~1 debug messages>
+Optimizing module gate.top.coeff_token.0.
+Optimizing module miter.
+
+5. Executing ASYNC2SYNC pass.
+
+6. Executing FORMALFF pass.
+
+7. Executing SETUNDEF pass (replace undef values with defined constants).
+
+8. Executing FLATTEN pass (flatten design).
+Deleting now unused module gold.top.coeff_token.0.
+Deleting now unused module $paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop.
+Deleting now unused module gate.top.coeff_token.0.
+<suppressed ~13 debug messages>
+
+9. Executing DFFUNMAP pass (unmap clock enable and synchronous reset from FFs).
+
+10. Executing OPT_EXPR pass (perform const folding).
+Optimizing module miter.
+<suppressed ~11 debug messages>
+
+11. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \miter..
+Removed 11 unused cells and 77 unused wires.
+<suppressed ~12 debug messages>
+
+12. Executing SAT pass (solving SAT problems in the circuit).
+Using SAT solver `minisat`.
+
+Setting up time step 1:
+Final constraint equation: { } = { }
+Import def constraint for this timestep: \__pi_ctable[0]
+Import def constraint for this timestep: \__pi_ctable[1]
+Import def constraint for this timestep: \__pi_ctable[2]
+Import def constraint for this timestep: \__pi_totalcoeffs[0]
+Import def constraint for this timestep: \__pi_totalcoeffs[1]
+Import def constraint for this timestep: \__pi_totalcoeffs[2]
+Import def constraint for this timestep: \__pi_totalcoeffs[3]
+Import def constraint for this timestep: \__pi_totalcoeffs[4]
+Import def constraint for this timestep: \__pi_trailingones[0]
+Import def constraint for this timestep: \__pi_trailingones[1]
+Imported 619 cells to SAT database.
+Import proof for assert: \__po_ctoken_len[1]__assert.okay when 1'1.
+Import proof for assert: \__po_ctoken_len[2]__assert.okay when 1'1.
+Import proof for assert: \__po_ctoken_len[0]__assert.okay when 1'1.
+Import proof for assert: \__po_ctoken_len[4]__assert.okay when 1'1.
+Import proof for assert: \__po_coeff_token[5]__assert.okay when 1'1.
+Import proof for assert: \__po_coeff_token[4]__assert.okay when 1'1.
+Import proof for assert: \__po_coeff_token[3]__assert.okay when 1'1.
+Import proof for assert: \__po_coeff_token[2]__assert.okay when 1'1.
+Import proof for assert: \__po_coeff_token[1]__assert.okay when 1'1.
+Import proof for assert: \__po_ctoken_len[3]__assert.okay when 1'1.
+Import proof for assert: \__po_coeff_token[0]__assert.okay when 1'1.
+
+** Trying induction with length 1 **
+
+Setting up time step 1:
+Final constraint equation: { } = { }
+Import def constraint for this timestep: \__pi_ctable[0]
+Import def constraint for this timestep: \__pi_ctable[1]
+Import def constraint for this timestep: \__pi_ctable[2]
+Import def constraint for this timestep: \__pi_totalcoeffs[0]
+Import def constraint for this timestep: \__pi_totalcoeffs[1]
+Import def constraint for this timestep: \__pi_totalcoeffs[2]
+Import def constraint for this timestep: \__pi_totalcoeffs[3]
+Import def constraint for this timestep: \__pi_totalcoeffs[4]
+Import def constraint for this timestep: \__pi_trailingones[0]
+Import def constraint for this timestep: \__pi_trailingones[1]
+Imported 619 cells to SAT database.
+No constraints for initial state found.
+
+Import proof for assert: \__po_ctoken_len[1]__assert.okay when 1'1.
+Import proof for assert: \__po_ctoken_len[2]__assert.okay when 1'1.
+Import proof for assert: \__po_ctoken_len[0]__assert.okay when 1'1.
+Import proof for assert: \__po_ctoken_len[4]__assert.okay when 1'1.
+Import proof for assert: \__po_coeff_token[5]__assert.okay when 1'1.
+Import proof for assert: \__po_coeff_token[4]__assert.okay when 1'1.
+Import proof for assert: \__po_coeff_token[3]__assert.okay when 1'1.
+Import proof for assert: \__po_coeff_token[2]__assert.okay when 1'1.
+Import proof for assert: \__po_coeff_token[1]__assert.okay when 1'1.
+Import proof for assert: \__po_ctoken_len[3]__assert.okay when 1'1.
+Import proof for assert: \__po_coeff_token[0]__assert.okay when 1'1.
+Import show expression: \__po_coeff_token[4]__assert.in_gold
+Import show expression: \__po_coeff_token[4]__assert.in_gate
+Import show expression: \__po_coeff_token[4]__assert.okay
+Import show expression: \__po_coeff_token[4]__assert.i
+Import show expression: \__po_ctoken_len[0]__assert.okay
+Import show expression: \__po_ctoken_len[2]__assert.i
+Import show expression: \__po_ctoken_len[2]__assert.okay
+Import show expression: \__po_coeff_token[3]__assert.in_gold
+Import show expression: \__po_coeff_token[3]__assert.in_gate
+Import show expression: \__po_coeff_token[3]__assert.okay
+Import show expression: \__po_coeff_token[3]__assert.i
+Import show expression: \__po_ctoken_len[2]__assert.in_gate
+Import show expression: \__po_ctoken_len[2]__assert.in_gold
+Import show expression: \__po_ctoken_len[0]__assert.i
+Import show expression: \__po_ctoken_len[1]__assert.i
+Import show expression: \__po_coeff_token[5]__assert.in_gold
+Import show expression: \__po_coeff_token[5]__assert.in_gate
+Import show expression: \__po_coeff_token[5]__assert.okay
+Import show expression: \__po_coeff_token[2]__assert.in_gold
+Import show expression: \__po_coeff_token[2]__assert.in_gate
+Import show expression: \__po_coeff_token[2]__assert.okay
+Import show expression: \__po_coeff_token[2]__assert.i
+Import show expression: \__po_coeff_token[5]__assert.i
+Import show expression: \__po_ctoken_len[1]__assert.okay
+Import show expression: \__po_ctoken_len[3]__assert.i
+Import show expression: \__po_ctoken_len[3]__assert.okay
+Import show expression: \__po_ctoken_len[3]__assert.in_gate
+Import show expression: \__po_coeff_token[1]__assert.in_gold
+Import show expression: \__po_coeff_token[1]__assert.in_gate
+Import show expression: \__po_coeff_token[1]__assert.okay
+Import show expression: \__po_coeff_token[1]__assert.i
+Import show expression: \__po_ctoken_len[3]__assert.in_gold
+Import show expression: \__po_ctoken_len[1]__assert.in_gate
+Import show expression: \__po_ctoken_len[1]__assert.in_gold
+Import show expression: \__po_ctoken_len[0]__assert.in_gold
+Import show expression: \__po_coeff_token[0]__assert.in_gold
+Import show expression: \__po_coeff_token[0]__assert.in_gate
+Import show expression: \__po_coeff_token[0]__assert.okay
+Import show expression: \__po_coeff_token[0]__assert.i
+Import show expression: \__po_ctoken_len[0]__assert.in_gate
+Import show expression: \__po_ctoken_len[4]__assert.i
+Import show expression: \__po_ctoken_len[4]__assert.okay
+Import show expression: \__po_ctoken_len[4]__assert.in_gate
+Import show expression: \__po_ctoken_len[4]__assert.in_gold
+Import show expression: \gate.ctoken_len[3]
+Import show expression: \gate.ctoken_len[2]
+Import show expression: \gate.ctoken_len[1]
+Import show expression: \gate.ctoken_len[0]
+Import show expression: \gate.coeff_token[5]
+Import show expression: \gate.coeff_token[4]
+Import show expression: \gate.coeff_token[3]
+Import show expression: \gate.coeff_token[2]
+Import show expression: \gate.coeff_token[1]
+Import show expression: \gate.coeff_token[0]
+Import show expression: \gate.trailingones[0]
+Import show expression: \gate.trailingones[1]
+Import show expression: \gate.totalcoeffs[0]
+Import show expression: \gate.totalcoeffs[2]
+Import show expression: \gate.totalcoeffs[1]
+Import show expression: \gate.totalcoeffs[3]
+Import show expression: \gate.totalcoeffs[4]
+Import show expression: \gate.ctable[0]
+Import show expression: \gate.ctable[1]
+Import show expression: \gate.ctable[2]
+Import show expression: \gate.ctoken_len[4]
+Import show expression: \gate.__pi_ctable[0]
+Import show expression: \gate.__pi_ctable[1]
+Import show expression: \gate.__pi_ctable[2]
+Import show expression: \gate.__pi_totalcoeffs[0]
+Import show expression: \gate.__pi_totalcoeffs[1]
+Import show expression: \gate.__pi_totalcoeffs[2]
+Import show expression: \gate.__pi_totalcoeffs[3]
+Import show expression: \gate.__pi_totalcoeffs[4]
+Import show expression: \gate.__pi_trailingones[0]
+Import show expression: \gate.__pi_trailingones[1]
+Import show expression: \gate.__po_coeff_token[0]
+Import show expression: \gate.__po_coeff_token[1]
+Import show expression: \gate.__po_coeff_token[2]
+Import show expression: \gate.__po_coeff_token[3]
+Import show expression: \gate.__po_coeff_token[4]
+Import show expression: \gate.__po_coeff_token[5]
+Import show expression: \gate.__po_ctoken_len[0]
+Import show expression: \gate.__po_ctoken_len[1]
+Import show expression: \gate.__po_ctoken_len[2]
+Import show expression: \gate.__po_ctoken_len[3]
+Import show expression: \gate.__po_ctoken_len[4]
+Import show expression: \gold.ctoken_len[3]
+Import show expression: \gold.ctoken_len[2]
+Import show expression: \gold.ctoken_len[1]
+Import show expression: \gold.ctoken_len[0]
+Import show expression: \gold.coeff_token[5]
+Import show expression: \gold.coeff_token[4]
+Import show expression: \gold.coeff_token[3]
+Import show expression: \gold.coeff_token[2]
+Import show expression: \gold.coeff_token[1]
+Import show expression: \gold.coeff_token[0]
+Import show expression: \gold.trailingones[0]
+Import show expression: \gold.trailingones[1]
+Import show expression: \gold.totalcoeffs[0]
+Import show expression: \gold.totalcoeffs[2]
+Import show expression: \gold.totalcoeffs[1]
+Import show expression: \gold.totalcoeffs[3]
+Import show expression: \gold.totalcoeffs[4]
+Import show expression: \gold.ctable[0]
+Import show expression: \gold.ctable[1]
+Import show expression: \gold.ctable[2]
+Import show expression: \gold.ctoken_len[4]
+Import show expression: \gold.__pi_ctable[0]
+Import show expression: \gold.__pi_ctable[1]
+Import show expression: \gold.__pi_ctable[2]
+Import show expression: \gold.__pi_totalcoeffs[0]
+Import show expression: \gold.__pi_totalcoeffs[1]
+Import show expression: \gold.__pi_totalcoeffs[2]
+Import show expression: \gold.__pi_totalcoeffs[3]
+Import show expression: \gold.__pi_totalcoeffs[4]
+Import show expression: \gold.__pi_trailingones[0]
+Import show expression: \gold.__pi_trailingones[1]
+Import show expression: \gold.__po_coeff_token[0]
+Import show expression: \gold.__po_coeff_token[1]
+Import show expression: \gold.__po_coeff_token[2]
+Import show expression: \gold.__po_coeff_token[3]
+Import show expression: \gold.__po_coeff_token[4]
+Import show expression: \gold.__po_coeff_token[5]
+Import show expression: \gold.__po_ctoken_len[0]
+Import show expression: \gold.__po_ctoken_len[1]
+Import show expression: \gold.__po_ctoken_len[2]
+Import show expression: \gold.__po_ctoken_len[3]
+Import show expression: \gold.__po_ctoken_len[4]
+Import show expression: \__po_ctoken_len[4]__gate
+Import show expression: \__po_ctoken_len[3]__gate
+Import show expression: \__po_ctoken_len[2]__gate
+Import show expression: \__po_ctoken_len[1]__gate
+Import show expression: \__po_ctoken_len[0]__gate
+Import show expression: \__po_coeff_token[5]__gate
+Import show expression: \__po_coeff_token[4]__gate
+Import show expression: \__po_coeff_token[3]__gate
+Import show expression: \__po_coeff_token[2]__gate
+Import show expression: \__po_coeff_token[1]__gate
+Import show expression: \__po_coeff_token[0]__gate
+Import show expression: \__po_ctoken_len[4]__gold
+Import show expression: \__po_ctoken_len[3]__gold
+Import show expression: \__po_ctoken_len[2]__gold
+Import show expression: \__po_ctoken_len[1]__gold
+Import show expression: \__po_ctoken_len[0]__gold
+Import show expression: \__po_coeff_token[5]__gold
+Import show expression: \__po_coeff_token[4]__gold
+Import show expression: \__po_coeff_token[3]__gold
+Import show expression: \__po_coeff_token[2]__gold
+Import show expression: \__po_coeff_token[1]__gold
+Import show expression: \__po_coeff_token[0]__gold
+Import show expression: \__pi_trailingones[1]
+Import show expression: \__pi_trailingones[0]
+Import show expression: \__pi_totalcoeffs[4]
+Import show expression: \__pi_totalcoeffs[3]
+Import show expression: \__pi_totalcoeffs[2]
+Import show expression: \__pi_totalcoeffs[1]
+Import show expression: \__pi_totalcoeffs[0]
+Import show expression: \__pi_ctable[2]
+Import show expression: \__pi_ctable[1]
+Import show expression: \__pi_ctable[0]
+
+[base case 1] Solving problem with 30811 variables and 89924 clauses..
+Base case for induction length 1 proven.
+
+Setting up time step 2:
+Final constraint equation: { } = { }
+Import def constraint for this timestep: \__pi_ctable[0]
+Import def constraint for this timestep: \__pi_ctable[1]
+Import def constraint for this timestep: \__pi_ctable[2]
+Import def constraint for this timestep: \__pi_totalcoeffs[0]
+Import def constraint for this timestep: \__pi_totalcoeffs[1]
+Import def constraint for this timestep: \__pi_totalcoeffs[2]
+Import def constraint for this timestep: \__pi_totalcoeffs[3]
+Import def constraint for this timestep: \__pi_totalcoeffs[4]
+Import def constraint for this timestep: \__pi_trailingones[0]
+Import def constraint for this timestep: \__pi_trailingones[1]
+Imported 619 cells to SAT database.
+Import proof for assert: \__po_ctoken_len[1]__assert.okay when 1'1.
+Import proof for assert: \__po_ctoken_len[2]__assert.okay when 1'1.
+Import proof for assert: \__po_ctoken_len[0]__assert.okay when 1'1.
+Import proof for assert: \__po_ctoken_len[4]__assert.okay when 1'1.
+Import proof for assert: \__po_coeff_token[5]__assert.okay when 1'1.
+Import proof for assert: \__po_coeff_token[4]__assert.okay when 1'1.
+Import proof for assert: \__po_coeff_token[3]__assert.okay when 1'1.
+Import proof for assert: \__po_coeff_token[2]__assert.okay when 1'1.
+Import proof for assert: \__po_coeff_token[1]__assert.okay when 1'1.
+Import proof for assert: \__po_ctoken_len[3]__assert.okay when 1'1.
+Import proof for assert: \__po_coeff_token[0]__assert.okay when 1'1.
+Import show expression: \__po_coeff_token[4]__assert.in_gold
+Import show expression: \__po_coeff_token[4]__assert.in_gate
+Import show expression: \__po_coeff_token[4]__assert.okay
+Import show expression: \__po_coeff_token[4]__assert.i
+Import show expression: \__po_ctoken_len[0]__assert.okay
+Import show expression: \__po_ctoken_len[2]__assert.i
+Import show expression: \__po_ctoken_len[2]__assert.okay
+Import show expression: \__po_coeff_token[3]__assert.in_gold
+Import show expression: \__po_coeff_token[3]__assert.in_gate
+Import show expression: \__po_coeff_token[3]__assert.okay
+Import show expression: \__po_coeff_token[3]__assert.i
+Import show expression: \__po_ctoken_len[2]__assert.in_gate
+Import show expression: \__po_ctoken_len[2]__assert.in_gold
+Import show expression: \__po_ctoken_len[0]__assert.i
+Import show expression: \__po_ctoken_len[1]__assert.i
+Import show expression: \__po_coeff_token[5]__assert.in_gold
+Import show expression: \__po_coeff_token[5]__assert.in_gate
+Import show expression: \__po_coeff_token[5]__assert.okay
+Import show expression: \__po_coeff_token[2]__assert.in_gold
+Import show expression: \__po_coeff_token[2]__assert.in_gate
+Import show expression: \__po_coeff_token[2]__assert.okay
+Import show expression: \__po_coeff_token[2]__assert.i
+Import show expression: \__po_coeff_token[5]__assert.i
+Import show expression: \__po_ctoken_len[1]__assert.okay
+Import show expression: \__po_ctoken_len[3]__assert.i
+Import show expression: \__po_ctoken_len[3]__assert.okay
+Import show expression: \__po_ctoken_len[3]__assert.in_gate
+Import show expression: \__po_coeff_token[1]__assert.in_gold
+Import show expression: \__po_coeff_token[1]__assert.in_gate
+Import show expression: \__po_coeff_token[1]__assert.okay
+Import show expression: \__po_coeff_token[1]__assert.i
+Import show expression: \__po_ctoken_len[3]__assert.in_gold
+Import show expression: \__po_ctoken_len[1]__assert.in_gate
+Import show expression: \__po_ctoken_len[1]__assert.in_gold
+Import show expression: \__po_ctoken_len[0]__assert.in_gold
+Import show expression: \__po_coeff_token[0]__assert.in_gold
+Import show expression: \__po_coeff_token[0]__assert.in_gate
+Import show expression: \__po_coeff_token[0]__assert.okay
+Import show expression: \__po_coeff_token[0]__assert.i
+Import show expression: \__po_ctoken_len[0]__assert.in_gate
+Import show expression: \__po_ctoken_len[4]__assert.i
+Import show expression: \__po_ctoken_len[4]__assert.okay
+Import show expression: \__po_ctoken_len[4]__assert.in_gate
+Import show expression: \__po_ctoken_len[4]__assert.in_gold
+Import show expression: \gate.ctoken_len[3]
+Import show expression: \gate.ctoken_len[2]
+Import show expression: \gate.ctoken_len[1]
+Import show expression: \gate.ctoken_len[0]
+Import show expression: \gate.coeff_token[5]
+Import show expression: \gate.coeff_token[4]
+Import show expression: \gate.coeff_token[3]
+Import show expression: \gate.coeff_token[2]
+Import show expression: \gate.coeff_token[1]
+Import show expression: \gate.coeff_token[0]
+Import show expression: \gate.trailingones[0]
+Import show expression: \gate.trailingones[1]
+Import show expression: \gate.totalcoeffs[0]
+Import show expression: \gate.totalcoeffs[2]
+Import show expression: \gate.totalcoeffs[1]
+Import show expression: \gate.totalcoeffs[3]
+Import show expression: \gate.totalcoeffs[4]
+Import show expression: \gate.ctable[0]
+Import show expression: \gate.ctable[1]
+Import show expression: \gate.ctable[2]
+Import show expression: \gate.ctoken_len[4]
+Import show expression: \gate.__pi_ctable[0]
+Import show expression: \gate.__pi_ctable[1]
+Import show expression: \gate.__pi_ctable[2]
+Import show expression: \gate.__pi_totalcoeffs[0]
+Import show expression: \gate.__pi_totalcoeffs[1]
+Import show expression: \gate.__pi_totalcoeffs[2]
+Import show expression: \gate.__pi_totalcoeffs[3]
+Import show expression: \gate.__pi_totalcoeffs[4]
+Import show expression: \gate.__pi_trailingones[0]
+Import show expression: \gate.__pi_trailingones[1]
+Import show expression: \gate.__po_coeff_token[0]
+Import show expression: \gate.__po_coeff_token[1]
+Import show expression: \gate.__po_coeff_token[2]
+Import show expression: \gate.__po_coeff_token[3]
+Import show expression: \gate.__po_coeff_token[4]
+Import show expression: \gate.__po_coeff_token[5]
+Import show expression: \gate.__po_ctoken_len[0]
+Import show expression: \gate.__po_ctoken_len[1]
+Import show expression: \gate.__po_ctoken_len[2]
+Import show expression: \gate.__po_ctoken_len[3]
+Import show expression: \gate.__po_ctoken_len[4]
+Import show expression: \gold.ctoken_len[3]
+Import show expression: \gold.ctoken_len[2]
+Import show expression: \gold.ctoken_len[1]
+Import show expression: \gold.ctoken_len[0]
+Import show expression: \gold.coeff_token[5]
+Import show expression: \gold.coeff_token[4]
+Import show expression: \gold.coeff_token[3]
+Import show expression: \gold.coeff_token[2]
+Import show expression: \gold.coeff_token[1]
+Import show expression: \gold.coeff_token[0]
+Import show expression: \gold.trailingones[0]
+Import show expression: \gold.trailingones[1]
+Import show expression: \gold.totalcoeffs[0]
+Import show expression: \gold.totalcoeffs[2]
+Import show expression: \gold.totalcoeffs[1]
+Import show expression: \gold.totalcoeffs[3]
+Import show expression: \gold.totalcoeffs[4]
+Import show expression: \gold.ctable[0]
+Import show expression: \gold.ctable[1]
+Import show expression: \gold.ctable[2]
+Import show expression: \gold.ctoken_len[4]
+Import show expression: \gold.__pi_ctable[0]
+Import show expression: \gold.__pi_ctable[1]
+Import show expression: \gold.__pi_ctable[2]
+Import show expression: \gold.__pi_totalcoeffs[0]
+Import show expression: \gold.__pi_totalcoeffs[1]
+Import show expression: \gold.__pi_totalcoeffs[2]
+Import show expression: \gold.__pi_totalcoeffs[3]
+Import show expression: \gold.__pi_totalcoeffs[4]
+Import show expression: \gold.__pi_trailingones[0]
+Import show expression: \gold.__pi_trailingones[1]
+Import show expression: \gold.__po_coeff_token[0]
+Import show expression: \gold.__po_coeff_token[1]
+Import show expression: \gold.__po_coeff_token[2]
+Import show expression: \gold.__po_coeff_token[3]
+Import show expression: \gold.__po_coeff_token[4]
+Import show expression: \gold.__po_coeff_token[5]
+Import show expression: \gold.__po_ctoken_len[0]
+Import show expression: \gold.__po_ctoken_len[1]
+Import show expression: \gold.__po_ctoken_len[2]
+Import show expression: \gold.__po_ctoken_len[3]
+Import show expression: \gold.__po_ctoken_len[4]
+Import show expression: \__po_ctoken_len[4]__gate
+Import show expression: \__po_ctoken_len[3]__gate
+Import show expression: \__po_ctoken_len[2]__gate
+Import show expression: \__po_ctoken_len[1]__gate
+Import show expression: \__po_ctoken_len[0]__gate
+Import show expression: \__po_coeff_token[5]__gate
+Import show expression: \__po_coeff_token[4]__gate
+Import show expression: \__po_coeff_token[3]__gate
+Import show expression: \__po_coeff_token[2]__gate
+Import show expression: \__po_coeff_token[1]__gate
+Import show expression: \__po_coeff_token[0]__gate
+Import show expression: \__po_ctoken_len[4]__gold
+Import show expression: \__po_ctoken_len[3]__gold
+Import show expression: \__po_ctoken_len[2]__gold
+Import show expression: \__po_ctoken_len[1]__gold
+Import show expression: \__po_ctoken_len[0]__gold
+Import show expression: \__po_coeff_token[5]__gold
+Import show expression: \__po_coeff_token[4]__gold
+Import show expression: \__po_coeff_token[3]__gold
+Import show expression: \__po_coeff_token[2]__gold
+Import show expression: \__po_coeff_token[1]__gold
+Import show expression: \__po_coeff_token[0]__gold
+Import show expression: \__pi_trailingones[1]
+Import show expression: \__pi_trailingones[0]
+Import show expression: \__pi_totalcoeffs[4]
+Import show expression: \__pi_totalcoeffs[3]
+Import show expression: \__pi_totalcoeffs[2]
+Import show expression: \__pi_totalcoeffs[1]
+Import show expression: \__pi_totalcoeffs[0]
+Import show expression: \__pi_ctable[2]
+Import show expression: \__pi_ctable[1]
+Import show expression: \__pi_ctable[0]
+
+[induction step 1] Solving problem with 61631 variables and 179890 clauses..
+Induction step proven: SUCCESS!
+
+                  /$$$$$$      /$$$$$$$$     /$$$$$$$    
+                 /$$__  $$    | $$_____/    | $$__  $$   
+                | $$  \ $$    | $$          | $$  \ $$   
+                | $$  | $$    | $$$$$       | $$  | $$   
+                | $$  | $$    | $$__/       | $$  | $$   
+                | $$/$$ $$    | $$          | $$  | $$   
+                |  $$$$$$/ /$$| $$$$$$$$ /$$| $$$$$$$//$$
+                 \____ $$$|__/|________/|__/|_______/|__/
+                       \__/                              
+

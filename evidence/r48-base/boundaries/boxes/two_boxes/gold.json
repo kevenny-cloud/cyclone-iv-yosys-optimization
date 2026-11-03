@@ -1,0 +1,270 @@
+{
+  "creator": "Yosys 0.69 (git sha1 9f75ca1f9-dirty, Release, LLVM-MinGW 20261020 Clang 23.1.4; isolated Windows build)",
+  "modules": {
+    "box1": {
+      "attributes": {
+        "abc9_box": "00000000000000000000000000000001",
+        "blackbox": "00000000000000000000000000000001",
+        "src": "input.v:1.26-1.92"
+      },
+      "ports": {
+        "i": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "o": {
+          "direction": "output",
+          "bits": [ 3 ]
+        }
+      },
+      "cells": {
+        "$specify$1": {
+          "hide_name": 1,
+          "type": "$specify2",
+          "parameters": {
+            "DST_WIDTH": "00000000000000000000000000000001",
+            "FULL": "0",
+            "SRC_DST_PEN": "0",
+            "SRC_DST_POL": "0",
+            "SRC_WIDTH": "00000000000000000000000000000001",
+            "T_FALL_MAX": "00000000000000000000000000000001",
+            "T_FALL_MIN": "00000000000000000000000000000001",
+            "T_FALL_TYP": "00000000000000000000000000000001",
+            "T_RISE_MAX": "00000000000000000000000000000001",
+            "T_RISE_MIN": "00000000000000000000000000000001",
+            "T_RISE_TYP": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "input.v:1.63-1.72"
+          },
+          "port_directions": {
+            "DST": "input",
+            "EN": "input",
+            "SRC": "input"
+          },
+          "connections": {
+            "DST": [ 3 ],
+            "EN": [ "1" ],
+            "SRC": [ 2 ]
+          }
+        }
+      },
+      "netnames": {
+        "i": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "input.v:1.44-1.45"
+          }
+        },
+        "o": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "input.v:1.53-1.54"
+          }
+        }
+      }
+    },
+    "top": {
+      "attributes": {
+        "top": "00000000000000000000000000000001",
+        "src": "input.v:2.1-2.144"
+      },
+      "ports": {
+        "a": {
+          "direction": "input",
+          "bits": [ 2, 3, 4, 5, 6, 7 ]
+        },
+        "y": {
+          "direction": "output",
+          "bits": [ 8, 9 ]
+        }
+      },
+      "cells": {
+        "$auto$simplemap.cc:106:simplemap_bitop$78": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "input.v:2.60-2.69"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2 ],
+            "B": [ 3 ],
+            "Y": [ 10 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$79": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "input.v:2.88-2.94"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 4 ],
+            "B": [ 11 ],
+            "Y": [ 12 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$80": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "input.v:2.127-2.133"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 11 ],
+            "B": [ 7 ],
+            "Y": [ 8 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$81": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "input.v:2.116-2.125"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 5 ],
+            "B": [ 6 ],
+            "Y": [ 13 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$82": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "input.v:2.113-2.126"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 14 ],
+            "B": [ 13 ],
+            "Y": [ 9 ]
+          }
+        },
+        "u": {
+          "hide_name": 0,
+          "type": "box1",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "input.v:2.55-2.77"
+          },
+          "port_directions": {
+            "i": "input",
+            "o": "output"
+          },
+          "connections": {
+            "i": [ 10 ],
+            "o": [ 11 ]
+          }
+        },
+        "v": {
+          "hide_name": 0,
+          "type": "box1",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "input.v:2.83-2.102"
+          },
+          "port_directions": {
+            "i": "input",
+            "o": "output"
+          },
+          "connections": {
+            "i": [ 12 ],
+            "o": [ 14 ]
+          }
+        }
+      },
+      "netnames": {
+        "$and$input.v:2$3_Y": {
+          "hide_name": 1,
+          "bits": [ 12 ],
+          "attributes": {
+            "src": "input.v:2.88-2.94"
+          }
+        },
+        "$and$input.v:2$5_Y": {
+          "hide_name": 1,
+          "bits": [ 13 ],
+          "attributes": {
+            "src": "input.v:2.116-2.125"
+          }
+        },
+        "$xor$input.v:2$2_Y": {
+          "hide_name": 1,
+          "bits": [ 10 ],
+          "attributes": {
+            "src": "input.v:2.60-2.69"
+          }
+        },
+        "a": {
+          "hide_name": 0,
+          "bits": [ 2, 3, 4, 5, 6, 7 ],
+          "attributes": {
+            "src": "input.v:2.23-2.24"
+          }
+        },
+        "t": {
+          "hide_name": 0,
+          "bits": [ 14 ],
+          "attributes": {
+            "src": "input.v:2.48-2.49"
+          }
+        },
+        "y": {
+          "hide_name": 0,
+          "bits": [ 8, 9 ],
+          "attributes": {
+            "src": "input.v:2.38-2.39"
+          }
+        },
+        "z": {
+          "hide_name": 0,
+          "bits": [ 11 ],
+          "attributes": {
+            "src": "input.v:2.46-2.47"
+          }
+        }
+      }
+    }
+  }
+}

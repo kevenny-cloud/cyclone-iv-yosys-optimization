@@ -1,0 +1,39 @@
+{
+  "partition": {
+    "index": 0,
+    "name": "top.y",
+    "inbits": {
+      "a": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    "outbits": {
+      "y": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    "crossbits": {}
+  },
+  "gold_module": {
+    "name": "gold.top.y",
+    "internal": {},
+    "unused": {},
+    "cellcount": 6,
+    "bitcount": 10
+  },
+  "gate_module": {
+    "name": "gold.top.y",
+    "internal": {},
+    "unused": {},
+    "cellcount": 6,
+    "bitcount": 10
+  }
+}

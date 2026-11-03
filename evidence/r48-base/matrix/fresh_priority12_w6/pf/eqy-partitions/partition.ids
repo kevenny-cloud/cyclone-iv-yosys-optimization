@@ -1,0 +1,4 @@
+bind top d
+bind top s
+bind top y
+group top d s y

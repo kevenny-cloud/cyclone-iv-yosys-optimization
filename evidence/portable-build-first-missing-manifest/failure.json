@@ -1,0 +1,5 @@
+{
+  "stage": "embed_manifest",
+  "reason": "windows-utf8.manifest omitted from initial package; corrected and fresh complete rebuild passed",
+  "original_run_retained": "D:\\\u7ade\u8d5b\\FPGA\\R50\u4fbf\u643a\u6e90\u7801\u91cd\u5efa"
+}

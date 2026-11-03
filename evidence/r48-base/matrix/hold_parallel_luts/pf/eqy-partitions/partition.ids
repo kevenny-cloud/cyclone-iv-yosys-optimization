@@ -1,0 +1,3 @@
+bind top a
+bind top y
+group top a y

@@ -1,0 +1,2 @@
+read_verilog -icells input.v
+techmap -map +/intel/common/brams_map_m9k.v

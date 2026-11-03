@@ -1,0 +1,10 @@
+read_verilog -icells input.v
+hierarchy -top t
+proc
+opt_clean
+setattr -set init 3'b101 w:ay
+write_rtlil gold.il
+write_json gold.json
+pmux_xor_factor
+write_rtlil gate.il
+write_json gate.json

@@ -1,0 +1,186 @@
+{
+  "status": "STATE_TRANSITION_SAT_PASS",
+  "fixed_state_pairs": 32,
+  "unmatched_states": 0,
+  "registers": 32,
+  "proof_tool": "D:\\PROJECT\\oss-cad-suite\\bin\\yosys.exe",
+  "proof_tool_sha256": "bafe6f5c0493c29126222a7b5b7818d93c92ef40938c7cfcdb1e36bb67587024",
+  "driver_sha256": "86f87edb06a004f245baa28b0cfac3a874c492136ce8f43136fac97dfe456493",
+  "attempts": [
+    {
+      "status": "PASS",
+      "directory": "attempt0",
+      "pairs": [
+        [
+          197,
+          197,
+          0
+        ],
+        [
+          198,
+          198,
+          0
+        ],
+        [
+          199,
+          199,
+          0
+        ],
+        [
+          200,
+          200,
+          0
+        ],
+        [
+          201,
+          201,
+          0
+        ],
+        [
+          202,
+          202,
+          0
+        ],
+        [
+          203,
+          203,
+          0
+        ],
+        [
+          204,
+          204,
+          0
+        ],
+        [
+          205,
+          205,
+          0
+        ],
+        [
+          206,
+          206,
+          0
+        ],
+        [
+          207,
+          207,
+          0
+        ],
+        [
+          208,
+          208,
+          0
+        ],
+        [
+          209,
+          209,
+          0
+        ],
+        [
+          210,
+          210,
+          0
+        ],
+        [
+          211,
+          211,
+          0
+        ],
+        [
+          212,
+          212,
+          0
+        ],
+        [
+          213,
+          213,
+          0
+        ],
+        [
+          214,
+          214,
+          0
+        ],
+        [
+          215,
+          215,
+          0
+        ],
+        [
+          216,
+          216,
+          0
+        ],
+        [
+          217,
+          217,
+          0
+        ],
+        [
+          218,
+          218,
+          0
+        ],
+        [
+          219,
+          219,
+          0
+        ],
+        [
+          220,
+          220,
+          0
+        ],
+        [
+          221,
+          221,
+          0
+        ],
+        [
+          222,
+          222,
+          0
+        ],
+        [
+          223,
+          223,
+          0
+        ],
+        [
+          224,
+          224,
+          0
+        ],
+        [
+          225,
+          225,
+          0
+        ],
+        [
+          226,
+          226,
+          0
+        ],
+        [
+          227,
+          227,
+          0
+        ],
+        [
+          228,
+          228,
+          0
+        ]
+      ],
+      "compared_bits": 128,
+      "returncode": 0,
+      "hashes": {
+        "relation.v": "92d30fdeae9cb9babbe5ba8d8f6eaa24c4a02b5b1b39e95c9027361204c588dc",
+        "run.ys": "02f579f3ce0dc63e0ba5d85acc9918787760dce83b49ae753a4461bd0777c571",
+        "run.log": "e68751e653c6b4a287722da4add9fc18d20803d0ddf0978e02769c64e3c8d057"
+      }
+    }
+  ],
+  "scope": "Prove a complete bijective register relation with independent combinational SAT.\n\nEvery register is paired, initial values agree under the proposed polarity, and\nall clock, asynchronous-clear and next-state equations and public outputs are\ncompared for arbitrary inputs/current state. No reachable-state assumptions,\ninput constraints, omitted registers or omitted outputs are permitted.\nThis is restricted to the same binary primitive semantics as prove.py.\n",
+  "successful_attempt": 0
+}

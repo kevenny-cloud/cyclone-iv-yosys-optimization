@@ -1,0 +1,5 @@
+* text=auto eol=lf
+.git_archival.txt  export-subst
+
+# Preserve bytes required by SHA256.json
+* -text

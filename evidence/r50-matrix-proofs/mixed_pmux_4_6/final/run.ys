@@ -1,0 +1,4 @@
+read_verilog relation.v
+miter -equiv -flatten gold gate miter
+prep -top miter
+sat -verify -prove trigger 0 -set-def-inputs miter

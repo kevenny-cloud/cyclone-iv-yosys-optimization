@@ -1,0 +1,6 @@
+read_rtlil baseline-generic.il
+prep -top top
+opt_clean
+check -initdrv
+setundef -undriven -undef
+write_rtlil eqy-partitions/gold.il

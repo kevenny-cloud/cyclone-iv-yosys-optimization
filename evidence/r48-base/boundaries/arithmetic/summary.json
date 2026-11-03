@@ -1,0 +1,50 @@
+{
+  "w1add": {
+    "matched": 1,
+    "equivalence": "PASS"
+  },
+  "w1add-keep": {
+    "matched": 0,
+    "equivalence": "PASS"
+  },
+  "w1sub": {
+    "matched": 1,
+    "equivalence": "PASS"
+  },
+  "w1sub-keep": {
+    "matched": 0,
+    "equivalence": "PASS"
+  },
+  "w4add": {
+    "matched": 1,
+    "equivalence": "PASS"
+  },
+  "w4add-keep": {
+    "matched": 0,
+    "equivalence": "PASS"
+  },
+  "w4sub": {
+    "matched": 1,
+    "equivalence": "PASS"
+  },
+  "w4sub-keep": {
+    "matched": 0,
+    "equivalence": "PASS"
+  },
+  "w9add": {
+    "matched": 1,
+    "equivalence": "PASS"
+  },
+  "w9add-keep": {
+    "matched": 0,
+    "equivalence": "PASS"
+  },
+  "w9sub": {
+    "matched": 1,
+    "equivalence": "PASS"
+  },
+  "w9sub-keep": {
+    "matched": 0,
+    "equivalence": "PASS"
+  }
+}

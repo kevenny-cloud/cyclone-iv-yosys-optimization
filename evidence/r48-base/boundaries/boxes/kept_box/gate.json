@@ -1,0 +1,690 @@
+{
+  "creator": "Yosys 0.69 (git sha1 9f75ca1f9-dirty, Release, LLVM-MinGW 20261020 Clang 23.1.4; isolated Windows build)",
+  "modules": {
+    "$__ABC9_DELAY": {
+      "attributes": {
+        "abc9_box_id": "00000000000000000000000000000011",
+        "blackbox": "00000000000000000000000000000001",
+        "abc9_box": "00000000000000000000000000000001",
+        "cells_not_processed": "00000000000000000000000000000001",
+        "src": "D:\\\uFFFFFFE7\uFFFFFFAB\uFFFFFF9E\uFFFFFFE8\uFFFFFFB5\uFFFFFF9B\\FPGA\\FPGA\\\uFFFFFFE5\uFFFFFF8E\uFFFFFF8B\uFFFFFFE5\uFFFFFF8A\uFFFFFF9B\uFFFFFFE6\uFFFFFFB5\uFFFFFF8B\uFFFFFFE8\uFFFFFFAF\uFFFFFF95\uFFFFFFE5\uFFFFFF8A\uFFFFFFA0\uFFFFFFE5\uFFFFFF9B\uFFFFFFBA\\20261027_structural_rules\\continuation-20261030\\r48-one-snapshot-clean\\program\\share/abc9_model.v:2.1-7.10"
+      },
+      "parameter_default_values": {
+        "DELAY": "00000000000000000000000000000000"
+      },
+      "ports": {
+        "I": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "O": {
+          "direction": "output",
+          "bits": [ 3 ]
+        }
+      },
+      "cells": {
+        "$specify$150": {
+          "hide_name": 1,
+          "type": "$specify2",
+          "parameters": {
+            "DST_WIDTH": "00000000000000000000000000000001",
+            "FULL": "0",
+            "SRC_DST_PEN": "0",
+            "SRC_DST_POL": "0",
+            "SRC_WIDTH": "00000000000000000000000000000001",
+            "T_FALL_MAX": "00000000000000000000000000000000",
+            "T_FALL_MIN": "00000000000000000000000000000000",
+            "T_FALL_TYP": "00000000000000000000000000000000",
+            "T_RISE_MAX": "00000000000000000000000000000000",
+            "T_RISE_MIN": "00000000000000000000000000000000",
+            "T_RISE_TYP": "00000000000000000000000000000000"
+          },
+          "attributes": {
+            "src": "D:\\\uFFFFFFE7\uFFFFFFAB\uFFFFFF9E\uFFFFFFE8\uFFFFFFB5\uFFFFFF9B\\FPGA\\FPGA\\\uFFFFFFE5\uFFFFFF8E\uFFFFFF8B\uFFFFFFE5\uFFFFFF8A\uFFFFFF9B\uFFFFFFE6\uFFFFFFB5\uFFFFFF8B\uFFFFFFE8\uFFFFFFAF\uFFFFFF95\uFFFFFFE5\uFFFFFF8A\uFFFFFFA0\uFFFFFFE5\uFFFFFF9B\uFFFFFFBA\\20261027_structural_rules\\continuation-20261030\\r48-one-snapshot-clean\\program\\share/abc9_model.v:5.5-5.22"
+          },
+          "port_directions": {
+            "DST": "input",
+            "EN": "input",
+            "SRC": "input"
+          },
+          "connections": {
+            "DST": [ 3 ],
+            "EN": [ "1" ],
+            "SRC": [ 2 ]
+          }
+        }
+      },
+      "netnames": {
+        "I": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "D:\\\uFFFFFFE7\uFFFFFFAB\uFFFFFF9E\uFFFFFFE8\uFFFFFFB5\uFFFFFF9B\\FPGA\\FPGA\\\uFFFFFFE5\uFFFFFF8E\uFFFFFF8B\uFFFFFFE5\uFFFFFF8A\uFFFFFF9B\uFFFFFFE6\uFFFFFFB5\uFFFFFF8B\uFFFFFFE8\uFFFFFFAF\uFFFFFF95\uFFFFFFE5\uFFFFFF8A\uFFFFFFA0\uFFFFFFE5\uFFFFFF9B\uFFFFFFBA\\20261027_structural_rules\\continuation-20261030\\r48-one-snapshot-clean\\program\\share/abc9_model.v:2.29-2.30"
+          }
+        },
+        "O": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "D:\\\uFFFFFFE7\uFFFFFFAB\uFFFFFF9E\uFFFFFFE8\uFFFFFFB5\uFFFFFF9B\\FPGA\\FPGA\\\uFFFFFFE5\uFFFFFF8E\uFFFFFF8B\uFFFFFFE5\uFFFFFF8A\uFFFFFF9B\uFFFFFFE6\uFFFFFFB5\uFFFFFF8B\uFFFFFFE8\uFFFFFFAF\uFFFFFF95\uFFFFFFE5\uFFFFFF8A\uFFFFFFA0\uFFFFFFE5\uFFFFFF9B\uFFFFFFBA\\20261027_structural_rules\\continuation-20261030\\r48-one-snapshot-clean\\program\\share/abc9_model.v:2.39-2.40"
+          }
+        }
+      }
+    },
+    "$__ABC9_SCC_BREAKER": {
+      "attributes": {
+        "dynports": "00000000000000000000000000000001",
+        "blackbox": "00000000000000000000000000000001",
+        "cells_not_processed": "00000000000000000000000000000001",
+        "src": "D:\\\uFFFFFFE7\uFFFFFFAB\uFFFFFF9E\uFFFFFFE8\uFFFFFFB5\uFFFFFF9B\\FPGA\\FPGA\\\uFFFFFFE5\uFFFFFF8E\uFFFFFF8B\uFFFFFFE5\uFFFFFF8A\uFFFFFF9B\uFFFFFFE6\uFFFFFFB5\uFFFFFF8B\uFFFFFFE8\uFFFFFFAF\uFFFFFF95\uFFFFFFE5\uFFFFFF8A\uFFFFFFA0\uFFFFFFE5\uFFFFFF9B\uFFFFFFBA\\20261027_structural_rules\\continuation-20261030\\r48-one-snapshot-clean\\program\\share/abc9_model.v:9.1-11.10"
+      },
+      "parameter_default_values": {
+        "WIDTH": "00000000000000000000000000000000"
+      },
+      "ports": {
+        "I": {
+          "direction": "input",
+          "offset": -1,
+          "upto": 1,
+          "bits": [ 2, 3 ]
+        },
+        "O": {
+          "direction": "output",
+          "offset": -1,
+          "upto": 1,
+          "bits": [ 4, 5 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "I": {
+          "hide_name": 0,
+          "bits": [ 2, 3 ],
+          "offset": -1,
+          "upto": 1,
+          "attributes": {
+            "src": "D:\\\uFFFFFFE7\uFFFFFFAB\uFFFFFF9E\uFFFFFFE8\uFFFFFFB5\uFFFFFF9B\\FPGA\\FPGA\\\uFFFFFFE5\uFFFFFF8E\uFFFFFF8B\uFFFFFFE5\uFFFFFF8A\uFFFFFF9B\uFFFFFFE6\uFFFFFFB5\uFFFFFF8B\uFFFFFFE8\uFFFFFFAF\uFFFFFF95\uFFFFFFE5\uFFFFFF8A\uFFFFFFA0\uFFFFFFE5\uFFFFFF9B\uFFFFFFBA\\20261027_structural_rules\\continuation-20261030\\r48-one-snapshot-clean\\program\\share/abc9_model.v:9.47-9.48"
+          }
+        },
+        "O": {
+          "hide_name": 0,
+          "bits": [ 4, 5 ],
+          "offset": -1,
+          "upto": 1,
+          "attributes": {
+            "src": "D:\\\uFFFFFFE7\uFFFFFFAB\uFFFFFF9E\uFFFFFFE8\uFFFFFFB5\uFFFFFF9B\\FPGA\\FPGA\\\uFFFFFFE5\uFFFFFF8E\uFFFFFF8B\uFFFFFFE5\uFFFFFF8A\uFFFFFF9B\uFFFFFFE6\uFFFFFFB5\uFFFFFF8B\uFFFFFFE8\uFFFFFFAF\uFFFFFF95\uFFFFFFE5\uFFFFFF8A\uFFFFFFA0\uFFFFFFE5\uFFFFFF9B\uFFFFFFBA\\20261027_structural_rules\\continuation-20261030\\r48-one-snapshot-clean\\program\\share/abc9_model.v:9.69-9.70"
+          }
+        }
+      }
+    },
+    "$__DFF_N__$abc9_flop": {
+      "attributes": {
+        "abc9_box_id": "00000000000000000000000000000010",
+        "whitebox": "00000000000000000000000000000001",
+        "abc9_flop": "00000000000000000000000000000001",
+        "abc9_box": "00000000000000000000000000000001",
+        "cells_not_processed": "00000000000000000000000000000001",
+        "src": "D:\\\uFFFFFFE7\uFFFFFFAB\uFFFFFF9E\uFFFFFFE8\uFFFFFFB5\uFFFFFF9B\\FPGA\\FPGA\\\uFFFFFFE5\uFFFFFF8E\uFFFFFF8B\uFFFFFFE5\uFFFFFF8A\uFFFFFF9B\uFFFFFFE6\uFFFFFFB5\uFFFFFF8B\uFFFFFFE8\uFFFFFFAF\uFFFFFF95\uFFFFFFE5\uFFFFFF8A\uFFFFFFA0\uFFFFFFE5\uFFFFFF9B\uFFFFFFBA\\20261027_structural_rules\\continuation-20261030\\r48-one-snapshot-clean\\program\\share/abc9_model.v:14.1-20.10"
+      },
+      "ports": {
+        "C": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "D": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "Q": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "n1": {
+          "direction": "output",
+          "bits": [ 3 ]
+        }
+      },
+      "cells": {
+        "$specify$151": {
+          "hide_name": 1,
+          "type": "$specrule",
+          "parameters": {
+            "DST_PEN": "1",
+            "DST_POL": "1",
+            "DST_WIDTH": "00000000000000000000000000000001",
+            "SRC_PEN": "0",
+            "SRC_POL": "0",
+            "SRC_WIDTH": "00000000000000000000000000000001",
+            "TYPE": "$setup",
+            "T_LIMIT2_MAX": "00000000000000000000000000000000",
+            "T_LIMIT2_MIN": "00000000000000000000000000000000",
+            "T_LIMIT2_TYP": "00000000000000000000000000000000",
+            "T_LIMIT_MAX": "00000000000000000000000000000000",
+            "T_LIMIT_MIN": "00000000000000000000000000000000",
+            "T_LIMIT_TYP": "00000000000000000000000000000000"
+          },
+          "attributes": {
+            "src": "D:\\\uFFFFFFE7\uFFFFFFAB\uFFFFFF9E\uFFFFFFE8\uFFFFFFB5\uFFFFFF9B\\FPGA\\FPGA\\\uFFFFFFE5\uFFFFFF8E\uFFFFFF8B\uFFFFFFE5\uFFFFFF8A\uFFFFFF9B\uFFFFFFE6\uFFFFFFB5\uFFFFFF8B\uFFFFFFE8\uFFFFFFAF\uFFFFFF95\uFFFFFFE5\uFFFFFF8A\uFFFFFFA0\uFFFFFFE5\uFFFFFF9B\uFFFFFFBA\\20261027_structural_rules\\continuation-20261030\\r48-one-snapshot-clean\\program\\share/abc9_model.v:17.5-17.29"
+          },
+          "port_directions": {
+            "DST": "input",
+            "DST_EN": "input",
+            "SRC": "input",
+            "SRC_EN": "input"
+          },
+          "connections": {
+            "DST": [ 2 ],
+            "DST_EN": [ "1" ],
+            "SRC": [ 3 ],
+            "SRC_EN": [ "1" ]
+          }
+        },
+        "$specify$152": {
+          "hide_name": 1,
+          "type": "$specify3",
+          "parameters": {
+            "DAT_DST_PEN": "0",
+            "DAT_DST_POL": "0",
+            "DST_WIDTH": "00000000000000000000000000000001",
+            "EDGE_EN": "1",
+            "EDGE_POL": "1",
+            "FULL": "0",
+            "SRC_DST_PEN": "0",
+            "SRC_DST_POL": "0",
+            "SRC_WIDTH": "00000000000000000000000000000001",
+            "T_FALL_MAX": "00000000000000000000000000000000",
+            "T_FALL_MIN": "00000000000000000000000000000000",
+            "T_FALL_TYP": "00000000000000000000000000000000",
+            "T_RISE_MAX": "00000000000000000000000000000000",
+            "T_RISE_MIN": "00000000000000000000000000000000",
+            "T_RISE_TYP": "00000000000000000000000000000000"
+          },
+          "attributes": {
+            "src": "D:\\\uFFFFFFE7\uFFFFFFAB\uFFFFFF9E\uFFFFFFE8\uFFFFFFB5\uFFFFFF9B\\FPGA\\FPGA\\\uFFFFFFE5\uFFFFFF8E\uFFFFFF8B\uFFFFFFE5\uFFFFFF8A\uFFFFFF9B\uFFFFFFE6\uFFFFFFB5\uFFFFFF8B\uFFFFFFE8\uFFFFFFAF\uFFFFFF95\uFFFFFFE5\uFFFFFF8A\uFFFFFFA0\uFFFFFFE5\uFFFFFF9B\uFFFFFFBA\\20261027_structural_rules\\continuation-20261030\\r48-one-snapshot-clean\\program\\share/abc9_model.v:18.5-18.31"
+          },
+          "port_directions": {
+            "DAT": "input",
+            "DST": "input",
+            "EN": "input",
+            "SRC": "input"
+          },
+          "connections": {
+            "DAT": [ 3 ],
+            "DST": [ 3 ],
+            "EN": [ "1" ],
+            "SRC": [ 2 ]
+          }
+        }
+      },
+      "netnames": {
+        "C": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "D:\\\uFFFFFFE7\uFFFFFFAB\uFFFFFF9E\uFFFFFFE8\uFFFFFFB5\uFFFFFF9B\\FPGA\\FPGA\\\uFFFFFFE5\uFFFFFF8E\uFFFFFF8B\uFFFFFFE5\uFFFFFF8A\uFFFFFF9B\uFFFFFFE6\uFFFFFFB5\uFFFFFF8B\uFFFFFFE8\uFFFFFFAF\uFFFFFF95\uFFFFFFE5\uFFFFFF8A\uFFFFFFA0\uFFFFFFE5\uFFFFFF9B\uFFFFFFBA\\20261027_structural_rules\\continuation-20261030\\r48-one-snapshot-clean\\program\\share/abc9_model.v:14.36-14.37"
+          }
+        },
+        "D": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "D:\\\uFFFFFFE7\uFFFFFFAB\uFFFFFF9E\uFFFFFFE8\uFFFFFFB5\uFFFFFF9B\\FPGA\\FPGA\\\uFFFFFFE5\uFFFFFF8E\uFFFFFF8B\uFFFFFFE5\uFFFFFF8A\uFFFFFF9B\uFFFFFFE6\uFFFFFFB5\uFFFFFF8B\uFFFFFFE8\uFFFFFFAF\uFFFFFF95\uFFFFFFE5\uFFFFFF8A\uFFFFFFA0\uFFFFFFE5\uFFFFFF9B\uFFFFFFBA\\20261027_structural_rules\\continuation-20261030\\r48-one-snapshot-clean\\program\\share/abc9_model.v:14.39-14.40"
+          }
+        },
+        "Q": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "D:\\\uFFFFFFE7\uFFFFFFAB\uFFFFFF9E\uFFFFFFE8\uFFFFFFB5\uFFFFFF9B\\FPGA\\FPGA\\\uFFFFFFE5\uFFFFFF8E\uFFFFFF8B\uFFFFFFE5\uFFFFFF8A\uFFFFFF9B\uFFFFFFE6\uFFFFFFB5\uFFFFFF8B\uFFFFFFE8\uFFFFFFAF\uFFFFFF95\uFFFFFFE5\uFFFFFF8A\uFFFFFFA0\uFFFFFFE5\uFFFFFF9B\uFFFFFFBA\\20261027_structural_rules\\continuation-20261030\\r48-one-snapshot-clean\\program\\share/abc9_model.v:14.42-14.43"
+          }
+        },
+        "n1": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "D:\\\uFFFFFFE7\uFFFFFFAB\uFFFFFF9E\uFFFFFFE8\uFFFFFFB5\uFFFFFF9B\\FPGA\\FPGA\\\uFFFFFFE5\uFFFFFF8E\uFFFFFF8B\uFFFFFFE5\uFFFFFF8A\uFFFFFF9B\uFFFFFFE6\uFFFFFFB5\uFFFFFF8B\uFFFFFFE8\uFFFFFFAF\uFFFFFF95\uFFFFFFE5\uFFFFFF8A\uFFFFFFA0\uFFFFFFE5\uFFFFFF9B\uFFFFFFBA\\20261027_structural_rules\\continuation-20261030\\r48-one-snapshot-clean\\program\\share/abc9_model.v:14.52-14.54"
+          }
+        }
+      }
+    },
+    "$__DFF_P__$abc9_flop": {
+      "attributes": {
+        "abc9_box_id": "00000000000000000000000000000001",
+        "whitebox": "00000000000000000000000000000001",
+        "abc9_flop": "00000000000000000000000000000001",
+        "abc9_box": "00000000000000000000000000000001",
+        "cells_not_processed": "00000000000000000000000000000001",
+        "src": "D:\\\uFFFFFFE7\uFFFFFFAB\uFFFFFF9E\uFFFFFFE8\uFFFFFFB5\uFFFFFF9B\\FPGA\\FPGA\\\uFFFFFFE5\uFFFFFF8E\uFFFFFF8B\uFFFFFFE5\uFFFFFF8A\uFFFFFF9B\uFFFFFFE6\uFFFFFFB5\uFFFFFF8B\uFFFFFFE8\uFFFFFFAF\uFFFFFF95\uFFFFFFE5\uFFFFFF8A\uFFFFFFA0\uFFFFFFE5\uFFFFFF9B\uFFFFFFBA\\20261027_structural_rules\\continuation-20261030\\r48-one-snapshot-clean\\program\\share/abc9_model.v:23.1-29.10"
+      },
+      "ports": {
+        "C": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "D": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "Q": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "n1": {
+          "direction": "output",
+          "bits": [ 3 ]
+        }
+      },
+      "cells": {
+        "$specify$153": {
+          "hide_name": 1,
+          "type": "$specrule",
+          "parameters": {
+            "DST_PEN": "1",
+            "DST_POL": "1",
+            "DST_WIDTH": "00000000000000000000000000000001",
+            "SRC_PEN": "0",
+            "SRC_POL": "0",
+            "SRC_WIDTH": "00000000000000000000000000000001",
+            "TYPE": "$setup",
+            "T_LIMIT2_MAX": "00000000000000000000000000000000",
+            "T_LIMIT2_MIN": "00000000000000000000000000000000",
+            "T_LIMIT2_TYP": "00000000000000000000000000000000",
+            "T_LIMIT_MAX": "00000000000000000000000000000000",
+            "T_LIMIT_MIN": "00000000000000000000000000000000",
+            "T_LIMIT_TYP": "00000000000000000000000000000000"
+          },
+          "attributes": {
+            "src": "D:\\\uFFFFFFE7\uFFFFFFAB\uFFFFFF9E\uFFFFFFE8\uFFFFFFB5\uFFFFFF9B\\FPGA\\FPGA\\\uFFFFFFE5\uFFFFFF8E\uFFFFFF8B\uFFFFFFE5\uFFFFFF8A\uFFFFFF9B\uFFFFFFE6\uFFFFFFB5\uFFFFFF8B\uFFFFFFE8\uFFFFFFAF\uFFFFFF95\uFFFFFFE5\uFFFFFF8A\uFFFFFFA0\uFFFFFFE5\uFFFFFF9B\uFFFFFFBA\\20261027_structural_rules\\continuation-20261030\\r48-one-snapshot-clean\\program\\share/abc9_model.v:26.5-26.29"
+          },
+          "port_directions": {
+            "DST": "input",
+            "DST_EN": "input",
+            "SRC": "input",
+            "SRC_EN": "input"
+          },
+          "connections": {
+            "DST": [ 2 ],
+            "DST_EN": [ "1" ],
+            "SRC": [ 3 ],
+            "SRC_EN": [ "1" ]
+          }
+        },
+        "$specify$154": {
+          "hide_name": 1,
+          "type": "$specify3",
+          "parameters": {
+            "DAT_DST_PEN": "0",
+            "DAT_DST_POL": "0",
+            "DST_WIDTH": "00000000000000000000000000000001",
+            "EDGE_EN": "1",
+            "EDGE_POL": "1",
+            "FULL": "0",
+            "SRC_DST_PEN": "0",
+            "SRC_DST_POL": "0",
+            "SRC_WIDTH": "00000000000000000000000000000001",
+            "T_FALL_MAX": "00000000000000000000000000000000",
+            "T_FALL_MIN": "00000000000000000000000000000000",
+            "T_FALL_TYP": "00000000000000000000000000000000",
+            "T_RISE_MAX": "00000000000000000000000000000000",
+            "T_RISE_MIN": "00000000000000000000000000000000",
+            "T_RISE_TYP": "00000000000000000000000000000000"
+          },
+          "attributes": {
+            "src": "D:\\\uFFFFFFE7\uFFFFFFAB\uFFFFFF9E\uFFFFFFE8\uFFFFFFB5\uFFFFFF9B\\FPGA\\FPGA\\\uFFFFFFE5\uFFFFFF8E\uFFFFFF8B\uFFFFFFE5\uFFFFFF8A\uFFFFFF9B\uFFFFFFE6\uFFFFFFB5\uFFFFFF8B\uFFFFFFE8\uFFFFFFAF\uFFFFFF95\uFFFFFFE5\uFFFFFF8A\uFFFFFFA0\uFFFFFFE5\uFFFFFF9B\uFFFFFFBA\\20261027_structural_rules\\continuation-20261030\\r48-one-snapshot-clean\\program\\share/abc9_model.v:27.5-27.31"
+          },
+          "port_directions": {
+            "DAT": "input",
+            "DST": "input",
+            "EN": "input",
+            "SRC": "input"
+          },
+          "connections": {
+            "DAT": [ 3 ],
+            "DST": [ 3 ],
+            "EN": [ "1" ],
+            "SRC": [ 2 ]
+          }
+        }
+      },
+      "netnames": {
+        "C": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "D:\\\uFFFFFFE7\uFFFFFFAB\uFFFFFF9E\uFFFFFFE8\uFFFFFFB5\uFFFFFF9B\\FPGA\\FPGA\\\uFFFFFFE5\uFFFFFF8E\uFFFFFF8B\uFFFFFFE5\uFFFFFF8A\uFFFFFF9B\uFFFFFFE6\uFFFFFFB5\uFFFFFF8B\uFFFFFFE8\uFFFFFFAF\uFFFFFF95\uFFFFFFE5\uFFFFFF8A\uFFFFFFA0\uFFFFFFE5\uFFFFFF9B\uFFFFFFBA\\20261027_structural_rules\\continuation-20261030\\r48-one-snapshot-clean\\program\\share/abc9_model.v:23.36-23.37"
+          }
+        },
+        "D": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "D:\\\uFFFFFFE7\uFFFFFFAB\uFFFFFF9E\uFFFFFFE8\uFFFFFFB5\uFFFFFF9B\\FPGA\\FPGA\\\uFFFFFFE5\uFFFFFF8E\uFFFFFF8B\uFFFFFFE5\uFFFFFF8A\uFFFFFF9B\uFFFFFFE6\uFFFFFFB5\uFFFFFF8B\uFFFFFFE8\uFFFFFFAF\uFFFFFF95\uFFFFFFE5\uFFFFFF8A\uFFFFFFA0\uFFFFFFE5\uFFFFFF9B\uFFFFFFBA\\20261027_structural_rules\\continuation-20261030\\r48-one-snapshot-clean\\program\\share/abc9_model.v:23.39-23.40"
+          }
+        },
+        "Q": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "D:\\\uFFFFFFE7\uFFFFFFAB\uFFFFFF9E\uFFFFFFE8\uFFFFFFB5\uFFFFFF9B\\FPGA\\FPGA\\\uFFFFFFE5\uFFFFFF8E\uFFFFFF8B\uFFFFFFE5\uFFFFFF8A\uFFFFFF9B\uFFFFFFE6\uFFFFFFB5\uFFFFFF8B\uFFFFFFE8\uFFFFFFAF\uFFFFFF95\uFFFFFFE5\uFFFFFF8A\uFFFFFFA0\uFFFFFFE5\uFFFFFF9B\uFFFFFFBA\\20261027_structural_rules\\continuation-20261030\\r48-one-snapshot-clean\\program\\share/abc9_model.v:23.42-23.43"
+          }
+        },
+        "n1": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "D:\\\uFFFFFFE7\uFFFFFFAB\uFFFFFF9E\uFFFFFFE8\uFFFFFFB5\uFFFFFF9B\\FPGA\\FPGA\\\uFFFFFFE5\uFFFFFF8E\uFFFFFF8B\uFFFFFFE5\uFFFFFF8A\uFFFFFF9B\uFFFFFFE6\uFFFFFFB5\uFFFFFF8B\uFFFFFFE8\uFFFFFFAF\uFFFFFF95\uFFFFFFE5\uFFFFFF8A\uFFFFFFA0\uFFFFFFE5\uFFFFFF9B\uFFFFFFBA\\20261027_structural_rules\\continuation-20261030\\r48-one-snapshot-clean\\program\\share/abc9_model.v:23.52-23.54"
+          }
+        }
+      }
+    },
+    "box1": {
+      "attributes": {
+        "abc9_box_id": "00000000000000000000000000000100",
+        "abc9_box": "00000000000000000000000000000001",
+        "blackbox": "00000000000000000000000000000001",
+        "src": "input.v:1.26-1.92"
+      },
+      "ports": {
+        "i": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "o": {
+          "direction": "output",
+          "bits": [ 3 ]
+        }
+      },
+      "cells": {
+        "$specify$1": {
+          "hide_name": 1,
+          "type": "$specify2",
+          "parameters": {
+            "DST_WIDTH": "00000000000000000000000000000001",
+            "FULL": "0",
+            "SRC_DST_PEN": "0",
+            "SRC_DST_POL": "0",
+            "SRC_WIDTH": "00000000000000000000000000000001",
+            "T_FALL_MAX": "00000000000000000000000000000001",
+            "T_FALL_MIN": "00000000000000000000000000000001",
+            "T_FALL_TYP": "00000000000000000000000000000001",
+            "T_RISE_MAX": "00000000000000000000000000000001",
+            "T_RISE_MIN": "00000000000000000000000000000001",
+            "T_RISE_TYP": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "input.v:1.63-1.72"
+          },
+          "port_directions": {
+            "DST": "input",
+            "EN": "input",
+            "SRC": "input"
+          },
+          "connections": {
+            "DST": [ 3 ],
+            "EN": [ "1" ],
+            "SRC": [ 2 ]
+          }
+        }
+      },
+      "netnames": {
+        "i": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "input.v:1.44-1.45"
+          }
+        },
+        "o": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "input.v:1.53-1.54"
+          }
+        }
+      }
+    },
+    "top": {
+      "attributes": {
+        "top": "00000000000000000000000000000001",
+        "src": "input.v:2.1-2.112"
+      },
+      "ports": {
+        "a": {
+          "direction": "input",
+          "bits": [ 2, 3, 4, 5 ]
+        },
+        "y": {
+          "direction": "output",
+          "bits": [ 6 ]
+        }
+      },
+      "cells": {
+        "$abc$184$lut$aiger$o0": {
+          "hide_name": 1,
+          "type": "$lut",
+          "parameters": {
+            "LUT": "0110",
+            "WIDTH": "00000000000000000000000000000010"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 3, 2 ],
+            "Y": [ 7 ]
+          }
+        },
+        "$abc$184$lut$aiger$o1": {
+          "hide_name": 1,
+          "type": "$lut",
+          "parameters": {
+            "LUT": "01111000",
+            "WIDTH": "00000000000000000000000000000011"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 5, 4, 8 ],
+            "Y": [ 6 ]
+          }
+        },
+        "u": {
+          "hide_name": 0,
+          "type": "box1",
+          "parameters": {
+          },
+          "attributes": {
+            "keep": "00000000000000000000000000000001",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "input.v:2.57-2.79"
+          },
+          "port_directions": {
+            "i": "input",
+            "o": "output"
+          },
+          "connections": {
+            "i": [ 7 ],
+            "o": [ 8 ]
+          }
+        }
+      },
+      "netnames": {
+        "$abc$184$a": {
+          "hide_name": 1,
+          "bits": [ 2, 3, 4, 5 ],
+          "attributes": {
+          }
+        },
+        "$abc$184$a[0]": {
+          "hide_name": 1,
+          "bits": [ 2 ],
+          "attributes": {
+          }
+        },
+        "$abc$184$a[1]": {
+          "hide_name": 1,
+          "bits": [ 3 ],
+          "attributes": {
+          }
+        },
+        "$abc$184$a[2]": {
+          "hide_name": 1,
+          "bits": [ 4 ],
+          "attributes": {
+          }
+        },
+        "$abc$184$a[3]": {
+          "hide_name": 1,
+          "bits": [ 5 ],
+          "attributes": {
+          }
+        },
+        "$abc$184$xor$input.v:2$2_Y": {
+          "hide_name": 1,
+          "bits": [ 7 ],
+          "attributes": {
+          }
+        },
+        "$abc$184$y": {
+          "hide_name": 1,
+          "bits": [ 6 ],
+          "attributes": {
+          }
+        },
+        "$abc$184$z": {
+          "hide_name": 1,
+          "bits": [ 8 ],
+          "attributes": {
+          }
+        },
+        "$and$input.v:2$3_Y": {
+          "hide_name": 1,
+          "bits": [ 9 ],
+          "attributes": {
+            "src": "input.v:2.92-2.101"
+          }
+        },
+        "$auto$aigmap.cc:117:execute$159": {
+          "hide_name": 1,
+          "bits": [ 10 ],
+          "attributes": {
+          }
+        },
+        "$auto$aigmap.cc:117:execute$163": {
+          "hide_name": 1,
+          "bits": [ 11 ],
+          "attributes": {
+          }
+        },
+        "$auto$aigmap.cc:117:execute$167": {
+          "hide_name": 1,
+          "bits": [ 7 ],
+          "attributes": {
+          }
+        },
+        "$auto$aigmap.cc:117:execute$173": {
+          "hide_name": 1,
+          "bits": [ 12 ],
+          "attributes": {
+          }
+        },
+        "$auto$aigmap.cc:117:execute$177": {
+          "hide_name": 1,
+          "bits": [ 13 ],
+          "attributes": {
+          }
+        },
+        "$auto$aigmap.cc:117:execute$181": {
+          "hide_name": 1,
+          "bits": [ 6 ],
+          "attributes": {
+          }
+        },
+        "$auto$aigmap.cc:125:execute$155": {
+          "hide_name": 1,
+          "bits": [ 14 ],
+          "attributes": {
+          }
+        },
+        "$auto$aigmap.cc:125:execute$157": {
+          "hide_name": 1,
+          "bits": [ 15 ],
+          "attributes": {
+          }
+        },
+        "$auto$aigmap.cc:125:execute$161": {
+          "hide_name": 1,
+          "bits": [ 16 ],
+          "attributes": {
+          }
+        },
+        "$auto$aigmap.cc:125:execute$165": {
+          "hide_name": 1,
+          "bits": [ 17 ],
+          "attributes": {
+          }
+        },
+        "$auto$aigmap.cc:125:execute$169": {
+          "hide_name": 1,
+          "bits": [ 18 ],
+          "attributes": {
+          }
+        },
+        "$auto$aigmap.cc:125:execute$171": {
+          "hide_name": 1,
+          "bits": [ 19 ],
+          "attributes": {
+          }
+        },
+        "$auto$aigmap.cc:125:execute$175": {
+          "hide_name": 1,
+          "bits": [ 20 ],
+          "attributes": {
+          }
+        },
+        "$auto$aigmap.cc:125:execute$179": {
+          "hide_name": 1,
+          "bits": [ 21 ],
+          "attributes": {
+          }
+        },
+        "$xor$input.v:2$2_Y": {
+          "hide_name": 1,
+          "bits": [ 7 ],
+          "attributes": {
+            "src": "input.v:2.62-2.71"
+          }
+        },
+        "a": {
+          "hide_name": 0,
+          "bits": [ 2, 3, 4, 5 ],
+          "attributes": {
+            "src": "input.v:2.23-2.24"
+          }
+        },
+        "y": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+            "src": "input.v:2.32-2.33"
+          }
+        },
+        "z": {
+          "hide_name": 0,
+          "bits": [ 8 ],
+          "attributes": {
+            "src": "input.v:2.40-2.41"
+          }
+        }
+      }
+    }
+  }
+}

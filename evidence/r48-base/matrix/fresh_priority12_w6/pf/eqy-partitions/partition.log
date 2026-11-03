@@ -1,0 +1,352 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.69+274 (git sha1 7513f8df8, Release, GNU /usr/bin/x86_64-w64-mingw32-g++ 15.2.1)
+
+-- Executing script file `partition.ys' --
+
+1. Executing RTLIL frontend.
+Input filename: combined.il
+
+2. Executing INSBUF pass (insert buffer cells for connected wires).
+
+3. Executing EQY PARTITION task.
+
+3.1. Processing module pair gold.top / gate.top.
+
+3.1.1. Processing matched IDs for module top.
+
+3.1.2. Create fragment partitions for module top.
+Adding output bit \y [5] to partition 0.
+Adding output bit \y [0] to partition 0.
+Adding output bit \y [1] to partition 0.
+Adding output bit \y [2] to partition 0.
+Adding output bit \y [3] to partition 0.
+Adding output bit \y [4] to partition 0.
+
+Final list of fragment partitions:
+  0 \y [4] \y [3] \y [2] \y [1] \y [0] \y [5] <= \d [4] \d [10] \d [16] \d [22] \d [28] \d [34] \d [40] \d [46] \d [52] \d [58] \d [64] \d [70] \d [3] \d [9] \d [15] \d [21] \d [27] \d [33] \d [39] \d [45] \d [51] \d [57] \d [63] \d [69] \d [2] \d [8] \d [14] \d [20] \d [26] \d [32] \d [38] \d [44] \d [50] \d [56] \d [62] \d [68] \d [1] \d [7] \d [13] \d [19] \d [25] \d [31] \d [37] \d [43] \d [49] \d [55] \d [61] \d [67] \d [0] \d [6] \d [12] \d [18] \d [24] \d [30] \d [36] \d [42] \d [48] \d [54] \d [60] \d [66] \s [0] \s [1] \d [5] \d [11] \s [2] \d [17] \s [3] \d [23] \s [4] \d [29] \s [5] \d [35] \s [6] \d [41] \s [7] \d [47] \s [8] \d [53] \s [9] \d [59] \s [10] \d [65] \s [11] \d [71]
+
+3.1.3. Execute partitioning commands for module top.
+
+Amending partitions:
+Execute queued amend rules.
+Find automatic amend rules.
+  Checking partition 0:
+    Found 0 po matches and 0 auto/pi matches.
+
+Assigning partition names:
+Automatically naming partition 0 'y' using a PO name: y
+
+Partition Summary:
+  Fragments:
+       0: \y
+  Partitions:
+       0: y
+  Fragment-Partition-Matrix:
+           0          
+           0
+       0   #  y
+  Legend for Fragment-Partition-Matrix:
+      #  .... partition is this single fragment
+      *  .... fragments merged into single partition
+      +  .... fragments amended to the partition
+      =  .... fragment is driving a partition input
+      -  .... fragment is driving an amended fragment
+      .  .... no relationship between fragment and partition
+      ,  .... unused fragment index (as result of grouping)
+
+3.1.4. Write partitions for module top.
+Adding output bit \y [5] to partition 1.
+Adding output bit \y [4] to partition 1.
+Adding output bit \y [3] to partition 1.
+Adding output bit \y [2] to partition 1.
+Adding output bit \y [1] to partition 1.
+Adding output bit \y [0] to partition 1.
+Adding non-output bit \s [11] to partition 1.
+Adding non-output bit \s [10] to partition 1.
+Adding non-output bit \s [9] to partition 1.
+Adding non-output bit \s [8] to partition 1.
+Adding non-output bit \s [7] to partition 1.
+Adding non-output bit \s [6] to partition 1.
+Adding non-output bit \s [5] to partition 1.
+Adding non-output bit \s [4] to partition 1.
+Adding non-output bit \s [3] to partition 1.
+Adding non-output bit \s [2] to partition 1.
+Adding non-output bit \s [1] to partition 1.
+Adding non-output bit \s [0] to partition 1.
+Adding non-output bit \d [71] to partition 1.
+Adding non-output bit \d [70] to partition 1.
+Adding non-output bit \d [69] to partition 1.
+Adding non-output bit \d [68] to partition 1.
+Adding non-output bit \d [67] to partition 1.
+Adding non-output bit \d [66] to partition 1.
+Adding non-output bit \d [65] to partition 1.
+Adding non-output bit \d [64] to partition 1.
+Adding non-output bit \d [63] to partition 1.
+Adding non-output bit \d [62] to partition 1.
+Adding non-output bit \d [61] to partition 1.
+Adding non-output bit \d [60] to partition 1.
+Adding non-output bit \d [59] to partition 1.
+Adding non-output bit \d [58] to partition 1.
+Adding non-output bit \d [57] to partition 1.
+Adding non-output bit \d [56] to partition 1.
+Adding non-output bit \d [55] to partition 1.
+Adding non-output bit \d [54] to partition 1.
+Adding non-output bit \d [53] to partition 1.
+Adding non-output bit \d [52] to partition 1.
+Adding non-output bit \d [51] to partition 1.
+Adding non-output bit \d [50] to partition 1.
+Adding non-output bit \d [49] to partition 1.
+Adding non-output bit \d [48] to partition 1.
+Adding non-output bit \d [47] to partition 1.
+Adding non-output bit \d [46] to partition 1.
+Adding non-output bit \d [45] to partition 1.
+Adding non-output bit \d [44] to partition 1.
+Adding non-output bit \d [43] to partition 1.
+Adding non-output bit \d [42] to partition 1.
+Adding non-output bit \d [41] to partition 1.
+Adding non-output bit \d [40] to partition 1.
+Adding non-output bit \d [39] to partition 1.
+Adding non-output bit \d [38] to partition 1.
+Adding non-output bit \d [37] to partition 1.
+Adding non-output bit \d [36] to partition 1.
+Adding non-output bit \d [35] to partition 1.
+Adding non-output bit \d [34] to partition 1.
+Adding non-output bit \d [33] to partition 1.
+Adding non-output bit \d [32] to partition 1.
+Adding non-output bit \d [31] to partition 1.
+Adding non-output bit \d [30] to partition 1.
+Adding non-output bit \d [29] to partition 1.
+Adding non-output bit \d [28] to partition 1.
+Adding non-output bit \d [27] to partition 1.
+Adding non-output bit \d [26] to partition 1.
+Adding non-output bit \d [25] to partition 1.
+Adding non-output bit \d [24] to partition 1.
+Adding non-output bit \d [23] to partition 1.
+Adding non-output bit \d [22] to partition 1.
+Adding non-output bit \d [21] to partition 1.
+Adding non-output bit \d [20] to partition 1.
+Adding non-output bit \d [19] to partition 1.
+Adding non-output bit \d [18] to partition 1.
+Adding non-output bit \d [17] to partition 1.
+Adding non-output bit \d [16] to partition 1.
+Adding non-output bit \d [15] to partition 1.
+Adding non-output bit \d [14] to partition 1.
+Adding non-output bit \d [13] to partition 1.
+Adding non-output bit \d [12] to partition 1.
+Adding non-output bit \d [11] to partition 1.
+Adding non-output bit \d [10] to partition 1.
+Adding non-output bit \d [9] to partition 1.
+Adding non-output bit \d [8] to partition 1.
+Adding non-output bit \d [7] to partition 1.
+Adding non-output bit \d [6] to partition 1.
+Adding non-output bit \d [5] to partition 1.
+Adding non-output bit \d [4] to partition 1.
+Adding non-output bit \d [3] to partition 1.
+Adding non-output bit \d [2] to partition 1.
+Adding non-output bit \d [1] to partition 1.
+Adding non-output bit \d [0] to partition 1.
+Writing partition 0 as top.y.
+  partition pi bit 0: \d [4] <-> \d [4]
+  partition pi bit 1: \d [10] <-> \d [10]
+  partition pi bit 2: \d [16] <-> \d [16]
+  partition pi bit 3: \d [22] <-> \d [22]
+  partition pi bit 4: \d [28] <-> \d [28]
+  partition pi bit 5: \d [34] <-> \d [34]
+  partition pi bit 6: \d [40] <-> \d [40]
+  partition pi bit 7: \d [46] <-> \d [46]
+  partition pi bit 8: \d [52] <-> \d [52]
+  partition pi bit 9: \d [58] <-> \d [58]
+  partition pi bit 10: \d [64] <-> \d [64]
+  partition pi bit 11: \d [70] <-> \d [70]
+  partition pi bit 12: \d [3] <-> \d [3]
+  partition pi bit 13: \d [9] <-> \d [9]
+  partition pi bit 14: \d [15] <-> \d [15]
+  partition pi bit 15: \d [21] <-> \d [21]
+  partition pi bit 16: \d [27] <-> \d [27]
+  partition pi bit 17: \d [33] <-> \d [33]
+  partition pi bit 18: \d [39] <-> \d [39]
+  partition pi bit 19: \d [45] <-> \d [45]
+  partition pi bit 20: \d [51] <-> \d [51]
+  partition pi bit 21: \d [57] <-> \d [57]
+  partition pi bit 22: \d [63] <-> \d [63]
+  partition pi bit 23: \d [69] <-> \d [69]
+  partition pi bit 24: \d [2] <-> \d [2]
+  partition pi bit 25: \d [8] <-> \d [8]
+  partition pi bit 26: \d [14] <-> \d [14]
+  partition pi bit 27: \d [20] <-> \d [20]
+  partition pi bit 28: \d [26] <-> \d [26]
+  partition pi bit 29: \d [32] <-> \d [32]
+  partition pi bit 30: \d [38] <-> \d [38]
+  partition pi bit 31: \d [44] <-> \d [44]
+  partition pi bit 32: \d [50] <-> \d [50]
+  partition pi bit 33: \d [56] <-> \d [56]
+  partition pi bit 34: \d [62] <-> \d [62]
+  partition pi bit 35: \d [68] <-> \d [68]
+  partition pi bit 36: \d [1] <-> \d [1]
+  partition pi bit 37: \d [7] <-> \d [7]
+  partition pi bit 38: \d [13] <-> \d [13]
+  partition pi bit 39: \d [19] <-> \d [19]
+  partition pi bit 40: \d [25] <-> \d [25]
+  partition pi bit 41: \d [31] <-> \d [31]
+  partition pi bit 42: \d [37] <-> \d [37]
+  partition pi bit 43: \d [43] <-> \d [43]
+  partition pi bit 44: \d [49] <-> \d [49]
+  partition pi bit 45: \d [55] <-> \d [55]
+  partition pi bit 46: \d [61] <-> \d [61]
+  partition pi bit 47: \d [67] <-> \d [67]
+  partition pi bit 48: \d [0] <-> \d [0]
+  partition pi bit 49: \d [6] <-> \d [6]
+  partition pi bit 50: \d [12] <-> \d [12]
+  partition pi bit 51: \d [18] <-> \d [18]
+  partition pi bit 52: \d [24] <-> \d [24]
+  partition pi bit 53: \d [30] <-> \d [30]
+  partition pi bit 54: \d [36] <-> \d [36]
+  partition pi bit 55: \d [42] <-> \d [42]
+  partition pi bit 56: \d [48] <-> \d [48]
+  partition pi bit 57: \d [54] <-> \d [54]
+  partition pi bit 58: \d [60] <-> \d [60]
+  partition pi bit 59: \d [66] <-> \d [66]
+  partition pi bit 60: \s [0] <-> \s [0]
+  partition pi bit 61: \s [1] <-> \s [1]
+  partition pi bit 62: \d [5] <-> \d [5]
+  partition pi bit 63: \d [11] <-> \d [11]
+  partition pi bit 64: \s [2] <-> \s [2]
+  partition pi bit 65: \d [17] <-> \d [17]
+  partition pi bit 66: \s [3] <-> \s [3]
+  partition pi bit 67: \d [23] <-> \d [23]
+  partition pi bit 68: \s [4] <-> \s [4]
+  partition pi bit 69: \d [29] <-> \d [29]
+  partition pi bit 70: \s [5] <-> \s [5]
+  partition pi bit 71: \d [35] <-> \d [35]
+  partition pi bit 72: \s [6] <-> \s [6]
+  partition pi bit 73: \d [41] <-> \d [41]
+  partition pi bit 74: \s [7] <-> \s [7]
+  partition pi bit 75: \d [47] <-> \d [47]
+  partition pi bit 76: \s [8] <-> \s [8]
+  partition pi bit 77: \d [53] <-> \d [53]
+  partition pi bit 78: \s [9] <-> \s [9]
+  partition pi bit 79: \d [59] <-> \d [59]
+  partition pi bit 80: \s [10] <-> \s [10]
+  partition pi bit 81: \d [65] <-> \d [65]
+  partition pi bit 82: \s [11] <-> \s [11]
+  partition pi bit 83: \d [71] <-> \d [71]
+  partition po bit 0: \y [4] <-> \y [4]
+  partition po bit 1: \y [3] <-> \y [3]
+  partition po bit 2: \y [2] <-> \y [2]
+  partition po bit 3: \y [1] <-> \y [1]
+  partition po bit 4: \y [0] <-> \y [0]
+  partition po bit 5: \y [5] <-> \y [5]
+
+3.1.5. Executing RTLIL backend.
+Output filename: partitions/top.y.il
+<suppressed ~2751 debug messages>
+
+3.1.6. Executing CHECK pass (checking for obvious problems).
+Checking module gate.top.y...
+Checking module gold.top.y...
+Found and reported 0 problems.
+
+Writing partition 1 as top.
+  partition pi bit 0: \d [0] <-> \d [0]
+  partition pi bit 1: \d [6] <-> \d [6]
+  partition pi bit 2: \d [12] <-> \d [12]
+  partition pi bit 3: \d [18] <-> \d [18]
+  partition pi bit 4: \d [24] <-> \d [24]
+  partition pi bit 5: \d [30] <-> \d [30]
+  partition pi bit 6: \d [36] <-> \d [36]
+  partition pi bit 7: \d [42] <-> \d [42]
+  partition pi bit 8: \d [48] <-> \d [48]
+  partition pi bit 9: \d [54] <-> \d [54]
+  partition pi bit 10: \d [60] <-> \d [60]
+  partition pi bit 11: \d [66] <-> \d [66]
+  partition pi bit 12: \d [1] <-> \d [1]
+  partition pi bit 13: \d [7] <-> \d [7]
+  partition pi bit 14: \d [13] <-> \d [13]
+  partition pi bit 15: \d [19] <-> \d [19]
+  partition pi bit 16: \d [25] <-> \d [25]
+  partition pi bit 17: \d [31] <-> \d [31]
+  partition pi bit 18: \d [37] <-> \d [37]
+  partition pi bit 19: \d [43] <-> \d [43]
+  partition pi bit 20: \d [49] <-> \d [49]
+  partition pi bit 21: \d [55] <-> \d [55]
+  partition pi bit 22: \d [61] <-> \d [61]
+  partition pi bit 23: \d [67] <-> \d [67]
+  partition pi bit 24: \d [2] <-> \d [2]
+  partition pi bit 25: \d [8] <-> \d [8]
+  partition pi bit 26: \d [14] <-> \d [14]
+  partition pi bit 27: \d [20] <-> \d [20]
+  partition pi bit 28: \d [26] <-> \d [26]
+  partition pi bit 29: \d [32] <-> \d [32]
+  partition pi bit 30: \d [38] <-> \d [38]
+  partition pi bit 31: \d [44] <-> \d [44]
+  partition pi bit 32: \d [50] <-> \d [50]
+  partition pi bit 33: \d [56] <-> \d [56]
+  partition pi bit 34: \d [62] <-> \d [62]
+  partition pi bit 35: \d [68] <-> \d [68]
+  partition pi bit 36: \d [3] <-> \d [3]
+  partition pi bit 37: \d [9] <-> \d [9]
+  partition pi bit 38: \d [15] <-> \d [15]
+  partition pi bit 39: \d [21] <-> \d [21]
+  partition pi bit 40: \d [27] <-> \d [27]
+  partition pi bit 41: \d [33] <-> \d [33]
+  partition pi bit 42: \d [39] <-> \d [39]
+  partition pi bit 43: \d [45] <-> \d [45]
+  partition pi bit 44: \d [51] <-> \d [51]
+  partition pi bit 45: \d [57] <-> \d [57]
+  partition pi bit 46: \d [63] <-> \d [63]
+  partition pi bit 47: \d [69] <-> \d [69]
+  partition pi bit 48: \d [4] <-> \d [4]
+  partition pi bit 49: \d [10] <-> \d [10]
+  partition pi bit 50: \d [16] <-> \d [16]
+  partition pi bit 51: \d [22] <-> \d [22]
+  partition pi bit 52: \d [28] <-> \d [28]
+  partition pi bit 53: \d [34] <-> \d [34]
+  partition pi bit 54: \d [40] <-> \d [40]
+  partition pi bit 55: \d [46] <-> \d [46]
+  partition pi bit 56: \d [52] <-> \d [52]
+  partition pi bit 57: \d [58] <-> \d [58]
+  partition pi bit 58: \d [64] <-> \d [64]
+  partition pi bit 59: \d [70] <-> \d [70]
+  partition pi bit 60: \s [0] <-> \s [0]
+  partition pi bit 61: \s [1] <-> \s [1]
+  partition pi bit 62: \d [5] <-> \d [5]
+  partition pi bit 63: \d [11] <-> \d [11]
+  partition pi bit 64: \s [2] <-> \s [2]
+  partition pi bit 65: \d [17] <-> \d [17]
+  partition pi bit 66: \s [3] <-> \s [3]
+  partition pi bit 67: \d [23] <-> \d [23]
+  partition pi bit 68: \s [4] <-> \s [4]
+  partition pi bit 69: \d [29] <-> \d [29]
+  partition pi bit 70: \s [5] <-> \s [5]
+  partition pi bit 71: \d [35] <-> \d [35]
+  partition pi bit 72: \s [6] <-> \s [6]
+  partition pi bit 73: \d [41] <-> \d [41]
+  partition pi bit 74: \s [7] <-> \s [7]
+  partition pi bit 75: \d [47] <-> \d [47]
+  partition pi bit 76: \s [8] <-> \s [8]
+  partition pi bit 77: \d [53] <-> \d [53]
+  partition pi bit 78: \s [9] <-> \s [9]
+  partition pi bit 79: \d [59] <-> \d [59]
+  partition pi bit 80: \s [10] <-> \s [10]
+  partition pi bit 81: \d [65] <-> \d [65]
+  partition pi bit 82: \s [11] <-> \s [11]
+  partition pi bit 83: \d [71] <-> \d [71]
+  partition po bit 0: \y [0] <-> \y [0]
+  partition po bit 1: \y [1] <-> \y [1]
+  partition po bit 2: \y [2] <-> \y [2]
+  partition po bit 3: \y [3] <-> \y [3]
+  partition po bit 4: \y [4] <-> \y [4]
+  partition po bit 5: \y [5] <-> \y [5]
+
+3.1.7. Executing RTLIL backend.
+Output filename: modules/top.il
+<suppressed ~942 debug messages>
+
+End of script. Logfile hash: ea2ed75b90
+Yosys 0.69+274 (git sha1 7513f8df8, Release, GNU /usr/bin/x86_64-w64-mingw32-g++ 15.2.1)
+Time spent: 14% 2x write_rtlil (0 sec), 14% 2x read_rtlil (0 sec), ...

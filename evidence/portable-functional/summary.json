@@ -1,0 +1,86 @@
+{
+  "status": "PASS_REEXPORTED_GRAPHS_FRESH_STATE_RELATIONS_BOTH_PRESSURE_REFERENCES_AND_28_RTL_CASES",
+  "candidate_sha256": "600cc3db8696d3bd7b2ce16c23abeed49e1bb9977a7c9392dc50c4207c2f7b25",
+  "proof_tool_sha256": "bafe6f5c0493c29126222a7b5b7818d93c92ef40938c7cfcdb1e36bb67587024",
+  "cases": {
+    "test1": {
+      "checkpoint": "STATE_TRANSITION_SAT_PASS",
+      "final": "STATE_TRANSITION_SAT_PASS"
+    },
+    "test2": {
+      "checkpoint": "COMBINATIONAL_SAT_PASS",
+      "final": "COMBINATIONAL_SAT_PASS"
+    },
+    "test3": {
+      "checkpoint": "STATE_TRANSITION_SAT_PASS",
+      "final": "STATE_TRANSITION_SAT_PASS"
+    },
+    "test4": {
+      "checkpoint": "STATE_TRANSITION_SAT_PASS",
+      "final": "STATE_TRANSITION_SAT_PASS"
+    },
+    "pmux_case01_balanced": {
+      "checkpoint": "STATE_TRANSITION_SAT_PASS",
+      "final": "STATE_TRANSITION_SAT_PASS"
+    },
+    "pmux_case02_pipeline": {
+      "checkpoint": "STATE_TRANSITION_SAT_PASS",
+      "final": "STATE_TRANSITION_SAT_PASS"
+    },
+    "pmux_case03_crossbar": {
+      "checkpoint": "STATE_TRANSITION_SAT_PASS",
+      "final": "STATE_TRANSITION_SAT_PASS"
+    },
+    "pmux_case04_feedback": {
+      "checkpoint": "STATE_TRANSITION_SAT_PASS",
+      "final": "STATE_TRANSITION_SAT_PASS"
+    },
+    "pmux_case05_nested": {
+      "checkpoint": "STATE_TRANSITION_SAT_PASS",
+      "final": "STATE_TRANSITION_SAT_PASS"
+    },
+    "baseline_logic_unit_999": {
+      "checkpoint": "STATE_TRANSITION_SAT_PASS",
+      "final": "STATE_TRANSITION_SAT_PASS"
+    }
+  },
+  "pressure": {
+    "current": "PASS_ALL_STATE_INIT_EVENT_OUTPUTS",
+    "historical": "PASS_ALL_STATE_INIT_EVENT_OUTPUTS"
+  },
+  "rtl": {
+    "generic_00": "RTL_INDUCTION_PASS",
+    "generic_00_renamed": "RTL_INDUCTION_PASS",
+    "generic_01": "RTL_INDUCTION_PASS",
+    "generic_02": "RTL_INDUCTION_PASS",
+    "generic_03": "RTL_INDUCTION_PASS",
+    "generic_04": "RTL_INDUCTION_PASS",
+    "generic_05": "RTL_INDUCTION_PASS",
+    "generic_05_renamed": "RTL_INDUCTION_PASS",
+    "generic_06": "RTL_INDUCTION_PASS",
+    "generic_07": "RTL_INDUCTION_PASS",
+    "generic_08": "RTL_INDUCTION_PASS",
+    "generic_09": "RTL_INDUCTION_PASS",
+    "generic_10": "RTL_INDUCTION_PASS",
+    "generic_11": "RTL_INDUCTION_PASS",
+    "generic_12": "RTL_INDUCTION_PASS",
+    "generic_12_renamed": "RTL_INDUCTION_PASS",
+    "generic_13": "RTL_INDUCTION_PASS",
+    "generic_14": "RTL_INDUCTION_PASS",
+    "generic_15": "RTL_INDUCTION_PASS",
+    "generic_16": "RTL_INDUCTION_PASS",
+    "generic_17": "RTL_INDUCTION_PASS",
+    "generic_17_renamed": "RTL_INDUCTION_PASS",
+    "generic_18": "RTL_INDUCTION_PASS",
+    "generic_19": "RTL_INDUCTION_PASS",
+    "generic_20": "RTL_INDUCTION_PASS",
+    "generic_21": "RTL_INDUCTION_PASS",
+    "generic_22": "RTL_INDUCTION_PASS",
+    "generic_23": "RTL_INDUCTION_PASS"
+  },
+  "scope": "R48-to-candidate exact state relations plus both original pressure references; explicit-init RTL collection; defined binary primitive semantics",
+  "faults": {
+    "public_output": "REJECTED",
+    "explicit_initial": "REJECTED"
+  }
+}

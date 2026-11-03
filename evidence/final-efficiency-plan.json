@@ -1,0 +1,12 @@
+{
+  "status": "FROZEN_BEFORE_EFFICIENCY",
+  "candidate_sha256": "600cc3db8696d3bd7b2ce16c23abeed49e1bb9977a7c9392dc50c4207c2f7b25",
+  "batches": [
+    "r50-regenerated-primary",
+    "r50-regenerated-stability1",
+    "r50-regenerated-stability2"
+  ],
+  "primary_rule": "one declared batch determines current score; stability batches all reported, never substitute for failed primary",
+  "measurement": "Rule132 warmup10, baseline before candidate, exactly5 reviewpairs on predefined trigger",
+  "max_background_note": "no active task build/proof during measurement; system background not independently certified"
+}

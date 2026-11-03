@@ -1,0 +1,38 @@
+
+-- Executing script file `run.ys' --
+
+1. Executing Verilog-2005 frontend: D:\PROJECT\FPGA\压力测试加固\20261027_structural_rules\continuation-20261030\r48-one-snapshot-clean\program\share/intel/cycloneiv/cells_sim.v
+Parsing SystemVerilog input from `D:\PROJECT\FPGA\压力测试加固\20261027_structural_rules\continuation-20261030\r48-one-snapshot-clean\program\share/intel/cycloneiv/cells_sim.v' to AST representation.
+Generating RTLIL representation for module `\VCC'.
+Generating RTLIL representation for module `\GND'.
+Generating RTLIL representation for module `\cycloneiv_io_ibuf'.
+Generating RTLIL representation for module `\cycloneiv_io_obuf'.
+Generating RTLIL representation for module `\cycloneiv_lcell_comb'.
+Generating RTLIL representation for module `\dffeas'.
+Generating RTLIL representation for module `\cycloneiv_pll'.
+Successfully finished Verilog frontend.
+
+2. Executing Verilog-2005 frontend: fixture.v
+Parsing Verilog input from `fixture.v' to AST representation.
+Generating RTLIL representation for module `\t'.
+Successfully finished Verilog frontend.
+
+3. Executing HIERARCHY pass (managing design hierarchy).
+
+3.1. Analyzing design hierarchy..
+Top module:  \t
+
+3.2. Analyzing design hierarchy..
+Top module:  \t
+Removed 0 unused modules.
+
+4. Executing JSON backend.
+
+5. Executing LUT_FF_LOAD exact absorption pass.
+LUT_FF_LOAD: scanned_ff=1 candidates=1 edits=1 saved_luts=1 work=991 exhausted=0
+
+6. Executing JSON backend.
+
+End of script. Logfile hash: a4479bd1ad
+Yosys 0.69 (git sha1 9f75ca1f9-dirty, Release, LLVM-MinGW 20261020 Clang 23.1.4; isolated Windows build)
+Time spent: 20% 4x write_json (0 sec), 20% 4x read_verilog (0 sec), ...

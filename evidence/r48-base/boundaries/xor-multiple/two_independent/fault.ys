@@ -1,0 +1,2 @@
+read_json fault.json
+write_rtlil fault.il

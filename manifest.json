@@ -1,0 +1,14 @@
+{
+  "status": "LOCAL_ACCEPTANCE_AND_PORTABLE_FUNCTIONAL_AND_FRESH_BUILD_PASS",
+  "candidate_sha256": "600cc3db8696d3bd7b2ce16c23abeed49e1bb9977a7c9392dc50c4207c2f7b25",
+  "abc_sha256": "1842fb358da1efb7f61ab3698b6fb0c9b35d3bd8e517e04abbc1ae1711038089",
+  "compiler": "LLVM-MinGW 23.1.4 -O2",
+  "regeneration": "fresh CMake configuration with verified compiler facts plus all enabled generated inputs; 160 new objects",
+  "formal_submission_unchanged": true,
+  "portable_functional": "evidence/portable-functional/summary.json",
+  "portable_build": "evidence/portable-build/report.json",
+  "rebuilt_graphs": "evidence/rebuilt-graphs/summary.json",
+  "new_rtl_cases": 36,
+  "cross_metamorphic_relations": 6,
+  "final_archive_verification": "Separate .zip.verification.json binds actual archive checksum and extracted functional replay"
+}

@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "cases": {
+    "variant_0_hierarchy": "PASS_CROSS_VARIANT_RTL_TO_CANDIDATE",
+    "variant_0_demorgan": "PASS_CROSS_VARIANT_RTL_TO_CANDIDATE",
+    "variant_0_orderB": "PASS_CROSS_VARIANT_RTL_TO_CANDIDATE",
+    "variant_1_hierarchy": "PASS_CROSS_VARIANT_RTL_TO_CANDIDATE",
+    "variant_1_demorgan": "PASS_CROSS_VARIANT_RTL_TO_CANDIDATE",
+    "variant_1_orderB": "PASS_CROSS_VARIANT_RTL_TO_CANDIDATE"
+  }
+}

@@ -1,0 +1,805 @@
+{
+  "status": "LOCAL_ACCEPTANCE_PASS_PORTABLE_CANDIDATE_READY",
+  "requested_checks": {
+    "clean_rebuild": "PASS_FROZEN_SOURCE_AND_GENERATED_INPUTS_160_NEW_OBJECTS",
+    "functional_boundary_tests": "PASS_47_LISTED_CHECKS_PLUS_23_STRONG_RECHECKS",
+    "independent_equivalence": "PASS_SCOPED_78_DESIGNS_156_CHECKPOINTS"
+  },
+  "candidate_sha256": "2c214fbe02ae67d918eec8f91c1709a856dba0985dd507f600f5b4e467e309e5",
+  "cases": {
+    "test1": {
+      "checkpoints": {
+        "checkpoint": "COMPLETE_STATE_EVENT_INIT_SAT",
+        "final": "COMPLETE_STATE_EVENT_INIT_SAT"
+      },
+      "synth_options": [],
+      "flow_note": "Default flow"
+    },
+    "test2": {
+      "checkpoints": {
+        "checkpoint": "EQY_PARTITION_SAT_PASS",
+        "final": "EQY_PARTITION_SAT_PASS"
+      },
+      "synth_options": [],
+      "flow_note": "Default flow"
+    },
+    "test3": {
+      "checkpoints": {
+        "checkpoint": "EQY_PARTITION_SAT_PASS",
+        "final": "EQY_PARTITION_SAT_PASS"
+      },
+      "synth_options": [],
+      "flow_note": "Default flow"
+    },
+    "test4": {
+      "checkpoints": {
+        "checkpoint": "COMPLETE_STATE_EVENT_INIT_SAT",
+        "final": "COMPLETE_STATE_EVENT_INIT_SAT"
+      },
+      "synth_options": [],
+      "flow_note": "Default flow"
+    },
+    "pmux_complete_1": {
+      "checkpoints": {
+        "checkpoint": "STRUCTURAL_IDENTITY",
+        "final": "STRUCTURAL_IDENTITY"
+      },
+      "synth_options": [],
+      "flow_note": "Default flow"
+    },
+    "pmux_complete_3": {
+      "checkpoints": {
+        "checkpoint": "STRUCTURAL_IDENTITY",
+        "final": "STRUCTURAL_IDENTITY"
+      },
+      "synth_options": [],
+      "flow_note": "Default flow"
+    },
+    "pmux_complete_5": {
+      "checkpoints": {
+        "checkpoint": "STRUCTURAL_IDENTITY",
+        "final": "STRUCTURAL_IDENTITY"
+      },
+      "synth_options": [],
+      "flow_note": "Default flow"
+    },
+    "pmux_partial": {
+      "checkpoints": {
+        "checkpoint": "EQY_PARTITION_SAT_PASS",
+        "final": "EQY_PARTITION_SAT_PASS"
+      },
+      "synth_options": [],
+      "flow_note": "Default flow"
+    },
+    "priority_2": {
+      "checkpoints": {
+        "checkpoint": "STRUCTURAL_IDENTITY",
+        "final": "STRUCTURAL_IDENTITY"
+      },
+      "synth_options": [],
+      "flow_note": "Default flow"
+    },
+    "priority_16": {
+      "checkpoints": {
+        "checkpoint": "EQY_PARTITION_SAT_PASS",
+        "final": "EQY_PARTITION_SAT_PASS"
+      },
+      "synth_options": [],
+      "flow_note": "Default flow"
+    },
+    "priority_17": {
+      "checkpoints": {
+        "checkpoint": "EQY_PARTITION_SAT_PASS",
+        "final": "EQY_PARTITION_SAT_PASS"
+      },
+      "synth_options": [],
+      "flow_note": "Default flow"
+    },
+    "priority_mixed": {
+      "checkpoints": {
+        "checkpoint": "EQY_PARTITION_SAT_PASS",
+        "final": "EQY_PARTITION_SAT_PASS"
+      },
+      "synth_options": [],
+      "flow_note": "Default flow"
+    },
+    "stateful_4": {
+      "checkpoints": {
+        "checkpoint": "COMPLETE_STATE_EVENT_INIT_SAT",
+        "final": "COMPLETE_STATE_EVENT_INIT_SAT"
+      },
+      "synth_options": [],
+      "flow_note": "Default flow"
+    },
+    "stateful_8": {
+      "checkpoints": {
+        "checkpoint": "COMPLETE_STATE_EVENT_INIT_SAT",
+        "final": "COMPLETE_STATE_EVENT_INIT_SAT"
+      },
+      "synth_options": [],
+      "flow_note": "Default flow"
+    },
+    "hierarchical_sequential": {
+      "checkpoints": {
+        "checkpoint": "COMPLETE_STATE_EVENT_INIT_SAT",
+        "final": "COMPLETE_STATE_EVENT_INIT_SAT"
+      },
+      "synth_options": [],
+      "flow_note": "Default flow"
+    },
+    "high_fanout": {
+      "checkpoints": {
+        "checkpoint": "STRUCTURAL_IDENTITY",
+        "final": "STRUCTURAL_IDENTITY"
+      },
+      "synth_options": [],
+      "flow_note": "Default flow"
+    },
+    "rom_1": {
+      "checkpoints": {
+        "checkpoint": "EQY_PARTITION_SAT_PASS",
+        "final": "EQY_PARTITION_SAT_PASS"
+      },
+      "synth_options": [],
+      "flow_note": "Default flow"
+    },
+    "rom_16": {
+      "checkpoints": {
+        "checkpoint": "EQY_PARTITION_SAT_PASS",
+        "final": "EQY_PARTITION_SAT_PASS"
+      },
+      "synth_options": [],
+      "flow_note": "Default flow"
+    },
+    "cells_99": {
+      "checkpoints": {
+        "checkpoint": "STRUCTURAL_IDENTITY",
+        "final": "STRUCTURAL_IDENTITY"
+      },
+      "synth_options": [],
+      "flow_note": "Default flow"
+    },
+    "cells_498": {
+      "checkpoints": {
+        "checkpoint": "STRUCTURAL_IDENTITY",
+        "final": "STRUCTURAL_IDENTITY"
+      },
+      "synth_options": [],
+      "flow_note": "Default flow"
+    },
+    "cells_999": {
+      "checkpoints": {
+        "checkpoint": "STRUCTURAL_IDENTITY",
+        "final": "STRUCTURAL_IDENTITY"
+      },
+      "synth_options": [],
+      "flow_note": "Default flow"
+    },
+    "feedback_width_3": {
+      "checkpoints": {
+        "checkpoint": "COMPLETE_STATE_EVENT_INIT_SAT",
+        "final": "COMPLETE_STATE_EVENT_INIT_SAT"
+      },
+      "synth_options": [],
+      "flow_note": "Default flow"
+    },
+    "feedback_width_5": {
+      "checkpoints": {
+        "checkpoint": "COMPLETE_STATE_EVENT_INIT_SAT",
+        "final": "COMPLETE_STATE_EVENT_INIT_SAT"
+      },
+      "synth_options": [],
+      "flow_note": "Default flow"
+    },
+    "feedback_width_12": {
+      "checkpoints": {
+        "checkpoint": "COMPLETE_STATE_EVENT_INIT_SAT",
+        "final": "COMPLETE_STATE_EVENT_INIT_SAT"
+      },
+      "synth_options": [],
+      "flow_note": "Default flow"
+    },
+    "feedback_width_16": {
+      "checkpoints": {
+        "checkpoint": "COMPLETE_STATE_EVENT_INIT_SAT",
+        "final": "COMPLETE_STATE_EVENT_INIT_SAT"
+      },
+      "synth_options": [],
+      "flow_note": "Default flow"
+    },
+    "decoder_complete_2": {
+      "checkpoints": {
+        "checkpoint": "STRUCTURAL_IDENTITY",
+        "final": "STRUCTURAL_IDENTITY"
+      },
+      "synth_options": [],
+      "flow_note": "Default flow"
+    },
+    "decoder_partial_2": {
+      "checkpoints": {
+        "checkpoint": "STRUCTURAL_IDENTITY",
+        "final": "STRUCTURAL_IDENTITY"
+      },
+      "synth_options": [],
+      "flow_note": "Default flow"
+    },
+    "decoder_complete_4": {
+      "checkpoints": {
+        "checkpoint": "STRUCTURAL_IDENTITY",
+        "final": "STRUCTURAL_IDENTITY"
+      },
+      "synth_options": [],
+      "flow_note": "Default flow"
+    },
+    "decoder_partial_4": {
+      "checkpoints": {
+        "checkpoint": "EQY_PARTITION_SAT_PASS",
+        "final": "EQY_PARTITION_SAT_PASS"
+      },
+      "synth_options": [],
+      "flow_note": "Default flow"
+    },
+    "mixed_pmux_2_6": {
+      "checkpoints": {
+        "checkpoint": "EQY_PARTITION_SAT_PASS",
+        "final": "EQY_PARTITION_SAT_PASS"
+      },
+      "synth_options": [],
+      "flow_note": "Default flow"
+    },
+    "mixed_pmux_4_6": {
+      "checkpoints": {
+        "checkpoint": "EQY_PARTITION_SAT_PASS",
+        "final": "EQY_PARTITION_SAT_PASS"
+      },
+      "synth_options": [],
+      "flow_note": "Default flow"
+    },
+    "mixed_pmux_5_4": {
+      "checkpoints": {
+        "checkpoint": "EQY_PARTITION_SAT_PASS",
+        "final": "EQY_PARTITION_SAT_PASS"
+      },
+      "synth_options": [],
+      "flow_note": "Default flow"
+    },
+    "mixed_pmux_5_29": {
+      "checkpoints": {
+        "checkpoint": "EQY_PARTITION_SAT_PASS",
+        "final": "EQY_PARTITION_SAT_PASS"
+      },
+      "synth_options": [],
+      "flow_note": "Default flow"
+    },
+    "decoder_986_cells": {
+      "checkpoints": {
+        "checkpoint": "STRUCTURAL_IDENTITY",
+        "final": "STRUCTURAL_IDENTITY"
+      },
+      "synth_options": [],
+      "flow_note": "Default flow"
+    },
+    "scalar_one_feedback": {
+      "checkpoints": {
+        "checkpoint": "COMPLETE_STATE_EVENT_INIT_SAT",
+        "final": "COMPLETE_STATE_EVENT_INIT_SAT"
+      },
+      "synth_options": [],
+      "flow_note": "Default flow"
+    },
+    "mixed_initial_feedback": {
+      "checkpoints": {
+        "checkpoint": "COMPLETE_STATE_EVENT_INIT_SAT",
+        "final": "COMPLETE_STATE_EVENT_INIT_SAT"
+      },
+      "synth_options": [],
+      "flow_note": "Default flow"
+    },
+    "hold_stateful_7": {
+      "checkpoints": {
+        "checkpoint": "COMPLETE_STATE_EVENT_INIT_SAT",
+        "final": "COMPLETE_STATE_EVENT_INIT_SAT"
+      },
+      "synth_options": [],
+      "flow_note": "Default flow"
+    },
+    "hold_stateful_9": {
+      "checkpoints": {
+        "checkpoint": "COMPLETE_STATE_EVENT_INIT_SAT",
+        "final": "COMPLETE_STATE_EVENT_INIT_SAT"
+      },
+      "synth_options": [],
+      "flow_note": "Default flow"
+    },
+    "hold_priority7_w9": {
+      "checkpoints": {
+        "checkpoint": "EQY_PARTITION_SAT_PASS",
+        "final": "EQY_PARTITION_SAT_PASS"
+      },
+      "synth_options": [],
+      "flow_note": "Default flow"
+    },
+    "hold_priority18_w7": {
+      "checkpoints": {
+        "checkpoint": "EQY_PARTITION_SAT_PASS",
+        "final": "EQY_PARTITION_SAT_PASS"
+      },
+      "synth_options": [],
+      "flow_note": "Default flow"
+    },
+    "hold_decode3_w24_g6": {
+      "checkpoints": {
+        "checkpoint": "STRUCTURAL_IDENTITY",
+        "final": "STRUCTURAL_IDENTITY"
+      },
+      "synth_options": [],
+      "flow_note": "Default flow"
+    },
+    "hold_partial5_w8_g3": {
+      "checkpoints": {
+        "checkpoint": "EQY_PARTITION_SAT_PASS",
+        "final": "EQY_PARTITION_SAT_PASS"
+      },
+      "synth_options": [],
+      "flow_note": "Default flow"
+    },
+    "hold_rom_variant_1": {
+      "checkpoints": {
+        "checkpoint": "EQY_PARTITION_SAT_PASS",
+        "final": "EQY_PARTITION_SAT_PASS"
+      },
+      "synth_options": [],
+      "flow_note": "Default flow"
+    },
+    "hold_rom_variant_3": {
+      "checkpoints": {
+        "checkpoint": "EQY_PARTITION_SAT_PASS",
+        "final": "EQY_PARTITION_SAT_PASS"
+      },
+      "synth_options": [],
+      "flow_note": "Default flow"
+    },
+    "hold_lut_alias": {
+      "checkpoints": {
+        "checkpoint": "STRUCTURAL_IDENTITY",
+        "final": "STRUCTURAL_IDENTITY"
+      },
+      "synth_options": [],
+      "flow_note": "Default flow"
+    },
+    "hold_parallel_luts": {
+      "checkpoints": {
+        "checkpoint": "EQY_PARTITION_SAT_PASS",
+        "final": "EQY_PARTITION_SAT_PASS"
+      },
+      "synth_options": [],
+      "flow_note": "Default flow"
+    },
+    "fresh_rom_2_s47": {
+      "checkpoints": {
+        "checkpoint": "EQY_PARTITION_SAT_PASS",
+        "final": "EQY_PARTITION_SAT_PASS"
+      },
+      "synth_options": [],
+      "flow_note": "Default flow"
+    },
+    "fresh_rom_4_s61": {
+      "checkpoints": {
+        "checkpoint": "EQY_PARTITION_SAT_PASS",
+        "final": "EQY_PARTITION_SAT_PASS"
+      },
+      "synth_options": [],
+      "flow_note": "Default flow"
+    },
+    "fresh_stateful_11": {
+      "checkpoints": {
+        "checkpoint": "COMPLETE_STATE_EVENT_INIT_SAT",
+        "final": "COMPLETE_STATE_EVENT_INIT_SAT"
+      },
+      "synth_options": [],
+      "flow_note": "Default flow"
+    },
+    "fresh_priority12_w6": {
+      "checkpoints": {
+        "checkpoint": "EQY_PARTITION_SAT_PASS",
+        "final": "EQY_PARTITION_SAT_PASS"
+      },
+      "synth_options": [],
+      "flow_note": "Default flow"
+    },
+    "pmux_case01_balanced": {
+      "checkpoints": {
+        "checkpoint": "COMPLETE_STATE_EVENT_INIT_SAT",
+        "final": "COMPLETE_STATE_EVENT_INIT_SAT"
+      },
+      "synth_options": [],
+      "flow_note": "Default flow"
+    },
+    "pmux_case01_balanced_double_lanes": {
+      "checkpoints": {
+        "checkpoint": "COMPLETE_STATE_EVENT_INIT_SAT",
+        "final": "COMPLETE_STATE_EVENT_INIT_SAT"
+      },
+      "synth_options": [],
+      "flow_note": "Default flow"
+    },
+    "pmux_case02_pipeline": {
+      "checkpoints": {
+        "checkpoint": "COMPLETE_STATE_EVENT_INIT_SAT",
+        "final": "COMPLETE_STATE_EVENT_INIT_SAT"
+      },
+      "synth_options": [],
+      "flow_note": "Default flow"
+    },
+    "pmux_case02_pipeline_double_lanes": {
+      "checkpoints": {
+        "checkpoint": "COMPLETE_STATE_EVENT_INIT_SAT",
+        "final": "COMPLETE_STATE_EVENT_INIT_SAT"
+      },
+      "synth_options": [],
+      "flow_note": "Default flow"
+    },
+    "pmux_case03_crossbar": {
+      "checkpoints": {
+        "checkpoint": "COMPLETE_STATE_EVENT_INIT_SAT",
+        "final": "COMPLETE_STATE_EVENT_INIT_SAT"
+      },
+      "synth_options": [],
+      "flow_note": "Default flow"
+    },
+    "pmux_case03_crossbar_double_lanes": {
+      "checkpoints": {
+        "checkpoint": "COMPLETE_STATE_EVENT_INIT_SAT",
+        "final": "COMPLETE_STATE_EVENT_INIT_SAT"
+      },
+      "synth_options": [],
+      "flow_note": "Default flow"
+    },
+    "pmux_case04_feedback": {
+      "checkpoints": {
+        "checkpoint": "COMPLETE_STATE_EVENT_INIT_SAT",
+        "final": "COMPLETE_STATE_EVENT_INIT_SAT"
+      },
+      "synth_options": [],
+      "flow_note": "Default flow"
+    },
+    "pmux_case04_feedback_double_lanes": {
+      "checkpoints": {
+        "checkpoint": "COMPLETE_STATE_EVENT_INIT_SAT",
+        "final": "COMPLETE_STATE_EVENT_INIT_SAT"
+      },
+      "synth_options": [],
+      "flow_note": "Default flow"
+    },
+    "pmux_case05_nested": {
+      "checkpoints": {
+        "checkpoint": "COMPLETE_STATE_EVENT_INIT_SAT",
+        "final": "COMPLETE_STATE_EVENT_INIT_SAT"
+      },
+      "synth_options": [],
+      "flow_note": "Default flow"
+    },
+    "pmux_case05_nested_double_lanes": {
+      "checkpoints": {
+        "checkpoint": "COMPLETE_STATE_EVENT_INIT_SAT",
+        "final": "COMPLETE_STATE_EVENT_INIT_SAT"
+      },
+      "synth_options": [],
+      "flow_note": "Default flow"
+    },
+    "epfl_ctrl": {
+      "checkpoints": {
+        "checkpoint": "EQY_PARTITION_SAT_PASS",
+        "final": "EQY_PARTITION_SAT_PASS"
+      },
+      "synth_options": [],
+      "flow_note": "Default flow"
+    },
+    "epfl_cavlc": {
+      "checkpoints": {
+        "checkpoint": "EQY_PARTITION_SAT_PASS",
+        "final": "EQY_PARTITION_SAT_PASS"
+      },
+      "synth_options": [],
+      "flow_note": "Default flow"
+    },
+    "epfl_int2float": {
+      "checkpoints": {
+        "checkpoint": "EQY_PARTITION_SAT_PASS",
+        "final": "EQY_PARTITION_SAT_PASS"
+      },
+      "synth_options": [],
+      "flow_note": "Default flow"
+    },
+    "epfl_router": {
+      "checkpoints": {
+        "checkpoint": "EQY_PARTITION_SAT_PASS",
+        "final": "EQY_PARTITION_SAT_PASS"
+      },
+      "synth_options": [],
+      "flow_note": "Default flow"
+    },
+    "epfl_adder": {
+      "checkpoints": {
+        "checkpoint": "EQY_PARTITION_SAT_PASS",
+        "final": "EQY_PARTITION_SAT_PASS"
+      },
+      "synth_options": [],
+      "flow_note": "Default flow"
+    },
+    "epfl_bar": {
+      "checkpoints": {
+        "checkpoint": "EQY_PARTITION_SAT_PASS",
+        "final": "EQY_PARTITION_SAT_PASS"
+      },
+      "synth_options": [],
+      "flow_note": "Default flow"
+    },
+    "fresh_00": {
+      "checkpoints": {
+        "checkpoint": "COMPLETE_STATE_EVENT_INIT_SAT",
+        "final": "COMPLETE_STATE_EVENT_INIT_SAT"
+      },
+      "synth_options": [],
+      "flow_note": "Default flow"
+    },
+    "fresh_01": {
+      "checkpoints": {
+        "checkpoint": "COMPLETE_STATE_EVENT_INIT_SAT",
+        "final": "COMPLETE_STATE_EVENT_INIT_SAT"
+      },
+      "synth_options": [],
+      "flow_note": "Default flow"
+    },
+    "fresh_02": {
+      "checkpoints": {
+        "checkpoint": "COMPLETE_STATE_EVENT_INIT_SAT",
+        "final": "COMPLETE_STATE_EVENT_INIT_SAT"
+      },
+      "synth_options": [],
+      "flow_note": "Default flow"
+    },
+    "fresh_03": {
+      "checkpoints": {
+        "checkpoint": "STRUCTURAL_IDENTITY",
+        "final": "STRUCTURAL_IDENTITY"
+      },
+      "synth_options": [],
+      "flow_note": "Default flow"
+    },
+    "fresh_04": {
+      "checkpoints": {
+        "checkpoint": "COMPLETE_STATE_EVENT_INIT_SAT",
+        "final": "COMPLETE_STATE_EVENT_INIT_SAT"
+      },
+      "synth_options": [],
+      "flow_note": "Default flow"
+    },
+    "fresh_05": {
+      "checkpoints": {
+        "checkpoint": "COMPLETE_STATE_EVENT_INIT_SAT",
+        "final": "COMPLETE_STATE_EVENT_INIT_SAT"
+      },
+      "synth_options": [],
+      "flow_note": "Default flow"
+    },
+    "fresh_06": {
+      "checkpoints": {
+        "checkpoint": "COMPLETE_STATE_EVENT_INIT_SAT",
+        "final": "COMPLETE_STATE_EVENT_INIT_SAT"
+      },
+      "synth_options": [],
+      "flow_note": "Default flow"
+    },
+    "fresh_07": {
+      "checkpoints": {
+        "checkpoint": "COMPLETE_STATE_EVENT_INIT_SAT",
+        "final": "COMPLETE_STATE_EVENT_INIT_SAT"
+      },
+      "synth_options": [],
+      "flow_note": "Default flow"
+    },
+    "fresh_08": {
+      "checkpoints": {
+        "checkpoint": "COMPLETE_STATE_EVENT_INIT_SAT",
+        "final": "COMPLETE_STATE_EVENT_INIT_SAT"
+      },
+      "synth_options": [
+        "-nobram"
+      ],
+      "flow_note": "Original same-toolchain baseline default BRAM map cannot resolve defparam INIT. Preserve default failure, supplementary identical LUT-only option in both arms; not a default-BRAM PASS."
+    },
+    "fresh_09": {
+      "checkpoints": {
+        "checkpoint": "COMPLETE_STATE_EVENT_INIT_SAT",
+        "final": "COMPLETE_STATE_EVENT_INIT_SAT"
+      },
+      "synth_options": [],
+      "flow_note": "Default synth_intel options"
+    },
+    "fresh_10": {
+      "checkpoints": {
+        "checkpoint": "COMPLETE_STATE_EVENT_INIT_SAT",
+        "final": "COMPLETE_STATE_EVENT_INIT_SAT"
+      },
+      "synth_options": [],
+      "flow_note": "Default synth_intel options"
+    },
+    "fresh_11": {
+      "checkpoints": {
+        "checkpoint": "COMPLETE_STATE_EVENT_INIT_SAT",
+        "final": "COMPLETE_STATE_EVENT_INIT_SAT"
+      },
+      "synth_options": [],
+      "flow_note": "Default synth_intel options"
+    }
+  },
+  "checkpoint_methods": {
+    "COMPLETE_STATE_EVENT_INIT_SAT": 70,
+    "EQY_PARTITION_SAT_PASS": 56,
+    "STRUCTURAL_IDENTITY": 30
+  },
+  "boundary_unique_tests": 47,
+  "stateful_complete_relation_designs": 35,
+  "audited_assertions": 2474,
+  "nine_area": [
+    {
+      "case": "test1",
+      "baseline": 288,
+      "candidate": 184,
+      "reduction_percent": 36.111111111111114
+    },
+    {
+      "case": "test2",
+      "baseline": 25,
+      "candidate": 20,
+      "reduction_percent": 19.999999999999996
+    },
+    {
+      "case": "test3",
+      "baseline": 13,
+      "candidate": 10,
+      "reduction_percent": 23.076923076923073
+    },
+    {
+      "case": "test4",
+      "baseline": 34,
+      "candidate": 24,
+      "reduction_percent": 29.411764705882348
+    },
+    {
+      "case": "pmux_case01_balanced",
+      "baseline": 406,
+      "candidate": 312,
+      "reduction_percent": 23.152709359605915
+    },
+    {
+      "case": "pmux_case02_pipeline",
+      "baseline": 444,
+      "candidate": 297,
+      "reduction_percent": 33.108108108108105
+    },
+    {
+      "case": "pmux_case03_crossbar",
+      "baseline": 409,
+      "candidate": 301,
+      "reduction_percent": 26.405867970660147
+    },
+    {
+      "case": "pmux_case04_feedback",
+      "baseline": 365,
+      "candidate": 285,
+      "reduction_percent": 21.91780821917808
+    },
+    {
+      "case": "pmux_case05_nested",
+      "baseline": 415,
+      "candidate": 308,
+      "reduction_percent": 25.78313253012048
+    }
+  ],
+  "open_findings": {
+    "resource_increases": [],
+    "baseline_bram": {
+      "fresh_08": {
+        "synth_options": [
+          "-nobram"
+        ],
+        "reason": "Original same-toolchain baseline default BRAM map cannot resolve defparam INIT. Preserve failure; same supplementary -nobram in both arms. Not a default-BRAM PASS.",
+        "default_baseline_failure_sha256": "8980339661e7e840a78b83314c18d1e6624526a04dad73c1f1dee729eb151b90",
+        "default_candidate_returncode": 0,
+        "current_default_candidate_log_sha256": "7c50a5ffbe532898224130e86c96afa7f24810cef64200fb72c27bea7bb446c3",
+        "original_failure_record": "D:\\PROJECT\\FPGA\\压力测试加固\\20261027_structural_rules\\validation-r10-20261030\\matrix\\fresh_08\\default-flow-baseline-failed.log"
+      }
+    },
+    "eqy_depth_limit_case": "35 designs covered by complete state relations;43 separately selected designs by EQY partitions/structural identity. Raw selected-only EQY status remains INCOMPLETE.",
+    "efficiency": "Ten current-reference cases pass in one declared batch; balanced memory+4.9625percent near threshold, no claim of cross-environment margin.",
+    "not_a_full_competition_acceptance": true
+  },
+  "new_rule_tests": {
+    "status": "PASS",
+    "count": 36,
+    "summary": "D:\\PROJECT\\FPGA\\压力测试加固\\20261027_structural_rules\\continuation-20261030\\r48-one-snapshot-clean\\native-rules\\summary.json"
+  },
+  "formal_submission_unchanged": true,
+  "scope": "Defined binary primitive semantics; actual power_up, clocks, async clear, next state and public outputs; no analog timing/arbitrary X/Z/device implementation claim",
+  "efficiency": {
+    "report": "D:\\PROJECT\\FPGA\\压力测试加固\\20261027_structural_rules\\runs\\ten-r48-clean-first-20261030_133810_315\\acceptance.json",
+    "status": "PASS_EFFICIENCY_ONLY",
+    "cases": 10,
+    "passed_cases": [
+      "test1",
+      "test2",
+      "test3",
+      "test4",
+      "pmux_case01_balanced",
+      "pmux_case02_pipeline",
+      "pmux_case03_crossbar",
+      "pmux_case04_feedback",
+      "pmux_case05_nested",
+      "baseline_logic_unit_999"
+    ]
+  },
+  "stress": {
+    "status": "PASS_FULL_STATE_EVENT_INIT_AND_RESOURCE_AND_CURRENT_REFERENCE_EFFICIENCY",
+    "resources": {
+      "current": {
+        "baseline": 1016,
+        "candidate": 754,
+        "reduction_percent": 25.787401574803148,
+        "strict20_pass": true,
+        "dff_nonincrease": true
+      },
+      "historical": {
+        "baseline": 999,
+        "candidate": 754,
+        "reduction_percent": 24.524524524524523,
+        "strict20_pass": true,
+        "dff_nonincrease": true
+      }
+    },
+    "proofs": {
+      "current": {
+        "proof_directory": "D:\\PROJECT\\p48relation-current",
+        "audit_directory": "D:\\PROJECT\\p48relation-current-checks",
+        "proof_summary_sha256": "360aa8ad29be14cc6584dee36767180713d1571ecde1ec7348132b26e35feff6",
+        "audit_summary_sha256": "57d86d803cdf232edc67ef78a35c97202108477e93b1c7aa6acedf0a0fc65bf6",
+        "registers": [
+          803,
+          800
+        ],
+        "all_outputs": 96,
+        "checkpoints": 2
+      },
+      "historical": {
+        "proof_directory": "D:\\PROJECT\\p48relation-historical",
+        "audit_directory": "D:\\PROJECT\\p48relation-historical-checks",
+        "proof_summary_sha256": "593de646f8fd30b102eabbab1939aa0d0ab813632db2a8ececb1904ee8bab043",
+        "audit_summary_sha256": "57d86d803cdf232edc67ef78a35c97202108477e93b1c7aa6acedf0a0fc65bf6",
+        "registers": [
+          803,
+          800
+        ],
+        "all_outputs": 96,
+        "checkpoints": 2
+      }
+    },
+    "startup_reset_constraint": false
+  },
+  "startup48": "PASS",
+  "portable_check": {
+    "status": "PASS",
+    "relocated_package": "D:\\PROJECT\\搬迁验证 R48\\package",
+    "result": "D:\\PROJECT\\搬迁验证 R48\\results-v3\\summary.json",
+    "result_sha256": "fd74ce227a22c299584597d5eeae2b7d2a092185ef8ff538f82a8751b571c1a8",
+    "cases": 10,
+    "candidate_sha256": "2c214fbe02ae67d918eec8f91c1709a856dba0985dd507f600f5b4e467e309e5",
+    "comparison": "All ports/cells/parameters/connections/initialization/protection exact. Only src provenance attributes and source-path prefix inside autogenerated techmap NOT cell names canonicalized, unique parent/line/id retained.",
+    "runtime_path": "Package executable+share only; PATH package and Windows System32; no WSL or original-project dependency",
+    "earlier_attempts": [
+      "relocation-run.log strict src path mismatch",
+      "relocation-v2-run.log autogenerated path-containing NOT identifier mismatch"
+    ],
+    "not_rerun_efficiency": "Relocation graph export runs do not score timing; original ten-case batch retained."
+  }
+}

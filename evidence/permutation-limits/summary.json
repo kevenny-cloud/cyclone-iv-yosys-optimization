@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "candidate_sha256": "600cc3db8696d3bd7b2ce16c23abeed49e1bb9977a7c9392dc50c4207c2f7b25",
+  "cases": {
+    "cache_limit": {
+      "status": "PASS_EXHAUSTIVE_ALL_INPUTS",
+      "truth_comparisons": 8480,
+      "kept_cells_preserved": true,
+      "partial_design_unchanged": false
+    },
+    "visit_limit": {
+      "status": "PASS_EXHAUSTIVE_ALL_INPUTS",
+      "truth_comparisons": 262240,
+      "kept_cells_preserved": true,
+      "partial_design_unchanged": false
+    },
+    "partial_selection": {
+      "status": "PASS_EXHAUSTIVE_ALL_INPUTS",
+      "truth_comparisons": 192,
+      "kept_cells_preserved": true,
+      "partial_design_unchanged": true
+    }
+  }
+}

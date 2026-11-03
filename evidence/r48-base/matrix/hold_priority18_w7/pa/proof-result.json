@@ -1,0 +1,60 @@
+{
+  "status": "EQY_PARTITION_SAT_PASS",
+  "directory": "D:\\PROJECT\\FPGA\\压力测试加固\\20261027_structural_rules\\continuation-20261030\\r48-one-snapshot-clean\\matrix\\hold_priority18_w7\\pa",
+  "guards": {
+    "baseline": {
+      "status": "PASS",
+      "sha256": "a1c8ac3cb49749426a3b032bd500690fcebf0a3d96c1aa0b3a4030bfb863f7c3",
+      "cell_types": {
+        "$lut": 147
+      },
+      "dffeas_fixed_controls": "prn=1; aload=0; binary dynamic asdata; ENA>SCLR>SLOAD; power_up low/high",
+      "lcell_restrictions": "sum_lutc_input=datac; cout unobserved"
+    },
+    "candidate": {
+      "status": "PASS",
+      "sha256": "2b1c8624a97ba39ea3d9796b3b7e49b640641616d62b47d64c45f33cc7ccba40",
+      "cell_types": {
+        "$lut": 119
+      },
+      "dffeas_fixed_controls": "prn=1; aload=0; binary dynamic asdata; ENA>SCLR>SLOAD; power_up low/high",
+      "lcell_restrictions": "sum_lutc_input=datac; cout unobserved"
+    }
+  },
+  "partitions": {
+    "top.y": {
+      "status": "PASS",
+      "script_sha256": "b0249748e22f00a186d94802ede4aa033714bfe32e00068d26c05c13199bdbb0",
+      "log_sha256": "e2f71a9d38bcda7b392e4672b28cf4fc6e8b10c8b917161246aebf92a962e4ee",
+      "model_sha256": "99beb619a21412304a40c6d8847ee4b3e2ce62276de19372ab47aca3bc09a93e"
+    }
+  },
+  "transport": {
+    "baseline": {
+      "raw_sha256": "d057f59a35ed7240ab768ddf359c625f5a11db36d3a8d398d7255c2c9c93d9dc",
+      "lf_sha256": "cd813f7329a324b26a79a069a5e8f530bd7890a989a2196f90f1433bcd137d04"
+    },
+    "candidate": {
+      "raw_sha256": "2a50992c182fd86fed549ecfccbe0f344e1f7828b749a451e4d0a85cf9223df3",
+      "lf_sha256": "2571ee4aa88477a596c13ae58d4838b425dcd3f08487130dc13a93e39f0bb777"
+    }
+  },
+  "decoded": {
+    "baseline": {
+      "generic_sha256": "c44ef7c5cf7f08e7760f108829c4a9ae6b2f277a42e17d197019fd8c60bb665c",
+      "script_sha256": "c1b8602a236a48e57b3d353c0ef931198740a6b25e23b0bb7e83199e90e3b647",
+      "log_sha256": "22d362d41d1aae7ac70142cce7b7562c76eb377a92e5a80694d1d8e183812323"
+    },
+    "candidate": {
+      "generic_sha256": "8c3539dfc0247be730e59767bc62653b67efd5c069b753f3e71e4e3c591968cd",
+      "script_sha256": "f3ca5998dfca2e14456ffc72d46a919909b7451ec3cc7089e9bfcd03e420ce70",
+      "log_sha256": "51c036c2867981ee267763b6f23991673b5b36a646a25646fdffe80d6359d8d0"
+    }
+  },
+  "plugin_sha256": {
+    "eqy_combine.so": "c7c5ed9bfae1bf601d76172ae480c3d2e8302905b52cac0751bb52f93523a7ad",
+    "eqy_partition.so": "0d4b2c748368c8beeaed7cc696c7619f2be87f8d7a5046d59631ac9e60104c8c",
+    "eqy_recode.so": "4c575bb495477e6325b7c19f6a008fba22ed2b5fd73966b96a1eb0aa7efb3b09"
+  },
+  "retained_internal_names": []
+}

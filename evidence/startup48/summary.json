@@ -1,0 +1,293 @@
+{
+  "status": "PASS",
+  "cases": {
+    "sync_r0_v0_iNone_c0": {
+      "status": "PASS",
+      "registers": 2,
+      "initial": null,
+      "asynchronous_reset": false
+    },
+    "sync_r0_v0_iNone_c1": {
+      "status": "PASS",
+      "registers": 2,
+      "initial": null,
+      "asynchronous_reset": false
+    },
+    "sync_r0_v0_i0_c0": {
+      "status": "PASS",
+      "registers": 2,
+      "initial": 0,
+      "asynchronous_reset": false
+    },
+    "sync_r0_v0_i0_c1": {
+      "status": "PASS",
+      "registers": 2,
+      "initial": 0,
+      "asynchronous_reset": false
+    },
+    "sync_r0_v0_i1_c0": {
+      "status": "PASS",
+      "registers": 2,
+      "initial": 1,
+      "asynchronous_reset": false
+    },
+    "sync_r0_v0_i1_c1": {
+      "status": "PASS",
+      "registers": 2,
+      "initial": 1,
+      "asynchronous_reset": false
+    },
+    "sync_r0_v1_iNone_c0": {
+      "status": "PASS",
+      "registers": 2,
+      "initial": null,
+      "asynchronous_reset": false
+    },
+    "sync_r0_v1_iNone_c1": {
+      "status": "PASS",
+      "registers": 2,
+      "initial": null,
+      "asynchronous_reset": false
+    },
+    "sync_r0_v1_i0_c0": {
+      "status": "PASS",
+      "registers": 2,
+      "initial": 0,
+      "asynchronous_reset": false
+    },
+    "sync_r0_v1_i0_c1": {
+      "status": "PASS",
+      "registers": 2,
+      "initial": 0,
+      "asynchronous_reset": false
+    },
+    "sync_r0_v1_i1_c0": {
+      "status": "PASS",
+      "registers": 2,
+      "initial": 1,
+      "asynchronous_reset": false
+    },
+    "sync_r0_v1_i1_c1": {
+      "status": "PASS",
+      "registers": 2,
+      "initial": 1,
+      "asynchronous_reset": false
+    },
+    "sync_r1_v0_iNone_c0": {
+      "status": "PASS",
+      "registers": 2,
+      "initial": null,
+      "asynchronous_reset": false
+    },
+    "sync_r1_v0_iNone_c1": {
+      "status": "PASS",
+      "registers": 2,
+      "initial": null,
+      "asynchronous_reset": false
+    },
+    "sync_r1_v0_i0_c0": {
+      "status": "PASS",
+      "registers": 2,
+      "initial": 0,
+      "asynchronous_reset": false
+    },
+    "sync_r1_v0_i0_c1": {
+      "status": "PASS",
+      "registers": 2,
+      "initial": 0,
+      "asynchronous_reset": false
+    },
+    "sync_r1_v0_i1_c0": {
+      "status": "PASS",
+      "registers": 2,
+      "initial": 1,
+      "asynchronous_reset": false
+    },
+    "sync_r1_v0_i1_c1": {
+      "status": "PASS",
+      "registers": 2,
+      "initial": 1,
+      "asynchronous_reset": false
+    },
+    "sync_r1_v1_iNone_c0": {
+      "status": "PASS",
+      "registers": 2,
+      "initial": null,
+      "asynchronous_reset": false
+    },
+    "sync_r1_v1_iNone_c1": {
+      "status": "PASS",
+      "registers": 2,
+      "initial": null,
+      "asynchronous_reset": false
+    },
+    "sync_r1_v1_i0_c0": {
+      "status": "PASS",
+      "registers": 2,
+      "initial": 0,
+      "asynchronous_reset": false
+    },
+    "sync_r1_v1_i0_c1": {
+      "status": "PASS",
+      "registers": 2,
+      "initial": 0,
+      "asynchronous_reset": false
+    },
+    "sync_r1_v1_i1_c0": {
+      "status": "PASS",
+      "registers": 2,
+      "initial": 1,
+      "asynchronous_reset": false
+    },
+    "sync_r1_v1_i1_c1": {
+      "status": "PASS",
+      "registers": 2,
+      "initial": 1,
+      "asynchronous_reset": false
+    },
+    "async_r0_v0_iNone_c0": {
+      "status": "PASS",
+      "registers": 2,
+      "initial": null,
+      "asynchronous_reset": true
+    },
+    "async_r0_v0_iNone_c1": {
+      "status": "PASS",
+      "registers": 2,
+      "initial": null,
+      "asynchronous_reset": true
+    },
+    "async_r0_v0_i0_c0": {
+      "status": "PASS",
+      "registers": 2,
+      "initial": 0,
+      "asynchronous_reset": true
+    },
+    "async_r0_v0_i0_c1": {
+      "status": "PASS",
+      "registers": 2,
+      "initial": 0,
+      "asynchronous_reset": true
+    },
+    "async_r0_v0_i1_c0": {
+      "status": "PASS",
+      "registers": 2,
+      "initial": 1,
+      "asynchronous_reset": true
+    },
+    "async_r0_v0_i1_c1": {
+      "status": "PASS",
+      "registers": 2,
+      "initial": 1,
+      "asynchronous_reset": true
+    },
+    "async_r0_v1_iNone_c0": {
+      "status": "PASS",
+      "registers": 2,
+      "initial": null,
+      "asynchronous_reset": true
+    },
+    "async_r0_v1_iNone_c1": {
+      "status": "PASS",
+      "registers": 2,
+      "initial": null,
+      "asynchronous_reset": true
+    },
+    "async_r0_v1_i0_c0": {
+      "status": "PASS",
+      "registers": 2,
+      "initial": 0,
+      "asynchronous_reset": true
+    },
+    "async_r0_v1_i0_c1": {
+      "status": "PASS",
+      "registers": 2,
+      "initial": 0,
+      "asynchronous_reset": true
+    },
+    "async_r0_v1_i1_c0": {
+      "status": "PASS",
+      "registers": 2,
+      "initial": 1,
+      "asynchronous_reset": true
+    },
+    "async_r0_v1_i1_c1": {
+      "status": "PASS",
+      "registers": 2,
+      "initial": 1,
+      "asynchronous_reset": true
+    },
+    "async_r1_v0_iNone_c0": {
+      "status": "PASS",
+      "registers": 2,
+      "initial": null,
+      "asynchronous_reset": true
+    },
+    "async_r1_v0_iNone_c1": {
+      "status": "PASS",
+      "registers": 2,
+      "initial": null,
+      "asynchronous_reset": true
+    },
+    "async_r1_v0_i0_c0": {
+      "status": "PASS",
+      "registers": 2,
+      "initial": 0,
+      "asynchronous_reset": true
+    },
+    "async_r1_v0_i0_c1": {
+      "status": "PASS",
+      "registers": 2,
+      "initial": 0,
+      "asynchronous_reset": true
+    },
+    "async_r1_v0_i1_c0": {
+      "status": "PASS",
+      "registers": 2,
+      "initial": 1,
+      "asynchronous_reset": true
+    },
+    "async_r1_v0_i1_c1": {
+      "status": "PASS",
+      "registers": 2,
+      "initial": 1,
+      "asynchronous_reset": true
+    },
+    "async_r1_v1_iNone_c0": {
+      "status": "PASS",
+      "registers": 2,
+      "initial": null,
+      "asynchronous_reset": true
+    },
+    "async_r1_v1_iNone_c1": {
+      "status": "PASS",
+      "registers": 2,
+      "initial": null,
+      "asynchronous_reset": true
+    },
+    "async_r1_v1_i0_c0": {
+      "status": "PASS",
+      "registers": 2,
+      "initial": 0,
+      "asynchronous_reset": true
+    },
+    "async_r1_v1_i0_c1": {
+      "status": "PASS",
+      "registers": 2,
+      "initial": 0,
+      "asynchronous_reset": true
+    },
+    "async_r1_v1_i1_c0": {
+      "status": "PASS",
+      "registers": 2,
+      "initial": 1,
+      "asynchronous_reset": true
+    },
+    "async_r1_v1_i1_c1": {
+      "status": "PASS",
+      "registers": 2,
+      "initial": 1,
+      "asynchronous_reset": true
+    }
+  }
+}

@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "D:\PROJECT\搬迁验证 R48\package\verify_portable.py", line 35, in <module>
+    assert semantic_graph(g)==semantic_graph(read(ROOT/'verification/expected'/name/(cp+'.json'))['modules'][c['top']]),('Relocation graph differs',name,cp)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('Relocation graph differs', 'test1', 'final')

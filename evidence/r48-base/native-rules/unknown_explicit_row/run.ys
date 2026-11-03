@@ -1,0 +1,9 @@
+read_verilog -icells input.v
+hierarchy -top t
+proc
+opt_clean
+write_rtlil gold.il
+write_json gold.json
+pmux_decode_tree -partial -vector -leaf 0 -rank 0
+write_rtlil gate.il
+write_json gate.json

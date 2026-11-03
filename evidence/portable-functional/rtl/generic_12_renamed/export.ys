@@ -1,0 +1,3 @@
+read_verilog -icells input.v
+synth_intel -family cycloneiv -top renamed_unit -run begin:map_cells
+write_rtlil candidate-checkpoint.il

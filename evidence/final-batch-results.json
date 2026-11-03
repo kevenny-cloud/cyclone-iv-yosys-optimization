@@ -1,0 +1,17 @@
+[
+  {
+    "label": "r50-regenerated-primary",
+    "batch": "D:\\PROJECT\\FPGA\\压力测试加固\\20261027_structural_rules\\runs\\r50-regenerated-primary-20261030_154010_517",
+    "status": "PASS"
+  },
+  {
+    "label": "r50-regenerated-stability1",
+    "batch": "D:\\PROJECT\\FPGA\\压力测试加固\\20261027_structural_rules\\runs\\r50-regenerated-stability1-20261030_154055_203",
+    "status": "PASS"
+  },
+  {
+    "label": "r50-regenerated-stability2",
+    "batch": "D:\\PROJECT\\FPGA\\压力测试加固\\20261027_structural_rules\\runs\\r50-regenerated-stability2-20261030_154136_729",
+    "status": "PASS"
+  }
+]

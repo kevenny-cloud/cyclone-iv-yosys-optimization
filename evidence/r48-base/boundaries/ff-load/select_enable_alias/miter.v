@@ -1,0 +1,1 @@
+module m(input wire v2,input wire v3,input wire v4,input wire v5,input wire v6,input wire v7,input wire v8,input wire v9,output wire bad); assign bad=((v7 ? (v6 ? (1'b0 ? 1'b0 : (1'b0 ? 1'b0 : (v6 ? v4 : v3))) : v8) : 1'b0))^((v7 ? (v6 ? (1'b0 ? 1'b0 : (1'b0 ? 1'b0 : v4)) : v8) : 1'b0)); endmodule

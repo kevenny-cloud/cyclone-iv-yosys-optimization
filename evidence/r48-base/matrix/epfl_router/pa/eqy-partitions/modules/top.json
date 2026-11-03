@@ -1,0 +1,295 @@
+{
+  "partition": {
+    "index": 1,
+    "name": "top",
+    "inbits": {
+      "dest_x[0]": [
+        0
+      ],
+      "dest_x[10]": [
+        0
+      ],
+      "dest_x[11]": [
+        0
+      ],
+      "dest_x[12]": [
+        0
+      ],
+      "dest_x[13]": [
+        0
+      ],
+      "dest_x[14]": [
+        0
+      ],
+      "dest_x[15]": [
+        0
+      ],
+      "dest_x[16]": [
+        0
+      ],
+      "dest_x[17]": [
+        0
+      ],
+      "dest_x[18]": [
+        0
+      ],
+      "dest_x[19]": [
+        0
+      ],
+      "dest_x[1]": [
+        0
+      ],
+      "dest_x[20]": [
+        0
+      ],
+      "dest_x[21]": [
+        0
+      ],
+      "dest_x[22]": [
+        0
+      ],
+      "dest_x[23]": [
+        0
+      ],
+      "dest_x[24]": [
+        0
+      ],
+      "dest_x[25]": [
+        0
+      ],
+      "dest_x[26]": [
+        0
+      ],
+      "dest_x[27]": [
+        0
+      ],
+      "dest_x[28]": [
+        0
+      ],
+      "dest_x[29]": [
+        0
+      ],
+      "dest_x[2]": [
+        0
+      ],
+      "dest_x[3]": [
+        0
+      ],
+      "dest_x[4]": [
+        0
+      ],
+      "dest_x[5]": [
+        0
+      ],
+      "dest_x[6]": [
+        0
+      ],
+      "dest_x[7]": [
+        0
+      ],
+      "dest_x[8]": [
+        0
+      ],
+      "dest_x[9]": [
+        0
+      ],
+      "dest_y[0]": [
+        0
+      ],
+      "dest_y[10]": [
+        0
+      ],
+      "dest_y[11]": [
+        0
+      ],
+      "dest_y[12]": [
+        0
+      ],
+      "dest_y[13]": [
+        0
+      ],
+      "dest_y[14]": [
+        0
+      ],
+      "dest_y[15]": [
+        0
+      ],
+      "dest_y[16]": [
+        0
+      ],
+      "dest_y[17]": [
+        0
+      ],
+      "dest_y[18]": [
+        0
+      ],
+      "dest_y[19]": [
+        0
+      ],
+      "dest_y[1]": [
+        0
+      ],
+      "dest_y[20]": [
+        0
+      ],
+      "dest_y[21]": [
+        0
+      ],
+      "dest_y[22]": [
+        0
+      ],
+      "dest_y[23]": [
+        0
+      ],
+      "dest_y[24]": [
+        0
+      ],
+      "dest_y[25]": [
+        0
+      ],
+      "dest_y[26]": [
+        0
+      ],
+      "dest_y[27]": [
+        0
+      ],
+      "dest_y[28]": [
+        0
+      ],
+      "dest_y[29]": [
+        0
+      ],
+      "dest_y[2]": [
+        0
+      ],
+      "dest_y[3]": [
+        0
+      ],
+      "dest_y[4]": [
+        0
+      ],
+      "dest_y[5]": [
+        0
+      ],
+      "dest_y[6]": [
+        0
+      ],
+      "dest_y[7]": [
+        0
+      ],
+      "dest_y[8]": [
+        0
+      ],
+      "dest_y[9]": [
+        0
+      ]
+    },
+    "outbits": {
+      "outport[0]": [
+        0
+      ],
+      "outport[10]": [
+        0
+      ],
+      "outport[11]": [
+        0
+      ],
+      "outport[12]": [
+        0
+      ],
+      "outport[13]": [
+        0
+      ],
+      "outport[14]": [
+        0
+      ],
+      "outport[15]": [
+        0
+      ],
+      "outport[16]": [
+        0
+      ],
+      "outport[17]": [
+        0
+      ],
+      "outport[18]": [
+        0
+      ],
+      "outport[19]": [
+        0
+      ],
+      "outport[1]": [
+        0
+      ],
+      "outport[20]": [
+        0
+      ],
+      "outport[21]": [
+        0
+      ],
+      "outport[22]": [
+        0
+      ],
+      "outport[23]": [
+        0
+      ],
+      "outport[24]": [
+        0
+      ],
+      "outport[25]": [
+        0
+      ],
+      "outport[26]": [
+        0
+      ],
+      "outport[27]": [
+        0
+      ],
+      "outport[28]": [
+        0
+      ],
+      "outport[29]": [
+        0
+      ],
+      "outport[2]": [
+        0
+      ],
+      "outport[3]": [
+        0
+      ],
+      "outport[4]": [
+        0
+      ],
+      "outport[5]": [
+        0
+      ],
+      "outport[6]": [
+        0
+      ],
+      "outport[7]": [
+        0
+      ],
+      "outport[8]": [
+        0
+      ],
+      "outport[9]": [
+        0
+      ]
+    },
+    "crossbits": {}
+  },
+  "gold_module": {
+    "name": "gold.top",
+    "internal": {},
+    "unused": {},
+    "cellcount": 99,
+    "bitcount": 159
+  },
+  "gate_module": {
+    "name": "gold.top",
+    "internal": {},
+    "unused": {},
+    "cellcount": 92,
+    "bitcount": 152
+  }
+}

@@ -1,0 +1,10 @@
+read_verilog -icells pmux_case01_balanced.v pmux_case02_pipeline.v pmux_case03_crossbar.v pmux_case04_feedback.v pmux_case05_nested.v test1.v test2.v test3.v test4.v baseline_logic_unit_999.v
+synth_intel -family cycloneiv -top baseline_logic_unit_999 -run begin:map_cells
+select -module baseline_logic_unit_999
+write_rtlil -selected checkpoint.il
+write_json -selected checkpoint.json
+techmap -map +/intel/cycloneiv/cells_map.v
+clean -purge
+check -noinit -assert
+write_rtlil -selected final.il
+write_json -selected final.json

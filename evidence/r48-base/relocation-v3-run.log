@@ -1,0 +1,11 @@
+test1 PASS 184
+test2 PASS 20
+test3 PASS 10
+test4 PASS 24
+pmux_case01_balanced PASS 312
+pmux_case02_pipeline PASS 297
+pmux_case03_crossbar PASS 301
+pmux_case04_feedback PASS 285
+pmux_case05_nested PASS 308
+baseline_logic_unit_999 PASS 754
+PORTABLE_TEN_CASE_GRAPH_REPRODUCTION_PASS

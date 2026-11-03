@@ -1,0 +1,137 @@
+{
+  "status": "PASS_EFFICIENCY_ONLY",
+  "schema": "RULE132_V1",
+  "cases": [
+    {
+      "id": "test1",
+      "initial_overhead_percent": {
+        "elapsed_seconds": 78.55776502985779,
+        "main_peak_working_set_bytes": -6.216847018883942
+      },
+      "review_triggered": true,
+      "decision_overhead_percent": {
+        "elapsed_seconds": 3.70751915562042,
+        "main_peak_working_set_bytes": -6.278902040643164
+      },
+      "pass": true
+    },
+    {
+      "id": "test2",
+      "initial_overhead_percent": {
+        "elapsed_seconds": -2.437667465589677,
+        "main_peak_working_set_bytes": -0.5383153894870207
+      },
+      "review_triggered": false,
+      "decision_overhead_percent": {
+        "elapsed_seconds": -2.437667465589677,
+        "main_peak_working_set_bytes": -0.5383153894870207
+      },
+      "pass": true
+    },
+    {
+      "id": "test3",
+      "initial_overhead_percent": {
+        "elapsed_seconds": -2.5384167055974016,
+        "main_peak_working_set_bytes": 1.015384615384618
+      },
+      "review_triggered": false,
+      "decision_overhead_percent": {
+        "elapsed_seconds": -2.5384167055974016,
+        "main_peak_working_set_bytes": 1.015384615384618
+      },
+      "pass": true
+    },
+    {
+      "id": "test4",
+      "initial_overhead_percent": {
+        "elapsed_seconds": -3.550854873275444,
+        "main_peak_working_set_bytes": 2.13387898275359
+      },
+      "review_triggered": false,
+      "decision_overhead_percent": {
+        "elapsed_seconds": -3.550854873275444,
+        "main_peak_working_set_bytes": 2.13387898275359
+      },
+      "pass": true
+    },
+    {
+      "id": "pmux_case01_balanced",
+      "initial_overhead_percent": {
+        "elapsed_seconds": -3.798625656988819,
+        "main_peak_working_set_bytes": -0.30413625304136493
+      },
+      "review_triggered": false,
+      "decision_overhead_percent": {
+        "elapsed_seconds": -3.798625656988819,
+        "main_peak_working_set_bytes": -0.30413625304136493
+      },
+      "pass": true
+    },
+    {
+      "id": "pmux_case02_pipeline",
+      "initial_overhead_percent": {
+        "elapsed_seconds": -10.697322673016796,
+        "main_peak_working_set_bytes": -4.423945783132533
+      },
+      "review_triggered": false,
+      "decision_overhead_percent": {
+        "elapsed_seconds": -10.697322673016796,
+        "main_peak_working_set_bytes": -4.423945783132533
+      },
+      "pass": true
+    },
+    {
+      "id": "pmux_case03_crossbar",
+      "initial_overhead_percent": {
+        "elapsed_seconds": -4.099806635277325,
+        "main_peak_working_set_bytes": -0.48086555800440633
+      },
+      "review_triggered": false,
+      "decision_overhead_percent": {
+        "elapsed_seconds": -4.099806635277325,
+        "main_peak_working_set_bytes": -0.48086555800440633
+      },
+      "pass": true
+    },
+    {
+      "id": "pmux_case04_feedback",
+      "initial_overhead_percent": {
+        "elapsed_seconds": 0.40139200076272363,
+        "main_peak_working_set_bytes": 0.6660936828534636
+      },
+      "review_triggered": false,
+      "decision_overhead_percent": {
+        "elapsed_seconds": 0.40139200076272363,
+        "main_peak_working_set_bytes": 0.6660936828534636
+      },
+      "pass": true
+    },
+    {
+      "id": "pmux_case05_nested",
+      "initial_overhead_percent": {
+        "elapsed_seconds": -7.681074888780959,
+        "main_peak_working_set_bytes": -5.794245171462354
+      },
+      "review_triggered": false,
+      "decision_overhead_percent": {
+        "elapsed_seconds": -7.681074888780959,
+        "main_peak_working_set_bytes": -5.794245171462354
+      },
+      "pass": true
+    },
+    {
+      "id": "baseline_logic_unit_999",
+      "initial_overhead_percent": {
+        "elapsed_seconds": -2.925126721984561,
+        "main_peak_working_set_bytes": -4.65366905065151
+      },
+      "review_triggered": false,
+      "decision_overhead_percent": {
+        "elapsed_seconds": -2.925126721984561,
+        "main_peak_working_set_bytes": -4.65366905065151
+      },
+      "pass": true
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,86 @@
+{
+  "status": "STATE_TRANSITION_SAT_PASS",
+  "fixed_state_pairs": 12,
+  "unmatched_states": 0,
+  "registers": 12,
+  "proof_tool": "D:\\PROJECT\\oss-cad-suite\\bin\\yosys.exe",
+  "proof_tool_sha256": "bafe6f5c0493c29126222a7b5b7818d93c92ef40938c7cfcdb1e36bb67587024",
+  "driver_sha256": "86f87edb06a004f245baa28b0cfac3a874c492136ce8f43136fac97dfe456493",
+  "attempts": [
+    {
+      "status": "PASS",
+      "directory": "attempt0",
+      "pairs": [
+        [
+          69,
+          69,
+          0
+        ],
+        [
+          70,
+          70,
+          0
+        ],
+        [
+          71,
+          71,
+          0
+        ],
+        [
+          72,
+          72,
+          0
+        ],
+        [
+          73,
+          73,
+          0
+        ],
+        [
+          74,
+          74,
+          0
+        ],
+        [
+          75,
+          75,
+          0
+        ],
+        [
+          76,
+          76,
+          0
+        ],
+        [
+          77,
+          77,
+          0
+        ],
+        [
+          78,
+          78,
+          0
+        ],
+        [
+          79,
+          79,
+          0
+        ],
+        [
+          80,
+          80,
+          0
+        ]
+      ],
+      "compared_bits": 48,
+      "returncode": 0,
+      "hashes": {
+        "relation.v": "756640dccd2e43d500b423ffcc49a40d23ae48bccf3b5cbad43ef9300322c5c4",
+        "run.ys": "02f579f3ce0dc63e0ba5d85acc9918787760dce83b49ae753a4461bd0777c571",
+        "run.log": "afd9171ebab82eed374ffb514f56712d5de0becfe627eb0b1666a223f37ffea9"
+      }
+    }
+  ],
+  "scope": "Prove a complete bijective register relation with independent combinational SAT.\n\nEvery register is paired, initial values agree under the proposed polarity, and\nall clock, asynchronous-clear and next-state equations and public outputs are\ncompared for arbitrary inputs/current state. No reachable-state assumptions,\ninput constraints, omitted registers or omitted outputs are permitted.\nThis is restricted to the same binary primitive semantics as prove.py.\n",
+  "successful_attempt": 0
+}

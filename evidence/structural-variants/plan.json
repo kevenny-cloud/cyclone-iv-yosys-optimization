@@ -1,0 +1,75 @@
+{
+  "status": "FROZEN_BEFORE_TESTING",
+  "candidate_frozen": true,
+  "cases": {
+    "variant_0_hierarchy": {
+      "top": "unit",
+      "width": 1,
+      "explicit_state": false,
+      "input_sha256": "cb738cd5eadd7d584903ad1b347e69c476a9069daff0fc1d54f7badf724e0d3f",
+      "set": "frozen_metamorphic"
+    },
+    "variant_0_demorgan": {
+      "top": "unit",
+      "width": 1,
+      "explicit_state": false,
+      "input_sha256": "7687efc35426fc4976a78c91a9d99909cf75c6c6cfa09a225eb43420425f831a",
+      "set": "frozen_metamorphic"
+    },
+    "variant_0_orderA": {
+      "top": "unit",
+      "width": 1,
+      "explicit_state": false,
+      "input_sha256": "2fee431375dff67d20e63536ef733609b290ff8eb4a0e62b67131c3cf2bd645c",
+      "set": "frozen_metamorphic"
+    },
+    "variant_0_orderB": {
+      "top": "unit",
+      "width": 1,
+      "explicit_state": false,
+      "input_sha256": "ae1e664e8261d3ef655ab0af56e89a7208b3c2c64c21a73510d199e5d124742c",
+      "set": "frozen_metamorphic"
+    },
+    "variant_1_hierarchy": {
+      "top": "unit",
+      "width": 3,
+      "explicit_state": true,
+      "input_sha256": "6d6532c575ec6923e9f99c5f2d638be02cc4dd6c43e1f512f29773cd7ca56ad2",
+      "set": "frozen_metamorphic"
+    },
+    "variant_1_demorgan": {
+      "top": "unit",
+      "width": 3,
+      "explicit_state": true,
+      "input_sha256": "8745ccf752eec5266087b71ab044c985bc0ce0d599c36ae0b6bed8a30297162c",
+      "set": "frozen_metamorphic"
+    },
+    "variant_1_orderA": {
+      "top": "unit",
+      "width": 3,
+      "explicit_state": true,
+      "input_sha256": "8726788b76f76d4813eaec43b75c3c411d4f4c56bb8af64c640ab6b2993c61be",
+      "set": "frozen_metamorphic"
+    },
+    "variant_1_orderB": {
+      "top": "unit",
+      "width": 3,
+      "explicit_state": true,
+      "input_sha256": "35f16495d4097fab5f934489f470c086dcfe48b5f694d0cf36879536249bdcca",
+      "set": "frozen_metamorphic"
+    }
+  },
+  "metamorphic": {},
+  "development": [],
+  "holdout": [],
+  "cross_pairs": {
+    "variant_0_hierarchy": "D:\\\u7ade\u8d5b\\FPGA\\FPGA\\\u538b\u529b\u6d4b\u8bd5\u52a0\u56fa\\20261027_structural_rules\\continuation-20261030\\next-plan-execution\\independent-frozen-v1\\generic_00\\input.v",
+    "variant_0_demorgan": "D:\\\u7ade\u8d5b\\FPGA\\FPGA\\\u538b\u529b\u6d4b\u8bd5\u52a0\u56fa\\20261027_structural_rules\\continuation-20261030\\next-plan-execution\\independent-frozen-v1\\generic_00\\input.v",
+    "variant_0_orderA": "D:\\\u7ade\u8d5b\\FPGA\\FPGA\\\u538b\u529b\u6d4b\u8bd5\u52a0\u56fa\\20261027_structural_rules\\continuation-20261030\\next-plan-execution\\metamorphic-structure-v1\\variant_0_orderA\\input.v",
+    "variant_0_orderB": "D:\\\u7ade\u8d5b\\FPGA\\FPGA\\\u538b\u529b\u6d4b\u8bd5\u52a0\u56fa\\20261027_structural_rules\\continuation-20261030\\next-plan-execution\\metamorphic-structure-v1\\variant_0_orderA\\input.v",
+    "variant_1_hierarchy": "D:\\\u7ade\u8d5b\\FPGA\\FPGA\\\u538b\u529b\u6d4b\u8bd5\u52a0\u56fa\\20261027_structural_rules\\continuation-20261030\\next-plan-execution\\independent-frozen-v1\\generic_01\\input.v",
+    "variant_1_demorgan": "D:\\\u7ade\u8d5b\\FPGA\\FPGA\\\u538b\u529b\u6d4b\u8bd5\u52a0\u56fa\\20261027_structural_rules\\continuation-20261030\\next-plan-execution\\independent-frozen-v1\\generic_01\\input.v",
+    "variant_1_orderA": "D:\\\u7ade\u8d5b\\FPGA\\FPGA\\\u538b\u529b\u6d4b\u8bd5\u52a0\u56fa\\20261027_structural_rules\\continuation-20261030\\next-plan-execution\\metamorphic-structure-v1\\variant_1_orderA\\input.v",
+    "variant_1_orderB": "D:\\\u7ade\u8d5b\\FPGA\\FPGA\\\u538b\u529b\u6d4b\u8bd5\u52a0\u56fa\\20261027_structural_rules\\continuation-20261030\\next-plan-execution\\metamorphic-structure-v1\\variant_1_orderA\\input.v"
+  }
+}

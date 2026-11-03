@@ -1,0 +1,7 @@
+read_rtlil candidate.il
+techmap -map primitive_decode.v
+opt
+prep -top fresh_03
+select -module fresh_03
+rename -hide
+write_rtlil -selected candidate-generic.il

@@ -1,0 +1,123 @@
+{
+  "status": "PASS",
+  "candidate_sha256": "2c214fbe02ae67d918eec8f91c1709a856dba0985dd507f600f5b4e467e309e5",
+  "proof_tool_sha256": "bafe6f5c0493c29126222a7b5b7818d93c92ef40938c7cfcdb1e36bb67587024",
+  "tests": {
+    "xor-alias": {
+      "status": "COMBINATIONAL_MITER_ALL_PUBLIC_AND_STATE_PORTS_PASS",
+      "state_elements": 0,
+      "init_and_state_type_parameters_preserved": true
+    },
+    "xor-decode_default": {
+      "status": "COMBINATIONAL_MITER_ALL_PUBLIC_AND_STATE_PORTS_PASS",
+      "state_elements": 0,
+      "init_and_state_type_parameters_preserved": true,
+      "deliberate_fault_rejected": true
+    },
+    "xor-default_mismatch": {
+      "status": "COMBINATIONAL_MITER_ALL_PUBLIC_AND_STATE_PORTS_PASS",
+      "state_elements": 0,
+      "init_and_state_type_parameters_preserved": true
+    },
+    "xor-explicit_ff_init": {
+      "status": "COMBINATIONAL_MITER_ALL_PUBLIC_AND_STATE_PORTS_PASS",
+      "state_elements": 1,
+      "init_and_state_type_parameters_preserved": true
+    },
+    "xor-free_multihot": {
+      "status": "COMBINATIONAL_MITER_ALL_PUBLIC_AND_STATE_PORTS_PASS",
+      "state_elements": 0,
+      "init_and_state_type_parameters_preserved": true
+    },
+    "xor-output_init_alias": {
+      "status": "COMBINATIONAL_MITER_ALL_PUBLIC_AND_STATE_PORTS_PASS",
+      "state_elements": 0,
+      "init_and_state_type_parameters_preserved": true
+    },
+    "xor-output_keep": {
+      "status": "COMBINATIONAL_MITER_ALL_PUBLIC_AND_STATE_PORTS_PASS",
+      "state_elements": 0,
+      "init_and_state_type_parameters_preserved": true
+    },
+    "xor-shared_source_user": {
+      "status": "COMBINATIONAL_MITER_ALL_PUBLIC_AND_STATE_PORTS_PASS",
+      "state_elements": 0,
+      "init_and_state_type_parameters_preserved": true
+    },
+    "xor-multiple-default_mismatch": {
+      "status": "COMBINATIONAL_MITER_ALL_PUBLIC_AND_STATE_PORTS_PASS",
+      "state_elements": 0,
+      "init_and_state_type_parameters_preserved": true
+    },
+    "xor-multiple-kept_second": {
+      "status": "COMBINATIONAL_MITER_ALL_PUBLIC_AND_STATE_PORTS_PASS",
+      "state_elements": 0,
+      "init_and_state_type_parameters_preserved": true
+    },
+    "xor-multiple-two_independent": {
+      "status": "COMBINATIONAL_MITER_ALL_PUBLIC_AND_STATE_PORTS_PASS",
+      "state_elements": 0,
+      "init_and_state_type_parameters_preserved": true
+    },
+    "arithmetic-w1add": {
+      "status": "COMBINATIONAL_MITER_ALL_PUBLIC_AND_STATE_PORTS_PASS",
+      "state_elements": 0,
+      "init_and_state_type_parameters_preserved": true
+    },
+    "arithmetic-w1add-keep": {
+      "status": "COMBINATIONAL_MITER_ALL_PUBLIC_AND_STATE_PORTS_PASS",
+      "state_elements": 0,
+      "init_and_state_type_parameters_preserved": true
+    },
+    "arithmetic-w1sub": {
+      "status": "COMBINATIONAL_MITER_ALL_PUBLIC_AND_STATE_PORTS_PASS",
+      "state_elements": 0,
+      "init_and_state_type_parameters_preserved": true
+    },
+    "arithmetic-w1sub-keep": {
+      "status": "COMBINATIONAL_MITER_ALL_PUBLIC_AND_STATE_PORTS_PASS",
+      "state_elements": 0,
+      "init_and_state_type_parameters_preserved": true
+    },
+    "arithmetic-w4add": {
+      "status": "COMBINATIONAL_MITER_ALL_PUBLIC_AND_STATE_PORTS_PASS",
+      "state_elements": 0,
+      "init_and_state_type_parameters_preserved": true
+    },
+    "arithmetic-w4add-keep": {
+      "status": "COMBINATIONAL_MITER_ALL_PUBLIC_AND_STATE_PORTS_PASS",
+      "state_elements": 0,
+      "init_and_state_type_parameters_preserved": true
+    },
+    "arithmetic-w4sub": {
+      "status": "COMBINATIONAL_MITER_ALL_PUBLIC_AND_STATE_PORTS_PASS",
+      "state_elements": 0,
+      "init_and_state_type_parameters_preserved": true
+    },
+    "arithmetic-w4sub-keep": {
+      "status": "COMBINATIONAL_MITER_ALL_PUBLIC_AND_STATE_PORTS_PASS",
+      "state_elements": 0,
+      "init_and_state_type_parameters_preserved": true
+    },
+    "arithmetic-w9add": {
+      "status": "COMBINATIONAL_MITER_ALL_PUBLIC_AND_STATE_PORTS_PASS",
+      "state_elements": 0,
+      "init_and_state_type_parameters_preserved": true
+    },
+    "arithmetic-w9add-keep": {
+      "status": "COMBINATIONAL_MITER_ALL_PUBLIC_AND_STATE_PORTS_PASS",
+      "state_elements": 0,
+      "init_and_state_type_parameters_preserved": true
+    },
+    "arithmetic-w9sub": {
+      "status": "COMBINATIONAL_MITER_ALL_PUBLIC_AND_STATE_PORTS_PASS",
+      "state_elements": 0,
+      "init_and_state_type_parameters_preserved": true
+    },
+    "arithmetic-w9sub-keep": {
+      "status": "COMBINATIONAL_MITER_ALL_PUBLIC_AND_STATE_PORTS_PASS",
+      "state_elements": 0,
+      "init_and_state_type_parameters_preserved": true
+    }
+  }
+}

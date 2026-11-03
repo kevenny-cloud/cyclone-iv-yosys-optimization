@@ -1,0 +1,7 @@
+read_verilog -icells input.v
+hierarchy -top t
+write_json gold.json
+select t/c0
+lut_window -work-limit 1
+select *
+write_json gate.json

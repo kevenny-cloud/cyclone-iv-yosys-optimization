@@ -1,0 +1,9 @@
+read_verilog -icells input.v
+hierarchy -top t
+proc
+opt_clean
+write_rtlil gold.il
+write_json gold.json
+lut_window
+write_rtlil gate.il
+write_json gate.json

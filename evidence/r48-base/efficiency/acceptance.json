@@ -1,0 +1,137 @@
+{
+  "status": "PASS_EFFICIENCY_ONLY",
+  "schema": "RULE132_V1",
+  "cases": [
+    {
+      "id": "test1",
+      "initial_overhead_percent": {
+        "elapsed_seconds": 25.89992587207435,
+        "main_peak_working_set_bytes": -5.113141862489123
+      },
+      "review_triggered": true,
+      "decision_overhead_percent": {
+        "elapsed_seconds": 0.9984239310076415,
+        "main_peak_working_set_bytes": -5.176163549369295
+      },
+      "pass": true
+    },
+    {
+      "id": "test2",
+      "initial_overhead_percent": {
+        "elapsed_seconds": -2.7360546030563926,
+        "main_peak_working_set_bytes": -0.31766200762388674
+      },
+      "review_triggered": false,
+      "decision_overhead_percent": {
+        "elapsed_seconds": -2.7360546030563926,
+        "main_peak_working_set_bytes": -0.31766200762388674
+      },
+      "pass": true
+    },
+    {
+      "id": "test3",
+      "initial_overhead_percent": {
+        "elapsed_seconds": -0.409816172967703,
+        "main_peak_working_set_bytes": 1.9432449105490468
+      },
+      "review_triggered": false,
+      "decision_overhead_percent": {
+        "elapsed_seconds": -0.409816172967703,
+        "main_peak_working_set_bytes": 1.9432449105490468
+      },
+      "pass": true
+    },
+    {
+      "id": "test4",
+      "initial_overhead_percent": {
+        "elapsed_seconds": 1.124564005933526,
+        "main_peak_working_set_bytes": 2.1840419336051298
+      },
+      "review_triggered": false,
+      "decision_overhead_percent": {
+        "elapsed_seconds": 1.124564005933526,
+        "main_peak_working_set_bytes": 2.1840419336051298
+      },
+      "pass": true
+    },
+    {
+      "id": "pmux_case01_balanced",
+      "initial_overhead_percent": {
+        "elapsed_seconds": -2.4368875039515903,
+        "main_peak_working_set_bytes": 4.962527850921616
+      },
+      "review_triggered": false,
+      "decision_overhead_percent": {
+        "elapsed_seconds": -2.4368875039515903,
+        "main_peak_working_set_bytes": 4.962527850921616
+      },
+      "pass": true
+    },
+    {
+      "id": "pmux_case02_pipeline",
+      "initial_overhead_percent": {
+        "elapsed_seconds": -11.489734658828453,
+        "main_peak_working_set_bytes": -4.510138336175862
+      },
+      "review_triggered": false,
+      "decision_overhead_percent": {
+        "elapsed_seconds": -11.489734658828453,
+        "main_peak_working_set_bytes": -4.510138336175862
+      },
+      "pass": true
+    },
+    {
+      "id": "pmux_case03_crossbar",
+      "initial_overhead_percent": {
+        "elapsed_seconds": -2.441869419532927,
+        "main_peak_working_set_bytes": -2.233201581027666
+      },
+      "review_triggered": false,
+      "decision_overhead_percent": {
+        "elapsed_seconds": -2.441869419532927,
+        "main_peak_working_set_bytes": -2.233201581027666
+      },
+      "pass": true
+    },
+    {
+      "id": "pmux_case04_feedback",
+      "initial_overhead_percent": {
+        "elapsed_seconds": 1.8369331474068051,
+        "main_peak_working_set_bytes": 0.5448449287510426
+      },
+      "review_triggered": false,
+      "decision_overhead_percent": {
+        "elapsed_seconds": 1.8369331474068051,
+        "main_peak_working_set_bytes": 0.5448449287510426
+      },
+      "pass": true
+    },
+    {
+      "id": "pmux_case05_nested",
+      "initial_overhead_percent": {
+        "elapsed_seconds": -6.488407348012226,
+        "main_peak_working_set_bytes": 0.835488362840664
+      },
+      "review_triggered": false,
+      "decision_overhead_percent": {
+        "elapsed_seconds": -6.488407348012226,
+        "main_peak_working_set_bytes": 0.835488362840664
+      },
+      "pass": true
+    },
+    {
+      "id": "baseline_logic_unit_999",
+      "initial_overhead_percent": {
+        "elapsed_seconds": 2.2062189269938637,
+        "main_peak_working_set_bytes": -3.704066634002945
+      },
+      "review_triggered": false,
+      "decision_overhead_percent": {
+        "elapsed_seconds": 2.2062189269938637,
+        "main_peak_working_set_bytes": -3.704066634002945
+      },
+      "pass": true
+    }
+  ],
+  "errors": []
+}

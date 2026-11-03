@@ -1,0 +1,73 @@
+{
+  "creator": "Yosys 0.69 (git sha1 9f75ca1f9-dirty, Release, LLVM-MinGW 20261020 Clang 23.1.4; isolated Windows build)",
+  "modules": {
+    "t": {
+      "attributes": {
+        "top": "00000000000000000000000000000001",
+        "src": "input.v:1.1-2.80"
+      },
+      "ports": {
+        "s": {
+          "direction": "input",
+          "bits": [ 2, 3, 4 ]
+        },
+        "d": {
+          "direction": "input",
+          "bits": [ 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 ]
+        },
+        "y": {
+          "direction": "output",
+          "bits": [ 17, 18, 19 ]
+        }
+      },
+      "cells": {
+        "p": {
+          "hide_name": 0,
+          "type": "$pmux",
+          "parameters": {
+            "S_WIDTH": "00000000000000000000000000000011",
+            "WIDTH": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "src": "input.v:2.33-2.70"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 5, 6, 7 ],
+            "B": [ 8, 9, 10, 11, 12, 13, 14, 15, 16 ],
+            "S": [ 2, 3, 4 ],
+            "Y": [ 17, 18, 19 ]
+          }
+        }
+      },
+      "netnames": {
+        "d": {
+          "hide_name": 0,
+          "bits": [ 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 ],
+          "attributes": {
+            "src": "input.v:1.35-1.36"
+          }
+        },
+        "s": {
+          "hide_name": 0,
+          "bits": [ 2, 3, 4 ],
+          "attributes": {
+            "src": "input.v:1.21-1.22"
+          }
+        },
+        "y": {
+          "hide_name": 0,
+          "bits": [ 17, 18, 19 ],
+          "attributes": {
+            "src": "input.v:1.49-1.50"
+          }
+        }
+      }
+    }
+  }
+}

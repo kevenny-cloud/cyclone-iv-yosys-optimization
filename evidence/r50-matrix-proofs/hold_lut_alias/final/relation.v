@@ -1,0 +1,38 @@
+module gold(input [4:0] pi,input [-1:0] st,output [1:0] po);
+wire b2;
+wire b3;
+wire b4;
+wire b5;
+wire b6;
+wire b7;
+wire b8;
+wire b9;
+assign b2 = pi[0];
+assign b3 = pi[1];
+assign b4 = pi[2];
+assign b5 = pi[3];
+assign b6 = pi[4];
+assign b7 = 16'h6969 >> {1'b1,b9,b2,b6};
+assign b9 = 16'h3553 >> {b2,b3,b4,b5};
+assign b8 = 16'h9696 >> {1'b1,b2,b3,b4};
+assign po = {b8,b7};
+endmodule
+module gate(input [4:0] pi,input [-1:0] st,output [1:0] po);
+wire b2;
+wire b3;
+wire b4;
+wire b5;
+wire b6;
+wire b7;
+wire b8;
+wire b9;
+assign b2 = pi[0];
+assign b3 = pi[1];
+assign b4 = pi[2];
+assign b5 = pi[3];
+assign b6 = pi[4];
+assign b7 = 16'h6969 >> {1'b1,b9,b2,b6};
+assign b9 = 16'h69f >> {b4,b5,b2,b3};
+assign b8 = 16'h9696 >> {1'b1,b2,b3,b4};
+assign po = {b8,b7};
+endmodule

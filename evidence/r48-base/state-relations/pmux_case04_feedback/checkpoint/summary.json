@@ -1,0 +1,106 @@
+{
+  "status": "STATE_TRANSITION_SAT_PASS",
+  "fixed_state_pairs": 16,
+  "unmatched_states": 0,
+  "registers": 16,
+  "proof_tool": "D:\\PROJECT\\oss-cad-suite\\bin\\yosys.exe",
+  "proof_tool_sha256": "bafe6f5c0493c29126222a7b5b7818d93c92ef40938c7cfcdb1e36bb67587024",
+  "driver_sha256": "86f87edb06a004f245baa28b0cfac3a874c492136ce8f43136fac97dfe456493",
+  "attempts": [
+    {
+      "status": "PASS",
+      "directory": "attempt0",
+      "pairs": [
+        [
+          101,
+          101,
+          0
+        ],
+        [
+          102,
+          102,
+          0
+        ],
+        [
+          103,
+          103,
+          0
+        ],
+        [
+          104,
+          104,
+          0
+        ],
+        [
+          105,
+          105,
+          0
+        ],
+        [
+          106,
+          106,
+          0
+        ],
+        [
+          107,
+          107,
+          0
+        ],
+        [
+          108,
+          108,
+          0
+        ],
+        [
+          109,
+          109,
+          0
+        ],
+        [
+          110,
+          110,
+          0
+        ],
+        [
+          111,
+          111,
+          0
+        ],
+        [
+          112,
+          112,
+          0
+        ],
+        [
+          113,
+          113,
+          0
+        ],
+        [
+          114,
+          114,
+          0
+        ],
+        [
+          115,
+          115,
+          0
+        ],
+        [
+          116,
+          116,
+          0
+        ]
+      ],
+      "compared_bits": 64,
+      "returncode": 0,
+      "hashes": {
+        "relation.v": "57197c2d1c94be12c377f280f19c3a1cdfe2e586bea4846f852a92e7ba722053",
+        "run.ys": "02f579f3ce0dc63e0ba5d85acc9918787760dce83b49ae753a4461bd0777c571",
+        "run.log": "2a0a1d8b169f78b30fc991c582b33a982a85736eb9f0bca2d6718c10ed10bb06"
+      }
+    }
+  ],
+  "scope": "Prove a complete bijective register relation with independent combinational SAT.\n\nEvery register is paired, initial values agree under the proposed polarity, and\nall clock, asynchronous-clear and next-state equations and public outputs are\ncompared for arbitrary inputs/current state. No reachable-state assumptions,\ninput constraints, omitted registers or omitted outputs are permitted.\nThis is restricted to the same binary primitive semantics as prove.py.\n",
+  "successful_attempt": 0
+}

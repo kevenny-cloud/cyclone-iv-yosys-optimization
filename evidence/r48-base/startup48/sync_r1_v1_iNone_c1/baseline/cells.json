@@ -1,0 +1,11 @@
+{
+  "top": "startup_policy",
+  "logic": 5,
+  "dff": 2,
+  "cells_total": 7,
+  "by_type": {
+    "cycloneiv_lcell_comb": 5,
+    "dffeas": 2
+  },
+  "latch_warnings": 0
+}

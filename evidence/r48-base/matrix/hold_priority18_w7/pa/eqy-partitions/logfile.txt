@@ -1,0 +1,11 @@
+EQY 13:36:20 [eqy-partitions] read_gold: starting process "yosys -ql eqy-partitions/gold.log eqy-partitions/gold.ys"
+EQY 13:36:20 [eqy-partitions] read_gold: finished (returncode=0)
+EQY 13:36:20 [eqy-partitions] read_gate: starting process "yosys -ql eqy-partitions/gate.log eqy-partitions/gate.ys"
+EQY 13:36:20 [eqy-partitions] read_gate: finished (returncode=0)
+EQY 13:36:20 [eqy-partitions] combine: starting process "yosys -ql eqy-partitions/combine.log eqy-partitions/combine.ys"
+EQY 13:36:20 [eqy-partitions] combine: finished (returncode=0)
+EQY 13:36:20 [eqy-partitions] partition: starting process "cd eqy-partitions& yosys -ql partition.log partition.ys"
+EQY 13:36:21 [eqy-partitions] partition: finished (returncode=0)
+EQY 13:36:21 [eqy-partitions] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:00 (0)
+EQY 13:36:21 [eqy-partitions] summary: Elapsed process time unvailable on Windows
+EQY 13:36:21 [eqy-partitions] DONE (UNKNOWN, rc=0)

@@ -1,0 +1,36 @@
+{
+  "status": "STATE_TRANSITION_SAT_PASS",
+  "fixed_state_pairs": 2,
+  "unmatched_states": 0,
+  "registers": 2,
+  "proof_tool": "D:\\PROJECT\\oss-cad-suite\\bin\\yosys.exe",
+  "proof_tool_sha256": "bafe6f5c0493c29126222a7b5b7818d93c92ef40938c7cfcdb1e36bb67587024",
+  "driver_sha256": "86f87edb06a004f245baa28b0cfac3a874c492136ce8f43136fac97dfe456493",
+  "attempts": [
+    {
+      "status": "PASS",
+      "directory": "attempt0",
+      "pairs": [
+        [
+          14,
+          14,
+          0
+        ],
+        [
+          16,
+          16,
+          0
+        ]
+      ],
+      "compared_bits": 10,
+      "returncode": 0,
+      "hashes": {
+        "relation.v": "52f245070b90106d58200fbb4e16e718e71f87665f45e8c0faa9f19847eadc76",
+        "run.ys": "02f579f3ce0dc63e0ba5d85acc9918787760dce83b49ae753a4461bd0777c571",
+        "run.log": "7af63e661c591c41a0e101e28d11754d7cd26ccfe34e643ef80383c8f75bc2a4"
+      }
+    }
+  ],
+  "scope": "Prove a complete bijective register relation with independent combinational SAT.\n\nEvery register is paired, initial values agree under the proposed polarity, and\nall clock, asynchronous-clear and next-state equations and public outputs are\ncompared for arbitrary inputs/current state. No reachable-state assumptions,\ninput constraints, omitted registers or omitted outputs are permitted.\nThis is restricted to the same binary primitive semantics as prove.py.\n",
+  "successful_attempt": 0
+}

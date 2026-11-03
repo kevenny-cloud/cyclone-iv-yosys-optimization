@@ -1,0 +1,186 @@
+{
+  "creator": "Yosys 0.69 (git sha1 9f75ca1f9-dirty, Release, LLVM-MinGW 20261020 Clang 23.1.4; isolated Windows build)",
+  "modules": {
+    "t": {
+      "attributes": {
+        "top": "00000000000000000000000000000001",
+        "src": "input.v:1.1-9.10"
+      },
+      "ports": {
+        "a": {
+          "direction": "input",
+          "bits": [ 2, 3, 4, 5, 6, 7 ]
+        },
+        "y": {
+          "direction": "output",
+          "bits": [ 8, 9, 10, 11, 12 ]
+        }
+      },
+      "cells": {
+        "c0": {
+          "hide_name": 0,
+          "type": "$lut",
+          "parameters": {
+            "LUT": "1001",
+            "WIDTH": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "src": "input.v:4.32-4.57"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 13, 2 ],
+            "Y": [ 8 ]
+          }
+        },
+        "c1": {
+          "hide_name": 0,
+          "type": "$lut",
+          "parameters": {
+            "LUT": "0101",
+            "WIDTH": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "src": "input.v:5.32-5.57"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 14, 2 ],
+            "Y": [ 9 ]
+          }
+        },
+        "c2": {
+          "hide_name": 0,
+          "type": "$lut",
+          "parameters": {
+            "LUT": "1110",
+            "WIDTH": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "src": "input.v:6.32-6.57"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 13, 2 ],
+            "Y": [ 10 ]
+          }
+        },
+        "c3": {
+          "hide_name": 0,
+          "type": "$lut",
+          "parameters": {
+            "LUT": "1001",
+            "WIDTH": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "src": "input.v:7.32-7.57"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 14, 2 ],
+            "Y": [ 11 ]
+          }
+        },
+        "c4": {
+          "hide_name": 0,
+          "type": "$lut",
+          "parameters": {
+            "LUT": "1101",
+            "WIDTH": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "src": "input.v:8.32-8.57"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 13, 2 ],
+            "Y": [ 12 ]
+          }
+        },
+        "opposite": {
+          "hide_name": 0,
+          "type": "$lut",
+          "parameters": {
+            "LUT": "1010",
+            "WIDTH": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "src": "input.v:3.31-3.57"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2, 3 ],
+            "Y": [ 14 ]
+          }
+        },
+        "root": {
+          "hide_name": 0,
+          "type": "$lut",
+          "parameters": {
+            "LUT": "0101",
+            "WIDTH": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "src": "input.v:2.32-2.54"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2, 3 ],
+            "Y": [ 13 ]
+          }
+        }
+      },
+      "netnames": {
+        "a": {
+          "hide_name": 0,
+          "bits": [ 2, 3, 4, 5, 6, 7 ],
+          "attributes": {
+            "src": "input.v:1.21-1.22"
+          }
+        },
+        "u": {
+          "hide_name": 0,
+          "bits": [ 13 ],
+          "attributes": {
+            "src": "input.v:1.43-1.44"
+          }
+        },
+        "v": {
+          "hide_name": 0,
+          "bits": [ 14 ],
+          "attributes": {
+            "src": "input.v:1.45-1.46"
+          }
+        },
+        "y": {
+          "hide_name": 0,
+          "bits": [ 8, 9, 10, 11, 12 ],
+          "attributes": {
+            "src": "input.v:1.35-1.36"
+          }
+        }
+      }
+    }
+  }
+}

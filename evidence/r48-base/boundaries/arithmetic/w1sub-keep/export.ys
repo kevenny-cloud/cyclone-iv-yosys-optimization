@@ -1,0 +1,7 @@
+read_verilog input.v
+hierarchy -top t
+proc
+opt_clean
+write_rtlil gold.il
+pmux_xor_factor
+write_rtlil gate.il

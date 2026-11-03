@@ -1,0 +1,317 @@
+{
+  "status": "PASS_R48_TO_R50_78_DESIGNS_156_CHECKPOINTS",
+  "cases": {
+    "test1": {
+      "checkpoint": "STATE_TRANSITION_SAT_PASS",
+      "final": "STATE_TRANSITION_SAT_PASS"
+    },
+    "test2": {
+      "checkpoint": "COMBINATIONAL_SAT_PASS",
+      "final": "COMBINATIONAL_SAT_PASS"
+    },
+    "test3": {
+      "checkpoint": "STATE_TRANSITION_SAT_PASS",
+      "final": "STATE_TRANSITION_SAT_PASS"
+    },
+    "test4": {
+      "checkpoint": "STATE_TRANSITION_SAT_PASS",
+      "final": "STATE_TRANSITION_SAT_PASS"
+    },
+    "pmux_complete_1": {
+      "checkpoint": "COMBINATIONAL_SAT_PASS",
+      "final": "COMBINATIONAL_SAT_PASS"
+    },
+    "pmux_complete_3": {
+      "checkpoint": "COMBINATIONAL_SAT_PASS",
+      "final": "COMBINATIONAL_SAT_PASS"
+    },
+    "pmux_complete_5": {
+      "checkpoint": "COMBINATIONAL_SAT_PASS",
+      "final": "COMBINATIONAL_SAT_PASS"
+    },
+    "pmux_partial": {
+      "checkpoint": "COMBINATIONAL_SAT_PASS",
+      "final": "COMBINATIONAL_SAT_PASS"
+    },
+    "priority_2": {
+      "checkpoint": "COMBINATIONAL_SAT_PASS",
+      "final": "COMBINATIONAL_SAT_PASS"
+    },
+    "priority_16": {
+      "checkpoint": "COMBINATIONAL_SAT_PASS",
+      "final": "COMBINATIONAL_SAT_PASS"
+    },
+    "priority_17": {
+      "checkpoint": "COMBINATIONAL_SAT_PASS",
+      "final": "COMBINATIONAL_SAT_PASS"
+    },
+    "priority_mixed": {
+      "checkpoint": "COMBINATIONAL_SAT_PASS",
+      "final": "COMBINATIONAL_SAT_PASS"
+    },
+    "stateful_4": {
+      "checkpoint": "STATE_TRANSITION_SAT_PASS",
+      "final": "STATE_TRANSITION_SAT_PASS"
+    },
+    "stateful_8": {
+      "checkpoint": "STATE_TRANSITION_SAT_PASS",
+      "final": "STATE_TRANSITION_SAT_PASS"
+    },
+    "hierarchical_sequential": {
+      "checkpoint": "STATE_TRANSITION_SAT_PASS",
+      "final": "STATE_TRANSITION_SAT_PASS"
+    },
+    "high_fanout": {
+      "checkpoint": "COMBINATIONAL_SAT_PASS",
+      "final": "COMBINATIONAL_SAT_PASS"
+    },
+    "rom_1": {
+      "checkpoint": "COMBINATIONAL_SAT_PASS",
+      "final": "COMBINATIONAL_SAT_PASS"
+    },
+    "rom_16": {
+      "checkpoint": "COMBINATIONAL_SAT_PASS",
+      "final": "COMBINATIONAL_SAT_PASS"
+    },
+    "cells_99": {
+      "checkpoint": "COMBINATIONAL_SAT_PASS",
+      "final": "COMBINATIONAL_SAT_PASS"
+    },
+    "cells_498": {
+      "checkpoint": "COMBINATIONAL_SAT_PASS",
+      "final": "COMBINATIONAL_SAT_PASS"
+    },
+    "cells_999": {
+      "checkpoint": "COMBINATIONAL_SAT_PASS",
+      "final": "COMBINATIONAL_SAT_PASS"
+    },
+    "feedback_width_3": {
+      "checkpoint": "STATE_TRANSITION_SAT_PASS",
+      "final": "STATE_TRANSITION_SAT_PASS"
+    },
+    "feedback_width_5": {
+      "checkpoint": "STATE_TRANSITION_SAT_PASS",
+      "final": "STATE_TRANSITION_SAT_PASS"
+    },
+    "feedback_width_12": {
+      "checkpoint": "STATE_TRANSITION_SAT_PASS",
+      "final": "STATE_TRANSITION_SAT_PASS"
+    },
+    "feedback_width_16": {
+      "checkpoint": "STATE_TRANSITION_SAT_PASS",
+      "final": "STATE_TRANSITION_SAT_PASS"
+    },
+    "decoder_complete_2": {
+      "checkpoint": "COMBINATIONAL_SAT_PASS",
+      "final": "COMBINATIONAL_SAT_PASS"
+    },
+    "decoder_partial_2": {
+      "checkpoint": "COMBINATIONAL_SAT_PASS",
+      "final": "COMBINATIONAL_SAT_PASS"
+    },
+    "decoder_complete_4": {
+      "checkpoint": "COMBINATIONAL_SAT_PASS",
+      "final": "COMBINATIONAL_SAT_PASS"
+    },
+    "decoder_partial_4": {
+      "checkpoint": "COMBINATIONAL_SAT_PASS",
+      "final": "COMBINATIONAL_SAT_PASS"
+    },
+    "mixed_pmux_2_6": {
+      "checkpoint": "COMBINATIONAL_SAT_PASS",
+      "final": "COMBINATIONAL_SAT_PASS"
+    },
+    "mixed_pmux_4_6": {
+      "checkpoint": "COMBINATIONAL_SAT_PASS",
+      "final": "COMBINATIONAL_SAT_PASS"
+    },
+    "mixed_pmux_5_4": {
+      "checkpoint": "COMBINATIONAL_SAT_PASS",
+      "final": "COMBINATIONAL_SAT_PASS"
+    },
+    "mixed_pmux_5_29": {
+      "checkpoint": "COMBINATIONAL_SAT_PASS",
+      "final": "COMBINATIONAL_SAT_PASS"
+    },
+    "decoder_986_cells": {
+      "checkpoint": "COMBINATIONAL_SAT_PASS",
+      "final": "COMBINATIONAL_SAT_PASS"
+    },
+    "scalar_one_feedback": {
+      "checkpoint": "STATE_TRANSITION_SAT_PASS",
+      "final": "STATE_TRANSITION_SAT_PASS"
+    },
+    "mixed_initial_feedback": {
+      "checkpoint": "STATE_TRANSITION_SAT_PASS",
+      "final": "STATE_TRANSITION_SAT_PASS"
+    },
+    "hold_stateful_7": {
+      "checkpoint": "STATE_TRANSITION_SAT_PASS",
+      "final": "STATE_TRANSITION_SAT_PASS"
+    },
+    "hold_stateful_9": {
+      "checkpoint": "STATE_TRANSITION_SAT_PASS",
+      "final": "STATE_TRANSITION_SAT_PASS"
+    },
+    "hold_priority7_w9": {
+      "checkpoint": "COMBINATIONAL_SAT_PASS",
+      "final": "COMBINATIONAL_SAT_PASS"
+    },
+    "hold_priority18_w7": {
+      "checkpoint": "COMBINATIONAL_SAT_PASS",
+      "final": "COMBINATIONAL_SAT_PASS"
+    },
+    "hold_decode3_w24_g6": {
+      "checkpoint": "COMBINATIONAL_SAT_PASS",
+      "final": "COMBINATIONAL_SAT_PASS"
+    },
+    "hold_partial5_w8_g3": {
+      "checkpoint": "COMBINATIONAL_SAT_PASS",
+      "final": "COMBINATIONAL_SAT_PASS"
+    },
+    "hold_rom_variant_1": {
+      "checkpoint": "COMBINATIONAL_SAT_PASS",
+      "final": "COMBINATIONAL_SAT_PASS"
+    },
+    "hold_rom_variant_3": {
+      "checkpoint": "COMBINATIONAL_SAT_PASS",
+      "final": "COMBINATIONAL_SAT_PASS"
+    },
+    "hold_lut_alias": {
+      "checkpoint": "COMBINATIONAL_SAT_PASS",
+      "final": "COMBINATIONAL_SAT_PASS"
+    },
+    "hold_parallel_luts": {
+      "checkpoint": "COMBINATIONAL_SAT_PASS",
+      "final": "COMBINATIONAL_SAT_PASS"
+    },
+    "fresh_rom_2_s47": {
+      "checkpoint": "COMBINATIONAL_SAT_PASS",
+      "final": "COMBINATIONAL_SAT_PASS"
+    },
+    "fresh_rom_4_s61": {
+      "checkpoint": "COMBINATIONAL_SAT_PASS",
+      "final": "COMBINATIONAL_SAT_PASS"
+    },
+    "fresh_stateful_11": {
+      "checkpoint": "STATE_TRANSITION_SAT_PASS",
+      "final": "STATE_TRANSITION_SAT_PASS"
+    },
+    "fresh_priority12_w6": {
+      "checkpoint": "COMBINATIONAL_SAT_PASS",
+      "final": "COMBINATIONAL_SAT_PASS"
+    },
+    "pmux_case01_balanced": {
+      "checkpoint": "STATE_TRANSITION_SAT_PASS",
+      "final": "STATE_TRANSITION_SAT_PASS"
+    },
+    "pmux_case01_balanced_double_lanes": {
+      "checkpoint": "STATE_TRANSITION_SAT_PASS",
+      "final": "STATE_TRANSITION_SAT_PASS"
+    },
+    "pmux_case02_pipeline": {
+      "checkpoint": "STATE_TRANSITION_SAT_PASS",
+      "final": "STATE_TRANSITION_SAT_PASS"
+    },
+    "pmux_case02_pipeline_double_lanes": {
+      "checkpoint": "STATE_TRANSITION_SAT_PASS",
+      "final": "STATE_TRANSITION_SAT_PASS"
+    },
+    "pmux_case03_crossbar": {
+      "checkpoint": "STATE_TRANSITION_SAT_PASS",
+      "final": "STATE_TRANSITION_SAT_PASS"
+    },
+    "pmux_case03_crossbar_double_lanes": {
+      "checkpoint": "STATE_TRANSITION_SAT_PASS",
+      "final": "STATE_TRANSITION_SAT_PASS"
+    },
+    "pmux_case04_feedback": {
+      "checkpoint": "STATE_TRANSITION_SAT_PASS",
+      "final": "STATE_TRANSITION_SAT_PASS"
+    },
+    "pmux_case04_feedback_double_lanes": {
+      "checkpoint": "STATE_TRANSITION_SAT_PASS",
+      "final": "STATE_TRANSITION_SAT_PASS"
+    },
+    "pmux_case05_nested": {
+      "checkpoint": "STATE_TRANSITION_SAT_PASS",
+      "final": "STATE_TRANSITION_SAT_PASS"
+    },
+    "pmux_case05_nested_double_lanes": {
+      "checkpoint": "STATE_TRANSITION_SAT_PASS",
+      "final": "STATE_TRANSITION_SAT_PASS"
+    },
+    "epfl_ctrl": {
+      "checkpoint": "COMBINATIONAL_SAT_PASS",
+      "final": "COMBINATIONAL_SAT_PASS"
+    },
+    "epfl_cavlc": {
+      "checkpoint": "COMBINATIONAL_SAT_PASS",
+      "final": "COMBINATIONAL_SAT_PASS"
+    },
+    "epfl_int2float": {
+      "checkpoint": "COMBINATIONAL_SAT_PASS",
+      "final": "COMBINATIONAL_SAT_PASS"
+    },
+    "epfl_router": {
+      "checkpoint": "COMBINATIONAL_SAT_PASS",
+      "final": "COMBINATIONAL_SAT_PASS"
+    },
+    "epfl_adder": {
+      "checkpoint": "COMBINATIONAL_SAT_PASS",
+      "final": "COMBINATIONAL_SAT_PASS"
+    },
+    "epfl_bar": {
+      "checkpoint": "COMBINATIONAL_SAT_PASS",
+      "final": "COMBINATIONAL_SAT_PASS"
+    },
+    "fresh_00": {
+      "checkpoint": "STATE_TRANSITION_SAT_PASS",
+      "final": "STATE_TRANSITION_SAT_PASS"
+    },
+    "fresh_01": {
+      "checkpoint": "STATE_TRANSITION_SAT_PASS",
+      "final": "STATE_TRANSITION_SAT_PASS"
+    },
+    "fresh_02": {
+      "checkpoint": "STATE_TRANSITION_SAT_PASS",
+      "final": "STATE_TRANSITION_SAT_PASS"
+    },
+    "fresh_03": {
+      "checkpoint": "COMBINATIONAL_SAT_PASS",
+      "final": "COMBINATIONAL_SAT_PASS"
+    },
+    "fresh_04": {
+      "checkpoint": "STATE_TRANSITION_SAT_PASS",
+      "final": "STATE_TRANSITION_SAT_PASS"
+    },
+    "fresh_05": {
+      "checkpoint": "STATE_TRANSITION_SAT_PASS",
+      "final": "STATE_TRANSITION_SAT_PASS"
+    },
+    "fresh_06": {
+      "checkpoint": "STATE_TRANSITION_SAT_PASS",
+      "final": "STATE_TRANSITION_SAT_PASS"
+    },
+    "fresh_07": {
+      "checkpoint": "STATE_TRANSITION_SAT_PASS",
+      "final": "STATE_TRANSITION_SAT_PASS"
+    },
+    "fresh_08": {
+      "checkpoint": "STATE_TRANSITION_SAT_PASS",
+      "final": "STATE_TRANSITION_SAT_PASS"
+    },
+    "fresh_09": {
+      "checkpoint": "STATE_TRANSITION_SAT_PASS",
+      "final": "STATE_TRANSITION_SAT_PASS"
+    },
+    "fresh_10": {
+      "checkpoint": "STATE_TRANSITION_SAT_PASS",
+      "final": "STATE_TRANSITION_SAT_PASS"
+    },
+    "fresh_11": {
+      "checkpoint": "STATE_TRANSITION_SAT_PASS",
+      "final": "STATE_TRANSITION_SAT_PASS"
+    }
+  }
+}

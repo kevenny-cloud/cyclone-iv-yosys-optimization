@@ -1,0 +1,54 @@
+{
+  "status": "STRUCTURAL_IDENTITY",
+  "directory": "D:\\PROJECT\\FPGA\\压力测试加固\\20261027_structural_rules\\continuation-20261030\\r48-one-snapshot-clean\\matrix\\pmux_complete_5\\pf",
+  "guards": {
+    "baseline": {
+      "status": "PASS",
+      "sha256": "b281e8329027afa4f68ad4cf632d5bf054a82542bd29ba5f936cf65583919f14",
+      "cell_types": {
+        "cycloneiv_lcell_comb": 48
+      },
+      "dffeas_fixed_controls": "prn=1; aload=0; binary dynamic asdata; ENA>SCLR>SLOAD; power_up low/high",
+      "lcell_restrictions": "sum_lutc_input=datac; cout unobserved"
+    },
+    "candidate": {
+      "status": "PASS",
+      "sha256": "bbf967293cd783563edfbd5c279395b1fe0e92de9d798a0d313c87e63ce7a3a3",
+      "cell_types": {
+        "cycloneiv_lcell_comb": 48
+      },
+      "dffeas_fixed_controls": "prn=1; aload=0; binary dynamic asdata; ENA>SCLR>SLOAD; power_up low/high",
+      "lcell_restrictions": "sum_lutc_input=datac; cout unobserved"
+    }
+  },
+  "partitions": {},
+  "transport": {
+    "baseline": {
+      "raw_sha256": "6e7addd50ef2470d41c20055836bf221ca5033dae1de5a7da4811e6a6a27a668",
+      "lf_sha256": "7b740aa9a666df5184a5461c0767422c56f1f7056e643f7d28d4ac1d2d9d4260"
+    },
+    "candidate": {
+      "raw_sha256": "bae273697d32e1bc84508e5c3d68376e60bb65787e5a863e042db5dd1f6f1efd",
+      "lf_sha256": "ed95ad9c2b4dc79cb836f9abf634559aa334a6189827b82378d77bdc0fb92c27"
+    }
+  },
+  "decoded": {
+    "baseline": {
+      "generic_sha256": "da7525f5dc437d8d33719ac8ae6f0d4e611a2f94d69017208fa051259544b719",
+      "script_sha256": "c1b8602a236a48e57b3d353c0ef931198740a6b25e23b0bb7e83199e90e3b647",
+      "log_sha256": "2189a16a49c3def7515ed8dcd53bc219a6cdf74ece38986a8c7a719a6499440c"
+    },
+    "candidate": {
+      "generic_sha256": "5910928a627b1ccca53b675e0c34772389edde6572b5b265c886e1aa160136fd",
+      "script_sha256": "f3ca5998dfca2e14456ffc72d46a919909b7451ec3cc7089e9bfcd03e420ce70",
+      "log_sha256": "2bd5c917389e5cef2649d3d0ac3a3c9637902ea4018f78479577ad7d40b11cca"
+    }
+  },
+  "plugin_sha256": {
+    "eqy_combine.so": "c7c5ed9bfae1bf601d76172ae480c3d2e8302905b52cac0751bb52f93523a7ad",
+    "eqy_partition.so": "0d4b2c748368c8beeaed7cc696c7619f2be87f8d7a5046d59631ac9e60104c8c",
+    "eqy_recode.so": "4c575bb495477e6325b7c19f6a008fba22ed2b5fd73966b96a1eb0aa7efb3b09"
+  },
+  "retained_internal_names": [],
+  "identity_scope": "Decoded RTLIL exactly identical excluding comments, src/generator and autoidx only"
+}

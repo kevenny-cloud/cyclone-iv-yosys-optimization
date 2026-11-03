@@ -1,0 +1,9 @@
+read_verilog -specify input.v
+hierarchy -top top
+proc
+techmap
+opt
+write_json gold.json
+abc9 -lut 4
+check -assert
+write_json gate.json

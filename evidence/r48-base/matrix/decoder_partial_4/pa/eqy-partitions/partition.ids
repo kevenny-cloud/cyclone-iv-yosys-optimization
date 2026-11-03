@@ -1,0 +1,4 @@
+bind top data
+bind top sel
+bind top y
+group top data sel y

@@ -1,0 +1,42 @@
+{
+  "status": "PASS",
+  "candidate_sha256": "2c214fbe02ae67d918eec8f91c1709a856dba0985dd507f600f5b4e467e309e5",
+  "groups": {
+    "xor": {
+      "status": "PASS",
+      "runner_sha256": "0d4e7e59b1ecdb8dc961b8151c6a11db73b106276b95c35f072021c1a39d2614",
+      "summary_sha256": "4083c8e46e2160b711d2b427bec7775068edf6d3c9ba95bb6b7f7a46e3738d65",
+      "tests": 8
+    },
+    "xor-multiple": {
+      "status": "PASS",
+      "runner_sha256": "68e516885fb2597a85913ec2ce047e48357aba4312ec5a686a2376ac4a43a865",
+      "summary_sha256": "eff0bda82313de5da57e2f223f3d7dad1f2695d04d83df57b5fc4fda85c788e0",
+      "tests": 3
+    },
+    "arithmetic": {
+      "status": "PASS",
+      "runner_sha256": "bacd1a555a4805e29b9adf6067a5935579ba8c65cc8ab51e86f563c004f9d947",
+      "summary_sha256": "15f4a61fee912958596331f4759b1954e2bfc486bfdec4c8842b756dcf95ba6c",
+      "tests": 12
+    },
+    "ff-load": {
+      "status": "PASS",
+      "runner_sha256": "93d524e955ba579160c53ab02450fcd0c1fb0e7360662d498348af89211456a2",
+      "summary_sha256": "b37614ffaa52247e9e0b1ac96db656343a203e4f57ade46c2be703f856d0f9d4",
+      "tests": 11
+    },
+    "boxes": {
+      "status": "PASS",
+      "runner_sha256": "1794757ad92da5ec23cc2ef47a3188555aacc71763cbea90f0a0a7cfef7c468b",
+      "summary_sha256": "138b446025d25ce942f86d8d3ff2f7fef5bfbd922f43c11c4c0ad9f077539298",
+      "tests": 6
+    },
+    "transport-negative": {
+      "status": "PASS",
+      "runner_sha256": "fcbb0ac3261929ff56bbfcf8c278c6de766b1ffdc93b8bf80e02a1e028d1dab9",
+      "summary_sha256": "3245872c1c572e0bc9835ff08ffafdd43b0c904101d77bec6a46f54ee973ed28",
+      "tests": 7
+    }
+  }
+}

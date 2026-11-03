@@ -1,0 +1,67 @@
+{
+  "status": "PASS",
+  "cases": {
+    "test1": {
+      "status": "PASS",
+      "logic": 184,
+      "dff": 222,
+      "checkpoint_and_final_graph_identity_excluding_src_paths": true
+    },
+    "test2": {
+      "status": "PASS",
+      "logic": 20,
+      "dff": 0,
+      "checkpoint_and_final_graph_identity_excluding_src_paths": true
+    },
+    "test3": {
+      "status": "PASS",
+      "logic": 10,
+      "dff": 14,
+      "checkpoint_and_final_graph_identity_excluding_src_paths": true
+    },
+    "test4": {
+      "status": "PASS",
+      "logic": 24,
+      "dff": 10,
+      "checkpoint_and_final_graph_identity_excluding_src_paths": true
+    },
+    "pmux_case01_balanced": {
+      "status": "PASS",
+      "logic": 312,
+      "dff": 12,
+      "checkpoint_and_final_graph_identity_excluding_src_paths": true
+    },
+    "pmux_case02_pipeline": {
+      "status": "PASS",
+      "logic": 297,
+      "dff": 24,
+      "checkpoint_and_final_graph_identity_excluding_src_paths": true
+    },
+    "pmux_case03_crossbar": {
+      "status": "PASS",
+      "logic": 301,
+      "dff": 10,
+      "checkpoint_and_final_graph_identity_excluding_src_paths": true
+    },
+    "pmux_case04_feedback": {
+      "status": "PASS",
+      "logic": 285,
+      "dff": 16,
+      "checkpoint_and_final_graph_identity_excluding_src_paths": true
+    },
+    "pmux_case05_nested": {
+      "status": "PASS",
+      "logic": 308,
+      "dff": 12,
+      "checkpoint_and_final_graph_identity_excluding_src_paths": true
+    },
+    "baseline_logic_unit_999": {
+      "status": "PASS",
+      "logic": 754,
+      "dff": 800,
+      "checkpoint_and_final_graph_identity_excluding_src_paths": true
+    }
+  },
+  "package_manifest_sha256": "37c017e2c6e1e923d5a4895d51d7453180e29aa62cd51326fd2951dab884d443",
+  "program_sha256": "2c214fbe02ae67d918eec8f91c1709a856dba0985dd507f600f5b4e467e309e5"
+}

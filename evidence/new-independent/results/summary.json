@@ -1,0 +1,260 @@
+{
+  "status": "PASS_28_FROZEN_CASES_RTL_INDUCTION_AND_NO_RESOURCE_INCREASE",
+  "candidate": "D:\\\u7ade\u8d5b\\FPGA\\FPGA\\\u538b\u529b\u6d4b\u8bd5\u52a0\u56fa\\20261027_structural_rules\\continuation-20261030\\next-plan-execution\\r50-regenerated-final\\program\\yosys.exe",
+  "candidate_sha256": "600cc3db8696d3bd7b2ce16c23abeed49e1bb9977a7c9392dc50c4207c2f7b25",
+  "plan_sha256": "d99dff0d415702d9e8dcceface5f318762a3d4586d3bc7a97ddf6c4a543d47f3",
+  "cases": {
+    "generic_00": {
+      "status": "PASS_RTL_TO_CHECKPOINT_INDUCTION",
+      "logic": [
+        15,
+        9
+      ],
+      "explicit_state": false,
+      "proof_sha256": "d57975b33c9e64f4ab56e98f1ccae5e9808583dffb469d2171694c3e5752292c"
+    },
+    "generic_00_renamed": {
+      "status": "PASS_RTL_TO_CHECKPOINT_INDUCTION",
+      "logic": [
+        15,
+        9
+      ],
+      "explicit_state": false,
+      "proof_sha256": "4d45b1a8995ac0f8622c346497897ee1762df5ab4579746b990c35fabfc04a5e"
+    },
+    "generic_01": {
+      "status": "PASS_RTL_TO_CHECKPOINT_INDUCTION",
+      "logic": [
+        41,
+        33
+      ],
+      "explicit_state": true,
+      "proof_sha256": "2815f1baa2c4614fd36c3844a3c45d3a17900d90b95770de11fe94dc1ad6a6bd"
+    },
+    "generic_02": {
+      "status": "PASS_RTL_TO_CHECKPOINT_INDUCTION",
+      "logic": [
+        76,
+        71
+      ],
+      "explicit_state": false,
+      "proof_sha256": "a34118656a37f6916b5a7f018c3e8fe50353f4b642296cd6e5b0e503a3df1745"
+    },
+    "generic_03": {
+      "status": "PASS_RTL_TO_CHECKPOINT_INDUCTION",
+      "logic": [
+        161,
+        90
+      ],
+      "explicit_state": true,
+      "proof_sha256": "8effe2504b3b1a7ac08ed0e84747f4a233a33ee3f0146c8a10f65e7c7fcb8127"
+    },
+    "generic_04": {
+      "status": "PASS_RTL_TO_CHECKPOINT_INDUCTION",
+      "logic": [
+        15,
+        11
+      ],
+      "explicit_state": false,
+      "proof_sha256": "566758dcde84c90f6987a261446fc7450100599d5c85542ebbb6d6db29fe9c0a"
+    },
+    "generic_05": {
+      "status": "PASS_RTL_TO_CHECKPOINT_INDUCTION",
+      "logic": [
+        40,
+        34
+      ],
+      "explicit_state": true,
+      "proof_sha256": "67f3bc09c14847b9fbf2b6b9c6a3ac64b269502b1c0f618cc1a095618c6bd64a"
+    },
+    "generic_05_renamed": {
+      "status": "PASS_RTL_TO_CHECKPOINT_INDUCTION",
+      "logic": [
+        40,
+        34
+      ],
+      "explicit_state": true,
+      "proof_sha256": "db6f0414b95ef07285d666273806ea9e0c2e79ebf8e82b99f7e71cd2ef48b063"
+    },
+    "generic_06": {
+      "status": "PASS_RTL_TO_CHECKPOINT_INDUCTION",
+      "logic": [
+        73,
+        47
+      ],
+      "explicit_state": false,
+      "proof_sha256": "c6b0b741a5918510a6068638ceed538d5bc3d71ac537b435eadc136618f20c46"
+    },
+    "generic_07": {
+      "status": "PASS_RTL_TO_CHECKPOINT_INDUCTION",
+      "logic": [
+        160,
+        131
+      ],
+      "explicit_state": true,
+      "proof_sha256": "075d2dc5f1bc0ed1bf796f6b10a6e069682a14950d479be3056a18584601999f"
+    },
+    "generic_08": {
+      "status": "PASS_RTL_TO_CHECKPOINT_INDUCTION",
+      "logic": [
+        15,
+        11
+      ],
+      "explicit_state": false,
+      "proof_sha256": "566758dcde84c90f6987a261446fc7450100599d5c85542ebbb6d6db29fe9c0a"
+    },
+    "generic_09": {
+      "status": "PASS_RTL_TO_CHECKPOINT_INDUCTION",
+      "logic": [
+        37,
+        26
+      ],
+      "explicit_state": true,
+      "proof_sha256": "3254f9ce452c9554fb10e92b44ccb7f2a3c68b813af4f1d441678f307a130fd5"
+    },
+    "generic_10": {
+      "status": "PASS_RTL_TO_CHECKPOINT_INDUCTION",
+      "logic": [
+        79,
+        72
+      ],
+      "explicit_state": false,
+      "proof_sha256": "d795feee36df0d1df96fd8e9d08fb4cf7c49dabee9e2d8e47fadcb99bc79a6e7"
+    },
+    "generic_11": {
+      "status": "PASS_RTL_TO_CHECKPOINT_INDUCTION",
+      "logic": [
+        160,
+        126
+      ],
+      "explicit_state": true,
+      "proof_sha256": "a00c6ad10e76c2dc9d359df1648abdb0b51e96019b3bc35b4a2e571581e9f5c0"
+    },
+    "generic_12": {
+      "status": "PASS_RTL_TO_CHECKPOINT_INDUCTION",
+      "logic": [
+        15,
+        9
+      ],
+      "explicit_state": false,
+      "proof_sha256": "d57975b33c9e64f4ab56e98f1ccae5e9808583dffb469d2171694c3e5752292c"
+    },
+    "generic_12_renamed": {
+      "status": "PASS_RTL_TO_CHECKPOINT_INDUCTION",
+      "logic": [
+        15,
+        9
+      ],
+      "explicit_state": false,
+      "proof_sha256": "4d45b1a8995ac0f8622c346497897ee1762df5ab4579746b990c35fabfc04a5e"
+    },
+    "generic_13": {
+      "status": "PASS_RTL_TO_CHECKPOINT_INDUCTION",
+      "logic": [
+        40,
+        32
+      ],
+      "explicit_state": true,
+      "proof_sha256": "d9df5a37e35dafd223fd28fd614a69acaab5b7c9ae3132ec5fdeeb750445b4e9"
+    },
+    "generic_14": {
+      "status": "PASS_RTL_TO_CHECKPOINT_INDUCTION",
+      "logic": [
+        79,
+        72
+      ],
+      "explicit_state": false,
+      "proof_sha256": "d795feee36df0d1df96fd8e9d08fb4cf7c49dabee9e2d8e47fadcb99bc79a6e7"
+    },
+    "generic_15": {
+      "status": "PASS_RTL_TO_CHECKPOINT_INDUCTION",
+      "logic": [
+        150,
+        93
+      ],
+      "explicit_state": true,
+      "proof_sha256": "8bdccb938e4894d5f63d559d52dac07cbdfd8882058041cd31337dda8f9fafc9"
+    },
+    "generic_16": {
+      "status": "PASS_RTL_TO_CHECKPOINT_INDUCTION",
+      "logic": [
+        15,
+        11
+      ],
+      "explicit_state": false,
+      "proof_sha256": "566758dcde84c90f6987a261446fc7450100599d5c85542ebbb6d6db29fe9c0a"
+    },
+    "generic_17": {
+      "status": "PASS_RTL_TO_CHECKPOINT_INDUCTION",
+      "logic": [
+        38,
+        31
+      ],
+      "explicit_state": true,
+      "proof_sha256": "e46a7e22f79a09f9f40fe5ccb390bd2729a3fac3814a50ee8ca6366e230e6467"
+    },
+    "generic_17_renamed": {
+      "status": "PASS_RTL_TO_CHECKPOINT_INDUCTION",
+      "logic": [
+        38,
+        31
+      ],
+      "explicit_state": true,
+      "proof_sha256": "6db27de838495ea5aa9b927d9f2fd723fd7107dea82aa88ec613eaa4f0998907"
+    },
+    "generic_18": {
+      "status": "PASS_RTL_TO_CHECKPOINT_INDUCTION",
+      "logic": [
+        74,
+        53
+      ],
+      "explicit_state": false,
+      "proof_sha256": "1e4c14ec1e90a2dc84109754bbbffa27a798d8c4c12c03f0a117003476d66e1f"
+    },
+    "generic_19": {
+      "status": "PASS_RTL_TO_CHECKPOINT_INDUCTION",
+      "logic": [
+        149,
+        129
+      ],
+      "explicit_state": true,
+      "proof_sha256": "7b3ada7b5aa56ab71eb8f1248a3e113c999ca4584fae7c055cf2dca1af980007"
+    },
+    "generic_20": {
+      "status": "PASS_RTL_TO_CHECKPOINT_INDUCTION",
+      "logic": [
+        16,
+        11
+      ],
+      "explicit_state": false,
+      "proof_sha256": "39f970ceebb91b54deae9c2727b8552e6928288f183e0b9cade00790047d70b2"
+    },
+    "generic_21": {
+      "status": "PASS_RTL_TO_CHECKPOINT_INDUCTION",
+      "logic": [
+        39,
+        28
+      ],
+      "explicit_state": true,
+      "proof_sha256": "8cc4e76341a6b637293e3e1aff91939cf28da732248bdae1f0f5ab161cba3ea4"
+    },
+    "generic_22": {
+      "status": "PASS_RTL_TO_CHECKPOINT_INDUCTION",
+      "logic": [
+        76,
+        72
+      ],
+      "explicit_state": false,
+      "proof_sha256": "d795feee36df0d1df96fd8e9d08fb4cf7c49dabee9e2d8e47fadcb99bc79a6e7"
+    },
+    "generic_23": {
+      "status": "PASS_RTL_TO_CHECKPOINT_INDUCTION",
+      "logic": [
+        160,
+        128
+      ],
+      "explicit_state": true,
+      "proof_sha256": "9c3f4863b322cce91cfa6848f43eab05021c2e22b5870c3b16c97ff866704249"
+    }
+  }
+}

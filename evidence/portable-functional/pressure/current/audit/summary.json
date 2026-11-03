@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "audits": {
+    "checkpoint": "PASS: all initial values, registers, interfaces, emitted equations and proof hashes verified",
+    "final": "PASS: all initial values, registers, interfaces, emitted equations and proof hashes verified"
+  },
+  "mutations": {
+    "power_up": "REJECTED_INITIAL_RELATION",
+    "omitted_register": "REJECTED_INCOMPLETE_COVERAGE",
+    "clock": "REJECTED_BY_SAT",
+    "async_clear": "REJECTED_BY_SAT",
+    "synchronous_load": "REJECTED_BY_SAT",
+    "public_output": "REJECTED_BY_SAT"
+  }
+}

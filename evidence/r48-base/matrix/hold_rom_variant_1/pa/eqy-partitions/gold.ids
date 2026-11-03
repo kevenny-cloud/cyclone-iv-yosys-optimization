@@ -1,0 +1,6 @@
+top . A:src="input.v:1.1-5.10" A:top=1
+top y w=23:0 A:src="input.v:1.76-1.77" P=O
+top we w=0:0 A:src="input.v:1.22-1.24" P=I
+top din w=23:0 A:src="input.v:1.57-1.60" P=I
+top clk w=0:0 A:src="input.v:1.18-1.21" P=I
+top addr w=4:0 A:src="input.v:1.38-1.42" P=I

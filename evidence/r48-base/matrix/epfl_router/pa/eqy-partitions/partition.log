@@ -1,0 +1,430 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.69+274 (git sha1 7513f8df8, Release, GNU /usr/bin/x86_64-w64-mingw32-g++ 15.2.1)
+
+-- Executing script file `partition.ys' --
+
+1. Executing RTLIL frontend.
+Input filename: combined.il
+
+2. Executing INSBUF pass (insert buffer cells for connected wires).
+Add gate.top/$auto$insbuf.cc:97:execute$1501: 1'0 -> \outport[10]
+Add gate.top/$auto$insbuf.cc:97:execute$1502: 1'0 -> \outport[11]
+Add gate.top/$auto$insbuf.cc:97:execute$1503: 1'0 -> \outport[12]
+Add gate.top/$auto$insbuf.cc:97:execute$1504: 1'0 -> \outport[13]
+Add gate.top/$auto$insbuf.cc:97:execute$1505: 1'0 -> \outport[14]
+Add gate.top/$auto$insbuf.cc:97:execute$1506: 1'0 -> \outport[15]
+Add gate.top/$auto$insbuf.cc:97:execute$1507: 1'0 -> \outport[16]
+Add gate.top/$auto$insbuf.cc:97:execute$1508: 1'0 -> \outport[17]
+Add gate.top/$auto$insbuf.cc:97:execute$1509: 1'0 -> \outport[18]
+Add gate.top/$auto$insbuf.cc:97:execute$1510: 1'0 -> \outport[19]
+Add gate.top/$auto$insbuf.cc:97:execute$1511: 1'0 -> \outport[20]
+Add gate.top/$auto$insbuf.cc:97:execute$1512: 1'0 -> \outport[21]
+Add gate.top/$auto$insbuf.cc:97:execute$1513: 1'0 -> \outport[22]
+Add gate.top/$auto$insbuf.cc:97:execute$1514: 1'0 -> \outport[23]
+Add gate.top/$auto$insbuf.cc:97:execute$1515: 1'0 -> \outport[24]
+Add gate.top/$auto$insbuf.cc:97:execute$1516: 1'0 -> \outport[25]
+Add gate.top/$auto$insbuf.cc:97:execute$1517: 1'0 -> \outport[26]
+Add gate.top/$auto$insbuf.cc:97:execute$1518: 1'0 -> \outport[27]
+Add gate.top/$auto$insbuf.cc:97:execute$1519: 1'0 -> \outport[28]
+Add gate.top/$auto$insbuf.cc:97:execute$1520: 1'0 -> \outport[29]
+Add gate.top/$auto$insbuf.cc:97:execute$1521: 1'0 -> \outport[3]
+Add gate.top/$auto$insbuf.cc:97:execute$1522: 1'0 -> \outport[4]
+Add gate.top/$auto$insbuf.cc:97:execute$1523: 1'0 -> \outport[5]
+Add gate.top/$auto$insbuf.cc:97:execute$1524: 1'0 -> \outport[6]
+Add gate.top/$auto$insbuf.cc:97:execute$1525: 1'0 -> \outport[7]
+Add gate.top/$auto$insbuf.cc:97:execute$1526: 1'0 -> \outport[8]
+Add gate.top/$auto$insbuf.cc:97:execute$1527: 1'0 -> \outport[9]
+Add gold.top/$auto$insbuf.cc:97:execute$1528: 1'0 -> \outport[10]
+Add gold.top/$auto$insbuf.cc:97:execute$1529: 1'0 -> \outport[11]
+Add gold.top/$auto$insbuf.cc:97:execute$1530: 1'0 -> \outport[12]
+Add gold.top/$auto$insbuf.cc:97:execute$1531: 1'0 -> \outport[13]
+Add gold.top/$auto$insbuf.cc:97:execute$1532: 1'0 -> \outport[14]
+Add gold.top/$auto$insbuf.cc:97:execute$1533: 1'0 -> \outport[15]
+Add gold.top/$auto$insbuf.cc:97:execute$1534: 1'0 -> \outport[16]
+Add gold.top/$auto$insbuf.cc:97:execute$1535: 1'0 -> \outport[17]
+Add gold.top/$auto$insbuf.cc:97:execute$1536: 1'0 -> \outport[18]
+Add gold.top/$auto$insbuf.cc:97:execute$1537: 1'0 -> \outport[19]
+Add gold.top/$auto$insbuf.cc:97:execute$1538: 1'0 -> \outport[20]
+Add gold.top/$auto$insbuf.cc:97:execute$1539: 1'0 -> \outport[21]
+Add gold.top/$auto$insbuf.cc:97:execute$1540: 1'0 -> \outport[22]
+Add gold.top/$auto$insbuf.cc:97:execute$1541: 1'0 -> \outport[23]
+Add gold.top/$auto$insbuf.cc:97:execute$1542: 1'0 -> \outport[24]
+Add gold.top/$auto$insbuf.cc:97:execute$1543: 1'0 -> \outport[25]
+Add gold.top/$auto$insbuf.cc:97:execute$1544: 1'0 -> \outport[26]
+Add gold.top/$auto$insbuf.cc:97:execute$1545: 1'0 -> \outport[27]
+Add gold.top/$auto$insbuf.cc:97:execute$1546: 1'0 -> \outport[28]
+Add gold.top/$auto$insbuf.cc:97:execute$1547: 1'0 -> \outport[29]
+Add gold.top/$auto$insbuf.cc:97:execute$1548: 1'0 -> \outport[3]
+Add gold.top/$auto$insbuf.cc:97:execute$1549: 1'0 -> \outport[4]
+Add gold.top/$auto$insbuf.cc:97:execute$1550: 1'0 -> \outport[5]
+Add gold.top/$auto$insbuf.cc:97:execute$1551: 1'0 -> \outport[6]
+Add gold.top/$auto$insbuf.cc:97:execute$1552: 1'0 -> \outport[7]
+Add gold.top/$auto$insbuf.cc:97:execute$1553: 1'0 -> \outport[8]
+Add gold.top/$auto$insbuf.cc:97:execute$1554: 1'0 -> \outport[9]
+
+3. Executing EQY PARTITION task.
+
+3.1. Processing module pair gold.top / gate.top.
+
+3.1.1. Processing matched IDs for module top.
+
+3.1.2. Create fragment partitions for module top.
+Adding output bit \outport[9] to partition 0.
+Adding output bit \outport[0] to partition 0.
+Adding output bit \outport[10] to partition 0.
+Adding output bit \outport[11] to partition 0.
+Adding output bit \outport[12] to partition 0.
+Adding output bit \outport[13] to partition 0.
+Adding output bit \outport[14] to partition 0.
+Adding output bit \outport[15] to partition 0.
+Adding output bit \outport[16] to partition 0.
+Adding output bit \outport[17] to partition 0.
+Adding output bit \outport[18] to partition 0.
+Adding output bit \outport[19] to partition 0.
+Adding output bit \outport[1] to partition 0.
+Adding output bit \outport[20] to partition 0.
+Adding output bit \outport[21] to partition 0.
+Adding output bit \outport[22] to partition 0.
+Adding output bit \outport[23] to partition 0.
+Adding output bit \outport[24] to partition 0.
+Adding output bit \outport[25] to partition 0.
+Adding output bit \outport[26] to partition 0.
+Adding output bit \outport[27] to partition 0.
+Adding output bit \outport[28] to partition 0.
+Adding output bit \outport[29] to partition 0.
+Adding output bit \outport[2] to partition 0.
+Adding output bit \outport[3] to partition 0.
+Adding output bit \outport[4] to partition 0.
+Adding output bit \outport[5] to partition 0.
+Adding output bit \outport[6] to partition 0.
+Adding output bit \outport[7] to partition 0.
+Adding output bit \outport[8] to partition 0.
+
+Final list of fragment partitions:
+  0 \outport[8] \outport[7] \outport[6] \outport[5] \outport[4] \outport[3] \outport[2] \outport[29] \outport[28] \outport[27] \outport[26] \outport[25] \outport[24] \outport[23] \outport[22] \outport[21] \outport[20] \outport[1] \outport[19] \outport[18] \outport[17] \outport[16] \outport[15] \outport[14] \outport[13] \outport[12] \outport[11] \outport[10] \outport[0] \outport[9] <= \dest_y[25] \dest_y[7] \dest_y[8] \dest_y[24] \dest_y[26] \dest_y[3] \dest_y[4] \dest_y[5] \dest_y[6] \dest_y[0] \dest_y[1] \dest_y[2] \dest_y[21] \dest_y[22] \dest_y[23] \dest_y[20] \dest_y[28] \dest_y[29] \dest_y[9] \dest_y[10] \dest_y[11] \dest_y[12] \dest_y[13] \dest_y[14] \dest_y[15] \dest_y[16] \dest_y[17] \dest_y[18] \dest_y[19] \dest_y[27] \dest_x[0] \dest_x[28] \dest_x[29] \dest_x[27] \dest_x[19] \dest_x[20] \dest_x[21] \dest_x[17] \dest_x[18] \dest_x[22] \dest_x[26] \dest_x[9] \dest_x[10] \dest_x[11] \dest_x[16] \dest_x[12] \dest_x[13] \dest_x[14] \dest_x[15] \dest_x[23] \dest_x[24] \dest_x[25] \dest_x[5] \dest_x[6] \dest_x[7] \dest_x[8] \dest_x[1] \dest_x[2] \dest_x[3] \dest_x[4]
+
+3.1.3. Execute partitioning commands for module top.
+
+Amending partitions:
+Execute queued amend rules.
+Find automatic amend rules.
+  Checking partition 0:
+    Found 0 po matches and 0 auto/pi matches.
+
+Assigning partition names:
+Automatically naming partition 0 'outport.0' using a PO name: outport[0]
+
+Partition Summary:
+  Fragments:
+       0: \outport[0], \outport[1], \outport[2], \outport[3], \outport[4], \outport[5], \outport[6], \outport[7], \outport[8], \outport[9], \outport[10], and 19 more bits
+  Partitions:
+       0: outport.0
+  Fragment-Partition-Matrix:
+           0          
+           0
+       0   #  outport.0
+  Legend for Fragment-Partition-Matrix:
+      #  .... partition is this single fragment
+      *  .... fragments merged into single partition
+      +  .... fragments amended to the partition
+      =  .... fragment is driving a partition input
+      -  .... fragment is driving an amended fragment
+      .  .... no relationship between fragment and partition
+      ,  .... unused fragment index (as result of grouping)
+
+3.1.4. Write partitions for module top.
+Adding output bit \outport[9] to partition 1.
+Adding output bit \outport[8] to partition 1.
+Adding output bit \outport[7] to partition 1.
+Adding output bit \outport[6] to partition 1.
+Adding output bit \outport[5] to partition 1.
+Adding output bit \outport[4] to partition 1.
+Adding output bit \outport[3] to partition 1.
+Adding output bit \outport[2] to partition 1.
+Adding output bit \outport[29] to partition 1.
+Adding output bit \outport[28] to partition 1.
+Adding output bit \outport[27] to partition 1.
+Adding output bit \outport[26] to partition 1.
+Adding output bit \outport[25] to partition 1.
+Adding output bit \outport[24] to partition 1.
+Adding output bit \outport[23] to partition 1.
+Adding output bit \outport[22] to partition 1.
+Adding output bit \outport[21] to partition 1.
+Adding output bit \outport[20] to partition 1.
+Adding output bit \outport[1] to partition 1.
+Adding output bit \outport[19] to partition 1.
+Adding output bit \outport[18] to partition 1.
+Adding output bit \outport[17] to partition 1.
+Adding output bit \outport[16] to partition 1.
+Adding output bit \outport[15] to partition 1.
+Adding output bit \outport[14] to partition 1.
+Adding output bit \outport[13] to partition 1.
+Adding output bit \outport[12] to partition 1.
+Adding output bit \outport[11] to partition 1.
+Adding output bit \outport[10] to partition 1.
+Adding output bit \outport[0] to partition 1.
+Adding non-output bit \dest_y[9] to partition 1.
+Adding non-output bit \dest_y[8] to partition 1.
+Adding non-output bit \dest_y[7] to partition 1.
+Adding non-output bit \dest_y[6] to partition 1.
+Adding non-output bit \dest_y[5] to partition 1.
+Adding non-output bit \dest_y[4] to partition 1.
+Adding non-output bit \dest_y[3] to partition 1.
+Adding non-output bit \dest_y[2] to partition 1.
+Adding non-output bit \dest_y[29] to partition 1.
+Adding non-output bit \dest_y[28] to partition 1.
+Adding non-output bit \dest_y[27] to partition 1.
+Adding non-output bit \dest_y[26] to partition 1.
+Adding non-output bit \dest_y[25] to partition 1.
+Adding non-output bit \dest_y[24] to partition 1.
+Adding non-output bit \dest_y[23] to partition 1.
+Adding non-output bit \dest_y[22] to partition 1.
+Adding non-output bit \dest_y[21] to partition 1.
+Adding non-output bit \dest_y[20] to partition 1.
+Adding non-output bit \dest_y[1] to partition 1.
+Adding non-output bit \dest_y[19] to partition 1.
+Adding non-output bit \dest_y[18] to partition 1.
+Adding non-output bit \dest_y[17] to partition 1.
+Adding non-output bit \dest_y[16] to partition 1.
+Adding non-output bit \dest_y[15] to partition 1.
+Adding non-output bit \dest_y[14] to partition 1.
+Adding non-output bit \dest_y[13] to partition 1.
+Adding non-output bit \dest_y[12] to partition 1.
+Adding non-output bit \dest_y[11] to partition 1.
+Adding non-output bit \dest_y[10] to partition 1.
+Adding non-output bit \dest_y[0] to partition 1.
+Adding non-output bit \dest_x[9] to partition 1.
+Adding non-output bit \dest_x[8] to partition 1.
+Adding non-output bit \dest_x[7] to partition 1.
+Adding non-output bit \dest_x[6] to partition 1.
+Adding non-output bit \dest_x[5] to partition 1.
+Adding non-output bit \dest_x[4] to partition 1.
+Adding non-output bit \dest_x[3] to partition 1.
+Adding non-output bit \dest_x[2] to partition 1.
+Adding non-output bit \dest_x[29] to partition 1.
+Adding non-output bit \dest_x[28] to partition 1.
+Adding non-output bit \dest_x[27] to partition 1.
+Adding non-output bit \dest_x[26] to partition 1.
+Adding non-output bit \dest_x[25] to partition 1.
+Adding non-output bit \dest_x[24] to partition 1.
+Adding non-output bit \dest_x[23] to partition 1.
+Adding non-output bit \dest_x[22] to partition 1.
+Adding non-output bit \dest_x[21] to partition 1.
+Adding non-output bit \dest_x[20] to partition 1.
+Adding non-output bit \dest_x[1] to partition 1.
+Adding non-output bit \dest_x[19] to partition 1.
+Adding non-output bit \dest_x[18] to partition 1.
+Adding non-output bit \dest_x[17] to partition 1.
+Adding non-output bit \dest_x[16] to partition 1.
+Adding non-output bit \dest_x[15] to partition 1.
+Adding non-output bit \dest_x[14] to partition 1.
+Adding non-output bit \dest_x[13] to partition 1.
+Adding non-output bit \dest_x[12] to partition 1.
+Adding non-output bit \dest_x[11] to partition 1.
+Adding non-output bit \dest_x[10] to partition 1.
+Adding non-output bit \dest_x[0] to partition 1.
+Writing partition 0 as top.outport.0.
+  partition pi bit 0: \dest_y[25] <-> \dest_y[25]
+  partition pi bit 1: \dest_y[7] <-> \dest_y[7]
+  partition pi bit 2: \dest_y[8] <-> \dest_y[8]
+  partition pi bit 3: \dest_y[24] <-> \dest_y[24]
+  partition pi bit 4: \dest_y[26] <-> \dest_y[26]
+  partition pi bit 5: \dest_y[3] <-> \dest_y[3]
+  partition pi bit 6: \dest_y[4] <-> \dest_y[4]
+  partition pi bit 7: \dest_y[5] <-> \dest_y[5]
+  partition pi bit 8: \dest_y[6] <-> \dest_y[6]
+  partition pi bit 9: \dest_y[0] <-> \dest_y[0]
+  partition pi bit 10: \dest_y[1] <-> \dest_y[1]
+  partition pi bit 11: \dest_y[2] <-> \dest_y[2]
+  partition pi bit 12: \dest_y[21] <-> \dest_y[21]
+  partition pi bit 13: \dest_y[22] <-> \dest_y[22]
+  partition pi bit 14: \dest_y[23] <-> \dest_y[23]
+  partition pi bit 15: \dest_y[20] <-> \dest_y[20]
+  partition pi bit 16: \dest_y[28] <-> \dest_y[28]
+  partition pi bit 17: \dest_y[29] <-> \dest_y[29]
+  partition pi bit 18: \dest_y[9] <-> \dest_y[9]
+  partition pi bit 19: \dest_y[10] <-> \dest_y[10]
+  partition pi bit 20: \dest_y[11] <-> \dest_y[11]
+  partition pi bit 21: \dest_y[12] <-> \dest_y[12]
+  partition pi bit 22: \dest_y[13] <-> \dest_y[13]
+  partition pi bit 23: \dest_y[14] <-> \dest_y[14]
+  partition pi bit 24: \dest_y[15] <-> \dest_y[15]
+  partition pi bit 25: \dest_y[16] <-> \dest_y[16]
+  partition pi bit 26: \dest_y[17] <-> \dest_y[17]
+  partition pi bit 27: \dest_y[18] <-> \dest_y[18]
+  partition pi bit 28: \dest_y[19] <-> \dest_y[19]
+  partition pi bit 29: \dest_y[27] <-> \dest_y[27]
+  partition pi bit 30: \dest_x[0] <-> \dest_x[0]
+  partition pi bit 31: \dest_x[28] <-> \dest_x[28]
+  partition pi bit 32: \dest_x[29] <-> \dest_x[29]
+  partition pi bit 33: \dest_x[27] <-> \dest_x[27]
+  partition pi bit 34: \dest_x[19] <-> \dest_x[19]
+  partition pi bit 35: \dest_x[20] <-> \dest_x[20]
+  partition pi bit 36: \dest_x[21] <-> \dest_x[21]
+  partition pi bit 37: \dest_x[17] <-> \dest_x[17]
+  partition pi bit 38: \dest_x[18] <-> \dest_x[18]
+  partition pi bit 39: \dest_x[22] <-> \dest_x[22]
+  partition pi bit 40: \dest_x[26] <-> \dest_x[26]
+  partition pi bit 41: \dest_x[9] <-> \dest_x[9]
+  partition pi bit 42: \dest_x[10] <-> \dest_x[10]
+  partition pi bit 43: \dest_x[11] <-> \dest_x[11]
+  partition pi bit 44: \dest_x[16] <-> \dest_x[16]
+  partition pi bit 45: \dest_x[12] <-> \dest_x[12]
+  partition pi bit 46: \dest_x[13] <-> \dest_x[13]
+  partition pi bit 47: \dest_x[14] <-> \dest_x[14]
+  partition pi bit 48: \dest_x[15] <-> \dest_x[15]
+  partition pi bit 49: \dest_x[23] <-> \dest_x[23]
+  partition pi bit 50: \dest_x[24] <-> \dest_x[24]
+  partition pi bit 51: \dest_x[25] <-> \dest_x[25]
+  partition pi bit 52: \dest_x[5] <-> \dest_x[5]
+  partition pi bit 53: \dest_x[6] <-> \dest_x[6]
+  partition pi bit 54: \dest_x[7] <-> \dest_x[7]
+  partition pi bit 55: \dest_x[8] <-> \dest_x[8]
+  partition pi bit 56: \dest_x[1] <-> \dest_x[1]
+  partition pi bit 57: \dest_x[2] <-> \dest_x[2]
+  partition pi bit 58: \dest_x[3] <-> \dest_x[3]
+  partition pi bit 59: \dest_x[4] <-> \dest_x[4]
+  partition po bit 0: \outport[8] <-> \outport[8]
+  partition po bit 1: \outport[7] <-> \outport[7]
+  partition po bit 2: \outport[6] <-> \outport[6]
+  partition po bit 3: \outport[5] <-> \outport[5]
+  partition po bit 4: \outport[4] <-> \outport[4]
+  partition po bit 5: \outport[3] <-> \outport[3]
+  partition po bit 6: \outport[2] <-> \outport[2]
+  partition po bit 7: \outport[29] <-> \outport[29]
+  partition po bit 8: \outport[28] <-> \outport[28]
+  partition po bit 9: \outport[27] <-> \outport[27]
+  partition po bit 10: \outport[26] <-> \outport[26]
+  partition po bit 11: \outport[25] <-> \outport[25]
+  partition po bit 12: \outport[24] <-> \outport[24]
+  partition po bit 13: \outport[23] <-> \outport[23]
+  partition po bit 14: \outport[22] <-> \outport[22]
+  partition po bit 15: \outport[21] <-> \outport[21]
+  partition po bit 16: \outport[20] <-> \outport[20]
+  partition po bit 17: \outport[1] <-> \outport[1]
+  partition po bit 18: \outport[19] <-> \outport[19]
+  partition po bit 19: \outport[18] <-> \outport[18]
+  partition po bit 20: \outport[17] <-> \outport[17]
+  partition po bit 21: \outport[16] <-> \outport[16]
+  partition po bit 22: \outport[15] <-> \outport[15]
+  partition po bit 23: \outport[14] <-> \outport[14]
+  partition po bit 24: \outport[13] <-> \outport[13]
+  partition po bit 25: \outport[12] <-> \outport[12]
+  partition po bit 26: \outport[11] <-> \outport[11]
+  partition po bit 27: \outport[10] <-> \outport[10]
+  partition po bit 28: \outport[0] <-> \outport[0]
+  partition po bit 29: \outport[9] <-> \outport[9]
+
+3.1.5. Executing RTLIL backend.
+Output filename: partitions/top.outport.0.il
+<suppressed ~3207 debug messages>
+
+3.1.6. Executing CHECK pass (checking for obvious problems).
+Checking module gate.top.outport.0...
+Checking module gold.top.outport.0...
+Found and reported 0 problems.
+
+Writing partition 1 as top.
+  partition pi bit 0: \dest_x[28] <-> \dest_x[28]
+  partition pi bit 1: \dest_x[29] <-> \dest_x[29]
+  partition pi bit 2: \dest_x[27] <-> \dest_x[27]
+  partition pi bit 3: \dest_x[19] <-> \dest_x[19]
+  partition pi bit 4: \dest_x[20] <-> \dest_x[20]
+  partition pi bit 5: \dest_x[21] <-> \dest_x[21]
+  partition pi bit 6: \dest_x[17] <-> \dest_x[17]
+  partition pi bit 7: \dest_x[18] <-> \dest_x[18]
+  partition pi bit 8: \dest_x[22] <-> \dest_x[22]
+  partition pi bit 9: \dest_x[26] <-> \dest_x[26]
+  partition pi bit 10: \dest_x[9] <-> \dest_x[9]
+  partition pi bit 11: \dest_x[10] <-> \dest_x[10]
+  partition pi bit 12: \dest_x[11] <-> \dest_x[11]
+  partition pi bit 13: \dest_x[16] <-> \dest_x[16]
+  partition pi bit 14: \dest_x[12] <-> \dest_x[12]
+  partition pi bit 15: \dest_x[13] <-> \dest_x[13]
+  partition pi bit 16: \dest_x[14] <-> \dest_x[14]
+  partition pi bit 17: \dest_x[15] <-> \dest_x[15]
+  partition pi bit 18: \dest_x[23] <-> \dest_x[23]
+  partition pi bit 19: \dest_x[24] <-> \dest_x[24]
+  partition pi bit 20: \dest_x[25] <-> \dest_x[25]
+  partition pi bit 21: \dest_x[5] <-> \dest_x[5]
+  partition pi bit 22: \dest_x[6] <-> \dest_x[6]
+  partition pi bit 23: \dest_x[7] <-> \dest_x[7]
+  partition pi bit 24: \dest_x[8] <-> \dest_x[8]
+  partition pi bit 25: \dest_x[1] <-> \dest_x[1]
+  partition pi bit 26: \dest_x[2] <-> \dest_x[2]
+  partition pi bit 27: \dest_x[3] <-> \dest_x[3]
+  partition pi bit 28: \dest_x[4] <-> \dest_x[4]
+  partition pi bit 29: \dest_y[28] <-> \dest_y[28]
+  partition pi bit 30: \dest_y[29] <-> \dest_y[29]
+  partition pi bit 31: \dest_y[17] <-> \dest_y[17]
+  partition pi bit 32: \dest_y[20] <-> \dest_y[20]
+  partition pi bit 33: \dest_y[1] <-> \dest_y[1]
+  partition pi bit 34: \dest_y[2] <-> \dest_y[2]
+  partition pi bit 35: \dest_y[21] <-> \dest_y[21]
+  partition pi bit 36: \dest_y[22] <-> \dest_y[22]
+  partition pi bit 37: \dest_y[18] <-> \dest_y[18]
+  partition pi bit 38: \dest_y[19] <-> \dest_y[19]
+  partition pi bit 39: \dest_y[27] <-> \dest_y[27]
+  partition pi bit 40: \dest_y[7] <-> \dest_y[7]
+  partition pi bit 41: \dest_y[8] <-> \dest_y[8]
+  partition pi bit 42: \dest_y[23] <-> \dest_y[23]
+  partition pi bit 43: \dest_y[24] <-> \dest_y[24]
+  partition pi bit 44: \dest_y[3] <-> \dest_y[3]
+  partition pi bit 45: \dest_y[4] <-> \dest_y[4]
+  partition pi bit 46: \dest_y[5] <-> \dest_y[5]
+  partition pi bit 47: \dest_y[6] <-> \dest_y[6]
+  partition pi bit 48: \dest_y[9] <-> \dest_y[9]
+  partition pi bit 49: \dest_y[10] <-> \dest_y[10]
+  partition pi bit 50: \dest_y[11] <-> \dest_y[11]
+  partition pi bit 51: \dest_y[12] <-> \dest_y[12]
+  partition pi bit 52: \dest_y[13] <-> \dest_y[13]
+  partition pi bit 53: \dest_y[14] <-> \dest_y[14]
+  partition pi bit 54: \dest_y[15] <-> \dest_y[15]
+  partition pi bit 55: \dest_y[16] <-> \dest_y[16]
+  partition pi bit 56: \dest_y[25] <-> \dest_y[25]
+  partition pi bit 57: \dest_y[26] <-> \dest_y[26]
+  partition pi bit 58: \dest_x[0] <-> \dest_x[0]
+  partition pi bit 59: \dest_y[0] <-> \dest_y[0]
+  partition po bit 0: \outport[0] <-> \outport[0]
+  partition po bit 1: \outport[10] <-> \outport[10]
+  partition po bit 2: \outport[11] <-> \outport[11]
+  partition po bit 3: \outport[12] <-> \outport[12]
+  partition po bit 4: \outport[13] <-> \outport[13]
+  partition po bit 5: \outport[14] <-> \outport[14]
+  partition po bit 6: \outport[15] <-> \outport[15]
+  partition po bit 7: \outport[16] <-> \outport[16]
+  partition po bit 8: \outport[17] <-> \outport[17]
+  partition po bit 9: \outport[18] <-> \outport[18]
+  partition po bit 10: \outport[19] <-> \outport[19]
+  partition po bit 11: \outport[1] <-> \outport[1]
+  partition po bit 12: \outport[20] <-> \outport[20]
+  partition po bit 13: \outport[21] <-> \outport[21]
+  partition po bit 14: \outport[22] <-> \outport[22]
+  partition po bit 15: \outport[23] <-> \outport[23]
+  partition po bit 16: \outport[24] <-> \outport[24]
+  partition po bit 17: \outport[25] <-> \outport[25]
+  partition po bit 18: \outport[26] <-> \outport[26]
+  partition po bit 19: \outport[27] <-> \outport[27]
+  partition po bit 20: \outport[28] <-> \outport[28]
+  partition po bit 21: \outport[29] <-> \outport[29]
+  partition po bit 22: \outport[2] <-> \outport[2]
+  partition po bit 23: \outport[3] <-> \outport[3]
+  partition po bit 24: \outport[4] <-> \outport[4]
+  partition po bit 25: \outport[5] <-> \outport[5]
+  partition po bit 26: \outport[6] <-> \outport[6]
+  partition po bit 27: \outport[7] <-> \outport[7]
+  partition po bit 28: \outport[8] <-> \outport[8]
+  partition po bit 29: \outport[9] <-> \outport[9]
+
+3.1.7. Executing RTLIL backend.
+Output filename: modules/top.il
+<suppressed ~1195 debug messages>
+
+End of script. Logfile hash: 76c204031d
+Yosys 0.69+274 (git sha1 7513f8df8, Release, GNU /usr/bin/x86_64-w64-mingw32-g++ 15.2.1)
+Time spent: 14% 2x write_rtlil (0 sec), 14% 2x read_rtlil (0 sec), ...

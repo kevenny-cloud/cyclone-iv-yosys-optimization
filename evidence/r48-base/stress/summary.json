@@ -1,0 +1,160 @@
+{
+  "status": "EXPORTED",
+  "config": {
+    "baseline": {
+      "yosys": "D:\\\u7ade\u8d5b\\FPGA\\FPGA\\\u538b\u529b\u6d4b\u8bd5\u52a0\u56fa\\20261027_structural_rules\\native\\windows-reference\\yosys.exe",
+      "yosys_sha256": "5878533b186324470103a34bb792294607b38e4e31be6c529b6b37b3c3f0c105",
+      "abc": "D:\\\u7ade\u8d5b\\FPGA\\FPGA\\\u538b\u529b\u6d4b\u8bd5\u52a0\u56fa\\20261027_structural_rules\\native\\windows-reference\\yosys-abc.exe",
+      "abc_sha256": "1842fb358da1efb7f61ab3698b6fb0c9b35d3bd8e517e04abbc1ae1711038089",
+      "data": "D:\\\u7ade\u8d5b\\FPGA\\FPGA\\\u538b\u529b\u6d4b\u8bd5\u52a0\u56fa\\20261027_structural_rules\\native\\windows-reference\\share",
+      "runtime_sha256": {
+        "abc9_map.v": "f611eeeaedaf4f80fa05c244906b56cfac4fcb6960aaefa9e5569850d5ab193a",
+        "abc9_model.v": "38fedb5415db4102058e11d029b93343393df8f64d86d1ed40fc4685ecc60d26",
+        "abc9_unmap.v": "346b6d45d416d1631bb44385930b5271b84cb9626d09d140dddf7472a68d99e3",
+        "adff2dff.v": "b71f5443956a75ce32bdb0abddb025073978d08b40569f4ae8e63a177466659b",
+        "choices\\han-carlson.v": "c9442e2e8a77f5dee8e3645ce6be2613eee9df4431eea32ebc9cdd5b0a143b42",
+        "choices\\kogge-stone.v": "f2601d85ad37cfa8fc1eb6940c58c7256031b97677a7c091bc3e12f82e53adcd",
+        "choices\\sklansky.v": "17539d9725ace7a9862cc5adda794b684d1a59dcf877fcd80be1dfc592d229a2",
+        "cmp2lcu.v": "a573c2ea4536815454b1d84397b030230ffba80087bac65f1f50e2f0a473bab9",
+        "cmp2lut.v": "b20be58ce24372269227c2d71418dd81106ba8b7bca192a05b60e50926565c7a",
+        "cmp2softlogic.v": "4bdd76ad92417cbf37718c0599967a338b833958785f662dab6a554f444176f0",
+        "dff2ff.v": "fe6b781b109ebf56d89b02f315dca5226cb04706f811a9112618cd9d6d68d767",
+        "gate2lut.v": "35089c62c6734851473c1c0055d260719330aaec02a1b7deb712c0616c172ad2",
+        "intel\\common\\altpll_bb.v": "2a2aebbc0467d2f7b06fc868b48c865b375e91f9e6221e69d28c4a875624e577",
+        "intel\\common\\brams_map_m9k.v": "179719c46ce1cbed3791257d2455a9dd6154f9d855833f7533259d271b460e45",
+        "intel\\common\\ff_map.v": "b1d533e121c100cf833b24fcb9550b4b6309c0805f48e6985db44d49b6ce22ec",
+        "intel\\common\\m9k_bb.v": "a3eb44b87064de45d64b44bc99582e39b8b4a6cc574a93b058bacd9bacef5f5d",
+        "intel\\cyclone10lp\\cells_map.v": "fc1b4bafa8f89bf07b14a873c14f9f048dc11426a7627a62f7cc4b13a18bee42",
+        "intel\\cyclone10lp\\cells_sim.v": "b24b2e88b9a6ad0afcc49639cf950ab5a5ce78ce7b17ae3fe6ed7259a3ab3ed0",
+        "intel\\cycloneiv\\cells_map.v": "b8f2da90b1f7035893ae9c5489ac04da0385e8a47cbf116a85281686f97db805",
+        "intel\\cycloneiv\\cells_sim.v": "a6014340ce18a73a234e0b39f6d5478cd74487903735f720ed0c21dff2f1cdfc",
+        "intel\\cycloneive\\cells_map.v": "083c7d82ff2ce8ff00531951baa265886a735d9b241b6490b1c2b447268ba512",
+        "intel\\cycloneive\\cells_sim.v": "cf07682b8ad9503517628dd6c2b7c602d14c86d06d24f001088904f25d3fdc5b",
+        "intel\\max10\\cells_map.v": "8584f96f3e29d4c1c6b9c1a53e2a180fca62f43793cbbc1836854908990ab94d",
+        "intel\\max10\\cells_sim.v": "22e536173eb8dd041b6d3703e5f8e7055a833cb3462df1544f507a066e3ed22c",
+        "intel\\max10\\dsp_map.v": "66c3cfce44fef0d154612580660f202cf768149044f9385f62585233e3da4308",
+        "mul2dsp.v": "9a9941e96f956fba0e63b93a1d708f44e6c8d1a344ef2c00f253a67cc4fd98b9",
+        "pmux2mux.v": "c0d310564fe91bebe94303fde2c78c610ee77aa2d54602ebc2c0488d9afd7a8b",
+        "simcells.v": "0156162837d52b32bea761b03195aa8786dca602d75e09d7bb1bdb0c7f4183da",
+        "simlib.v": "243315bbec98becca5f42a713764e7274f226cc8dbdb82cc1ff08a5ceeb00f36",
+        "smtmap.v": "020f02b09e2c2cfb005e45ab09c9f24d362d21771bb5af9b5470b688e651c992",
+        "techmap.v": "8af1bc8ac65660634d39928fae779358f7fd009d9efb705ee28efb6dd3c37117"
+      }
+    },
+    "candidate": {
+      "yosys": "D:\\\u7ade\u8d5b\\FPGA\\FPGA\\\u538b\u529b\u6d4b\u8bd5\u52a0\u56fa\\20261027_structural_rules\\continuation-20261030\\r48-one-snapshot-clean\\program\\yosys.exe",
+      "yosys_sha256": "2c214fbe02ae67d918eec8f91c1709a856dba0985dd507f600f5b4e467e309e5",
+      "abc": "D:\\\u7ade\u8d5b\\FPGA\\FPGA\\\u538b\u529b\u6d4b\u8bd5\u52a0\u56fa\\20261027_structural_rules\\continuation-20261030\\r48-one-snapshot-clean\\program\\yosys-abc.exe",
+      "abc_sha256": "1842fb358da1efb7f61ab3698b6fb0c9b35d3bd8e517e04abbc1ae1711038089",
+      "data": "D:\\\u7ade\u8d5b\\FPGA\\FPGA\\\u538b\u529b\u6d4b\u8bd5\u52a0\u56fa\\20261027_structural_rules\\continuation-20261030\\r48-one-snapshot-clean\\program\\share",
+      "runtime_sha256": {
+        "abc9_map.v": "f611eeeaedaf4f80fa05c244906b56cfac4fcb6960aaefa9e5569850d5ab193a",
+        "abc9_model.v": "38fedb5415db4102058e11d029b93343393df8f64d86d1ed40fc4685ecc60d26",
+        "abc9_unmap.v": "346b6d45d416d1631bb44385930b5271b84cb9626d09d140dddf7472a68d99e3",
+        "adff2dff.v": "b71f5443956a75ce32bdb0abddb025073978d08b40569f4ae8e63a177466659b",
+        "choices\\han-carlson.v": "c9442e2e8a77f5dee8e3645ce6be2613eee9df4431eea32ebc9cdd5b0a143b42",
+        "choices\\kogge-stone.v": "f2601d85ad37cfa8fc1eb6940c58c7256031b97677a7c091bc3e12f82e53adcd",
+        "choices\\sklansky.v": "17539d9725ace7a9862cc5adda794b684d1a59dcf877fcd80be1dfc592d229a2",
+        "cmp2lcu.v": "a573c2ea4536815454b1d84397b030230ffba80087bac65f1f50e2f0a473bab9",
+        "cmp2lut.v": "b20be58ce24372269227c2d71418dd81106ba8b7bca192a05b60e50926565c7a",
+        "cmp2softlogic.v": "4bdd76ad92417cbf37718c0599967a338b833958785f662dab6a554f444176f0",
+        "dff2ff.v": "fe6b781b109ebf56d89b02f315dca5226cb04706f811a9112618cd9d6d68d767",
+        "gate2lut.v": "35089c62c6734851473c1c0055d260719330aaec02a1b7deb712c0616c172ad2",
+        "intel\\common\\altpll_bb.v": "2a2aebbc0467d2f7b06fc868b48c865b375e91f9e6221e69d28c4a875624e577",
+        "intel\\common\\brams_map_m9k.v": "179719c46ce1cbed3791257d2455a9dd6154f9d855833f7533259d271b460e45",
+        "intel\\common\\ff_map.v": "b1d533e121c100cf833b24fcb9550b4b6309c0805f48e6985db44d49b6ce22ec",
+        "intel\\common\\ff_map_sync.v": "a2a8e7d4873028580eaa710fdac40f1449607bb4b134ba455a8f08f8fed13eea",
+        "intel\\common\\m9k_bb.v": "a3eb44b87064de45d64b44bc99582e39b8b4a6cc574a93b058bacd9bacef5f5d",
+        "intel\\cyclone10lp\\cells_map.v": "fc1b4bafa8f89bf07b14a873c14f9f048dc11426a7627a62f7cc4b13a18bee42",
+        "intel\\cyclone10lp\\cells_sim.v": "b24b2e88b9a6ad0afcc49639cf950ab5a5ce78ce7b17ae3fe6ed7259a3ab3ed0",
+        "intel\\cycloneiv\\cells_map.v": "a8b2180f8eaa8cd44efea67483cdb3a6b1eb7a79aa33f034ce13c57c014ab5bb",
+        "intel\\cycloneiv\\cells_sim.v": "a6014340ce18a73a234e0b39f6d5478cd74487903735f720ed0c21dff2f1cdfc",
+        "intel\\cycloneive\\cells_map.v": "083c7d82ff2ce8ff00531951baa265886a735d9b241b6490b1c2b447268ba512",
+        "intel\\cycloneive\\cells_sim.v": "cf07682b8ad9503517628dd6c2b7c602d14c86d06d24f001088904f25d3fdc5b",
+        "intel\\max10\\cells_map.v": "8584f96f3e29d4c1c6b9c1a53e2a180fca62f43793cbbc1836854908990ab94d",
+        "intel\\max10\\cells_sim.v": "22e536173eb8dd041b6d3703e5f8e7055a833cb3462df1544f507a066e3ed22c",
+        "intel\\max10\\dsp_map.v": "66c3cfce44fef0d154612580660f202cf768149044f9385f62585233e3da4308",
+        "mul2dsp.v": "9a9941e96f956fba0e63b93a1d708f44e6c8d1a344ef2c00f253a67cc4fd98b9",
+        "pmux2mux.v": "c0d310564fe91bebe94303fde2c78c610ee77aa2d54602ebc2c0488d9afd7a8b",
+        "simcells.v": "0156162837d52b32bea761b03195aa8786dca602d75e09d7bb1bdb0c7f4183da",
+        "simlib.v": "243315bbec98becca5f42a713764e7274f226cc8dbdb82cc1ff08a5ceeb00f36",
+        "smtmap.v": "020f02b09e2c2cfb005e45ab09c9f24d362d21771bb5af9b5470b688e651c992",
+        "techmap.v": "8af1bc8ac65660634d39928fae779358f7fd009d9efb705ee28efb6dd3c37117"
+      }
+    }
+  },
+  "cases": {
+    "baseline_logic_unit_999": {
+      "top": "baseline_logic_unit_999",
+      "parameters": {},
+      "historical_baseline_logic": 999,
+      "source_order": [
+        "pmux_case01_balanced.v",
+        "pmux_case02_pipeline.v",
+        "pmux_case03_crossbar.v",
+        "pmux_case04_feedback.v",
+        "pmux_case05_nested.v",
+        "test1.v",
+        "test2.v",
+        "test3.v",
+        "test4.v",
+        "baseline_logic_unit_999.v"
+      ],
+      "input_sha256": {
+        "pmux_case01_balanced.v": "463263f4b265cbad3b634d69d316cd29e7ea0a62f91ee396dbeeecf7df5c7343",
+        "pmux_case02_pipeline.v": "8639081b2fb7c446edef52a514d63b49333e444ce21638f03bdee97dc954e0ea",
+        "pmux_case03_crossbar.v": "bf1fc3bf6383beb007a69587d77a29ea74fb1fbdf7429fb401c0855a31c05932",
+        "pmux_case04_feedback.v": "d668d258d804674dd1412538e7bce04d4630d02928ffe113413b536e6b9ed70f",
+        "pmux_case05_nested.v": "57d64edd3704d9d74407145080a63d06390e4a598c419a948fdea22fb1147f1d",
+        "test1.v": "2d2dba011b0e8799d0de3790b69b7f01c6eb6ac665c4321b57b0378a4972fd13",
+        "test2.v": "e43c9b437071488551caf3121e227e86f4fe3190751f245beac3b7ecc3fdb146",
+        "test3.v": "1551b9212622ccef6019d6e77de2c43dc8c80d267957b55a42121f34a08780e9",
+        "test4.v": "c0c5042928bd6bf568e2b7fb2193f2b6db9c4193ba3a5378fc50a331d43422d7",
+        "baseline_logic_unit_999.v": "1d84bdfbf5ca8a5ad1908911a8ba732439d3146061f3e59ea4eb76f18bfc4d20"
+      },
+      "variants": {
+        "baseline": {
+          "sha256": {
+            "run.ys": "415c0cc5ad7d47da116e755e4e15df66103e4343f15651ceff057a68ffdf6d18",
+            "run.log": "bb1d8823d61ba0e55bf018ff9dc510e72f15ef9616731b6580bfbd45597e8396",
+            "checkpoint.il": "2637ad5f7abfe140f1f6a592a5f1dfd79d25e743154f3da7404b4f91031fbca2",
+            "checkpoint.json": "b97688a24cc9e2d6c138c2f9fca39effa1cbf0888bc5e9733fa474517c826b14",
+            "final.il": "a3c5c1b22003ce4f2efcd94b0f4b67d9e585bc3a5efe8ccd2c4f54e92de2a179",
+            "final.json": "0bb051c1bcaf14b2445ae23c3f809a9473d5a2ad2514e9f5c210a927e39d8060"
+          },
+          "abc_logged_errors": [
+            "ABC: Error: Abc_FrameUpdateGia(): Transformation has failed."
+          ],
+          "logic": 1016,
+          "dff": 803,
+          "by_type": {
+            "$not": 33,
+            "dffeas": 803,
+            "cycloneiv_lcell_comb": 983
+          }
+        },
+        "candidate": {
+          "sha256": {
+            "run.ys": "415c0cc5ad7d47da116e755e4e15df66103e4343f15651ceff057a68ffdf6d18",
+            "run.log": "fd75aac2d4283a7ada2609beea5f4ed9223b8c7f000f18535d4d6920529f8cc3",
+            "checkpoint.il": "2dac181dc5e7b2eb263e1331f58933f20fe2efe363b8133a70c38af4d46d8ce9",
+            "checkpoint.json": "f85348156466a4bb32fb9a7e71914167d73c6306e52f6eb6fcc1eb81b7160d29",
+            "final.il": "0e8b266610adfc6cb6edb0c48df53dc0cc7ea12c0260f8d8a8787bc9dbafb29b",
+            "final.json": "a7767c7a0cdf89b3eb99063af4549b3e6dc95c484dc69a35ee907db41a9dc550"
+          },
+          "logic": 754,
+          "dff": 800,
+          "by_type": {
+            "$not": 7,
+            "dffeas": 800,
+            "cycloneiv_lcell_comb": 747
+          }
+        }
+      }
+    }
+  },
+  "provenance": {
+    "original_reference": "D:\\\u7ade\u8d5b\\FPGA\\FPGA\\\u538b\u529b\u6d4b\u8bd5\u52a0\u56fa\\20261027_structural_rules\\continuation-20261030\\r47-user-stress\\summary.json",
+    "original_reference_summary_sha256": "a70a5d77390d93e4e651cdbd98f4fbb272b1d676924b05af88b2c23ee6570ed5"
+  }
+}

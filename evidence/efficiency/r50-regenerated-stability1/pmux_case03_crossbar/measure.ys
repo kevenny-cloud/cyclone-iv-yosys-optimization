@@ -1,0 +1,2 @@
+read_verilog -icells input.v
+synth_intel -family cycloneiv -top pmux_case03_crossbar

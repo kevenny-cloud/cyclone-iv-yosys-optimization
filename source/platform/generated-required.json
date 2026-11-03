@@ -1,0 +1,23 @@
+[
+  "kernel/simcells_help.inc",
+  "kernel/simlib_help.inc",
+  "kernel/version.cc",
+  "kernel/yosys_config.h",
+  "techlibs/ice40/ice40_dsp_pm.h",
+  "techlibs/ice40/ice40_wrapcarry_pm.h",
+  "techlibs/lattice/lattice_dsp_nexus_pm.h",
+  "techlibs/microchip/microchip_dsp_cascade_pm.h",
+  "techlibs/microchip/microchip_dsp_CREG_pm.h",
+  "techlibs/microchip/microchip_dsp_pm.h",
+  "techlibs/quicklogic/ql_dsp_macc_pm.h",
+  "techlibs/xilinx/xilinx_dsp48a_pm.h",
+  "techlibs/xilinx/xilinx_dsp_cascade_pm.h",
+  "techlibs/xilinx/xilinx_dsp_CREG_pm.h",
+  "techlibs/xilinx/xilinx_dsp_pm.h",
+  "techlibs/xilinx/xilinx_srl_pm.h",
+  "passes/opt/peepopt_pm.h",
+  "passes/pmgen/test_pmgen_pm.h",
+  "frontends/verilog/verilog_lexer.cc",
+  "frontends/verilog/verilog_parser.tab.cc",
+  "frontends/verilog/verilog_parser.tab.hh"
+]

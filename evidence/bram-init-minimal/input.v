@@ -1,0 +1,1 @@
+module top(input clk,input[7:0] addr,output[35:0] y);\$__M9K_ALTSYNCRAM_SINGLEPORT_FULL #(.INIT(1'b0)) u(.CLK2(clk),.CLK3(clk),.A1ADDR(addr),.A1EN(1'b1),.A1DATA(y),.B1ADDR(addr),.B1DATA(36'b0),.B1EN(1'b0));endmodule

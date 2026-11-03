@@ -1,0 +1,6 @@
+read_rtlil candidate-generic.il
+prep -top test2
+opt_clean
+check -initdrv
+setundef -undriven -undef
+write_rtlil eqy-partitions/gate.il

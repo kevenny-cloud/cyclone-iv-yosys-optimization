@@ -1,0 +1,32 @@
+{
+  "one_box": {
+    "equivalence_of_all_box_inputs_and_public_outputs": "PASS",
+    "boxes_before": 1,
+    "boxes_after": 1
+  },
+  "two_boxes": {
+    "equivalence_of_all_box_inputs_and_public_outputs": "PASS",
+    "boxes_before": 2,
+    "boxes_after": 2
+  },
+  "dangling_box": {
+    "equivalence_of_all_box_inputs_and_public_outputs": "PASS",
+    "boxes_before": 0,
+    "boxes_after": 0
+  },
+  "kept_box": {
+    "equivalence_of_all_box_inputs_and_public_outputs": "PASS",
+    "boxes_before": 1,
+    "boxes_after": 1
+  },
+  "parameter_vector_box": {
+    "equivalence_of_all_box_inputs_and_public_outputs": "PASS",
+    "boxes_before": 1,
+    "boxes_after": 1
+  },
+  "shared_box_output": {
+    "equivalence_of_all_box_inputs_and_public_outputs": "PASS",
+    "boxes_before": 1,
+    "boxes_after": 1
+  }
+}

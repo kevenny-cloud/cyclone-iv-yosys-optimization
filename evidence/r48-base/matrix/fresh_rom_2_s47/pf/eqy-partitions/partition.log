@@ -1,0 +1,472 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.69+274 (git sha1 7513f8df8, Release, GNU /usr/bin/x86_64-w64-mingw32-g++ 15.2.1)
+
+-- Executing script file `partition.ys' --
+
+1. Executing RTLIL frontend.
+Input filename: combined.il
+
+2. Executing INSBUF pass (insert buffer cells for connected wires).
+Add gate.top/$auto$insbuf.cc:97:execute$3373: \addr [1] -> \y [9]
+Add gate.top/$auto$insbuf.cc:97:execute$3374: \addr [2] -> \y [16]
+Add gate.top/$auto$insbuf.cc:97:execute$3375: \addr [5] -> \y [32]
+Add gate.top/$auto$insbuf.cc:97:execute$3376: \addr [6] -> \y [33]
+Rewrite gate.top/$auto$rename.cc:500:execute$3235/A: { \addr [0] \addr [1] \addr [2] \addr [3] } -> { \addr [0] \y [9] \y [16] \addr [3] }
+Rewrite gate.top/$auto$rename.cc:500:execute$3236/A: { $auto$rename.cc:496:execute$3224 \addr [0] \addr [1] \addr [4] } -> { $auto$rename.cc:496:execute$3224 \addr [0] \y [9] \addr [4] }
+Rewrite gate.top/$auto$rename.cc:500:execute$3237/A: { 1'1 $auto$rename.cc:496:execute$3204 \addr [2] \addr [3] } -> { 1'1 $auto$rename.cc:496:execute$3204 \y [16] \addr [3] }
+Rewrite gate.top/$auto$rename.cc:500:execute$3239/A: { \addr [5] \addr [6] \addr [7] \addr [8] } -> { \y [32] \y [33] \addr [7] \addr [8] }
+Rewrite gate.top/$auto$rename.cc:500:execute$3240/A: { 2'11 \addr [5] \addr [6] } -> { 2'11 \y [32] \y [33] }
+Rewrite gate.top/$auto$rename.cc:500:execute$3241/A: { 1'1 \addr [6] \addr [7] \addr [8] } -> { 1'1 \y [33] \addr [7] \addr [8] }
+Rewrite gate.top/$auto$rename.cc:500:execute$3243/A: { \addr [5] \addr [6] \addr [7] \addr [8] } -> { \y [32] \y [33] \addr [7] \addr [8] }
+Rewrite gate.top/$auto$rename.cc:500:execute$3244/A: { 2'11 \y [0] \addr [2] } -> { 2'11 \y [0] \y [16] }
+Rewrite gate.top/$auto$rename.cc:500:execute$3245/A: { 1'1 $auto$rename.cc:496:execute$3227 $auto$rename.cc:496:execute$3148 \addr [5] } -> { 1'1 $auto$rename.cc:496:execute$3227 $auto$rename.cc:496:execute$3148 \y [32] }
+Rewrite gate.top/$auto$rename.cc:500:execute$3247/A: { \addr [5] \addr [6] \addr [7] \addr [9] } -> { \y [32] \y [33] \addr [7] \addr [9] }
+Rewrite gate.top/$auto$rename.cc:500:execute$3249/A: { \addr [5] \addr [6] \addr [7] \addr [8] } -> { \y [32] \y [33] \addr [7] \addr [8] }
+Rewrite gate.top/$auto$rename.cc:500:execute$3250/A: { \addr [5] \addr [6] \addr [7] \addr [8] } -> { \y [32] \y [33] \addr [7] \addr [8] }
+Rewrite gate.top/$auto$rename.cc:500:execute$3252/A: { 1'1 \addr [0] \addr [1] \addr [2] } -> { 1'1 \addr [0] \y [9] \y [16] }
+Rewrite gate.top/$auto$rename.cc:500:execute$3253/A: { \addr [5] \addr [6] \addr [7] \addr [8] } -> { \y [32] \y [33] \addr [7] \addr [8] }
+Rewrite gate.top/$auto$rename.cc:500:execute$3255/A: { \addr [5] \addr [6] \addr [7] \addr [8] } -> { \y [32] \y [33] \addr [7] \addr [8] }
+Rewrite gate.top/$auto$rename.cc:500:execute$3256/A: { \addr [5] \addr [6] \addr [7] \addr [8] } -> { \y [32] \y [33] \addr [7] \addr [8] }
+Rewrite gate.top/$auto$rename.cc:500:execute$3257/A: \addr [8:5] -> { \addr [8:7] \y [33:32] }
+Rewrite gate.top/$auto$rename.cc:500:execute$3259/A: \addr [8:5] -> { \addr [8:7] \y [33:32] }
+Rewrite gate.top/$auto$rename.cc:500:execute$3260/A: { \addr [5] \addr [6] \addr [7] \addr [8] } -> { \y [32] \y [33] \addr [7] \addr [8] }
+Rewrite gate.top/$auto$rename.cc:500:execute$3262/A: { \addr [3] \addr [0] \addr [2:1] } -> { \addr [3] \addr [0] \y [16] \y [9] }
+Rewrite gate.top/$auto$rename.cc:500:execute$3263/A: { \addr [0] \addr [1] \addr [2] \addr [3] } -> { \addr [0] \y [9] \y [16] \addr [3] }
+Rewrite gate.top/$auto$rename.cc:500:execute$3264/A: { 2'11 \addr [0] \addr [1] } -> { 2'11 \addr [0] \y [9] }
+Rewrite gate.top/$auto$rename.cc:500:execute$3266/A: { \addr [5] \addr [6] \addr [7] \addr [8] } -> { \y [32] \y [33] \addr [7] \addr [8] }
+Rewrite gate.top/$auto$rename.cc:500:execute$3267/A: { \addr [5] \addr [6] \addr [7] \addr [8] } -> { \y [32] \y [33] \addr [7] \addr [8] }
+Rewrite gate.top/$auto$rename.cc:500:execute$3268/A: { 1'1 \addr [5] \addr [6] \addr [7] } -> { 1'1 \y [32] \y [33] \addr [7] }
+Rewrite gate.top/$auto$rename.cc:500:execute$3269/A: { \addr [5] \addr [6] \addr [7] \addr [8] } -> { \y [32] \y [33] \addr [7] \addr [8] }
+Rewrite gate.top/$auto$rename.cc:500:execute$3270/A: { 2'11 \addr [5] \addr [6] } -> { 2'11 \y [32] \y [33] }
+Rewrite gate.top/$auto$rename.cc:500:execute$3271/A: { $auto$rename.cc:496:execute$3204 \addr [2] \addr [3] \addr [4] } -> { $auto$rename.cc:496:execute$3204 \y [16] \addr [3] \addr [4] }
+Rewrite gate.top/$auto$rename.cc:500:execute$3273/A: { \addr [3] \addr [0] \addr [2:1] } -> { \addr [3] \addr [0] \y [16] \y [9] }
+Rewrite gate.top/$auto$rename.cc:500:execute$3274/A: { \addr [0] \addr [1] \addr [2] \addr [3] } -> { \addr [0] \y [9] \y [16] \addr [3] }
+Rewrite gate.top/$auto$rename.cc:500:execute$3275/A: { \addr [0] \addr [1] \addr [2] \addr [3] } -> { \addr [0] \y [9] \y [16] \addr [3] }
+Rewrite gate.top/$auto$rename.cc:500:execute$3277/A: { \addr [0] \addr [1] \addr [2] \addr [3] } -> { \addr [0] \y [9] \y [16] \addr [3] }
+Rewrite gate.top/$auto$rename.cc:500:execute$3278/A: { \addr [0] \addr [1] \addr [2] \addr [3] } -> { \addr [0] \y [9] \y [16] \addr [3] }
+Rewrite gate.top/$auto$rename.cc:500:execute$3280/A: { \addr [0] \addr [1] \addr [2] \addr [4] } -> { \addr [0] \y [9] \y [16] \addr [4] }
+Rewrite gate.top/$auto$rename.cc:500:execute$3281/A: { 2'11 \addr [1] \addr [3] } -> { 2'11 \y [9] \addr [3] }
+Rewrite gate.top/$auto$rename.cc:500:execute$3282/A: { 1'1 $auto$rename.cc:496:execute$3227 $auto$rename.cc:496:execute$3148 \addr [5] } -> { 1'1 $auto$rename.cc:496:execute$3227 $auto$rename.cc:496:execute$3148 \y [32] }
+Rewrite gate.top/$auto$rename.cc:500:execute$3284/A: { \addr [0] \addr [1] \addr [2] \addr [3] } -> { \addr [0] \y [9] \y [16] \addr [3] }
+Rewrite gate.top/$auto$rename.cc:500:execute$3285/A: { \addr [0] \addr [1] \addr [2] \addr [3] } -> { \addr [0] \y [9] \y [16] \addr [3] }
+Rewrite gate.top/$auto$rename.cc:500:execute$3286/A: { 2'11 \addr [0] \addr [1] } -> { 2'11 \addr [0] \y [9] }
+Rewrite gate.top/$auto$rename.cc:500:execute$3288/A: { \addr [5] \addr [6] \addr [7] \addr [8] } -> { \y [32] \y [33] \addr [7] \addr [8] }
+Rewrite gate.top/$auto$rename.cc:500:execute$3290/A: { \addr [0] \addr [1] \addr [2] \addr [3] } -> { \addr [0] \y [9] \y [16] \addr [3] }
+Rewrite gate.top/$auto$rename.cc:500:execute$3291/A: { \addr [3] \addr [0] \addr [2:1] } -> { \addr [3] \addr [0] \y [16] \y [9] }
+Rewrite gate.top/$auto$rename.cc:500:execute$3293/A: \addr [8:5] -> { \addr [8:7] \y [33:32] }
+Rewrite gate.top/$auto$rename.cc:500:execute$3294/A: { \addr [5] \addr [6] \addr [7] \addr [8] } -> { \y [32] \y [33] \addr [7] \addr [8] }
+Rewrite gate.top/$auto$rename.cc:500:execute$3295/A: { $auto$rename.cc:496:execute$3148 \addr [5] \addr [6] \addr [7] } -> { $auto$rename.cc:496:execute$3148 \y [32] \y [33] \addr [7] }
+Rewrite gate.top/$auto$rename.cc:500:execute$3296/A: { \addr [0] \addr [1] \addr [2] \addr [3] } -> { \addr [0] \y [9] \y [16] \addr [3] }
+Rewrite gate.top/$auto$rename.cc:500:execute$3297/A: { \addr [0] \addr [1] \addr [2] \addr [3] } -> { \addr [0] \y [9] \y [16] \addr [3] }
+Rewrite gate.top/$auto$rename.cc:500:execute$3298/A: { $auto$rename.cc:496:execute$3224 \addr [0] \addr [1] \addr [4] } -> { $auto$rename.cc:496:execute$3224 \addr [0] \y [9] \addr [4] }
+Rewrite gate.top/$auto$rename.cc:500:execute$3299/A: { 2'11 \addr [2] \addr [3] } -> { 2'11 \y [16] \addr [3] }
+Rewrite gate.top/$auto$rename.cc:500:execute$3300/A: { $auto$rename.cc:496:execute$3227 \addr [5] \addr [8] \addr [9] } -> { $auto$rename.cc:496:execute$3227 \y [32] \addr [8] \addr [9] }
+Rewrite gate.top/$auto$rename.cc:500:execute$3301/A: { 2'11 \addr [6] \addr [7] } -> { 2'11 \y [33] \addr [7] }
+Rewrite gate.top/$auto$rename.cc:500:execute$3302/A: { $auto$rename.cc:496:execute$3204 \addr [2] \addr [3] \addr [4] } -> { $auto$rename.cc:496:execute$3204 \y [16] \addr [3] \addr [4] }
+Rewrite gate.top/$auto$rename.cc:500:execute$3303/A: { $auto$rename.cc:496:execute$3204 \addr [2] \addr [3] \addr [4] } -> { $auto$rename.cc:496:execute$3204 \y [16] \addr [3] \addr [4] }
+Rewrite gate.top/$auto$rename.cc:500:execute$3304/A: { $auto$rename.cc:496:execute$3227 \addr [5] \addr [8] \addr [9] } -> { $auto$rename.cc:496:execute$3227 \y [32] \addr [8] \addr [9] }
+Rewrite gate.top/$auto$rename.cc:500:execute$3305/A: { \addr [0] \addr [1] \addr [2] \addr [3] } -> { \addr [0] \y [9] \y [16] \addr [3] }
+Add gold.top/$auto$insbuf.cc:97:execute$3377: \addr [1] -> \y [9]
+Add gold.top/$auto$insbuf.cc:97:execute$3378: \addr [2] -> \y [16]
+Add gold.top/$auto$insbuf.cc:97:execute$3379: \addr [5] -> \y [32]
+Add gold.top/$auto$insbuf.cc:97:execute$3380: \addr [6] -> \y [33]
+Rewrite gold.top/$auto$rename.cc:500:execute$3239/A: { \addr [0] \addr [1] \addr [2] \addr [3] } -> { \addr [0] \y [9] \y [16] \addr [3] }
+Rewrite gold.top/$auto$rename.cc:500:execute$3241/A: { \addr [5] \addr [6] \addr [7] \addr [8] } -> { \y [32] \y [33] \addr [7] \addr [8] }
+Rewrite gold.top/$auto$rename.cc:500:execute$3242/A: { 2'11 \addr [5] \addr [6] } -> { 2'11 \y [32] \y [33] }
+Rewrite gold.top/$auto$rename.cc:500:execute$3243/A: { 1'1 \addr [6] \addr [7] \addr [8] } -> { 1'1 \y [33] \addr [7] \addr [8] }
+Rewrite gold.top/$auto$rename.cc:500:execute$3245/A: { \addr [5] \addr [6] \addr [7] \addr [8] } -> { \y [32] \y [33] \addr [7] \addr [8] }
+Rewrite gold.top/$auto$rename.cc:500:execute$3246/A: { 2'11 \y [0] \addr [2] } -> { 2'11 \y [0] \y [16] }
+Rewrite gold.top/$auto$rename.cc:500:execute$3247/A: { 1'1 $auto$rename.cc:496:execute$3230 $auto$rename.cc:496:execute$3138 \addr [5] } -> { 1'1 $auto$rename.cc:496:execute$3230 $auto$rename.cc:496:execute$3138 \y [32] }
+Rewrite gold.top/$auto$rename.cc:500:execute$3249/A: { \addr [5] \addr [6] \addr [7] \addr [9] } -> { \y [32] \y [33] \addr [7] \addr [9] }
+Rewrite gold.top/$auto$rename.cc:500:execute$3251/A: { \addr [5] \addr [6] \addr [7] \addr [8] } -> { \y [32] \y [33] \addr [7] \addr [8] }
+Rewrite gold.top/$auto$rename.cc:500:execute$3252/A: { \addr [5] \addr [6] \addr [7] \addr [8] } -> { \y [32] \y [33] \addr [7] \addr [8] }
+Rewrite gold.top/$auto$rename.cc:500:execute$3254/A: { \addr [5] \addr [6] \addr [7] \addr [8] } -> { \y [32] \y [33] \addr [7] \addr [8] }
+Rewrite gold.top/$auto$rename.cc:500:execute$3256/A: { \addr [5] \addr [6] \addr [7] \addr [8] } -> { \y [32] \y [33] \addr [7] \addr [8] }
+Rewrite gold.top/$auto$rename.cc:500:execute$3258/A: { \addr [5] \addr [6] \addr [7] \addr [8] } -> { \y [32] \y [33] \addr [7] \addr [8] }
+Rewrite gold.top/$auto$rename.cc:500:execute$3259/A: { \addr [5] \addr [6] \addr [7] \addr [8] } -> { \y [32] \y [33] \addr [7] \addr [8] }
+Rewrite gold.top/$auto$rename.cc:500:execute$3260/A: { $auto$rename.cc:496:execute$3230 \addr [5] \addr [8] \addr [9] } -> { $auto$rename.cc:496:execute$3230 \y [32] \addr [8] \addr [9] }
+Rewrite gold.top/$auto$rename.cc:500:execute$3262/A: { \addr [5] \addr [6] \addr [7] \addr [8] } -> { \y [32] \y [33] \addr [7] \addr [8] }
+Rewrite gold.top/$auto$rename.cc:500:execute$3263/A: { \addr [5] \addr [6] \addr [7] \addr [8] } -> { \y [32] \y [33] \addr [7] \addr [8] }
+Rewrite gold.top/$auto$rename.cc:500:execute$3264/A: { \addr [5] \addr [6] \addr [7] \addr [8] } -> { \y [32] \y [33] \addr [7] \addr [8] }
+Rewrite gold.top/$auto$rename.cc:500:execute$3265/A: { 1'1 \addr [0] \addr [1] \addr [2] } -> { 1'1 \addr [0] \y [9] \y [16] }
+Rewrite gold.top/$auto$rename.cc:500:execute$3267/A: { 2'11 \addr [1] \addr [2] } -> { 2'11 \y [9] \y [16] }
+Rewrite gold.top/$auto$rename.cc:500:execute$3268/A: { \addr [0] \addr [1] \addr [2] \addr [3] } -> { \addr [0] \y [9] \y [16] \addr [3] }
+Rewrite gold.top/$auto$rename.cc:500:execute$3269/A: { \addr [0] \addr [1] \addr [2] \addr [3] } -> { \addr [0] \y [9] \y [16] \addr [3] }
+Rewrite gold.top/$auto$rename.cc:500:execute$3270/A: { 2'11 \addr [0] \addr [1] } -> { 2'11 \addr [0] \y [9] }
+Rewrite gold.top/$auto$rename.cc:500:execute$3272/A: { \addr [5] \addr [6] \addr [7] \addr [8] } -> { \y [32] \y [33] \addr [7] \addr [8] }
+Rewrite gold.top/$auto$rename.cc:500:execute$3273/A: { \addr [5] \addr [6] \addr [7] \addr [8] } -> { \y [32] \y [33] \addr [7] \addr [8] }
+Rewrite gold.top/$auto$rename.cc:500:execute$3274/A: { 1'1 \addr [5] \addr [6] \addr [7] } -> { 1'1 \y [32] \y [33] \addr [7] }
+Rewrite gold.top/$auto$rename.cc:500:execute$3275/A: { \addr [5] \addr [6] \addr [7] \addr [8] } -> { \y [32] \y [33] \addr [7] \addr [8] }
+Rewrite gold.top/$auto$rename.cc:500:execute$3276/A: { 2'11 \addr [5] \addr [6] } -> { 2'11 \y [32] \y [33] }
+Rewrite gold.top/$auto$rename.cc:500:execute$3278/A: { \addr [0] \addr [1] \addr [2] \addr [3] } -> { \addr [0] \y [9] \y [16] \addr [3] }
+Rewrite gold.top/$auto$rename.cc:500:execute$3279/A: { \addr [0] \addr [1] \addr [2] \addr [3] } -> { \addr [0] \y [9] \y [16] \addr [3] }
+Rewrite gold.top/$auto$rename.cc:500:execute$3280/A: { \addr [0] \addr [1] \addr [2] \addr [3] } -> { \addr [0] \y [9] \y [16] \addr [3] }
+Rewrite gold.top/$auto$rename.cc:500:execute$3281/A: { \addr [0] \addr [1] \addr [2] \addr [3] } -> { \addr [0] \y [9] \y [16] \addr [3] }
+Rewrite gold.top/$auto$rename.cc:500:execute$3283/A: { \addr [0] \addr [1] \addr [2] \addr [3] } -> { \addr [0] \y [9] \y [16] \addr [3] }
+Rewrite gold.top/$auto$rename.cc:500:execute$3284/A: { $auto$rename.cc:496:execute$3218 \addr [2] \addr [3] \addr [4] } -> { $auto$rename.cc:496:execute$3218 \y [16] \addr [3] \addr [4] }
+Rewrite gold.top/$auto$rename.cc:500:execute$3285/A: { \addr [0] \addr [1] \addr [2] \addr [3] } -> { \addr [0] \y [9] \y [16] \addr [3] }
+Rewrite gold.top/$auto$rename.cc:500:execute$3287/A: { \addr [0] \addr [1] \addr [2] \addr [4] } -> { \addr [0] \y [9] \y [16] \addr [4] }
+Rewrite gold.top/$auto$rename.cc:500:execute$3288/A: { 2'11 \addr [1] \addr [3] } -> { 2'11 \y [9] \addr [3] }
+Rewrite gold.top/$auto$rename.cc:500:execute$3289/A: { 1'1 $auto$rename.cc:496:execute$3230 $auto$rename.cc:496:execute$3138 \addr [5] } -> { 1'1 $auto$rename.cc:496:execute$3230 $auto$rename.cc:496:execute$3138 \y [32] }
+Rewrite gold.top/$auto$rename.cc:500:execute$3291/A: { \addr [0] \addr [1] \addr [2] \addr [3] } -> { \addr [0] \y [9] \y [16] \addr [3] }
+Rewrite gold.top/$auto$rename.cc:500:execute$3292/A: { \addr [0] \addr [1] \addr [2] \addr [3] } -> { \addr [0] \y [9] \y [16] \addr [3] }
+Rewrite gold.top/$auto$rename.cc:500:execute$3293/A: { \addr [5] \addr [6] \addr [7] \addr [8] } -> { \y [32] \y [33] \addr [7] \addr [8] }
+Rewrite gold.top/$auto$rename.cc:500:execute$3296/A: { \addr [0] \addr [1] \addr [2] \addr [3] } -> { \addr [0] \y [9] \y [16] \addr [3] }
+Rewrite gold.top/$auto$rename.cc:500:execute$3297/A: { \addr [0] \addr [1] \addr [2] \addr [3] } -> { \addr [0] \y [9] \y [16] \addr [3] }
+Rewrite gold.top/$auto$rename.cc:500:execute$3299/A: { \addr [5] \addr [6] \addr [7] \addr [8] } -> { \y [32] \y [33] \addr [7] \addr [8] }
+Rewrite gold.top/$auto$rename.cc:500:execute$3300/A: { \addr [5] \addr [6] \addr [7] \addr [8] } -> { \y [32] \y [33] \addr [7] \addr [8] }
+Rewrite gold.top/$auto$rename.cc:500:execute$3301/A: { $auto$rename.cc:496:execute$3138 \addr [5] \addr [6] \addr [7] } -> { $auto$rename.cc:496:execute$3138 \y [32] \y [33] \addr [7] }
+Rewrite gold.top/$auto$rename.cc:500:execute$3302/A: { 2'11 \addr [0] \addr [1] } -> { 2'11 \addr [0] \y [9] }
+Rewrite gold.top/$auto$rename.cc:500:execute$3303/A: { $auto$rename.cc:496:execute$3227 \addr [0] \addr [1] \addr [4] } -> { $auto$rename.cc:496:execute$3227 \addr [0] \y [9] \addr [4] }
+Rewrite gold.top/$auto$rename.cc:500:execute$3305/A: { \addr [0] \addr [1] \addr [2] \addr [3] } -> { \addr [0] \y [9] \y [16] \addr [3] }
+Rewrite gold.top/$auto$rename.cc:500:execute$3306/A: { \addr [0] \addr [1] \addr [2] \addr [3] } -> { \addr [0] \y [9] \y [16] \addr [3] }
+Rewrite gold.top/$auto$rename.cc:500:execute$3307/A: { $auto$rename.cc:496:execute$3227 \addr [0] \addr [1] \addr [4] } -> { $auto$rename.cc:496:execute$3227 \addr [0] \y [9] \addr [4] }
+Rewrite gold.top/$auto$rename.cc:500:execute$3308/A: { 2'11 \addr [2] \addr [3] } -> { 2'11 \y [16] \addr [3] }
+Rewrite gold.top/$auto$rename.cc:500:execute$3309/A: { $auto$rename.cc:496:execute$3230 \addr [5] \addr [8] \addr [9] } -> { $auto$rename.cc:496:execute$3230 \y [32] \addr [8] \addr [9] }
+Rewrite gold.top/$auto$rename.cc:500:execute$3310/A: { 2'11 \addr [6] \addr [7] } -> { 2'11 \y [33] \addr [7] }
+Rewrite gold.top/$auto$rename.cc:500:execute$3311/A: { $auto$rename.cc:496:execute$3218 \addr [2] \addr [3] \addr [4] } -> { $auto$rename.cc:496:execute$3218 \y [16] \addr [3] \addr [4] }
+Rewrite gold.top/$auto$rename.cc:500:execute$3312/A: { $auto$rename.cc:496:execute$3218 \addr [2] \addr [3] \addr [4] } -> { $auto$rename.cc:496:execute$3218 \y [16] \addr [3] \addr [4] }
+Rewrite gold.top/$auto$rename.cc:500:execute$3313/A: { $auto$rename.cc:496:execute$3230 \addr [5] \addr [8] \addr [9] } -> { $auto$rename.cc:496:execute$3230 \y [32] \addr [8] \addr [9] }
+Rewrite gold.top/$auto$rename.cc:500:execute$3314/A: { 1'1 $auto$rename.cc:496:execute$3218 \addr [2] \addr [3] } -> { 1'1 $auto$rename.cc:496:execute$3218 \y [16] \addr [3] }
+Rewrite gold.top/$auto$rename.cc:500:execute$3315/A: { \addr [0] \addr [1] \addr [2] \addr [3] } -> { \addr [0] \y [9] \y [16] \addr [3] }
+
+3. Executing EQY PARTITION task.
+
+3.1. Processing module pair gold.top / gate.top.
+
+3.1.1. Processing matched IDs for module top.
+
+3.1.2. Create fragment partitions for module top.
+Adding output bit \y [47] to partition 0.
+Adding output bit \y [0] to partition 0.
+Adding output bit \y [1] to partition 0.
+Adding output bit \y [16] to partition 0.
+Adding output bit \y [2] to partition 0.
+Adding output bit \y [3] to partition 0.
+Adding output bit \y [4] to partition 0.
+Adding output bit \y [5] to partition 0.
+Adding output bit \y [6] to partition 0.
+Adding output bit \y [7] to partition 0.
+Adding output bit \y [8] to partition 0.
+Adding output bit \y [10] to partition 0.
+Adding output bit \y [11] to partition 0.
+Adding output bit \y [12] to partition 0.
+Adding output bit \y [13] to partition 0.
+Adding output bit \y [14] to partition 0.
+Adding output bit \y [15] to partition 0.
+Adding output bit \y [17] to partition 0.
+Adding output bit \y [18] to partition 0.
+Adding output bit \y [19] to partition 0.
+Adding output bit \y [20] to partition 0.
+Adding output bit \y [21] to partition 0.
+Adding output bit \y [22] to partition 0.
+Adding output bit \y [23] to partition 0.
+Adding output bit \y [24] to partition 0.
+Adding output bit \y [25] to partition 0.
+Adding output bit \y [26] to partition 0.
+Adding output bit \y [27] to partition 0.
+Adding output bit \y [28] to partition 0.
+Adding output bit \y [29] to partition 0.
+Adding output bit \y [30] to partition 0.
+Adding output bit \y [31] to partition 0.
+Adding output bit \y [32] to partition 0.
+Adding output bit \y [33] to partition 0.
+Adding output bit \y [34] to partition 0.
+Adding output bit \y [35] to partition 0.
+Adding output bit \y [36] to partition 0.
+Adding output bit \y [37] to partition 0.
+Adding output bit \y [38] to partition 0.
+Adding output bit \y [39] to partition 0.
+Adding output bit \y [40] to partition 0.
+Adding output bit \y [41] to partition 0.
+Adding output bit \y [42] to partition 0.
+Adding output bit \y [43] to partition 0.
+Adding output bit \y [44] to partition 0.
+Adding output bit \y [45] to partition 0.
+Adding output bit \y [46] to partition 0.
+Adding output bit \y [9] to partition 0.
+
+Final list of fragment partitions:
+  0 \y [9] \y [46] \y [45] \y [44] \y [43] \y [42] \y [41] \y [40] \y [39] \y [38] \y [37] \y [36] \y [35] \y [34] \y [33] \y [32] \y [31] \y [30] \y [29] \y [28] \y [27] \y [26] \y [25] \y [24] \y [23] \y [22] \y [21] \y [20] \y [19] \y [18] \y [17] \y [15] \y [14] \y [13] \y [12] \y [11] \y [10] \y [8] \y [7] \y [6] \y [5] \y [4] \y [3] \y [2] \y [16] \y [1] \y [0] \y [47] <= \addr [4] \addr [3] \addr [2] \addr [0] \addr [1] \addr [5] \addr [6] \addr [7] \addr [8] \addr [9]
+
+3.1.3. Execute partitioning commands for module top.
+
+Amending partitions:
+Execute queued amend rules.
+Find automatic amend rules.
+  Checking partition 0:
+    Found 0 po matches and 0 auto/pi matches.
+
+Assigning partition names:
+Automatically naming partition 0 'y' using a PO name: y
+
+Partition Summary:
+  Fragments:
+       0: \y
+  Partitions:
+       0: y
+  Fragment-Partition-Matrix:
+           0          
+           0
+       0   #  y
+  Legend for Fragment-Partition-Matrix:
+      #  .... partition is this single fragment
+      *  .... fragments merged into single partition
+      +  .... fragments amended to the partition
+      =  .... fragment is driving a partition input
+      -  .... fragment is driving an amended fragment
+      .  .... no relationship between fragment and partition
+      ,  .... unused fragment index (as result of grouping)
+
+3.1.4. Write partitions for module top.
+Adding output bit \y [47] to partition 1.
+Adding output bit \y [46] to partition 1.
+Adding output bit \y [45] to partition 1.
+Adding output bit \y [44] to partition 1.
+Adding output bit \y [43] to partition 1.
+Adding output bit \y [42] to partition 1.
+Adding output bit \y [41] to partition 1.
+Adding output bit \y [40] to partition 1.
+Adding output bit \y [39] to partition 1.
+Adding output bit \y [38] to partition 1.
+Adding output bit \y [37] to partition 1.
+Adding output bit \y [36] to partition 1.
+Adding output bit \y [35] to partition 1.
+Adding output bit \y [34] to partition 1.
+Adding output bit \y [33] to partition 1.
+Adding output bit \y [32] to partition 1.
+Adding output bit \y [31] to partition 1.
+Adding output bit \y [30] to partition 1.
+Adding output bit \y [29] to partition 1.
+Adding output bit \y [28] to partition 1.
+Adding output bit \y [27] to partition 1.
+Adding output bit \y [26] to partition 1.
+Adding output bit \y [25] to partition 1.
+Adding output bit \y [24] to partition 1.
+Adding output bit \y [23] to partition 1.
+Adding output bit \y [22] to partition 1.
+Adding output bit \y [21] to partition 1.
+Adding output bit \y [20] to partition 1.
+Adding output bit \y [19] to partition 1.
+Adding output bit \y [18] to partition 1.
+Adding output bit \y [17] to partition 1.
+Adding output bit \y [16] to partition 1.
+Adding output bit \y [15] to partition 1.
+Adding output bit \y [14] to partition 1.
+Adding output bit \y [13] to partition 1.
+Adding output bit \y [12] to partition 1.
+Adding output bit \y [11] to partition 1.
+Adding output bit \y [10] to partition 1.
+Adding output bit \y [9] to partition 1.
+Adding output bit \y [8] to partition 1.
+Adding output bit \y [7] to partition 1.
+Adding output bit \y [6] to partition 1.
+Adding output bit \y [5] to partition 1.
+Adding output bit \y [4] to partition 1.
+Adding output bit \y [3] to partition 1.
+Adding output bit \y [2] to partition 1.
+Adding output bit \y [1] to partition 1.
+Adding output bit \y [0] to partition 1.
+Adding non-output bit \we to partition 1.
+Adding non-output bit \din [23] to partition 1.
+Adding non-output bit \din [22] to partition 1.
+Adding non-output bit \din [21] to partition 1.
+Adding non-output bit \din [20] to partition 1.
+Adding non-output bit \din [19] to partition 1.
+Adding non-output bit \din [18] to partition 1.
+Adding non-output bit \din [17] to partition 1.
+Adding non-output bit \din [16] to partition 1.
+Adding non-output bit \din [15] to partition 1.
+Adding non-output bit \din [14] to partition 1.
+Adding non-output bit \din [13] to partition 1.
+Adding non-output bit \din [12] to partition 1.
+Adding non-output bit \din [11] to partition 1.
+Adding non-output bit \din [10] to partition 1.
+Adding non-output bit \din [9] to partition 1.
+Adding non-output bit \din [8] to partition 1.
+Adding non-output bit \din [7] to partition 1.
+Adding non-output bit \din [6] to partition 1.
+Adding non-output bit \din [5] to partition 1.
+Adding non-output bit \din [4] to partition 1.
+Adding non-output bit \din [3] to partition 1.
+Adding non-output bit \din [2] to partition 1.
+Adding non-output bit \din [1] to partition 1.
+Adding non-output bit \din [0] to partition 1.
+Adding non-output bit \clk to partition 1.
+Adding non-output bit \addr [9] to partition 1.
+Adding non-output bit \addr [8] to partition 1.
+Adding non-output bit \addr [7] to partition 1.
+Adding non-output bit \addr [6] to partition 1.
+Adding non-output bit \addr [5] to partition 1.
+Adding non-output bit \addr [4] to partition 1.
+Adding non-output bit \addr [3] to partition 1.
+Adding non-output bit \addr [2] to partition 1.
+Adding non-output bit \addr [1] to partition 1.
+Adding non-output bit \addr [0] to partition 1.
+Writing partition 0 as top.y.
+  partition pi bit 0: \addr [4] <-> \addr [4]
+  partition pi bit 1: \addr [3] <-> \addr [3]
+  partition pi bit 2: \addr [2] <-> \addr [2]
+  partition pi bit 3: \addr [0] <-> \addr [0]
+  partition pi bit 4: \addr [1] <-> \addr [1]
+  partition pi bit 5: \addr [5] <-> \addr [5]
+  partition pi bit 6: \addr [6] <-> \addr [6]
+  partition pi bit 7: \addr [7] <-> \addr [7]
+  partition pi bit 8: \addr [8] <-> \addr [8]
+  partition pi bit 9: \addr [9] <-> \addr [9]
+  partition po bit 0: \y [9] <-> \y [9]
+  partition po bit 1: \y [46] <-> \y [46]
+  partition po bit 2: \y [45] <-> \y [45]
+  partition po bit 3: \y [44] <-> \y [44]
+  partition po bit 4: \y [43] <-> \y [43]
+  partition po bit 5: \y [42] <-> \y [42]
+  partition po bit 6: \y [41] <-> \y [41]
+  partition po bit 7: \y [40] <-> \y [40]
+  partition po bit 8: \y [39] <-> \y [39]
+  partition po bit 9: \y [38] <-> \y [38]
+  partition po bit 10: \y [37] <-> \y [37]
+  partition po bit 11: \y [36] <-> \y [36]
+  partition po bit 12: \y [35] <-> \y [35]
+  partition po bit 13: \y [34] <-> \y [34]
+  partition po bit 14: \y [33] <-> \y [33]
+  partition po bit 15: \y [32] <-> \y [32]
+  partition po bit 16: \y [31] <-> \y [31]
+  partition po bit 17: \y [30] <-> \y [30]
+  partition po bit 18: \y [29] <-> \y [29]
+  partition po bit 19: \y [28] <-> \y [28]
+  partition po bit 20: \y [27] <-> \y [27]
+  partition po bit 21: \y [26] <-> \y [26]
+  partition po bit 22: \y [25] <-> \y [25]
+  partition po bit 23: \y [24] <-> \y [24]
+  partition po bit 24: \y [23] <-> \y [23]
+  partition po bit 25: \y [22] <-> \y [22]
+  partition po bit 26: \y [21] <-> \y [21]
+  partition po bit 27: \y [20] <-> \y [20]
+  partition po bit 28: \y [19] <-> \y [19]
+  partition po bit 29: \y [18] <-> \y [18]
+  partition po bit 30: \y [17] <-> \y [17]
+  partition po bit 31: \y [15] <-> \y [15]
+  partition po bit 32: \y [14] <-> \y [14]
+  partition po bit 33: \y [13] <-> \y [13]
+  partition po bit 34: \y [12] <-> \y [12]
+  partition po bit 35: \y [11] <-> \y [11]
+  partition po bit 36: \y [10] <-> \y [10]
+  partition po bit 37: \y [8] <-> \y [8]
+  partition po bit 38: \y [7] <-> \y [7]
+  partition po bit 39: \y [6] <-> \y [6]
+  partition po bit 40: \y [5] <-> \y [5]
+  partition po bit 41: \y [4] <-> \y [4]
+  partition po bit 42: \y [3] <-> \y [3]
+  partition po bit 43: \y [2] <-> \y [2]
+  partition po bit 44: \y [16] <-> \y [16]
+  partition po bit 45: \y [1] <-> \y [1]
+  partition po bit 46: \y [0] <-> \y [0]
+  partition po bit 47: \y [47] <-> \y [47]
+
+3.1.5. Executing RTLIL backend.
+Output filename: partitions/top.y.il
+<suppressed ~2587 debug messages>
+
+3.1.6. Executing CHECK pass (checking for obvious problems).
+Checking module gate.top.y...
+Checking module gold.top.y...
+Found and reported 0 problems.
+
+Writing partition 1 as top.
+  partition pi bit 0: \clk <-> \clk
+  partition pi bit 1: \din [0] <-> \din [0]
+  partition pi bit 2: \din [1] <-> \din [1]
+  partition pi bit 3: \din [2] <-> \din [2]
+  partition pi bit 4: \din [3] <-> \din [3]
+  partition pi bit 5: \din [4] <-> \din [4]
+  partition pi bit 6: \din [5] <-> \din [5]
+  partition pi bit 7: \din [6] <-> \din [6]
+  partition pi bit 8: \din [7] <-> \din [7]
+  partition pi bit 9: \din [8] <-> \din [8]
+  partition pi bit 10: \din [9] <-> \din [9]
+  partition pi bit 11: \din [10] <-> \din [10]
+  partition pi bit 12: \din [11] <-> \din [11]
+  partition pi bit 13: \din [12] <-> \din [12]
+  partition pi bit 14: \din [13] <-> \din [13]
+  partition pi bit 15: \din [14] <-> \din [14]
+  partition pi bit 16: \din [15] <-> \din [15]
+  partition pi bit 17: \din [16] <-> \din [16]
+  partition pi bit 18: \din [17] <-> \din [17]
+  partition pi bit 19: \din [18] <-> \din [18]
+  partition pi bit 20: \din [19] <-> \din [19]
+  partition pi bit 21: \din [20] <-> \din [20]
+  partition pi bit 22: \din [21] <-> \din [21]
+  partition pi bit 23: \din [22] <-> \din [22]
+  partition pi bit 24: \din [23] <-> \din [23]
+  partition pi bit 25: \we <-> \we
+  partition pi bit 26: \addr [4] <-> \addr [4]
+  partition pi bit 27: \addr [0] <-> \addr [0]
+  partition pi bit 28: \addr [1] <-> \addr [1]
+  partition pi bit 29: \addr [2] <-> \addr [2]
+  partition pi bit 30: \addr [3] <-> \addr [3]
+  partition pi bit 31: \addr [5] <-> \addr [5]
+  partition pi bit 32: \addr [6] <-> \addr [6]
+  partition pi bit 33: \addr [7] <-> \addr [7]
+  partition pi bit 34: \addr [8] <-> \addr [8]
+  partition pi bit 35: \addr [9] <-> \addr [9]
+  partition po bit 0: \y [0] <-> \y [0]
+  partition po bit 1: \y [1] <-> \y [1]
+  partition po bit 2: \y [2] <-> \y [2]
+  partition po bit 3: \y [3] <-> \y [3]
+  partition po bit 4: \y [4] <-> \y [4]
+  partition po bit 5: \y [5] <-> \y [5]
+  partition po bit 6: \y [6] <-> \y [6]
+  partition po bit 7: \y [7] <-> \y [7]
+  partition po bit 8: \y [8] <-> \y [8]
+  partition po bit 9: \y [9] <-> \y [9]
+  partition po bit 10: \y [10] <-> \y [10]
+  partition po bit 11: \y [11] <-> \y [11]
+  partition po bit 12: \y [12] <-> \y [12]
+  partition po bit 13: \y [13] <-> \y [13]
+  partition po bit 14: \y [14] <-> \y [14]
+  partition po bit 15: \y [15] <-> \y [15]
+  partition po bit 16: \y [16] <-> \y [16]
+  partition po bit 17: \y [17] <-> \y [17]
+  partition po bit 18: \y [18] <-> \y [18]
+  partition po bit 19: \y [19] <-> \y [19]
+  partition po bit 20: \y [20] <-> \y [20]
+  partition po bit 21: \y [21] <-> \y [21]
+  partition po bit 22: \y [22] <-> \y [22]
+  partition po bit 23: \y [23] <-> \y [23]
+  partition po bit 24: \y [24] <-> \y [24]
+  partition po bit 25: \y [25] <-> \y [25]
+  partition po bit 26: \y [26] <-> \y [26]
+  partition po bit 27: \y [27] <-> \y [27]
+  partition po bit 28: \y [28] <-> \y [28]
+  partition po bit 29: \y [29] <-> \y [29]
+  partition po bit 30: \y [30] <-> \y [30]
+  partition po bit 31: \y [31] <-> \y [31]
+  partition po bit 32: \y [32] <-> \y [32]
+  partition po bit 33: \y [33] <-> \y [33]
+  partition po bit 34: \y [34] <-> \y [34]
+  partition po bit 35: \y [35] <-> \y [35]
+  partition po bit 36: \y [36] <-> \y [36]
+  partition po bit 37: \y [37] <-> \y [37]
+  partition po bit 38: \y [38] <-> \y [38]
+  partition po bit 39: \y [39] <-> \y [39]
+  partition po bit 40: \y [40] <-> \y [40]
+  partition po bit 41: \y [41] <-> \y [41]
+  partition po bit 42: \y [42] <-> \y [42]
+  partition po bit 43: \y [43] <-> \y [43]
+  partition po bit 44: \y [44] <-> \y [44]
+  partition po bit 45: \y [45] <-> \y [45]
+  partition po bit 46: \y [46] <-> \y [46]
+  partition po bit 47: \y [47] <-> \y [47]
+
+3.1.7. Executing RTLIL backend.
+Output filename: modules/top.il
+<suppressed ~796 debug messages>
+
+End of script. Logfile hash: 0597835cbd
+Yosys 0.69+274 (git sha1 7513f8df8, Release, GNU /usr/bin/x86_64-w64-mingw32-g++ 15.2.1)
+Time spent: 14% 2x write_rtlil (0 sec), 14% 2x read_rtlil (0 sec), ...
